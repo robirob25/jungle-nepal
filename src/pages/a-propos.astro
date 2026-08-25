@@ -1,0 +1,1024 @@
+---
+import Layout from '../layouts/Layout.astro';
+import toursData from '../data/tours.json';
+---
+
+<Layout title="À propos | Jungle Nepal Adventure – Notre histoire & nos pisteurs" lang="fr">
+
+  <!-- 1. TOP ANNOUNCEMENT BANNER -->
+  <aside aria-label="Bannière d'information" class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 <span class="hidden sm:inline">avec le code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs leading-none px-1 cursor-pointer" aria-label="Fermer">✕</button>
+    </div>
+  </aside>
+
+  <!-- 2. NAVBAR TRANSPARENTE AVEC FOND SOMBRE -->
+  <header class="absolute top-[38px] left-0 right-0 z-40 px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between text-white max-w-7xl mx-auto">
+    
+    <!-- LEFT: LOGO BLANC TRANSPARENT -->
+    <a href="/index.html" class="flex items-center gap-2 group shrink-0">
+      <img 
+        src="/assets/logo_nav_white.webp" 
+        alt="Jungle Nepal Adventure Logo" 
+        class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
+      />
+    </a>
+
+    <!-- CENTER: NAVIGATION LINKS -->
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-white/90 drop-shadow">
+      <a href="/index.html#prochains-departs" class="hover:text-amber-100 transition-colors whitespace-nowrap">Tous les 15 séjours</a>
+
+      <!-- Destinations Dropdown -->
+      <div class="relative group py-2">
+        <a href="/destinations.html" class="hover:text-amber-100 transition-colors flex items-center gap-1 cursor-pointer whitespace-nowrap">
+          <span>Destinations</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+          <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-3xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
+            <a href="/destinations/bardia.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+              
+              <div class="flex-1">
+                <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Bardia</p>
+                <p class="text-[10px] text-slate-400">Tigres du Bengale & safaris à pied</p>
+              </div>
+            </a>
+            <a href="/destinations/chitwan.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+              
+              <div class="flex-1">
+                <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Chitwan</p>
+                <p class="text-[10px] text-slate-400">Rhinocéros & pirogues</p>
+              </div>
+            </a>
+            <a href="/destinations/suklaphanta.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+              
+              <div class="flex-1">
+                <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Suklaphanta</p>
+                <p class="text-[10px] text-slate-400">Cerfs des marais & ouest sauvage</p>
+              </div>
+            </a>
+            <a href="/destinations/annapurna.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+              
+              <div class="flex-1">
+                <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Les Annapurna & Pokhara</p>
+                <p class="text-[10px] text-slate-400">Sommets mythiques & balcons alpins</p>
+              </div>
+            </a>
+            <a href="/destinations/katmandou.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+              
+              <div class="flex-1">
+                <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Katmandou</p>
+                <p class="text-[10px] text-slate-400">Vallée des rois & temples sacrés</p>
+              </div>
+            </a>
+            <div class="pt-2 border-t border-white/10 mt-1">
+              <a href="/destinations.html" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow">
+                Voir toutes les destinations →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/index.html#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">L'esprit safari</a>
+      <a href="/index.html#pisteurs" class="hover:text-amber-100 transition-colors whitespace-nowrap">Maîtres pisteurs</a>
+      <a href="/a-propos.html" class="text-amber-100 font-black border-b-2 border-amber-300 pb-0.5 whitespace-nowrap">À propos</a>
+      <a href="https://safarinepal.fr" target="_blank" rel="noopener noreferrer" class="hover:text-amber-100 transition-colors whitespace-nowrap">Blog</a>
+      <a href="/contact.html" class="hover:text-amber-100 transition-colors whitespace-nowrap">Contact</a>
+    </nav>
+
+    <!-- RIGHT: ACTIONS -->
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-slate-950 font-black text-xs sm:text-[13px] shadow-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all whitespace-nowrap cursor-pointer">
+        <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        <span class="whitespace-nowrap">WhatsApp</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-2xl bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-lg p-2" aria-label="Menu principal">
+        <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
+        <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
+        <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-x-3 top-20 z-50 max-h-[85vh] overflow-y-auto bg-slate-950/98 backdrop-blur-2xl border border-white/15 rounded-3xl p-5 text-white shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-4 font-sans">
+    <div class="flex items-center justify-between pb-3 border-b border-white/10">
+      <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
+      <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Fermer le menu">✕</button>
+    </div>
+
+    <nav class="space-y-1 text-sm font-bold">
+      <a href="/index.html#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+        <span class="flex items-center gap-2.5"><span>Tous les 15 séjours</span></span>
+        <span class="text-[10px] bg-white/10 text-slate-200 px-2 py-0.5 rounded-full font-extrabold border border-white/10">15 circuits</span>
+      </a>
+
+      <div class="pt-1">
+        <button onclick="toggleMobileDestinations()" class="w-full px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center justify-between text-slate-200 hover:text-white transition-colors cursor-pointer text-left">
+          <span class="flex items-center gap-2.5"><span>Destinations</span></span>
+          <svg id="mobile-dest-chevron" class="w-4 h-4 text-slate-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mobile-destinations-menu" class="hidden pl-6 pr-2 pt-1 pb-2 space-y-1">
+          <a href="/destinations/bardia.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            
+            <div><p class="font-bold text-white">Parc national de Bardia</p><p class="text-[10px] text-slate-400">Tigres du Bengale & safaris à pied</p></div>
+          </a>
+          <a href="/destinations/chitwan.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            
+            <div><p class="font-bold text-white">Parc national de Chitwan</p><p class="text-[10px] text-slate-400">Rhinocéros & pirogues</p></div>
+          </a>
+          <a href="/destinations/suklaphanta.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            
+            <div><p class="font-bold text-white">Parc national de Suklaphanta</p><p class="text-[10px] text-slate-400">Cerfs des marais & ouest sauvage</p></div>
+          </a>
+          <a href="/destinations/annapurna.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            
+            <div><p class="font-bold text-white">Les Annapurna & Pokhara</p><p class="text-[10px] text-slate-400">Sommets mythiques & balcons alpins</p></div>
+          </a>
+          <a href="/destinations/katmandou.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            
+            <div><p class="font-bold text-white">Katmandou</p><p class="text-[10px] text-slate-400">Vallée des rois & temples sacrés</p></div>
+          </a>
+          <a href="/destinations.html" onclick="toggleMobileMenu()" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow mt-1">
+            Voir toutes les destinations →
+          </a>
+        </div>
+      </div>
+
+      <a href="/index.html#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
+        <span>L'esprit safari</span>
+      </a>
+      <a href="/index.html#pisteurs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
+        <span>Maîtres pisteurs</span>
+      </a>
+      <a href="/a-propos.html" class="px-3.5 py-2.5 rounded-2xl bg-white/15 flex items-center gap-2.5 text-white font-black">
+        <span>À propos</span>
+      </a>
+      <a href="https://safarinepal.fr" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
+        <span>📝</span><span>Blog</span><span class="text-[10px] bg-white/10 text-slate-300 px-1.5 py-0.5 rounded font-mono ml-auto">↗</span>
+      </a>
+      <a href="/contact.html" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
+        <span>Contact</span>
+      </a>
+    </nav>
+  </div>
+
+    <!-- 3. HERO IMMERSIF (PHOTO AUTHENTIQUE DRIVE : SAFARI À PIED EN JUNGLE) -->
+  <section class="relative min-h-[580px] sm:min-h-[640px] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
+    <!-- Image de fond authentique du Drive -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/assets/drive_photos/julien_safari_a_pied.webp" 
+        alt="Pistage à pied dans la jungle de Bardia Népal" 
+        class="w-full h-full object-cover opacity-55 scale-105 transform filter brightness-80 contrast-105"
+      />
+      
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center px-4 sm:px-6">
+
+      <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.08] drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+        L'exploration authentique du Népal.
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-slate-100 max-w-3xl font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+        Des sanctuaires sauvages du Terai aux balcons sacrés de l'Himalaya, en passant par les villages millénaires et les fêtes traditionnelles : nous concevons des voyages d'immersion humaine, culturelle et naturaliste en micro-groupes.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. NOTRE MANIFESTE -->
+  <section class="py-20 sm:py-28 bg-white border-b border-slate-200/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <p class="text-xs font-black tracking-widest uppercase text-[#0e8354] mb-2">
+            Notre manifeste
+          </p>
+          
+          <h2 class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight leading-tight">
+            Le Népal authentique n'est pas dans les bus de touristes.
+          </h2>
+          
+          <p class="text-slate-600 text-base leading-relaxed font-normal">
+            Le Népal ne se résume pas à une carte postale de haute montagne ni aux circuits touristiques standardisés. C'est une terre de contrastes absolus : des jungles denses du Terai où rodent tigres et rhinocéros, aux cités royales préservées de Katmandou et Bhaktapur, jusqu'aux vallées secrètes du Mustang et aux sentiers himalayens immaculés.
+          </p>
+          
+          <p class="text-slate-600 text-base leading-relaxed font-normal">
+            Nous avons fondé <strong>Jungle Nepal Adventure</strong> pour offrir une alternative intime et respectueuse : des safaris animaliers à pied, des immersions culturelles chez l'habitant, des retraites spirituelles au pied des géants de neige et des treks d'altitude exclusifs (comme la quête de la panthère des neiges), encadrés par des guides natifs et des maîtres pisteurs.
+          </p>
+
+          <div class="pt-4 grid grid-cols-2 gap-4 border-t border-slate-100 text-xs">
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <p class="font-black text-xl text-slate-900">20+ ans</p>
+              <p class="text-slate-500 font-medium mt-0.5">D'expérience du terrain et de pistage</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200/80">
+              <p class="font-black text-xl text-[#0e8354]">100% Local</p>
+              <p class="text-slate-500 font-medium mt-0.5">Retombées directes pour les villages</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+            <img 
+              src="/assets/drive_photos/julien_tigre_bengale2.webp" 
+              alt="Tigre de Bardia" 
+              class="w-full h-[460px] object-cover -scale-x-100 transform"
+            />
+            <div class="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/20 text-white text-xs">
+              <p class="font-bold text-amber-100">« Observer un tigre à pied en silence change à jamais votre regard sur la nature. »</p>
+              <p class="text-slate-400 mt-1">— Pawan, Chef Pisteur de Bardia</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+    <!-- 4.1. NOS 4 UNIVERS D'EXPLORATION (DESIGN LUXE AVEC PHOTO PANORAMIQUE EN BACKGROUND & GLASSMORPHISM) -->
+  <section class="relative py-24 sm:py-32 bg-slate-950 text-white overflow-hidden border-y border-white/10">
+    <!-- Photo Panoramique Horizontale de l'Himalaya & du Népal Sauvage -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/assets/original_site/himalayas_sunrise_peaks.webp" 
+        alt="Chaîne himalayenne et sommets sacrés au lever du soleil" 
+        class="w-full h-full object-cover opacity-55 scale-105 filter brightness-95 contrast-100"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/40 to-slate-950/70"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- En-tête de section -->
+      <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <p class="text-xs font-black tracking-widest uppercase text-slate-400 mb-3">
+          Diversité des expériences
+        </p>
+        <h2 class="font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+          Quatre façons de ressentir le Népal
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto">
+          Chaque voyageur a son propre rythme. Nos séjours s'articulent autour de quatre grands piliers d'exploration.
+        </p>
+      </div>
+
+      <!-- Grille 4 Cartes avec Photos Immersives en Arrière-Plan & Typographie Sobre -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <!-- 1. Jungle & Faune Sauvage -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/drive_photos/julien_tigre_bengale3.webp" 
+              alt="Safari tigre en jungle" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              01
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Safaris et grands félins
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Pistage silencieux à pied des tigres du Bengale, rhinocéros unicornes et éléphants dans les sanctuaires de Bardia, Chitwan et Suklaphanta.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15">
+            <a href="/destinations/bardia.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-100 group-hover:text-white group-hover:translate-x-1 transition-all">
+              <span>Explorer la jungle</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Montagnes & Hauts Sommets -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/original_site/machapuchare.webp" 
+              alt="Sommets sacrés des Annapurna" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              02
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Hautes montagnes et treks
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Balcons alpins des Annapurna, expéditions panthère des neiges à Manang (3 600 m) et traversées de cols secrets loin de la foule.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15">
+            <a href="/destinations/annapurna.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-100 group-hover:text-white group-hover:translate-x-1 transition-all">
+              <span>Découvrir les treks</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Culture & Vie de Village -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/drive_photos/adrien_bhaktapur1.webp" 
+              alt="Temples sacrés et vie locale" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              03
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Culture, temples et retraites
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Immersion chez l'habitant, découverte des cités royales de Katmandou et Bhaktapur, festivals tibétains au Mustang (Tiji) et méditation.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15">
+            <a href="/destinations/katmandou.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-100 group-hover:text-white group-hover:translate-x-1 transition-all">
+              <span>Vivre la culture</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Rivières & Bivouacs Sauvages -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/curated_gallery/gavial_gange_nage_riviere.webp" 
+              alt="Gavial du Gange rare nageant dans la rivière au Népal" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              04
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Expéditions rivières et bivouacs
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Descentes de rivières sauvages en rafting (Karnali), nuits sous tente sur les bancs de sable et feux de camp sous les étoiles de l'Himalaya.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15">
+            <a href="/tours/rafting-safari.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-100 group-hover:text-white group-hover:translate-x-1 transition-all">
+              <span>Voir les expéditions</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. LES FONDATEURS & MAÎTRES PISTEURS -->
+  <section class="py-20 sm:py-28 bg-slate-50 border-b border-slate-200/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full mb-3 border border-slate-200">
+          Les visages de votre voyage
+        </span>
+        <h2 class="font-black text-3xl sm:text-5xl text-slate-900 tracking-tight">
+          Une équipe soudée et passionnée
+        </h2>
+        <p class="mt-3 text-base text-slate-600 font-medium">
+          L'alliance entre l'expertise faune ancestrale népalaise et une conciergerie francophone attentive.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pawan -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
+              <img src="/assets/img_2.webp" alt="Pawan Chef Pisteur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/safari_pied.webp'"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Chef Pisteur & Expert Faune</div>
+            <h3 class="font-black text-2xl text-slate-950">Pawan</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Né à la lisière du <a href="/destinations/bardia" class="text-slate-200 hover:text-slate-200 underline decoration-emerald-500/30 underline-offset-2 transition-colors">Parc National de Bardia</a>, Pawan a grandi en écoutant les bruits de la canopée. Ancien Président de l’Association des Guides et consultant pour les documentaires de la <strong>BBC Wildlife</strong>, il est l’un des plus grands pisteurs de tigres à pied du sous-continent indien.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            Bardia National Park, Népal
+          </div>
+        </div>
+
+        <!-- Kiran -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
+              <img src="/assets/img_1.webp" alt="Kiran Co-Fondateur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/bivouac_camp.webp'"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Co-Fondateur & Logistique Terai</div>
+            <h3 class="font-black text-2xl text-slate-950">Kiran</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Pionnier de l'écotourisme d'expédition au Népal depuis plus de 20 ans, Kiran supervise l’organisation des bivouacs sauvages, la sélection des éco-lodges partenaires et l’intégration équitable des familles Tharu dans nos séjours.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            Katmandou & Vallée de Babai
+          </div>
+        </div>
+
+        <!-- Robin -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center">
+              <img src="/assets/img_3.webp" alt="Robin Coordinateur France" class="w-full h-full object-cover object-top"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Coordinateur Voyageurs France</div>
+            <h3 class="font-black text-2xl text-slate-950">Robin</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Passionné de vie sauvage et tombé amoureux du Népal authentique, Robin est votre lien direct francophone avant, pendant et après votre voyage. Il vous guide dans le choix de votre itinéraire et veille aux moindres détails de votre aventure.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            Coordination France & Assistance 24/7
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. NOTRE CHARTE D'IMMERSION SAUVAGE (DESIGN IMMERSIF AVEC PHOTO BACKGROUND & 4 CARTES PHOTOS) -->
+  <section class="relative py-24 sm:py-32 bg-slate-950 text-white overflow-hidden border-y border-white/10">
+    <!-- Photo Panoramique Horizontale en Background -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/assets/drive_photos/adrien_bardia_sunset.webp" 
+        alt="Immersion sauvage et respect de la nature au Népal" 
+        class="w-full h-full object-cover opacity-55 scale-105 filter brightness-90 contrast-105"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/70"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- En-tête de section -->
+      <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <p class="text-xs font-black tracking-widest uppercase text-slate-300 mb-3">
+          Éthique et respect absolu
+        </p>
+        <h2 class="font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+          Notre charte d'immersion sauvage
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl mx-auto">
+          Pourquoi nos safaris et expéditions sont reconnus comme les plus respectueux du Népal.
+        </p>
+      </div>
+
+      <!-- Grille 4 Cartes Immersives avec Photos Dédiées -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <!-- 1. Zéro exploitation animale -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/curated_gallery/troupeau_elephants_asie_lisiere.webp" 
+              alt="Éléphants sauvages libres en jungle" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              01
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Zéro exploitation animale
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Nous refusons catégoriquement les balades à dos d'éléphant. Tous nos safaris se font à pied, en jeep ou en pirogue traditionnelle silencieuse.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15 text-xs text-slate-300 font-bold">
+            Protection animale intégrale
+          </div>
+        </div>
+
+        <!-- 2. Pistage silencieux à pied -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/original_site/safari_pied.webp" 
+              alt="Pistage silencieux à pied dans la jungle" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              02
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Pistage silencieux à pied
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Nous n'encerclons jamais les animaux. Nos maîtres pisteurs lisent les traces et attendent patiemment aux points d'eau sans perturber le biotope.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15 text-xs text-slate-300 font-bold">
+            Discrétion & écoute de la forêt
+          </div>
+        </div>
+
+        <!-- 3. Micro-groupes stricts -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/original_site/bivouac_camp.webp" 
+              alt="Micro groupe en campement sauvage" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              03
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Micro-groupes stricts
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Maximum 4 à 10 explorateurs par groupe. Cela garantit une discrétion absolue en forêt et des interactions privilégiées avec nos guides.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15 text-xs text-slate-300 font-bold">
+            Maximum 4 à 10 personnes
+          </div>
+        </div>
+
+        <!-- 4. Retombées 100% locales -->
+        <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="/assets/drive_photos/antoine_wild5.webp" 
+              alt="Retombées directes pour les communautés et villages" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 to-slate-950/20"></div>
+          </div>
+
+          <div class="relative z-10 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-white flex items-center justify-center font-mono font-extrabold text-xs">
+              04
+            </div>
+            <h3 class="font-black text-xl text-white group-hover:text-amber-100 transition-colors leading-snug">
+              Retombées 100% locales
+            </h3>
+            <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed font-normal">
+              Rémunération juste des porteurs et pisteurs, soutien aux écoles villageoises et circuits conçus en partenariat direct avec les communautés.
+            </p>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-white/15 text-xs text-slate-300 font-bold">
+            Économie solidaire et Tharu
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. PROPOSITIONS DE SÉJOURS & EXPÉDITIONS PHARES -->
+  <section class="py-16 sm:py-24 bg-[#faf8f5] text-slate-900 border-t border-slate-200 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-10 sm:mb-12">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-[#0e8354] font-extrabold text-xs uppercase tracking-widest border border-emerald-200 mb-3">
+           <span>Expéditions signature</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+          Prêts à explorer le Népal sauvage ?
+        </h2>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base font-normal max-w-2xl leading-relaxed">
+          Découvrez une sélection de nos séjours les plus plébiscités, encadrés par Pawan et nos maîtres pisteurs natifs en micro-groupes de 4 à 10 personnes.
+        </p>
+      </div>
+
+      <!-- 4 Curated Tour Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <!-- TOUR 1: Bardia Explorateur (5j) -->
+        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="/assets/original_site/tigre_route.webp" alt="Bardia explorateur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
+                Best-seller
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-bold">
+              <span>Bardia</span>
+              <span class="bg-emerald-600/90 px-2 py-0.5 rounded-lg backdrop-blur-md">5 jours</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between gap-2 text-xs font-semibold text-slate-500 mb-1">
+                <span>Micro-groupe 4 à 10 pers.</span>
+                <span class="text-amber-500 font-bold">4.8</span>
+              </div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                Bardia explorateur – 5 jours dans la jungle
+              </h3>
+              <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                Le grand classique du pistage à pied des tigres du Bengale au cœur du parc national le plus préservé.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-semibold block uppercase">À partir de</span>
+                <span class="text-lg font-black text-slate-900">490€</span>
+              </div>
+              <a href="/tours/bardia-explorateur.html" class="px-4 py-2 rounded-xl bg-emerald-50 text-[#0e8354] group-hover:bg-[#0e8354] group-hover:text-white font-extrabold text-xs transition-colors">
+                Découvrir →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TOUR 2: Chitwan + Bardia (11j) -->
+        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan + Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
+                Grand combiné
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-bold">
+              <span>Chitwan & Bardia</span>
+              <span class="bg-emerald-600/90 px-2 py-0.5 rounded-lg backdrop-blur-md">11 jours</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between gap-2 text-xs font-semibold text-slate-500 mb-1">
+                <span>Micro-groupe 4 à 10 pers.</span>
+                <span class="text-amber-500 font-bold">4.9</span>
+              </div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                Chitwan + Bardia – l’aventure jungle complète
+              </h3>
+              <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                L'alliance parfaite entre rhinocéros unicornes de Chitwan et tigres royaux de Bardia en un seul voyage.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-semibold block uppercase">À partir de</span>
+                <span class="text-lg font-black text-slate-900">1,490€</span>
+              </div>
+              <a href="/tours/chitwan-bardia-complete.html" class="px-4 py-2 rounded-xl bg-emerald-50 text-[#0e8354] group-hover:bg-[#0e8354] group-hover:text-white font-extrabold text-xs transition-colors">
+                Découvrir →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TOUR 3: Babai Spécial Tigres (5j) -->
+        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="/assets/drive_photos/julien_safari_a_pied.webp" alt="Babai spécial tigres" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
+                100% Sauvage
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-bold">
+              <span>Vallée de la Babai</span>
+              <span class="bg-emerald-600/90 px-2 py-0.5 rounded-lg backdrop-blur-md">5 jours</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between gap-2 text-xs font-semibold text-slate-500 mb-1">
+                <span>Micro-groupe 4 à 10 pers.</span>
+                <span class="text-amber-500 font-bold">4.9</span>
+              </div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                Deep into the wild : Babai spécial experience – 5 jours
+              </h3>
+              <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                Pénétration exclusive dans la vallée secrète de la Babai, zone ultra-protégée aux densités exceptionnelles de félins.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-semibold block uppercase">À partir de</span>
+                <span class="text-lg font-black text-slate-900">890€</span>
+              </div>
+              <a href="/tours/babai-special.html" class="px-4 py-2 rounded-xl bg-emerald-50 text-[#0e8354] group-hover:bg-[#0e8354] group-hover:text-white font-extrabold text-xs transition-colors">
+                Découvrir →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TOUR 4: Panthère des Neiges (17j) -->
+        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+          <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="/assets/snow-leopard/snow_leopard_portrait.webp" alt="Panthère des neiges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
+                Expédition d'élite
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-bold">
+              <span>Haut Manang</span>
+              <span class="bg-emerald-600/90 px-2 py-0.5 rounded-lg backdrop-blur-md">17 jours</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between gap-2 text-xs font-semibold text-slate-500 mb-1">
+                <span>Micro-groupe 4 à 10 pers.</span>
+                <span class="text-amber-500 font-bold">5.0</span>
+              </div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                Expédition : panthère des neiges exclusive
+              </h3>
+              <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                9 jours de traque intense à plus de 4 000m d'altitude aux côtés des pisteurs tibétains pour observer le fantôme des montagnes.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-semibold block uppercase">À partir de</span>
+                <span class="text-lg font-black text-slate-900">3,490€</span>
+              </div>
+              <a href="/tours/panthere-des-neiges.html" class="px-4 py-2 rounded-xl bg-emerald-50 text-[#0e8354] group-hover:bg-[#0e8354] group-hover:text-white font-extrabold text-xs transition-colors">
+                Découvrir →
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom Direct CTA -->
+      <div class="mt-12 text-center">
+        <a href="/index.html#prochains-departs" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+          <span>Explorer l'ensemble de nos 15 séjours & départs garantis</span>
+          <span>→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- 7. FOOTER CLASSIQUE -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 pb-14 border-b border-white/10 text-xs">
+        
+        <!-- COL 1: Brand & Contact -->
+        <div class="space-y-4 lg:col-span-1 min-w-[220px]">
+          <a href="/index.html" class="inline-block">
+            <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain"/>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & <a href="/destinations/bardia" class="text-slate-200 hover:text-slate-200 underline decoration-emerald-500/30 underline-offset-2 transition-colors">Parc National de Bardia</a>.
+          </p>
+          <div class="pt-2 space-y-2">
+            <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 text-slate-200 font-bold text-xs hover:bg-emerald-900/30 transition-colors border border-white/10 whitespace-nowrap">
+              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span class="whitespace-nowrap">WhatsApp : +33 6 95 41 32 27</span>
+            </a>
+            <p class="text-slate-400">Email : <strong class="text-white">junglenepaladventure@gmail.com</strong></p>
+          </div>
+          <div class="pt-2.5 text-[11px] text-slate-400 space-y-1 font-medium border-t border-white/10 mt-3">
+            <p class="font-bold text-slate-200">Jungle Nepal Adventure Pvt. Ltd.</p>
+            <p>Immatriculation d'État : <strong class="text-slate-200 font-mono">N° 384414/82/83</strong></p>
+            <p>Numéro fiscal (PAN) : <strong class="text-slate-200 font-mono">623537310</strong></p>
+            <p>Thakurdwara-09, Parc National de Bardia, Népal</p>
+          </div>
+        </div>
+
+        <!-- COL 2: Nos 15 Séjours -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-wider">Nos 15 Séjours</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/tours/bardia-explorateur.html" class="hover:text-slate-200 transition-colors">Bardia Explorateur (5j)</a></li>
+            <li><a href="/tours/chitwan-culture.html" class="hover:text-slate-200 transition-colors">Chitwan & Jungle (4j)</a></li>
+            <li><a href="/tours/nepal-sauvage.html" class="hover:text-slate-200 transition-colors">Népal Sauvage 360° (15j)</a></li>
+            <li><a href="/tours/babai-special.html" class="hover:text-slate-200 transition-colors">Babai Spécial Tigres (5j)</a></li>
+            <li><a href="/tours/bardia-babai-camping.html" class="hover:text-slate-200 transition-colors">Bardia Babai Bivouac (8j)</a></li>
+            <li><a href="/tours/rafting-safari.html" class="hover:text-slate-200 transition-colors">Rafting Karnali & Safari (18j)</a></li>
+            <li><a href="/tours/tiji-mustang.html" class="hover:text-slate-200 transition-colors">Tiji Festival Mustang (13j)</a></li>
+            <li><a href="/tours/nepal-immersion-totale.html" class="hover:text-slate-200 transition-colors">Népal Immersion Totale (14j)</a></li>
+            <li class="pt-1"><a href="/index.html#prochains-departs" class="text-slate-200 font-extrabold hover:underline">Voir les 15 séjours →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: Destinations -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-wider">Destinations</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/destinations/bardia.html" class="hover:text-slate-200 transition-colors">Parc national de Bardia</a></li>
+            <li><a href="/destinations/chitwan.html" class="hover:text-slate-200 transition-colors">Parc national de Chitwan</a></li>
+            <li><a href="/destinations/suklaphanta.html" class="hover:text-slate-200 transition-colors">Parc de Suklaphanta</a></li>
+            <li><a href="/destinations/annapurna.html" class="hover:text-slate-200 transition-colors">Les Annapurna & Pokhara</a></li>
+            <li><a href="/destinations/katmandou.html" class="hover:text-slate-200 transition-colors">Vallée de Katmandou</a></li>
+            <li class="pt-1"><a href="/destinations.html" class="text-slate-200 font-extrabold hover:underline">Toutes les destinations →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4: L'Agence & Esprit Safari -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-wider">L'Expérience</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/index.html#concept" class="hover:text-slate-200 transition-colors">L'esprit safari (Concept)</a></li>
+            <li><a href="/index.html#pisteurs" class="hover:text-slate-200 transition-colors">Maîtres pisteurs (Pawan & Kiran)</a></li>
+            <li><a href="/a-propos.html" class="text-slate-200 font-bold">Notre histoire & Équipe</a></li>
+            <li><a href="https://safarinepal.fr" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">Blog d'expédition ↗</a></li>
+            <li><a href="/index.html#faq" class="hover:text-slate-200 transition-colors">Foire aux questions (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 5: Réservation & Contact -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-wider">Contact & Devis</h4>
+          <p class="text-slate-400 leading-relaxed text-xs">
+            Demande de devis sur-mesure ou information rapide.
+          </p>
+          <div class="pt-1">
+            <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs shadow transition-all">
+              Échanger sur WhatsApp avec Robin
+            </a>
+          </div>
+          <div class="pt-2 text-[11px] text-slate-400 space-y-1">
+            <p><strong class="text-white">Micro-groupes 4 à 10</strong></p>
+            <p>100% Pisteurs natifs</p>
+          </div>
+        </div>
+
+      </div>
+
+            <!-- Bottom Bar with Official Legal Certifications -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div class="space-y-1 text-center md:text-left">
+          <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. Tous droits réservés.</p>
+          <p class="text-[11px] text-slate-400">Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310</p>
+        </div>
+        <div class="flex items-center gap-4 text-xs">
+          <button onclick="openLegalModal()" class="text-slate-200 hover:text-slate-200 font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-900/10 px-3 py-1.5 rounded-xl border border-emerald-800/20">
+            
+            <span>Agréments & Licences officielles</span>
+          </button>
+          <span>•</span>
+          <a href="/a-propos.html" class="hover:text-white transition-colors">À propos</a>
+          <span>•</span>
+          <a href="/contact.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script is:inline>
+  function toggleMobileMenu() {
+    const m = document.getElementById('mobile-menu');
+    if (m) m.classList.toggle('hidden');
+  }
+  function toggleMobileDestinations() {
+    const d = document.getElementById('mobile-destinations-menu');
+    const chevron = document.getElementById('mobile-dest-chevron');
+    if (d) d.classList.toggle('hidden');
+    if (chevron) chevron.classList.toggle('rotate-180');
+  }
+  </script>
+
+  <!-- MODAL AGRÉMENTS LÉGAUX ET LICENCES OFFICIELLES DU NÉPAL -->
+  <div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 text-slate-900 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer">✕</button>
+      
+      <div class="text-center space-y-2 pb-4 border-b border-slate-100">
+        
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
+        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée au Népal</p>
+      </div>
+
+      <div class="py-5 space-y-3.5 text-xs text-slate-700">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+          </div>
+          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
+          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+          </div>
+          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
+          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
+          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
+          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
+          Fermer les informations légales
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+  function openLegalModal() {
+    const m = document.getElementById('legal-modal');
+    if (m) m.classList.remove('hidden');
+  }
+  function closeLegalModal() {
+    const m = document.getElementById('legal-modal');
+    if (m) m.classList.add('hidden');
+  }
+  </script>
+</Layout>

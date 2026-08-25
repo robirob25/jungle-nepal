@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Destinations au Népal | Jungle Nepal Adventure</title>
+  <meta name="description" content="Découvrez nos 5 grandes régions d'expédition au Népal : Bardia National Park, Parc de Chitwan, Suklaphanta, les Annapurna et la vallée de Kathmandu Valley.">
+
+  <!-- WeRoad Exact Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            jungle: {
+              50: '#f1f7f4',
+              500: '#109363',
+              600: '#0e8354',
+              950: '#041d13',
+            },
+            safari: {
+              50: '#faf8f5',
+              100: '#f4efe6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+</head>
+<body class="bg-safari-50 text-slate-800 antialiased selection:bg-slate-950 selection:text-white">
+
+  <!-- TOP BANNER -->
+  <aside class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs py-2.5 px-4 font-bold text-center border-b border-emerald-500/20 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="w-6 hidden sm:block"></div>
+      <div class="flex-1 text-center whitespace-nowrap overflow-hidden text-ellipsis">
+        <span>🐅 <strong>Saison 2026-2027</strong> : Départs garantis en micro-groupes • <strong>-100€</strong> avec le code <span class="bg-white/15 px-2 py-0.5 rounded text-amber-300 font-black">JUNGLE100</span></span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white">✕</button>
+    </div>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      
+      <a href="/en/index.html" class="flex items-center gap-2 group shrink-0">
+        <img src="../../assets/logo_dark.png" alt="Jungle Nepal Adventure Logo" class="h-14 sm:h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-bold text-slate-700">
+        <a href="../index.html#prochains-departs" class="hover:text-[#0e8354] transition-colors">All 14 Trips</a>
+        <div class="relative group py-2">
+          <a href="/en/destinations/index.html" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
+            <span>Destinations</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <!-- Menu Déroulant 100% OPAQUE & LISIBLE -->
+          <div class="absolute top-full left-0 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+            <div style="background-color: #041d13 !important; color: #ffffff !important;" class="rounded-3xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] border border-emerald-500/30 space-y-1">
+              
+              <a href="/en/destinations/bardia.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🐅
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Bardia National Park</p>
+                  <p class="text-[10px] text-slate-400">Bengal Tigers & Walking Safaris</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/chitwan.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🦏
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Chitwan National Park</p>
+                  <p class="text-[10px] text-slate-400">One-Horned Rhinos & River Canoes</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/suklaphanta.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🦌
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Suklaphanta National Park</p>
+                  <p class="text-[10px] text-slate-400">Swamp Deer & Untamed Wild West</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/annapurna.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🏔️
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Annapurna Range & Pokhara</p>
+                  <p class="text-[10px] text-slate-400">Sacred Peaks & Alpine Balconies</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/katmandou.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🕉️
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Kathmandu Valley</p>
+                  <p class="text-[10px] text-slate-400">Valley of Gods & Sacred Temples</p>
+                </div>
+              </a>
+
+              <div class="pt-2 border-t border-white/10 mt-1">
+                <a href="/en/destinations/index.html" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow">
+                  View All Destinations →
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <a href="../index.html#concept" class="hover:text-[#0e8354] transition-colors">L'esprit safari</a>
+        <a href="/en/a-propos.html" class="hover:text-[#0e8354] transition-colors">About Us</a>
+        <a href="/en/contact.html" class="hover:text-[#0e8354] transition-colors">Contact Us</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20informations%20sur%20vos%20destinations" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs sm:text-[13px] shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+          <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <span>Direct WhatsApp</span>
+        </a>
+        <!-- LANGUAGE SWITCHER (GLOBE) -->
+      <div class="relative group/lang py-1">
+        <button onclick="toggleLangMenu(this)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 hover:bg-slate-200 border-slate-200 text-slate-700 border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Changer de langue / Change language">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </button>
+        <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-44 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
+          <div style="background-color: #041d13 !important;" class="border border-emerald-500/30 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-0.5 text-xs font-bold text-white">
+            <a href="/en/destinations/index.html" onclick="setLanguagePref('fr')" class="lang-btn-fr w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
+              <span class="flex items-center gap-2"><span>🇫🇷</span><span>Français</span></span>
+              
+            </a>
+            <a href="/en/index.html" onclick="setLanguagePref('en')" class="lang-btn-en w-full flex items-center justify-between px-3 py-2 rounded-xl bg-white/15 text-[#10b981] transition-colors text-left cursor-pointer">
+              <span class="flex items-center gap-2"><span>🇬🇧</span><span>English</span></span>
+              <svg class="w-3.5 h-3.5 text-[#10b981]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO HUB -->
+  <section class="relative min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white">
+    <div class="absolute inset-0 z-0">
+      <img src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" alt="Tigre de Bardia" class="w-full h-full object-cover filter brightness-70 contrast-105"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-black/40"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-amber-300 text-xs font-black uppercase tracking-wider mb-6">
+        <span>🇳🇵 Nepal's Wild Sanctuaries</span>
+      </div>
+      <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.08] drop-shadow-2xl">
+        Our Destinations
+      </h1>
+      <p class="mt-6 text-base sm:text-xl text-slate-200 max-w-2xl font-medium leading-relaxed drop-shadow">
+        From pristine Terai jungles to majestic Himalayan heights, explore the 5 sacred regions guided by our master trackers.
+      </p>
+    </div>
+  </section>
+
+  <!-- GRILLE DES 5 DESTINATIONS -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+    <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+      <a href="bardia.html" class="relative h-72 sm:h-80 overflow-hidden block">
+        <img src="https://junglenepal.com/wp-content/uploads/2025/12/Tigre-Bardia.png" alt="Bardia National Park" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-300 text-xs font-black px-3.5 py-1.5 rounded-full border border-amber-400/30">
+          🐅 Sanctuaire Suprême du Tigre du Bengale
+        </span>
+        <div class="absolute bottom-4 left-4 right-4">
+          <h2 class="font-black text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+            Bardia National Park
+          </h2>
+        </div>
+      </a>
+      <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+        <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
+          Avant sa création officielle en 1988, le parc national de Bardia était une réserve de chasse royale dédiée à la monarchie népalaise. Sa transformation en sanctuaire protégé a permis de préserver l'un des écosystèmes les plus sauvages et intacts d'Asie.
+        </p>
+        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#0e8354]">Explore this region</span>
+          <a href="bardia.html" class="px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Discover Destination →
+          </a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+      <a href="chitwan.html" class="relative h-72 sm:h-80 overflow-hidden block">
+        <img src="https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png" alt="Chitwan National Park" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-300 text-xs font-black px-3.5 py-1.5 rounded-full border border-amber-400/30">
+          🦏 Patrimoine Mondial de l'UNESCO
+        </span>
+        <div class="absolute bottom-4 left-4 right-4">
+          <h2 class="font-black text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+            Chitwan National Park
+          </h2>
+        </div>
+      </a>
+      <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+        <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
+          Classé au patrimoine mondial de l’UNESCO depuis 1984, le parc national de Chitwan abrite l'une des biodiversités les plus spectaculaires et foisonnantes du continent asiatique.
+        </p>
+        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#0e8354]">Explore this region</span>
+          <a href="chitwan.html" class="px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Discover Destination →
+          </a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+      <a href="suklaphanta.html" class="relative h-72 sm:h-80 overflow-hidden block">
+        <img src="https://junglenepal.com/wp-content/uploads/2025/12/Suklaphata-1024x585-1.jpg" alt="Suklaphanta National Park" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-300 text-xs font-black px-3.5 py-1.5 rounded-full border border-amber-400/30">
+          🦌 L'Éden Sauvage Hors des Sentiers Battus
+        </span>
+        <div class="absolute bottom-4 left-4 right-4">
+          <h2 class="font-black text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+            Suklaphanta National Park
+          </h2>
+        </div>
+      </a>
+      <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+        <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
+          Situé à l'extrême ouest du Népal, à la frontière de l'Inde, le parc national de Suklaphanta est l'un des territoires les plus sauvages, préservés et secrets de tout l'Himalaya.
+        </p>
+        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#0e8354]">Explore this region</span>
+          <a href="suklaphanta.html" class="px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Discover Destination →
+          </a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+      <a href="annapurna.html" class="relative h-72 sm:h-80 overflow-hidden block">
+        <img src="https://junglenepal.com/wp-content/uploads/2017/01/himalayas-5817277_1920.jpg" alt="Annapurna Range & Pokhara" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-300 text-xs font-black px-3.5 py-1.5 rounded-full border border-amber-400/30">
+          🏔️ Sommets Sacrés & Treks Mythiques
+        </span>
+        <div class="absolute bottom-4 left-4 right-4">
+          <h2 class="font-black text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+            Annapurna Range & Pokhara
+          </h2>
+        </div>
+      </a>
+      <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+        <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
+          La région de l'Annapurna offre des contrastes géographiques et culturels vertigineux : des forêts tropicales luxuriantes jusqu'aux parois de glace flirtant avec les 8 000 mètres.
+        </p>
+        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#0e8354]">Explore this region</span>
+          <a href="annapurna.html" class="px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Discover Destination →
+          </a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+      <a href="katmandou.html" class="relative h-72 sm:h-80 overflow-hidden block">
+        <img src="https://junglenepal.com/wp-content/uploads/2025/03/79.png" alt="Kathmandu Valley & la Vallée des Rois" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-300 text-xs font-black px-3.5 py-1.5 rounded-full border border-amber-400/30">
+          🕉️ Cité Millénaire & Temples Sacrés
+        </span>
+        <div class="absolute bottom-4 left-4 right-4">
+          <h2 class="font-black text-2xl sm:text-3xl text-white tracking-tight leading-snug">
+            Kathmandu Valley & la Vallée des Rois
+          </h2>
+        </div>
+      </a>
+      <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+        <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
+          Au premier abord, Kathmandu Valley peut sembler déroutante et bouillonnante. Mais laissez-lui quelques heures, et elle finit par vous enchanter par sa ferveur spirituelle et sa poésie intemporelle.
+        </p>
+        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#0e8354]">Explore this region</span>
+          <a href="katmandou.html" class="px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Discover Destination →
+          </a>
+        </div>
+      </div>
+    </article>
+    
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+    <!-- =========================================================================
+       FOOTER COMPLET AVEC TOUT LE MENU DU SITE
+       ========================================================================= -->
+    <!-- =========================================================================
+       FOOTER COMPLET AVEC TOUT LE MENU DU SITE
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 pb-14 border-b border-white/10 text-xs">
+        
+        <!-- COL 1: Brand & Contact -->
+        <div class="space-y-4 lg:col-span-1">
+          <a href="../../en/index.html" class="inline-block">
+            <img src="../../assets/logo.png" alt="Jungle Nepal Adventure" class="h-16 w-auto object-contain filter drop-shadow"/>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Local travel agency specializing in immersive wildlife safaris and ethical nature expeditions in Nepal.
+          </p>
+          <div class="pt-2 space-y-2">
+            <a href="https://wa.me/33695413227" target="_blank" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-500/20 text-[#10b981] font-bold text-xs hover:bg-emerald-500/30 transition-colors border border-emerald-500/30">
+              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp : +33 6 95 41 32 27</span>
+            </a>
+            <p class="text-slate-400">Email : <strong class="text-white">contact@junglenepal.com</strong></p>
+          </div>
+        </div>
+
+        <!-- COL 2: Nos 14 Séjours -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Expeditions</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../../en/tours/bardia-explorateur.html" class="hover:text-[#10b981] transition-colors">Bardia Explorer (5d)</a></li>
+            <li><a href="../../en/tours/chitwan-culture.html" class="hover:text-[#10b981] transition-colors">Chitwan & Wildlife (4d)</a></li>
+            <li><a href="../../en/tours/nepal-sauvage.html" class="hover:text-[#10b981] transition-colors">Wild Nepal (15d)</a></li>
+            <li><a href="../../en/tours/babai-special.html" class="hover:text-[#10b981] transition-colors">Babai Valley Tiger Special (5d)</a></li>
+            <li><a href="../../en/tours/bardia-babai-camping.html" class="hover:text-[#10b981] transition-colors">Babai Wild Bivouac (8d)</a></li>
+            <li><a href="../../en/tours/rafting-safari.html" class="hover:text-[#10b981] transition-colors">Karnali Rafting & Safari (18d)</a></li>
+            <li><a href="../../en/tours/tiji-mustang.html" class="hover:text-[#10b981] transition-colors">Tiji Festival Mustang (13d)</a></li>
+            <li><a href="../../en/tours/nepal-immersion-totale.html" class="hover:text-[#10b981] transition-colors">Nepal Total Immersion (14d)</a></li>
+            <li class="pt-1"><a href="../../en/index.html#prochains-departs" class="text-amber-300 font-bold hover:underline">View all 14 trips →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: Destinations -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Destinations</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../../en/destinations/bardia.html" class="hover:text-[#10b981] transition-colors">🐅 Bardia National Park</a></li>
+            <li><a href="../../en/destinations/chitwan.html" class="hover:text-[#10b981] transition-colors">🦏 Chitwan National Park</a></li>
+            <li><a href="../../en/destinations/suklaphanta.html" class="hover:text-[#10b981] transition-colors">🦌 Suklaphanta Wildlife</a></li>
+            <li><a href="../../en/destinations/annapurna.html" class="hover:text-[#10b981] transition-colors">🏔️ Annapurna & Pokhara</a></li>
+            <li><a href="../../en/destinations/katmandou.html" class="hover:text-[#10b981] transition-colors">🕉️ Kathmandu Valley</a></li>
+            <li class="pt-1"><a href="../../en/destinations/index.html" class="text-amber-300 font-bold hover:underline">All Destinations →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4: L'Agence & Esprit Safari -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">The Experience</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../../en/index.html#concept" class="hover:text-[#10b981] transition-colors">Safari Philosophy</a></li>
+            <li><a href="../../en/index.html#pisteurs" class="hover:text-[#10b981] transition-colors">Master Trackers (Pawan & Kiran)</a></li>
+            <li><a href="../../en/a-propos.html" class="hover:text-[#10b981] transition-colors">Our Story & Mission</a></li>
+            <li><a href="../../en/index.html#avis" class="hover:text-[#10b981] transition-colors">Traveler Reviews (5.0/5 ⭐)</a></li>
+            <li><a href="../../en/index.html#faq" class="hover:text-[#10b981] transition-colors">FAQ & Travel Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 5: Booking & Contact -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Plan Your Trip</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../../en/contact.html" class="hover:text-[#10b981] transition-colors">Custom Quote Request</a></li>
+            <li><a href="https://wa.me/33695413227" target="_blank" class="hover:text-[#10b981] transition-colors">Chat with Robin on WhatsApp</a></li>
+            <li class="pt-2 text-slate-500 font-medium">
+              <span class="block text-emerald-400 font-bold">✨ Micro-groups 4 to 8</span>
+              <span>100% Native trackers</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 Jungle Nepal Adventure. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="../../en/a-propos.html" class="hover:text-white transition-colors">About Us</a>
+          <span>•</span>
+          <a href="../../en/contact.html" class="hover:text-white transition-colors">Contact</a>
+          <span>•</span>
+          <span class="text-amber-300 font-bold">Crafted for Wild Nepal 🇳🇵</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOUTON RETOUR EN HAUT ÉLÉGANT & GRAPHIQUE -->
+  <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-40 hidden sm:flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-950/90 hover:bg-[#0e8354] text-white border border-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.45)] backdrop-blur-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none hover:scale-110 active:scale-95 group cursor-pointer" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white group-hover:-translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('back-to-top');
+      if (!btn) return;
+      if (window.scrollY > 300) {
+        btn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+        btn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        btn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+        btn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    });
+  </script>
+  <script src="../../assets/js/translator.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+import re
+import os
+
+about_html = """<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | Jungle Nepal Adventure – Notre histoire & nos pisteurs</title>
+  <meta name="description" content="Découvrez l'histoire de Jungle Nepal Adventure, née de l'alliance entre Pawan, chef pisteur de Bardia (BBC Wildlife), Kiran et Robin. Écotourisme, respect de la faune et safaris immersifs.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="À propos | Jungle Nepal Adventure – Notre histoire">
+  <meta property="og:description" content="L'alliance entre maîtres pisteurs natifs et voyageurs passionnés au Népal.">
+  <meta property="og:image" content="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- WeRoad Exact Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            jungle: {
+              50: '#f1f7f4',
+              100: '#deece4',
+              200: '#c0dcce',
+              300: '#94c4b1',
+              400: '#64a68f',
+              500: '#109363',
+              600: '#0e8354',
+              700: '#0c6d46',
+              800: '#0a5235',
+              900: '#083c27',
+              950: '#041d13',
+            },
+            safari: {
+              50: '#faf8f5',
+              100: '#f4efe6',
+              200: '#e8ddce',
+              300: '#d7c4aa',
+              400: '#c2a584',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-safari-50 text-slate-800 font-sans antialiased selection:bg-jungle-950 selection:text-amber-200">
+
+  <!-- 1. TOP ANNOUNCEMENT BANNER -->
+  <aside aria-label="Bannière d'information" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2.5 px-4 font-bold relative z-50 text-center border-b border-emerald-500/20 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="w-6 hidden sm:block"></div>
+      <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+        <span>🐅 <strong>Saison 2026-2027</strong> : Départs garantis en micro-groupes (4-8 pers) • <strong>-100€ de réduction</strong> avec le code <span class="bg-white/15 px-2 py-0.5 rounded text-amber-300 font-black border border-amber-300/30">JUNGLE100</span></span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-base leading-none px-1" aria-label="Fermer">✕</button>
+    </div>
+  </aside>
+
+  <!-- 2. HEADER TRANSPARENT -->
+  <header class="absolute top-[42px] left-0 right-0 z-40 px-6 sm:px-12 lg:px-16 py-2 flex items-center justify-between text-white">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <img 
+        src="assets/logo.png" 
+        alt="Jungle Nepal Adventure Logo" 
+        class="h-16 sm:h-20 lg:h-22 w-auto object-contain filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+
+    <!-- Navigation -->
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-bold text-white/90 drop-shadow">
+      <a href="index.html#prochains-departs" class="hover:text-amber-300 transition-colors">Départs</a>
+      <a href="index.html#prochains-departs" class="hover:text-amber-300 transition-colors">Destinations</a>
+      <a href="index.html#concept" class="hover:text-amber-300 transition-colors">L'esprit safari</a>
+      <a href="index.html#pisteurs" class="hover:text-amber-300 transition-colors">Maîtres pisteurs</a>
+      <a href="a-propos.html" class="text-amber-300 border-b-2 border-amber-300 pb-0.5 font-black">À propos</a>
+      <a href="index.html#avis" class="hover:text-amber-300 transition-colors">Avis ★ 5.0</a>
+      <a href="https://wa.me/33695413227" target="_blank" class="hover:text-amber-300 transition-colors">Contacte-nous</a>
+    </nav>
+
+    <!-- Right Button -->
+    <div class="flex items-center gap-4">
+      <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20Jungle%20Nepal%20Adventure" target="_blank" class="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-slate-950 font-extrabold text-xs sm:text-[13px] shadow-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all">
+        <i data-lucide="message-circle" class="w-4 h-4 text-[#0e8354]"></i>
+        <span>WhatsApp direct</span>
+      </a>
+
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl bg-black/40 backdrop-blur-md text-white border border-white/20" aria-label="Menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-x-4 top-24 z-50 bg-slate-950/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 text-white space-y-4 shadow-2xl">
+    <nav class="flex flex-col space-y-3 font-bold text-base">
+      <a href="index.html#prochains-departs" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10 flex items-center justify-between">
+        <span>🐾 Tous les 14 circuits</span>
+        <span class="bg-[#0e8354] text-xs px-2 py-0.5 rounded-full font-black">14</span>
+      </a>
+      <a href="a-propos.html" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl bg-white/10 text-amber-300">
+        📖 Notre histoire & équipe
+      </a>
+      <a href="index.html#concept" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10">
+        🧭 L'esprit safari & éthique
+      </a>
+      <a href="index.html#avis" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10">
+        ⭐ Avis Trustpilot (5.0/5)
+      </a>
+    </nav>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 3. HERO ÉDITORIAL "À PROPOS" -->
+  <!-- ========================================================================= -->
+  <section class="relative min-h-[75vh] flex items-center justify-center pt-44 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-700x430.png" 
+        alt="Maîtres pisteurs dans la jungle de Bardia" 
+        class="w-full h-full object-cover object-center filter brightness-75 contrast-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-black/50"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-emerald-400/30 text-amber-300 text-xs font-black uppercase tracking-widest mb-6">
+        <span>🇳🇵 L'histoire d'une alliance franco-népalaise</span>
+      </div>
+
+      <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.08] drop-shadow-2xl">
+        Ceux qui écoutent la jungle.
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-slate-200 max-w-2xl font-medium leading-relaxed drop-shadow">
+        Née de la rencontre entre des maîtres pisteurs indigènes de Bardia et des passionnés de faune sauvage, Jungle Nepal Adventure réinvente l'immersion éco-responsable au Népal.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. NOTRE MANIFESTE -->
+  <!-- ========================================================================= -->
+  <section class="py-20 sm:py-28 bg-white border-b border-slate-200/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+            <span>Notre manifeste</span>
+          </div>
+          
+          <h2 class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight leading-tight">
+            Le Népal authentique n'est pas dans les bus de touristes.
+          </h2>
+          
+          <p class="text-slate-600 text-base leading-relaxed font-normal">
+            Le Népal est universellement célèbre pour ses sommets himalayens. Pourtant, au sud du pays, au pied des montagnes, s’étend un royaume méconnu, secret et palpitant : les plaines sauvages du Terai.
+          </p>
+          
+          <p class="text-slate-600 text-base leading-relaxed font-normal">
+            C’est ici que vivent les derniers grands tigres du Bengale, les rhinocéros unicornes, les troupeaux d’éléphants sauvages et le peuple Tharu. Face au développement d'un tourisme de masse bruyant, nous avons fondé <strong>Jungle Nepal Adventure</strong> avec une promesse simple : <strong>redonner au voyage sa dimension d'exploration noble et silencieuse</strong>.
+          </p>
+
+          <div class="pt-4 grid grid-cols-2 gap-4 border-t border-slate-100 text-xs">
+            <div class="p-4 rounded-2xl bg-safari-50 border border-slate-200/80">
+              <p class="font-black text-xl text-slate-900">20+ ans</p>
+              <p class="text-slate-500 font-medium mt-0.5">D'expérience du terrain et de pistage</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-safari-50 border border-slate-200/80">
+              <p class="font-black text-xl text-[#0e8354]">100% Local</p>
+              <p class="text-slate-500 font-medium mt-0.5">Retombées directes pour les villages</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+            <img 
+              src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" 
+              alt="Tigre de Bardia" 
+              class="w-full h-[460px] object-cover"
+            />
+            <div class="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/20 text-white text-xs">
+              <p class="font-bold text-amber-300">« Observer un tigre à pied en silence change à jamais votre regard sur la nature. »</p>
+              <p class="text-slate-400 mt-1">— Pawan, Chef Pisteur de Bardia</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. LES FONDATEURS & MAÎTRES PISTEURS -->
+  <!-- ========================================================================= -->
+  <section class="py-20 sm:py-28 bg-safari-100 border-b border-slate-200/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full mb-3 border border-slate-200">
+          Les visages de votre voyage
+        </span>
+        <h2 class="font-black text-3xl sm:text-5xl text-slate-900 tracking-tight">
+          Une équipe soudée et passionnée
+        </h2>
+        <p class="mt-3 text-base text-slate-600 font-medium">
+          L'alliance entre l'expertise faune ancestrale népalaise et une conciergerie francophone attentive.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pawan -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg">
+              <img src="https://junglenepal.com/wp-content/uploads/2025/12/1.png" alt="Pawan" class="w-full h-full object-cover"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Chef Pisteur & Expert Faune</div>
+            <h3 class="font-black text-2xl text-slate-950">Pawan</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Né à la lisière du Parc National de Bardia, Pawan a grandi en écoutant les bruits de la canopée. Ancien Président de l’Association des Guides et consultant pour les documentaires de la <strong>BBC Wildlife</strong>, il est l’un des plus grands pisteurs de tigres à pied du sous-continent indien.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            📍 Bardia National Park, Népal
+          </div>
+        </div>
+
+        <!-- Kiran -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg">
+              <img src="https://junglenepal.com/wp-content/uploads/2025/03/Ajouter-un-titre-1720-x-1080-px-1024x643.png" alt="Kiran" class="w-full h-full object-cover"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Co-Fondateur & Logistique Terai</div>
+            <h3 class="font-black text-2xl text-slate-950">Kiran</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Pionnier de l'écotourisme d'expédition au Népal depuis plus de 20 ans, Kiran supervise l’organisation des bivouacs sauvages, la sélection des éco-lodges partenaires et l’intégration équitable des familles Tharu dans nos séjours.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            📍 Katmandou & Vallée de Babai
+          </div>
+        </div>
+
+        <!-- Robin -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg">
+              <img src="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png" alt="Robin" class="w-full h-full object-cover"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Coordinateur Voyageurs France</div>
+            <h3 class="font-black text-2xl text-slate-950">Robin</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Passionné de vie sauvage et tombé amoureux du Népal sauvage, Robin est votre lien direct francophone avant, pendant et après votre voyage. Il vous guide dans le choix de votre itinéraire et veille aux moindres détails de votre aventure.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            📍 Coordination France & Assistance 24/7
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. NOS 4 PILIERS D'ENGAGEMENT -->
+  <!-- ========================================================================= -->
+  <section class="py-20 sm:py-28 bg-slate-950 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-amber-300 bg-white/10 px-3.5 py-1 rounded-full mb-3">
+          Nos valeurs fondamentales
+        </span>
+        <h2 class="font-black text-3xl sm:text-5xl text-white tracking-tight">
+          Pourquoi voyager avec Jungle Nepal ?
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-[#0e8354]/20 border border-[#0e8354]/40 flex items-center justify-center text-[#109363] mb-6">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-black text-xl text-white">4 à 8 Voyageurs</h3>
+          <p class="mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
+            Le seul format permettant d'approcher la faune en silence et de créer une vraie cohésion de groupe au coin du feu.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 mb-6">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-black text-xl text-white">Pisteurs Certifiés</h3>
+          <p class="mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
+            Deux pisteurs natifs accompagnent chaque safari à pied pour une sécurité irréprochable et un décryptage fascinant des traces.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-[#0e8354]/20 border border-[#0e8354]/40 flex items-center justify-center text-[#109363] mb-6">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-black text-xl text-white">100% Impact Local</h3>
+          <p class="mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
+            Aucun intermédiaire financier en Europe : chaque euro versé bénéficie directement aux pisteurs, porteurs et villages du Terai.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 mb-6">
+            <i data-lucide="star" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-black text-xl text-white">5.0 / 5 Trustpilot</h3>
+          <p class="mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
+            100% d'avis 5 étoiles rédigés par nos voyageurs. La certitude d'une aventure humaine et sauvage hors du commun.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. CTA REJOINDRE L'EXPÉDITION -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-safari-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="p-10 sm:p-14 rounded-3xl bg-white border border-slate-200 shadow-xl space-y-6">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3.5 py-1 rounded-full border border-emerald-200">
+          Prêt pour l'aventure ?
+        </span>
+        <h2 class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">
+          Votre voyage au Népal commence ici.
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto font-normal">
+          Explorez nos 14 itinéraires immersifs pour la saison 2026/2027 ou échangez directement avec Robin et Pawan pour concevoir un départ privatisé.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="index.html#prochains-departs" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] text-white font-extrabold text-sm shadow-lg shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+            Explorer les 14 séjours →
+          </a>
+          <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20informations%20sur%20vos%20séjours" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-sm transition-colors">
+            Discuter sur WhatsApp 💬
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-16 border-b border-white/10 text-sm">
+        <div class="space-y-4">
+          <a href="index.html" class="inline-block">
+            <img src="assets/logo.png" alt="Logo" class="h-16 w-auto object-contain filter drop-shadow"/>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-black text-white text-xs uppercase tracking-widest mb-4">Contact direct</h4>
+          <p class="text-xs text-slate-300">WhatsApp / Tél : <strong>+33 6 95 41 32 27</strong></p>
+          <p class="text-xs text-slate-300 mt-1">Email : <strong>contact@junglenepal.com</strong></p>
+          <p class="text-xs text-slate-400 mt-2">Bardia National Park, Népal</p>
+        </div>
+
+        <div>
+          <h4 class="font-black text-white text-xs uppercase tracking-widest mb-4">14 circuits disponibles</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Bardia, Chitwan, Babai, Mustang, lac Rara, Karnali rafting, yoga et carnet de dessin.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-black text-white text-xs uppercase tracking-widest mb-4">Garanties et confiance</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Acompte de 30% • Annulation flexible • Retombées 100% locales • Pisteurs certifiés BBC Wildlife.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 Jungle Nepal Adventure. Tous droits réservés.</p>
+        <p class="text-amber-300 font-bold">Créé avec passion pour le Népal sauvage 🇳🇵</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
+"""
+
+# Write a-propos.html
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/a-propos.html', 'w', encoding='utf-8') as f:
+    f.write(about_html)
+
+# Add "À propos" link to index.html navigation
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/index.html', 'r', encoding='utf-8') as f:
+    index_html = f.read()
+
+index_html = index_html.replace(
+    '<a href="#pisteurs" class="hover:text-amber-300 transition-colors">Maîtres pisteurs</a>',
+    '<a href="#pisteurs" class="hover:text-amber-300 transition-colors">Maîtres pisteurs</a>\n      <a href="a-propos.html" class="hover:text-amber-300 transition-colors">À propos</a>'
+)
+
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/index.html', 'w', encoding='utf-8') as f:
+    f.write(index_html)
+
+print("Created a-propos.html and linked in index.html successfully!")

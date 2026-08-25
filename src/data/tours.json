@@ -1,0 +1,1723 @@
+[
+  {
+    "slug": "jungle-extreme",
+    "rawSlug": "jungle-extreme-special-faune-sauvage",
+    "title": "Jungle extrême – spécial faune sauvage",
+    "duration": "15 jours",
+    "daysCount": 15,
+    "price": "2,500€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Passion faune pro",
+    "rating": 5.0,
+    "reviews": 21,
+    "difficulty": "Intense",
+    "style": "Immersion & Photographie",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "Des temples sacrés aux jungles silencieuses, chaque moment est pensé pour capturer l’émerveillement et la sérénité. Accompagné de guides experts, vous explorerez des forêts profondes, franchirez des rivières paisibles et observerez la vie dans sa forme la plus brute et la plus poétique. Un voyage idéal pour les photographes : lumières du matin sur",
+    "highlights": [
+      "Affûts matinaux pour capturer les premières lumières de la jungle",
+      "Marche silencieuse avec pisteurs pour suivre les traces fraîches",
+      "Observation en rivière pour approcher la faune sans la déranger"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-3.webp",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivé à Katmandou",
+        "desc": "Accueil à l’aéroport international de Tribhuvan par notre équipe locale. Transfert privé jusqu’à votre hôtel à Katmandou. Installation et temps libre selon l’heure d’arrivée. Repos après le vol et première découverte du quartier de Thamel. Balade possible dans les rues animées, temples de proximité et scènes de vie locale. Nuit à l’hôtel à Katmandou (hotel 3 étoiles)."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Journée complète de découverte à Katmandou",
+        "desc": "Découvrez l’héritage spirituel et culturel de la vallée de Katmandou : Temple de Pashupatinath – lieu de crémation hindou et site majeur de pèlerinage Stupa de Boudhanath – l’un des plus grands stupas au monde Swayambhunath – le célèbre “Monkey Temple”, perché au-dessus de la ville"
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Route vers Chitwan (5 heures)",
+        "desc": "Après le petit-déjeuner, départ pour le parc national de Chitwan. Déjeuner à l’arrivée. L’après-midi, première immersion dans la jungle avec un safari à pied. Dîner et nuit au lodge."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Safari en jeep à Chitwan",
+        "desc": "Une journée entière consacrée à l’exploration de la biodiversité de Chitwan en jeep. Déjeuner pique-nique inclus. Rencontres possibles avec des rhinocéros, des cerfs, des crocodiles, de nombreuses espèces d’oiseaux… et peut-être même un tigre du Bengale. Retour au lodge en fin de journée."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Route vers Lumbini (4 heures)",
+        "desc": "Après le petit-déjeuner, départ pour Lumbini, lieu de naissance du Bouddha. Déjeuner à l’arrivée, puis visite du jardin sacré. Dîner et nuit à Lumbini."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Direction Bardia (6 à 7 heures)",
+        "desc": "Départ après le petit-déjeuner, avec déjeuner en route. Arrivée dans l’après-midi au village de Betahani, en bordure du Parc National de Bardia. Installation et moment de repos. Plus tard, petite marche dans le village, le long de la rivière. Lumière parfaite pour vos premières ambiances sauvages à Bardia."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Premier safari à pied dans la jungle de Bardia",
+        "desc": "Thé servi avant l’aube. Départ pour le premier safari à pied, accompagné de votre guide naturaliste. Petit-déjeuner puis pique-nique au cœur de la jungle. Observation de la faune, lecture des traces et immersion totale. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner au lodge. Échange et discussion nature avec votre guide autour des observations du jour, au coin du feu."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – deuxième safari à pied dans la jungle de Bardia",
+        "desc": "Thé servi avant le lever du jour. Deuxième safari à pied avec votre guide naturaliste. Petit-déjeuner et pique-nique au cœur de la jungle. Temps d’observation et d’immersion. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner et discussion nature avec votre guide autour de la faune observée."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 - Jeep safari",
+        "desc": "Journée complète de safari en jeep à travers différents habitats dans des coins plus reculés du parc. Déjeuner pique-nique en pleine jungle. Temps d’observation et d’immersion. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner et soirée d’histoires autour du feu. Nuit en tree house, au cœur de la jungle."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – Dernier Safari à Bardia",
+        "desc": "Session matinale d’observation des oiseaux autour de la tree house. Petit-déjeuner. Dernier safari de la journée pour vos ultimes rencontres animales à Bardia. En soirée, spectacle de danse traditionnelle et dîner d’au revoir."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Route vers le parc national de Shuklaphanta (3 heures)",
+        "desc": "Après le petit-déjeuner, route vers l’ouest en direction du parc national de Shuklaphanta, moins connu mais incroyablement riche en faune. Déjeuner en chemin. Arrivée au lodge, moment de repos. En soirée, visite d’un village traditionnel Rana Tharu."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 – Journée jeep à Shuklaphanta",
+        "desc": "Explorez les vastes prairies ouvertes et les forêts du parc. Déjeuner pique-nique au coeur de la jungle. À la recherche des cerfs des marais, éléphants sauvages, léopards et oiseaux migrateurs."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Deuxième journée de safari à Shuklaphanta",
+        "desc": "Une nouvelle journée de safari à travers différentes zones du parc. Excellentes opportunités photos notamment de cerf duvaucel et tigre du bengale, découverte de nombreux autres habitats."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 – Retour à Katmandou",
+        "desc": "Route vers l’aéroport de Dhangadhi puis vol domestique pour Katmandou. Transfert vers votre hôtel. Soirée libre pour vous reposer ou faire quelques achats de dernière minute."
+      },
+      {
+        "day": 15,
+        "title": "Jour 15 – Départ international",
+        "desc": "Transfert à l’aéroport international pour votre vol retour."
+      }
+    ],
+    "categories": [
+      "safari",
+      "grand-tour"
+    ],
+    "title_en": "Extreme Jungle – Special Wildlife & Big Cat Expedition",
+    "duration_en": "15 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Safari & Big Cats",
+    "overview_en": "Our most demanding and rewarding safari expedition, entirely dedicated to passionate wildlife photographers and naturalists. 15 intensive days in Bardia, Babai, and Suklaphanta targeting tigers, leopards, rhinos, and rare marsh deer.",
+    "highlights_en": [
+      "Maximum field hours: dawn-to-dusk tracking with elite wildlife spotters",
+      "Exploration of 3 major wildlife sanctuaries: Bardia, Babai Valley, and Suklaphanta",
+      "Strategic hideouts, machans (watchtowers), and riverside waiting posts",
+      "Unrivaled photographic opportunities under optimal natural lighting"
+    ],
+    "image": "/assets/drive_photos/julien_leopard_indien.webp",
+    "gallery": [
+      "/assets/drive_photos/julien_leopard_indien.webp",
+      "/assets/drive_photos/adrien_tigre1.webp",
+      "/assets/drive_photos/julien_photographes_jungle.webp",
+      "/assets/drive_photos/julien_tigre_bengale3.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "nepal-sauvage",
+    "rawSlug": "nepal-sauvage-de-la-jungle-aux-montagnes-sacrees",
+    "title": "Népal sauvage – de la jungle aux montagnes sacrées",
+    "duration": "15 jours",
+    "daysCount": 15,
+    "price": "2,300€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "❤️ Coup de cœur",
+    "rating": 4.9,
+    "reviews": 38,
+    "difficulty": "Modéré",
+    "style": "Safari 360° & Culture",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 4,
+      "relax": 2,
+      "nightlife": 1
+    },
+    "overview": "Ce voyage n’est pas un simple circuit. C’est un passage à travers trois Népal . La jungle de Bardia , les temples perchés dans les collines, les villages himalayens où l’accueil est franc et immédiat, puis l’ énergie brute de Katmandou. Vous suivrez les traces du tigre, rencontrerez des locaux, traverserez des rizières centenaires et passerez la nu",
+    "highlights": [
+      "3 jours de safaris et d’immersion totale dans la jungle du parc national de Bardia",
+      "Séjour paisible dans le village de Ghachok, au pied de la chaîne des Annapurnas",
+      "Découvertes culturelles à Lumbini, Katmandou et Bhaktapur"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-700x430.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-27-at-13.17.14.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_9675-1-scaled.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 - Arrivée à Katmandou et transfert pour Bardia",
+        "desc": "Bienvenue au Népal! Vol domestique pour Nepalgunj, puis transfert vers le parc national de Bardia. Installation dans votre lodge au cœur de la jungle. Première marche d’immersion et rencontre avec vos hôtes locaux."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2  - Bardia, royaume des tigres et des éléphants",
+        "desc": "Safaris au lever du jour et marche dans la jungle à la recherche des tigres du Bengale, des éléphants sauvages et des oiseaux rares."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 - Jeep safari et Canoë",
+        "desc": "Départ au petit matin pour une demie journée de safari en jeep puis canoë le long de la rivière."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 - Immersion dans la culture Tharu",
+        "desc": "Marche en jungle avec les femmes du village à la recherche de fruits, feuilles et légumes sauvages : cours de cuisine traditionnelle et immersion dans la culture Tharu. Après-midi détente au bord de la rivière, suivi d&rsquo;un affût aux tigres au coucher du soleil et nuit en pleine jungle."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 - Exploration et dernier safari",
+        "desc": "Au petit matin exploration autour du camp à la recherche d&rsquo;animaux sauvages puis retour au village. Après midi visite du refuge des éléphants puis danse spectacle de danse traditionnelle au village."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 - Pause sacrée à Lumbini",
+        "desc": "Route vers Lumbini, lieu de naissance de Bouddha. Visite du temple Mayadevi et du jardin sacré."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 - En route pour l'Himalaya",
+        "desc": "En route pour l&rsquo;Himalaya ! Arrivé à Pokhara et temps libre autour du lac Phewa, puis nous prendrons la direction de Ghachok un village paisible à 1200 m près des Annapurnas."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 - Balade dans le village",
+        "desc": "Départ en balade à travers les rizières avec de nombreux points de vues sur les Annapurnas. Découverte de la vie de village himalayen, de l&rsquo;architecture et des traditions locales."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 - Cascade et restaurant des vautours",
+        "desc": "Depuis notre gîte nous partons à la recherche des vautours de l&rsquo;himalaya à travers la vallée puis nous prenons la route pour les magnifiques cascades de Ghachok, un lieu préservé au coeur de la montagne."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 - Repos dans le village",
+        "desc": "Journée libre pour explorer le village et la montagne à votre rythme !"
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 - Route vers Bandipur",
+        "desc": "Route vers Pokhara en bus locale – une aventure pittoresque ! Puis route vers Bandipur pour le couché du soleil."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 - La citée royale de Bhaktapur",
+        "desc": "Nous partons à la découverte de Bhaktapur, ville à l&rsquo;architecture médiévale particulièrement bien conservée. Nous assisterons à plusieurs cérémonies hindouistes."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 - Le chaos culturel de Katmandou",
+        "desc": "Exploration du cœur spirituel de la capitale : Pashupatinath, Swayambhunath et Boudhanath avec des guides locaux. Nous plongerons dans l&rsquo;énergie de la ville, ses toits-terrasses, ses temples et ses marchés."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 - Départ pour Nagarkot",
+        "desc": "Nous quitterons l’agitation de Katmandou pour rejoindre Nagarkot , perché sur les collines de la vallée. Réputé pour ses panoramas spectaculaires sur l’Himalaya, ce village offre l’un des plus beaux points de vue de la région. Cette étape est une parenthèse idéale pour conclure le voyage face à la chaine de l&rsquo;Himalaya."
+      },
+      {
+        "day": 15,
+        "title": "Jour 15 - Transfert à l'aéroport international",
+        "desc": "Transfert vers l&rsquo;aéroport international."
+      }
+    ],
+    "categories": [
+      "safari",
+      "mustang-himalaya",
+      "grand-tour"
+    ],
+    "title_en": "Wild Nepal – From Dense Jungle to Sacred Annapurna Peaks",
+    "duration_en": "15 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "overview_en": "A breathtaking contrast between the steaming subtropical jungles of the Terai and the snowcapped summits of the Himalayas. Track rhinos and tigers in Bardia before ascending into the tranquil alpine villages and pine forests of the Annapurnas.",
+    "highlights_en": [
+      "Complete ecological gradient from 150m jungle plains to 3,200m Himalayan panoramas",
+      "Walking safaris in Bardia National Park with senior trackers",
+      "Scenic trekking in the Annapurna foothills with sunrise over Machapuchare",
+      "Serene stays in mountain lodges and authentic village homestays"
+    ],
+    "image": "/assets/original_site/himalayas_sunrise_peaks.webp",
+    "gallery": [
+      "/assets/original_site/himalayas_sunrise_peaks.webp",
+      "/assets/drive_photos/adrien_tigre3.webp",
+      "/assets/original_site/fishtail_sacred_himalaya.webp",
+      "/assets/drive_photos/julien_cerf_axis.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "chitwan-bardia-complete",
+    "rawSlug": "chitwan-bardia-laventure-jungle-complete",
+    "title": "Chitwan + Bardia – l’aventure jungle complète",
+    "duration": "12 jours",
+    "daysCount": 11,
+    "price": "1,990€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "🌿 Double safari parcs",
+    "rating": 4.9,
+    "reviews": 33,
+    "difficulty": "Modéré",
+    "style": "Le Grand Safari Népalais",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 4,
+      "relax": 3,
+      "nightlife": 1
+    },
+    "overview": "Cette aventure offre un équilibre parfait entre safaris encadrés et immersion brute. Vous explorerez deux des parcs nationaux les plus emblématiques du Népal — Chitwan et Bardia — chacun avec sa personnalité, ses paysages et sa faune propres. À Chitwan, vous glisserez sur des rivières calmes, parcourrez la jungle à la recherche de rhinocéros et plo",
+    "highlights": [
+      "Explorez les parcs nationaux de Chitwan et de Bardia dans un seul itinéraire fluide et complet",
+      "Camping en pleine nature dans la vallée de Babai au camp de Lalmati Bhale",
+      "Safaris en jeep, marches en jungle, balades en canoë et descentes en rafting dans les zones les plus riches en faune",
+      "Immersion culturelle avec les communautés Tharu des deux régions"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Katmandou",
+        "desc": "Accueil à l’aéroport et transfert à votre hôtel. Temps libre pour vous reposer ou vous promener selon votre heure d’arrivée."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Découverte de la vallée",
+        "desc": "Journée complète de visite guidée des trésors culturels de Katmandou. Pashupatinath, Boudhanath, Swayambhunath et Durbar Square. Retour à l’hôtel, dîner et nuit sur place."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Route vers Chitwan",
+        "desc": "Après le petit déjeuner, cap au sud vers le parc national de Chitwan. Arrivée à l’écolodge, déjeuner et temps de détente. En fin d’après-midi, profitez d’une paisible balade en canoë sur la rivière Rapti. Soirée libre, dîner et nuit sur place."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Safari en jungle et culture Tharu",
+        "desc": "Safari en jeep d’une journée complète à travers la jungle de Chitwan. Découvrez rhinocéros, cerfs, oiseaux et, avec un peu de chance, le discret tigre du Bengale. En soirée, profitez d’un programme culturel avec la communauté Tharu locale."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Route vers Lumbini",
+        "desc": "Quittez la jungle et prenez la route vers Lumbini, lieu de naissance du Bouddha. Déjeuner puis visite du Jardin Sacré, du pilier d’Ashoka et des zones monastiques. Dîner et nuit à Lumbini."
+      },
+      {
+        "day": 6,
+        "title": "Jour 7 – Premier safari à Bardia",
+        "desc": "Commencez la journée avec un thé matinal et le petit déjeuner, puis partez dans le parc pour un safari en jeep d’une journée complète. Explorez les pistes profondes de la jungle, les berges de rivière et les prairies — idéal pour la photographie. Retour en soirée, dîner et échange avec votre guide."
+      },
+      {
+        "day": 7,
+        "title": "Jour 8 – Into the Wild : Expédition sur la rivière Babai",
+        "desc": "Après le petit déjeuner, route vers la vallée de Babai et début de votre aventure sauvage. Descendez la rivière en rafting doux, en observant oiseaux et faune le long des berges. Installation du camp à Lalmati Bhale Camp, un site unique en pleine jungle. Profitez du calme, d’un dîner en pleine nature et d’une nuit au cœur du sauvage."
+      },
+      {
+        "day": 8,
+        "title": "Jour 9 – Marches en jungle sauvage et retour",
+        "desc": "Réveil avec la forêt. Après un petit déjeuner léger, explorez la jungle environnante à pied avec votre guide. Suivez les traces de la faune, apprenez à reconnaître les plantes et écoutez les sons de la vallée. Après le déjeuner au camp, retour en rafting puis en véhicule vers l’écolodge. Dîner et repos."
+      },
+      {
+        "day": 9,
+        "title": "Jour 10 – Dernier safari et visite du village",
+        "desc": "Profitez d’un safari en jeep plus court le matin ou détendez-vous au lodge. L’après-midi, visitez un village Tharu voisin pour découvrir la vie locale et ses traditions."
+      },
+      {
+        "day": 10,
+        "title": "Jour 11 – Vol retour vers Katmandou",
+        "desc": "Après le petit déjeuner, transfert vers l’aéroport de Nepalgunj puis vol intérieur pour Katmandou. Transfert à votre hôtel et profitez de votre dernière soirée dans la capitale."
+      },
+      {
+        "day": 11,
+        "title": "Jour 12 – Départ",
+        "desc": "Transfert vers l’aéroport international pour votre vol retour"
+      }
+    ],
+    "categories": [
+      "chitwan",
+      "safari",
+      "bivouac",
+      "rafting",
+      "grand-tour"
+    ],
+    "title_en": "Chitwan + Bardia – The Complete Nepal Jungle Safari",
+    "duration_en": "12 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Safari & Big Cats",
+    "overview_en": "Why choose between Nepal's two greatest national parks? This ultimate wildlife safari takes you from the lush riverine grasslands of Chitwan (rhino paradise) to the deep sal forests of Bardia (tiger kingdom).",
+    "highlights_en": [
+      "Direct comparison of Nepal's two crown-jewel national parks",
+      "Greater One-Horned Rhinoceros tracking in Chitwan & Bengal Tiger tracking in Bardia",
+      "Multiple safari modes: open 4x4 jeep, traditional dugout canoes, and walking safaris",
+      "Comfortable boutique lodges and personalized wildlife mentoring"
+    ],
+    "image": "/assets/drive_photos/julien_tigre_bengale2.webp",
+    "gallery": [
+      "/assets/drive_photos/julien_tigre_bengale2.webp",
+      "/assets/original_site/chitwan_rhino.webp",
+      "/assets/original_site/elephants_river.webp",
+      "/assets/drive_photos/julien_safari_a_pied.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "bardia-explorateur",
+    "rawSlug": "bardia-explorateur-5-jours-dans-la-jungle",
+    "title": "Bardia explorateur – 5 jours dans la jungle",
+    "duration": "5 jours",
+    "daysCount": 5,
+    "price": "490€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Best-seller",
+    "rating": 4.8,
+    "reviews": 56,
+    "difficulty": "Accessible à tous",
+    "style": "Safari & Lodge Confort",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 4,
+      "relax": 3,
+      "nightlife": 1
+    },
+    "overview": "Ce voyage de 5 jours s’adresse aux amoureux de nature qui souhaitent découvrir la beauté sauvage de Bardia sans renoncer au confort ni à l’authenticité. C’est une immersion concentrée dans le parc national le mieux préservé du Népal, où les forêts de sal, les prairies ouvertes et les berges des rivières abritent tigres du Bengale, éléphants sauvage",
+    "highlights": [
+      "Observation de la faune",
+      "Découverte culture Tharu",
+      "Marche en pleine jungle",
+      "Couché de soleil"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2025/12/P1133754-scaled.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Nepalgunj, safari d’une demi-journée",
+        "desc": "Pick-up à Nepalgunj : rendez-vous à l’aéroport ou au point de rencontre prévu • Transfert vers Bardia (environ 2 h 30 de route) • Déjeuner à l’écolodge, check-in et briefing • Marche dans la jungle l’après-midi : première immersion à pied, guidée par un pisteur expérimenté. Apprenez à lire les traces d’animaux, écouter les sons de la jungle et observer singes, biches et oiseaux exotiques • Retour à l’écolodge, dîner et temps libre pour se détendre"
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Safari en jeep toute la journée",
+        "desc": "Petit-déjeuner tôt le matin avant de partir pour une journée complète de safari en Jeep • Exploration des zones reculées de Bardia en 4×4, maximisant vos chances d’apercevoir tigres, rhinocéros, éléphants et autres animaux sauvages • Pause déjeuner dans un spot d’observation privilégié • Safari l’après-midi, avec arrêts aux points d’eau et aux tours d’observation pour optimiser les chances de voir la faune • Retour à l’écolodge, dîner et soirée libre"
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Safari en rafting – Observation de la faune depuis la rivière",
+        "desc": "•Petit déjeuner à l’écolodge, puis transfert vers la rivière •Safari en rafting sur la rivière Karnali, une façon paisible et immersive d’observer la faune •Observation des crocodiles, des dauphins du Gange, des oiseaux rares, ainsi que des animaux venant s’abreuver sur les berges •Déjeuner en pleine nature, sur une plage isolée le long de la rivière •Poursuite du rafting avec des arrêts aux points clés pour l’observation de la faune"
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Marche en pleine jungle et immersion dans la culture Tharu",
+        "desc": "•Petit déjeuner matinal, puis départ pour une journée complète de marche en jungle avec un guide naturaliste expert •Exploration des sentiers au cœur de la forêt, suivi des traces d’animaux et immersion totale dans la nature •Déjeuner pique-nique au bord d’une rivière ou près d’un point d’observation de la faune •Après-midi d’immersion culturelle avec la communauté Tharu •Visite d’un village Tharu traditionnel •Rencontre avec des familles locales et découverte de leur quotidien •Découverte de l’artisanat, de la cuisine et des traditions Tharu •Exploration de la forêt communautaire, habitat des rhinocéros et d’une grande diversité d’animaux •Retour à l’écolodge et dernier dîner sous les étoiles"
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Retour à Nepalgunj",
+        "desc": "Petit déjeuner matinal, derniers instants au cœur de la nature • Transfert retour vers Nepalgunj, marquant la fin de l’aventure à Bardia"
+      }
+    ],
+    "categories": [
+      "safari"
+    ],
+    "title_en": "Bardia Explorer – 5 Days in the Wild Jungle",
+    "duration_en": "5 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Safari & Tiger Tracking",
+    "overview_en": "This 5-day adventure is designed for nature and wildlife lovers seeking the pristine beauty of Bardia National Park. Track wild Bengal tigers, Asian one-horned rhinos, and wild elephants on foot alongside our expert local Tharu master trackers.",
+    "highlights_en": [
+      "Full-day walking safari tracking Bengal tigers with expert guides",
+      "Jeep safari deep into the remote core zones of Bardia",
+      "Traditional canoe river safari on the Karnali & Geruwa rivers",
+      "Authentic Tharu cultural village immersion and organic local gastronomy",
+      "Charming ecolodge accommodation at the edge of the jungle"
+    ],
+    "image": "/assets/original_site/tigre_bardia.webp",
+    "gallery": [
+      "/assets/original_site/tigre_bardia.webp",
+      "/assets/drive_photos/julien_safari_a_pied.webp",
+      "/assets/drive_photos/adrien_bardia_forest.webp",
+      "/assets/drive_photos/julien_cerf_axis.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "chitwan-culture",
+    "rawSlug": "chitwan-culture-et-jungle-sauvage",
+    "title": "Chitwan – culture et jungle sauvage",
+    "duration": "4 jours",
+    "daysCount": 4,
+    "price": "600€",
+    "originalPrice": null,
+    "category": "chitwan",
+    "badge": "Rhinos & tharu",
+    "rating": 4.9,
+    "reviews": 28,
+    "difficulty": "Facile",
+    "style": "Safari & Culture Locale",
+    "radar": {
+      "wildlife": 4,
+      "nature": 4,
+      "culture": 5,
+      "relax": 3,
+      "nightlife": 1
+    },
+    "overview": "Ce court séjour, dense et riche, combine l’adrénaline des safaris avec la chaleur de la culture locale. Le parc national de Chitwan est l’un des meilleurs endroits d’Asie pour observer le rhinocéros unicorne et abrite une population croissante de tigres et d’éléphants. Mais au-delà de la jungle, un autre monde vous attend, celui de la culture Tharu",
+    "highlights": [
+      "Jeep safari",
+      "Balade en canoë sur la rivière Rapti avec observation de la faune",
+      "Visite culturelle et danse traditionnelle avec la communauté Tharu",
+      "Hébergement authentique en écolodge"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2025/03/68.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Transfert vers Chitwan",
+        "desc": "Prise en charge à Katmandou et route vers le parc national de Chitwan (5–6 heures). Arrivée à votre écolodge ou guesthouse dans un village Tharu. Après le déjeuner, profitez d’une paisible balade en canoë sur la rivière Rapti, où vous pourrez observer crocodiles, martins-pêcheurs et autre vie aquatique Dîner et nuit sur place."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Aventure safari en jungle",
+        "desc": "Après le petit déjeuner, départ pour un safari en jeep d’une journée complète au cœur du parc national. Vous explorerez différentes zones connues pour leurs rhinocéros, éléphants, cerfs et — avec un peu de chance — tigres. Déjeuner à emporter à l’intérieur du parc. Retour en soirée pour le dîner et le repos"
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Immersion dans la culture Tharu",
+        "desc": "Passez la matinée à visiter un village Tharu voisin avec un guide local. Découvrez les maisons traditionnelles, les méthodes agricoles et les coutumes ancestrales. Après-midi libre pour vous détendre ou vous promener autour du lodge. En soirée, profitez d’un spectacle de danse culturelle avec la communauté"
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Retour à Katmandou",
+        "desc": "Après le petit déjeuner, transfert retour vers Katmandou"
+      }
+    ],
+    "categories": [
+      "chitwan"
+    ],
+    "title_en": "Chitwan – Wildlife Safari & Indigenous Culture",
+    "duration_en": "4 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Rhinos & Chitwan Wildlife",
+    "overview_en": "A rich, immersive short stay combining the thrill of wildlife safaris with the warmth of local indigenous culture. Chitwan is Asia's prime sanctuary for observing the Greater One-Horned Rhinoceros, vibrant birdlife, and the traditional way of life of the Tharu people.",
+    "highlights_en": [
+      "Thrilling 4x4 open jeep safari in Chitwan National Park",
+      "Peaceful dugout canoe drift on the Rapti river observing gharials and rhinos",
+      "Traditional Tharu cultural dance performance and village exploration",
+      "Comfortable stay in an authentic riverside eco-resort"
+    ],
+    "image": "/assets/original_site/chitwan_rhino.webp",
+    "gallery": [
+      "/assets/original_site/chitwan_rhino.webp",
+      "/assets/drive_photos/adrien_tigre3.webp",
+      "/assets/drive_photos/julien_elephant_mere_petit.webp",
+      "/assets/drive_photos/adrien_bhaktapur1.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "rafting-safari",
+    "rawSlug": "rivieres-sauvages-et-patrimoines-caches-expedition-et-rafting",
+    "title": "Rivières sauvages et patrimoines cachés – expédition et rafting",
+    "duration": "18 jours",
+    "daysCount": 18,
+    "price": "2,190€",
+    "originalPrice": null,
+    "category": "bivouac",
+    "badge": "Rafting & safari",
+    "rating": 5.0,
+    "reviews": 15,
+    "difficulty": "Sportif",
+    "style": "Aventure & Eaux Vives",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 4,
+      "relax": 2,
+      "nightlife": 1
+    },
+    "overview": "Partez pour un voyage hors du commun à travers le Népal, mêlant héritage culturel, nature intacte et aventures palpitantes. Explorez les villes vibrantes de Katmandou et Pokhara avant de vous enfoncer dans la réserve de chasse de Dhorpatan et le village traditionnel Magar de Taksera. Poursuivez votre route à travers les paysages majestueux de Maiko",
+    "highlights": [
+      "Dhorpatan Réserve",
+      "Magar village",
+      "Rafting sur la Bheri",
+      "Safaris"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Katmandou",
+        "desc": "Atterrissage dans la capitale du Népal puis transfert à votre hôtel. Journée libre pour vous reposer ou explorer les rues animées de Thamel."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Exploration de Katmandou",
+        "desc": "Visitez les sites spirituels et historiques de Katmandou, dont le temple de Pashupatinath, le stupa de Boudhanath, Swayambhunath (le Temple des Singes) et Durbar Square."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Route vers Pokhara",
+        "desc": "Départ pour Pokhara, une ville lacustre panoramique nichée au pied de la chaîne des Annapurna. Profitez de vues montagneuses magnifiques tout au long du trajet."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Exploration de Pokhara",
+        "desc": "Visitez Devi’s Fall, explorez des grottes mystérieuses, découvrez le Musée International de la Montagne et profitez d’une balade en bateau sur le lac Phewa."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Route vers la réserve de chasse de Dhorpatan",
+        "desc": "Quittez la ville et plongez dans les paysages reculés de Dhorpatan, la seule réserve de chasse du Népal, entourée de vastes prairies alpines."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Exploration de Dhorpatan",
+        "desc": "Passez la journée à explorer la réserve, foyer d’une faune rare et de panoramas montagneux impressionnants. Découvrez les efforts de conservation menés dans cette région unique."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Route vers Taksera (village patrimonial Magar)",
+        "desc": "Route vers Taksera, le plus grand village patrimonial Magar du Népal, réputé pour sa culture riche, ses maisons traditionnelles et son histoire profondément ancrée."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Route vers Maikot (un joyau caché de la nature)",
+        "desc": "Poursuivez votre route jusqu’à Maikot, un village reculé offrant des vues panoramiques spectaculaires et une nature totalement préservée."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 - route vers Rukumkot",
+        "desc": "Partez vers Rukumkot, souvent surnommé « le paradis inexploré », avec ses lacs paisibles et ses paysages montagneux magnifiques."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – route vers Surkhet",
+        "desc": "Poursuivez l’aventure terrestre en descendant vers la région ouest du Népal pour atteindre Surkhet, porte d’entrée de la rivière Bheri."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Début de l’expédition en rafting sur la rivière Bheri",
+        "desc": "Commencez une aventure de rafting inoubliable de trois jours sur la rivière Bheri, en naviguant à travers de profondes gorges et des paysages de jungle préservés. Nuit en campement au bord de la rivière, sous les étoiles."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 – Suite du rafting",
+        "desc": "Passez une nouvelle journée palpitante sur la rivière, entre rapides exaltants et dérive à travers des vallées reculées riches en faune."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Fin du rafting et route vers Bardia",
+        "desc": "Terminez l’expédition de rafting puis prenez la route vers le parc national de Bardia, le sanctuaire animalier le plus intact du Népal."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 – Safari en jeep d’une journée à Bardia",
+        "desc": "Partez pour un safari en jeep palpitant, à la recherche de rhinocéros, d’éléphants sauvages et de tigres du Bengale au cœur de la jungle."
+      },
+      {
+        "day": 15,
+        "title": "Jour 15 – Deuxième safari à Bardia",
+        "desc": "Nouvelle journée complète de safari pour explorer d’autres zones du parc, augmentant vos chances d’observer une faune rare dans son habitat naturel, à pied ou en jeep."
+      },
+      {
+        "day": 16,
+        "title": "Jour 16 – Dernier safari en jeep et spectacle culturel Tharu",
+        "desc": "Une dernière aventure en safari, suivie le soir d’un spectacle culturel Tharu traditionnel mettant en valeur l’héritage vibrant de la communauté locale."
+      },
+      {
+        "day": 17,
+        "title": "Jour 17 – Vol pour Kathmandu",
+        "desc": "Vol retour vers Katmandou, où vous pourrez profiter d’une dernière soirée pour faire quelques achats ou simplement vous détendre avant le départ."
+      },
+      {
+        "day": 18,
+        "title": "Jour 18 – Départ",
+        "desc": "Transfert vers l’aéroport pour votre vol retour, avec en souvenir les paysages sauvages et les trésors culturels du Népal."
+      }
+    ],
+    "categories": [
+      "rafting",
+      "bivouac",
+      "safari",
+      "grand-tour"
+    ],
+    "title_en": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition",
+    "duration_en": "18 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Wild Rivers & Rafting",
+    "overview_en": "Embark on an extraordinary journey through Nepal blending ancient cultural heritage, untouched nature, and adrenaline-pumping wild river rafting. From Kathmandu's royal palaces to the roaring gorges of the Bheri and pristine safaris in Bardia.",
+    "highlights_en": [
+      "Multi-day self-sufficient wild river rafting and sandbank riverside bivouacs",
+      "Walking and jeep safaris in the remote heart of Bardia National Park",
+      "Exploration of UNESCO World Heritage medieval cities in Kathmandu Valley",
+      "Total immersion in Nepal's untamed western wilderness"
+    ],
+    "image": "/assets/drive_photos/adrien_bardia_river.webp",
+    "gallery": [
+      "/assets/drive_photos/adrien_bardia_river.webp",
+      "/assets/original_site/tigre_water_orig.webp",
+      "/assets/original_site/rafting_wild.webp",
+      "/assets/drive_photos/adrien_bardia_sunset.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "bardia-nuit-sauvage",
+    "rawSlug": "bardia-aventure-immersive-en-jungle-et-camping-sauvage",
+    "title": "Bardia – aventure immersive en jungle et camping sauvage",
+    "duration": "2 jours",
+    "daysCount": 3,
+    "price": "350€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "🌙 Micro-aventure",
+    "rating": 4.9,
+    "reviews": 31,
+    "difficulty": "Accessible",
+    "style": "Bivouac Express",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 2,
+      "nightlife": 0
+    },
+    "overview": "Une vraie nuit sauvage au cœur du parc national, Campez dans une zone reculée de la jungle où il n’y a que vous, votre équipe et la faune. Pistez tigres, rhinocéros et éléphants avec des experts locaux qui connaissent chaque signe et chaque son de la forêt. Parcourez berges de rivière, prairies et forêts profondes de sal, loin des chemins touristiq",
+    "highlights": [
+      "Camping au coeur de la jungle",
+      "Explorer les rives des rivières, les prairies et les denses forêts de sal.",
+      "Pistez les tigres, les rhinocéros, les éléphants et les daims sauvages aux côtés de spécialistes locaux"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2025/03/Ajouter-un-titre-8.webp",
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Prise en charge à Nepalgunj",
+        "desc": "Nous venons vous chercher à l’aéroport de Nepalgunj ou à n’importe quelle gare routière. De là, route vers votre lodge situé aux abords du parc national de Bardia. Installez-vous, reposez-vous et faites connaissance avec l’équipe locale qui vous accompagnera pendant l’aventure."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Safari en jeep et nuit en camping au cœur de la nature",
+        "desc": "Départ tôt le matin pour une journée complète de safari en jeep au cœur du parc national de Bardia. Explorez rives, prairies et forêts profondes à la recherche de la faune. Dans l’après-midi, installation du camp dans une zone reculée du parc pour une nuit en pleine jungle."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Safari en jeep et retour au village",
+        "desc": "Safari en jeep le matin pour continuer la recherche de la faune dans de nouvelles zones du parc. Après le safari, retour au village et installation au lodge pour une soirée tranquille."
+      }
+    ],
+    "categories": [
+      "safari",
+      "bivouac"
+    ],
+    "title_en": "Bardia Wild Night – Jungle Immersion & Bush Camping",
+    "duration_en": "2 Days",
+    "group_size_en": "Micro-group 2 to 6 explorers",
+    "badge_en": "Jungle Bivouacs & Wild Nights",
+    "overview_en": "An intense, authentic micro-adventure in the deep forest of Bardia. Spend a magical night under the stars listening to the sounds of the nocturnal jungle, preceded and followed by intensive tracking on foot with our veteran wildlife rangers.",
+    "highlights_en": [
+      "Exclusive wilderness bush camp inside safe forest clearing",
+      "Sunset and sunrise tiger and elephant tracking on foot",
+      "Campfire dinner under the Himalayan starry canopy",
+      "High-adrenaline sensory encounter with raw nature"
+    ],
+    "image": "/assets/original_site/camping_sauvage_bardia.webp",
+    "gallery": [
+      "/assets/original_site/camping_sauvage_bardia.webp",
+      "/assets/drive_photos/julien_tigre_bengale1.webp",
+      "/assets/original_site/camping_experience.webp",
+      "/assets/drive_photos/adrien_bardia_camp.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "rara-lake-bardia",
+    "rawSlug": "rara-lake-bardia-expedition-lultime-aventure-hors-sentiers-battus",
+    "title": "Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus",
+    "duration": "17 jours",
+    "daysCount": 17,
+    "price": "2,550€",
+    "originalPrice": null,
+    "category": "aventure",
+    "badge": "Expédition 4x4 & lac sacré",
+    "rating": 5.0,
+    "reviews": 18,
+    "difficulty": "Aventurier",
+    "style": "Grand Trek & 4x4",
+    "radar": {
+      "wildlife": 4,
+      "nature": 5,
+      "culture": 4,
+      "relax": 2,
+      "nightlife": 0
+    },
+    "overview": "Traversez le Népal d’est en ouest lors d’une aventure 4&#215;4 palpitante, en explorant ses régions les plus reculées et préservées. Découvrez les trésors culturels de Katmandou, Pokhara et Lumbini avant de vous enfoncer dans les paysages escarpés de Surkhet et Kalikot. Admirez la beauté intacte du lac Rara, le plus grand et le plus isolé du pays,",
+    "highlights": [
+      "Lac Rara exploration",
+      "Safaris",
+      "Sites classés UNESCO"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-2.webp",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Katmandou",
+        "desc": "Arrivée dans la capitale vibrante du Népal puis transfert à votre hôtel. Journée libre pour explorer les rues alentours ou simplement vous reposer avant le début de l’aventure."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Exploration culturelle de Katmandou",
+        "desc": "Découvrez les trésors spirituels et historiques de la ville, dont le temple sacré de Pashupatinath, l’imposant stupa de Boudhanath, le panoramique Swayambhunath (Temple des Singes) et l’historique Durbar Square."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Route vers Pokhara",
+        "desc": "Après le petit-déjeuner, prenez la route panoramique vers Pokhara, la capitale de l’aventure au Népal, entourée de montagnes majestueuses et de lacs paisibles."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Exploration de Pokhara",
+        "desc": "Visitez les sites emblématiques de Pokhara, dont Devi’s Fall, les grottes cachées, le Musée de la Montagne, et profitez d’une balade en bateau sur le lac Phewa, avec les reflets grandioses de la chaîne des Annapurna."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Route vers Lumbini et visite du lieu de naissance du Bouddha",
+        "desc": "Route vers Lumbini, lieu de naissance du Bouddha. Après le déjeuner, découvrez le temple sacré de Maya Devi et les monastères environnants pour une immersion dans l’héritage bouddhiste."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Route vers Surkhet",
+        "desc": "Commencez l’aventure hors des sentiers battus par une longue route vers Surkhet, porte d’entrée des régions occidentales les plus reculées du Népal."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Route vers Kalikot",
+        "desc": "Poursuivez votre progression dans les paysages escarpés du Népal, en traversant rivières et collines jusqu’au district isolé de Kalikot."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Arrivée au lac Rara",
+        "desc": "Arrivée au splendide lac Rara, le plus grand et le plus préservé du Népal, entouré de forêts alpines intactes et de sommets enneigés."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 – Exploration du lac Rara et de Murma Top",
+        "desc": "Passez la journée à découvrir la beauté paisible de Rara, avec une courte randonnée jusqu’à Murma Top pour une vue panoramique sur le lac et les montagnes alentours."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – Route retour vers Kalikot",
+        "desc": "Faites vos adieux à la tranquillité de Rara et entamez le trajet retour en empruntant de nouveau les routes montagneuses jusqu’à Kalikot."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Route vers le parc national de Bardia",
+        "desc": "Prenez la route en direction des jungles du Teraï et du parc national de Bardia, le parc le plus reculé du Népal, refuge des tigres, rhinocéros et éléphants sauvages."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 - Safari en jeep",
+        "desc": "Partez au cœur de la nature sauvage de Bardia lors d’un safari en jeep d’une journée, à la recherche d’animaux difficiles à observer, et profitez d’un déjeuner pique-nique en pleine jungle."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Nouveau safari en jeep d’une journée",
+        "desc": "Explorez de nouvelles zones du parc lors d’un second safari, augmentant vos chances d’apercevoir des tigres du Bengale, des gavials et des oiseaux rares dans leur habitat naturel."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 – Dernier safari en jeep et immersion dans la jungle",
+        "desc": "Une dernière journée au cœur de la jungle pour profiter pleinement de la beauté intacte et de la faune variée de Bardia avant de retourner au lodge pour une soirée détente."
+      },
+      {
+        "day": 15,
+        "title": "Jour 15 – Journée libre et repos",
+        "desc": "Profitez d’une journée de repos bien méritée pour vous détendre, repenser au voyage ou explorer le village environnant à votre rythme."
+      },
+      {
+        "day": 16,
+        "title": "Jour 16 – Vol vers Katmandou",
+        "desc": "Vol retour vers Katmandou, avec du temps pour quelques achats de dernière minute, un peu de visite ou simplement de la détente avant le départ."
+      },
+      {
+        "day": 17,
+        "title": "Jour 17 – Départ",
+        "desc": "Transfert vers l’aéroport pour votre vol retour, avec en mémoire les montagnes, les jungles et les merveilles cachées du Népal."
+      }
+    ],
+    "categories": [
+      "mustang-himalaya",
+      "safari",
+      "grand-tour"
+    ],
+    "title_en": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Track Adventure",
+    "duration_en": "17 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "overview_en": "An epic overland crossing uniting the sapphire alpine waters of Rara Lake at 3,000 meters with the dense subtropical tiger jungles of Bardia. Experience remote Himalayan villages, alpine forests, and wild river valleys untouched by modern tourism.",
+    "highlights_en": [
+      "Trekking around the crystal-clear sapphire waters of Lake Rara (3,000m)",
+      "Deep wildlife tracking in Bardia National Park's pristine tiger corridors",
+      "Pristine off-grid Himalayan mountain villages and sacred temples",
+      "Private 4x4 overland expedition through Western Nepal's hidden gems"
+    ],
+    "image": "/assets/original_site/lac_rara_orig.webp",
+    "gallery": [
+      "/assets/original_site/lac_rara_orig.webp",
+      "/assets/original_site/tigre_bardia.webp",
+      "/assets/drive_photos/fred_wild2.webp",
+      "/assets/drive_photos/antoine_wild3.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "bardia-babai-camping",
+    "rawSlug": "bardia-babai-vallee-camping-sauvage-au-coeur-dune-nature-vierge-et-isolee",
+    "title": "Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée",
+    "duration": "8 Jours",
+    "daysCount": 8,
+    "price": "1,200€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Bivouac sauvage",
+    "rating": 4.9,
+    "reviews": 24,
+    "difficulty": "Aventure",
+    "style": "Expédition Bivouac",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 2,
+      "nightlife": 0
+    },
+    "overview": "C’est l’une des aventures les plus exclusives et immersives du Népal. La vallée de Babai est intacte, brute, et presque jamais explorée — même par les locaux. Vous suivrez d’anciens corridors fluviaux en bateau, dormirez dans des camps sauvages soigneusement choisis, et suivrez les traces des tigres au cœur de leur territoire. Cette expérience s’ad",
+    "highlights": [
+      "4 jours de camping en pleine jungle et d’exploration le long de la rivière",
+      "2 camps exclusifs et 1 camp mobile en pleine zone de territoire des tigres",
+      "Safaris en jeep et marches en jungle à la journée avec des pisteurs experts",
+      "Immersion culturelle authentique dans les villages Tharu et les zones tampons du parc"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée et premiers pas dans la nature sauvage",
+        "desc": "Arrivée à Nepalgunj puis transfert en jeep vers la rivière Babai. Un trajet de deux heures en bateau vous conduit jusqu’à votre premier camp : Satkola Crocodile Camp. Déjeuner dans la jungle. L’après-midi, premier safari à pied mené par des pisteurs experts au cœur du territoire des tigres. Dîner et nuit au coin du feu sous les étoiles."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Pister les tigres et remonter plus loin la rivière",
+        "desc": "Après le petit déjeuner, poursuite du pistage des tigres en bateau. Déjeuner pique-nique sur la berge. L’après-midi, navigation plus en profondeur dans la jungle pour rejoindre Tiger Camp, votre deuxième camp de base. Soirée au coin du feu en pleine nature."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Au cœur de Babai",
+        "desc": "Marche matinale autour du camp — excellente chance d’apercevoir des oiseaux rares ou même un tigre. Après le petit déjeuner, navigation plus loin encore dans la nature sauvage. Déjeuner au bord de la rivière, puis arrivée à votre troisième camp sauvage : King Cobra Camp. Promenade et observation de la faune avant le dîner."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – De la rivière à la forêt",
+        "desc": "Sortie en bateau le matin vers un village Tharu isolé pour un déjeuner culturel. L’après-midi, safari en jeep à travers la forêt de sal. Arrivée au camp de Lalmati Bhale au coucher du soleil, déjà installé pour votre dernière nuit dans la jungle. Dîner et repos"
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Journée complète de safari en jeep",
+        "desc": "Petit déjeuner matinal, puis safari d’une journée entière dans les zones reculées du parc. Déjeuner depuis un point d’observation de la faune, tout près de l’action. L’après-midi, retour à la civilisation avec un transfert vers une guesthouse dans le village de Betahani."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Repos et vie au bord de la rivière",
+        "desc": "Journée détente à Betahani. Promenade dans les rizières, baignade dans la rivière ou repos à l’homestay."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Journée culture Tharu",
+        "desc": "Immersion complète dans la vie villageoise Tharu. Découverte des communautés vivant entre jungle et terres agricoles. Déjeuner dans une maison traditionnelle, coucher de soleil à Attisar avec vue sur la lisière de la jungle."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Retour à Katmandou",
+        "desc": "Transfert vers Nepalgunj puis vol retour pour Katmandou"
+      }
+    ],
+    "categories": [
+      "safari",
+      "bivouac"
+    ],
+    "title_en": "Bardia Babai Valley – Wild Camping in Untamed Nature",
+    "duration_en": "8 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Jungle Bivouacs & Wild Nights",
+    "overview_en": "The Babai Valley is Bardia's most secret, protected sanctuary. Reserved for true adventurers, this multi-day expedition takes you deep into isolated gorges where wild herds of elephants, tigers, and elusive leopards roam free.",
+    "highlights_en": [
+      "Several nights of mobile wild camping along the Babai River",
+      "Strictly restricted conservation territory with zero tourist traffic",
+      "Unrivaled wildlife spotting: tigers, rhinos, sloth bears, and wild elephants",
+      "Escorted by senior government rangers and local master trackers"
+    ],
+    "image": "/assets/original_site/babai_walk.webp",
+    "gallery": [
+      "/assets/original_site/babai_walk.webp",
+      "/assets/drive_photos/adrien_tigre4.webp",
+      "/assets/drive_photos/julien_elephant_mere_petit.webp",
+      "/assets/original_site/camping_sauvage_bardia.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "nepal-immersion-totale",
+    "rawSlug": "nepal-immersion-totale-culture-vie-sauvage-et-aventure",
+    "title": "Népal – immersion totale : culture, vie sauvage et aventure",
+    "duration": "14 jours",
+    "daysCount": 14,
+    "price": "2,600€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "🔥 Promo -300€",
+    "rating": 4.9,
+    "reviews": 42,
+    "difficulty": "Dynamique",
+    "style": "Immersion 360°",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 5,
+      "relax": 2,
+      "nightlife": 1
+    },
+    "overview": "Vivez le Népal comme jamais auparavant lors d’un voyage immersif à travers ses merveilles culturelles et naturelles. Explorez les temples ancestraux de Katmandou, Patan et Bhaktapur, puis admirez le lever de soleil sur l’Himalaya à Nagarkot. Sentez l’adrénaline du rafting en eaux vives sur la rivière Trisuli, avant de plonger dans la nature sauvage",
+    "highlights": [
+      "Lever de soleil sur l’Himalaya",
+      "Rafting en rivière riche en sensations",
+      "Safaris en jungle à Chitwan et Bardia",
+      "Lumbini, lieu sacré du Bouddha"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Katmandou",
+        "desc": "Arrivée à Katmandou et transfert à votre hôtel. Journée libre pour vous reposer, explorer les rues alentour ou découvrir l’énergie vibrante de la capitale népalaise."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Journée complète de visite de Katmandou",
+        "desc": "Visite des sites les plus emblématiques de la ville : le sacré temple de Pashupatinath, l’imposante stupa de Boudhanath, le Swayambhunath perché sur sa colline (le temple des singes), et l’historique Durbar Square, chacun offrant un aperçu du riche héritage culturel et spirituel du Népal."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Patan et Bhaktapur, nuit à Nagarkot",
+        "desc": "Après le petit déjeuner, exploration des Durbar Squares de Patan et Bhaktapur, célèbres pour leurs temples raffinés et leur charme médiéval. Après le déjeuner, route vers Nagarkot, un village perché réputé pour ses vues panoramiques sur l’Himalaya, où vous passerez la nuit."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Rafting sur la rivière Trisuli et route vers Chitwan",
+        "desc": "Vivez une aventure exaltante de trois heures de rafting en eaux vives sur la rivière Trisuli. Ensuite, poursuite du trajet vers le parc national de Chitwan, site classé au patrimoine mondial de l’UNESCO, réputé pour sa faune exceptionnelle et ses paysages luxuriants"
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Journée complète de safari en jeep à Chitwan",
+        "desc": "Partez pour un safari en jeep d’une journée complète au cœur de la jungle, avec déjeuner à emporter, à la recherche des rhinocéros, des cerfs, des crocodiles et du discret tigre du Bengale. Retour au lodge en fin de journée pour vous détendre."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Marche en jungle et route vers Pokhara",
+        "desc": "Commencez la journée par une marche de deux heures en pleine jungle, offrant une perspective unique sur la nature. Après le petit déjeuner et un moment de repos au lodge, profitez du déjeuner avant de prendre la route vers la ville pittoresque de Pokhara"
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Exploration de Pokhara",
+        "desc": "Visitez les fascinantes chutes de Davis, explorez des grottes cachées, découvrez le musée de la montagne et profitez d’une paisible balade en bateau sur le lac Phewa, avec la chaîne des Annapurnas se reflétant à la surface de l’eau."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Route vers Lumbini et visite du lieu de naissance du Bouddha",
+        "desc": "Après le petit déjeuner, route vers Lumbini, le lieu de naissance du Bouddha. Après le déjeuner, visite du temple sacré Maya Devi et exploration des monastères environnants dans ce lieu de pèlerinage paisible."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 – Route vers Bardia et visite d’un village Tharu",
+        "desc": "Départ pour le parc national de Bardia, un sanctuaire sauvage isolé et préservé. Déjeuner à l’arrivée, puis promenade en soirée dans un village Tharu traditionnel pour découvrir la culture locale de ce peuple indigène."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – Journée complète de safari en jeep à Bardia",
+        "desc": "Passez la journée en safari en jeep dans la nature sauvage de Bardia, à la recherche d’animaux tels que les tigres, les éléphants sauvages et les gavials. Déjeunez au cœur de la jungle avant de retourner au resort en fin de journée."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Nouvelle journée complète de safari en jeep",
+        "desc": "Une nouvelle journée dédiée à l’exploration de la faune au cœur de Bardia À chaque safari, les chances d’apercevoir des animaux rares augmentent, et la beauté de la jungle devient encore plus immersive."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 – Dernier safari en jeep et spectacle culturel Tharu",
+        "desc": "Profitez d’un dernier safari en jeep d’une journée complète, au cœur de la nature intacte de Bardia. En soirée, après le dîner, assistez à un spectacle de danse traditionnelle Tharu, vibrant hommage aux traditions du peuple local."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Vol pour Katmandou",
+        "desc": "Vol retour pour Katmandou et dernière soirée dans la capitale animée du Népal, avec du temps pour quelques achats de dernière minute ou un moment de détente."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 – Départ",
+        "desc": "Après le petit déjeuner, transfert vers l’aéroport pour votre vol retour, emportant avec vous des souvenirs inoubliables des paysages variés du Népal, de sa riche culture et de sa faune exceptionnelle."
+      }
+    ],
+    "categories": [
+      "chitwan",
+      "safari",
+      "rafting",
+      "grand-tour"
+    ],
+    "title_en": "Nepal Total Immersion – Culture, Wildlife & Adventure",
+    "duration_en": "14 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "🇳🇵 Grand 360° Expeditions",
+    "overview_en": "The complete 360° quintessential Nepal journey. Experience the spiritual majesty of Kathmandu Valley, the tranquility of Pokhara beneath the Annapurnas, thrilling river rafting, and intense wildlife safaris in both Chitwan and Bardia.",
+    "highlights_en": [
+      "Comprehensive grand loop: Kathmandu, Pokhara, Trishuli river, Chitwan & Bardia",
+      "River rafting adventure with scenic riverside lunch",
+      "Walking and jeep safaris with maximum tiger and rhino encounter odds",
+      "Cultural encounters with Newar, Gurung, and Tharu communities"
+    ],
+    "image": "/assets/drive_photos/adrien_bhaktapur2.webp",
+    "gallery": [
+      "/assets/drive_photos/adrien_bhaktapur2.webp",
+      "/assets/original_site/tigre_route.webp",
+      "/assets/original_site/chitwan_rhino.webp",
+      "/assets/drive_photos/julien_safari_a_pied.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "babai-special",
+    "rawSlug": "deep-into-the-wild-babai-special-experience-5-jours",
+    "title": "Deep into the wild : Babai spécial experience – 5 jours",
+    "duration": "5 jours",
+    "daysCount": 5,
+    "price": "900€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Aventure",
+    "rating": 5.0,
+    "reviews": 19,
+    "difficulty": "Aventurier",
+    "style": "Tracking Tigre & Bivouac",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "Ce n’est pas un simple tour dans la jungle. C’est une expédition au cœur de l’une des zones les plus reculées et intactes du Népal. La vallée de Babai se trouve loin à l’intérieur du parc national de Bardia, bien au-delà des itinéraires habituels. Très peu de voyageurs y posent le pied , et encore moins passent la nuit sur les rives sauvages de sa",
+    "highlights": [
+      "Safaris en bateau et marches dans la jungle au cœur des zones à tigres",
+      "Safari en jeep et à pied",
+      "Soirée culturelle avec la communauté Tharu"
+    ],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Bienvenue dans la nature sauvage",
+        "desc": "Prise en charge à l’aéroport de Nepalgunj ou à Kolhapur puis transfert jusqu’aux rives de la rivière Babai à Chepang. Après le déjeuner, profitez d’un safari paisible en bateau à l’intérieur du parc, idéal pour l’observation de la faune. À l’arrivée, installation au Rhino Camp, aménagé au bord de la rivière. Plus tard, petite marche autour du camp avant le dîner et la nuit en pleine jungle."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Sur les traces du tigre",
+        "desc": "Réveil avec un thé matinal, suivi d’une marche douce le long de la rivière et des lisières de forêt. Après le petit-déjeuner, départ avec votre guide pour une expédition de pistage du tigre. Le déjeuner est servi en pique-nique au bord de la rivière. L’après-midi, poursuite de la marche à travers la jungle jusqu’à Nilgai Camp, votre deuxième campement en pleine nature. Dîner et nuit entourés des sons de la jungle."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Descente de la rivière et retour",
+        "desc": "Débutez par un thé matinal et une marche autour du camp. Après le petit-déjeuner, profitez d’une dernière marche guidée dans la jungle jusqu’au déjeuner. L’après-midi, descente en bateau le long de la rivière Babai jusqu’à la route principale, où un véhicule vous attendra pour vous ramener au lodge. Dîner et nuit au lodge."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Safari dans l’ouest du parc et immersion culturelle",
+        "desc": "Après un petit-déjeuner tranquille, partez pour une journée complète de safari en jeep dans le secteur ouest du parc national de Bardia. Retour en soirée pour le dîner suivi d’une performance culturelle traditionnelle Tharu. Un aperçu de la vie de celles et ceux qui habitent cette terre sauvage."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Départ",
+        "desc": "Après le petit-déjeuner, au revoir et transfert vers l’aéroport ou votre prochaine destination."
+      }
+    ],
+    "categories": [
+      "safari",
+      "bivouac"
+    ],
+    "title_en": "Deep Into the Wild: Babai Special Experience",
+    "duration_en": "5 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Jungle Bivouacs & Wild Nights",
+    "overview_en": "An exclusive 5-day immersion into the mysterious Babai Valley. Combining rugged 4x4 exploration, guided foot patrols along riverbanks, and authentic night camps in the prime territory of Bengal tigers.",
+    "highlights_en": [
+      "Exclusive access to the pristine Babai river valley",
+      "High density of big cats and wild ungulates",
+      "Wild glamping with field cook and comfortable tent setups",
+      "Unmatched tranquility and silence far from civilization"
+    ],
+    "image": "/assets/original_site/elephant_bardia.webp",
+    "gallery": [
+      "/assets/original_site/elephant_bardia.webp",
+      "/assets/drive_photos/adrien_tigre2.webp",
+      "/assets/drive_photos/julien_elephant_jungle.webp",
+      "/assets/drive_photos/adrien_bardia_sunset.webp"
+    ],
+    "departures_type": "flexible"
+  },
+  {
+    "slug": "tiji-mustang",
+    "rawSlug": "tiji-festival-tour-upper-mustang",
+    "title": "Tiji Festival – Upper Mustang",
+    "duration": "13 jours",
+    "daysCount": 13,
+    "price": "3,500€",
+    "originalPrice": null,
+    "category": "culture",
+    "badge": "🕉️ Spécial culture",
+    "rating": 5.0,
+    "reviews": 12,
+    "difficulty": "Modéré",
+    "style": "Himalaya & Culture Sacrée",
+    "radar": {
+      "wildlife": 2,
+      "nature": 5,
+      "culture": 5,
+      "relax": 2,
+      "nightlife": 0
+    },
+    "overview": "Ce voyage exclusif vers le Haut Mustang vous plonge au cœur de la culture tibétaine, dans un monde où le temps semble s’être arrêté. Vous assisterez au vibrant festival de Tiji dans le royaume fortifié de Lo Manthang, l’un des derniers endroits au monde où les traditions bouddhistes tibétaines demeurent intactes. En chemin, vous traverserez des pay",
+    "highlights": [],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/1.png",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_9675-1-scaled.jpeg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivée à Katmandou",
+        "desc": "Arrivée à l’aéroport international Tribhuvan et transfert à votre hôtel. Briefing concernant le voyage à venir."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Visite de Katmandou",
+        "desc": "Visite des sites classés au patrimoine mondial de l’UNESCO : le temple de Pashupatinath, le stupa de Boudhanath, Swayambhunath (Monkey Temple) et Durbar Square."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – route vers Pokhara",
+        "desc": "Une route panoramique à travers des collines verdoyantes et des vallées fluviales pour rejoindre la belle ville lacustre de Pokhara."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Route vers Kalopani",
+        "desc": "Début du trajet en montagne. Route à travers des paysages changeants jusqu’à Kalopani, avec des vues panoramiques sur l’Annapurna et le Dhaulagiri."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Route vers Kagbeni",
+        "desc": "Route vers Kagbeni, village médiéval situé à l’entrée du Haut Mustang Le trajet traverse des vallées arides, des gorges profondes et les premiers paysages du Mustang, avec en toile de fond les sommets du Nilgiri et du Dhaulagiri Arrivée à Kagbeni, balade dans les ruelles anciennes, les maisons en pierre et le monastère qui domine la vallée Une première immersion dans l’atmosphère unique du royaume de Lo"
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Route vers Ghami (Haut Mustang)",
+        "desc": "Entrée dans la zone restreinte. Trajet à travers des canyons spectaculaires et des falaises sculptées jusqu’au village de Ghami, entouré d’une beauté sauvage et d’une culture ancestrale."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Route vers Lo Manthang",
+        "desc": "Arrivée dans la cité mystique et fortifiée de Lo Manthang, capitale de l’ancien royaume de Lo. Balade dans les ruelles de ce joyau caché."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Lo Manthang – Célébration du festival de Tiji",
+        "desc": "Journée complète dédiée au festival de Tiji, puissante célébration du bouddhisme tibétain avec danses rituelles, costumes élaborés et chants spirituels"
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 - Route vers Muktinath",
+        "desc": "Descente vers Muktinath, complexe de temples sacrés perché à 3 800 mètres. Lieu hautement spirituel pour les hindous comme pour les bouddhistes."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – Route vers Tatopani",
+        "desc": "Route vers Tatopani, qui signifie « eau chaude » en népalais. Profitez des sources chaudes naturelles dans une atmosphère détendue de village."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Route vers Pokhara",
+        "desc": "Retour à Pokhara et profitez d’un après-midi paisible au bord du lac."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 – route vers Katmandou",
+        "desc": "Long trajet retour vers Katmandou par la Prithvi Highway. Soirée libre pour les derniers achats ou pour vous reposer"
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Départ",
+        "desc": "Transfert à l’aéroport pour votre vol international Fin du voyage"
+      }
+    ],
+    "categories": [
+      "mustang-himalaya",
+      "grand-tour"
+    ],
+    "title_en": "Tiji Festival – Upper Mustang Forbidden Kingdom",
+    "duration_en": "13 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "overview_en": "Journey behind the great Himalayan barrier into the ancient Kingdom of Lo (Upper Mustang). Witness the mesmerizing, sacred three-day Tiji Festival in Lo Manthang with masked lama dances, cliffside cave monasteries, and Tibetan Buddhist rituals.",
+    "highlights_en": [
+      "Exclusive attendance at the vibrant three-day Tiji Festival in Lo Manthang",
+      "Spectacular trans-Himalayan scenery: eroded ochre canyons, caves, and snow peaks",
+      "Centuries-old Tibetan Buddhist monasteries and royal palaces",
+      "Scenic domestic flights between Pokhara and Jomsom through Kali Gandaki gorge"
+    ],
+    "image": "/assets/original_site/tiji_festival_orig.webp",
+    "gallery": [
+      "/assets/original_site/tiji_festival_orig.webp",
+      "/assets/original_site/mustang_panorama_orig.webp",
+      "/assets/original_site/mustang_village_orig.webp",
+      "/assets/drive_photos/fred_wild5.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "carnet-de-voyage",
+    "rawSlug": "nepal-special-carnet-de-voyage",
+    "title": "Népal – carnet de dessin et de voyage – 15 jours",
+    "duration": "15 Jours",
+    "daysCount": 15,
+    "price": "2,100€",
+    "originalPrice": null,
+    "category": "culture",
+    "badge": "🎨 Spécial dessin & carnet",
+    "rating": 5.0,
+    "reviews": 16,
+    "difficulty": "Accessible",
+    "style": "Art, Nature & Croquis",
+    "radar": {
+      "wildlife": 4,
+      "nature": 5,
+      "culture": 5,
+      "relax": 4,
+      "nightlife": 1
+    },
+    "overview": "Ce voyage de 15 jours a été entièrement pensé comme une expérience de carnet de voyage. L’objectif n’est pas simplement de découvrir le Népal, mais de le raconter, de le dessiner, et d’en garder une trace personnelle. Tout au long du séjour, vous serez accompagné par la dessinatrice professionnelle Sarah Plage , qui guidera chaque participant dans",
+    "highlights": [],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Arrivé à Katmandou",
+        "desc": "Accueil à l’aéroport, transfert et installation à l’hôtel. Temps libre selon l’heure d’arrivée."
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 – Bhaktapur",
+        "desc": "Visite de Bhaktapur, ancienne cité royale classée UNESCO. Découverte des places historiques, temples et architecture traditionnelle. Première session de dessin."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 – Katmandou → Bandipur",
+        "desc": "Visite des principaux sites de Kathmandu : Pashupatinath et Boudhanath Stupa. Route vers Bandipur. Installation et session de dessin en fin de journée."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 – Bandipur → Ghachok",
+        "desc": "Départ pour Ghachok. Installation dans le village. Découverte de la vie locale et temps de repos."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 – Ghachok",
+        "desc": "Balade dans le village et ses environs. Observation de la vie quotidienne. Session de dessin."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 – Ghachok",
+        "desc": "Deuxième journée d’exploration du village. Points de vue sur les Annapurna. Session de dessin."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 – Ghachok → Pokhara",
+        "desc": "Route pour Pokhara. Balade sur le lac. Temps libre et repos."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 – Pokhara → Lumbini",
+        "desc": "Départ pour Lumbini. Visite des temples et sites sacrés liés à la naissance du Buddha. Session de dessin."
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 – Lumbini → Bardia",
+        "desc": "Route vers Bardia. Installation dans le village. Après-midi libre et repos."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 – Bardia",
+        "desc": "Découverte du village et de la culture Tharu. Activités culturelles locales. Session de dessin."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 – Bardia (Safari jeep)",
+        "desc": "Première journée de safari en jeep dans le parc national de Bardia. Observation de la faune (tigres, éléphants, rhinocéros). Session de dessin."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 – Bardia (Safari à pied)",
+        "desc": "Safari à pied accompagné de guides. Observation de la faune et des traces. Session de dessin."
+      },
+      {
+        "day": 13,
+        "title": "Jour 13 – Bardia",
+        "desc": "Cours de cuisine traditionnelle le matin. Après-midi libre et repos."
+      },
+      {
+        "day": 14,
+        "title": "Jour 14 – Bardia → Katmandou",
+        "desc": "Vol retour vers Kathmandu avec vue sur l’Himalaya. Installation à l’hôtel."
+      },
+      {
+        "day": 15,
+        "title": "Jour 15 – Départ",
+        "desc": "Transfert à l’aéroport et vol retour."
+      }
+    ],
+    "categories": [
+      "mustang-himalaya",
+      "grand-tour"
+    ],
+    "title_en": "Nepal Sketching & Travel Journaling Expedition",
+    "duration_en": "15 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "overview_en": "An artistic and sensory voyage designed for sketchers, watercolorists, photographers, and mindful travelers. Capture the colors of ancient medieval squares, golden Himalayan dawns, and untamed wildlife with guided creative workshops.",
+    "highlights_en": [
+      "Daily creative sketching and photography pauses in extraordinary settings",
+      "Private visits to historic temples, mountain balconies, and wild jungles",
+      "Harmonious rhythm balancing cultural immersion, nature walks, and creative free time",
+      "Warm exchanges with local painters, artisans, and monks"
+    ],
+    "image": "/assets/drive_photos/antoine_wild5.webp",
+    "gallery": [
+      "/assets/drive_photos/antoine_wild5.webp",
+      "/assets/drive_photos/julien_tigre_bengale3.webp",
+      "/assets/drive_photos/julien_rollier_oiseau.webp",
+      "/assets/drive_photos/adrien_bhaktapur2.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "immersion-spirituelle",
+    "rawSlug": "immersion-spirituelle-en-himalaya",
+    "title": "Immersion spirituelle en Himalaya",
+    "duration": "12 jours",
+    "daysCount": 12,
+    "price": "1,890€",
+    "originalPrice": null,
+    "category": "culture",
+    "badge": "Retraite et méditation",
+    "rating": 4.9,
+    "reviews": 17,
+    "difficulty": "Doux",
+    "style": "Retraite Spirituelle & Yoga",
+    "radar": {
+      "wildlife": 2,
+      "nature": 5,
+      "culture": 5,
+      "relax": 5,
+      "nightlife": 0
+    },
+    "overview": "Au cœur de la vallée de Katmandou, entre temples et montagne , cette retraite de 12 jours vous invite à ralentir, respirer et retrouver l’essentiel . Jungle Nepal Adventure a décidé de laisser un espace à l&rsquo;intervenante Justine Luçon, afin de concevoir en partenariat, un tour différent de ceux actuellement proposés. Pendant plusieurs jours ,",
+    "highlights": [],
+    "images": [
+      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_0177-1-scaled.jpeg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
+      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 • Arrivée à Katmandou",
+        "desc": "Accueil à l’aéroport international Transfert jusqu’à votre hébergement Installation et temps libre pour récupérer du voyage"
+      },
+      {
+        "day": 2,
+        "title": "Jour 2 • Découverte de Katmandou & installation à l’ashram",
+        "desc": "09h00 – Visite de Swayambhunath (Temple des Singes) et du Boudhanath Stupa , deux des principaux sites spirituels du Népal. 14h00 – Arrivée et installation dans l’ashram. Après-midi – Marche méditative en montagne et découverte des environs de l’ashram. 18h45 – Méditation du soir. 20h00 – Dîner de bienvenue."
+      },
+      {
+        "day": 3,
+        "title": "Jour 3 • Immersion dans la vie de l’ashram",
+        "desc": "07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 13h00 – Enseignements philosophiques et méditations guidées. Déjeuner, temps libre et participation au Karma Yoga (activités collectives de l’ashram). 16h30 – 17h30 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+      },
+      {
+        "day": 4,
+        "title": "Jour 4 • Spiritualité & découverte culturelle",
+        "desc": "07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 17h30 – Excursion à la découverte de plusieurs lieux spirituels emblématiques de la vallée de Katmandou. Temps d’échanges et de contemplation. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+      },
+      {
+        "day": 5,
+        "title": "Jour 5 • Journée de silence",
+        "desc": "Cette journée est consacrée au Noble Silence , une pratique permettant de vivre pleinement l’instant présent dans un cadre apaisé. 07h30 – 09h00 – Prières et méditation dynamique. Petit-déjeuner. 10h30 – 12h30 – Méditation No-Mind . Déjeuner et temps de repos. 15h30 – 16h30 – Séance de Reiki. Pause thé. 17h00 – 18h00 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+      },
+      {
+        "day": 6,
+        "title": "Jour 6 • Fin de la retraite & départ pour Pokhara",
+        "desc": "07h30 – 09h00 – Dernière pratique de yoga, méditation et cérémonie de clôture. Petit-déjeuner. Transfert vers l’aéroport. 11h00 – Vol intérieur pour Pokhara et après-midi libre pour flâner dans la ville. 17h – Route vers Ghachok et installation dans notre maison en montagne."
+      },
+      {
+        "day": 7,
+        "title": "Jour 7 • Reconnexion à la nature",
+        "desc": "7h30 – Pranayama – Yoga matinal face aux annapurnas Petit déjeuner Matin – Marche consciente au coeur des rizières et des forêts de Gachok avec des temps de pause pour utiliser des mudra , exercices de respiration et méditation de pleine conscience en nature. Déjeuner. Après-midi – Temps libre pour profiter du village ou se reposer. 16h30 – Atelier d’initiation aux bols chantants tibétains. 18h00 – Cercle de partage et méditation guidée au coucher du soleil. Dîner."
+      },
+      {
+        "day": 8,
+        "title": "Jour 8 • Bien-être & intégration",
+        "desc": "7h30 – Pranayama – Yin Yoga Petit-déjeuner Matin – Massage intuitif/Reiki Déjeuner. Après-midi – Atelier tantra blanc Temps libre. Diner. Avant le coucher – Yoga Nidra"
+      },
+      {
+        "day": 9,
+        "title": "Jour 9 • Bien-être & découverte",
+        "desc": "7h30 – Pranayama – Réveil musculaire Petit-déjeuner. Journée – Immersion dans la vie locale Retour en fin d’après-midi. 18h – Bain de vibration aux bols chantants pour la pleine lune du castor en Gémeaux Dîner."
+      },
+      {
+        "day": 10,
+        "title": "Jour 10 • Randonnée en Himalaya",
+        "desc": "7h00 – Pranayama et Yoga Petit-Déjeuner. Matin : Randonnée accessible jusqu’à un point de vue sur les Annapurnas, avec plusieurs pauses de contemplation. Pique-nique ou déjeuner. Après-midi – Retour tranquillement au village. 17h – Cercle de clôture, dernière pratique aux bols chantants et/ou danse serpentine et rituel de fin de séjour. Dernier diner à Gachok."
+      },
+      {
+        "day": 11,
+        "title": "Jour 11 • Retour à Katmandou",
+        "desc": "Retour vers Katmandou en vol interne. Temps libre pour vos achats. Dernière soirée au Népal."
+      },
+      {
+        "day": 12,
+        "title": "Jour 12 • Départ",
+        "desc": "Transfert à l’aéroport international. Vol retour."
+      }
+    ],
+    "categories": [
+      "mustang-himalaya",
+      "grand-tour"
+    ],
+    "title_en": "Spiritual Immersion in the Himalayas & Sacred Valleys",
+    "duration_en": "12 Days",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "overview_en": "A transformative, meditative journey connecting with the deep sacred roots of Nepal. Discover Tibetan Buddhist monasteries, sacred Hindu cremation ghats at Pashupatinath, meditation caves, and peaceful high-altitude Himalayan retreats.",
+    "highlights_en": [
+      "Privileged meetings and teachings with Tibetan Buddhist lamas and Hindu yogis",
+      "Dawn meditation sessions facing the snowcapped peaks of the Himalayas",
+      "Pilgrimages to sacred sites: Boudhanath, Swayambhunath, Namo Buddha, and Lumbini",
+      "Peaceful, serene rhythm fostering self-reflection and authentic connections"
+    ],
+    "image": "/assets/original_site/temple_sacred.webp",
+    "gallery": [
+      "/assets/original_site/temple_sacred.webp",
+      "/assets/drive_photos/adrien_bhaktapur1.webp",
+      "/assets/drive_photos/adrien_katmandou1.webp",
+      "/assets/original_site/nepal_landscape.webp"
+    ],
+    "departures_type": "scheduled"
+  },
+  {
+    "slug": "panthere-des-neiges",
+    "title": "Expédition : panthère des neiges exclusive (17 jours)",
+    "title_en": "Exclusive Snow Leopard Expedition (17 Days)",
+    "duration": "17 Jours",
+    "duration_en": "17 Days",
+    "price": "4 300 €",
+    "price_num": 4300,
+    "group_size": "Micro-groupe 4 à 10 explorateurs",
+    "group_size_en": "Small group 4 to 10 explorers",
+    "rating": "5.0",
+    "reviews_count": 10,
+    "categories": [
+      "mustang-himalaya",
+      "culture",
+      "grand-tour",
+      "safari"
+    ],
+    "badge": "Himalaya, mustang & spiritualité",
+    "badge_en": "Himalayas, Mustang & Spirituality",
+    "image": "/assets/snow-leopard/snow_leopard_portrait.webp",
+    "images": [
+      "/assets/snow-leopard/snow_leopard_portrait.jpg",
+      "/assets/snow-leopard/snow_leopard_2.jpg",
+      "/assets/snow-leopard/snow_leopard_cliffs.jpg",
+      "/assets/snow-leopard/manang_gangapurna.jpg",
+      "/assets/snow-leopard/annapurna_himalayas.jpg"
+    ],
+    "overview": "Partez sur les traces du félin le plus insaisissable et mythique de la planète : la Panthère des Neiges (Panthera uncia, le Fantôme des Montagnes). Au cœur de la haute vallée sauvage de Manang (3 600 m – 4 700 m) et des contreforts sacrés des Annapurnas, cette expédition exclusive de 17 jours allie acclimatation progressive, 9 jours intenses de pistage d'altitude avec nos maîtres pisteurs natifs, et immersion culturelle bouddhiste au monastère séculaire de Braka Gompa.",
+    "overview_en": "Embark on an extraordinary 17-day expedition tracking the most elusive and legendary big cat on Earth: the Snow Leopard ('Ghost of the Mountains'). High in the remote wilderness of Manang (3,600m – 4,700m) and the Annapurnas, experience 9 full field days of intensive tracking alongside expert Himalayan trackers, progressive altitude acclimatization, and ancient Buddhist heritage at the 600-year-old Braka Gompa monastery.",
+    "highlights": [
+      "9 jours complets sur le terrain dédiés au suivi et à l’observation du Léopard des Neiges",
+      "Pistage d'élite avec maîtres pisteurs himalayens et longues-vues professionnelles",
+      "Acclimatation sécurisée en paliers (Chame 2 700 m, Manang 3 600 m et lac Gangapurna)",
+      "Immersion culturelle à Bhaktapur, Bandipur et au monastère vieux de 600 ans de Braka Gompa",
+      "Vol panoramique au-dessus de la chaîne des Annapurnas et sources chaudes naturelles"
+    ],
+    "highlights_en": [
+      "9 full days in the field dedicated to tracking and observing the Snow Leopard",
+      "Elite tracking with native Himalayan trackers and professional spotting scopes",
+      "Safe stepwise altitude acclimatization (Chame 2,700m, Manang 3,600m, Gangapurna lake)",
+      "Rich cultural discovery in Bhaktapur, Bandipur and the 600-year-old Braka Gompa monastery",
+      "Panoramic flight over the Annapurna range and relaxing natural hot springs"
+    ],
+    "program": [
+      {
+        "day": "1",
+        "title": "Arrivée à Katmandou – Transfert direct à la cité royale de Bhaktapur",
+        "title_en": "Arrival in Kathmandu – Direct Transfer to Royal Bhaktapur",
+        "desc": "Accueil à l'aéroport international et transfert direct vers la cité historique de Bhaktapur. Installation à l'hôtel et présentation de l'expédition. Ce choix permet une première immersion culturelle immédiate, à l'écart de l'agitation du centre de la capitale.",
+        "desc_en": "Welcome at Kathmandu International Airport and direct transfer to the historic city of Bhaktapur. Check-in and expedition briefing. This allows immediate cultural immersion away from the bustling city center."
+      },
+      {
+        "day": "2",
+        "title": "Vol panoramique Katmandou – Pokhara & Préparatifs face aux Annapurnas",
+        "title_en": "Scenic Flight Kathmandu – Pokhara & Expedition Briefing",
+        "desc": "Vol domestique de 30 minutes vers Pokhara offrant un panorama unique sur la chaîne des Annapurnas. Temps libre l’après-midi pour explorer les abords du lac Phewa, visiter les temples, organiser les derniers préparatifs et profiter de la vue sur les montagnes. Nuit à l'hôtel.",
+        "desc_en": "30-minute domestic flight to Pokhara with breathtaking views of the Annapurnas. Afternoon free time to stroll around Phewa Lake, visit temples, finalize gear, and enjoy mountain vistas. Overnight at hotel."
+      },
+      {
+        "day": "3",
+        "title": "Pokhara – Chame (2 700 m) : Remontée de la vallée et sources chaudes",
+        "title_en": "Pokhara – Chame (2,700 m): Ascending the Valley & Hot Springs",
+        "desc": "Départ en véhicule privatif 4x4 pour Chame (environ 6h de piste). Ce trajet spectaculaire marque le début de la remontée de la vallée et constitue le premier palier d'acclimatation à l'altitude. En fin de journée, accès aux sources d'eau chaude naturelles en bord de rivière. Nuit en lodge/hôtel.",
+        "desc_en": "Private 4x4 departure for Chame (approx. 6h drive). This scenic route marks the start of the valley ascent and serves as the first altitude acclimatization stage. In the evening, relax in natural riverside hot springs. Overnight in lodge."
+      },
+      {
+        "day": "4",
+        "title": "Chame – Manang (3 600 m) & Randonnée d'acclimatation au Lac Gangapurna",
+        "title_en": "Chame – Manang (3,600 m) & Acclimatization Hike to Gangapurna Lake",
+        "desc": "Trajet de 2 heures en véhicule pour rejoindre Manang (3 600 m). Pour valider ce deuxième palier de contrôle d'acclimatation, une marche est programmée l'après-midi vers le lac glaciaire turquoise de Gangapurna. Nuit à l'hôtel/lodge à Manang.",
+        "desc_en": "2-hour drive to reach Manang (3,600 m). To secure proper acclimatization, an afternoon hike is scheduled to the turquoise glacial Gangapurna Lake. Overnight in lodge in Manang."
+      },
+      {
+        "day": "5 à 13 (9 jours)",
+        "title": "Expédition Léopard des Neiges – 9 Jours de suivi et de pistage intensif",
+        "title_en": "Snow Leopard Expedition – 9 Days of Intensive Field Tracking",
+        "desc": "Neuf jours complets sur le terrain dédiés au suivi, à la recherche d'indices (empreintes, grattages, proies) et à l'observation du Léopard des neiges dans ses vallées refuges. Chaque jour, départ matinal avec nos pisteurs himalayens expérimentés munis de longues-vues HD. L'itinéraire intègre une flexibilité permettant d'effectuer une journée de césure et de transition culturelle au monastère de Braka Gompa, un site historique majeur vieux de 600 ans.",
+        "desc_en": "Nine full days in the field dedicated to tracking, searching for signs (pugmarks, scrapes, kills), and observing the Snow Leopard in its high-altitude habitat. Daily early morning scouting with veteran Himalayan spotters and high-end scopes. Includes flexible schedule with a cultural transition day visiting the 600-year-old Braka Gompa monastery."
+      },
+      {
+        "day": "14",
+        "title": "Manang – Bandipur : Descente des hautes terres vers la cité Newar",
+        "title_en": "Manang – Bandipur: Descending to the Preserved Newar Town",
+        "desc": "Amorce de la descente des hautes altitudes. Trajet de 6 à 7 heures de route panoramique pour rejoindre Bandipur, un village traditionnel Newar piéton reconnu pour son architecture népalaise remarquablement préservée et son panorama splendide sur les sommets. Nuit sur place.",
+        "desc_en": "Beginning the descent from high altitudes. 6-7 hours scenic drive to Bandipur, a charming, vehicle-free Newar village celebrated for its preserved 18th-century architecture and Himalayan sunset views. Overnight in Bandipur."
+      },
+      {
+        "day": "15",
+        "title": "Bandipur – Katmandou & Soirée libre à Thamel",
+        "title_en": "Bandipur – Kathmandu & Free Evening in Thamel",
+        "desc": "Route de retour vers la vallée de Katmandou (environ 4h de trajet). Installation à l'hôtel et fin de journée libre pour se reposer, flâner dans les ruelles animées du quartier de Thamel et savourer un dîner traditionnel népalais.",
+        "desc_en": "Drive back to Kathmandu Valley (approx. 4h). Hotel check-in and free evening to relax, shop in Thamel's vibrant streets, and enjoy a celebratory farewell dinner."
+      },
+      {
+        "day": "16",
+        "title": "Katmandou : Joyaux du patrimoine mondial UNESCO & Thamel",
+        "title_en": "Kathmandu: UNESCO World Heritage Highlights & Cultural Tour",
+        "desc": "Journée consacrée à la découverte approfondie des grands sites culturels et spirituels de la vallée de Katmandou (stūpa de Swayambhunath, temple sacré de Pashupatinath ou grande place royale). Derniers achats d'artisanat local à Thamel.",
+        "desc_en": "Comprehensive guided tour of Kathmandu Valley's UNESCO World Heritage gems (Swayambhunath Monkey Temple, sacred Pashupatinath, or Durbar Square). Final souvenir shopping in Thamel."
+      },
+      {
+        "day": "17",
+        "title": "Transfert aéroport & Vol retour",
+        "title_en": "Airport Transfer & International Flight Home",
+        "desc": "Transfert privatif à l'aéroport international de Katmandou selon l'horaire de votre vol pour votre départ, avec des souvenirs inoubliables du Fantôme des Montagnes.",
+        "desc_en": "Private transfer to Kathmandu International Airport according to your flight schedule, departing with unforgettable memories of the Mountain Ghost."
+      }
+    ],
+    "gallery": [
+      "/assets/snow-leopard/snow_leopard_portrait.webp",
+      "/assets/snow-leopard/snow_leopard_wild_cliff.webp",
+      "/assets/snow-leopard/annapurna_peaks.jpg",
+      "/assets/snow-leopard/pokhara_lake.webp"
+    ],
+    "daysCount": 17,
+    "departures_type": "scheduled"
+  }
+]

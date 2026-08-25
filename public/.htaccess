@@ -1,0 +1,33 @@
+# =========================================================================
+# JUNGLE NEPAL ADVENTURE - 301 REDIRECTS & SEO CONSERVATION ENGINE
+# =========================================================================
+RewriteEngine On
+RewriteBase /
+
+# 1. Force HTTPS and Non-WWW (or WWW depending on preferred domain)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
+RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
+
+# 2. Universal Trailing Slash & Clean URL Mapping
+# Redirect /page.html to /page
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# Serve existing file or directory directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# 3. 301 Redirects from Old WordPress Slugs to New Clean Slugs
+Redirect 301 /safaris/ /tours/jungle-extreme
+Redirect 301 /parc-national-de-bardia/ /destinations/bardia
+Redirect 301 /parc-national-de-chitwan/ /destinations/chitwan
+Redirect 301 /parc-national-de-suklaphanta/ /destinations/suklaphanta
+Redirect 301 /annapurnas-pokhara/ /destinations/annapurna
+Redirect 301 /katmandou-vallee-des-rois/ /destinations/katmandou
+Redirect 301 /contact-us/ /contact
+Redirect 301 /about-us/ /a-propos
+Redirect 301 /about/ /a-propos
+Redirect 301 /notre-histoire/ /a-propos

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    path { fill: #041d13; }
+    @media (prefers-color-scheme: dark) {
+      path { fill: #ffffff; }
+    }
+  </style>
+  <!-- Stylized Tiger & Mountain Profile Logo Mark -->
+  <path d="M256,48 L140,240 L210,240 L160,330 L256,270 L352,330 L302,240 L372,240 Z M180,360 C120,380 90,430 80,464 C140,464 200,440 256,400 C312,440 372,464 432,464 C422,430 392,380 332,360 C290,390 222,390 180,360 Z"/>
+</svg>

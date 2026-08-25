@@ -1,0 +1,725 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  lang?: string;
+  isDarkHeader?: boolean;
+}
+
+const { 
+  title, 
+  description = "Découvrez le Népal sauvage en micro-groupes (4 à 10 pers). 15 séjours d'exception : safaris à pied à Bardia, tracking du tigre du Bengale, bivouacs en jungle et immersion himalayenne.",
+  image = "/assets/logo_dark.png",
+  lang = "fr",
+  isDarkHeader = false
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="scroll-smooth scroll-pt-24 sm:scroll-pt-28">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>{title} | Jungle Nepal Adventure</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={`https://junglenepal.com${Astro.url.pathname}`} />
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Dancing+Script:wght@700&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,900&family=Great+Vibes&family=Italiana&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Marcellus&family=Pacifico&family=Playfair+Display:ital,wght@1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+
+  <!-- Dynamic Adaptive Favicon (Instant DOM Switcher for Chrome/Safari/Edge) -->
+  <link id="dynamic-favicon" rel="icon" href="/favicon-light.png" type="image/png" />
+  <link rel="icon" href="/favicon-dark.png" media="(prefers-color-scheme: light)" type="image/png" />
+  <link rel="icon" href="/favicon-light.png" media="(prefers-color-scheme: dark)" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script is:inline>
+    (function() {
+      function updateFavicon() {
+        var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var favicon = document.getElementById('dynamic-favicon');
+        if (favicon) {
+          favicon.href = isDark ? '/favicon-light.png?v=2' : '/favicon-dark.png?v=2';
+        }
+      }
+      updateFavicon();
+      if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+      }
+    })();
+  </script>
+
+  <!-- Google Translate In-Place Translation Widget Initialization -->
+  <script is:inline>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr',
+        includedLanguages: 'en,fr,de,es,it,nl',
+        autoDisplay: false,
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={`${title} | Jungle Nepal Adventure`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image} />
+  <meta property="og:type" content="website" />
+
+  <!-- SCHEMA.ORG TRAVEL AGENCY JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "image": "https://junglenepal.com/assets/original_site/tigre_bardia.webp",
+    "description": "Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Traque à pied du tigre du Bengale, panthère des neiges et expéditions sauvages.",
+    "telephone": "+33695413227",
+    "email": "contact@junglenepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    },
+    "priceRange": "490€ - 3890€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "142",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style is:global>
+    html, body { 
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; 
+      top: 0px !important; 
+      position: static !important; 
+      overflow-x: clip;
+      width: 100%;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Touch optimization */
+    button, a, input, select, textarea {
+      touch-action: manipulation;
+    }
+
+    /* Scroll smoothing */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    
+    /* Clean UI - Strip Google Translate Default Banners & Overlays */
+    .goog-te-banner-frame.skiptranslate, iframe.goog-te-banner-frame { display: none !important; }
+    .goog-tooltip, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+    .goog-tooltip:hover { display: none !important; }
+    .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
+    .goog-te-gadget { display: none !important; }
+    body > .skiptranslate { display: none !important; }
+    .goog-te-spinner-pos { display: none !important; }
+  
+  /* High-End Motion & Interaction Primitives */
+  @keyframes subtleRadarPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.8); opacity: 0.2; }
+    100% { transform: scale(2.2); opacity: 0; }
+  }
+
+  @keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-hero-1 { animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+  .animate-hero-2 { animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+  .animate-hero-3 { animation: heroFadeUp 1.0s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
+
+  /* Scroll Reveal Helper Classes */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .map-pin-radar::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 9999px;
+    background-color: rgba(16, 185, 129, 0.6);
+    animation: subtleRadarPulse 2.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Smooth FAQ spring animation */
+  details summary {
+    transition: color 0.2s ease;
+  }
+  details[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+
+  /* Global Sticky Header Anchor Offset Calibration (Fixes sections landing too high) */
+  html {
+    scroll-padding-top: 100px;
+  }
+  @media (min-width: 640px) {
+    html {
+      scroll-padding-top: 120px;
+    }
+  }
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 130px;
+    }
+  }
+
+  [id] {
+    scroll-margin-top: 100px;
+  }
+  @media (min-width: 640px) {
+    [id] {
+      scroll-margin-top: 120px;
+    }
+  }
+  @media (min-width: 1024px) {
+    [id] {
+      scroll-margin-top: 130px;
+    }
+  }
+
+</style>
+
+    <!-- Global Stability & Error Shield -->
+    <script is:inline>
+      window.addEventListener('error', function(e) {
+        if (e.message && (
+          e.message.includes('ResizeObserver') ||
+          e.message.includes('Script error') ||
+          e.message.includes('safari-extension') ||
+          e.message.includes('chrome-extension')
+        )) {
+          e.stopImmediatePropagation();
+          return true;
+        }
+      });
+      // Safe and Precise Smooth Scroll to Anchors with Fixed Header Offset
+      document.addEventListener('DOMContentLoaded', function() {
+        // Handle in-page smooth scrolls
+        document.querySelectorAll('a[href^="#"], a[href^="/index.html#"], a[href^="/#"]').forEach(function(anchor) {
+          anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            var hashIndex = href.indexOf('#');
+            if (hashIndex !== -1) {
+              var targetId = href.substring(hashIndex);
+              var isCurrentPage = (href.startsWith('#') || window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname === '');
+              if (isCurrentPage && targetId.length > 1) {
+                var targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                  e.preventDefault();
+                  var headerOffset = 90;
+                  var elementPosition = targetElement.getBoundingClientRect().top;
+                  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                  if (history.pushState) {
+                    history.pushState(null, null, targetId);
+                  }
+                }
+              }
+            }
+          });
+        });
+
+        // Handle direct incoming page load with #hash in URL
+        if (window.location.hash) {
+          setTimeout(function() {
+            var targetEl = document.querySelector(window.location.hash);
+            if (targetEl) {
+              var headerOffset = 90;
+              var pos = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+              window.scrollTo({ top: pos, behavior: 'smooth' });
+            }
+          }, 150);
+        }
+      });
+    </script>
+
+  </head>
+<body class="bg-[#faf8f5] text-slate-800 font-sans antialiased selection:bg-[#0e8354] selection:text-white">
+  <slot />
+
+  <script is:inline>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+
+  <!-- Hidden Container for Google Translate Core -->
+  
+
+  <script is:inline>
+    // Universal Mobile Menu Toggle
+    window.toggleMobileMenu = function() {
+      var menu = document.getElementById('mobile-menu');
+      if (menu) {
+        var isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        } else {
+          menu.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      }
+    };
+
+    // Universal In-Place Language Switcher
+    function changeLanguage(langCode) {
+      const hostname = window.location.hostname;
+      
+      if (langCode === 'fr') {
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${hostname}; path=/;`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${hostname}; path=/;`;
+        localStorage.setItem('user_lang', 'fr');
+      } else {
+        document.cookie = `googtrans=/fr/${langCode}; path=/;`;
+        document.cookie = `googtrans=/fr/${langCode}; domain=.${hostname}; path=/;`;
+        document.cookie = `googtrans=/fr/${langCode}; domain=${hostname}; path=/;`;
+        localStorage.setItem('user_lang', langCode);
+      }
+
+      const combo = document.querySelector('.goog-te-combo');
+      if (combo) {
+        combo.value = langCode;
+        combo.dispatchEvent(new Event('change'));
+      } else {
+        window.location.reload();
+      }
+
+      updateActiveLangUI(langCode);
+      
+      document.querySelectorAll('.lang-dropdown-box').forEach(el => {
+        el.classList.add('opacity-0', 'pointer-events-none');
+      });
+    }
+
+    function updateActiveLangUI(langCode) {
+      document.querySelectorAll('[data-lang-btn]').forEach(btn => {
+        const code = btn.getAttribute('data-lang-btn');
+        if (code === langCode) {
+          btn.classList.add('bg-white/20', 'text-slate-200');
+          btn.classList.remove('text-slate-300');
+        } else {
+          btn.classList.remove('bg-white/20', 'text-slate-200');
+          btn.classList.add('text-slate-300');
+        }
+      });
+    }
+
+    function toggleLangMenu(button) {
+      const parent = button.closest('.group\\/lang') || button.parentElement;
+      const menu = parent ? parent.querySelector('.lang-dropdown-box') : null;
+      if (menu) {
+        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('pointer-events-none');
+        menu.classList.toggle('opacity-100');
+        menu.classList.toggle('pointer-events-auto');
+      }
+    }
+
+    // Precision Smooth Anchor Scroller with Live Offset
+    document.querySelectorAll('a[href*="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var href = this.getAttribute('href');
+        if (!href) return;
+        var hashIndex = href.indexOf('#');
+        if (hashIndex === -1) return;
+        var hash = href.substring(hashIndex);
+        var path = href.substring(0, hashIndex);
+        
+        if (path === '' || path === '/' || path === window.location.pathname) {
+          if (hash && hash !== '#' && hash !== '#!') {
+            var target = document.querySelector(hash);
+            if (target) {
+              e.preventDefault();
+              var stickyNav = document.getElementById('categories') || document.querySelector('header');
+              var headerOffset = stickyNav ? stickyNav.offsetHeight : 0;
+              var elementPosition = target.getBoundingClientRect().top;
+              var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+              if (history.pushState) {
+                history.pushState(null, null, hash);
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+  <!-- MODAL VOYAGE SUR-MESURE (HAUT DE GAMME & RESPONSIVE) -->
+  <div id="custom-tour-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-md transition-all duration-300 overflow-y-auto">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl sm:rounded-[32px] shadow-2xl border border-slate-200/90 overflow-hidden my-auto max-h-[92vh] flex flex-col animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Top Modal Header -->
+      <div class="relative bg-gradient-to-r from-[#032317] via-[#053222] to-[#032317] text-white p-6 sm:p-8 shrink-0">
+        <!-- Close Button -->
+        <button type="button" onclick="closeCustomTourModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer z-10" aria-label="Fermer la fenêtre">
+          ✕
+        </button>
+
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-slate-200 font-extrabold text-[11px] uppercase tracking-widest border border-white/10 mb-2">
+          <span>Projet sur-mesure & privatisé</span>
+        </span>
+        <h3 class="text-xl sm:text-3xl font-black text-white tracking-tight leading-tight">
+          Concevez votre voyage idéal au Népal
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium leading-relaxed max-w-lg">
+          Itinéraire personnalisé, dates flexibles, safaris exclusifs ou combiné sur-mesure. Pawan et Robin créent votre séjour de A à Z.
+        </p>
+      </div>
+
+      <!-- Scrollable Form Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-5 text-slate-900 flex-1">
+        
+        <!-- Success Alert Notification -->
+        <div id="custom-tour-success" class="hidden p-5 rounded-2xl bg-emerald-900/10 border-2 border-emerald-800/40 text-emerald-950 shadow-xl transition-all">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-base shrink-0 shadow-md">✓</div>
+            <div>
+              <h4 class="font-black text-base text-emerald-950">Demande sur-mesure transmise !</h4>
+              <p class="text-xs text-emerald-800 mt-1 font-medium leading-relaxed">
+                Merci ! Nous avons bien reçu vos souhaits. Robin et notre équipe locale vous recontacteront sous 48h avec une première proposition d'itinéraire chiffrée.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Error Alert Notification -->
+        <div id="custom-tour-error" class="hidden p-4 rounded-2xl bg-rose-500/10 border-2 border-rose-500/40 text-rose-950 shadow-md">
+          <p class="text-xs font-semibold" id="custom-tour-error-text">Une erreur est survenue. Veuillez vérifier vos informations ou nous contacter par WhatsApp.</p>
+        </div>
+
+        <form id="custom-tour-form" onsubmit="handleCustomTourSubmit(event)" class="space-y-4 text-sm">
+          
+          <!-- L'expérience recherchée -->
+          <div>
+            <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
+              Vos priorités de voyage <span class="text-[#0e8354]">*</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs font-semibold">
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Animaux" class="rounded text-[#0e8354] focus:ring-[#0e8354]" checked />
+                <span>Animaux</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Expédition panthère des neiges" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>🐆 Expédition panthère des neiges</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Trekking" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>🥾 Trekking</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Montagne" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>Montagne</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Rencontre avec des locaux" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>🤝 Rencontre avec des locaux</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Vie de village" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>Vie de village</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Culture et temple" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>Culture et temple</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Bivouac jungle" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>Bivouac jungle</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
+                <input type="checkbox" name="custom_priority" value="Photo animalière" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
+                <span>📸 Photo animalière</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Prénom & Nom -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Prénom <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="text" id="custom-firstname" placeholder="Votre prénom" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Nom <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="text" id="custom-lastname" placeholder="Votre nom" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+          </div>
+
+          <!-- Email & WhatsApp -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Email de contact <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="email" id="custom-email" placeholder="nom@email.com" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Téléphone / WhatsApp <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="tel" id="custom-phone" placeholder="+33 6 12 34 56 78" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+          </div>
+
+          <!-- Nombre de voyageurs & Durée estimée -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Nombre de voyageurs
+              </label>
+              <select id="custom-travelers" class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all cursor-pointer">
+                <option value="1 voyageur (Solo)">1 voyageur (Solo)</option>
+                <option value="2 voyageurs (Couple / Duo)" selected>2 voyageurs (Couple / Duo)</option>
+                <option value="3 à 5 personnes (Famille / Amis)">3 à 5 personnes (Famille / Amis)</option>
+                <option value="6 à 10 personnes (Groupe constitué)">6 à 10 personnes (Groupe constitué)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                Durée estimée sur place
+              </label>
+              <select id="custom-duration" class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all cursor-pointer">
+                <option value="5 à 7 jours (Court séjour intensif)">5 à 7 jours (Court séjour intensif)</option>
+                <option value="8 à 12 jours (Safari complet)" selected>8 à 12 jours (Safari complet)</option>
+                <option value="14 à 18 jours (Grand tour immersion)">14 à 18 jours (Grand tour immersion)</option>
+                <option value="3 semaines ou plus">3 semaines ou plus</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Description des souhaits -->
+          <div>
+            <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+              Vos envies & détails du projet <span class="text-[#0e8354]">*</span>
+            </label>
+            <textarea id="custom-notes" rows="3" placeholder="Période envisagée (ex: Octobre 2026), type d'hébergement souhaité, rythme de marche, centres d'intérêt particuliers..." required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
+          </div>
+
+          <!-- Bouton Submit -->
+          <div class="pt-2">
+            <button type="submit" id="custom-tour-submit-btn" class="w-full py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-100 active:scale-95 transition-all text-center cursor-pointer">
+              Envoyer ma demande de voyage sur-mesure →
+            </button>
+            <p class="text-[11px] text-center text-slate-400 mt-2 font-medium">
+              Devis personnalisés sous 48h
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script is:inline>
+    // Universal Custom Tour Modal Controls
+    window.openCustomTourModal = function() {
+      var m = document.getElementById('custom-tour-modal');
+      if (m) {
+        m.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    window.closeCustomTourModal = function() {
+      var m = document.getElementById('custom-tour-modal');
+      if (m) {
+        m.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    };
+
+    // Close on background click
+    document.addEventListener('click', function(e) {
+      var m = document.getElementById('custom-tour-modal');
+      if (m && e.target === m) {
+        closeCustomTourModal();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeCustomTourModal();
+      }
+    });
+
+    // Handle Custom Tour Submission to FormSubmit
+    window.handleCustomTourSubmit = async function(e) {
+      if (e && e.preventDefault) e.preventDefault();
+
+      var btn = document.getElementById('custom-tour-submit-btn');
+      var successBox = document.getElementById('custom-tour-success');
+      var errorBox = document.getElementById('custom-tour-error');
+      var form = document.getElementById('custom-tour-form');
+
+      if (successBox) successBox.classList.add('hidden');
+      if (errorBox) errorBox.classList.add('hidden');
+
+      var prenom = (document.getElementById('custom-firstname')?.value || '').trim();
+      var nom = (document.getElementById('custom-lastname')?.value || '').trim();
+      var email = (document.getElementById('custom-email')?.value || '').trim();
+      var phone = (document.getElementById('custom-phone')?.value || '').trim();
+      var travelers = (document.getElementById('custom-travelers')?.value || '').trim();
+      var duration = (document.getElementById('custom-duration')?.value || '').trim();
+      var notes = (document.getElementById('custom-notes')?.value || '').trim();
+
+      // Collect selected priorities checkboxes
+      var priorities = [];
+      var checkedBoxes = document.querySelectorAll('input[name="custom_priority"]:checked');
+      checkedBoxes.forEach(function(box) { priorities.push(box.value); });
+
+      if (!prenom || !nom || !email || !phone || !notes) {
+        if (errorBox) {
+          document.getElementById('custom-tour-error-text').textContent = 'Veuillez remplir tous les champs obligatoires (*).';
+          errorBox.classList.remove('hidden');
+        }
+        return false;
+      }
+
+      if (btn) {
+        btn.innerHTML = '<span class="inline-flex items-center gap-2"><span>Transmission en cours...</span> <svg class="animate-spin w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg></span>';
+        btn.disabled = true;
+      }
+
+      var payload = {
+        _subject: '🌟 NOUVEAU PROJET SUR-MESURE : ' + prenom + ' ' + nom + ' (' + travelers + ' - ' + duration + ')',
+        _template: 'table',
+        _captcha: 'false',
+        _replyto: email,
+        type_demande: 'Voyage Sur-Mesure & Privatisé',
+        client_nom_complet: prenom + ' ' + nom,
+        email: email,
+        telephone_whatsapp: phone,
+        nombre_voyageurs: travelers,
+        duree_estimee: duration,
+        priorites_choisies: priorities.join(', '),
+        details_du_projet: notes,
+        date_envoi: new Date().toLocaleString('fr-FR')
+      };
+
+      var isSuccess = false;
+      try {
+        var res = await fetch('https://formsubmit.co/ajax/junglenepaladventure@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) isSuccess = true;
+      } catch (err) {
+        console.warn('Custom tour form fetch error:', err);
+      }
+
+      if (!isSuccess) {
+        try {
+          var res2 = await fetch('https://formsubmit.co/junglenepaladventure@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (res2.ok) isSuccess = true;
+        } catch (err2) {}
+      }
+
+      if (isSuccess) {
+        if (form) form.reset();
+        if (successBox) successBox.classList.remove('hidden');
+        if (btn) {
+          btn.innerHTML = '✓ Projet transmis avec succès !';
+          btn.classList.add('bg-emerald-700');
+          setTimeout(function() {
+            closeCustomTourModal();
+            btn.innerHTML = 'Envoyer ma demande de voyage sur-mesure →';
+            btn.classList.remove('bg-emerald-700');
+            btn.disabled = false;
+          }, 3500);
+        }
+      } else {
+        if (errorBox) {
+          errorBox.classList.remove('hidden');
+        }
+        if (btn) {
+          btn.innerHTML = 'Réessayer l\'envoi →';
+          btn.disabled = false;
+        }
+      }
+      return false;
+    };
+  </script>
+
+
+  <!-- Universal Performance-Optimized Scroll Observer -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.08,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+          el.classList.add('revealed');
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

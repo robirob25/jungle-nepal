@@ -1,0 +1,919 @@
+import json
+import os
+
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/processed_tours.json', 'r', encoding='utf-8') as f:
+    tours = json.load(f)
+
+# Curated High-End Images for all 14 tours
+hero_images_curated = {
+    "nepal-sauvage": "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-700x430.png",
+    "nepal-immersion-totale": "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
+    "babai-special": "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
+    "bardia-babai-camping": "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
+    "bardia-explorateur": "https://junglenepal.com/wp-content/uploads/2025/12/P1133754-scaled.jpg",
+    "rafting-safari": "https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg",
+    "bardia-nuit-sauvage": "https://junglenepal.com/wp-content/uploads/2025/03/Ajouter-un-titre-8.webp",
+    "tiji-mustang": "https://junglenepal.com/wp-content/uploads/2017/01/1.png",
+    "chitwan-culture": "https://junglenepal.com/wp-content/uploads/2025/03/68.png",
+    "rara-lake-bardia": "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-2.webp",
+    "chitwan-bardia-complete": "https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png",
+    "carnet-de-voyage": "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg",
+    "jungle-extreme": "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-3.webp",
+    "immersion-spirituelle": "https://junglenepal.com/wp-content/uploads/2017/01/IMG_0177-1-scaled.jpeg"
+}
+
+# Update processed tours with curated hero image
+for t in tours:
+    short_id = t["short_id"]
+    if short_id in hero_images_curated:
+        t["hero_img"] = hero_images_curated[short_id]
+
+# Build the 14 cards HTML for the homepage
+cards_html = ""
+for t in tours:
+    orig_price_html = f'<span class="text-xs text-stone-400 line-through font-normal">{t["original_price"]}</span>' if t.get("original_price") else ""
+    discount_tag = '<span class="text-[10px] font-bold text-amber-900 bg-amber-100/90 px-2 py-0.5 rounded-full border border-amber-200">Promo</span>' if t.get("original_price") else ""
+
+    cards_html += f"""
+        <!-- TRIP CARD: {t['title']} -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,36,25,0.14)] hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between" data-category="{t['category']}" data-title="{t['title'].lower()}">
+          
+          <div class="relative">
+            <!-- Image Frame -->
+            <a href="{t['link']}" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="{t['hero_img']}" 
+                alt="{t['title']}" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+              
+              <!-- Badges Top -->
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-sans font-bold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>{t['badge']}</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-stone-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-medium">
+                  Micro-groupe 4-8
+                </span>
+              </div>
+
+              <!-- Wishlist button -->
+              <button onclick="event.preventDefault(); this.classList.toggle('text-rose-500'); this.classList.toggle('fill-rose-500');" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-rose-500 transition-all z-10" aria-label="Favoris">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+              </button>
+
+              <!-- Bottom overlay on photo -->
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10 font-sans">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span class="font-semibold text-stone-100">{t['duration']}</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-bold px-2.5 py-1 rounded-full shadow">
+                  <i data-lucide="star" class="w-3 h-3 fill-jungle-950"></i>
+                  <span>{t['rating']} ({t['reviews']})</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-stone-50/50">
+            <div>
+              <div class="text-[11px] font-sans font-bold uppercase tracking-widest text-emerald-800 mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-serif font-bold text-xl sm:text-[22px] text-stone-900 group-hover:text-emerald-900 transition-colors leading-snug">
+                <a href="{t['link']}">{t['title']}</a>
+              </h3>
+              <p class="mt-3 text-sm text-stone-600 line-clamp-2 leading-relaxed font-sans font-normal">
+                {t['overview']}
+              </p>
+            </div>
+
+            <!-- Price & Action CTA -->
+            <div class="mt-6 pt-5 border-t border-stone-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-semibold text-stone-400 font-sans">Tarif par voyageur</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-serif font-extrabold text-2xl sm:text-3xl text-jungle-950">{t['price']}</span>
+                  {orig_price_html}
+                  {discount_tag}
+                </div>
+                <p class="text-[11px] text-emerald-800 font-medium font-sans mt-0.5 flex items-center gap-1">
+                  <i data-lucide="check" class="w-3 h-3 text-emerald-600"></i>
+                  <span>Saison 2026 / 2027</span>
+                </p>
+              </div>
+
+              <a href="{t['link']}" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-fire-600 to-fire-500 hover:from-fire-500 hover:to-fire-600 text-white font-sans font-bold text-xs sm:text-sm shadow-md shadow-fire-600/20 hover:shadow-lg hover:shadow-fire-600/35 hover:scale-[1.03] active:scale-95 transition-all">
+                <span>Voir le voyage</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    """
+
+# Generate LUXURY ADVENTURE HOMEPAGE
+homepage_html = f"""<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jungle Nepal Adventure – Safaris Sauvages, Tigres du Bengale & Expéditions d'Exception</title>
+  <meta name="description" content="Découvrez le Népal sauvage et authentique en micro-groupes (4 à 8 pers). Safaris à pied à Bardia, observation des tigres du Bengale, bivouacs en jungle et immersion himalayenne guidés par nos pisteurs natifs.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jungle Nepal Adventure – Safaris de Luxe & Expéditions Sauvages">
+  <meta property="og:description" content="14 séjours immersifs au royaume du tigre du Bengale. Encadrement exclusif par les maîtres pisteurs de Bardia.">
+  <meta property="og:image" content="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display (Serif de Luxe) + Plus Jakarta Sans + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Bespoke Safari & WeRoad Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {{
+      darkMode: 'class',
+      theme: {{
+        extend: {{
+          fontFamily: {{
+            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+          }},
+          colors: {{
+            jungle: {{
+              50: '#f1f7f4',
+              100: '#deece4',
+              200: '#c0dcce',
+              300: '#94c4b1',
+              400: '#64a68f',
+              500: '#418a74',
+              600: '#2f6f5d',
+              700: '#26594b',
+              800: '#1e483d',
+              900: '#14312a',
+              950: '#0a1d18', // Deepest Safari Green
+            }},
+            fire: {{
+              500: '#f97316',
+              600: '#ea580c', // WeRoad coral
+              700: '#c2410c',
+            }},
+            safari: {{
+              50: '#faf8f5',
+              100: '#f4efe6',
+              200: '#e8ddce',
+              300: '#d7c4aa',
+              400: '#c2a584',
+              500: '#b08b63',
+              600: '#997350',
+              700: '#7c5a3e',
+              800: '#654a36',
+              900: '#533e2f',
+              950: '#2e2017',
+            }},
+            gold: {{
+              300: '#fae19c',
+              400: '#f5cb60',
+              500: '#e5b02e',
+              600: '#c88e20',
+            }}
+          }}
+        }}
+      }}
+    }}
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar {{ display: none; }}
+    .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
+  </style>
+</head>
+<body class="bg-safari-50 text-stone-800 font-sans antialiased selection:bg-jungle-900 selection:text-amber-200">
+
+  <!-- ========================================================================= -->
+  <!-- 1. TOP ANNOUNCEMENT BAR (WeRoad / Safari Luxury) -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Bannière d'information" class="bg-jungle-950 text-stone-200 text-xs py-2 px-4 sticky top-0 z-50 border-b border-white/10 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+        <span class="inline-flex items-center justify-center bg-fire-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">
+          Saison 2026-2027
+        </span>
+        <span class="font-medium text-stone-300 hidden sm:inline">
+          🇳🇵 <strong>14 circuits en micro-groupes (4 à 8 pers.)</strong> ou départs privatisés sur-mesure.
+        </span>
+        <span class="text-gold-400 font-semibold">
+          • Réduction -100€ code <span class="bg-white/10 px-1.5 py-0.5 rounded text-white border border-white/20">JUNGLE100</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 shrink-0">
+        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20vos%20safaris%20au%20Népal" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1.5 text-emerald-300 hover:text-white transition-colors text-xs">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp : <strong>+33 6 95 41 32 27</strong> (Robin)</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. NAVBAR LUXE IMMERSIVE -->
+  <!-- ========================================================================= -->
+  <header id="main-nav" class="fixed top-8 left-0 right-0 z-40 transition-all duration-300 py-3.5 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div id="nav-container" class="flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-300 bg-jungle-950/80 backdrop-blur-xl border border-white/15 text-white shadow-2xl">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-jungle-950 flex items-center justify-center text-amber-300 border border-amber-400/30 group-hover:scale-105 transition-transform shadow-md">
+            <i data-lucide="footprints" class="w-5 h-5"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif font-bold text-lg sm:text-xl tracking-tight text-white leading-none">
+              JUNGLE NEPAL
+            </span>
+            <span class="text-[9px] font-sans font-bold tracking-widest text-amber-300 uppercase mt-0.5">
+              Adventure • Safaris d'Exception
+            </span>
+          </div>
+        </a>
+
+        <!-- Links -->
+        <nav class="hidden lg:flex items-center gap-1 font-sans text-sm font-semibold text-stone-200">
+          <a href="#prochains-departs" class="px-4 py-2 rounded-full hover:bg-white/10 transition-colors flex items-center gap-1.5">
+            <span>Les 14 Séjours</span>
+            <span class="bg-fire-600 text-white text-[10px] font-bold px-2 py-0.2 rounded-full">14</span>
+          </a>
+          <a href="#concept" class="px-4 py-2 rounded-full hover:bg-white/10 transition-colors">
+            L'Esprit Safari Sauvage
+          </a>
+          <a href="#pisteurs" class="px-4 py-2 rounded-full hover:bg-white/10 transition-colors">
+            Maîtres Pisteurs (BBC)
+          </a>
+          <a href="#avis" class="px-4 py-2 rounded-full hover:bg-white/10 transition-colors flex items-center gap-1">
+            <span>Avis</span>
+            <span class="text-amber-400 text-xs">★ 4.9/5</span>
+          </a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="flex items-center gap-3">
+          <button onclick="openCustomTripModal()" class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-white/20 border border-white/20 transition-all text-stone-200 hover:text-white">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-300"></i>
+            <span>Privatisation & Sur-mesure</span>
+          </button>
+
+          <a href="#prochains-departs" class="inline-flex items-center gap-2 bg-gradient-to-r from-fire-600 to-fire-500 hover:from-fire-500 hover:to-fire-600 text-white text-xs sm:text-sm font-sans font-bold px-5 py-2.5 rounded-full shadow-lg shadow-fire-600/30 hover:scale-[1.02] active:scale-95 transition-all">
+            <span>Explorer les départs</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white" aria-label="Menu">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden mt-2 max-w-7xl mx-auto">
+      <div class="bg-jungle-950/95 backdrop-blur-2xl border border-white/15 rounded-2xl p-5 text-white space-y-4 shadow-2xl">
+        <nav class="flex flex-col space-y-2 font-sans font-semibold text-base">
+          <a href="#prochains-departs" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg hover:bg-white/10 flex items-center justify-between">
+            <span>🐾 Tous les 14 circuits 2026/2027</span>
+            <span class="bg-fire-600 text-xs px-2 py-0.5 rounded-full">14</span>
+          </a>
+          <a href="#concept" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg hover:bg-white/10">
+            🧭 L'Esprit Jungle & Éthique
+          </a>
+          <a href="#pisteurs" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg hover:bg-white/10">
+            🐅 Nos Maîtres Pisteurs
+          </a>
+          <a href="#avis" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg hover:bg-white/10">
+            ⭐ Avis Voyageurs Vérifiés (4.9/5)
+          </a>
+        </nav>
+        <div class="pt-3 border-t border-white/10 flex flex-col gap-2">
+          <button onclick="toggleMobileMenu(); openCustomTripModal()" class="w-full py-3 rounded-xl bg-fire-600 font-sans font-bold text-sm text-center shadow-lg shadow-fire-600/30">
+            Créer mon séjour sur-mesure ✨
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 3. HERO SECTION HAUTE COUTURE (Magazine & WeRoad Vibe) -->
+  <!-- ========================================================================= -->
+  <section class="relative min-h-screen flex items-center justify-center pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-jungle-950">
+    
+    <!-- Background Cinema Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" 
+        alt="Tigre du Bengale dans la brume matinale du Parc National de Bardia au Népal" 
+        class="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-105"
+      />
+      <!-- Luxury Ambient Gradients -->
+      <div class="absolute inset-0 bg-gradient-to-t from-jungle-950 via-jungle-950/65 to-black/60"></div>
+      <div class="absolute inset-0 bg-radial-at-c from-transparent via-jungle-950/40 to-jungle-950/90"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+      
+      <!-- Trust Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-amber-400/30 text-stone-100 text-xs sm:text-sm font-sans font-medium mb-6 shadow-xl">
+        <span class="flex h-2 w-2 rounded-full bg-amber-400 animate-ping"></span>
+        <span class="text-amber-300 font-semibold tracking-wide uppercase text-[11px]">Expéditions & Safaris Éco-Responsables</span>
+        <span class="text-white/40">•</span>
+        <span class="text-stone-200 flex items-center gap-1">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> 4.9/5 (100% Avis Vérifiés)
+        </span>
+      </div>
+
+      <!-- Main Headline Editorial Serif -->
+      <h1 class="font-serif font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-tight leading-[1.08] max-w-4xl drop-shadow-2xl">
+        L'Appel Sauvage <br/>
+        <span class="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-300 to-amber-100">
+          du Népal Secret.
+        </span>
+      </h1>
+
+      <!-- Refined Subtitle -->
+      <p class="mt-6 text-base sm:text-xl text-stone-200 max-w-2xl font-sans font-normal leading-relaxed drop-shadow">
+        Safaris à pied dans les territoires inviolés de Bardia, tracking du tigre du Bengale et bivouacs sous la canopée. En micro-groupes de <strong>4 à 8 explorateurs</strong>.
+      </p>
+
+      <!-- WeRoad Premium Luxury Floating Bar -->
+      <div class="w-full max-w-4xl mt-10 p-3 sm:p-4 rounded-3xl bg-white/95 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] border border-white/50 text-left text-stone-900">
+        <form onsubmit="handleSearch(event)" class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+          
+          <div class="md:col-span-4 p-3 rounded-2xl hover:bg-stone-100/80 transition-colors cursor-pointer border border-stone-200/60 md:border-transparent">
+            <label class="block text-[11px] font-sans font-bold uppercase tracking-wider text-stone-500">
+              Expérience recherchée
+            </label>
+            <div class="flex items-center gap-2 mt-1">
+              <i data-lucide="compass" class="w-4 h-4 text-emerald-800 shrink-0"></i>
+              <select id="search-dest" class="w-full bg-transparent font-sans font-bold text-sm sm:text-base text-stone-900 focus:outline-none cursor-pointer">
+                <option value="all">Tous les 14 circuits</option>
+                <option value="safari">Tigres & Jungle de Bardia (Pistage à pied)</option>
+                <option value="bivouac">Bivouac & Camping Sauvage (Babai)</option>
+                <option value="chitwan">Chitwan (Rhinocéros & Pirogue)</option>
+                <option value="trek">Haut-Mustang & Lac Rara (Himalaya)</option>
+                <option value="rafting">Rivières Sauvages Karnali (Rafting)</option>
+                <option value="culture">Culture Tharu, Yoga & Carnet de Dessin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="hidden md:block w-[1px] h-10 bg-stone-200"></div>
+
+          <div class="md:col-span-4 p-3 rounded-2xl hover:bg-stone-100/80 transition-colors cursor-pointer border border-stone-200/60 md:border-transparent">
+            <label class="block text-[11px] font-sans font-bold uppercase tracking-wider text-stone-500">
+              Période de départ
+            </label>
+            <div class="flex items-center gap-2 mt-1">
+              <i data-lucide="calendar" class="w-4 h-4 text-emerald-800 shrink-0"></i>
+              <select id="search-date" class="w-full bg-transparent font-sans font-bold text-sm sm:text-base text-stone-900 focus:outline-none cursor-pointer">
+                <option value="all">Saison 2026 - 2027 (Oct - Juin)</option>
+                <option value="autumn">Automne 2026 (Octobre - Décembre)</option>
+                <option value="winter">Hiver 2026/2027 (Janvier - Février)</option>
+                <option value="spring">Printemps 2027 (Mars - Mai • Pic d'observation)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="md:col-span-3 flex items-center">
+            <button type="submit" class="w-full h-14 bg-gradient-to-r from-fire-600 to-fire-500 hover:from-fire-500 hover:to-fire-600 text-white font-sans font-bold text-base rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-fire-600/30 hover:scale-[1.02] active:scale-95 transition-all">
+              <i data-lucide="search" class="w-5 h-5"></i>
+              <span>Rechercher</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Trust Pillars Badges -->
+      <div class="mt-12 pt-8 border-t border-white/15 w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-stone-200 text-left sm:text-center">
+        <div class="p-3.5 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10">
+          <p class="font-serif font-bold text-xl sm:text-2xl text-amber-300">4 à 8 Max</p>
+          <p class="text-xs text-stone-300 font-sans mt-0.5">Pour un silence & une discrétion totale</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10">
+          <p class="font-serif font-bold text-xl sm:text-2xl text-emerald-400">BBC Wildlife</p>
+          <p class="text-xs text-stone-300 font-sans mt-0.5">Consultants faune documentaires</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10">
+          <p class="font-serif font-bold text-xl sm:text-2xl text-amber-300">100% Local</p>
+          <p class="text-xs text-stone-300 font-sans mt-0.5">Retombées directes pour les villages</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10">
+          <p class="font-serif font-bold text-xl sm:text-2xl text-emerald-400">Sur-mesure</p>
+          <p class="text-xs text-stone-300 font-sans mt-0.5">Coordinateur français dédié (Robin)</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. CARROUSEL DE FILTRES THÉMATIQUES -->
+  <!-- ========================================================================= -->
+  <section id="categories" class="py-6 bg-white border-b border-stone-200/80 sticky top-[70px] z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1">
+        
+        <button onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-jungle-950 text-amber-300 font-sans font-bold text-xs sm:text-sm whitespace-nowrap shadow-sm hover:scale-105 transition-all" data-filter="all">
+          <i data-lucide="compass" class="w-4 h-4"></i>
+          <span>Tous les séjours</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-sans">14</span>
+        </button>
+
+        <button onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="safari">
+          <span>🐅</span>
+          <span>Safaris & Pistage Bardia</span>
+        </button>
+
+        <button onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="bivouac">
+          <span>⛺</span>
+          <span>Bivouacs & Nuits Sauvages</span>
+        </button>
+
+        <button onclick="filterTrips('chitwan')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="chitwan">
+          <span>🦏</span>
+          <span>Chitwan & Rhinocéros</span>
+        </button>
+
+        <button onclick="filterTrips('trek')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="trek">
+          <span>🏔️</span>
+          <span>Treks & Lac Rara</span>
+        </button>
+
+        <button onclick="filterTrips('culture')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="culture">
+          <span>🕉️</span>
+          <span>Culture, Yoga & Carnet de Voyage</span>
+        </button>
+
+        <button onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-sans font-semibold text-xs sm:text-sm whitespace-nowrap transition-all" data-filter="rafting">
+          <span>🚣</span>
+          <span>Rafting Karnali</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. GRILLE DES 14 EXPÉDITIONS WEROAD (Design Haute Horlogerie) -->
+  <!-- ========================================================================= -->
+  <section id="prochains-departs" class="py-16 sm:py-24 bg-safari-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-sans font-bold uppercase tracking-wider text-emerald-900 bg-emerald-100 px-3 py-1 rounded-full mb-3">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-700"></i>
+            <span>Départs Garantis • Petits Groupes 4-8 Explorateurs</span>
+          </div>
+          <h2 class="font-serif font-extrabold text-3xl sm:text-4xl md:text-5xl text-stone-900 tracking-tight">
+            Les 14 Séjours Immersifs au Népal
+          </h2>
+          <p class="mt-3 text-base text-stone-600 max-w-2xl font-sans">
+            Sélectionnez votre aventure pour explorer le détail jour par jour, la fiche d'inclusions et réserver votre place.
+          </p>
+        </div>
+
+        <div>
+          <span id="trip-count-badge" class="text-xs sm:text-sm font-sans font-bold text-stone-700 bg-white px-4 py-2.5 rounded-full border border-stone-200 shadow-sm">
+            Affichage de <strong>14 séjours</strong>
+          </span>
+        </div>
+      </div>
+
+      <!-- 14 CARDS GRID -->
+      <div id="trips-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {cards_html}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. SECTION ÉDITORIALE "L'ESPRIT SAFARI SAUVAGE" -->
+  <!-- ========================================================================= -->
+  <section id="concept" class="py-20 sm:py-28 bg-jungle-950 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-sans font-bold uppercase tracking-widest text-amber-300 bg-white/10 px-3.5 py-1 rounded-full mb-3 border border-amber-300/30">
+          La Différence Jungle Nepal
+        </span>
+        <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          L'anti-tourisme de masse.
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-stone-300 leading-relaxed font-sans font-normal">
+          Nous refusons les jeeps bondées et les itinéraires aseptisés. Nous proposons une connexion brute avec le monde sauvage, dans le respect sacré des animaux et des peuples du Terai.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="rounded-3xl p-8 bg-white/5 backdrop-blur-md border border-white/10 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 mb-6">
+              <i data-lucide="eye" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif font-bold text-2xl text-white">Le Pistage Silencieux</h3>
+            <p class="mt-3 text-stone-300 text-sm leading-relaxed font-sans">
+              Apprenez à déchiffrer les empreintes dans la rosée du matin, à écouter le cri d'alarme du cerf chital et à pister le tigre à pied en toute humilité.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-amber-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Encadrement double pisteur d'élite</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl p-8 bg-white/5 backdrop-blur-md border border-white/10 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-400/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 mb-6">
+              <i data-lucide="users" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif font-bold text-2xl text-white">4 à 8 Voyageurs</h3>
+            <p class="mt-3 text-stone-300 text-sm leading-relaxed font-sans">
+              La taille idéale pour voyager entre passionnés du même état d'esprit. Une atmosphère chaleureuse au coin du feu et des souvenirs gravés à vie.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-emerald-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Ambiance intime & cohésion</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl p-8 bg-white/5 backdrop-blur-md border border-white/10 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-fire-500/20 border border-fire-500/40 flex items-center justify-center text-fire-400 mb-6">
+              <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif font-bold text-2xl text-white">100% Impact Local</h3>
+            <p class="mt-3 text-stone-300 text-sm leading-relaxed font-sans">
+              Sans intermédiaire financier en Europe. Votre séjour finance directement les pisteurs indigènes Tharu, l'éducation locale et la protection des parcs.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-fire-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Écotourisme certifié et éthique</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. MAÎTRES PISTEURS & ÉQUIPE FONDATRICE -->
+  <!-- ========================================================================= -->
+  <section id="pisteurs" class="py-20 sm:py-28 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-sans font-bold uppercase tracking-widest text-emerald-900 bg-emerald-100 px-3.5 py-1 rounded-full mb-3">
+          Une Alliance Unique Népal - France
+        </span>
+        <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-stone-900 tracking-tight">
+          Nos Maîtres Pisteurs & Organisateurs
+        </h2>
+        <p class="mt-3 text-base text-stone-600 font-sans">
+          Plus de 20 ans d'expérience du terrain combinés à une conciergerie francophone 24h/24.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-stone-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-jungle-900 via-amber-400 to-fire-600 shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/12/1.png" alt="Pawan - Chef Pisteur" class="w-full h-full object-cover rounded-full"/>
+          </div>
+          <h3 class="font-serif font-bold text-2xl text-stone-900">Pawan</h3>
+          <p class="text-xs font-sans font-bold text-fire-600 uppercase tracking-wider mt-1">Chef Pisteur & Expert Faune (BBC Wildlife)</p>
+          <p class="mt-3 text-sm text-stone-600 leading-relaxed font-sans">
+            Natif de Bardia, ancien Président de l'Association des Guides. Il a guidé les équipes documentaires de la BBC et connaît chaque recoin du sanctuaire.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-stone-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-emerald-600 via-stone-400 to-jungle-950 shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/03/Ajouter-un-titre-1720-x-1080-px-1024x643.png" alt="Kiran" class="w-full h-full object-cover rounded-full"/>
+          </div>
+          <h3 class="font-serif font-bold text-2xl text-stone-900">Kiran</h3>
+          <p class="text-xs font-sans font-bold text-emerald-800 uppercase tracking-wider mt-1">Co-Fondateur & Pionnier Écotourisme</p>
+          <p class="mt-3 text-sm text-stone-600 leading-relaxed font-sans">
+            Pionnier du tourisme d'aventure responsable au Népal depuis plus de 20 ans. Il orchestre la logistique des camps et les relations avec les villages.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-stone-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-amber-400 via-fire-500 to-jungle-950 shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png" alt="Robin" class="w-full h-full object-cover rounded-full"/>
+          </div>
+          <h3 class="font-serif font-bold text-2xl text-stone-900">Robin</h3>
+          <p class="text-xs font-sans font-bold text-fire-600 uppercase tracking-wider mt-1">Coordinateur Voyageurs & Relations France</p>
+          <p class="mt-3 text-sm text-stone-600 leading-relaxed font-sans">
+            Passionné de faune sauvage. Votre contact privilégié en français avant et pendant votre voyage pour concevoir le séjour parfait.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. AVIS CLIENTS VÉRIFIÉS (4.9/5) -->
+  <!-- ========================================================================= -->
+  <section id="avis" class="py-20 sm:py-28 bg-safari-100 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="flex items-center justify-center gap-1 text-amber-500 mb-2">
+          <i data-lucide="star" class="w-5 h-5 fill-amber-500"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-500"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-500"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-500"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-500"></i>
+        </div>
+        <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-stone-900 tracking-tight">
+          Ce que disent nos explorateurs
+        </h2>
+        <p class="mt-3 text-base text-stone-600 font-sans">
+          Note globale <strong>4.9 / 5</strong> sur Google Reviews • Avis 100% Vérifiés
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="rounded-3xl p-8 bg-white border border-stone-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 gap-1 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-stone-700 text-sm sm:text-base leading-relaxed italic font-serif">
+              « Choisir Jungle Nepal Adventure pour découvrir ce pays sous l'angle de sa vie sauvage, c'est la meilleure décision. Voir des tigres et rhinos en liberté avec Pawan est magique ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3 font-sans">
+            <div class="w-10 h-10 rounded-full bg-jungle-900 text-amber-300 font-bold flex items-center justify-center text-sm shadow">SG</div>
+            <div>
+              <p class="font-bold text-sm text-stone-900">Samantha Gonthier</p>
+              <p class="text-xs text-stone-500">Voyage en micro-groupe • Bardia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl p-8 bg-white border border-stone-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 gap-1 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-stone-700 text-sm sm:text-base leading-relaxed italic font-serif">
+              « Je reviens de 15 jours au Népal... ce que je retiens avant tout, c'est l'humain. Une équipe sincère et dévouée. On ne se sent jamais comme un simple client. Une expérience rare ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3 font-sans">
+            <div class="w-10 h-10 rounded-full bg-fire-600 text-white font-bold flex items-center justify-center text-sm shadow">AN</div>
+            <div>
+              <p class="font-bold text-sm text-stone-900">Adrien Noat</p>
+              <p class="text-xs text-stone-500">Circuit Népal Sauvage 15 jours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl p-8 bg-white border border-stone-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 gap-1 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-stone-700 text-sm sm:text-base leading-relaxed italic font-serif">
+              « Un voyage gravé à vie. Séjourner chez l'habitant au milieu de la jungle de Bardia est une expérience hors du commun. Merci à toute l'équipe pour ces précieux souvenirs ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3 font-sans">
+            <div class="w-10 h-10 rounded-full bg-emerald-800 text-white font-bold flex items-center justify-center text-sm shadow">AP</div>
+            <div>
+              <p class="font-bold text-sm text-stone-900">Alice Palasti</p>
+              <p class="text-xs text-stone-500">Immersion chez l'habitant & Jungle</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. FOOTER DE LUXE -->
+  <!-- ========================================================================= -->
+  <footer class="bg-jungle-950 text-stone-300 pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-16 border-b border-white/10 text-sm font-sans">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow">
+              <i data-lucide="footprints" class="w-5 h-5"></i>
+            </div>
+            <span class="font-serif font-bold text-xl text-white">Jungle Nepal Adventure</span>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed">
+            Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-sans font-bold text-white text-xs uppercase tracking-widest mb-4">Contact Direct</h4>
+          <p class="text-xs text-stone-300">WhatsApp / Tél : <strong>+33 6 95 41 32 27</strong></p>
+          <p class="text-xs text-stone-300 mt-1">Email : <strong>contact@junglenepal.com</strong></p>
+          <p class="text-xs text-stone-400 mt-2">Bardia National Park, Népal</p>
+        </div>
+
+        <div>
+          <h4 class="font-sans font-bold text-white text-xs uppercase tracking-widest mb-4">14 Circuits Disponibles</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Bardia, Chitwan, Babai, Mustang, Lac Rara, Karnali Rafting, Yoga & Carnet de dessin.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-sans font-bold text-white text-xs uppercase tracking-widest mb-4">Garanties & Confiance</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Acompte de 30% • Annulation flexible • Retombées 100% locales • Pisteurs certifiés BBC Wildlife.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-sans">
+        <p>© 2026 Jungle Nepal Adventure. Tous droits réservés.</p>
+        <p class="text-amber-300 font-medium">Créé avec passion pour le Népal sauvage 🇳🇵</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL SUR-MESURE -->
+  <!-- ========================================================================= -->
+  <div id="custom-trip-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-stone-200 relative text-stone-900 max-h-[90vh] overflow-y-auto font-sans">
+      <button onclick="closeCustomTripModal()" class="absolute top-5 right-5 p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-500">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-serif font-black text-2xl text-stone-950">Séjour Privatisé & Sur-Mesure</h3>
+          <p class="text-xs text-stone-500 font-sans">Étude personnalisée sous 24h avec Robin & Pawan.</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleCustomTripSubmit(event)" class="space-y-4 text-sm mt-4 font-sans">
+        <div>
+          <label class="block font-bold text-xs uppercase text-stone-600 mb-1">Nombre de voyageurs</label>
+          <select class="w-full p-3 rounded-xl border border-stone-200 font-medium focus:ring-2 focus:ring-jungle-800">
+            <option>1 personne (Solo)</option>
+            <option selected>2 personnes (Couple / Duo)</option>
+            <option>3 à 5 personnes (Famille / Amis)</option>
+            <option>6 personnes et plus</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-bold text-xs uppercase text-stone-600 mb-1">Vos coordonnées</label>
+          <div class="grid grid-cols-2 gap-3 mb-2">
+            <input type="text" placeholder="Nom complet" required class="p-3 rounded-xl border border-stone-200 font-medium focus:ring-2 focus:ring-jungle-800">
+            <input type="tel" placeholder="Téléphone / WhatsApp" required class="p-3 rounded-xl border border-stone-200 font-medium focus:ring-2 focus:ring-jungle-800">
+          </div>
+          <input type="email" placeholder="Adresse email" required class="w-full p-3 rounded-xl border border-stone-200 font-medium focus:ring-2 focus:ring-jungle-800">
+        </div>
+
+        <div>
+          <label class="block font-bold text-xs uppercase text-stone-600 mb-1">Vos envies particulières</label>
+          <textarea rows="3" placeholder="Parcs souhaités, dates idéales, durée..." class="w-full p-3 rounded-xl border border-stone-200 font-medium focus:ring-2 focus:ring-jungle-800 text-xs"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-2xl bg-fire-600 hover:bg-fire-500 text-white font-bold text-base shadow-xl shadow-fire-600/30">
+          Envoyer ma demande à l'équipe locale →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const nav = document.getElementById('main-nav');
+    const navContainer = document.getElementById('nav-container');
+
+    window.addEventListener('scroll', () => {{
+      if (window.scrollY > 40) {{
+        nav.classList.add('top-0');
+        nav.classList.remove('top-8');
+      }} else {{
+        nav.classList.remove('top-0');
+        nav.classList.add('top-8');
+      }}
+    }});
+
+    function toggleMobileMenu() {{
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }}
+
+    function filterTrips(category) {{
+      const cards = document.querySelectorAll('.trip-card');
+      const pills = document.querySelectorAll('.category-pill');
+      let visibleCount = 0;
+
+      pills.forEach(pill => {{
+        if (pill.dataset.filter === category) {{
+          pill.classList.add('bg-jungle-950', 'text-amber-300');
+          pill.classList.remove('bg-stone-100', 'text-stone-800');
+        }} else {{
+          pill.classList.remove('bg-jungle-950', 'text-amber-300');
+          pill.classList.add('bg-stone-100', 'text-stone-800');
+        }}
+      }});
+
+      cards.forEach(card => {{
+        const cardCategories = card.dataset.category || '';
+        if (category === 'all' || cardCategories.includes(category)) {{
+          card.style.display = 'flex';
+          visibleCount++;
+        }} else {{
+          card.style.display = 'none';
+        }}
+      }});
+
+      document.getElementById('trip-count-badge').innerHTML = `Affichage de <strong>${{visibleCount}} circuit${{visibleCount > 1 ? 's' : ''}}</strong>`;
+    }}
+
+    function handleSearch(e) {{
+      e.preventDefault();
+      const dest = document.getElementById('search-dest').value;
+      filterTrips(dest);
+      document.getElementById('prochains-departs').scrollIntoView({{ behavior: 'smooth' }});
+    }}
+
+    function openCustomTripModal() {{
+      document.getElementById('custom-trip-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }}
+
+    function closeCustomTripModal() {{
+      document.getElementById('custom-trip-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }}
+
+    function handleCustomTripSubmit(e) {{
+      e.preventDefault();
+      alert('🙏 Namasté ! Votre demande a été transmise directement à Robin et Pawan.');
+      closeCustomTripModal();
+    }}
+  </script>
+</body>
+</html>
+"""
+
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/index.html', 'w', encoding='utf-8') as f:
+    f.write(homepage_html)
+
+print("Redesigned Luxury Adventure Homepage successfully generated!")

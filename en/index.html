@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jungle Nepal Adventure – Safaris Sauvages, Tigres du Bengale & Treks au Népal</title>
+  <meta name="description" content="Découvrez le Népal sauvage en micro-groupes (4 à 8 pers). 14 trips d'exception : safaris à pied à Bardia, tracking du tigre du Bengale, bivouacs en jungle et immersion himalayenne.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jungle Nepal Adventure – Safaris & Expéditions Sauvages">
+  <meta property="og:description" content="14 trips immersifs au royaume du tigre du Bengale. Guidance & Trackers exclusif par les maîtres pisteurs de Bardia.">
+  <meta property="og:image" content="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- WeRoad Exact Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            jungle: {
+              50: '#f1f7f4',
+              100: '#deece4',
+              200: '#c0dcce',
+              300: '#94c4b1',
+              400: '#64a68f',
+              500: '#109363',
+              600: '#0e8354', // Main Signature Brand Green
+              700: '#0c6d46',
+              800: '#0a5235',
+              900: '#083c27',
+              950: '#041d13', // Deep Night Jungle
+            },
+            emeraldbrand: {
+              500: '#109363',
+              600: '#0e8354',
+              700: '#0c6d46',
+            },
+            safari: {
+              50: '#faf8f5',
+              100: '#f4efe6',
+              200: '#e8ddce',
+              300: '#d7c4aa',
+              400: '#c2a584',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-safari-50 text-slate-800 font-sans antialiased selection:bg-jungle-950 selection:text-amber-200">
+
+  <!-- ========================================================================= -->
+  <!-- 1. TOP ANNOUNCEMENT BANNER (Luxe Emerald & Gold Identity) -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Bannière d'information" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2.5 px-4 font-bold relative z-50 text-center border-b border-emerald-500/20 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="w-6 hidden sm:block"></div>
+      <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+        <span>🐅 <strong>Saison 2026-2027</strong> : Départs garantis en micro-groupes (4-8 pers) • <strong>-100€ de réduction</strong> avec le code <span class="bg-white/15 px-2 py-0.5 rounded text-amber-300 font-black border border-amber-300/30">JUNGLE100</span></span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-base leading-none px-1" aria-label="Fermer">✕</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HEADER TRANSPARENT WEROAD AVEC VOTRE VRAI LOGO -->
+  <!-- ========================================================================= -->
+  <header class="absolute top-[40px] left-0 right-0 z-40 px-6 sm:px-12 lg:px-16 py-4 flex items-center justify-between text-white">
+    
+    <!-- Left: Votre Logo Intégré (Tigre & Montagnes) -->
+    <a href="#" class="flex items-center gap-3 group shrink-0">
+      <img 
+        src="../assets/logo.png" 
+        alt="Jungle Nepal Adventure Logo" 
+        class="h-14 sm:h-16 w-auto object-contain filter drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform"
+      />
+    </a>
+
+    <!-- Center: Navigation épurée blanche -->
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-bold text-white/90 drop-shadow">
+      <a href="#prochains-departs" class="hover:text-amber-300 transition-colors">Départs</a>
+      <div class="relative group py-2">
+          <a href="/en/destinations/index.html" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
+            <span>Destinations</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <!-- Menu Déroulant 100% OPAQUE & LISIBLE -->
+          <div class="absolute top-full left-0 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+            <div style="background-color: #041d13 !important; color: #ffffff !important;" class="rounded-3xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] border border-emerald-500/30 space-y-1">
+              
+              <a href="/en/destinations/bardia.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🐅
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Bardia National Park</p>
+                  <p class="text-[10px] text-slate-400">Bengal Tigers & Walking Safaris</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/chitwan.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🦏
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Chitwan National Park</p>
+                  <p class="text-[10px] text-slate-400">One-Horned Rhinos & River Canoes</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/suklaphanta.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🦌
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Suklaphanta National Park</p>
+                  <p class="text-[10px] text-slate-400">Swamp Deer & Untamed Wild West</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/annapurna.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🏔️
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Annapurna Range & Pokhara</p>
+                  <p class="text-[10px] text-slate-400">Sacred Peaks & Alpine Balconies</p>
+                </div>
+              </a>
+
+              <a href="/en/destinations/katmandou.html" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-white/10 transition-colors group/item">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-[#10b981] flex items-center justify-center font-bold text-sm shrink-0">
+                  🕉️
+                </div>
+                <div class="flex-1">
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-300 transition-colors">Kathmandu Valley</p>
+                  <p class="text-[10px] text-slate-400">Valley of Gods & Sacred Temples</p>
+                </div>
+              </a>
+
+              <div class="pt-2 border-t border-white/10 mt-1">
+                <a href="/en/destinations/index.html" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow">
+                  View All Destinations →
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      <a href="#concept" class="hover:text-amber-300 transition-colors">L'esprit safari</a>
+      <a href="#pisteurs" class="hover:text-amber-300 transition-colors">Maîtres pisteurs</a>
+      <a href="/en/a-propos.html" class="hover:text-amber-300 transition-colors font-extrabold">About Us</a>
+      <a href="/en/contact.html" class="hover:text-amber-300 transition-colors">Contact Us</a>
+    </nav>
+
+    <!-- Right: Globe + WhatsApp Button Blanc -->
+    <div class="flex items-center gap-4">
+      <!-- LANGUAGE SWITCHER (GLOBE) -->
+      <div class="relative group/lang py-1">
+        <button onclick="toggleLangMenu(this)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 border-white/20 text-white border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Changer de langue / Change language">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </button>
+        <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-44 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
+          <div style="background-color: #041d13 !important;" class="border border-emerald-500/30 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-0.5 text-xs font-bold text-white">
+            <a href="/en/index.html" onclick="setLanguagePref('fr')" class="lang-btn-fr w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
+              <span class="flex items-center gap-2"><span>🇫🇷</span><span>Français</span></span>
+              
+            </a>
+            <a href="/en/index.html" onclick="setLanguagePref('en')" class="lang-btn-en w-full flex items-center justify-between px-3 py-2 rounded-xl bg-white/15 text-[#10b981] transition-colors text-left cursor-pointer">
+              <span class="flex items-center gap-2"><span>🇬🇧</span><span>English</span></span>
+              <svg class="w-3.5 h-3.5 text-[#10b981]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20vos%20trips%20au%20Népal" target="_blank" class="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-slate-950 font-extrabold text-xs sm:text-[13px] shadow-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all">
+        <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        <span>WhatsApp Direct</span>
+      </a>
+
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl bg-black/40 backdrop-blur-md text-white border border-white/20" aria-label="Menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-x-4 top-24 z-50 bg-slate-950/95 backdrop-blur-2xl border border-white/15 rounded-3xl p-6 text-white space-y-4 shadow-2xl">
+    <nav class="flex flex-col space-y-3 font-bold text-base">
+      <a href="#prochains-departs" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10 flex items-center justify-between">
+        <span><i data-lucide="compass" class="w-4 h-4 inline mr-2"></i>All 14 Adventures 2026/2027</span>
+        <span class="bg-[#0e8354] text-xs px-2 py-0.5 rounded-full font-black">14</span>
+      </a>
+      <a href="/en/a-propos.html" class="px-3 py-2 rounded-xl bg-white/10 text-amber-300">
+        📖 Notre histoire & équipe
+      </a>
+      <a href="#concept" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10">
+        <i data-lucide="trees" class="w-4 h-4 inline mr-2"></i>L'esprit safari & éthique
+      </a>
+      <a href="#pisteurs" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10">
+        <i data-lucide="users" class="w-4 h-4 inline mr-2"></i>Nos maîtres pisteurs (BBC)
+      </a>
+      <a href="/en/contact.html" class="px-3 py-2 rounded-xl hover:bg-white/10 text-amber-300">
+        ✉️ Contactez-nous
+      </a>
+      <a href="#avis" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-xl hover:bg-white/10">
+        ⭐ Reviews Trustpilot (5.0/5)
+      </a>
+    </nav>
+    <div class="pt-4 border-t border-white/10 flex flex-col gap-2">
+      <button onclick="toggleMobileMenu(); openCustomTripModal()" class="w-full py-3.5 rounded-2xl bg-[#0e8354] font-black text-sm text-center shadow-lg">
+        Créer mon séjour sur-mesure ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 3. HERO SECTION (WeRoad Layout épuré avec la charte Verte & Or) -->
+  <!-- ========================================================================= -->
+  <section class="relative min-h-[92vh] flex items-center justify-center pt-44 pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
+    
+    <!-- Cinema Hero Photo -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" 
+        alt="Tigre du Bengale au Népal" 
+        class="w-full h-full object-cover object-center filter brightness-85 contrast-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-black/30 to-black/50"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center w-full">
+      
+      <!-- Main H1 -->
+      <h1 class="font-black text-4xl sm:text-6xl md:text-7xl lg:text-[76px] text-white tracking-tight leading-[1.06] drop-shadow-2xl">
+        The Other Side of Nepal
+      </h1>
+
+      <!-- Subtitle Poetry -->
+      <div class="mt-6 text-base sm:text-xl md:text-2xl text-white/95 max-w-3xl font-semibold leading-relaxed drop-shadow space-y-1">
+        <p>Là où les routes s’arrêtent.</p>
+        <p>Where wild territories begin.</p>
+        <p class="text-amber-300 font-bold">Guided by those who live there.</p>
+        <p class="pt-2 text-white font-extrabold">Experience the ultimate wildlife safari in Nepal.</p>
+      </div>
+
+      <!-- SEARCH CARD WEROAD LUXE EN -->
+      <div class="w-full max-w-3xl mt-10 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] p-2 sm:p-2.5 border border-slate-100 text-left text-slate-900">
+        <form onsubmit="handleSearch(event)" class="flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
+          
+          <!-- Column 1: WHERE ? -->
+          <div class="w-full sm:flex-1 px-4 sm:px-5 py-2.5 rounded-2xl hover:bg-slate-50 transition-colors cursor-pointer group/field">
+            <div class="flex items-center gap-1.5 text-[11px] font-extrabold text-[#0e8354] uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>WHERE ?</span>
+            </div>
+            <div class="relative mt-0.5">
+              <select id="search-dest" class="w-full bg-transparent font-extrabold text-sm sm:text-base text-slate-900 focus:outline-none cursor-pointer pr-6 appearance-none">
+                <option value="all">All 14 Expeditions</option>
+                <option value="safari">🐅 Bardia (Tigers & Walking Safaris)</option>
+                <option value="bivouac">⛺ Babai Valley (Wild Bivouacs)</option>
+                <option value="chitwan">🦏 Chitwan (Rhinos & River Canoes)</option>
+                <option value="grand-tour">🇳🇵 360° Grand Tours (Jungle + Peaks)</option>
+                <option value="aventure">🚣 Adventure (Karnali Rafting & 4x4)</option>
+                <option value="culture">🕉️ Culture, Mustang & Spirituality</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-slate-400">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="hidden sm:block w-px h-10 bg-slate-200"></div>
+
+          <!-- Column 2: WHEN ? -->
+          <div class="w-full sm:flex-1 px-4 sm:px-5 py-2.5 rounded-2xl hover:bg-slate-50 transition-colors cursor-pointer group/field">
+            <div class="flex items-center gap-1.5 text-[11px] font-extrabold text-[#0e8354] uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+              <span>WHEN ?</span>
+            </div>
+            <div class="relative mt-0.5">
+              <select id="search-date" class="w-full bg-transparent font-extrabold text-sm sm:text-base text-slate-900 focus:outline-none cursor-pointer pr-6 appearance-none">
+                <option value="all">All Year (Season 2026-2027)</option>
+                <option value="autumn">Autumn 2026 (October - December)</option>
+                <option value="winter">Winter 2026/2027 (January - February)</option>
+                <option value="spring">Spring 2027 (March - May • Peak Tigers)</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-slate-400">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Square Emerald Action Button with Search Icon & Text -->
+          <div class="w-full sm:w-auto p-1">
+            <button type="submit" class="w-full sm:w-auto px-6 py-3.5 sm:py-3.5 bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] hover:bg-right bg-[length:200%_auto] text-white font-black text-sm rounded-2xl flex items-center justify-center gap-2.5 shadow-lg shadow-[#0e8354]/40 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer" aria-label="Search">
+              <svg class="w-5 h-5 text-white stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span class="font-extrabold tracking-tight">Search</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. CATEGORIES FILTER CAROUSEL -->
+  <!-- ========================================================================= -->
+  <!-- SECTION 3: CATEGORIES FILTER (WITH < AND > ARROWS) -->
+  <section id="categories" class="py-5 bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+      
+      <!-- Left Arrow < -->
+      <button onclick="scrollCategories(-280)" class="hidden sm:flex w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white hover:bg-emerald-50 border border-slate-300 hover:border-[#0e8354] shadow-md items-center justify-center text-slate-800 hover:text-[#0e8354] transition-all duration-200 hover:scale-110 active:scale-95 shrink-0 mr-3 cursor-pointer z-10" aria-label="Scroll left">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Scrollable Container -->
+      <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
+        <button onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
+          <span>🧭</span>
+          <span>All Expeditions</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">14</span>
+        </button>
+
+        <button onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
+          <span>🐅</span>
+          <span>Bardia Safari & Tiger Tracking</span>
+        </button>
+
+        <button onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
+          <span>⛺</span>
+          <span>Wild Bivouacs & Jungle Camping</span>
+        </button>
+
+        <button onclick="filterTrips('chitwan')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="chitwan">
+          <span>🦏</span>
+          <span>Chitwan Rhinos & Wildlife</span>
+        </button>
+
+        <button onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
+          <span>🇳🇵</span>
+          <span>360° Grand Tours (Jungle + Peaks)</span>
+        </button>
+
+        <button onclick="filterTrips('aventure')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="aventure">
+          <span>🚣</span>
+          <span>Wild Adventures (Rafting & 4x4)</span>
+        </button>
+
+        <button onclick="filterTrips('culture')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="culture">
+          <span>🕉️</span>
+          <span>Himalaya, Mustang & Spirituality</span>
+        </button>
+      </div>
+
+      <!-- Right Arrow > -->
+      <button onclick="scrollCategories(280)" class="hidden sm:flex w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white hover:bg-emerald-50 border border-slate-300 hover:border-[#0e8354] shadow-md items-center justify-center text-slate-800 hover:text-[#0e8354] transition-all duration-200 hover:scale-110 active:scale-95 shrink-0 ml-3 cursor-pointer z-10" aria-label="Scroll right">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. LES 14 CIRCUITS (GRILLE COMPLÈTE) -->
+  <!-- ========================================================================= -->
+  <section id="prochains-departs" class="py-16 sm:py-24 bg-safari-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-900 bg-emerald-100 px-3 py-1 rounded-full mb-3">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#0e8354]"></i>
+            <span>Guaranteed Departures • Small Groups of 4 to 8 Explorers</span>
+          </div>
+          <h2 class="font-black text-3xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight">
+            14 Immersive Expeditions in Nepal
+          </h2>
+          <p class="mt-3 text-base text-slate-600 max-w-2xl font-normal">
+            Select your adventure to explore day-by-day itineraries, inclusions and reserve your spot.
+          </p>
+        </div>
+
+        <div>
+          <span id="trip-count-badge" class="text-xs sm:text-sm font-extrabold text-slate-700 bg-white px-4 py-2.5 rounded-full border border-slate-200 shadow-sm">
+            Showing <strong>14 trips</strong>
+          </span>
+        </div>
+      </div>
+
+      <!-- 14 CARDS -->
+      <div id="trips-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- TRIP CARD: Bardia explorateur – 5 jours dans la jungle -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="bardia explorateur – 5 jours dans la jungle">
+          
+          <div class="relative">
+            <a href="/en/tours/bardia-explorateur.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/Tigre-Bardia.png" 
+                alt="Bardia explorateur – 5 jours dans la jungle" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>⭐ Best-Seller</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">5 Days</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.8 (56)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/bardia-explorateur.html">Bardia explorateur – 5 jours dans la jungle</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce voyage de 5 jours s’adresse aux amoureux de nature qui souhaitent découvrir la beauté sauvage de Bardia sans renoncer au confort ni à l’authenticité. C’est une immersion concentrée dans le parc national le mieux préservé du Népal, où les forêts de sal, les prairies ouvertes et les berges des rivières abritent tigres du Bengale, éléphants sauvage
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">450€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/bardia-explorateur.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Chitwan – culture et jungle sauvage -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="chitwan culture" data-title="chitwan – culture et jungle sauvage">
+          
+          <div class="relative">
+            <a href="/en/tours/chitwan-culture.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png" 
+                alt="Chitwan – culture et jungle sauvage" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🦏 Rhinos & Tharu</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">4 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (28)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/chitwan-culture.html">Chitwan – culture et jungle sauvage</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce court séjour, dense et riche, combine l’adrénaline des safaris avec la chaleur de la culture locale. Le parc national de Chitwan est l’un des meilleurs endroits d’Asie pour observer le rhinocéros unicorne et abrite une population croissante de tigres et d’éléphants. Mais au-delà de la jungle, un autre monde vous attend, celui de la culture Tharu
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">600€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/chitwan-culture.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Rivières sauvages et patrimoines cachés – Expédition et rafting -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="rafting safari" data-title="rivières sauvages et patrimoines cachés – expédition et rafting">
+          
+          <div class="relative">
+            <a href="/en/tours/rafting-safari.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2017/01/IMG_0140-scaled.jpg" 
+                alt="Rivières sauvages et patrimoines cachés – Expédition et rafting" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🚣 Rafting & Safari</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">18 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (15)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/rafting-safari.html">Rivières sauvages et patrimoines cachés – Expédition et rafting</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Partez pour un voyage hors du commun à travers le Népal, mêlant héritage culturel, nature intacte et aventures palpitantes. Explorez les villes vibrantes de Kathmandu Valley et Pokhara avant de vous enfoncer dans la réserve de chasse de Dhorpatan et le village traditionnel Magar de Taksera. Poursuivez votre route à travers les paysages majestueux de Maiko
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,190€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/rafting-safari.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Bardia – aventure immersive en jungle et camping sauvage -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="bivouac safari" data-title="bardia – aventure immersive en jungle et camping sauvage">
+          
+          <div class="relative">
+            <a href="/en/tours/bardia-nuit-sauvage.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/jungle-walk-Babai-valley.png" 
+                alt="Bardia – aventure immersive en jungle et camping sauvage" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🌙 Micro-Aventure</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">2 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (31)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/bardia-nuit-sauvage.html">Bardia – aventure immersive en jungle et camping sauvage</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Une vraie nuit sauvage au cœur du parc national, Campez dans une zone reculée de la jungle où il n’y a que vous, votre équipe et la faune. Pistez tigres, rhinocéros et éléphants avec des experts locaux qui connaissent chaque signe et chaque son de la forêt. Parcourez berges de rivière, prairies et forêts profondes de sal, loin des chemins touristiq
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">350€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/bardia-nuit-sauvage.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="trek safari" data-title="rara lake & bardia expedition – l’ultime aventure hors sentiers battus">
+          
+          <div class="relative">
+            <a href="/en/tours/rara-lake-bardia.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/Suklaphata-1024x585-1.jpg" 
+                alt="Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🏔️ Expédition 4x4 & Lac Sacré</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">17 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (18)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/rara-lake-bardia.html">Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Traversez le Népal d’est en ouest lors d’une aventure 4&#215;4 palpitante, en explorant ses régions les plus reculées et préservées. Découvrez les trésors culturels de Kathmandu Valley, Pokhara et Lumbini avant de vous enfoncer dans les paysages escarpés de Surkhet et Kalikot. Admirez la beauté intacte du lac Rara, le plus grand et le plus isolé du pays, 
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,550€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/rara-lake-bardia.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Bardia Babai vallée  – Camping sauvage au cœur d’une nature vierge et isolée -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="bivouac safari" data-title="bardia babai vallée  – camping sauvage au cœur d’une nature vierge et isolée">
+          
+          <div class="relative">
+            <a href="/en/tours/bardia-babai-camping.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg" 
+                alt="Bardia Babai vallée  – Camping sauvage au cœur d’une nature vierge et isolée" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>⛺ Bivouac Sauvage</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">8 Jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (24)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/bardia-babai-camping.html">Bardia Babai vallée  – Camping sauvage au cœur d’une nature vierge et isolée</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                C’est l’une des aventures les plus exclusives et immersives du Népal. La vallée de Babai est intacte, brute, et presque jamais explorée — même par les locaux. Vous suivrez d’anciens corridors fluviaux en bateau, dormirez dans des camps sauvages soigneusement choisis, et suivrez les traces des tigres au cœur de leur territoire. Cette expérience s’ad
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">1,200€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/bardia-babai-camping.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Népal – immersion totale : culture, vie sauvage et aventure -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari chitwan culture" data-title="népal – immersion totale : culture, vie sauvage et aventure">
+          
+          <div class="relative">
+            <a href="/en/tours/nepal-immersion-totale.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/Elephant-sauvage-Bardia.png" 
+                alt="Népal – immersion totale : culture, vie sauvage et aventure" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🔥 Promo -300€</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">14 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (42)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/nepal-immersion-totale.html">Népal – immersion totale : culture, vie sauvage et aventure</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Vivez le Népal comme jamais auparavant lors d’un voyage immersif à travers ses merveilles culturelles et naturelles. Explorez les temples ancestraux de Kathmandu Valley, Patan et Bhaktapur, puis admirez le lever de soleil sur l’Himalaya à Nagarkot. Sentez l’adrénaline du rafting en eaux vives sur la rivière Trisuli, avant de plonger dans la nature sauvage
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,600€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/nepal-immersion-totale.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Deep Into the Wild: Babai Spécial Experience – 5 jours -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari bivouac" data-title="deep into the wild: babai spécial experience – 5 jours">
+          
+          <div class="relative">
+            <a href="/en/tours/babai-special.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" 
+                alt="Deep Into the Wild: Babai Spécial Experience – 5 jours" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>⚡ Aventure ++</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">5 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (19)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/babai-special.html">Deep Into the Wild: Babai Spécial Experience – 5 jours</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce n’est pas un simple tour dans la jungle. C’est une expédition au cœur de l’une des zones les plus reculées et intactes du Népal. La vallée de Babai se trouve loin à l’intérieur du parc national de Bardia, bien au-delà des itinéraires habituels. Très peu de voyageurs y posent le pied , et encore moins passent la nuit sur les rives sauvages de sa 
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">900€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/babai-special.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Chitwan + Bardia – L’aventure jungle complète -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari chitwan" data-title="chitwan + bardia – l’aventure jungle complète">
+          
+          <div class="relative">
+            <a href="/en/tours/chitwan-bardia-complete.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/03/68.png" 
+                alt="Chitwan + Bardia – L’aventure jungle complète" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🌿 Double Safari Parcs</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">12 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (33)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/chitwan-bardia-complete.html">Chitwan + Bardia – L’aventure jungle complète</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Cette aventure offre un équilibre parfait entre safaris encadrés et immersion brute. Vous explorerez deux des parcs nationaux les plus emblématiques du Népal — Chitwan et Bardia — chacun avec sa personnalité, ses paysages et sa faune propres. À Chitwan, vous glisserez sur des rivières calmes, parcourrez la jungle à la recherche de rhinocéros et plo
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">1,990€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/chitwan-bardia-complete.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Tiji Festival – Upper Mustang -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="trek culture" data-title="tiji festival – upper mustang">
+          
+          <div class="relative">
+            <a href="/en/tours/tiji-mustang.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2026/01/Machapuchare-himalaya-montagne.png" 
+                alt="Tiji Festival – Upper Mustang" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🕉️ Spécial Culture</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">13 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (12)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/tiji-mustang.html">Tiji Festival – Upper Mustang</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce voyage exclusif vers le Haut Mustang vous plonge au cœur de la culture tibétaine, dans un monde où le temps semble s’être arrêté. Vous assisterez au vibrant festival de Tiji dans le royaume fortifié de Lo Manthang, l’un des derniers endroits au monde où les traditions bouddhistes tibétaines demeurent intactes. En chemin, vous traverserez des pay
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">3,500€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/tiji-mustang.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Népal – carnet de dessin et de voyage  – 15 jours -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="culture art" data-title="népal – carnet de dessin et de voyage  – 15 jours">
+          
+          <div class="relative">
+            <a href="/en/tours/carnet-de-voyage.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/03/79.png" 
+                alt="Népal – carnet de dessin et de voyage  – 15 jours" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🎨 Spécial Dessin & Carnet</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">15 Jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (16)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/carnet-de-voyage.html">Népal – carnet de dessin et de voyage  – 15 jours</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce voyage de 15 jours a été entièrement pensé comme une expérience de carnet de voyage. L’objectif n’est pas simplement de découvrir le Népal, mais de le raconter, de le dessiner, et d’en garder une trace personnelle. Tout au long du séjour, vous serez accompagné par la dessinatrice professionnelle Sarah Plage , qui guidera chaque participant dans 
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,100€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/carnet-de-voyage.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Jungle extrême – spécial faune sauvage -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari bivouac" data-title="jungle extrême – spécial faune sauvage">
+          
+          <div class="relative">
+            <a href="/en/tours/jungle-extreme.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png" 
+                alt="Jungle extrême – spécial faune sauvage" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🐅 Passion Faune Pro</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">15 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (21)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/jungle-extreme.html">Jungle extrême – spécial faune sauvage</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Des temples sacrés aux jungles silencieuses, chaque moment est pensé pour capturer l’émerveillement et la sérénité. Accompagné de guides experts, vous explorerez des forêts profondes, franchirez des rivières paisibles et observerez la vie dans sa forme la plus brute et la plus poétique. Un voyage idéal pour les photographes : lumières du matin sur 
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,500€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/jungle-extreme.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Népal sauvage – de la jungle aux montagnes sacrées -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="safari culture trek" data-title="népal sauvage – de la jungle aux montagnes sacrées">
+          
+          <div class="relative">
+            <a href="/en/tours/nepal-sauvage.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia.png" 
+                alt="Népal sauvage – de la jungle aux montagnes sacrées" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>❤️ Coup de cœur</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">15 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (38)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/nepal-sauvage.html">Népal sauvage – de la jungle aux montagnes sacrées</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Ce voyage n’est pas un simple circuit. C’est un passage à travers trois Népal . La jungle de Bardia , les temples perchés dans les collines, les villages himalayens où l’accueil est franc et immédiat, puis l’ énergie brute de Kathmandu Valley. Vous suivrez les traces du tigre, rencontrerez des locaux, traverserez des rizières centenaires et passerez la nu
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">2,300€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/nepal-sauvage.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+        <!-- TRIP CARD: Immersion spirituelle en Himalaya -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="culture spiritualite" data-title="immersion spirituelle en himalaya">
+          
+          <div class="relative">
+            <a href="/en/tours/immersion-spirituelle.html" class="relative h-72 sm:h-80 overflow-hidden block">
+              <img 
+                src="https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg" 
+                alt="Immersion spirituelle en Himalaya" 
+                class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-300 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
+                  <span>🧘 Retraite & Méditation</span>
+                </span>
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
+                  4-8 pers.
+                </span>
+              </div>
+
+              
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">12 jours</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>4.9 (17)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Éco-Safari</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/immersion-spirituelle.html">Immersion spirituelle en Himalaya</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Au cœur de la vallée de Kathmandu Valley, entre temples et montagne , cette retraite de 12 jours vous invite à ralentir, respirer et retrouver l’essentiel . Jungle Nepal Adventure a décidé de laisser un espace à l&rsquo;intervenante Justine Luçon, afin de concevoir en partenariat, un tour différent de ceux actuellement proposés. Pendant plusieurs jours , 
+              </p>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200/70 flex items-end justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">À partir de</p>
+                <div class="flex items-baseline gap-2 mt-0.5">
+                  <span class="font-black text-2xl sm:text-3xl text-jungle-950 tracking-tight">1,890€</span>
+                  
+                  
+                </div>
+                <p class="text-[11px] text-[#0e8354] font-bold mt-0.5 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Confirmed Departures 2026/2027</span>
+                </p>
+              </div>
+
+              <a href="/en/tours/immersion-spirituelle.html" class="group/btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] bg-[length:200%_auto] hover:bg-right text-white font-extrabold text-xs sm:text-sm shadow-[0_4px_14px_rgba(14,131,84,0.35)] hover:shadow-[0_8px_24px_rgba(14,131,84,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-t border-white/25 whitespace-nowrap">
+                <span>View Trip</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+    
+      </div>
+
+    </div>
+  </section>
+
+        <!-- ========================================================================= -->
+  <!-- 7. CINEMA SHOWCASE : L'EXPÉRIENCE EN IMMERSION TOTALE (VIDÉO CENTRALE) -->
+  <!-- ========================================================================= -->
+  <section id="concept" class="py-24 sm:py-32 bg-slate-950 text-white relative overflow-hidden border-t border-white/10">
+    
+    <!-- Ambient emerald lighting glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-[#0e8354]/15 rounded-full blur-[170px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-emerald-400/30 text-[#10b981] text-xs font-black uppercase tracking-widest mb-4"><i data-lucide="film" class="w-4 h-4 text-[#109363]"></i><span>On-Field Immersion</span></div><h2 class="font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1]">Experience the Jungle at Eye Level.</h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+          Au-delà des mots, découvrez la réalité de nos expéditions au Népal avec Pawan, Robin et les maîtres pisteurs de Bardia.
+        </p>
+      </div>
+
+      <!-- Masterpiece Cinema Video Player -->
+      <div class="max-w-5xl mx-auto">
+        <div class="relative rounded-3xl sm:rounded-[32px] overflow-hidden border-2 border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.85)] bg-black aspect-video">
+          <iframe 
+            class="w-full h-full" 
+            src="https://www.youtube.com/embed/nApJul2Wgxo?rel=0&modestbranding=1" 
+            title="Jungle Nepal Adventure – Documentaire immersif" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+                <!-- 3 Concrete Quick Fact Badges -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center max-w-3xl mx-auto">
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+            <p class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">Territory</p>
+            <p class="text-sm sm:text-base font-black text-white mt-1">Bardia National Park</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+            <p class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">Approche</p>
+            <p class="text-sm sm:text-base font-black text-[#10b981] mt-1">À pied et en jeep</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+            <p class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">Saison</p>
+            <p class="text-sm sm:text-base font-black text-white mt-1">Mai</p>
+          </div>
+        </div><!-- Direct Action Bar -->
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#prochains-departs" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/40 hover:scale-105 active:scale-95 transition-all text-center">
+            Explorer les 14 trips 2026/2027 →
+          </a>
+          <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20viens%20de%20regarder%20votre%20vidéo%20et%20je%20souhaite%20des%20informations" target="_blank" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm backdrop-blur-md transition-all text-center flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>Chat with Robin on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. PISTEURS & ÉQUIPE -->
+  <!-- ========================================================================= -->
+  <section id="pisteurs" class="py-20 sm:py-28 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-emerald-900 bg-emerald-100 px-3.5 py-1 rounded-full mb-3">
+          Une alliance unique Népal - France
+        </span>
+        <h2 class="font-black text-3xl sm:text-5xl text-slate-900 tracking-tight">
+          Nos Maîtres pisteurs & Organisateurs
+        </h2>
+        <p class="mt-3 text-base text-slate-600">
+          Plus de 20 ans d'expérience du terrain combinés à une conciergerie francophone 24h/24.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-slate-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-jungle-900 via-amber-400 to-[#0e8354] shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/12/2.png" alt="Pawan - Chef Pisteur Bardia" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-black text-2xl text-slate-900 tracking-tight">Pawan</h3>
+          <p class="text-xs font-extrabold text-[#0e8354] uppercase tracking-wider mt-1">Chef Pisteur & Expert Faune (BBC Wildlife)</p>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+            Natif de Bardia, ancien Président de l'Association des Guides. Il a guidé les équipes documentaires de la BBC et connaît chaque recoin du sanctuaire.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-slate-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-[#0e8354] via-slate-400 to-jungle-950 shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/12/1.png" alt="Kiran - Co-Fondateur Écotourisme" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-black text-2xl text-slate-900 tracking-tight">Kiran</h3>
+          <p class="text-xs font-extrabold text-emerald-800 uppercase tracking-wider mt-1">Co-Fondateur & Pionnier Écotourisme</p>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+            Pionnier du tourisme d'aventure responsable au Népal depuis plus de 20 ans. Il orchestre la logistique des camps et les relations avec les villages.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center p-6 rounded-3xl bg-safari-50 border border-slate-200/80">
+          <div class="w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-amber-400 via-[#0e8354] to-jungle-950 shadow-xl mb-6">
+            <img src="https://junglenepal.com/wp-content/uploads/2025/12/3.png" alt="Robin - Coordinateur France" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-black text-2xl text-slate-900 tracking-tight">Robin</h3>
+          <p class="text-xs font-extrabold text-[#0e8354] uppercase tracking-wider mt-1">Coordinateur Voyageurs & Relations France</p>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+            Passionné de faune sauvage. Votre contact privilégié en français avant et pendant votre voyage pour concevoir le séjour parfait.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ========================================================================= -->
+  <!-- 9. AVIS TRUSTPILOT VÉRIFIÉS (5.0/5 • 19 AVIS) -->
+  <!-- ========================================================================= -->
+    <!-- ========================================================================= -->
+  <!-- 9. SECTION AVIS GOOGLE VÉRIFIÉS (Reviews Réels Verbatim) -->
+  <!-- ========================================================================= -->
+    <!-- ========================================================================= -->
+  <!-- 9. SECTION AVIS GOOGLE VÉRIFIÉS (Reviews Réels Verbatim) -->
+  <!-- ========================================================================= -->
+  <section id="avis" class="py-24 bg-safari-100/70 border-t border-slate-200 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <a href="https://www.google.com/search?sca_esv=a1a5ed640a4c7c37&cs=0&sxsrf=APpeQntnDL5GNsUQ_hIZE3WXkqPaN3biMw:1787312489201&q=Jungle+Nepal+Adventure+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDA0NLY0MLYwNjUxMzMwMzMy3sDI-IpR2qs0Lz0nVcEvtSAxR8ExpSw1r6S0KFXBsSyzeBErPlkAWhIrKFYAAAA&rldimm=8011390383546606623&tbm=lcl&hl=fr-FR&sa=X&ved=2ahUKEwjW85Pw0bGWAxVfTaQEHX8wKpkQ9fQKegQIERAG&biw=1470&bih=798&dpr=2#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-black text-slate-900 mb-4 hover:border-[#0e8354] transition-colors">
+          <span class="flex text-[#00b67a] text-sm">★★★★★</span>
+          <span>Reviews Google vérifiés • 5.0 / 5</span>
+        </a>
+        <h2 class="font-black text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
+          What Our Travelers Say.
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base font-normal">
+          Overall rating <strong>5.0 / 5</strong> based on verified traveler reviews • 100% 5-star rating ⭐
+        </p>
+      </div>
+
+      <!-- Real Verbatim Review Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- AVIS 1 : Adrien Noat -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « Je reviens de 15 jours au Népal avec Jungle Nepal Adventure, et ce que je retiens avant tout, c’est l’humain. Au-delà des paysages, de la faune incroyable et des lieux traversés, il y a surtout une équipe profondément bienveillante, sincère et passionnée. On ne se sent jamais comme un simple client, mais réellement accompagné. Que ce soit à Chitwan, Bardia ou Kathmandu Valley, tout était pensé avec attention, sans jamais donner l’impression de quelque chose de formaté. Une expérience rare, que je recommande sincèrement ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-700 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              AN
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Adrien Noat</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Circuit 15 jours</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- AVIS 2 : Jean Tramoy -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « Un voyage absolument inoubliable au Népal ! Bien plus qu’un simple séjour, c’est une véritable expérience humaine que j’ai vécue. Tout était parfaitement organisé du début à la fin. L’équipe est tout simplement exceptionnelle : disponible, bienveillante, à l’écoute et toujours prête à s’adapter. Les paysages sont à couper le souffle, entre montagnes majestueuses, jungle et villages authentiques. Un immense merci à toute l’équipe pour cette aventure hors du commun. Je recommande les yeux fermés ! 🙏 »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              JT
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Jean Tramoy</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Immersion Népal</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- AVIS 3 : Antoine -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « Une expérience et une aventure humaine tout simplement exceptionnelles. Voir les tigres et les rhinocéros en liberté avec des pisteurs aussi passionnés que Pawan et Robin est un privilège rare. L'organisation, les rencontres et le respect de la nature étaient parfaits du premier au dernier jour. Je recommande à 100% ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-700 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              AN
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Antoine</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Expédition Népal</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Second Row of Authentic Reviews -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-6">
+        
+        <!-- AVIS 4 : Samantha Gonthier -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « Choisir Jungle Nepal Adventure pour découvrir ce pays connu surtout pour ses montagnes, c'est la meilleure option pour l'apprécier sous un autre angle, celui de sa vie sauvage. J'ai vécu tant de moments uniques et incroyablement marquants grâce à l'équipe. J'ai été accompagnée tout au long de mon séjour par des personnes aussi bienveillantes que passionnées. »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-800 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              SG
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Samantha Gonthier</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageuse vérifiée • Vie sauvage</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- AVIS 5 : Justine Luçon -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « Le Népal a été bien plus qu’un voyage. Une expérience humaine profonde, riche en émotions, en amour et en découvertes. Un immense merci à toute l’équipe qui a organisé ce séjour : sans eux, rien de tout cela n’aurait été possible. Grâce à leur engagement, nous avons vécu chez l’habitant, partagé le quotidien local. On ne revient pas du Népal comme on est parti. »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-indigo-800 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              JL
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Justine Luçon</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageuse vérifiée • Immersion locale</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- AVIS 6 : Max Schlautmann -->
+        <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-[#00b67a] text-base tracking-wider">★★★★★</div>
+              <span class="text-[11px] font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Reviews Google
+              </span>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
+              « We had a 3-day safari adventure with our guide, Pawan, and it was truly one of the most memorable experiences of our lives. We were lucky to see one-horned rhinos, Asian elephants, Bengal tigers, and leopards. Bardia National Park feels truly wild and untouched. A special thank you to Pawan for his knowledge and patience! »
+            </p>
+          </div>
+          <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-teal-800 text-white font-black text-xs flex items-center justify-center shadow-sm">
+              MS
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Max Schlautmann</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Safari Bardia</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Direct Link to Google Reviews -->
+      <div class="mt-12 text-center">
+        <a href="https://www.google.com/search?sca_esv=a1a5ed640a4c7c37&cs=0&sxsrf=APpeQntnDL5GNsUQ_hIZE3WXkqPaN3biMw:1787312489201&q=Jungle+Nepal+Adventure+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDA0NLY0MLYwNjUxMzMwMzMy3sDI-IpR2qs0Lz0nVcEvtSAxR8ExpSw1r6S0KFXBsSyzeBErPlkAWhIrKFYAAAA&rldimm=8011390383546606623&tbm=lcl&hl=fr-FR&sa=X&ved=2ahUKEwjW85Pw0bGWAxVfTaQEHX8wKpkQ9fQKegQIERAG&biw=1470&bih=798&dpr=2#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-xs sm:text-sm border border-slate-300 shadow-md hover:border-[#0e8354] hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#00b67a] animate-pulse"></span>
+          <span>Read all 19 verified reviews on Google (5.0 / 5)</span>
+          <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. FOOTER -->
+  <!-- ========================================================================= -->
+    <!-- =========================================================================
+       FOOTER COMPLET AVEC TOUT LE MENU DU SITE
+       ========================================================================= -->
+    <!-- =========================================================================
+       FOOTER COMPLET AVEC TOUT LE MENU DU SITE
+       ========================================================================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 pb-14 border-b border-white/10 text-xs">
+        
+        <!-- COL 1: Brand & Contact -->
+        <div class="space-y-4 lg:col-span-1">
+          <a href="../en/index.html" class="inline-block">
+            <img src="../assets/logo.png" alt="Jungle Nepal Adventure" class="h-16 w-auto object-contain filter drop-shadow"/>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Local travel agency specializing in immersive wildlife safaris and ethical nature expeditions in Nepal.
+          </p>
+          <div class="pt-2 space-y-2">
+            <a href="https://wa.me/33695413227" target="_blank" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-500/20 text-[#10b981] font-bold text-xs hover:bg-emerald-500/30 transition-colors border border-emerald-500/30">
+              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp : +33 6 95 41 32 27</span>
+            </a>
+            <p class="text-slate-400">Email : <strong class="text-white">contact@junglenepal.com</strong></p>
+          </div>
+        </div>
+
+        <!-- COL 2: Nos 14 Séjours -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Expeditions</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../en/tours/bardia-explorateur.html" class="hover:text-[#10b981] transition-colors">Bardia Explorer (5d)</a></li>
+            <li><a href="../en/tours/chitwan-culture.html" class="hover:text-[#10b981] transition-colors">Chitwan & Wildlife (4d)</a></li>
+            <li><a href="../en/tours/nepal-sauvage.html" class="hover:text-[#10b981] transition-colors">Wild Nepal (15d)</a></li>
+            <li><a href="../en/tours/babai-special.html" class="hover:text-[#10b981] transition-colors">Babai Valley Tiger Special (5d)</a></li>
+            <li><a href="../en/tours/bardia-babai-camping.html" class="hover:text-[#10b981] transition-colors">Babai Wild Bivouac (8d)</a></li>
+            <li><a href="../en/tours/rafting-safari.html" class="hover:text-[#10b981] transition-colors">Karnali Rafting & Safari (18d)</a></li>
+            <li><a href="../en/tours/tiji-mustang.html" class="hover:text-[#10b981] transition-colors">Tiji Festival Mustang (13d)</a></li>
+            <li><a href="../en/tours/nepal-immersion-totale.html" class="hover:text-[#10b981] transition-colors">Nepal Total Immersion (14d)</a></li>
+            <li class="pt-1"><a href="../en/index.html#prochains-departs" class="text-amber-300 font-bold hover:underline">View all 14 trips →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: Destinations -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Destinations</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../en/destinations/bardia.html" class="hover:text-[#10b981] transition-colors">🐅 Bardia National Park</a></li>
+            <li><a href="../en/destinations/chitwan.html" class="hover:text-[#10b981] transition-colors">🦏 Chitwan National Park</a></li>
+            <li><a href="../en/destinations/suklaphanta.html" class="hover:text-[#10b981] transition-colors">🦌 Suklaphanta Wildlife</a></li>
+            <li><a href="../en/destinations/annapurna.html" class="hover:text-[#10b981] transition-colors">🏔️ Annapurna & Pokhara</a></li>
+            <li><a href="../en/destinations/katmandou.html" class="hover:text-[#10b981] transition-colors">🕉️ Kathmandu Valley</a></li>
+            <li class="pt-1"><a href="../en/destinations/index.html" class="text-amber-300 font-bold hover:underline">All Destinations →</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4: L'Agence & Esprit Safari -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">The Experience</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../en/index.html#concept" class="hover:text-[#10b981] transition-colors">Safari Philosophy</a></li>
+            <li><a href="../en/index.html#pisteurs" class="hover:text-[#10b981] transition-colors">Master Trackers (Pawan & Kiran)</a></li>
+            <li><a href="../en/a-propos.html" class="hover:text-[#10b981] transition-colors">Our Story & Mission</a></li>
+            <li><a href="../en/index.html#avis" class="hover:text-[#10b981] transition-colors">Traveler Reviews (5.0/5 ⭐)</a></li>
+            <li><a href="../en/index.html#faq" class="hover:text-[#10b981] transition-colors">FAQ & Travel Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 5: Booking & Contact -->
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">Plan Your Trip</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="../en/contact.html" class="hover:text-[#10b981] transition-colors">Custom Quote Request</a></li>
+            <li><a href="https://wa.me/33695413227" target="_blank" class="hover:text-[#10b981] transition-colors">Chat with Robin on WhatsApp</a></li>
+            <li class="pt-2 text-slate-500 font-medium">
+              <span class="block text-emerald-400 font-bold">✨ Micro-groups 4 to 8</span>
+              <span>100% Native trackers</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 Jungle Nepal Adventure. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="../en/a-propos.html" class="hover:text-white transition-colors">About Us</a>
+          <span>•</span>
+          <a href="../en/contact.html" class="hover:text-white transition-colors">Contact</a>
+          <span>•</span>
+          <span class="text-amber-300 font-bold">Crafted for Wild Nepal 🇳🇵</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MODAL SUR-MESURE -->
+  <div id="custom-trip-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative text-slate-900 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeCustomTripModal()" class="absolute top-5 right-5 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-[#0e8354] flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-black text-2xl text-slate-950 tracking-tight">Séjour privatisé et sur-mesure</h3>
+          <p class="text-xs text-slate-500">Étude personnalisée sous 24h avec Robin & Pawan.</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleCustomTripSubmit(event)" class="space-y-4 text-sm mt-4">
+        <div>
+          <label class="block font-bold text-xs uppercase text-slate-600 mb-1">Nombre de voyageurs</label>
+          <select class="w-full p-3 rounded-xl border border-slate-200 font-medium focus:ring-2 focus:ring-[#0e8354]">
+            <option>1 personne (Solo)</option>
+            <option selected>2 personnes (Couple / Duo)</option>
+            <option>3 à 5 personnes (Famille / Amis)</option>
+            <option>6 personnes et plus</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-bold text-xs uppercase text-slate-600 mb-1">Vos coordonnées</label>
+          <div class="grid grid-cols-2 gap-3 mb-2">
+            <input type="text" placeholder="Nom complet" required class="p-3 rounded-xl border border-slate-200 font-medium focus:ring-2 focus:ring-[#0e8354]">
+            <input type="tel" placeholder="Téléphone / WhatsApp" required class="p-3 rounded-xl border border-slate-200 font-medium focus:ring-2 focus:ring-[#0e8354]">
+          </div>
+          <input type="email" placeholder="Adresse email" required class="w-full p-3 rounded-xl border border-slate-200 font-medium focus:ring-2 focus:ring-[#0e8354]">
+        </div>
+
+        <div>
+          <label class="block font-bold text-xs uppercase text-slate-600 mb-1">Vos envies particulières</label>
+          <textarea rows="3" placeholder="Parcs souhaités, dates idéales, durée..." class="w-full p-3 rounded-xl border border-slate-200 font-medium focus:ring-2 focus:ring-[#0e8354] text-xs"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-[#0e8354] via-[#109363] to-[#0e8354] text-white font-black text-base shadow-xl shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+          Envoyer ma demande à l'équipe locale →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    
+    function scrollCategories(amount) {
+      const el = document.getElementById('categories-scroll-container');
+      if (el) {
+        el.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+
+    function filterTrips(category) {
+      const cards = document.querySelectorAll('.trip-card');
+      const pills = document.querySelectorAll('.category-pill');
+      let visibleCount = 0;
+
+      pills.forEach(pill => {
+        if (pill.dataset.filter === category) {
+          pill.classList.add('bg-slate-950', 'text-white', 'border-slate-900', 'scale-105'); const icon = pill.querySelector('i'); if (icon) icon.classList.remove('text-slate-900'); if (icon) icon.classList.add('text-white');
+          pill.classList.remove('bg-white', 'text-slate-800');
+        } else {
+          pill.classList.remove('bg-slate-950', 'text-white', 'border-slate-900', 'scale-105'); const icon = pill.querySelector('i'); if (icon) icon.classList.remove('text-white'); if (icon) icon.classList.add('text-slate-900');
+          pill.classList.add('bg-white', 'text-slate-800');
+        }
+      });
+
+      cards.forEach(card => {
+        const cardCategories = card.dataset.category || '';
+        if (category === 'all' || cardCategories.includes(category)) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      document.getElementById('trip-count-badge').innerHTML = `Showing <strong>${visibleCount} circuit${visibleCount > 1 ? 's' : ''}</strong>`;
+    }
+
+    function handleSearch(e) {
+      e.preventDefault();
+      const dest = document.getElementById('search-dest').value;
+      filterTrips(dest);
+      document.getElementById('prochains-departs').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openCustomTripModal() {
+      document.getElementById('custom-trip-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCustomTripModal() {
+      document.getElementById('custom-trip-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function handleCustomTripSubmit(e) {
+      e.preventDefault();
+      alert('🙏 Namasté ! Votre demande a été transmise directement à Robin et Pawan.');
+      closeCustomTripModal();
+    }
+  </script>
+
+  
+
+
+  <!-- BOUTON RETOUR EN HAUT ÉLÉGANT & GRAPHIQUE -->
+  <button 
+    id="back-to-top" 
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+    class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-40 hidden sm:flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-950/90 hover:bg-[#0e8354] text-white border border-white/25 shadow-[0_10px_30px_rgba(0,0,0,0.45)] backdrop-blur-xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none hover:scale-110 active:scale-95 group cursor-pointer"
+    aria-label="Retour en haut de la page"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white group-hover:-translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <script>
+    (function() {
+      const btn = document.getElementById('back-to-top');
+      if (!btn) return;
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          btn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          btn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          btn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          btn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+      });
+    })();
+  </script>
+
+  <script src="../assets/js/translator.js"></script>
+<script >
+    window.scrollCategories = function(amount) {
+      const el = document.getElementById('categories-scroll-container');
+      if (el) el.scrollBy({ left: amount, behavior: 'smooth' });
+    };
+
+    window.filterTrips = function(category) {
+      const pills = document.querySelectorAll('.category-pill');
+      pills.forEach(p => {
+        if (p.getAttribute('data-filter') === category) {
+          p.classList.add('bg-slate-950', 'text-white', 'border-slate-900');
+          p.classList.remove('bg-white', 'text-slate-900');
+        } else {
+          p.classList.remove('bg-slate-950', 'text-white', 'border-slate-900');
+          p.classList.add('bg-white', 'text-slate-900');
+        }
+      });
+
+      const cards = document.querySelectorAll('.trip-card');
+      let visible = 0;
+      cards.forEach(card => {
+        const cats = (card.getAttribute('data-category') || '').split(',');
+        if (category === 'all' || cats.includes(category)) {
+          card.style.display = 'flex';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const countEl = document.getElementById('trip-count');
+      if (countEl) countEl.textContent = visible;
+    };
+
+    window.filterFromHero = function() {
+      const select = document.getElementById('hero-dest-select');
+      if (select) {
+        filterTrips(select.value);
+        document.getElementById('prochains-departs').scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+</script>
+</body>
+</html>

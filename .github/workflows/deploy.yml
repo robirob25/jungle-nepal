@@ -1,0 +1,28 @@
+name: Build & Deploy Static Site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci --silent --no-fund --no-audit
+
+      - name: Build Astro Site
+        run: npm run build
+
+      - name: Ensure Dual Routing
+        run: python3 ensure_dual_routes.py

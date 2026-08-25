@@ -1,0 +1,370 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import toursData from '../../data/tours.json';
+
+const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari"].includes(t.slug));
+---
+
+<Layout 
+  title="Vallée de Katmandou | Destinations Jungle Nepal Adventure"
+  description="Au premier abord, Katmandou peut sembler déroutante et vibrante. Mais laissez-lui un peu de temps, et elle finit par vous happer totalement. Entre rue"
+  image="https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg"
+  lang="fr"
+  isDarkHeader={true}
+>
+  <Header lang="fr" currentPath="/destinations/katmandou.html" />
+
+  <!-- HERO BANNER DESTINATION -->
+  <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg" alt="Vallée de Katmandou" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
+        <a href="/index.html" class="hover:text-white">Accueil</a>
+        <span>›</span>
+        <a href="/destinations.html" class="hover:text-white">Destinations</a>
+        <span>›</span>
+        <span class="text-amber-100 font-bold">Vallée de Katmandou</span>
+      </nav>
+
+      
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+        Vallée de Katmandou
+      </h1>
+      <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
+        Un chaos vivant et fascinant, temples sacrés et cités royales classées UNESCO
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTAINER (LAYOUT D'ORIGINE AVEC FICHE TECHNIQUE À DROITE) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-sans space-y-16">
+    
+    <!-- 1. GRILLE 2 COLONNES : TEXTE COMPLET (GAUCHE) & FICHE TECHNIQUE (DROITE) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- Colonne Gauche : 100% Contenu Texte Officiel junglenepal.com -->
+      <div class="lg:col-span-7 space-y-6">
+        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
+          Explorer Vallée de Katmandou
+        </h2>
+        <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
+          <p>Au premier abord, Katmandou peut sembler déroutante et vibrante. Mais laissez-lui un peu de temps, et elle finit par vous happer totalement. Entre ruelles pavées millénaires chargées d’histoire, senteurs d'encens de santal et toits-terrasses avec vue sur les stupas dorés, Katmandou est une ville brute et profondément vivante où le sacré côtoie le quotidien à chaque coin de rue.</p>
+          <p>La vallée de Katmandou abrite sept sites classés au patrimoine mondial de l’UNESCO : le grand stupa blanc de Boudhanath, cœur spirituel des bouddhistes tibétains ; la colline sacrée de Swayambhunath (le Monkey Temple) ; le temple hindou millénaire de Pashupatinath ; et les trois places royales historiques de Durbar Square (Katmandou, Patan et la cité médiévale préservée de Bhaktapur).</p>
+          <p>Pour tous nos voyageurs, Katmandou est bien plus qu’une simple escale technique. C’est ici que Robin et nos équipes vous accueillent dès votre atterrissage à l'aéroport international pour un briefing personnalisé autour d'un thé népalais, avant de vous équiper et de vous lancer vers les grands territoires sauvages du Népal.</p>
+        </div>
+      </div>
+
+      <!-- Colonne Droite : Fiche Pratique / Fiche Technique du Lieu -->
+      <div class="lg:col-span-5 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-xl space-y-6 sticky top-28">
+        <h3 class="font-black text-xl text-slate-950 pb-3 border-b border-slate-100 flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>Fiche pratique & technique</span>
+        </h3>
+        
+        <div class="space-y-4 text-sm">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Meilleure période</p>
+          <p class="font-bold text-slate-900 mt-0.5">Accessible et agréable toute l'année (Climat doux à 1 400 m d'altitude)</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Trésors culturels</p>
+          <p class="font-bold text-slate-900 mt-0.5">7 sites UNESCO : Boudhanath, Swayambhunath, Pashupatinath, Bhaktapur, Patan</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Expériences clés</p>
+          <p class="font-bold text-slate-900 mt-0.5">Méditation matinale, artisanat Newar, toits-terrasses et marchés aux épices</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accueil exclusif</p>
+          <p class="font-bold text-slate-900 mt-0.5">Prise en charge personnalisée à l'aéroport par Robin & briefing privé</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Hébergement</p>
+          <p class="font-bold text-slate-900 mt-0.5">Hôtels de charme traditionnels au cœur des quartiers historiques calmes</p>
+        </div>
+        </div>
+
+        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée de Katmandou" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+          Poser une question sur Vallée de Katmandou →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 2. ENCART CULTURE LOCALE & POPULATIONS -->
+    <div class="p-8 sm:p-12 rounded-3xl bg-safari-100 border border-slate-200 space-y-4">
+      <div class="max-w-3xl space-y-3">
+        <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
+          Cœur Spirituel
+        </span>
+        <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+          L'artisanat Newar & les cités royales médiévales
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
+          La vallée de Katmandou est le berceau du peuple Newar, maîtres sculpteurs sur bois, fondeurs de bronze et bâtisseurs de pagodes. Flâner dans les cours intérieures de Patan et Bhaktapur est un véritable voyage dans le temps.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3. GALERIE PHOTO IMMERSIVE (4 PHOTOS HD AVEC LIGHTBOX) -->
+    <div class="space-y-6">
+      <div>
+        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
+        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Vallée de Katmandou</h3>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
+          <img src="/assets/drive_photos/adrien_katmandou1.webp" alt="Stupa sacré de Katmandou" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        </div>
+        <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
+          <img src="/assets/drive_photos/adrien_bhaktapur1.webp" alt="Cité royale de Bhaktapur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        </div>
+        <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
+          <img src="https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg" alt="Moulins à prières bouddhistes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        </div>
+        <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
+          <img src="/assets/drive_photos/adrien_bhaktapur2.webp" alt="Ruelle historique & artisanat Newar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. CIRCUITS ASSOCIÉS À CETTE DESTINATION -->
+    <div class="space-y-8 pt-8 border-t border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
+          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les séjours immersifs à Vallée de Katmandou</h3>
+          <p class="text-slate-600 text-sm mt-1">Départs garantis en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
+        </div>
+        <a href="/index.html#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+          Voir tous les 15 séjours →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {matchingTours.map((tour) => (
+          <div 
+            class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
+            onclick={`window.location.href='/tours/${tour.slug}.html'`}
+          >
+            <!-- Photo Hero -->
+            <div class="relative h-60 overflow-hidden bg-slate-900">
+              <img 
+                src={tour.images[0]} 
+                alt={tour.title} 
+                class="w-full h-full object-cover group-transition-opacity duration-300" 
+              />
+              
+
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-amber-100 border border-amber-300/30 text-xs font-black">
+                  {tour.badge}
+                </span>
+                <span class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-bold">
+                  4 à 10 pers.
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-200">
+                  <span>🕒 {tour.duration}</span>
+                  <span>•</span>
+                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} avis)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354]">{tour.style}</span>
+                <h3 class="font-black text-xl text-slate-950 mt-1 leading-snug group-hover:text-[#0e8354] transition-colors">
+                  {tour.title}
+                </h3>
+                <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed font-normal">
+                  {tour.overview}
+                </p>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] font-extrabold uppercase text-slate-400 block">À partir de</span>
+                  <div class="flex items-baseline gap-2">
+                    <span class="font-black text-2xl text-slate-950 tracking-tight">{tour.price}</span>
+                    {tour.originalPrice && (
+                      <span class="text-xs text-slate-400 line-through font-bold">{tour.originalPrice}</span>
+                    )}
+                  </div>
+                </div>
+
+                <a 
+                  href={`/tours/${tour.slug}.html`}
+                  class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
+                >
+                  Voir le séjour →
+                </a>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </main>
+
+  <Footer lang="fr" />
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 bg-black/95 backdrop-blur-xl z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="absolute top-6 left-6 right-6 flex items-center justify-between text-white z-10">
+      <div id="lightbox-counter" class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-extrabold border border-white/20">
+        1 / 4
+      </div>
+      <button onclick="closeLightbox()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 active:scale-95 cursor-pointer">
+        ✕
+      </button>
+    </div>
+
+    <button onclick="prevLightboxImage(event)" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-black/90 border border-white/20 text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-20 shadow-2xl cursor-pointer">
+      ‹
+    </button>
+    <button onclick="nextLightboxImage(event)" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-black/90 border border-white/20 text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-20 shadow-2xl cursor-pointer">
+      ›
+    </button>
+
+    <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
+      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+    </div>
+  </div>
+
+  <script is:inline>
+    const galleryImages = ["https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg", "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg", "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg", "https://junglenepal.com/wp-content/uploads/2017/01/IMG_9675-1-scaled.jpeg"];
+    let currentImageIndex = 0;
+
+    window.openLightbox = function(index) {
+      currentImageIndex = index;
+      updateLightboxContent();
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLightbox = function() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    };
+
+    function updateLightboxContent() {
+      const img = document.getElementById('lightbox-image');
+      const counter = document.getElementById('lightbox-counter');
+      if (img && galleryImages[currentImageIndex]) {
+        img.src = galleryImages[currentImageIndex];
+      }
+      if (counter) {
+        counter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+      }
+    }
+
+    window.prevLightboxImage = function(e) {
+      if (e) e.stopPropagation();
+      currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+      updateLightboxContent();
+    };
+
+    window.nextLightboxImage = function(e) {
+      if (e) e.stopPropagation();
+      currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+      updateLightboxContent();
+    };
+
+    document.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') window.prevLightboxImage();
+        if (e.key === 'ArrowRight') window.nextLightboxImage();
+        if (e.key === 'Escape') window.closeLightbox();
+      }
+    });
+  </script>
+  <!-- MODAL AGRÉMENTS LÉGAUX ET LICENCES OFFICIELLES DU NÉPAL -->
+  <div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 text-slate-900 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer">✕</button>
+      
+      <div class="text-center space-y-2 pb-4 border-b border-slate-100">
+        
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
+        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée au Népal</p>
+      </div>
+
+      <div class="py-5 space-y-3.5 text-xs text-slate-700">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+          </div>
+          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
+          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+          </div>
+          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
+          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
+          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
+          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
+          Fermer les informations légales
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+  function openLegalModal() {
+    const m = document.getElementById('legal-modal');
+    if (m) m.classList.remove('hidden');
+  }
+  function closeLegalModal() {
+    const m = document.getElementById('legal-modal');
+    if (m) m.classList.add('hidden');
+  }
+  </script>
+</Layout>

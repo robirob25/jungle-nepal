@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sticky 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    <main class="max-w-4xl mx-auto px-4 bg-white min-h-[200vh] mt-10">
+        <h1 class="text-3xl font-bold py-10">Hello World</h1>
+        
+        <!-- Sticky Nav -->
+        <div class="sticky top-0 z-30 py-4 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:h-full before:bg-red-500/90 before:-z-10 before:shadow-md">
+            <div class="flex gap-4 text-white font-bold">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            </div>
+        </div>
+
+        <p class="py-10">Content below</p>
+    </main>
+</body>
+</html>
