@@ -234,14 +234,15 @@ const {
               var targetId = href.substring(hashIndex);
               var isCurrentPage = (href.startsWith('#') || window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname === '');
               if (isCurrentPage && targetId.length > 1) {
-                var targetElement = document.querySelector(targetId);
+                // If targeting #prochains-departs, scroll directly to categories bar or section top
+                var targetElement = (targetId === '#prochains-departs') ? (document.getElementById('categories') || document.querySelector(targetId)) : document.querySelector(targetId);
                 if (targetElement) {
                   e.preventDefault();
-                  var headerOffset = 90;
+                  var headerOffset = (targetId === '#prochains-departs') ? 0 : 80;
                   var elementPosition = targetElement.getBoundingClientRect().top;
                   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                   window.scrollTo({
-                    top: offsetPosition,
+                    top: Math.max(0, offsetPosition),
                     behavior: 'smooth'
                   });
                   if (history.pushState) {
