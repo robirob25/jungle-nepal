@@ -5245,6 +5245,18 @@ import Layout from '../layouts/Layout.astro';
       const pills = document.querySelectorAll('.category-pill');
       let visibleCount = 0;
 
+      // Automatically smooth scroll back up to the top of the tours section when clicking a category filter
+      const toursSection = document.getElementById('prochains-departs');
+      if (toursSection) {
+        const headerHeight = 70;
+        const rect = toursSection.getBoundingClientRect();
+        const targetScrollTop = rect.top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: Math.max(0, targetScrollTop),
+          behavior: 'smooth'
+        });
+      }
+
       const catLower = (category || 'all').toLowerCase().trim();
 
       pills.forEach(pill => {
