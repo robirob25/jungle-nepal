@@ -10,7 +10,7 @@ const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-
 <Layout 
   title="Parc national de Chitwan | Destinations Jungle Nepal Adventure"
   description="Classé au patrimoine mondial de l’UNESCO en 1984, le parc national de Chitwan abrite l’une des faunes sauvages les plus impressionnantes d’Asie. C'est"
-  image="https://junglenepal.com/wp-content/uploads/2025/03/68.png"
+  image="/assets/original_site/chitwan_rhino.webp"
   lang="fr"
   isDarkHeader={true}
 >
@@ -19,7 +19,7 @@ const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="https://junglenepal.com/wp-content/uploads/2025/03/68.png" alt="Parc national de Chitwan" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img src="/assets/original_site/chitwan_rhino.webp" alt="Parc national de Chitwan" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -121,7 +121,7 @@ const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2025/03/68.png" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/chitwan_rhino.webp" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
           <img src="https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -130,7 +130,7 @@ const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-
           <img src="/assets/curated_gallery/rhino_unicorne_brume.webp" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/curated_gallery/crocodile_marais_rapti.webp" alt="Parc national de Chitwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@ const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-
   </div>
 
   <script is:inline>
-    const galleryImages = ["https://junglenepal.com/wp-content/uploads/2025/03/68.png", "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg", "/assets/curated_gallery/rhino_unicorne_brume.webp", "https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png"];
+    const galleryImages = ["/assets/original_site/chitwan_rhino.webp", "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg", "/assets/curated_gallery/rhino_unicorne_brume.webp", "/assets/curated_gallery/crocodile_marais_rapti.webp"];
     let currentImageIndex = 0;
 
     window.openLightbox = function(index) {
