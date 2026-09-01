@@ -70,17 +70,29 @@ Options -Indexes -MultiViews
 </IfModule>
 
 # 301 REDIRECTS (Legacy WordPress Slugs Preservation)
+Redirect 301 /agence-de-safaris-au-nepal/ /a-propos
+Redirect 301 /agence-de-safaris-au-nepal /a-propos
 Redirect 301 /nos-aventures/ /#prochains-departs
 Redirect 301 /nos-aventures /#prochains-departs
 Redirect 301 /nos-destinations/ /destinations
 Redirect 301 /nos-destinations /destinations
 Redirect 301 /safaris/ /tours/jungle-extreme
+Redirect 301 /safaris /tours/jungle-extreme
 Redirect 301 /parc-national-de-bardia/ /destinations/bardia
+Redirect 301 /parc-national-de-bardia /destinations/bardia
 Redirect 301 /parc-national-de-chitwan/ /destinations/chitwan
+Redirect 301 /parc-national-de-chitwan /destinations/chitwan
 Redirect 301 /parc-national-de-suklaphanta/ /destinations/suklaphanta
+Redirect 301 /parc-national-de-suklaphanta /destinations/suklaphanta
 Redirect 301 /annapurnas-pokhara/ /destinations/annapurna
+Redirect 301 /annapurnas-pokhara /destinations/annapurna
 Redirect 301 /katmandou-vallee-des-rois/ /destinations/katmandou
+Redirect 301 /katmandou-vallee-des-rois /destinations/katmandou
 Redirect 301 /contact-us/ /contact
+Redirect 301 /contact-us /contact
 Redirect 301 /about-us/ /a-propos
+Redirect 301 /about-us /a-propos
 Redirect 301 /about/ /a-propos
+Redirect 301 /about /a-propos
 Redirect 301 /notre-histoire/ /a-propos
+Redirect 301 /notre-histoire /a-propos

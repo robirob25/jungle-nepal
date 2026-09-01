@@ -10,7 +10,7 @@ const matchingTours = toursData.filter(t => ["bardia-explorateur", "babai-specia
 <Layout 
   title="Parc national de Bardia | Destinations Jungle Nepal Adventure"
   description="Avant sa création officielle en 1988, le parc national de Bardia était une réserve de chasse royale dédiée à la monarchie népalaise. Sa transformation"
-  image="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-700x430.png"
+  image="/assets/original_site/safari_pied.webp"
   lang="fr"
   isDarkHeader={true}
 >
@@ -121,16 +121,16 @@ const matchingTours = toursData.filter(t => ["bardia-explorateur", "babai-specia
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia.png" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/safari_pied.webp" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/tigre_route.webp" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/bivouac_camp.webp" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2025/12/Tharu-danse.png" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/babai_walk.webp" alt="Parc national de Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@ const matchingTours = toursData.filter(t => ["bardia-explorateur", "babai-specia
   </div>
 
   <script is:inline>
-    const galleryImages = ["https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia.png", "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png", "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg", "https://junglenepal.com/wp-content/uploads/2025/12/Tharu-danse.png"];
+    const galleryImages = ["/assets/original_site/safari_pied.webp", "/assets/original_site/tigre_route.webp", "/assets/original_site/bivouac_camp.webp", "/assets/original_site/babai_walk.webp"];
     let currentImageIndex = 0;
 
     window.openLightbox = function(index) {

@@ -10,7 +10,7 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
 <Layout 
   title="Parc national de Suklaphanta | Destinations Jungle Nepal Adventure"
   description="Situé dans l’extrême ouest du Népal, à la frontière de l’Inde, le parc national de Suklaphanta est l’un des joyaux les plus sauvages et les moins fréq"
-  image="https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg"
+  image="/assets/original_site/suklaphanta.webp"
   lang="fr"
   isDarkHeader={true}
 >
@@ -19,7 +19,7 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg" alt="Parc national de Suklaphanta" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img src="/assets/original_site/suklaphanta.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -121,13 +121,13 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/suklaphanta.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/bivouac_camp.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/tigre_bardia.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
           <img src="/assets/original_site/suklaphanta.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -247,7 +247,7 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
   </div>
 
   <script is:inline>
-    const galleryImages = ["https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg", "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg", "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg", "/assets/original_site/suklaphanta.webp"];
+    const galleryImages = ["/assets/original_site/suklaphanta.webp", "/assets/original_site/bivouac_camp.webp", "/assets/original_site/tigre_bardia.webp", "/assets/original_site/suklaphanta.webp"];
     let currentImageIndex = 0;
 
     window.openLightbox = function(index) {

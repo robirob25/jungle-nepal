@@ -10,7 +10,7 @@ const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spir
 <Layout 
   title="Les Annapurna & Pokhara | Destinations Jungle Nepal Adventure"
   description="La région de l’Annapurna est l’une des zones de trekking les plus spectaculaires et variées de la planète. Située à courte distance de la charmante vi"
-  image="https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg"
+  image="/assets/original_site/nepal_landscape.webp"
   lang="fr"
   isDarkHeader={true}
 >
@@ -19,7 +19,7 @@ const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spir
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -121,16 +121,16 @@ const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spir
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/1.png" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/fishtail_sacred_himalaya.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
           <img src="/assets/original_site/machapuchare.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/himalayas_sunrise_peaks.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@ const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spir
   </div>
 
   <script is:inline>
-    const galleryImages = ["https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg", "https://junglenepal.com/wp-content/uploads/2017/01/1.png", "/assets/original_site/machapuchare.webp", "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg"];
+    const galleryImages = ["/assets/original_site/nepal_landscape.webp", "/assets/original_site/fishtail_sacred_himalaya.webp", "/assets/original_site/machapuchare.webp", "/assets/original_site/himalayas_sunrise_peaks.webp"];
     let currentImageIndex = 0;
 
     window.openLightbox = function(index) {
