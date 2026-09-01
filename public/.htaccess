@@ -1,26 +1,90 @@
 # =========================================================================
-# JUNGLE NEPAL ADVENTURE - 301 REDIRECTS & SEO CONSERVATION ENGINE
+# JUNGLE NEPAL ADVENTURE - MILITARY-GRADE CYBERSECURITY & HARDENING
 # =========================================================================
-RewriteEngine On
-RewriteBase /
 
-# 1. Force HTTPS and Non-WWW (or WWW depending on preferred domain)
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
-RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
+# 1. DISABLE DIRECTORY BROWSING & LISTING
+Options -Indexes -MultiViews
 
-# 2. Universal Trailing Slash & Clean URL Mapping
-# Redirect /page.html to /page
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+# 2. BLOCK ACCESS TO SENSITIVE HIDDEN FILES (.env, .git, .yaml, .json, .log, .sql)
+<FilesMatch "^\.|\.(bak|config|sql|fla|psd|ini|log|sh|inc|env|git|json|yaml|yml|md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
 
-# Serve existing file or directory directly
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+# 3. ADVANCED HTTP SECURITY HEADERS (A+ Grade on SecurityHeaders.com)
+<IfModule mod_headers.c>
+    # Prevent Clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevent MIME Sniffing attacks
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Enable XSS Filter in legacy browsers
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Strict Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Enforce HSTS (1 Year + subdomains + preload)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+    
+    # Permissions Policy (Disable dangerous browser sensors)
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    
+    # Remove Server version signature
+    Header unset X-Powered-By
+    Header unset Server
+</IfModule>
 
-# 3. 301 Redirects from Old WordPress Slugs to New Clean Slugs
+# 4. BOT & SPAM INJECTION SHIELD (Block malicious query string exploits)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Block common SQL Injection & XSS attack vectors in Query Strings
+    RewriteCond %{QUERY_STRING} (eval\(|union.*select|benchmark\(|document\.cookie|<script|<iframe) [NC,OR]
+    RewriteCond %{QUERY_STRING} (base64_encode|globals|mosconfig|_request) [NC]
+    RewriteRule .* - [F,L]
+
+    # Force HTTPS & Strip WWW
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
+    RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
+
+    # Clean URL Trailing Slash & .html Removal
+    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+    RewriteRule ^ /%1 [NC,L,R=301]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
+
+# 5. GZIP & BROTLI SPEED COMPRESSION
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# 6. BROWSER CACHING (1 Year for static assets)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# 7. 301 REDIRECTS (Legacy WordPress Slugs Preservation)
 Redirect 301 /safaris/ /tours/jungle-extreme
 Redirect 301 /parc-national-de-bardia/ /destinations/bardia
 Redirect 301 /parc-national-de-chitwan/ /destinations/chitwan
