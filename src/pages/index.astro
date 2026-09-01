@@ -4979,7 +4979,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="https://www.google.com/search?sca_esv=a1a5ed640a4c7c37&cs=0&sxsrf=APpeQntnDL5GNsUQ_hIZE3WXkqPaN3biMw:1787312489201&q=Jungle+Nepal+Adventure+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDA0NLY0MLYwNjUxMzMwMzMy3sDI-IpR2qs0Lz0nVcEvtSAxR8ExpSw1r6S0KFXBsSyzeBErPlkAWhIrKFYAAAA&rldimm=8011390383546606623&tbm=lcl&hl=fr-FR&sa=X&ved=2ahUKEwjW85Pw0bGWAxVfTaQEHX8wKpkQ9fQKegQIERAG&biw=1470&bih=798&dpr=2#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-xs sm:text-sm border border-slate-300 shadow-md hover:border-[#0e8354] hover:shadow-lg transition-all duration-300 hover:scale-100 active:scale-95">
           <span class="w-2.5 h-2.5 rounded-full bg-[#00b67a] animate-pulse"></span>
           <span>Consulter tous les 19 avis vérifiés sur Google (5.0 / 5)</span>
-          <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
+          <svg class="w-4 h-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
         </a>
       </div>
 
@@ -5113,12 +5113,12 @@ import Layout from '../layouts/Layout.astro';
   <div id="custom-trip-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative text-slate-900 max-h-[90vh] overflow-y-auto">
       <button onclick="closeCustomTripModal()" class="absolute top-5 right-5 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 cursor-pointer">
-        <i data-lucide="x" class="w-5 h-5"></i>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
 
       <div class="flex items-center gap-3 mb-4">
         <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-[#0e8354] flex items-center justify-center">
-          <i data-lucide="sparkles" class="w-5 h-5"></i>
+          <svg class="w-5 h-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"></path></svg>
         </div>
         <div>
           <h3 class="font-black text-2xl text-slate-950 tracking-tight">Séjour privatisé et sur-mesure</h3>
@@ -5159,8 +5159,7 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <script is:inline>
-    lucide.createIcons();
-
+    if (typeof lucide !== 'undefined' && lucide && lucide.createIcons) { lucide.createIcons(); }
     function toggleMobileMenu() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     }

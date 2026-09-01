@@ -549,7 +549,7 @@ import Layout from '../../layouts/Layout.astro';
     </svg>
   </button>
   <script is:inline>
-    lucide.createIcons();
+    if (typeof lucide !== 'undefined' && lucide && lucide.createIcons) { lucide.createIcons(); }
     window.addEventListener('scroll', () => {
       const btn = document.getElementById('back-to-top');
       if (!btn) return;
