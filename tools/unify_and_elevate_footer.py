@@ -1,4 +1,8 @@
----
+import glob, re
+
+# Design an elite 2026 dark-mode footer with clean layout, subtle borders, high contrast, and zero layout bugs.
+# 1. src/components/Footer.astro:
+unified_footer = """---
 interface Props {
   lang?: 'fr' | 'en';
 }
@@ -118,3 +122,29 @@ const { lang = 'fr' } = Astro.props;
 
   </div>
 </footer>
+"""
+
+with open('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/src/components/Footer.astro', 'w', encoding='utf-8') as f:
+    f.write(unified_footer)
+
+# Replace any inline duplicate footers in all .astro files
+all_astro = glob.glob('/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/src/**/*.astro', recursive=True)
+
+footer_html_clean = unified_footer.split('---')[-1].strip()
+
+footer_regex = r'<footer[^>]*>.*?</footer>'
+
+for fpath in all_astro:
+    if fpath.endswith('Footer.astro'):
+        continue
+    with open(fpath, 'r', encoding='utf-8') as f:
+        c = f.read()
+
+    if '<footer' in c:
+        new_c = re.sub(footer_regex, footer_html_clean, c, flags=re.DOTALL)
+        if new_c != c:
+            with open(fpath, 'w', encoding='utf-8') as f:
+                f.write(new_c)
+            print(f"✓ Unified clean elevated footer in {fpath.split('/')[-1]}")
+
+print("Done elevating footer design and fixing layout across the entire website!")
