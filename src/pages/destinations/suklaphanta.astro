@@ -121,16 +121,16 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/suklaphanta.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/suklaphanta.webp" alt="Panneau d'entrée de la réserve de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/bivouac_camp.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/curated_gallery/deer_pair_savanna.webp" alt="Cerfs des marais dans les grandes savanes de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/tigre_bardia.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/tigre_bardia.webp" alt="Tigre du Bengale de l'ouest sauvage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/suklaphanta.webp" alt="Parc national de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" alt="Grand Nilgaut mâle dans la forêt de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -247,7 +247,12 @@ const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-t
   </div>
 
   <script is:inline>
-    const galleryImages = ["/assets/original_site/suklaphanta.webp", "/assets/original_site/bivouac_camp.webp", "/assets/original_site/tigre_bardia.webp", "/assets/original_site/suklaphanta.webp"];
+    const galleryImages = [
+      "/assets/original_site/suklaphanta.webp", 
+      "/assets/curated_gallery/deer_pair_savanna.webp", 
+      "/assets/original_site/tigre_bardia.webp", 
+      "/assets/curated_gallery/nilgaut_male_taureau_bleu.webp"
+    ];
     let currentImageIndex = 0;
 
     window.openLightbox = function(index) {
