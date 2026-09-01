@@ -14,7 +14,7 @@ const { lang = 'fr', currentPath = '', isTransparent = false } = Astro.props;
     
       <!-- LEFT: LOGO -->
       <div class="flex items-center shrink-0">
-        <a href="/index.html" class="flex items-center gap-3 group">
+        <a href="/" class="flex items-center gap-3 group">
           <img 
             src={isTransparent ? "/assets/logo_nav_white.png" : "/assets/logo_nav_dark.png"} 
             alt="Jungle Nepal Adventure" 
@@ -25,7 +25,7 @@ const { lang = 'fr', currentPath = '', isTransparent = false } = Astro.props;
 
       <!-- CENTER: NAVIGATION LINKS -->
       <nav class={`hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-semibold ${isTransparent ? 'text-white/90' : 'text-slate-700'}`}>
-        <a href="/index.html#prochains-departs" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
+        <a href="/#prochains-departs" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           Tous les 15 séjours
         </a>
 
@@ -84,11 +84,11 @@ const { lang = 'fr', currentPath = '', isTransparent = false } = Astro.props;
           </div>
         </div>
 
-        <a href="/index.html#concept" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
+        <a href="/#concept" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           L'esprit safari
         </a>
-        <a href="/index.html#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a>
-      <a href="/index.html#galerie-faune" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
+        <a href="/#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a>
+      <a href="/#galerie-faune" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           Maîtres pisteurs
         </a>
         <a href="/a-propos.html" class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
@@ -159,7 +159,7 @@ const { lang = 'fr', currentPath = '', isTransparent = false } = Astro.props;
   </div>
 
   <nav class="flex flex-col space-y-1.5 font-bold text-sm">
-    <a href="/index.html#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+    <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
       <span>Tous les 15 séjours</span>
       <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">15</span>
     </a>
@@ -209,12 +209,12 @@ const { lang = 'fr', currentPath = '', isTransparent = false } = Astro.props;
       </div>
     </div>
 
-    <a href="/index.html#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center text-slate-200 hover:text-white transition-colors">
+    <a href="/#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center text-slate-200 hover:text-white transition-colors">
       <span>L'esprit safari</span>
     </a>
 
-    <a href="/index.html#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a>
-      <a href="/index.html#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center text-slate-200 hover:text-white transition-colors">
+    <a href="/#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a>
+      <a href="/#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center text-slate-200 hover:text-white transition-colors">
       <span>Galerie</span>
     </a>
 

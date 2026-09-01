@@ -233,7 +233,7 @@ const {
             var hashIndex = href.indexOf('#');
             if (hashIndex !== -1) {
               var targetId = href.substring(hashIndex);
-              var isCurrentPage = (href.startsWith('#') || window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname === '');
+              var isCurrentPage = (href.startsWith('#') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || window.location.pathname === '');
               if (isCurrentPage && targetId.length > 1) {
                 var targetElement = document.querySelector(targetId);
                 if (targetElement) {

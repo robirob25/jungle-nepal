@@ -1,11 +1,9 @@
 # =========================================================================
-# JUNGLE NEPAL ADVENTURE - MILITARY-GRADE CYBERSECURITY & HARDENING
+# JUNGLE NEPAL ADVENTURE - MILITARY-GRADE CYBERSECURITY & CLEAN URLS
 # =========================================================================
 
-# 1. DISABLE DIRECTORY BROWSING & LISTING
 Options -Indexes -MultiViews
 
-# 2. BLOCK ACCESS TO SENSITIVE HIDDEN FILES (.env, .git, .yaml, .json, .log, .sql)
 <FilesMatch "^\.|\.(bak|config|sql|fla|psd|ini|log|sh|inc|env|git|json|yaml|yml|md)$">
     <IfModule mod_authz_core.c>
         Require all denied
@@ -16,32 +14,17 @@ Options -Indexes -MultiViews
     </IfModule>
 </FilesMatch>
 
-# 3. ADVANCED HTTP SECURITY HEADERS (A+ Grade on SecurityHeaders.com)
 <IfModule mod_headers.c>
-    # Prevent Clickjacking
     Header always set X-Frame-Options "SAMEORIGIN"
-    
-    # Prevent MIME Sniffing attacks
     Header always set X-Content-Type-Options "nosniff"
-    
-    # Enable XSS Filter in legacy browsers
     Header always set X-XSS-Protection "1; mode=block"
-    
-    # Strict Referrer Policy
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    
-    # Enforce HSTS (1 Year + subdomains + preload)
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-    
-    # Permissions Policy (Disable dangerous browser sensors)
     Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
-    
-    # Remove Server version signature
     Header unset X-Powered-By
     Header unset Server
 </IfModule>
 
-# 4. BOT & SPAM INJECTION SHIELD (Block malicious query string exploits)
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
@@ -56,7 +39,11 @@ Options -Indexes -MultiViews
     RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
     RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
 
-    # Clean URL Trailing Slash & .html Removal
+    # Redirect /index or /index.html directly to root domain /
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index(\.html)?\ HTTP/ [NC]
+    RewriteRule ^(.*)index(\.html)?$ https://junglenepal.com/$1 [R=301,L]
+
+    # Clean URL Trailing Slash & .html Removal for subpages
     RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
     RewriteRule ^ /%1 [NC,L,R=301]
 
@@ -66,12 +53,10 @@ Options -Indexes -MultiViews
     RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
 
-# 5. GZIP & BROTLI SPEED COMPRESSION
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml image/svg+xml
 </IfModule>
 
-# 6. BROWSER CACHING (1 Year for static assets)
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
@@ -84,7 +69,11 @@ Options -Indexes -MultiViews
     ExpiresByType text/html "access plus 1 hour"
 </IfModule>
 
-# 7. 301 REDIRECTS (Legacy WordPress Slugs Preservation)
+# 301 REDIRECTS (Legacy WordPress Slugs Preservation)
+Redirect 301 /nos-aventures/ /#prochains-departs
+Redirect 301 /nos-aventures /#prochains-departs
+Redirect 301 /nos-destinations/ /destinations
+Redirect 301 /nos-destinations /destinations
 Redirect 301 /safaris/ /tours/jungle-extreme
 Redirect 301 /parc-national-de-bardia/ /destinations/bardia
 Redirect 301 /parc-national-de-chitwan/ /destinations/chitwan
