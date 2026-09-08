@@ -415,7 +415,7 @@ import Layout from '../layouts/Layout.astro';
               <span>OÙ ?</span>
             </div>
             <div class="relative mt-0.5">
-                                                      <select id="search-dest" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
+                                                      <select id="search-dest" name="destination" aria-label="Choisir une destination ou un type de séjour" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
             <option value="all">Tous les séjours (15)</option>
             <option value="safari">Safaris & Grands Félins (Bardia & Himalaya)</option>
             <option value="bivouac">Bivouacs & Nuits Sauvages en Jungle</option>
@@ -440,7 +440,7 @@ import Layout from '../layouts/Layout.astro';
               <span>QUAND ?</span>
             </div>
             <div class="relative mt-0.5">
-              <select id="search-date" class="w-full bg-transparent font-extrabold text-sm sm:text-base text-slate-900 focus:outline-none cursor-pointer pr-6 appearance-none">
+              <select id="search-date" name="date" aria-label="Choisir une période de départ" class="w-full bg-transparent font-extrabold text-sm sm:text-base text-slate-900 focus:outline-none cursor-pointer pr-6 appearance-none">
                 <option value="all">Toute l'année</option>
                 <option value="spring">Printemps</option>
                 <option value="autumn">Automne</option>
