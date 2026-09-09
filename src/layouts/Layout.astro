@@ -757,6 +757,14 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
         document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
           observer.observe(el);
         });
+      } else {
+        document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+          el.classList.add('revealed');
+        });
+      }
+    });
+  </script>
+
   <!-- Precision Smooth Scroll & Anchor Hash Stabilization -->
   <script is:inline>
     (function() {
