@@ -173,16 +173,10 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
   .animate-hero-2 { animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
   .animate-hero-3 { animation: heroFadeUp 1.0s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
 
-  /* Scroll Reveal Helper Classes */
-  .reveal-on-scroll {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .reveal-on-scroll.revealed {
-    opacity: 1;
-    transform: translateY(0);
+  /* Trip Card Smooth Rendering */
+  .trip-card {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
   .map-pin-radar::after {
@@ -737,23 +731,7 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
   </script>
 
 
-  <!-- Universal Performance-Optimized Scroll Observer -->
-  <script is:inline>
-    (function() {
-      function initScrollReveal() {
-        var elements = document.querySelectorAll('.reveal-on-scroll');
-        if (!elements.length) return;
-        elements.forEach(function(el) {
-          el.classList.add('revealed');
-        });
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initScrollReveal);
-      } else {
-        initScrollReveal();
-      }
-    })();
-  </script>
+
 
   <!-- Precision Smooth Scroll & Anchor Hash Stabilization -->
   <script is:inline>
