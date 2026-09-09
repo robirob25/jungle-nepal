@@ -1,0 +1,34 @@
+import ftplib, os
+
+ftp = ftplib.FTP('213.130.145.177', timeout=60)
+ftp.login('u729389952.junglenepal.com', '09010412Amrr!')
+ftp.set_pasv(True)
+
+DIST_DIR = '/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/dist'
+
+for root, dirs, files in os.walk(DIST_DIR):
+    for f in files:
+        full_path = os.path.join(root, f)
+        rel_path = os.path.relpath(full_path, DIST_DIR)
+        remote_dir = os.path.dirname(rel_path)
+        
+        # We upload everything including _astro CSS/JS bundles, html, xml, etc.
+        # Skip large node_modules if any
+        if 'node_modules' in rel_path:
+            continue
+            
+        ftp.cwd('/public_html')
+        if remote_dir:
+            for part in remote_dir.split(os.sep):
+                try:
+                    ftp.mkd(part)
+                except:
+                    pass
+                ftp.cwd(part)
+        
+        with open(full_path, 'rb') as fp:
+            ftp.storbinary(f'STOR {f}', fp)
+        print(f"✓ Uploaded: {rel_path}")
+
+ftp.quit()
+print("🎉 All assets, CSS, JS, and HTML bundles successfully synchronized to Hostinger!")
