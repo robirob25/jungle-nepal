@@ -757,13 +757,52 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
         document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
           observer.observe(el);
         });
-      } else {
-        document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
-          el.classList.add('revealed');
+  <!-- Precision Smooth Scroll & Anchor Hash Stabilization -->
+  <script is:inline>
+    (function() {
+      function scrollToTarget(targetId) {
+        var el = document.getElementById(targetId);
+        if (!el) return;
+        var headerOffset = window.innerWidth < 640 ? 70 : 85;
+        var elementPosition = el.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: Math.max(0, offsetPosition),
+          behavior: 'smooth'
         });
       }
-    });
-  </script>
 
+      // Handle in-page clicks on anchor links (#... or /#...)
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (!href) return;
+
+        var isCurrentHome = (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '');
+        var isAnchor = href.startsWith('#') || (href.startsWith('/#') && isCurrentHome);
+        if (isAnchor) {
+          var targetId = href.replace(/^\/?#/, '');
+          if (targetId) {
+            var targetEl = document.getElementById(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              history.pushState(null, '', '#' + targetId);
+              scrollToTarget(targetId);
+            }
+          }
+        }
+      });
+
+      // Handle initial page load with hash (e.g. from external/inner pages)
+      window.addEventListener('load', function() {
+        if (window.location.hash) {
+          var targetId = window.location.hash.substring(1);
+          setTimeout(function() { scrollToTarget(targetId); }, 150);
+          setTimeout(function() { scrollToTarget(targetId); }, 600);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
