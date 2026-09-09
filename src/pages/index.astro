@@ -471,6 +471,7 @@ import Layout from '../layouts/Layout.astro';
 
         </form>
       </div>
+    </div>
   </section>
 
   <!-- ========================================================================= -->
@@ -1511,6 +1512,7 @@ import Layout from '../layouts/Layout.astro';
 
         </article>
       </div>
+    </div>
   </section>
 
         <!-- ========================================================================= -->
@@ -5254,9 +5256,11 @@ import Layout from '../layouts/Layout.astro';
         }
 
         if (match) {
-          card.style.display = 'flex';
+          card.classList.remove('hidden');
+          card.style.removeProperty('display');
           visibleCount++;
         } else {
+          card.classList.add('hidden');
           card.style.display = 'none';
         }
       });

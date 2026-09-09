@@ -70,10 +70,24 @@ Options -Indexes -MultiViews
 </IfModule>
 
 <IfModule mod_headers.c>
-    <FilesMatch "\.(html|htm)$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
-        Header set Pragma "no-cache"
-        Header set Expires "0"
+    # Universal HTML & dynamic pages: zero caching at browser and edge CDN levels
+    Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+    Header always set Pragma "no-cache" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+    Header always set Expires "0" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+    Header always set CDN-Cache-Control "no-store" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+    Header always set Surrogate-Control "no-store" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+    
+    <FilesMatch "\.(html|htm|php)$">
+        Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0"
+        Header always set Pragma "no-cache"
+        Header always set Expires "0"
+        Header always set CDN-Cache-Control "no-store"
+        Header always set Surrogate-Control "no-store"
+    </FilesMatch>
+
+    # Cache immutable assets (CSS, JS, Fonts, Images)
+    <FilesMatch "\.(css|js|webp|png|jpg|jpeg|svg|woff2|woff|ttf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>
 
