@@ -37,10 +37,13 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
 
   <link rel="canonical" href={canonicalUrl} />
 
-  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans -->
+  <!-- High-Performance Asynchronous Google Fonts (Plus Jakarta Sans & Playfair Display) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Dancing+Script:wght@700&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,900&family=Great+Vibes&family=Italiana&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Marcellus&family=Pacifico&family=Playfair+Display:ital,wght@1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
+  </noscript>
 
   <!-- Dynamic Adaptive Favicon (Instant DOM Switcher for Chrome/Safari/Edge) -->
   <link id="dynamic-favicon" rel="icon" href="/favicon-light.png" type="image/png" />
@@ -64,18 +67,20 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
     })();
   </script>
 
-  <!-- Google Translate In-Place Translation Widget Initialization -->
+  <!-- Google Translate In-Place Translation Widget Initialization (Deferred for PageSpeed) -->
   <script is:inline>
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'fr',
-        includedLanguages: 'en,fr,de,es,it,nl',
-        autoDisplay: false,
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
+      if (typeof google !== 'undefined' && google.translate) {
+        new google.translate.TranslateElement({
+          pageLanguage: 'fr',
+          includedLanguages: 'en,fr,de,es,it,nl',
+          autoDisplay: false,
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
     }
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script is:inline defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content={pageTitle} />
@@ -119,8 +124,8 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
   }
   </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Deferred Lucide Icons (Non-blocking) -->
+  <script is:inline defer src="https://unpkg.com/lucide@latest"></script>
 
   <style is:global>
     html, body { 
