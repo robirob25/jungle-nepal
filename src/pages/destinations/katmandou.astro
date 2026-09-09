@@ -159,7 +159,9 @@ const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spiritue
               <img 
                 src={tour.images[0]} 
                 alt={tour.title} 
-                class="w-full h-full object-cover group-transition-opacity duration-300" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+                decoding="async"
               />
               
 
