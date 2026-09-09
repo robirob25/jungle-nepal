@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Page introuvable (404) | Jungle Nepal Adventure"
+  description="Oups ! La piste que vous suivez semble s'être évanouie dans la jungle. Retrouvez votre chemin vers nos safaris et expéditions au Népal."
+  lang="fr"
+  isDarkHeader={true}
+>
+  <Header lang="fr" currentPath="/404" />
+
+  <main class="min-h-[75vh] flex items-center justify-center pt-32 pb-20 px-4 bg-[#040d08] text-white relative overflow-hidden font-sans">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,131,84,0.15)_0,transparent_70%)] pointer-events-none"></div>
+
+    <div class="max-w-2xl mx-auto text-center relative z-10 space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-700/40 text-emerald-400 font-bold text-xs uppercase tracking-widest">
+        <span>Erreur 404 • Piste perdue</span>
+      </div>
+
+      <h1 class="text-5xl sm:text-7xl font-black tracking-tight text-white leading-tight">
+        404
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-bold text-slate-200">
+        Vous vous êtes aventuré hors des sentiers balisés
+      </p>
+
+      <p class="text-sm sm:text-base text-slate-400 max-w-lg mx-auto leading-relaxed">
+        Cette page n'existe pas ou a été déplacée. Nos maîtres pisteurs vous ramènent vers les plus belles expéditions sauvages du Népal.
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a href="/" class="px-7 py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-bold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all">
+          Retour à l'accueil
+        </a>
+        <a href="/#prochains-departs" class="px-7 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/15 hover:border-white/30 hover:scale-105 active:scale-95 transition-all">
+          Découvrir les 15 séjours
+        </a>
+        <a href="/contact" class="px-7 py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 text-emerald-300 font-bold text-sm border border-emerald-800/40 hover:scale-105 active:scale-95 transition-all">
+          Nous contacter
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer lang="fr" />
+</Layout>
