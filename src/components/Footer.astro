@@ -107,10 +107,12 @@ const { lang = 'fr' } = Astro.props;
         <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. Tous droits réservés.</p>
         <p class="text-[11px] text-slate-400">Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310</p>
       </div>
-      <div class="flex items-center gap-4 text-xs">
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-xs">
         <button onclick="openLegalModal()" class="text-slate-200 hover:text-white font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/60 px-3.5 py-1.5 rounded-xl border border-emerald-700/40">
           <span>Agréments & Licences officielles</span>
         </button>
+        <span>•</span>
+        <a href="/mentions-legales" class="hover:text-white transition-colors">Mentions légales</a>
         <span>•</span>
         <a href="/a-propos.html" class="hover:text-white transition-colors">À propos</a>
         <span>•</span>
