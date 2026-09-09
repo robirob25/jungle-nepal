@@ -34,7 +34,7 @@ ftp.set_pasv(True)
 
 for root, dirs, files in os.walk(DIST_DIR):
     for f in files:
-        if f.endswith('.html') or f.endswith('.css') or f.endswith('.js') or f.endswith('.woff2') or f == '.htaccess':
+        if f.endswith('.html') or f.endswith('.css') or f.endswith('.js') or f.endswith('.woff2') or f.endswith('.webp') or f.endswith('.png') or f == '.htaccess':
             full_path = os.path.join(root, f)
             rel_path = os.path.relpath(full_path, DIST_DIR)
             remote_dir = os.path.dirname(rel_path)
