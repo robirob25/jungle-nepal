@@ -6,10 +6,10 @@ ftp.set_pasv(True)
 
 DIST_DIR = '/Users/robinrozier/.gemini/antigravity/scratch/jungle-nepal/dist'
 
-# Only sync HTML files and .htaccess
+# Sync HTML, XML, .htaccess, and all compiled _astro CSS/JS bundles
 for root, dirs, files in os.walk(DIST_DIR):
     for f in files:
-        if f.endswith('.html') or f == '.htaccess' or f.endswith('.xml'):
+        if f.endswith('.html') or f == '.htaccess' or f.endswith('.xml') or f.endswith('.css') or f.endswith('.js'):
             full_path = os.path.join(root, f)
             rel_path = os.path.relpath(full_path, DIST_DIR)
             remote_dir = os.path.dirname(rel_path)
