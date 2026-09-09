@@ -282,16 +282,20 @@ import Layout from '../layouts/Layout.astro';
       
       <!-- Slide 0: Tigre royal au bord de l'eau (LCP Element - Priority High) -->
       <div class="hero-slide absolute inset-0 transition-opacity duration-400 ease-out opacity-100 scale-100" data-slide="0">
-        <img 
-          src="/assets/hero/hero_1_tiger_water.webp" 
-          alt="Tigre du Bengale au point d'eau à Bardia" 
-          width="1920"
-          height="1080"
-          fetchpriority="high"
-          loading="eager"
-          decoding="sync"
-          class="w-full h-full object-cover object-[75%_30%] filter brightness-90 contrast-105"
-        />
+        <picture class="w-full h-full block">
+          <source media="(max-width: 768px)" srcset="/assets/hero/hero_1_tiger_water_mobile.webp" type="image/webp">
+          <source media="(min-width: 769px)" srcset="/assets/hero/hero_1_tiger_water.webp" type="image/webp">
+          <img 
+            src="/assets/hero/hero_1_tiger_water.webp" 
+            alt="Tigre du Bengale au point d'eau à Bardia" 
+            width="1600"
+            height="900"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            class="w-full h-full object-cover object-[75%_30%] filter brightness-90 contrast-105"
+          />
+        </picture>
       </div>
 
       <!-- Slide 1: Rhinocéros unicorne dans la brume -->

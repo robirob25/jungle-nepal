@@ -28,8 +28,9 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>{pageTitle}</title>
   <meta name="description" content={description} />
-  <!-- HIGH-PERFORMANCE PRELOADS (LCP Optimization) -->
-  <link rel="preload" href="/assets/hero/hero_1_tiger_water.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- HIGH-PERFORMANCE PRELOADS (Responsive LCP Optimization) -->
+  <link rel="preload" href="/assets/hero/hero_1_tiger_water_mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" href="/assets/hero/hero_1_tiger_water.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
   <link rel="preload" href="/assets/logo.png" as="image" type="image/png">
 
   <!-- Content Security Policy (Strict Security & XSS Mitigation) -->
