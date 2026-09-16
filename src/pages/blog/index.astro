@@ -30,8 +30,8 @@ const otherPosts = sortedPosts.slice(1);
   <!-- HEADER -->
   <Header isTransparent={false} currentPath="/blog" />
 
-  <!-- HERO BANNER (ATMOSPHERIC, HIGH-CONTRAST & REFINED) -->
-  <section class="relative min-h-[48vh] sm:min-h-[56vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white border-b border-white/10">
+  <!-- HERO BANNER -->
+  <section class="relative min-h-[48vh] sm:min-h-[54vh] flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white border-b border-white/10">
     <!-- Cinematic Background Image with Gradient Overlay -->
     <div class="absolute inset-0 z-0">
       <img 
@@ -63,20 +63,42 @@ const otherPosts = sortedPosts.slice(1);
         Conseils d'experts locaux, fiches espèces, repérages des pistes de Bardia et Chitwan, et récits immersifs pour réussir votre voyage au cœur du Népal sauvage.
       </p>
 
-      <!-- High-End Search Input -->
-      <div class="w-full max-w-xl pt-2">
-        <div class="relative group/search">
+      <!-- Instant Live Search Bar + Dropdown -->
+      <div class="w-full max-w-2xl pt-2 relative">
+        <form onsubmit="event.preventDefault(); document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'});" class="relative group/search">
           <input 
             type="text" 
             id="blog-search-input"
-            placeholder="Rechercher un guide (tigre, bardia, budget, matériel, oiseaux...)..." 
-            class="w-full px-5 py-4 pl-12 rounded-2xl bg-white/10 hover:bg-white/15 focus:bg-slate-900/95 border border-white/20 focus:border-emerald-400 text-white placeholder-slate-300 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 text-sm sm:text-base transition-all duration-200 backdrop-blur-xl shadow-2xl"
+            autocomplete="off"
+            placeholder="Rechercher un guide (ex: tigre, bardia, budget, matériel, oiseaux, météo...)..." 
+            class="w-full px-5 py-4 pl-12 pr-12 rounded-2xl bg-white/10 hover:bg-white/15 focus:bg-slate-900/95 border border-white/20 focus:border-emerald-400 text-white placeholder-slate-300 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 text-sm sm:text-base transition-all duration-200 backdrop-blur-xl shadow-2xl"
           />
-          <svg class="w-5 h-5 text-emerald-400 absolute left-4 top-1/2 -translate-y-1/2 transition-transform duration-200 group-focus-within/search:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 text-emerald-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none transition-transform duration-200 group-focus-within/search:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
+          <button 
+            type="button" 
+            id="clear-search-btn" 
+            onclick="clearSearch()" 
+            class="hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center text-xs font-bold transition-colors cursor-pointer"
+            aria-label="Effacer la recherche"
+          >
+            ✕
+          </button>
+        </form>
+
+        <!-- Live Instant Suggestions Dropdown -->
+        <div id="search-suggestions-box" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#041d13]/98 backdrop-blur-2xl border border-white/15 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-hidden z-50 text-left divide-y divide-white/10">
+          <div id="suggestions-list" class="max-h-80 overflow-y-auto p-2 space-y-1"></div>
+          <div class="p-3 bg-black/30 flex items-center justify-between text-xs text-slate-300">
+            <span id="suggestions-summary">Appuyez sur Entrée pour voir tous les résultats</span>
+            <button type="button" onclick="document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'}); hideSuggestions();" class="text-amber-300 hover:text-amber-200 font-bold">
+              Voir dans la grille ↓
+            </button>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -85,7 +107,17 @@ const otherPosts = sortedPosts.slice(1);
 
     <!-- FEATURED POST -->
     {featuredPost && (
-      <section id="featured-article-box" class="group relative rounded-3xl overflow-hidden bg-white border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300">
+      <section 
+        id="featured-article-box" 
+        class="blog-card group relative rounded-3xl overflow-hidden bg-white border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300"
+        data-title={featuredPost.title}
+        data-desc={featuredPost.description}
+        data-keyword={featuredPost.keyword || ""}
+        data-category={featuredPost.category}
+        data-slug={featuredPost.slug}
+        data-image={featuredPost.featuredImage}
+        data-reading={featuredPost.readingTime}
+      >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
           
           <!-- Image -->
@@ -152,18 +184,18 @@ const otherPosts = sortedPosts.slice(1);
     )}
 
     <!-- ARTICLE GRID SECTION -->
-    <section class="space-y-8">
+    <section id="articles-grid-section" class="space-y-8 scroll-mt-28">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <h2 class="text-2xl font-black text-slate-950 tracking-tight">
             Tous les articles & guides pratiques
           </h2>
           <p class="text-xs sm:text-sm text-slate-500 font-medium">
-            Explorez notre bibliothèque complète de ressources pour votre safari au Népal.
+            Explorez notre bibliothèque complète de 26 ressources pour votre safari au Népal.
           </p>
         </div>
         <span id="posts-count-badge" class="text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full self-start sm:self-auto border border-slate-200">
-          {posts.length} articles
+          {posts.length} articles disponibles
         </span>
       </div>
 
@@ -172,8 +204,13 @@ const otherPosts = sortedPosts.slice(1);
         {otherPosts.map((post) => (
           <article 
             class="blog-card group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            data-title={post.title.toLowerCase()}
-            data-desc={post.description.toLowerCase()}
+            data-title={post.title}
+            data-desc={post.description}
+            data-keyword={post.keyword || ""}
+            data-category={post.category}
+            data-slug={post.slug}
+            data-image={post.featuredImage}
+            data-reading={post.readingTime}
           >
             <!-- Card Thumbnail -->
             <a href={`/blog/${post.slug}.html`} class="relative block h-52 overflow-hidden bg-slate-900 shrink-0">
@@ -230,8 +267,8 @@ const otherPosts = sortedPosts.slice(1);
       <div id="no-results" class="hidden text-center py-16 bg-slate-50 rounded-3xl border border-dashed border-slate-300 space-y-3">
         <div class="w-12 h-12 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center mx-auto text-xl font-bold">🔍</div>
         <h4 class="text-base font-bold text-slate-800">Aucun guide ne correspond à votre recherche</h4>
-        <p class="text-xs text-slate-500">Essayez un autre mot-clé comme « tigre », « bardia », « budget » ou « équipement ».</p>
-        <button onclick="document.getElementById('blog-search-input').value=''; filterPosts('');" class="px-4 py-2 rounded-xl bg-[#134836] text-white text-xs font-bold cursor-pointer hover:bg-emerald-800 transition-colors">
+        <p class="text-xs text-slate-500">Essayez un autre terme comme « tigre », « bardia », « budget » ou « équipement ».</p>
+        <button onclick="clearSearch()" class="px-4 py-2 rounded-xl bg-[#134836] text-white text-xs font-bold cursor-pointer hover:bg-emerald-800 transition-colors">
           Réinitialiser la recherche
         </button>
       </div>
@@ -264,41 +301,147 @@ const otherPosts = sortedPosts.slice(1);
 
   </main>
 
-  <!-- SEARCH SCRIPT -->
+  <!-- ADVANCED INSTANT SEARCH SCRIPT -->
   <script is:inline>
-    const searchInput = document.getElementById('blog-search-input');
-    const cards = document.querySelectorAll('.blog-card');
-    const noResults = document.getElementById('no-results');
-    const countBadge = document.getElementById('posts-count-badge');
+    // Robust Accent & Diacritic Normalization
+    function normalize(str) {
+      if (!str) return '';
+      return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim();
+    }
 
-    function filterPosts(query) {
-      const q = query.trim().toLowerCase();
-      let visibleCount = 0;
+    // Cache elements
+    var searchInput = document.getElementById('blog-search-input');
+    var clearBtn = document.getElementById('clear-search-btn');
+    var suggestionsBox = document.getElementById('search-suggestions-box');
+    var suggestionsList = document.getElementById('suggestions-list');
+    var suggestionsSummary = document.getElementById('suggestions-summary');
+    var noResults = document.getElementById('no-results');
+    var countBadge = document.getElementById('posts-count-badge');
+    var allCards = Array.from(document.querySelectorAll('.blog-card'));
 
-      cards.forEach(card => {
-        const title = card.getAttribute('data-title') || '';
-        const desc = card.getAttribute('data-desc') || '';
-        if (!q || title.includes(q) || desc.includes(q)) {
-          card.style.display = 'flex';
+    // Extract article data once
+    var articlesData = allCards.map(function(card) {
+      var title = card.getAttribute('data-title') || '';
+      var desc = card.getAttribute('data-desc') || '';
+      var kw = card.getAttribute('data-keyword') || '';
+      var cat = card.getAttribute('data-category') || '';
+      var slug = card.getAttribute('data-slug') || '';
+      var img = card.getAttribute('data-image') || '';
+      var reading = card.getAttribute('data-reading') || '';
+
+      var searchable = normalize(title + ' ' + desc + ' ' + kw + ' ' + cat + ' ' + slug);
+
+      return {
+        card: card,
+        title: title,
+        desc: desc,
+        slug: slug,
+        img: img,
+        reading: reading,
+        searchable: searchable
+      };
+    });
+
+    window.hideSuggestions = function() {
+      if (suggestionsBox) suggestionsBox.classList.add('hidden');
+    };
+
+    window.clearSearch = function() {
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      runSearch('');
+    };
+
+    function runSearch(rawQuery) {
+      var q = normalize(rawQuery);
+      var hasQuery = q.length > 0;
+
+      // Toggle clear button
+      if (clearBtn) {
+        clearBtn.classList.toggle('hidden', !hasQuery);
+      }
+
+      var matched = [];
+      var visibleCount = 0;
+
+      articlesData.forEach(function(item) {
+        var isMatch = !hasQuery || item.searchable.indexOf(q) !== -1;
+        
+        if (isMatch) {
+          item.card.style.display = 'flex';
           visibleCount++;
+          matched.push(item);
         } else {
-          card.style.display = 'none';
+          item.card.style.display = 'none';
         }
       });
 
+      // Update count badge
+      if (countBadge) {
+        if (hasQuery) {
+          countBadge.textContent = visibleCount + ' guide' + (visibleCount > 1 ? 's' : '') + ' trouvé' + (visibleCount > 1 ? 's' : '');
+          countBadge.classList.add('bg-emerald-100', 'text-emerald-900', 'border-emerald-300');
+        } else {
+          countBadge.textContent = articlesData.length + ' articles disponibles';
+          countBadge.classList.remove('bg-emerald-100', 'text-emerald-900', 'border-emerald-300');
+        }
+      }
+
+      // No results box
       if (noResults) {
         noResults.classList.toggle('hidden', visibleCount > 0);
       }
-      if (countBadge) {
-        countBadge.textContent = `${visibleCount} article${visibleCount > 1 ? 's' : ''} trouvé${visibleCount > 1 ? 's' : ''}`;
+
+      // Live Instant Dropdown Suggestions
+      if (suggestionsBox && suggestionsList) {
+        if (q.length >= 2 && matched.length > 0) {
+          suggestionsBox.classList.remove('hidden');
+          var topMatches = matched.slice(0, 5);
+          
+          suggestionsList.innerHTML = topMatches.map(function(m) {
+            return '<a href="/blog/' + m.slug + '.html" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white group/sugg">' +
+              '<img src="' + m.img + '" alt="" class="w-12 h-12 rounded-lg object-cover bg-slate-900 shrink-0 border border-white/10" />' +
+              '<div class="flex-1 min-w-0">' +
+                '<p class="text-xs sm:text-sm font-bold text-white group-hover/sugg:text-amber-200 truncate">' + m.title + '</p>' +
+                '<p class="text-[11px] text-slate-400">⏱ ' + m.reading + '</p>' +
+              '</div>' +
+              '<span class="text-xs text-emerald-400 font-bold shrink-0">Lire →</span>' +
+            '</a>';
+          }).join('');
+
+          if (suggestionsSummary) {
+            suggestionsSummary.textContent = matched.length + ' guide' + (matched.length > 1 ? 's' : '') + ' correspondant' + (matched.length > 1 ? 's' : '');
+          }
+        } else {
+          suggestionsBox.classList.add('hidden');
+        }
       }
     }
 
     if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        filterPosts(e.target.value);
+      searchInput.addEventListener('input', function(e) {
+        runSearch(e.target.value);
+      });
+
+      searchInput.addEventListener('focus', function(e) {
+        if (e.target.value.trim().length >= 2) {
+          runSearch(e.target.value);
+        }
       });
     }
+
+    // Close dropdown on outside click
+    document.addEventListener('click', function(e) {
+      if (suggestionsBox && !suggestionsBox.contains(e.target) && e.target !== searchInput) {
+        hideSuggestions();
+      }
+    });
   </script>
 
   <Footer lang="fr" />
