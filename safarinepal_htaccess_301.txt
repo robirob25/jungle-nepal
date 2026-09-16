@@ -8,7 +8,7 @@ RewriteRule ^safari-photo-au-nepal-spots-materiel-conseils/?$ https://junglenepa
 RewriteRule ^safari-nepal-en-famille-guide-securite/?$ https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite [R=301,L]
 RewriteRule ^safari-bardia-prix-forfaits-et-ce-que-ca-inclut/?$ https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut [R=301,L]
 RewriteRule ^camping-safari-a-bardia-nuits-en-jungle-au-nepal/?$ https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal [R=301,L]
-RewriteRule ^post-3000/?$ https://junglenepal.com/blog/post-3000 [R=301,L]
+RewriteRule ^post-3000/?$ https://junglenepal.com/blog/panthere-des-neiges-au-nepal [R=301,L]
 RewriteRule ^agence-safari-nepal-francophone/?$ https://junglenepal.com/blog/agence-safari-nepal-francophone [R=301,L]
 RewriteRule ^le-safari-ethique-au-nepal-privilegier-la-marche/?$ https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche [R=301,L]
 RewriteRule ^trek-jungle-nepal-safari-pied/?$ https://junglenepal.com/blog/trek-jungle-nepal-safari-pied [R=301,L]
