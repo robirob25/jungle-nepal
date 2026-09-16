@@ -8,6 +8,14 @@ import posts from '../../data/blog_posts.json';
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 const featuredPost = sortedPosts[0];
 const otherPosts = sortedPosts.slice(1);
+
+// Category counts for dynamic filter pills
+const categoryCounts = posts.reduce((acc, p) => {
+  acc[p.category] = (acc[p.category] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+const categoriesList = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
 ---
 
 <Layout 
@@ -140,9 +148,13 @@ const otherPosts = sortedPosts.slice(1);
           <div class="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between space-y-6 bg-gradient-to-br from-white via-slate-50/50 to-white">
             <div class="space-y-4">
               <div class="flex items-center gap-3 text-xs font-bold text-slate-500">
-                <span class="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">
+                <button 
+                  type="button" 
+                  onclick={`filterByCategory('${featuredPost.category}')`}
+                  class="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 text-xs font-bold hover:bg-emerald-100 transition-colors cursor-pointer"
+                >
                   {featuredPost.category}
-                </span>
+                </button>
                 <span>•</span>
                 <span>{featuredPost.readingTime}</span>
                 <span>•</span>
@@ -199,6 +211,28 @@ const otherPosts = sortedPosts.slice(1);
         </span>
       </div>
 
+      <!-- Category Filter Pills Bar -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-none" id="category-filter-pills">
+        <button 
+          type="button" 
+          onclick="filterByCategory('')" 
+          class="cat-pill active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#134836] text-white shadow-sm border border-emerald-700/50 shrink-0 cursor-pointer" 
+          data-cat=""
+        >
+          Tous ({posts.length})
+        </button>
+        {categoriesList.map(([cat, count]) => (
+          <button 
+            type="button" 
+            onclick={`filterByCategory('${cat}')`} 
+            class="cat-pill px-3.5 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 shrink-0 cursor-pointer" 
+            data-cat={cat}
+          >
+            {cat} <span class="opacity-60 text-[10px] ml-1">({count})</span>
+          </button>
+        ))}
+      </div>
+
       <!-- GRID -->
       <div id="blog-posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {otherPosts.map((post) => (
@@ -222,9 +256,13 @@ const otherPosts = sortedPosts.slice(1);
               />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
               <div class="absolute top-3 left-3">
-                <span class="px-2.5 py-1 rounded-lg bg-slate-950/80 backdrop-blur-md text-emerald-300 font-bold text-[11px] border border-white/10">
+                <button 
+                  type="button" 
+                  onclick={`event.preventDefault(); event.stopPropagation(); filterByCategory('${post.category}');`}
+                  class="px-2.5 py-1 rounded-lg bg-slate-950/80 backdrop-blur-md text-emerald-300 font-bold text-[11px] border border-white/10 hover:bg-emerald-900/80 transition-colors cursor-pointer"
+                >
                   {post.category}
-                </span>
+                </button>
               </div>
               <div class="absolute bottom-3 right-3">
                 <span class="px-2 py-0.5 rounded-md bg-white/90 text-slate-900 font-bold text-[11px] shadow">
@@ -435,6 +473,29 @@ const otherPosts = sortedPosts.slice(1);
         }
       });
     }
+
+    window.filterByCategory = function(category) {
+      var pills = document.querySelectorAll('.cat-pill');
+      pills.forEach(function(pill) {
+        var pillCat = pill.getAttribute('data-cat') || '';
+        if (pillCat === category) {
+          pill.classList.add('bg-[#134836]', 'text-white', 'border-emerald-700/50');
+          pill.classList.remove('bg-slate-100', 'text-slate-700', 'border-slate-200');
+        } else {
+          pill.classList.remove('bg-[#134836]', 'text-white', 'border-emerald-700/50');
+          pill.classList.add('bg-slate-100', 'text-slate-700', 'border-slate-200');
+        }
+      });
+
+      if (searchInput) {
+        searchInput.value = category;
+      }
+      runSearch(category);
+      var gridSection = document.getElementById('articles-grid-section');
+      if (gridSection) {
+        gridSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
     // Close dropdown on outside click
     document.addEventListener('click', function(e) {

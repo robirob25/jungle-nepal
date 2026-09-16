@@ -237,9 +237,14 @@ const formattedDate = new Date(post.date).toLocaleDateString('fr-FR', {
               />
             </div>
             <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
-              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded self-start">
-                ⏱ {rel.readingTime}
-              </span>
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
+                  {rel.category}
+                </span>
+                <span class="text-[10px] font-medium text-slate-400">
+                  ⏱ {rel.readingTime}
+                </span>
+              </div>
               <h4 class="font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-snug">
                 {rel.title}
               </h4>
