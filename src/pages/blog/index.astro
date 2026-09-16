@@ -174,10 +174,10 @@ const categoriesList = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]
 
             <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <img src="/assets/logo_dark.png" alt="Jungle Nepal Team" class="w-9 h-9 rounded-full border border-slate-200 object-contain p-0.5 bg-slate-900" />
+                <img src="/assets/img_3.webp" alt="Robin" class="w-10 h-10 rounded-full border-2 border-emerald-600/40 object-cover shadow-sm" />
                 <div>
-                  <p class="text-xs font-bold text-slate-900">Jungle Nepal Adventure</p>
-                  <p class="text-[11px] text-slate-500">Pisteurs & Guides Experts</p>
+                  <p class="text-xs font-bold text-slate-900">Écrit par Robin</p>
+                  <p class="text-[11px] text-slate-500">Fondateur & Guide Expéditions</p>
                 </div>
               </div>
 
@@ -291,8 +291,12 @@ const categoriesList = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]
 
               <!-- Card Action -->
               <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="/assets/img_3.webp" alt="Robin" class="w-6 h-6 rounded-full object-cover border border-emerald-600/30" />
+                  <span class="text-[11px] font-semibold text-slate-600">Par Robin</span>
+                </div>
                 <a href={`/blog/${post.slug}.html`} class="text-xs font-bold text-emerald-700 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                  <span>Lire le guide complet</span>
+                  <span>Lire le guide</span>
                   <span>→</span>
                 </a>
               </div>

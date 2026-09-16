@@ -9,7 +9,10 @@
     "featuredImage": "/assets/blog/calao-bicorne-great-hornbill-bardia-scaled.jpg",
     "date": "2026-09-16",
     "readingTime": "14 min",
-    "category": "Ornithologie & Birdwatching"
+    "category": "Ornithologie & Birdwatching",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 3043,
@@ -21,7 +24,10 @@
     "featuredImage": "/assets/blog/DSC02283.jpg",
     "date": "2026-09-16",
     "readingTime": "11 min",
-    "category": "Safaris à pied"
+    "category": "Safaris à pied",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 3011,
@@ -33,7 +39,10 @@
     "featuredImage": "/assets/blog/2026-05-09-0000274579-Elephant-on-the-road-scaled.jpg",
     "date": "2026-08-19",
     "readingTime": "11 min",
-    "category": "Photographie animalière"
+    "category": "Photographie animalière",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 3015,
@@ -45,7 +54,10 @@
     "featuredImage": "/assets/blog/2026-05-09-0000274716-Mere-et-son-petit-Elephant-dAsie-Elephas-maximus-scaled.jpg",
     "date": "2026-08-19",
     "readingTime": "10 min",
-    "category": "Voyage en famille & Sécurité"
+    "category": "Voyage en famille & Sécurité",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2992,
@@ -57,7 +69,10 @@
     "featuredImage": "/assets/blog/2026-05-10-0000275395-LArbre-scaled.jpg",
     "date": "2026-08-17",
     "readingTime": "11 min",
-    "category": "Budget & Tarifs"
+    "category": "Budget & Tarifs",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2996,
@@ -69,7 +84,10 @@
     "featuredImage": "/assets/blog/2026-05-08-0000274123-Le-Repos-du-Materiel-scaled.jpg",
     "date": "2026-08-17",
     "readingTime": "10 min",
-    "category": "Bivouac & Nuits sauvages"
+    "category": "Bivouac & Nuits sauvages",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 3000,
@@ -81,7 +99,10 @@
     "featuredImage": "/assets/blog/2026-05-03-0000272161-Boudhanath-Temple-scaled.jpg",
     "date": "2026-08-14",
     "readingTime": "12 min",
-    "category": "Expéditions & Haute montagne"
+    "category": "Expéditions & Haute montagne",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2941,
@@ -93,7 +114,10 @@
     "featuredImage": "/assets/blog/3c0aa0ce-9964-466e-86b3-225f0fb8c69f.jpg",
     "date": "2026-08-14",
     "readingTime": "9 min",
-    "category": "Guides & Agence locale"
+    "category": "Guides & Agence locale",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2934,
@@ -105,7 +129,10 @@
     "featuredImage": "/assets/blog/DSC00246.jpg",
     "date": "2026-08-14",
     "readingTime": "10 min",
-    "category": "Écotourisme & Éthique"
+    "category": "Écotourisme & Éthique",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2955,
@@ -117,7 +144,10 @@
     "featuredImage": "/assets/blog/Humain-13xxxx-scaled.jpg",
     "date": "2026-08-14",
     "readingTime": "17 min",
-    "category": "Trek & Jungle sauvage"
+    "category": "Trek & Jungle sauvage",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2900,
@@ -129,7 +159,10 @@
     "featuredImage": "/assets/blog/DSC06483.jpg",
     "date": "2026-06-27",
     "readingTime": "22 min",
-    "category": "Combinés Trek & Safari"
+    "category": "Combinés Trek & Safari",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2891,
@@ -141,7 +174,10 @@
     "featuredImage": "/assets/blog/2026-05-06-0000273210-Safari-pirogue-a-Chitwan-scaled.jpg",
     "date": "2026-06-27",
     "readingTime": "9 min",
-    "category": "Pistage du Tigre"
+    "category": "Pistage du Tigre",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2635,
@@ -153,7 +189,10 @@
     "featuredImage": "/assets/blog/Suklaphanta-cerf.jpg",
     "date": "2026-03-17",
     "readingTime": "8 min",
-    "category": "Parc de Suklaphanta"
+    "category": "Parc de Suklaphanta",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 2632,
@@ -165,7 +204,10 @@
     "featuredImage": "/assets/blog/17.png",
     "date": "2026-03-17",
     "readingTime": "9 min",
-    "category": "Parc de Chitwan"
+    "category": "Parc de Chitwan",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 543,
@@ -177,7 +219,10 @@
     "featuredImage": "/assets/blog/43.png",
     "date": "2025-09-07",
     "readingTime": "7 min",
-    "category": "Saisons & Météo"
+    "category": "Saisons & Météo",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 540,
@@ -189,7 +234,10 @@
     "featuredImage": "/assets/blog/45-1.png",
     "date": "2025-09-07",
     "readingTime": "16 min",
-    "category": "Faune sauvage & Espèces"
+    "category": "Faune sauvage & Espèces",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 537,
@@ -201,7 +249,10 @@
     "featuredImage": "/assets/blog/DSC08889.jpg",
     "date": "2025-09-07",
     "readingTime": "23 min",
-    "category": "Parc de Bardia"
+    "category": "Parc de Bardia",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 534,
@@ -213,7 +264,10 @@
     "featuredImage": "/assets/blog/6-1.png",
     "date": "2025-09-07",
     "readingTime": "9 min",
-    "category": "Conseils & Préparation"
+    "category": "Conseils & Préparation",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 531,
@@ -225,7 +279,10 @@
     "featuredImage": "/assets/blog/14.png",
     "date": "2025-09-07",
     "readingTime": "7 min",
-    "category": "Comparatifs des parcs"
+    "category": "Comparatifs des parcs",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 528,
@@ -237,7 +294,10 @@
     "featuredImage": "/assets/blog/1.png",
     "date": "2025-09-07",
     "readingTime": "6 min",
-    "category": "Équipement & Valise"
+    "category": "Équipement & Valise",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 525,
@@ -249,7 +309,10 @@
     "featuredImage": "/assets/blog/12.png",
     "date": "2025-09-07",
     "readingTime": "6 min",
-    "category": "Budget & Tarifs"
+    "category": "Budget & Tarifs",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 522,
@@ -261,7 +324,10 @@
     "featuredImage": "/assets/blog/7.png",
     "date": "2025-09-07",
     "readingTime": "7 min",
-    "category": "Itinéraires & Durée"
+    "category": "Itinéraires & Durée",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 519,
@@ -273,7 +339,10 @@
     "featuredImage": "/assets/blog/33.png",
     "date": "2025-09-07",
     "readingTime": "14 min",
-    "category": "Observation du Tigre"
+    "category": "Observation du Tigre",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 516,
@@ -285,7 +354,10 @@
     "featuredImage": "/assets/blog/20.png",
     "date": "2025-09-07",
     "readingTime": "6 min",
-    "category": "Faune & Comportement animal"
+    "category": "Faune & Comportement animal",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 513,
@@ -297,7 +369,10 @@
     "featuredImage": "/assets/blog/11-1.png",
     "date": "2025-09-07",
     "readingTime": "6 min",
-    "category": "Faune & Comportement animal"
+    "category": "Faune & Comportement animal",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   },
   {
     "id": 258,
@@ -309,6 +384,9 @@
     "featuredImage": "/assets/blog/31.png",
     "date": "2025-09-07",
     "readingTime": "5 min",
-    "category": "Comparatifs & Inspirations"
+    "category": "Comparatifs & Inspirations",
+    "author": "Robin",
+    "authorRole": "Fondateur & Guide Expéditions",
+    "authorImage": "/assets/img_3.webp"
   }
 ]
