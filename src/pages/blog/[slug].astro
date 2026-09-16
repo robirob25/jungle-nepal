@@ -139,21 +139,8 @@ const formattedDate = new Date(post.date).toLocaleDateString('fr-FR', {
   <!-- MAIN ARTICLE BODY -->
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
     
-    <!-- Rendered HTML Content with Elite Prose Styling -->
-    <div class="prose prose-lg prose-slate max-w-none 
-      prose-headings:text-slate-950 prose-headings:font-black prose-headings:tracking-tight 
-      prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-slate-200
-      prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-      prose-p:text-slate-700 prose-p:leading-relaxed prose-p:my-4
-      prose-li:text-slate-700 prose-li:my-1
-      prose-strong:text-slate-950 prose-strong:font-black
-      prose-a:text-[#0e8354] prose-a:font-bold hover:prose-a:text-[#0a5e3c] prose-a:underline prose-a:decoration-emerald-400/50 hover:prose-a:decoration-emerald-600
-      prose-img:rounded-3xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 prose-img:my-8
-      prose-blockquote:border-l-4 prose-blockquote:border-[#134836] prose-blockquote:bg-emerald-50/60 prose-blockquote:p-4 prose-blockquote:rounded-r-2xl prose-blockquote:italic prose-blockquote:text-slate-800
-      prose-table:border prose-table:border-slate-200 prose-table:rounded-2xl prose-table:overflow-hidden
-      prose-th:bg-slate-100 prose-th:p-3 prose-th:text-slate-900 prose-th:font-extrabold
-      prose-td:p-3 prose-td:border-b prose-td:border-slate-100
-    ">
+    <!-- Rendered HTML Content with Elite Article Styling -->
+    <div class="article-content-body max-w-none">
       <div set:html={post.content} />
     </div>
 
@@ -259,3 +246,186 @@ const formattedDate = new Date(post.date).toLocaleDateString('fr-FR', {
   <Footer lang="fr" />
 
 </Layout>
+
+<style is:global>
+  /* Base article typography & reset */
+  .article-content-body {
+    color: #334155;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+  }
+
+  /* Headings H2 */
+  .article-content-body h2,
+  .article-content-body h2 strong,
+  .article-content-body .wp-block-heading:is(h2) {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+    font-weight: 900 !important;
+    color: #041d13 !important;
+    letter-spacing: -0.025em !important;
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.25rem !important;
+    padding-bottom: 0.75rem !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    display: block !important;
+  }
+
+  @media (min-width: 640px) {
+    .article-content-body h2,
+    .article-content-body h2 strong,
+    .article-content-body .wp-block-heading:is(h2) {
+      font-size: 2.125rem !important;
+    }
+  }
+
+  /* Headings H3 */
+  .article-content-body h3,
+  .article-content-body h3 strong,
+  .article-content-body .wp-block-heading:is(h3) {
+    font-size: 1.35rem !important;
+    line-height: 1.35 !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.015em !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 0.85rem !important;
+    display: block !important;
+  }
+
+  @media (min-width: 640px) {
+    .article-content-body h3,
+    .article-content-body h3 strong,
+    .article-content-body .wp-block-heading:is(h3) {
+      font-size: 1.55rem !important;
+    }
+  }
+
+  /* Headings H4 */
+  .article-content-body h4,
+  .article-content-body h4 strong {
+    font-size: 1.15rem !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+  }
+
+  /* Paragraphs */
+  .article-content-body p,
+  .article-content-body .wp-block-paragraph {
+    margin-top: 1.35rem !important;
+    margin-bottom: 1.35rem !important;
+    color: #334155 !important;
+    line-height: 1.85 !important;
+  }
+
+  /* Links */
+  .article-content-body a {
+    color: #0e8354 !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #0e8354 !important;
+    text-underline-offset: 3px !important;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease !important;
+  }
+
+  .article-content-body a:hover {
+    color: #083c27 !important;
+    text-decoration-color: #083c27 !important;
+  }
+
+  /* Strong */
+  .article-content-body strong,
+  .article-content-body b {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+  }
+
+  /* Lists */
+  .article-content-body ul,
+  .article-content-body .wp-block-list {
+    list-style-type: disc !important;
+    padding-left: 1.75rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .article-content-body ol {
+    list-style-type: decimal !important;
+    padding-left: 1.75rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .article-content-body li {
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.6rem !important;
+    color: #334155 !important;
+    line-height: 1.75 !important;
+  }
+
+  /* Images & Figures */
+  .article-content-body figure,
+  .article-content-body .wp-block-image {
+    margin-top: 2.75rem !important;
+    margin-bottom: 2.75rem !important;
+  }
+
+  .article-content-body img {
+    border-radius: 1.5rem !important;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.12), 0 8px 12px -6px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #e2e8f0 !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .article-content-body figcaption,
+  .article-content-body .wp-element-caption {
+    text-align: center !important;
+    font-size: 0.8125rem !important;
+    color: #64748b !important;
+    font-style: italic !important;
+    margin-top: 0.75rem !important;
+  }
+
+  /* Blockquotes */
+  .article-content-body blockquote {
+    border-left: 4px solid #109363 !important;
+    background: rgba(16, 147, 99, 0.06) !important;
+    border-radius: 0 1rem 1rem 0 !important;
+    padding: 1.25rem 1.75rem !important;
+    margin: 2.25rem 0 !important;
+    font-style: italic !important;
+    color: #1e293b !important;
+  }
+
+  /* Tables */
+  .article-content-body table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 2.25rem 0 !important;
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  .article-content-body th {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    padding: 0.85rem 1.15rem !important;
+    text-align: left !important;
+    border-bottom: 2px solid #cbd5e1 !important;
+  }
+
+  .article-content-body td {
+    padding: 0.85rem 1.15rem !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    color: #334155 !important;
+  }
+</style>
