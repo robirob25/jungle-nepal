@@ -4,7 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import toursData from '../../../data/tours.json';
+import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari"].includes(t.slug));
 
@@ -19,7 +19,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="en"
   isDarkHeader={true}
 >
-  <Header lang="en" currentPath="/destinations/katmandou.html" />
+  <Header lang="en" currentPath="/en/destinations/katmandou" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
@@ -30,7 +30,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
-        <a href="/en/" class="hover:text-white">Accueil</a>
+        <a href="/en/" class="hover:text-white">Home</a>
         <span>›</span>
         <a href="/en/destinations" class="hover:text-white">Destinations</a>
         <span>›</span>
@@ -53,16 +53,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- 1. GRILLE 2 COLONNES : TEXTE COMPLET (GAUCHE) & FICHE TECHNIQUE (DROITE) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Colonne Gauche : 100% Contenu Texte Officiel junglenepal.com -->
+      <!-- Colonne Gauche : 100% Contenu Texte Official junglenepal.com -->
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
+        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Wild Immersion</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
           Explorer la vallée de Kathmandu
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
-          <p>Au premier abord, Kathmandu peut sembler déroutante et vibrante. Mais laissez-lui un peu de temps, et elle finit par vous happer totalement. Entre ruelles pavées millénaires chargées d’histoire, senteurs d'encens de santal et toits-terrasses avec vue sur les stupas dorés, Kathmandu est une ville brute et profondément vivante où le sacré côtoie le quotidien à chaque coin de rue.</p>
-          <p>La vallée de Kathmandu abrite sept sites classés au patrimoine mondial de l’UNESCO : le grand stupa blanc de Boudhanath, cœur spirituel des bouddhistes tibétains ; la colline sacrée de Swayambhunath (le Monkey Temple) ; le temple hindou millénaire de Pashupatinath ; et les trois places royales historiques de Durbar Square (Kathmandu, Patan et la cité médiévale préservée de Bhaktapur).</p>
-          <p>Pour tous nos voyageurs, Kathmandu est bien plus qu’une simple escale technique. C’est ici que Robin et nos équipes vous accueillent dès votre atterrissage à l'aéroport international pour un briefing personnalisé autour d'un thé népalais, avant de vous équiper et de vous lancer vers les grands territoires sauvages du Népal.</p>
+          <p>At first glance, Kathmandu can seem bustling and whirlwind-fast. But give it a few hours, and it will captivate you with its spiritual devotion and timeless living heritage. Nestled in a green valley ringed by Himalayan foothills, the capital of Nepal is a living open-air museum where ancient rituals unfold daily amidst centuries-old carved wooden temples.</p>
+          <p>The Kathmandu Valley shelters seven UNESCO World Heritage sites: the great white stupa of Boudhanath where Tibetan monks chant prayers, the hilltop monkey temple of Swayambhunath, the sacred Hindu shrines of Pashupatinath along the Bagmati River, and the three magnificent royal Durbar Squares of Kathmandu, Patan, and Bhaktapur with their exquisite Newar woodwork.</p>
+          <p>For our travelers, Kathmandu is far more than a transit stop. This is where Robin and our local team personally welcome you upon arrival, introduce you to the spirit of Nepal, and conduct your expedition briefing before setting off for the wild jungles of the Terai or the high trails of the Himalayas.</p>
         </div>
       </div>
 
@@ -70,34 +70,34 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-5 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-xl space-y-6 sticky top-28">
         <h3 class="font-black text-xl text-slate-950 pb-3 border-b border-slate-100 flex items-center gap-2">
           <svg class="w-5 h-5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Technical & Practical Overview</span>
+          <span>Practical & Technical Facts</span>
         </h3>
         
         <div class="space-y-4 text-sm">
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Meilleure période</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Best Travel Period</p>
           <p class="font-bold text-slate-900 mt-0.5">Accessible et agréable toute l'année (Climat doux à 1 400 m d'altitude)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Trésors culturels</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Cultural Treasures</p>
           <p class="font-bold text-slate-900 mt-0.5">7 sites UNESCO : Boudhanath, Swayambhunath, Pashupatinath, Bhaktapur, Patan</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Expériences clés</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Key Experiences</p>
           <p class="font-bold text-slate-900 mt-0.5">Méditation matinale, artisanat Newar, toits-terrasses et marchés aux épices</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accueil exclusif</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Dedicated Welcome</p>
           <p class="font-bold text-slate-900 mt-0.5">Prise en charge personnalisée à l'aéroport par Robin & briefing privé</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Hébergement</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accommodation</p>
           <p class="font-bold text-slate-900 mt-0.5">Hôtels de charme traditionnels au cœur des quartiers historiques calmes</p>
         </div>
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée de Kathmandu" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Vallée de Kathmandu →
+          Ask a question about Kathmandu Valley →
         </a>
       </div>
 
@@ -113,15 +113,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           L'artisanat Newar & les cités royales médiévales
         </h3>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
-          La vallée de Kathmandu est le berceau du peuple Newar, maîtres sculpteurs sur bois, fondeurs de bronze et bâtisseurs de pagodes. Flâner dans les cours intérieures de Patan et Bhaktapur est un véritable voyage dans le temps.
-        </p>
+          The indigenous Newar craftsmen shaped the architectural soul of the valley with intricately carved wooden peacock windows, cast bronze deities, and terracotta temples that have stood through the centuries. Experiencing evening rituals at Boudhanath offers an unforgettable spiritual encounter.</p>
       </div>
     </div>
 
     <!-- 3. GALERIE PHOTO IMMERSIVE (4 PHOTOS HD AVEC LIGHTBOX) -->
     <div class="space-y-6">
       <div>
-        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
+        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Field Photography</span>
         <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Vallée de Kathmandu</h3>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -144,12 +143,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-8 pt-8 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les sédays Immersive à Vallée de Kathmandu</h3>
-          <p class="text-slate-600 text-sm mt-1">Guaranteed Departures en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">2026/2027 Season</span>
+          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les Expeditions Immersive à Vallée de Kathmandu</h3>
+          <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Voir tous les 15 sédays →
+          View all 15 Expeditions →
         </a>
       </div>
 
@@ -157,7 +156,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -175,7 +174,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   {tour.badge}
                 </span>
                 <span class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-bold">
-                  4 à 10 pers.
+                  4 to 10 travelers
                 </span>
               </div>
 
@@ -183,7 +182,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-200">
                   <span>🕒 {tour.duration}</span>
                   <span>•</span>
-                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} avis)</span>
+                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} reviews)</span>
                 </div>
               </div>
             </div>
@@ -213,7 +212,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →
@@ -249,7 +248,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 
@@ -318,47 +317,47 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Government of Nepal</span>
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
-        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée in Nepal</p>
+        <p class="text-xs text-slate-500 font-medium">Officially registered and licensed ecotourism & expedition company in Nepal</p>
       </div>
 
       <div class="py-5 space-y-3.5 text-xs text-slate-700">
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificate of Incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Official</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
-          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+          <p class="text-slate-900 font-black text-sm">Office of the Company Registrar, Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Registration No.: 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Pursuant to Sub-Section (1) of Section 5 of the Companies Act, 2006 of Nepal.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Tax & VAT Registration</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Verified</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
-          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+          <p class="text-slate-900 font-black text-sm">Inland Revenue Department of Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">PAN Tax ID: 623537310</p>
+          <p class="text-[11px] text-slate-500">Jurisdiction: Inland Revenue Office Nepalgunj.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
-          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
-          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Registered Office & Operations</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Nepal</p>
+          <p class="text-[11px] text-slate-500">Founder & Director: Pawan Kumar Thapa (Native Bardia Master Tracker)</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
-          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
-          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+          <p class="font-bold text-[#0e8354] text-xs">State-Licensed Operating Activities:</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Licensed organization of wildlife safaris, walking tracking of Bengal tigers, wild river expeditions (Karnali Rafting), wilderness bush camps, and certified ecotourism.</p>
         </div>
       </div>
 
       <div class="pt-2">
         <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
-          Fermer les informations légales
+          Close Legal Notice
         </button>
       </div>
     </div>

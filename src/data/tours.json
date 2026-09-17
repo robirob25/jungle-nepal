@@ -114,15 +114,15 @@
       "safari",
       "grand-tour"
     ],
-    "title_en": "Extreme Jungle – Special Wildlife & Big Cat Expedition",
+    "title_en": "Extreme Jungle – Special Wildlife & Big Cat Expedition – 15 Days",
     "duration_en": "15 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Safari & Big Cats",
-    "overview_en": "Our most demanding and rewarding safari expedition, entirely dedicated to passionate wildlife photographers and naturalists. 15 intensive days in Bardia, Babai, and Suklaphanta targeting tigers, leopards, rhinos, and rare marsh deer.",
+    "badge_en": "🐅 Safari & Big Cats",
+    "overview_en": "Our most demanding and rewarding safari expedition, entirely dedicated to passionate wildlife photographers, naturalists, and big cat trackers. 15 intensive days exploring Chitwan, Bardia, and the remote grasslands of Suklaphanta targeting Bengal tigers, leopards, one-horned rhinos, and rare marsh deer.",
     "highlights_en": [
-      "Maximum field hours: dawn-to-dusk tracking with elite wildlife spotters",
-      "Exploration of 3 major wildlife sanctuaries: Bardia, Babai Valley, and Suklaphanta",
-      "Strategic hideouts, machans (watchtowers), and riverside waiting posts",
+      "Maximum field hours: dawn-to-dusk tracking with elite native wildlife spotters",
+      "Exploration of 3 premier wildlife sanctuaries: Chitwan, Bardia, and Suklaphanta",
+      "Strategic river hides, watchtowers (machans), and riverside waiting posts",
       "Unrivaled photographic opportunities under optimal natural lighting"
     ],
     "image": "/assets/drive_photos/julien_leopard_indien.webp",
@@ -132,7 +132,84 @@
       "/assets/drive_photos/julien_photographes_jungle.webp",
       "/assets/drive_photos/julien_tigre_bengale3.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at Tribhuvan International Airport by our local team. Private transfer to your hotel in Kathmandu. Rest after your flight, explore Thamel's vibrant streets, and attend the evening expedition briefing with Robin and our team."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Cultural Day in Kathmandu Valley",
+        "desc": "Discover the sacred spiritual heritage of Kathmandu: Swayambhunath stupa, Patan Durbar Square, and Pashupatinath. Equipment check and final preparations for the safari."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Chitwan National Park",
+        "desc": "Scenic 5-hour drive descending through the Trishuli river valley into Chitwan. Check-in at the eco-lodge, late afternoon nature walk along the Rapti River, and early dinner."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Full-Day 4x4 Safari in Chitwan",
+        "desc": "Spend the entire day inside Chitwan National Park tracking Greater One-Horned Rhinos, sloth bears, and Asian leopards. Picnic lunch inside the park."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Drive to Lumbini & Spiritual Pause",
+        "desc": "Drive west across the Terai plains to Lumbini (4 hours). Visit the sacred birthplace of Lord Buddha, peaceful monasteries, and prepare for the long drive into Western Nepal."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Journey to Bardia National Park",
+        "desc": "Scenic 6 to 7-hour road journey through rural Terai farmland and sal forests to Bardia National Park. Settle into our authentic jungle lodge. Evening briefing with Pawan."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – First Full-Day Walking Safari in Bardia",
+        "desc": "Enter the jungle on foot at sunrise with two certified Tharu master trackers. Walk along tiger corridors, riverbanks, and elephant grass clearings. High-adrenaline tracking on foot."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Second Full-Day Walking Safari in Core Tiger Zones",
+        "desc": "A second full day dedicated to tracking big cats on foot. Strategic waits at prime waterholes and riverbanks. Picnic lunch in the forest canopy."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Full-Day 4x4 Jeep Safari Across Bardia",
+        "desc": "Cover larger distances by open 4x4 safari jeep exploring the western grasslands and northern riverbanks of Bardia. Great opportunities for tigers, rhinos, and wild Asian elephants."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Final Day in Bardia & Babai River Sector",
+        "desc": "Final intensive tracking day in Bardia exploring remote hides and river watchtowers. Evening Tharu cultural celebration and dinner."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Drive to Suklaphanta National Park (3 Hours)",
+        "desc": "Drive west to Nepal's Far West frontier: Suklaphanta National Park, home to the world's largest herd of swamp deer (Barasingha) and a thriving tiger population. Settle into our local safari camp."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Full-Day Jeep Safari in Suklaphanta",
+        "desc": "Explore the vast savannah grasslands of Suklaphanta by open jeep. Spot hundreds of swamp deer, wild boars, jackals, and track Bengal tigers across open vistas."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Second Day of Safari & Birding in Suklaphanta",
+        "desc": "Intensive morning and afternoon safaris exploring Rani Tal lake, elephant trails, and grassland swamps. Exceptional birdlife and predator sightings."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Flight Back to Kathmandu",
+        "desc": "Transfer to Dhangadhi Airport for your domestic flight to Kathmandu. Settle into your hotel, shopping in Thamel, and celebratory farewell dinner."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – International Departure",
+        "desc": "Private transfer to Tribhuvan International Airport for your flight back home."
+      }
+    ]
   },
   {
     "slug": "nepal-sauvage",
@@ -250,16 +327,16 @@
       "mustang-himalaya",
       "grand-tour"
     ],
-    "title_en": "Wild Nepal – From Dense Jungle to Sacred Annapurna Peaks",
+    "title_en": "Wild Nepal – From Dense Jungle to Sacred Annapurna Peaks – 15 Days",
     "duration_en": "15 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Himalayas, Mustang & Spirituality",
-    "overview_en": "A breathtaking contrast between the steaming subtropical jungles of the Terai and the snowcapped summits of the Himalayas. Track rhinos and tigers in Bardia before ascending into the tranquil alpine villages and pine forests of the Annapurnas.",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
+    "overview_en": "A breathtaking contrast between the steaming subtropical jungles of the Terai and the snowcapped summits of the Himalayas. Track rhinos and tigers on foot in Bardia before ascending into the tranquil mountain villages and pine forests of the Annapurnas.",
     "highlights_en": [
       "Complete ecological gradient from 150m jungle plains to 3,200m Himalayan panoramas",
-      "Walking safaris in Bardia National Park with senior trackers",
+      "Walking safaris in Bardia National Park with senior native trackers",
       "Scenic trekking in the Annapurna foothills with sunrise over Machapuchare",
-      "Serene stays in mountain lodges and authentic village homestays"
+      "Serene stays in boutique eco-lodges and authentic mountain village homestays"
     ],
     "image": "/assets/original_site/himalayas_sunrise_peaks.webp",
     "gallery": [
@@ -268,7 +345,84 @@
       "/assets/original_site/fishtail_sacred_himalaya.webp",
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu & Transfer to Bardia",
+        "desc": "Arrival at Tribhuvan International Airport in Kathmandu, connect with domestic flight to Nepalgunj, and private transfer to Bardia National Park. Settle into the lodge and relax."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Bardia: Kingdom of Tigers & Elephants",
+        "desc": "Full-day walking safari in Bardia National Park. Step into the domain of the Royal Bengal Tiger alongside native Tharu trackers. Watch wildlife from elevated hides and riverbanks."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – 4x4 Jeep Safari & Canoe Drift",
+        "desc": "Explore deeper sectors of the park by open 4x4 jeep in the morning, followed by a serene afternoon wooden canoe trip down the Geruwa River to spot mugger crocodiles and gharials."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Tharu Cultural Immersion",
+        "desc": "Cycle through indigenous Tharu villages, learn about their sustainable earthen architecture, join an authentic local cooking experience, and enjoy an evening traditional dance."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Final Bardia Exploration & Wildlife Tracking",
+        "desc": "Morning safari on foot to track lingering big cat traces and enjoy birdwatching. Afternoon relaxation by the river."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Sacred Pause in Lumbini",
+        "desc": "Drive east to Lumbini, the birthplace of Buddha. Visit the sacred garden, Mayadevi temple, and peaceful international monasteries."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Heading into the Himalayas",
+        "desc": "Scenic drive winding up from the Terai plains into the lush hills of the Annapurna region. Check into a traditional hillside village homestay with mountain views."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Village Walk & Mountain Panorama",
+        "desc": "Hike through terraced rice fields and oak forests. Enjoy panoramic vistas of Annapurna South, Hiunchuli, and the sacred Fishtail peak (Machapuchare)."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Waterfalls & Vulture Restaurant Conservation",
+        "desc": "Hike to secluded mountain waterfalls and visit a community vulture conservation restaurant, observing endangered Himalayan griffons and white-rumped vultures."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Rest & Local Life in the Foothills",
+        "desc": "A leisurely day in the village. Participate in daily agricultural activities, drink local Himalayan tea, and soak in mountain tranquility."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Drive to Medieval Bandipur",
+        "desc": "Drive to the charming ridge-top town of Bandipur, celebrated for its preserved 18th-century Newari architecture, slate-paved streets, and sweeping Himalayan panoramas."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – The Royal City of Bhaktapur",
+        "desc": "Drive toward Kathmandu Valley and check into Bhaktapur, the medieval City of Devotees. Wander through Durbar Square, pottery squares, and ancient brick alleyways."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Cultural Wonders of Kathmandu",
+        "desc": "Explore Kathmandu's most sacred monuments: the great stupa of Boudhanath and the cremation ghats of Pashupatinath on the Bagmati River."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Scenic Ridge of Nagarkot",
+        "desc": "Short drive to Nagarkot for a panoramic Himalayan sunset and sunrise view stretching from the Annapurnas to Mount Everest. Farewell dinner."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – Transfer to International Airport",
+        "desc": "Private transfer to Tribhuvan International Airport for your flight home."
+      }
+    ]
   },
   {
     "slug": "chitwan-bardia-complete",
@@ -369,13 +523,13 @@
       "rafting",
       "grand-tour"
     ],
-    "title_en": "Chitwan + Bardia – The Complete Nepal Jungle Safari",
-    "duration_en": "12 Days",
+    "title_en": "Chitwan + Bardia – The Complete Nepal Jungle Safari – 11 Days",
+    "duration_en": "11 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Safari & Big Cats",
-    "overview_en": "Why choose between Nepal's two greatest national parks? This ultimate wildlife safari takes you from the lush riverine grasslands of Chitwan (rhino paradise) to the deep sal forests of Bardia (tiger kingdom).",
+    "badge_en": "🐅 Safari & Big Cats",
+    "overview_en": "Why choose between Nepal's two greatest national parks? This ultimate wildlife safari takes you from the lush riverine grasslands of Chitwan (rhino paradise) to the deep, untamed sal forests of Bardia (tiger kingdom).",
     "highlights_en": [
-      "Direct comparison of Nepal's two crown-jewel national parks",
+      "Direct immersion in Nepal's two crown-jewel national parks",
       "Greater One-Horned Rhinoceros tracking in Chitwan & Bengal Tiger tracking in Bardia",
       "Multiple safari modes: open 4x4 jeep, traditional dugout canoes, and walking safaris",
       "Comfortable boutique lodges and personalized wildlife mentoring"
@@ -387,7 +541,64 @@
       "/assets/original_site/elephants_river.webp",
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at Tribhuvan International Airport by our team. Private transfer to your hotel. Rest, leisure time in Thamel, and evening expedition briefing with your guide."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Kathmandu Valley Cultural Heritage",
+        "desc": "Full-day exploration of UNESCO World Heritage gems: the ancient stupa of Swayambhunath (Monkey Temple) and the sacred temple complex of Pashupatinath. Evening preparations for the jungle."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Chitwan National Park",
+        "desc": "Picturesque drive descending from the Kathmandu Valley into the subtropical lowlands of the Terai. Arrival in Chitwan, check-in at the eco-lodge, and sunset walk along the Rapti River."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Chitwan Jungle Safari & Tharu Culture",
+        "desc": "Morning river canoe drift to observe sunbathing crocodiles and aquatic birds. Afternoon 4x4 jeep safari tracking rhinos and sloth bears. Evening Tharu cultural dance performance."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Drive to Lumbini & Sacred Gardens",
+        "desc": "Drive west to Lumbini, the sacred birthplace of Siddhartha Gautama (the Buddha). Explore the Maya Devi Temple, the sacred pond, and international monastic peace zones."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Journey to Untamed Bardia",
+        "desc": "Travel further west into raw Nepal, reaching Bardia National Park. Settle into our intimate eco-lodge on the edge of the wilderness. Evening briefing on tiger tracking."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – First Safari in Bardia National Park",
+        "desc": "Full-day safari combining 4x4 jeep and guided walking in core tiger territories. Station at strategic river crossings and waterholes where wild tigers come to quench their thirst."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Into the Wild: Babai River Valley Expedition",
+        "desc": "Venture into the pristine Babai Valley, an isolated sector restricted to deep conservation. River walks and silent tracking along sandy banks for fresh predator pugmarks."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Wild Forest Treks & Raft Drift",
+        "desc": "Full day dedicated to walking tracking with our native master trackers. Peaceful river descent on a raft, observing wild elephants and riverine fauna from the water."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Final Safari & Village Visit",
+        "desc": "Final morning safari to catch lingering wildlife sightings. Afternoon bicycle tour of peaceful local Tharu villages. Farewell dinner with our tracking crew."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Domestic Flight to Kathmandu & Departure",
+        "desc": "Transfer to Nepalgunj Airport and domestic flight to Kathmandu. Connect with your international flight home."
+      }
+    ]
   },
   {
     "slug": "bardia-explorateur",
@@ -457,14 +668,14 @@
     "title_en": "Bardia Explorer – 5 Days in the Wild Jungle",
     "duration_en": "5 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Safari & Tiger Tracking",
-    "overview_en": "This 5-day adventure is designed for nature and wildlife lovers seeking the pristine beauty of Bardia National Park. Track wild Bengal tigers, Asian one-horned rhinos, and wild elephants on foot alongside our expert local Tharu master trackers.",
+    "badge_en": "🐅 Safari & Tiger Tracking",
+    "overview_en": "This 5-day adventure is designed for wildlife lovers seeking the raw, untamed beauty of Bardia National Park. Track wild Bengal tigers, Asian one-horned rhinos, and wild elephants on foot alongside our expert local Tharu master trackers.",
     "highlights_en": [
-      "Full-day walking safari tracking Bengal tigers with expert guides",
-      "Jeep safari deep into the remote core zones of Bardia",
-      "Traditional canoe river safari on the Karnali & Geruwa rivers",
-      "Authentic Tharu cultural village immersion and organic local gastronomy",
-      "Charming ecolodge accommodation at the edge of the jungle"
+      "Full-day walking safari tracking Bengal tigers with senior trackers",
+      "4x4 open jeep safari deep into remote core zones of Bardia",
+      "Traditional river canoe safari on the Karnali & Geruwa rivers",
+      "Authentic Tharu cultural village immersion and organic local cuisine",
+      "Charming riverside ecolodge accommodation at the edge of the park"
     ],
     "image": "/assets/original_site/tigre_bardia.webp",
     "gallery": [
@@ -473,7 +684,34 @@
       "/assets/drive_photos/adrien_bardia_forest.webp",
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Nepalgunj & Half-Day Safari",
+        "desc": "Flight from Kathmandu to Nepalgunj, greeted by our local team, followed by a 2-hour private transfer to Bardia. Check-in at our riverside ecolodge. In the afternoon, set out for a first gentle walking safari around the park boundaries to observe birdlife and spotted deer. Evening briefing on tracking techniques. Dinner at the lodge."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Full-Day 4x4 Jeep Safari",
+        "desc": "Depart at dawn in an open 4x4 safari jeep with our senior tracker and park ranger. Cross riverbeds, dense sal tree forests, and wide elephant-grass savannahs. Strategic stops at natural watering holes and machans (elevated watchtowers) for prime tiger spotting. Picnic lunch inside the park. Return at sunset for dinner."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Rafting Safari – Wildlife Viewing from the River",
+        "desc": "Board a quiet inflatable raft for an exceptional drift down the Geruwa and Karnali rivers. Gliding silently on the water offers unmatched opportunities to observe wild Asian elephants drinking at the shore, marsh mugger crocodiles, and rare Gangetic freshwater dolphins. Picnic lunch on a secluded sandbank."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Walking Jungle Safari & Tharu Cultural Immersion",
+        "desc": "A full day on foot in the jungle with two certified local master trackers. Experience the sensory thrill of tracking animals by their paw prints and alarm calls. In the late afternoon, visit an authentic Tharu indigenous village and attend a traditional evening cultural dance."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Return to Nepalgunj & Flight to Kathmandu",
+        "desc": "Enjoy a final peaceful breakfast listening to hornbills and birdsong. Private transfer to Nepalgunj Airport for your domestic flight to Kathmandu."
+      }
+    ]
   },
   {
     "slug": "chitwan-culture",
@@ -535,10 +773,10 @@
     "categories": [
       "chitwan"
     ],
-    "title_en": "Chitwan – Wildlife Safari & Indigenous Culture",
+    "title_en": "Chitwan – Wildlife Safari & Indigenous Culture – 4 Days",
     "duration_en": "4 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Rhinos & Chitwan Wildlife",
+    "badge_en": "🦏 Rhinos & Chitwan Wildlife",
     "overview_en": "A rich, immersive short stay combining the thrill of wildlife safaris with the warmth of local indigenous culture. Chitwan is Asia's prime sanctuary for observing the Greater One-Horned Rhinoceros, vibrant birdlife, and the traditional way of life of the Tharu people.",
     "highlights_en": [
       "Thrilling 4x4 open jeep safari in Chitwan National Park",
@@ -553,7 +791,29 @@
       "/assets/drive_photos/julien_elephant_mere_petit.webp",
       "/assets/drive_photos/adrien_bhaktapur1.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Transfer to Chitwan & Sunset on the Rapti",
+        "desc": "Scenic private transfer or flight from Kathmandu to Chitwan (Sauraha). Settle into your charming riverside eco-lodge. In the late afternoon, enjoy a peaceful sunset walk along the Rapti River, frequently visited by rhinos coming down to bathe. Traditional dinner at the lodge."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Jungle Safari Adventure & River Canoe",
+        "desc": "Glide down the calm Rapti River in a traditional wooden dugout canoe, viewing endangered fish-eating gharials, mugger crocodiles, and kingfishers. Continue on a guided nature walk into the buffer zone, followed by an afternoon open 4x4 jeep safari deep inside Chitwan National Park tracking rhinos, sloth bears, and leopards."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Tharu Village Immersion & Birdwatching",
+        "desc": "Early morning birdwatching tour with a specialist guide (Chitwan hosts over 500 avian species). After breakfast, explore traditional Tharu villages by foot or ox-cart. In the evening, attend an authentic Tharu stick dance performance celebrating local history and animist traditions."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Return to Kathmandu or Pokhara",
+        "desc": "Enjoy a relaxed breakfast overlooking the river. Private transfer back to Kathmandu or onward to the tranquil lakes of Pokhara."
+      }
+    ]
   },
   {
     "slug": "rafting-safari",
@@ -688,16 +948,16 @@
       "safari",
       "grand-tour"
     ],
-    "title_en": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition",
+    "title_en": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition – 18 Days",
     "duration_en": "18 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Wild Rivers & Rafting",
+    "badge_en": "🚣 Wild Rivers & Rafting",
     "overview_en": "Embark on an extraordinary journey through Nepal blending ancient cultural heritage, untouched nature, and adrenaline-pumping wild river rafting. From Kathmandu's royal palaces to the roaring gorges of the Bheri and pristine safaris in Bardia.",
     "highlights_en": [
-      "Multi-day self-sufficient wild river rafting and sandbank riverside bivouacs",
+      "Multi-day self-sufficient wild river rafting with sandbank riverside bivouacs",
       "Walking and jeep safaris in the remote heart of Bardia National Park",
       "Exploration of UNESCO World Heritage medieval cities in Kathmandu Valley",
-      "Total immersion in Nepal's untamed western wilderness"
+      "Total immersion in Nepal's untamed western wilderness and Magar villages"
     ],
     "image": "/assets/drive_photos/adrien_bardia_river.webp",
     "gallery": [
@@ -706,7 +966,99 @@
       "/assets/original_site/rafting_wild.webp",
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at Tribhuvan International Airport by our team. Private transfer to your hotel. Rest, leisure time in Thamel, and evening expedition briefing."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Exploration of Kathmandu Valley",
+        "desc": "Discover the rich cultural heritage of Kathmandu: Swayambhunath stupa, Pashupatinath, and historic Newar streets."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Pokhara",
+        "desc": "Scenic road journey along the Trishuli and Marsyangdi rivers to the peaceful lakeside city of Pokhara beneath the Annapurnas."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Exploration of Pokhara",
+        "desc": "Sunrise view from Sarangkot over the Annapurna range, boat ride on Phewa Lake, and visit to Devi's Falls and Tibetan settlements."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Drive to Dhorpatan Hunting Reserve",
+        "desc": "Off-road 4x4 expedition into Dhorpatan Hunting Reserve, Nepal's only hunting reserve, famous for blue sheep (bharal) and alpine meadows."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Exploration of Dhorpatan Wilderness",
+        "desc": "Hike across high-altitude plateaus and pine forests observing wildlife and traditional pastoral communities."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Journey to Taksera (Magar Heritage Village)",
+        "desc": "Drive through dramatic mountain terrain to Taksera, an ancient Magar village with distinct stone architecture and shamanic traditions."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Drive to Maikot (Hidden Mountain Gem)",
+        "desc": "Cross rugged valleys to Maikot, a remote hamlet untouched by modern tourism, surrounded by steep pine-covered peaks."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Drive to Rukumkot & Lotus Lake",
+        "desc": "Journey to picturesque Rukumkot, known as the place of 52 lakes and 53 hills, visiting Kamal Pokhari (Lotus Lake)."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Drive to Surkhet Valley",
+        "desc": "Descend from the mountains into the broad subtropical valley of Surkhet, gateway to the Karnali and Bheri rivers."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Launch of the Bheri River Rafting Expedition",
+        "desc": "Meet our expert river guides, complete safety training, and launch rafts onto the crystal-clear waters of the Bheri River. Camp on a pristine white sandbank."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Thrilling River Rapids & Wilderness Camping",
+        "desc": "Full day of exhilarating Class III-IV white-water rafting through secluded canyons inaccessible by road. Second night in riverside bush camp under the stars."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Final River Rapids & Transfer to Bardia",
+        "desc": "Complete the river descent to the confluence with the Karnali River. Pack up rafts and private transfer to our jungle eco-lodge in Bardia."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Full-Day 4x4 Jeep Safari in Bardia",
+        "desc": "Enter Bardia National Park for a full day of open-top jeep tracking targeting Royal Bengal tigers, Asian rhinos, and wild elephant herds."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – Second Safari & Walking Track in Bardia",
+        "desc": "Intensive tracking on foot with our native Tharu master trackers along prime tiger corridors and river crossing points."
+      },
+      {
+        "day": 16,
+        "title": "Day 16 – Final Safari & Tharu Cultural Performance",
+        "desc": "Morning safari followed by an evening celebration with local Tharu dances and traditional festive meal."
+      },
+      {
+        "day": 17,
+        "title": "Day 17 – Domestic Flight to Kathmandu",
+        "desc": "Private transfer to Nepalgunj Airport and flight back to Kathmandu. Free evening in Thamel for shopping and farewell dinner."
+      },
+      {
+        "day": 18,
+        "title": "Day 18 – International Departure",
+        "desc": "Private airport transfer for your departure flight with unforgettable Himalayan memories."
+      }
+    ]
   },
   {
     "slug": "bardia-nuit-sauvage",
@@ -763,13 +1115,13 @@
       "safari",
       "bivouac"
     ],
-    "title_en": "Bardia Wild Night – Jungle Immersion & Bush Camping",
-    "duration_en": "2 Days",
+    "title_en": "Bardia Wild Night – Jungle Immersion & Bush Camping – 3 Days",
+    "duration_en": "3 Days",
     "group_size_en": "Micro-group 2 to 6 explorers",
-    "badge_en": "Jungle Bivouacs & Wild Nights",
-    "overview_en": "An intense, authentic micro-adventure in the deep forest of Bardia. Spend a magical night under the stars listening to the sounds of the nocturnal jungle, preceded and followed by intensive tracking on foot with our veteran wildlife rangers.",
+    "badge_en": "⛺ Jungle Bivouacs & Wild Nights",
+    "overview_en": "An intense, authentic micro-adventure in the deep forest of Bardia. Spend a magical night under the stars listening to the nocturnal calls of the jungle, preceded and followed by intensive tracking on foot with our veteran wildlife rangers.",
     "highlights_en": [
-      "Exclusive wilderness bush camp inside safe forest clearing",
+      "Exclusive wilderness bush camp inside a safe forest clearing",
       "Sunset and sunrise tiger and elephant tracking on foot",
       "Campfire dinner under the Himalayan starry canopy",
       "High-adrenaline sensory encounter with raw nature"
@@ -781,7 +1133,24 @@
       "/assets/original_site/camping_experience.webp",
       "/assets/drive_photos/adrien_bardia_camp.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Pickup in Nepalgunj & Forest Immersion",
+        "desc": "Greeting at Nepalgunj Airport and scenic drive to Bardia. After lunch and gear preparation at the lodge, set out on foot with your master trackers into the park. Observe wildlife settling down for the night. Return to the lodge for dinner and safety briefing for tomorrow's bush camp."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Full-Day Safari & Wild Camp in the Jungle",
+        "desc": "Depart early by open 4x4 jeep and on foot into core wildlife territory. Track tiger pugmarks, observe rhinos at watering holes, and hike to our designated wilderness campsite. Set up camp, share a campfire dinner prepared by our camp chef, and spend an unforgettable night listening to the nocturnal jungle symphony."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Sunrise Tracking & Return to Village",
+        "desc": "Early morning tracking on foot at first light when predators are most active. Return to camp for a warm breakfast, pack up, and track back through the forest to the lodge. Freshen up before private transfer to Nepalgunj Airport."
+      }
+    ]
   },
   {
     "slug": "rara-lake-bardia",
@@ -909,10 +1278,10 @@
       "safari",
       "grand-tour"
     ],
-    "title_en": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Track Adventure",
+    "title_en": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Path Adventure – 17 Days",
     "duration_en": "17 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Himalayas, Mustang & Spirituality",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
     "overview_en": "An epic overland crossing uniting the sapphire alpine waters of Rara Lake at 3,000 meters with the dense subtropical tiger jungles of Bardia. Experience remote Himalayan villages, alpine forests, and wild river valleys untouched by modern tourism.",
     "highlights_en": [
       "Trekking around the crystal-clear sapphire waters of Lake Rara (3,000m)",
@@ -927,7 +1296,94 @@
       "/assets/drive_photos/fred_wild2.webp",
       "/assets/drive_photos/antoine_wild3.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Arrival at Tribhuvan International Airport, meet our expedition team, private transfer to hotel, and leisure time in Thamel."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Cultural Exploration of Kathmandu",
+        "desc": "Explore the historic temples of Kathmandu Valley: Pashupatinath, Boudhanath, and Kathmandu Durbar Square."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Pokhara",
+        "desc": "Scenic road trip to Pokhara, nestled beside Phewa Lake with views of the Annapurna mountain range."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Exploration of Pokhara Valley",
+        "desc": "Boating on Phewa Lake, visiting World Peace Pagoda, and exploring local mountain viewpoints."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Drive to Lumbini (Birthplace of Buddha)",
+        "desc": "Drive southwest to Lumbini and tour the sacred Mayadevi Temple and monastic garden complexes."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Drive to Surkhet",
+        "desc": "Journey northwest through rural hill roads into the historic valley of Surkhet in Western Nepal."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Scenic Road to Kalikot",
+        "desc": "Ascend dramatic gorges along the Karnali Highway to Kalikot, enjoying rugged mountain panoramas."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Arrival at Sapphire Lake Rara",
+        "desc": "Drive and hike through rhododendron and pine forests to reach Lake Rara (3,000m), Nepal's largest and most pristine alpine lake."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Exploration of Lake Rara & Murma Top",
+        "desc": "Trek around the sapphire lakeshore and hike up to Murma Top (3,700m) for a 360° panoramic view of the lake and snowy peaks."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Return Drive to Kalikot",
+        "desc": "Bid farewell to Lake Rara and retrace the mountain track back down to Kalikot for an overnight stop."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Drive South to Bardia National Park",
+        "desc": "Descend from the mountains into the warm Terai lowlands, arriving at our tranquil jungle lodge at Bardia."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Full-Day 4x4 Safari in Bardia",
+        "desc": "Dawn-to-dusk jeep safari exploring prime tiger and rhino habitats across Bardia with expert trackers."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Second Day of Intensive Safari",
+        "desc": "Explore riverine forests, watchtowers, and natural watering holes for big cats and Asian elephants."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Walking Safari & Deep Jungle Immersion",
+        "desc": "Experience the pulse of the jungle on foot with our native Tharu trackers. Safe, quiet, and thrilling close-up nature tracking."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – Leisure Day & Tharu Village Walk",
+        "desc": "Relax at the lodge, visit local village artisans, and enjoy an evening traditional Tharu cultural celebration."
+      },
+      {
+        "day": 16,
+        "title": "Day 16 – Flight to Kathmandu",
+        "desc": "Short drive to Nepalgunj Airport for domestic flight back to Kathmandu. Free afternoon for shopping."
+      },
+      {
+        "day": 17,
+        "title": "Day 17 – International Departure",
+        "desc": "Private transfer to airport for your return flight home."
+      }
+    ]
   },
   {
     "slug": "bardia-babai-camping",
@@ -1010,16 +1466,16 @@
       "safari",
       "bivouac"
     ],
-    "title_en": "Bardia Babai Valley – Wild Camping in Untamed Nature",
+    "title_en": "Bardia Babai Valley – Wild Camping in Untamed Nature – 8 Days",
     "duration_en": "8 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Jungle Bivouacs & Wild Nights",
-    "overview_en": "The Babai Valley is Bardia's most secret, protected sanctuary. Reserved for true adventurers, this multi-day expedition takes you deep into isolated gorges where wild herds of elephants, tigers, and elusive leopards roam free.",
+    "badge_en": "⛺ Jungle Bivouacs & Wild Nights",
+    "overview_en": "The Babai Valley is Bardia's most secret, untouched sanctuary. Reserved for true adventurers, this multi-day wild camping expedition takes you deep into isolated gorges where wild herds of elephants, Bengal tigers, and elusive leopards roam freely without any tourist crowds.",
     "highlights_en": [
-      "Several nights of mobile wild camping along the Babai River",
-      "Strictly restricted conservation territory with zero tourist traffic",
-      "Unrivaled wildlife spotting: tigers, rhinos, sloth bears, and wild elephants",
-      "Escorted by senior government rangers and local master trackers"
+      "Several consecutive nights of mobile wild camping along the Babai River",
+      "Strictly restricted conservation territory with virtually zero tourist presence",
+      "Unrivaled wildlife observation: wild tigers, rhinos, sloth bears, and Asian elephants",
+      "Accompanied by senior government rangers and native Tharu master trackers"
     ],
     "image": "/assets/original_site/babai_walk.webp",
     "gallery": [
@@ -1028,7 +1484,49 @@
       "/assets/drive_photos/julien_elephant_mere_petit.webp",
       "/assets/original_site/camping_sauvage_bardia.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival & First Steps into the Wild",
+        "desc": "Arrival at Nepalgunj Airport and private scenic transfer to Bardia. Settle into the lodge, meet your naturalist guides, and receive a complete safety and expedition briefing. Take an evening walk around the lodge to spot golden jackals and birdlife. Dinner and overnight at the lodge."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Tracking Tigers & Ascending the River",
+        "desc": "Early departure to the entrance of the Babai Valley. Begin walking tracking along the riverbeds where predator tracks are fresh in the morning sand. Establish the first wild camp on a secure sandbank. Campfire dinner and night in tents listening to nocturnal jungle calls."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Into the Heart of Babai",
+        "desc": "A full day dedicated to tracking big cats and herds of wild elephants. Hike through dense sal forests, tall elephant grass, and rocky gorges. Strategic waiting posts at natural water points. Second night of wild camping under the pristine Himalayan night sky."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – From River to Forest Canopies",
+        "desc": "Continue exploring the remote valley corridors. Observe marsh deer (Barasingha), nilgai antelopes, and endangered gharials basking in the sun. Third night in wilderness bivouac with our field camp crew."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Full-Day 4x4 Jeep Safari",
+        "desc": "Exit the deep valley and transition to an open 4x4 safari jeep to cover greater distances across the western grasslands and riverbanks of Bardia. Return to the comfort of the eco-lodge for a hot shower and hearty local dinner."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Rest & Life on the Riverbanks",
+        "desc": "A slower-paced day dedicated to river observation. Traditional wooden dugout canoe drift on the Geruwa River, peaceful photography pauses, and birdwatching. Overnight at the eco-lodge."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Tharu Cultural Immersion Day",
+        "desc": "Visit traditional Tharu villages on foot or by bicycle. Discover their mud-and-thatch architecture, organic agriculture, and animist traditions. Evening cultural performance and traditional feast."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Return to Kathmandu",
+        "desc": "Final breakfast in the peaceful jungle morning. Private transfer to Nepalgunj Airport and flight back to Kathmandu."
+      }
+    ]
   },
   {
     "slug": "nepal-immersion-totale",
@@ -1143,7 +1641,7 @@
       "rafting",
       "grand-tour"
     ],
-    "title_en": "Nepal Total Immersion – Culture, Wildlife & Adventure",
+    "title_en": "Nepal Total Immersion – Culture, Wildlife & Adventure – 14 Days",
     "duration_en": "14 Days",
     "group_size_en": "Small group 4 to 10 explorers",
     "badge_en": "🇳🇵 Grand 360° Expeditions",
@@ -1161,7 +1659,79 @@
       "/assets/original_site/chitwan_rhino.webp",
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at the airport, private transfer to your hotel, trip briefing, and evening welcome dinner in Thamel."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Kathmandu Heritage Tour",
+        "desc": "Visit UNESCO World Heritage sites: Swayambhunath (Monkey Temple), Patan Durbar Square, and Pashupatinath."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Ancient Bhaktapur & Sunset at Nagarkot",
+        "desc": "Explore the medieval brick architecture of Bhaktapur, followed by a scenic drive to Nagarkot for panoramic Himalayan views."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Trishuli River Rafting & Drive to Chitwan",
+        "desc": "Exciting 3-hour river rafting descent on the Trishuli River. Riverside lunch and drive to Chitwan National Park."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Full-Day Safari in Chitwan",
+        "desc": "4x4 jeep safari tracking one-horned rhinos, sloth bears, and deer. Afternoon canoe drift on the Rapti River."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Nature Walk & Drive to Pokhara",
+        "desc": "Early morning birdwatching walk, followed by a scenic 5-hour drive to picturesque Pokhara."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Annapurna Sunrise & Pokhara Lakes",
+        "desc": "Sunrise over the Annapurnas from Sarangkot, boat ride across Lake Phewa, and visit to World Peace Pagoda."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Drive to Lumbini (Birthplace of Buddha)",
+        "desc": "Drive to Lumbini and spend the afternoon exploring the sacred Mayadevi gardens and monastic zone."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Journey West to Bardia National Park",
+        "desc": "Scenic road trip through the Terai to Bardia National Park. Settle into our authentic jungle lodge and meet tracker Pawan."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Full-Day 4x4 Jeep Safari in Bardia",
+        "desc": "Full-day exploration of core tiger territories in Bardia. Strategic waits at riverbanks and watering holes."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Full-Day Walking Safari on Foot",
+        "desc": "Step quietly into the jungle with two master trackers. Track tiger prints, alarm calls, and observe wildlife up close."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Final Safari & Tharu Cultural Evening",
+        "desc": "Morning safari followed by an afternoon visit to traditional Tharu villages and an evening cultural dance."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Flight Back to Kathmandu",
+        "desc": "Transfer to Nepalgunj Airport and domestic flight to Kathmandu. Rest, shopping, and celebratory farewell dinner."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – International Departure",
+        "desc": "Private transfer to Tribhuvan International Airport for your return flight."
+      }
+    ]
   },
   {
     "slug": "babai-special",
@@ -1228,16 +1798,16 @@
       "safari",
       "bivouac"
     ],
-    "title_en": "Deep Into the Wild: Babai Special Experience",
+    "title_en": "Deep Into the Wild: Babai Special Experience – 5 Days",
     "duration_en": "5 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Jungle Bivouacs & Wild Nights",
-    "overview_en": "An exclusive 5-day immersion into the mysterious Babai Valley. Combining rugged 4x4 exploration, guided foot patrols along riverbanks, and authentic night camps in the prime territory of Bengal tigers.",
+    "badge_en": "⛺ Jungle Bivouacs & Wild Nights",
+    "overview_en": "This is not a simple jungle walk. It is an exclusive expedition into one of Nepal's most secluded, pristine wilderness areas. The Babai Valley lies deep within Bardia National Park, far beyond standard safari routes. Very few travelers ever set foot here, and fewer still spend the night on the wild shores of its river in the heart of royal tiger territory.",
     "highlights_en": [
-      "Exclusive access to the pristine Babai river valley",
-      "High density of big cats and wild ungulates",
-      "Wild glamping with field cook and comfortable tent setups",
-      "Unmatched tranquility and silence far from civilization"
+      "Scenic river boat safaris and deep walking tracking in core tiger zones",
+      "Full-day open 4x4 jeep safari and wilderness tracking on foot",
+      "Traditional cultural evening and dinner with the local Tharu community",
+      "Exclusive riverside bush camps surrounded by the raw sounds of the jungle"
     ],
     "image": "/assets/original_site/elephant_bardia.webp",
     "gallery": [
@@ -1246,7 +1816,34 @@
       "/assets/drive_photos/julien_elephant_jungle.webp",
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Welcome to the Untamed Wilderness",
+        "desc": "Pickup at Nepalgunj Airport or Kohalpur and private scenic transfer to the banks of the Babai River at Chepang. After lunch, enjoy a peaceful boat safari deep inside the national park, ideal for spotting riverine wildlife, mugger crocodiles, and water birds. Upon arrival at Rhino Camp along the riverbank, check in to your tented camp. Later, take a gentle late-afternoon walk around the campsite before a hot dinner and an immersive first night under the stars."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – On the Trail of the Bengal Tiger",
+        "desc": "Wake up to morning tea at dawn, followed by a gentle tracking walk along the riverbanks and forest clearings. After breakfast, head out with your master tracker for an intensive tiger-tracking expedition on foot. Enjoy a riverside picnic lunch surrounded by wild nature. In the afternoon, continue hiking through deep sal forests to Nilgai Camp, your second bush campsite. Enjoy campfire dinner and a night enveloped in pure jungle sounds."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – River Drift & Return to Lodge",
+        "desc": "Start with early morning tea and a nature walk around the campsite. After breakfast, embark on a final guided jungle trek until lunchtime. In the afternoon, drift down the peaceful Babai River by raft or boat to the main road, where private transport awaits to take you back to our comfortable eco-lodge. Dinner and overnight stay at the lodge."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Western Sector Jeep Safari & Cultural Immersion",
+        "desc": "After a relaxed breakfast, depart for a full-day open 4x4 jeep safari exploring the remote western sector of Bardia National Park. Track one-horned rhinos, wild elephants, and spotted deer. Return in the evening for dinner followed by an authentic traditional Tharu cultural dance performance, offering deep insight into the indigenous heritage of Bardia."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Farewell & Departure",
+        "desc": "After breakfast, bid farewell to our local team and enjoy a private transfer to Nepalgunj Airport for your flight back to Kathmandu or on to your next adventure."
+      }
+    ]
   },
   {
     "slug": "tiji-mustang",
@@ -1349,16 +1946,16 @@
       "mustang-himalaya",
       "grand-tour"
     ],
-    "title_en": "Tiji Festival – Upper Mustang Forbidden Kingdom",
+    "title_en": "Tiji Festival in Upper Mustang – Forbidden Kingdom – 13 Days",
     "duration_en": "13 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Himalayas, Mustang & Spirituality",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
     "overview_en": "Journey behind the great Himalayan barrier into the ancient Kingdom of Lo (Upper Mustang). Witness the mesmerizing, sacred three-day Tiji Festival in Lo Manthang with masked lama dances, cliffside cave monasteries, and Tibetan Buddhist rituals.",
     "highlights_en": [
       "Exclusive attendance at the vibrant three-day Tiji Festival in Lo Manthang",
       "Spectacular trans-Himalayan scenery: eroded ochre canyons, caves, and snow peaks",
       "Centuries-old Tibetan Buddhist monasteries and royal palaces",
-      "Scenic domestic flights between Pokhara and Jomsom through Kali Gandaki gorge"
+      "Scenic overland and domestic flight journeys through Kali Gandaki gorge"
     ],
     "image": "/assets/original_site/tiji_festival_orig.webp",
     "gallery": [
@@ -1367,7 +1964,74 @@
       "/assets/original_site/mustang_village_orig.webp",
       "/assets/drive_photos/fred_wild5.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at airport, private transfer to hotel, expedition briefing, and special Mustang permit processing."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Kathmandu Valley Heritage",
+        "desc": "Visit sacred Buddhist sites: Boudhanath Stupa and Swayambhunath, preparing for the spiritual journey ahead."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Pokhara",
+        "desc": "Scenic road transfer to Pokhara along mountain rivers. Evening stroll along Lake Phewa."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Drive to Kalopani via Kali Gandaki Gorge",
+        "desc": "Enter the world's deepest gorge between Annapurna and Dhaulagiri, reaching the pine forests of Kalopani."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Drive to Ancient Kagbeni",
+        "desc": "Drive through Jomsom and Marpha to Kagbeni, the medieval fortified gateway to Upper Mustang."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Enter Upper Mustang to Ghami",
+        "desc": "Cross high passes with views of red cliffs, ancient sky caves, and mani walls to reach the village of Ghami."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Drive to the Walled Capital: Lo Manthang",
+        "desc": "Traverse stunning desert canyons to reach the historic walled city of Lo Manthang, seat of the King of Mustang."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Lo Manthang – Opening of the Tiji Festival",
+        "desc": "Witness the dramatic opening day of the Tiji Festival: sounding of long horns, unrolling of the giant Thangka, and masked sacred dances."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Tiji Festival Celebrations & Chhoser Caves",
+        "desc": "Attend second day dances symbolizing the victory of dharma over demons. Afternoon visit to the multi-story Sky Caves of Chhoser."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Drive South to Sacred Muktinath",
+        "desc": "Journey south to holy Muktinath (3,710m), sacred pilgrimage site for both Buddhists and Hindus with eternal natural flame."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Descend to Tatopani Natural Hot Springs",
+        "desc": "Scenic drive descending the gorge to Tatopani. Relax in natural thermal hot springs beside the river."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Drive to Pokhara & Fly to Kathmandu",
+        "desc": "Drive to Pokhara and connect with a short scenic flight to Kathmandu. Celebration dinner."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Farewell & International Departure",
+        "desc": "Private transfer to Tribhuvan International Airport for your journey home."
+      }
+    ]
   },
   {
     "slug": "carnet-de-voyage",
@@ -1480,10 +2144,10 @@
       "mustang-himalaya",
       "grand-tour"
     ],
-    "title_en": "Nepal Sketching & Travel Journaling Expedition",
+    "title_en": "Nepal Sketching & Travel Journaling Expedition – 15 Days",
     "duration_en": "15 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Himalayas, Mustang & Spirituality",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
     "overview_en": "An artistic and sensory voyage designed for sketchers, watercolorists, photographers, and mindful travelers. Capture the colors of ancient medieval squares, golden Himalayan dawns, and untamed wildlife with guided creative workshops.",
     "highlights_en": [
       "Daily creative sketching and photography pauses in extraordinary settings",
@@ -1498,7 +2162,84 @@
       "/assets/drive_photos/julien_rollier_oiseau.webp",
       "/assets/drive_photos/adrien_bhaktapur2.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at airport, hotel transfer, distribution of expedition sketch kits, and gentle evening walk in Thamel."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Medieval Bhaktapur Sketching Session",
+        "desc": "Spend the day sketching carved wooden windows, pottery squares, and pagodas in historic Bhaktapur."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Drive to Bandipur Hilltop Village",
+        "desc": "Scenic journey to Bandipur. Afternoon sketching old Newar townhouses, slate streets, and valley viewpoints."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Bandipur to Traditional Village of Ghachok",
+        "desc": "Travel into the Annapurna foothills to Ghachok, an authentic farming village with stunning views of Machapuchare."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Watercolor Workshop in Ghachok",
+        "desc": "Paint terraced fields, buffalos, and Himalayan peaks from village balconies. Interact with welcoming village elders."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Nature Walks & Forest Portraits",
+        "desc": "Gentle nature walk through bamboo groves and mountain streams. Sketching local flora and village life."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Ghachok to Lakeside Pokhara",
+        "desc": "Short drive to Pokhara. Afternoon watercolor session by Lake Phewa capturing boats and reflections."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Pokhara to Spiritual Lumbini",
+        "desc": "Descend to Lumbini. Evening contemplative sketching at the sacred Mayadevi pond under the bodhi tree."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Travel to Bardia National Park",
+        "desc": "Drive west through the Terai plains to Bardia. Settle into our eco-lodge and prepare for wildlife art."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Bardia: Sketching Riverbanks & Wildlife",
+        "desc": "Peaceful day sketching along the Geruwa River. Observe birdlife, crocodiles, and deer at water's edge."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Open 4x4 Jeep Safari in Bardia",
+        "desc": "Full-day safari combining wildlife observation and photography for field sketching references."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Walking Safari in the Jungle",
+        "desc": "Quiet walking tracking in core forest zones. Quick field sketching from elevated observation towers."
+      },
+      {
+        "day": 13,
+        "title": "Day 13 – Tharu Village Portraits & Cultural Art",
+        "desc": "Visit local Tharu homes, learn traditional mud-wall painting techniques, and sketch village daily life."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Flight Back to Kathmandu",
+        "desc": "Domestic flight from Nepalgunj to Kathmandu. Collective exhibition and sharing of journals over farewell dinner."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – International Departure",
+        "desc": "Private airport transfer for your departure flight."
+      }
+    ]
   },
   {
     "slug": "immersion-spirituelle",
@@ -1596,15 +2337,15 @@
       "mustang-himalaya",
       "grand-tour"
     ],
-    "title_en": "Spiritual Immersion in the Himalayas & Sacred Valleys",
+    "title_en": "Spiritual Immersion in the Himalayas & Sacred Valleys – 12 Days",
     "duration_en": "12 Days",
     "group_size_en": "Small group 4 to 10 explorers",
-    "badge_en": "Himalayas, Mustang & Spirituality",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
     "overview_en": "A transformative, meditative journey connecting with the deep sacred roots of Nepal. Discover Tibetan Buddhist monasteries, sacred Hindu cremation ghats at Pashupatinath, meditation caves, and peaceful high-altitude Himalayan retreats.",
     "highlights_en": [
-      "Privileged meetings and teachings with Tibetan Buddhist lamas and Hindu yogis",
+      "Privileged meetings and teachings with Tibetan Buddhist lamas and yogis",
       "Dawn meditation sessions facing the snowcapped peaks of the Himalayas",
-      "Pilgrimages to sacred sites: Boudhanath, Swayambhunath, Namo Buddha, and Lumbini",
+      "Pilgrimages to sacred sites: Boudhanath, Swayambhunath, Namo Buddha, and Pokhara",
       "Peaceful, serene rhythm fostering self-reflection and authentic connections"
     ],
     "image": "/assets/original_site/temple_sacred.webp",
@@ -1614,7 +2355,69 @@
       "/assets/drive_photos/adrien_katmandou1.webp",
       "/assets/original_site/nepal_landscape.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu",
+        "desc": "Welcome at airport, transfer to a peaceful hotel, and introduction to the spiritual pilgrimage."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Kathmandu Sacred Sites & Ashram Stay",
+        "desc": "Visit the sacred river ghats of Pashupatinath and Boudhanath Stupa before settling into a traditional ashram."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Ashram Life: Yoga & Meditation",
+        "desc": "Full day of ashram routine: sunrise pranayama, guided meditation, silent reflection, and spiritual philosophy."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Sacred Hilltop of Namo Buddha",
+        "desc": "Drive to the sacred pilgrimage site of Namo Buddha, where Buddha offered his body to a starving tigress."
+      },
+      {
+        "day": 5,
+        "title": "Day 5 – Day of Noble Silence (Mouna)",
+        "desc": "Experience a day of mindful silence, walking meditation through pine forests, and inward contemplation."
+      },
+      {
+        "day": 6,
+        "title": "Day 6 – Journey to Pokhara Beneath the Annapurnas",
+        "desc": "Drive to Pokhara. Settle into a tranquil hillside retreat overlooking Lake Phewa and the Himalayas."
+      },
+      {
+        "day": 7,
+        "title": "Day 7 – Reconnecting with Nature & Lake Meditation",
+        "desc": "Dawn meditation overlooking the Annapurna range. Quiet boat crossing of Phewa Lake and forest mindfulness walk."
+      },
+      {
+        "day": 8,
+        "title": "Day 8 – Tibetan Monastery Teachings & Sound Healing",
+        "desc": "Visit a Tibetan Buddhist monastery in Pokhara, participate in butter lamp offerings, and experience traditional Tibetan singing bowl sound healing."
+      },
+      {
+        "day": 9,
+        "title": "Day 9 – Sacred Caves & Mountain Sanctuaries",
+        "desc": "Explore ancient meditation caves, mountain viewpoints, and peaceful riverside ashrams."
+      },
+      {
+        "day": 10,
+        "title": "Day 10 – Himalayan Foothills Pilgrimage Hike",
+        "desc": "Gentle day hike through sacred oak forests and rhododendron trails with sweeping vistas of Fishtail Mountain."
+      },
+      {
+        "day": 11,
+        "title": "Day 11 – Scenic Flight Back to Kathmandu",
+        "desc": "Panoramic flight back to Kathmandu. Free afternoon for quiet reflection and farewell blessing ceremony."
+      },
+      {
+        "day": 12,
+        "title": "Day 12 – Farewell & International Departure",
+        "desc": "Private transfer to Tribhuvan International Airport for your journey home."
+      }
+    ]
   },
   {
     "slug": "panthere-des-neiges",
@@ -1635,7 +2438,7 @@
       "safari"
     ],
     "badge": "Himalaya, mustang & spiritualité",
-    "badge_en": "Himalayas, Mustang & Spirituality",
+    "badge_en": "🏔️ Himalayas, Mustang & Spirituality",
     "image": "/assets/snow-leopard/snow_leopard_portrait.webp",
     "images": [
       "/assets/snow-leopard/snow_leopard_portrait.webp",
@@ -1646,7 +2449,7 @@
       "/assets/snow-leopard/annapurna_himalayas.jpg"
     ],
     "overview": "Partez sur les traces du félin le plus insaisissable et mythique de la planète : la Panthère des Neiges (Panthera uncia, le Fantôme des Montagnes). Au cœur de la haute vallée sauvage de Manang (3 600 m – 4 700 m) et des contreforts sacrés des Annapurnas, cette expédition exclusive de 17 jours allie acclimatation progressive, 9 jours intenses de pistage d'altitude avec nos maîtres pisteurs natifs, et immersion culturelle bouddhiste au monastère séculaire de Braka Gompa.",
-    "overview_en": "Embark on an extraordinary 17-day expedition tracking the most elusive and legendary big cat on Earth: the Snow Leopard ('Ghost of the Mountains'). High in the remote wilderness of Manang (3,600m – 4,700m) and the Annapurnas, experience 9 full field days of intensive tracking alongside expert Himalayan trackers, progressive altitude acclimatization, and ancient Buddhist heritage at the 600-year-old Braka Gompa monastery.",
+    "overview_en": "Embark on an extraordinary 17-day expedition tracking the most elusive and legendary big cat on Earth: the Snow Leopard ('Ghost of the Mountains'). High in the remote wilderness of Manang (3,600m – 4,500m) and the Annapurnas, experience 9 full field days of intensive tracking alongside expert Himalayan trackers, progressive altitude acclimatization, and ancient Buddhist heritage at the 600-year-old Braka Gompa monastery.",
     "highlights": [
       "9 jours complets sur le terrain dédiés au suivi et à l’observation du Léopard des Neiges",
       "Pistage d'élite avec maîtres pisteurs himalayens et longues-vues professionnelles",
@@ -1733,6 +2536,53 @@
       "/assets/snow-leopard/pokhara_lake.webp"
     ],
     "daysCount": 17,
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "days_en": [
+      {
+        "day": 1,
+        "title": "Day 1 – Arrival in Kathmandu – Transfer to Historic Bhaktapur",
+        "desc": "Welcome at the international airport and private transfer directly to the historic medieval city of Bhaktapur. Check into your hotel for an expedition presentation. This choice offers immediate cultural immersion away from the bustling capital center."
+      },
+      {
+        "day": 2,
+        "title": "Day 2 – Scenic Flight Kathmandu to Pokhara: Annapurna Panorama",
+        "desc": "30-minute domestic flight to Pokhara offering breathtaking vistas of the Annapurna mountain range. Afternoon at leisure around Lake Phewa to make final gear checks and enjoy the mountains."
+      },
+      {
+        "day": 3,
+        "title": "Day 3 – Pokhara to Chame (2,700 m): 4x4 Trail & Hot Springs",
+        "desc": "Depart by private 4x4 for Chame (approx. 6h trail). Marks the beginning of the valley ascent and the first altitude acclimatization stage. In the late afternoon, enjoy natural thermal hot springs beside the river."
+      },
+      {
+        "day": 4,
+        "title": "Day 4 – Chame to Manang (3,600 m) & Gangapurna Lake Acclimatization Hike",
+        "desc": "2-hour drive to reach Manang. To safely validate this second acclimatization tier, embark on a hike toward the turquoise glacial lake of Gangapurna. Overnight in Manang."
+      },
+      {
+        "day": 5,
+        "title": "Days 5 to 13 (9 Days) – Snow Leopard Tracking Expedition",
+        "desc": "Nine full days in the field dedicated to tracking and observing the Snow Leopard alongside our experienced Himalayan master trackers equipped with Swarovski HD spotting scopes. Flexible pacing includes cultural transition at the 600-year-old Braka Gompa monastery."
+      },
+      {
+        "day": 14,
+        "title": "Day 14 – Manang to Bandipur: Valley Descent & Traditional Newar Village",
+        "desc": "Begin descending from high altitude. 6 to 7-hour road journey to Bandipur, a traditional Newar village renowned for preserved 18th-century architecture and mountain vistas."
+      },
+      {
+        "day": 15,
+        "title": "Day 15 – Bandipur to Kathmandu & Leisure Evening in Thamel",
+        "desc": "Return drive to Kathmandu (approx. 4 hours). Check into hotel and enjoy free time to rest and explore Thamel's vibrant artisan alleys."
+      },
+      {
+        "day": 16,
+        "title": "Day 16 – Kathmandu Valley UNESCO Cultural Heritage",
+        "desc": "Full day discovering the greatest cultural monuments of the Kathmandu Valley (Swayambhunath, Pashupatinath, ancient artisan streets)."
+      },
+      {
+        "day": 17,
+        "title": "Day 17 – Airport Transfer & International Departure",
+        "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
+      }
+    ]
   }
 ]

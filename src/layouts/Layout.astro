@@ -18,6 +18,7 @@ const {
 } = Astro.props;
 
 const currentLang = lang || getLangFromUrl(Astro.url);
+const isEn = currentLang === 'en';
 const pageTitle = title.includes('Jungle Nepal Adventure') ? title : `${title} | Jungle Nepal Adventure`;
 
 let rawPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '');
@@ -430,18 +431,18 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       <!-- Top Modal Header -->
       <div class="relative bg-gradient-to-r from-[#032317] via-[#053222] to-[#032317] text-white p-6 sm:p-8 shrink-0">
         <!-- Close Button -->
-        <button type="button" onclick="closeCustomTourModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer z-10" aria-label="Fermer la fenêtre">
+        <button type="button" onclick="closeCustomTourModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer z-10" aria-label={isEn ? "Close window" : "Fermer la fenêtre"}>
           ✕
         </button>
 
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-slate-200 font-extrabold text-[11px] uppercase tracking-widest border border-white/10 mb-2">
-          <span>Projet sur-mesure & privatisé</span>
+          <span>{isEn ? "Private & Tailor-Made Expedition" : "Projet sur-mesure & privatisé"}</span>
         </span>
         <h3 class="text-xl sm:text-3xl font-black text-white tracking-tight leading-tight">
-          Concevez votre voyage idéal au Népal
+          {isEn ? "Design Your Ideal Journey in Nepal" : "Concevez votre voyage idéal au Népal"}
         </h3>
         <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium leading-relaxed max-w-lg">
-          Itinéraire personnalisé, dates flexibles, safaris exclusifs ou combiné sur-mesure. Pawan et Robin créent votre séjour de A à Z.
+          {isEn ? "Personalized itinerary, flexible dates, exclusive safaris or custom expeditions. Pawan and Robin craft your journey from A to Z." : "Itinéraire personnalisé, dates flexibles, safaris exclusifs ou combiné sur-mesure. Pawan et Robin créent votre séjour de A à Z."}
         </p>
       </div>
 
@@ -453,9 +454,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <div class="flex items-start gap-3">
             <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-base shrink-0 shadow-md">✓</div>
             <div>
-              <h4 class="font-black text-base text-emerald-950">Demande sur-mesure transmise !</h4>
+              <h4 class="font-black text-base text-emerald-950">{isEn ? "Custom Expedition Request Sent!" : "Demande sur-mesure transmise !"}</h4>
               <p class="text-xs text-emerald-800 mt-1 font-medium leading-relaxed">
-                Merci ! Nous avons bien reçu vos souhaits. Robin et notre équipe locale vous recontacteront sous 48h avec une première proposition d'itinéraire chiffrée.
+                {isEn ? "Thank you! We have received your request. Robin and our local team will get back to you within 48h with a first detailed proposal and quote." : "Merci ! Nous avons bien reçu vos souhaits. Robin et notre équipe locale vous recontacteront sous 48h avec une première proposition d'itinéraire chiffrée."}
               </p>
             </div>
           </div>
@@ -463,7 +464,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
         <!-- Error Alert Notification -->
         <div id="custom-tour-error" class="hidden p-4 rounded-2xl bg-rose-500/10 border-2 border-rose-500/40 text-rose-950 shadow-md">
-          <p class="text-xs font-semibold" id="custom-tour-error-text">Une erreur est survenue. Veuillez vérifier vos informations ou nous contacter par WhatsApp.</p>
+          <p class="text-xs font-semibold" id="custom-tour-error-text">{isEn ? "An error occurred. Please verify your details or contact us directly on WhatsApp." : "Une erreur est survenue. Veuillez vérifier vos informations ou nous contacter par WhatsApp."}</p>
         </div>
 
         <form id="custom-tour-form" onsubmit="handleCustomTourSubmit(event)" class="space-y-4 text-sm">
@@ -471,16 +472,16 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <!-- L'expérience recherchée -->
           <div>
             <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
-              Vos priorités de voyage <span class="text-[#0e8354]">*</span>
+              {isEn ? "Your travel priorities" : "Vos priorités de voyage"} <span class="text-[#0e8354]">*</span>
             </label>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs font-semibold">
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Animaux" class="rounded text-[#0e8354] focus:ring-[#0e8354]" checked />
-                <span>Animaux</span>
+                <span>{isEn ? "Wildlife & Animals" : "Animaux"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Expédition panthère des neiges" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Expédition panthère des neiges</span>
+                <span>{isEn ? "Snow Leopard Expedition" : "Expédition panthère des neiges"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Trekking" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
@@ -488,27 +489,27 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Montagne" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Montagne</span>
+                <span>{isEn ? "Mountains & Peaks" : "Montagne"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Rencontre avec des locaux" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Rencontre avec des locaux</span>
+                <span>{isEn ? "Local Encounters" : "Rencontre avec des locaux"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Vie de village" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Vie de village</span>
+                <span>{isEn ? "Village Life" : "Vie de village"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Culture et temple" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Culture et temple</span>
+                <span>{isEn ? "Culture & Temples" : "Culture et temple"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Bivouac jungle" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Bivouac jungle</span>
+                <span>{isEn ? "Jungle Bivouac" : "Bivouac jungle"}</span>
               </label>
               <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-emerald-50/50 cursor-pointer transition-colors">
                 <input type="checkbox" name="custom_priority" value="Photo animalière" class="rounded text-[#0e8354] focus:ring-[#0e8354]" />
-                <span>Photo animalière</span>
+                <span>{isEn ? "Wildlife Photography" : "Photo animalière"}</span>
               </label>
             </div>
           </div>
@@ -517,15 +518,15 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Prénom <span class="text-[#0e8354]">*</span>
+                {isEn ? "First Name" : "Prénom"} <span class="text-[#0e8354]">*</span>
               </label>
-              <input type="text" id="custom-firstname" placeholder="Votre prénom" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+              <input type="text" id="custom-firstname" placeholder={isEn ? "Your first name" : "Votre prénom"} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
             </div>
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Nom <span class="text-[#0e8354]">*</span>
+                {isEn ? "Last Name" : "Nom"} <span class="text-[#0e8354]">*</span>
               </label>
-              <input type="text" id="custom-lastname" placeholder="Votre nom" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+              <input type="text" id="custom-lastname" placeholder={isEn ? "Your last name" : "Votre nom"} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
             </div>
           </div>
 
@@ -533,13 +534,13 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Email de contact <span class="text-[#0e8354]">*</span>
+                {isEn ? "Email Address" : "Email de contact"} <span class="text-[#0e8354]">*</span>
               </label>
               <input type="email" id="custom-email" placeholder="nom@email.com" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
             </div>
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Téléphone / WhatsApp <span class="text-[#0e8354]">*</span>
+                {isEn ? "Phone / WhatsApp" : "Téléphone / WhatsApp"} <span class="text-[#0e8354]">*</span>
               </label>
               <input type="tel" id="custom-phone" placeholder="+33 6 12 34 56 78" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
             </div>
@@ -549,26 +550,26 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Nombre de voyageurs
+                {isEn ? "Number of Travelers" : "Nombre de voyageurs"}
               </label>
               <select id="custom-travelers" class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all cursor-pointer">
-                <option value="1 voyageur (Solo)">1 voyageur (Solo)</option>
-                <option value="2 voyageurs (Couple / Duo)" selected>2 voyageurs (Couple / Duo)</option>
-                <option value="3 à 5 personnes (Famille / Amis)">3 à 5 personnes (Famille / Amis)</option>
-                <option value="6 à 10 personnes (Groupe constitué)">6 à 10 personnes (Groupe constitué)</option>
+                <option value="1 voyageur (Solo)">{isEn ? "1 traveler (Solo)" : "1 voyageur (Solo)"}</option>
+                <option value="2 voyageurs (Couple / Duo)" selected>{isEn ? "2 travelers (Couple / Duo)" : "2 voyageurs (Couple / Duo)"}</option>
+                <option value="3 à 5 personnes (Famille / Amis)">{isEn ? "3 to 5 travelers (Family / Friends)" : "3 à 5 personnes (Famille / Amis)"}</option>
+                <option value="6 à 10 personnes (Groupe constitué)">{isEn ? "6 to 10 travelers (Private Group)" : "6 à 10 personnes (Groupe constitué)"}</option>
               </select>
             </div>
             <div>
               <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-                Durée estimée sur place
+                {isEn ? "Estimated Duration in Nepal" : "Durée estimée sur place"}
               </label>
               <select id="custom-duration" class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all cursor-pointer">
-                <option value="- de 3 jours">- de 3 jours</option>
-                <option value="3 à 5 jours">3 à 5 jours</option>
-                <option value="5 à 7 jours">5 à 7 jours</option>
-                <option value="8 à 12 jours" selected>8 à 12 jours</option>
-                <option value="14 à 18 jours">14 à 18 jours</option>
-                <option value="3 semaines ou plus">3 semaines ou plus</option>
+                <option value="- de 3 jours">{isEn ? "Under 3 days" : "- de 3 jours"}</option>
+                <option value="3 à 5 jours">{isEn ? "3 to 5 days" : "3 à 5 jours"}</option>
+                <option value="5 à 7 jours">{isEn ? "5 to 7 days" : "5 à 7 jours"}</option>
+                <option value="8 à 12 jours" selected>{isEn ? "8 to 12 days" : "8 à 12 jours"}</option>
+                <option value="14 à 18 jours">{isEn ? "14 to 18 days" : "14 à 18 jours"}</option>
+                <option value="3 semaines ou plus">{isEn ? "3 weeks or more" : "3 semaines ou plus"}</option>
               </select>
             </div>
           </div>
@@ -576,18 +577,18 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <!-- Description des souhaits -->
           <div>
             <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
-              Vos envies & détails du projet <span class="text-[#0e8354]">*</span>
+              {isEn ? "Your Travel Wishes & Project Details" : "Vos envies & détails du projet"} <span class="text-[#0e8354]">*</span>
             </label>
-            <textarea id="custom-notes" rows="3" placeholder="Période envisagée (ex: Octobre 2026), type d'hébergement souhaité, rythme de marche, centres d'intérêt particuliers..." required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
+            <textarea id="custom-notes" rows="3" placeholder={isEn ? "Preferred dates (e.g. October 2026), accommodation preference, walking pace, special wildlife interests..." : "Période envisagée (ex: Octobre 2026), type d'hébergement souhaité, rythme de marche, centres d'intérêt particuliers..."} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
           </div>
 
           <!-- Bouton Submit -->
           <div class="pt-2">
             <button type="submit" id="custom-tour-submit-btn" class="w-full py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-100 active:scale-95 transition-all text-center cursor-pointer">
-              Envoyer ma demande de voyage sur-mesure →
+              {isEn ? "Send My Custom Expedition Request →" : "Envoyer ma demande de voyage sur-mesure →"}
             </button>
             <p class="text-[11px] text-center text-slate-400 mt-2 font-medium">
-              Devis personnalisés sous 48h
+              {isEn ? "Personalized proposals within 48 hours" : "Devis personnalisés sous 48h"}
             </p>
           </div>
 
@@ -658,14 +659,15 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
       if (!prenom || !nom || !email || !phone || !notes) {
         if (errorBox) {
-          document.getElementById('custom-tour-error-text').textContent = 'Veuillez remplir tous les champs obligatoires (*).';
+          var isEn = document.documentElement.lang === 'en';
+document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please fill in all required fields (*).' : 'Veuillez remplir tous les champs obligatoires (*).';
           errorBox.classList.remove('hidden');
         }
         return false;
       }
 
       if (btn) {
-        btn.innerHTML = '<span class="inline-flex items-center gap-2"><span>Transmission en cours...</span> <svg class="animate-spin w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg></span>';
+        btn.innerHTML = '<span class="inline-flex items-center gap-2"><span>' + (document.documentElement.lang === 'en' ? 'Sending request...' : 'Transmission en cours...') + '</span> <svg class="animate-spin w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg></span>';
         btn.disabled = true;
       }
 
@@ -712,11 +714,11 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         if (form) form.reset();
         if (successBox) successBox.classList.remove('hidden');
         if (btn) {
-          btn.innerHTML = '✓ Projet transmis avec succès !';
+          btn.innerHTML = document.documentElement.lang === 'en' ? '✓ Expedition request sent successfully!' : '✓ Projet transmis avec succès !';
           btn.classList.add('bg-emerald-700');
           setTimeout(function() {
             closeCustomTourModal();
-            btn.innerHTML = 'Envoyer ma demande de voyage sur-mesure →';
+            btn.innerHTML = '{isEn ? "Send My Custom Expedition Request →" : "Envoyer ma demande de voyage sur-mesure →"}';
             btn.classList.remove('bg-emerald-700');
             btn.disabled = false;
           }, 3500);

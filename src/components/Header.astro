@@ -17,7 +17,7 @@ const toursUrl = currentLang === 'en' ? '/en/#prochains-departs' : '/#prochains-
 const destUrl = currentLang === 'en' ? '/en/destinations' : '/destinations';
 const guidesUrl = currentLang === 'en' ? (homeUrl + '#pisteurs') : '/#pisteurs';
 const galleryUrl = currentLang === 'en' ? (homeUrl + '#galerie-faune') : '/#galerie-faune';
-const aboutUrl = currentLang === 'en' ? '/en/a-propos' : '/a-propos';
+const aboutUrl = currentLang === 'en' ? '/en/about' : '/a-propos';
 const blogUrl = currentLang === 'en' ? '/en/blog' : '/blog';
 const contactUrl = currentLang === 'en' ? '/en/contact' : '/contact';
 
@@ -57,31 +57,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
             <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
-              <a href={currentLang === 'en' ? "/en/destinations/bardia.html" : "/destinations/bardia.html"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+              <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Bardia National Park" : "Parc national de Bardia"}</p>
                   <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Bengal Tigers & Walking Safaris" : "Tigres du Bengale & safaris à pied"}</p>
                 </div>
               </a>
-              <a href={currentLang === 'en' ? "/en/destinations/chitwan.html" : "/destinations/chitwan.html"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+              <a href={currentLang === 'en' ? "/en/destinations/chitwan" : "/destinations/chitwan"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Chitwan National Park" : "Parc national de Chitwan"}</p>
                   <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "One-Horned Rhinos & River Canoes" : "Rhinocéros & pirogues de la Rapti"}</p>
                 </div>
               </a>
-              <a href={currentLang === 'en' ? "/en/destinations/suklaphanta.html" : "/destinations/suklaphanta.html"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+              <a href={currentLang === 'en' ? "/en/destinations/suklaphanta" : "/destinations/suklaphanta"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Suklaphanta National Park" : "Parc national de Suklaphanta"}</p>
                   <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Swamp Deer & Untamed Wild West" : "Cerfs des marais & ouest sauvage"}</p>
                 </div>
               </a>
-              <a href={currentLang === 'en' ? "/en/destinations/annapurna.html" : "/destinations/annapurna.html"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+              <a href={currentLang === 'en' ? "/en/destinations/annapurna" : "/destinations/annapurna"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Annapurna & Pokhara" : "Les Annapurna & Pokhara"}</p>
                   <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Sacred Peaks & Alpine Balconies" : "Sommets mythiques & balcons alpins"}</p>
                 </div>
               </a>
-              <a href={currentLang === 'en' ? "/en/destinations/katmandou.html" : "/destinations/katmandou.html"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+              <a href={currentLang === 'en' ? "/en/destinations/katmandou" : "/destinations/katmandou"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Kathmandu Valley" : "Katmandou"}</p>
                   <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Valley of Gods & Sacred Temples" : "Vallée des rois & temples sacrés"}</p>
@@ -176,31 +176,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </button>
 
       <div id="mobile-dest-sub" class="hidden px-2 pb-2.5 space-y-1 border-t border-white/5 pt-2">
-        <a href={currentLang === 'en' ? "/en/destinations/bardia.html" : "/destinations/bardia.html"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+        <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
           <div>
             <p class="font-bold text-white">{currentLang === 'en' ? "Bardia National Park" : "Parc national de Bardia"}</p>
             <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Bengal Tigers & Walking Safaris" : "Tigres du Bengale & safaris à pied"}</p>
           </div>
         </a>
-        <a href={currentLang === 'en' ? "/en/destinations/chitwan.html" : "/destinations/chitwan.html"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+        <a href={currentLang === 'en' ? "/en/destinations/chitwan" : "/destinations/chitwan"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
           <div>
             <p class="font-bold text-white">{currentLang === 'en' ? "Chitwan National Park" : "Parc national de Chitwan"}</p>
             <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "One-Horned Rhinos & River Canoes" : "Rhinocéros & pirogues de la Rapti"}</p>
           </div>
         </a>
-        <a href={currentLang === 'en' ? "/en/destinations/suklaphanta.html" : "/destinations/suklaphanta.html"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+        <a href={currentLang === 'en' ? "/en/destinations/suklaphanta" : "/destinations/suklaphanta"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
           <div>
             <p class="font-bold text-white">{currentLang === 'en' ? "Suklaphanta National Park" : "Parc national de Suklaphanta"}</p>
             <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Swamp Deer & Untamed Wild West" : "Cerfs des marais & ouest sauvage"}</p>
           </div>
         </a>
-        <a href={currentLang === 'en' ? "/en/destinations/annapurna.html" : "/destinations/annapurna.html"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+        <a href={currentLang === 'en' ? "/en/destinations/annapurna" : "/destinations/annapurna"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
           <div>
             <p class="font-bold text-white">{currentLang === 'en' ? "Annapurna & Pokhara" : "Les Annapurna & Pokhara"}</p>
             <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Sacred Peaks & Alpine Balconies" : "Sommets mythiques & balcons alpins"}</p>
           </div>
         </a>
-        <a href={currentLang === 'en' ? "/en/destinations/katmandou.html" : "/destinations/katmandou.html"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+        <a href={currentLang === 'en' ? "/en/destinations/katmandou" : "/destinations/katmandou"} onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
           <div>
             <p class="font-bold text-white">{currentLang === 'en' ? "Kathmandu Valley" : "Katmandou"}</p>
             <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Valley of Gods & Sacred Temples" : "Vallée des rois & temples sacrés"}</p>
@@ -232,7 +232,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <div class="pt-4 border-t border-white/10">
     <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm shadow-lg transition-all">
       <svg class="w-4 h-4 text-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-      <span>Contacter Robin sur WhatsApp</span>
+      <span>{currentLang === 'en' ? "Contact Robin on WhatsApp" : "Contacter Robin sur WhatsApp"}</span>
     </a>
   </div>
 

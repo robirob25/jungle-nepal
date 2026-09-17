@@ -2,12 +2,13 @@
 import { getLocalizedPath } from '../../../i18n/utils';
 
 import Layout from '../../../layouts/Layout.astro';
+import Footer from '../../../components/Footer.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<Layout title="Nos Destinations in Nepal | Jungle Nepal Adventure" lang="en">
+<Layout title="Destinations in Nepal | Jungle Nepal Adventure – Wild Sanctuaries & Himalayas" lang="en">
 
 
   <!-- TOP BANNER -->
@@ -15,7 +16,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
       
       <div class="flex-1 text-center whitespace-nowrap overflow-hidden text-ellipsis">
-        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 <span class="hidden sm:inline">avec le code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+        <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip <span class="hidden sm:inline">with code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
       <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white cursor-pointer">✕</button>
     </div>
@@ -93,8 +94,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </div>
         <a href="/en/#concept" class="hover:text-amber-100 transition-colors">Our Guides</a>
-        <a href="/en/#galerie-faune" class="hover:text-amber-100 transition-colors">Galerie</a>
-        <a href="/en/about" class="hover:text-amber-100 transition-colors">À propos</a>
+        <a href="/en/#galerie-faune" class="hover:text-amber-100 transition-colors">Gallery</a>
+        <a href="/en/about" class="hover:text-amber-100 transition-colors">About Us</a>
         <a href="/en/blog" class="hover:text-amber-100 transition-colors">Blog</a>
         <a href="/en/contact" class="hover:text-amber-100 transition-colors">Contact</a>
       </nav>
@@ -103,7 +104,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <a href="https://wa.me/33695413227" target="_blank"  target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-extrabold text-xs sm:text-[13px] shadow-md shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all" whitespace-nowrap"><svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="whitespace-nowrap">WhatsApp</span></a>
                                 <!-- LANGUAGE SWITCHER (GLOBE) -->
       <div class="relative group/lang py-1">
-        <button onclick="toggleLangMenu(this)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 border-white/20 text-white border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Changer de langue / Change language">
+        <button onclick="toggleLangMenu(this)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 border-white/20 text-white border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Change language">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -134,7 +135,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- Top Bar with Close Button -->
     <div class="flex items-center justify-between pb-3 border-b border-white/10">
       <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
-      <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Fermer le menu">
+      <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Close menu">
         ✕
       </button>
     </div>
@@ -208,7 +209,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- 4. Maîtres pisteurs -->
       <a href="/en/#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
         
-        <span>Galerie</span>
+        <span>Gallery</span>
       </a>
 
             
@@ -216,7 +217,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- 5. À propos -->
       <a href="/en/about" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
         
-        <span>À propos</span>
+        <span>About Us</span>
       </a>
 
       <!-- Blog (safarinepal.fr) -->
@@ -254,7 +255,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <a href="https://wa.me/33695413227" target="_blank"  target="_blank" class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-white text-slate-950 flex items-center justify-center text-center font-black text-xs shadow hover:bg-slate-100 transition-all" whitespace-nowrap"><svg class="w-4 h-4 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="whitespace-nowrap">WhatsApp (+33 6 95 41 32 27)</span></a>
 
       <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="w-full text-center py-3.5 px-4 rounded-2xl bg-[#0e5c3e] flex items-center justify-center text-center hover:bg-[#0c6d46] text-white font-black text-xs shadow transition-all">
-        Explorer les 15 sédays et départs →
+        Explore all 15 expeditions & dates →
       </a>
     </div>
 
@@ -268,10 +269,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </div>
     <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
       <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.08] drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
-        Nos destinations
+        Our Destinations
       </h1>
       <p class="mt-6 text-base sm:text-xl text-slate-200 max-w-2xl font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-        Des sanctuaires inviolés du Terai aux sommets himalayens, découvrez les 5 grands territoires explorés avec nos maîtres pisteurs.
+        From the pristine sanctuaries of the Terai to Himalayan summits, discover the 5 wild territories explored alongside our native master trackers.
       </p>
     </div>
   </section>
@@ -284,7 +285,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <img src="/assets/original_site/tigre_bardia.webp" alt="Bardia National Park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-100 text-xs font-black px-3.5 py-1.5 rounded-full border border-white/10 shadow">
-          Sanctuaire du tigre du Bengale
+          Bengal Tiger Sanctuary
         </span>
       </a>
 
@@ -294,7 +295,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <a href="/en/destinations/bardia">Bardia National Park</a>
           </h2>
           <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal mt-3">
-            Avant sa création officielle en 1988, le parc national de Bardia était une réserve de chasse royale dédiée à la monarchie népalaise. Sa transformation en sanctuaire protégé a permis de préserver l'un des écosystèmes les plus sauvages et intacts d'Asie.
+            Prior to its official establishment in 1988, Bardia National Park was a royal hunting reserve. Its transformation into a protected sanctuary preserved one of Asia's wildest and most pristine ecosystems, renowned for tracking Bengal tigers on foot.
           </p>
         </div>
 
@@ -312,7 +313,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <img src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan National Park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-100 text-xs font-black px-3.5 py-1.5 rounded-full border border-white/10 shadow">
-          Patrimoine mondial de l'UNESCO
+          UNESCO World Heritage Site
         </span>
       </a>
 
@@ -322,7 +323,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <a href="/en/destinations/chitwan">Chitwan National Park</a>
           </h2>
           <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal mt-3">
-            Classé au patrimoine mondial de l'UNESCO depuis 1984, le parc national de Chitwan abrite l'une des biodiversités les plus spectaculaires et foisonnantes du continent asiatique.
+            Inscribed as a UNESCO World Heritage site in 1984, Chitwan National Park hosts one of the most vibrant biodiversities in Asia, famous for its greater one-horned rhinos, marsh muggers, and peaceful river canoe safaris.
           </p>
         </div>
 
@@ -340,7 +341,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <img src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta National Park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-100 text-xs font-black px-3.5 py-1.5 rounded-full border border-white/10 shadow">
-          L'Éden sauvage secret
+          The Untamed Wild West
         </span>
       </a>
 
@@ -350,7 +351,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <a href="/en/destinations/suklaphanta">Suklaphanta National Park</a>
           </h2>
           <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal mt-3">
-            Situé à l'extrême ouest du Népal, à la frontière de l'Inde, le parc national de Suklaphanta est l'un des territoires les plus sauvages, préservés et secrets de tout l'Himalaya.
+            Located in far-western Nepal on the border of India, Suklaphanta National Park is one of the wildest, most untouched, and secluded wildernesses in the Himalayas, home to massive herds of swamp deer and elusive tigers.
           </p>
         </div>
 
@@ -368,7 +369,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <img src="/assets/original_site/machapuchare.webp" alt="Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-100 text-xs font-black px-3.5 py-1.5 rounded-full border border-white/10 shadow">
-          Sommets sacrés & treks
+          Sacred Peaks & Treks
         </span>
       </a>
 
@@ -378,7 +379,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <a href="/en/destinations/annapurna">Annapurna & Pokhara</a>
           </h2>
           <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal mt-3">
-            La région de l'Annapurna offre des contrastes géographiques et culturels vertigineux : des forêts tropicales luxuriantes jusqu'aux parois de glace flirtant avec les 8 000 mètres.
+            The Annapurna region delivers astonishing geographic and cultural contrasts: from lush subtropical valleys to sheer glacial walls rising towards 8,000 meters, staying in welcoming Gurung mountain villages.
           </p>
         </div>
 
@@ -396,17 +397,17 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <img src="/assets/drive_photos/adrien_bhaktapur1.webp" alt="Kathmandu & la Vallée des Rois" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-amber-100 text-xs font-black px-3.5 py-1.5 rounded-full border border-white/10 shadow">
-          Cité millénaire & temples
+          Ancient Valley & Temples
         </span>
       </a>
 
       <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
         <div>
           <h2 class="font-black text-2xl text-slate-950 group-hover:text-[#0e8354] transition-colors tracking-tight leading-snug">
-            <a href="/en/destinations/katmandou">Kathmandu & la vallée des rois</a>
+            <a href="/en/destinations/katmandou">Kathmandu & Valley of Kings</a>
           </h2>
           <p class="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal mt-3">
-            Au premier abord, Kathmandu peut sembler déroutante et bouillonnante. Mais laissez-lui quelques heures, et elle finit par vous enchanter par sa ferveur spirituelle et sa poésie intemporelle.
+            At first glance, Kathmandu can seem bustling and intense. But give it a few hours, and it will enchant you with its ancient courtyards, spiritual fervor, and timeless sacred temples.
           </p>
         </div>
 
@@ -428,121 +429,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- =========================================================================
        FOOTER COMPLET AVEC TOUT LE MENU DU SITE
        ========================================================================= -->
-  <footer class="bg-[#040d08] text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-emerald-950/60 font-sans">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- 5 Balanced Columns Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 pb-14 border-b border-white/10 text-xs">
-      
-      <!-- COL 1: Brand & Official Legal Details -->
-      <div class="space-y-4 lg:col-span-1">
-        <a href="/en/" class="inline-block">
-          <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
-        </a>
-        <p class="text-slate-400 text-xs leading-relaxed">
-          Agence locale d'écotourisme d'exception et de safaris Immersive in Nepal. Kathmandu & Parc National de Bardia.
-        </p>
-        <div class="pt-1 space-y-2">
-          <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-900/30 hover:bg-emerald-800/40 text-emerald-400 font-bold text-xs border border-emerald-700/40 transition-colors whitespace-nowrap">
-            <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            <span>WhatsApp : +33 6 95 41 32 27</span>
-          </a>
-          <p class="text-slate-400">Email : <strong class="text-white font-medium">contact@junglenepal.com</strong></p>
-        </div>
-        <div class="pt-2 text-[11px] text-slate-400 space-y-1 font-medium border-t border-white/10">
-          <p class="font-bold text-slate-200">Jungle Nepal Adventure Pvt. Ltd.</p>
-          <p>Immatriculation : <strong class="text-slate-200 font-mono">N° 384414/82/83</strong></p>
-          <p>Numéro fiscal : <strong class="text-slate-200 font-mono">623537310</strong></p>
-          <p>Thakurdwara-09, Bardia, Népal</p>
-        </div>
-      </div>
-
-      <!-- COL 2: All 15 Expeditions -->
-      <div class="space-y-3">
-        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          All 15 Expeditions
-        </h4>
-        <ul class="space-y-2 text-slate-400">
-          <li><a href="/en/tours/bardia-explorateur" class="hover:text-slate-200 transition-colors">Bardia Explorateur (5j)</a></li>
-          <li><a href="/en/tours/chitwan-culture" class="hover:text-slate-200 transition-colors">Chitwan & Jungle (4j)</a></li>
-          <li><a href="/en/tours/nepal-sauvage" class="hover:text-slate-200 transition-colors">Népal Sauvage 360° (15j)</a></li>
-          <li><a href="/en/tours/babai-special" class="hover:text-slate-200 transition-colors">Babai Spécial Tigres (5j)</a></li>
-          <li><a href="/en/tours/bardia-babai-camping" class="hover:text-slate-200 transition-colors">Bardia Babai Bivouac (8j)</a></li>
-          <li><a href="/en/tours/rafting-safari" class="hover:text-slate-200 transition-colors">Rafting Karnali & Safari (18j)</a></li>
-          <li><a href="/en/tours/tiji-mustang" class="hover:text-slate-200 transition-colors">Tiji Festival Mustang (13j)</a></li>
-          <li><a href="/en/tours/nepal-immersion-totale" class="hover:text-slate-200 transition-colors">Népal Immersion Totale (14j)</a></li>
-          <li class="pt-1.5"><a href="/en/#prochains-departs" class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>Voir les 15 sédays</span><span>→</span></a></li>
-        </ul>
-      </div>
-
-      <!-- COL 3: Destinations -->
-      <div class="space-y-3">
-        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          Destinations
-        </h4>
-        <ul class="space-y-2 text-slate-400">
-          <li><a href="/en/destinations/bardia" class="hover:text-slate-200 transition-colors">Bardia National Park</a></li>
-          <li><a href="/en/destinations/chitwan" class="hover:text-slate-200 transition-colors">Chitwan National Park</a></li>
-          <li><a href="/en/destinations/suklaphanta" class="hover:text-slate-200 transition-colors">Suklaphanta National Park</a></li>
-          <li><a href="/en/destinations/annapurna" class="hover:text-slate-200 transition-colors">Annapurna & Pokhara</a></li>
-          <li><a href="/en/destinations/katmandou" class="hover:text-slate-200 transition-colors">Kathmandu</a></li>
-          <li class="pt-1.5"><a href="/en/destinations" class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>All Destinations</span><span>→</span></a></li>
-        </ul>
-      </div>
-
-      <!-- COL 4: Navigation -->
-      <div class="space-y-3">
-        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          Navigation
-        </h4>
-        <ul class="space-y-2 text-slate-400">
-                    <li><a href="/en/#concept" class="hover:text-slate-200 transition-colors">Our Guides</a></li>
-          <li><a href="/en/#galerie-faune" class="hover:text-slate-200 transition-colors">Galerie</a></li>
-          <li><a href="/en/about" class="hover:text-slate-200 transition-colors">À propos</a></li>
-          <li><a href="/en/legal-mentions" class="hover:text-slate-200 transition-colors">Mentions légales</a></li>
-          <li><a href="/en/blog" class="hover:text-slate-200 transition-colors inline-flex items-center gap-1.5">Blog</a></li>
-          <li><a href="/en/contact" class="hover:text-slate-200 transition-colors">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- COL 5: Contact & Réservation -->
-      <div class="space-y-3">
-        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          Contact & Réservation
-        </h4>
-        <ul class="space-y-2 text-slate-400">
-          <li><a href="/en/contact" class="hover:text-slate-200 transition-colors">Demande de devis sur-mesure</a></li>
-          <li><a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">Contact Robin on WhatsApp</a></li>
-        </ul>
-        <div class="pt-3 border-t border-white/10 text-slate-400 text-xs space-y-1">
-          <p class="text-slate-200 font-bold">Small Groups (4-10 max)</p>
-          <p class="text-slate-400">100% Native Trackers</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Bottom Bar with Official Legal Certifications -->
-    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-      <div class="space-y-1 text-center md:text-left">
-        <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. Tous droits réservés.</p>
-        <p class="text-[11px] text-slate-400">Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310</p>
-      </div>
-      <div class="flex items-center gap-4 text-xs">
-        <button onclick="openLegalModal()" class="text-slate-200 hover:text-white font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/60 px-3.5 py-1.5 rounded-xl border border-emerald-700/40">
-          <span>Agréments & Licences officielles</span>
-        </button>
-        <span>•</span>
-        <a href="/en/legal-mentions" class="hover:text-white transition-colors">Mentions légales</a>
-        <span>•</span>
-        <a href="/en/about" class="hover:text-white transition-colors">À propos</a>
-        <span>•</span>
-        <a href="/en/contact" class="hover:text-white transition-colors">Contact</a>
-      </div>
-    </div>
-
-  </div>
-</footer>
+  <Footer lang="en" />
 
   <!-- BOUTON RETOUR EN HAUT ÉLÉGANT & GRAPHIQUE -->
   <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 z-40 bg-gradient-to-tr from-[#0e8354] to-[#10b981] hover:from-[#0c6d46] hover:to-[#059669] text-white p-3.5 sm:p-4 rounded-2xl shadow-[0_10px_30px_rgba(16,185,129,0.4)] hover:shadow-[0_14px_40px_rgba(16,185,129,0.6)] hover:-translate-y-1 active:translate-y-0 active:scale-90 transition-all duration-300 flex items-center justify-center cursor-pointer select-none group" aria-label="Retour en haut">
@@ -573,47 +460,47 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Government of Nepal</span>
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
-        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée in Nepal</p>
+        <p class="text-xs text-slate-500 font-medium">Officially registered and licensed ecotourism & expedition company in Nepal</p>
       </div>
 
       <div class="py-5 space-y-3.5 text-xs text-slate-700">
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificate of Incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Official</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
-          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+          <p class="text-slate-900 font-black text-sm">Office of the Company Registrar, Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Registration No.: 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Pursuant to Sub-Section (1) of Section 5 of the Companies Act, 2006 of Nepal.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Tax & VAT Registration</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Verified</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
-          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+          <p class="text-slate-900 font-black text-sm">Inland Revenue Department of Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">PAN Tax ID: 623537310</p>
+          <p class="text-[11px] text-slate-500">Jurisdiction: Inland Revenue Office Nepalgunj.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
-          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
-          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Registered Office & Operations</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Nepal</p>
+          <p class="text-[11px] text-slate-500">Founder & Director: Pawan Kumar Thapa (Native Bardia Master Tracker)</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
-          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
-          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+          <p class="font-bold text-[#0e8354] text-xs">State-Licensed Operating Activities:</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Licensed organization of wildlife safaris, walking tracking of Bengal tigers, wild river expeditions (Karnali Rafting), wilderness bush camps, and certified ecotourism.</p>
         </div>
       </div>
 
       <div class="pt-2">
         <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
-          Fermer les informations légales
+          Close Legal Notice
         </button>
       </div>
     </div>

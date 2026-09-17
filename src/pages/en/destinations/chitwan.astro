@@ -4,7 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import toursData from '../../../data/tours.json';
+import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["chitwan-culture", "chitwan-bardia-complete", "nepal-immersion-totale"].includes(t.slug));
 
@@ -14,12 +14,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
 <Layout 
   title="Chitwan National Park | Destinations Jungle Nepal Adventure"
-  description="Classé au patrimoine mondial de l’UNESCO en 1984, le parc national de Chitwan abrite l’une des faunes sauvages les plus impressionnantes d’Asie. C'est"
+  description="Inscribed as a UNESCO World Heritage site in 1984, Chitwan National Park hosts one of Asia's most vibrant wildlife havens: greater one-horned rhinos, gharials, and river canoe safaris."
   image="/assets/original_site/chitwan_rhino.webp"
   lang="en"
   isDarkHeader={true}
 >
-  <Header lang="en" currentPath="/destinations/chitwan.html" />
+  <Header lang="en" currentPath="/en/destinations/chitwan" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
@@ -34,7 +34,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
-        <a href="/en/" class="hover:text-white">Accueil</a>
+        <a href="/en/" class="hover:text-white">Home</a>
         <span>›</span>
         <a href="/en/destinations" class="hover:text-white">Destinations</a>
         <span>›</span>
@@ -46,7 +46,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         Chitwan National Park
       </h1>
       <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
-        Rhinocéros unicornes, pirogues sur la Rapti et culture Tharu
+        One-horned rhinos, Rapti river wooden canoes, and Tharu culture
       </p>
     </div>
   </div>
@@ -57,16 +57,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- 1. GRILLE 2 COLONNES : TEXTE COMPLET (GAUCHE) & FICHE TECHNIQUE (DROITE) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Colonne Gauche : 100% Contenu Texte Officiel junglenepal.com -->
+      <!-- Colonne Gauche : 100% Contenu Texte Official junglenepal.com -->
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
+        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Wild Immersion</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-          Explorer Chitwan National Park
+          Explore Chitwan National Park
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
-          <p>Classé au patrimoine mondial de l’UNESCO en 1984, le parc national de Chitwan abrite l’une des faunes sauvages les plus impressionnantes d’Asie. C'est le premier parc national créé in Nepal en 1973. Il est considéré mondialement comme le meilleur endroit pour observer le grand rhinocéros indien à une corne (Rhinoceros unicornis) évoluant librement dans son habitat naturel de forêts de sal et de hautes prairies alluviales.</p>
-          <p>Entre safaris en jeep, marches guidées d'observation dans la jungle et descentes paisibles en pirogue traditionnelle sur la rivière Rapti au lever du soleil, chaque activité offre une immersion directe au contact de la faune. Ce décor sauvage et préservé fait de Chitwan un lieu magique où vous croiserez des hardes de cervidés, des crocodiles gavials se chauffant sur les berges de sable, ainsi que des martins-pêcheurs et calaos colorés.</p>
-          <p>L’un des grands atouts du parc national de Chitwan est son accessibilité idéale. Situé à seulement quelques heures de route de Kathmandu ou de Pokhara (et desservi par l'aéroport de Bharatpur), il permet une halte nature de qualité sans longs trajets éprouvants. Grâce à nos éco-lodges de charme partenaires et à nos guides naturalistes, Chitwan est parfait aussi bien pour les familles que pour les explorateurs avides de grands espaces.</p>
+          <p>Inscribed as a UNESCO World Heritage site in 1984, Chitwan National Park is home to one of the most vibrant wildlife habitats in Asia. Nestled in the southern Terai lowlands along the Rapti and Narayani rivers, Chitwan represents the crowning achievement of Nepalese conservation: a flourishing sanctuary where over 690 greater one-horned rhinoceroses roam freely across riverine forests and tall elephant grasses.</p>
+          <p>Between open 4x4 jeep safaris, guided walking nature trails, and peaceful descents in traditional wooden canoes along the Rapti River, Chitwan offers a complete and diverse wildlife experience. Here you can observe the rare long-snouted gharial crocodile, marsh muggers basking on sunny riverbanks, wild Asian elephants, and more than 540 species of resident and migratory birds.</p>
+          <p>One of Chitwan's greatest assets is its excellent accessibility. Located just a short flight or scenic drive from Kathmandu and Pokhara, it serves as the ideal introduction to wild Nepal for wildlife lovers, birdwatchers, and families seeking comfortable, authentic immersion.</p>
         </div>
       </div>
 
@@ -74,34 +74,34 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-5 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-xl space-y-6 sticky top-28">
         <h3 class="font-black text-xl text-slate-950 pb-3 border-b border-slate-100 flex items-center gap-2">
           <svg class="w-5 h-5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Technical & Practical Overview</span>
+          <span>Practical & Technical Facts</span>
         </h3>
         
         <div class="space-y-4 text-sm">
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Meilleure période</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Best Travel Period</p>
           <p class="font-bold text-slate-900 mt-0.5">D'octobre à avril (Climat très doux, excellente visibilité sur la faune)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Mode d'exploration</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Exploration Style</p>
           <p class="font-bold text-slate-900 mt-0.5">Pirogues traditionnelles sur la Rapti, jeeps 4x4 ouvertes et safaris à pied</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Espèces phares</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Key Species</p>
           <p class="font-bold text-slate-900 mt-0.5">Rhinocéros unicorne (+690 individus), gavials du Gange, tigres, calaos</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Format de groupe</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Group Size</p>
           <p class="font-bold text-slate-900 mt-0.5">Micro-groupes de 4 à 10 personnes (ou départs privatisés famille)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Hébergement</p>
-          <p class="font-bold text-slate-900 mt-0.5">Éco-lodges de charme Tharu éco-responsables avec piscine et jardin tropical</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accommodation</p>
+          <p class="font-bold text-slate-900 mt-0.5">Charming eco-responsible Tharu boutique lodges with swimming pool and lush gardens</p>
         </div>
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Chitwan National Park" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Chitwan National Park →
+          Ask a question about Chitwan National Park →
         </a>
       </div>
 
@@ -117,16 +117,15 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           La culture Tharu & la vie rurale au bord des rivières
         </h3>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
-          La communauté Tharu de Chitwan vit en symbiose avec les cours d'eau et les forêts de sal. Leurs danses rituelles au bâton, leurs fresques murales décoratives et leurs méthodes de pêche artisanale à la nasse témoignent d'un patrimoine vivant exceptionnel que nous découvrons lors de nos haltes culturelles.
-        </p>
+          Living in harmony with the wild Terai for generations, the indigenous Tharu people have developed a rich culture and unique architecture. Their clay-decorated homes, vibrant traditions, and deep connection to the forest bring a profound human dimension to every Chitwan expedition.</p>
       </div>
     </div>
 
     <!-- 3. GALERIE PHOTO IMMERSIVE (4 PHOTOS HD AVEC LIGHTBOX) -->
     <div class="space-y-6">
       <div>
-        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Chitwan National Park</h3>
+        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Field Photography</span>
+        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Visual Overview of Chitwan National Park</h3>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -148,12 +147,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-8 pt-8 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les sédays Immersive à Chitwan National Park</h3>
-          <p class="text-slate-600 text-sm mt-1">Guaranteed Departures en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">2026/2027 Season</span>
+          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Immersive Expeditions in Chitwan National Park</h3>
+          <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Voir tous les 15 sédays →
+          View all 15 Expeditions →
         </a>
       </div>
 
@@ -161,7 +160,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -179,7 +178,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   {tour.badge}
                 </span>
                 <span class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-bold">
-                  4 à 10 pers.
+                  4 to 10 travelers
                 </span>
               </div>
 
@@ -187,7 +186,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-200">
                   <span>🕒 {tour.duration}</span>
                   <span>•</span>
-                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} avis)</span>
+                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} reviews)</span>
                 </div>
               </div>
             </div>
@@ -217,7 +216,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →
@@ -253,7 +252,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 
@@ -322,47 +321,47 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Government of Nepal</span>
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
-        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée in Nepal</p>
+        <p class="text-xs text-slate-500 font-medium">Officially registered and licensed ecotourism & expedition company in Nepal</p>
       </div>
 
       <div class="py-5 space-y-3.5 text-xs text-slate-700">
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificate of Incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Official</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
-          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+          <p class="text-slate-900 font-black text-sm">Office of the Company Registrar, Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Registration No.: 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Pursuant to Sub-Section (1) of Section 5 of the Companies Act, 2006 of Nepal.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Tax & VAT Registration</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Verified</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
-          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+          <p class="text-slate-900 font-black text-sm">Inland Revenue Department of Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">PAN Tax ID: 623537310</p>
+          <p class="text-[11px] text-slate-500">Jurisdiction: Inland Revenue Office Nepalgunj.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
-          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
-          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Registered Office & Operations</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Nepal</p>
+          <p class="text-[11px] text-slate-500">Founder & Director: Pawan Kumar Thapa (Native Bardia Master Tracker)</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
-          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
-          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+          <p class="font-bold text-[#0e8354] text-xs">State-Licensed Operating Activities:</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Licensed organization of wildlife safaris, walking tracking of Bengal tigers, wild river expeditions (Karnali Rafting), wilderness bush camps, and certified ecotourism.</p>
         </div>
       </div>
 
       <div class="pt-2">
         <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
-          Fermer les informations légales
+          Close Legal Notice
         </button>
       </div>
     </div>

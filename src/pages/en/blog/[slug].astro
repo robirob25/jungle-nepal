@@ -50,7 +50,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "author": [{
       "@type": "Person",
       "name": "Robin",
-      "url": "https://junglenepal.com/en/about.html"
+      "url": "https://junglenepal.com/en/about"
     }],
     "publisher": {
       "@type": "Organization",
@@ -62,22 +62,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://junglenepal.com/blog/${post.slug}`
+      "@id": `https://junglenepal.com/en/blog/${post.slug}`
     }
   })} />
 
   <!-- TOP PROMO BAR -->
-  <aside aria-label="Bannière d'information" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
+  <aside aria-label="Information banner" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
       <div class="flex-1 flex items-center justify-center gap-1.5 text-center text-[11px] sm:text-xs">
-        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 avec le code <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+        <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip with code <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
-      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-sm leading-none px-1 cursor-pointer shrink-0" aria-label="Fermer">✕</button>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-sm leading-none px-1 cursor-pointer shrink-0" aria-label="Close">✕</button>
     </div>
   </aside>
 
   <!-- HEADER -->
-  <Header isTransparent={false} currentPath="/blog" />
+  <Header isTransparent={false} currentPath="/en/blog" lang="en" />
 
   <!-- ARTICLE HERO -->
   <header class="relative bg-slate-950 text-white pt-16 pb-20 px-4 sm:px-6 lg:px-8 border-b border-white/10 overflow-hidden">
@@ -87,7 +87,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="relative max-w-4xl mx-auto space-y-6">
       <!-- Breadcrumbs -->
       <nav class="flex items-center gap-2 text-xs text-slate-400 font-semibold flex-wrap">
-        <a href="/en/" class="hover:text-white transition-colors">Accueil</a>
+        <a href="/en/" class="hover:text-white transition-colors">Home</a>
         <span>›</span>
         <a href="/en/blog" class="hover:text-white transition-colors">Blog</a>
         <span>›</span>
@@ -100,9 +100,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           {post.category}
         </span>
         <span class="text-slate-400">•</span>
-        <span class="text-slate-300">⏱ {post.readingTime} de lecture</span>
+        <span class="text-slate-300">⏱ {post.readingTime} read</span>
         <span class="text-slate-400">•</span>
-        <time datetime={post.date} class="text-slate-300">Publié le {formattedDate}</time>
+        <time datetime={post.date} class="text-slate-300">Published on {formattedDate}</time>
       </div>
 
       <!-- Title -->
@@ -121,7 +121,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="pt-2 flex items-center gap-3">
         <img src="/assets/img_3.webp" alt="Robin" class="w-10 h-10 rounded-full border-2 border-emerald-500/50 object-cover shadow-md" />
         <div>
-          <p class="text-xs sm:text-sm font-bold text-white">Écrit par Robin</p>
+          <p class="text-xs sm:text-sm font-bold text-white">Written by Robin</p>
         </div>
       </div>
     </div>
@@ -159,9 +159,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         />
       </div>
       <div class="space-y-1.5 text-center sm:text-left">
-        <h4 class="font-black text-slate-950 text-base sm:text-lg">Écrit par Robin</h4>
+        <h4 class="font-black text-slate-950 text-base sm:text-lg">Written by Robin</h4>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-          Passionné de faune sauvage et amoureux des forêts du Népal, Robin partage ses conseils et retours d'expérience du terrain pour vous aider à préparer votre safari in Nepal.
+          Wildlife enthusiast and lover of Nepal's pristine forests, Robin shares his field insights and hands-on experience to help you prepare your jungle safari in Nepal.
         </p>
       </div>
     </div>
@@ -170,17 +170,17 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <section class="space-y-6 pt-8 border-t border-slate-200">
       <div class="flex items-center justify-between">
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
-          Articles & guides recommandés
+          Recommended Guides & Articles
         </h3>
         <a href="/en/blog" class="text-xs font-bold text-[#0e8354] hover:underline">
-          Tous les guides →
+          All Guides →
         </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {relatedPosts.map((rel) => (
           <a 
-            href={`/blog/${rel.slug}`} 
+            href={`/en/blog/${rel.slug}`} 
             class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
           >
             <div class="h-40 overflow-hidden bg-slate-900 shrink-0">

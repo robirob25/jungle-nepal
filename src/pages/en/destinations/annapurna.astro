@@ -4,7 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import toursData from '../../../data/tours.json';
+import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spirituelle", "carnet-de-voyage"].includes(t.slug));
 
@@ -19,7 +19,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="en"
   isDarkHeader={true}
 >
-  <Header lang="en" currentPath="/destinations/annapurna.html" />
+  <Header lang="en" currentPath="/en/destinations/annapurna" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
@@ -30,7 +30,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
-        <a href="/en/" class="hover:text-white">Accueil</a>
+        <a href="/en/" class="hover:text-white">Home</a>
         <span>›</span>
         <a href="/en/destinations" class="hover:text-white">Destinations</a>
         <span>›</span>
@@ -53,16 +53,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- 1. GRILLE 2 COLONNES : TEXTE COMPLET (GAUCHE) & FICHE TECHNIQUE (DROITE) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Colonne Gauche : 100% Contenu Texte Officiel junglenepal.com -->
+      <!-- Colonne Gauche : 100% Contenu Texte Official junglenepal.com -->
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
+        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Wild Immersion</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-          Explorer Annapurna & Pokhara
+          Explore Annapurna & Pokhara
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
-          <p>La région de l’Annapurna est l’une des zones de trekking les plus spectaculaires et variées de la planète. Située à courte distance de la charmante ville de Pokhara, elle permet de passer en quelques days des vallées subtropicales luxuriantes peuplées de bananiers aux forêts de rhododendrons géants, avant d'atteindre les balcons alpins face aux géants himalayens comme le Machapuchare (le célèbre mont Fish Tail), le Dhaulagiri et l'Annapurna Sud.</p>
-          <p>Le trekking dans la région de l’Annapurna ne se résume pas aux panoramas vertigineux — il est avant tout une rencontre humaine chaleureuse. Au fil des sentiers ancestraux, les nuits se passent dans de confortables tea houses familiales ou chez l’habitant. On y partage le traditionnel Dal Bhat réparateur au coin du poêle tout en découvrant les coutumes et la générosité des montagnards Gurung.</p>
-          <p>Les deux périodes privilégiées pour arpenter l'Annapurna sont l'automne (octobre à décembre), avec une visibilité cristalline sur les sommets enneigés après la mousson, et le printemps (mars à mai), période magique où les rhododendrons fleurissent en rouge et rose sur les pentes des montagnes.</p>
+          <p>The Annapurna massif is one of the most spectacular and diverse trekking regions on Earth. Located a short distance from the charming lakeside city of Pokhara, it allows travelers to journey within a few days from lush subtropical valleys shaded by banana palms to giant rhododendron forests, culminating on high alpine balconies facing iconic Himalayan giants like Machapuchare (the sacred Fish Tail), Dhaulagiri, and Annapurna South.</p>
+          <p>Trekking through the Annapurnas is far more than gazing at dizzying peaks—it is fundamentally a warm and uplifting human encounter. Along ancient stone paths, nights are spent in cozy family-run tea houses. Travelers share steaming plates of restorative Dal Bhat beside glowing woodstoves while discovering the generous customs of the Gurung people.</p>
+          <p>The two premier seasons to explore the Annapurnas are autumn (October to December), with crystal-clear skies and crisp visibility after the monsoon, and spring (March to May), when entire mountain flanks burst into brilliant shades of red and pink rhododendron blossoms.</p>
         </div>
       </div>
 
@@ -70,34 +70,34 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-5 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-xl space-y-6 sticky top-28">
         <h3 class="font-black text-xl text-slate-950 pb-3 border-b border-slate-100 flex items-center gap-2">
           <svg class="w-5 h-5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Technical & Practical Overview</span>
+          <span>Practical & Technical Facts</span>
         </h3>
         
         <div class="space-y-4 text-sm">
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Meilleure période</p>
-          <p class="font-bold text-slate-900 mt-0.5">Octobre à Décembre (Ciel limpide) & Mars à Mai (Floraison rhododendrons)</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Best Travel Period</p>
+          <p class="font-bold text-slate-900 mt-0.5">October to December (Crystal skies) & March to May (Rhododendron blooms)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Niveau de marche</p>
-          <p class="font-bold text-slate-900 mt-0.5">4 à 7 heures de marche par jour à un rythme régulier et accessible</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Walking Level</p>
+          <p class="font-bold text-slate-900 mt-0.5">4 to 7 hours of daily walking at a steady, accessible pace</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Points de vue</p>
-          <p class="font-bold text-slate-900 mt-0.5">Poon Hill, Balcons des Annapurna, Vallée sacrée de Pokhara & Lac Phewa</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Iconic Viewpoints</p>
+          <p class="font-bold text-slate-900 mt-0.5">Poon Hill, Annapurna balconies, sacred Pokhara valley & Lake Phewa</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Hébergement</p>
-          <p class="font-bold text-slate-900 mt-0.5">Tea houses familiales de montagne chaleureuses & hôtels confortables à Pokhara</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accommodation</p>
+          <p class="font-bold text-slate-900 mt-0.5">Warm family-run mountain tea houses & comfortable boutique lakeside hotels in Pokhara</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Encadrement</p>
-          <p class="font-bold text-slate-900 mt-0.5">Guides francophones diplômés et porteurs locaux respectés et assurés</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Guiding Team</p>
+          <p class="font-bold text-slate-900 mt-0.5">Certified professional naturalist guides and respected, fully insured local porters</p>
         </div>
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Annapurna & Pokhara" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Annapurna & Pokhara →
+          Ask a question about Annapurna & Pokhara →
         </a>
       </div>
 
@@ -107,13 +107,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="p-8 sm:p-12 rounded-3xl bg-safari-100 border border-slate-200 space-y-4">
       <div class="max-w-3xl space-y-3">
         <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
-          Himalaya Sacré
+          Sacred Himalaya
         </span>
         <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-          Villages Gurung & Sérénité de Pokhara
+          Gurung Villages & Serenity in Pokhara
         </h3>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
-          Perchés sur les crêtes verdoyantes, les villages Gurung de Ghandruk et Landruk dévoilent leurs maisons de pierre sèche aux toits d'ardoise. À Pokhara, les rives du lac Phewa offrent une halte apaisante face aux reflets du mont Machapuchare.
+          Perched on verdant ridges, the ancient Gurung villages of Ghandruk and Landruk showcase dry-stone slate-roofed homes and terraced fields. In Pokhara, the tranquil shores of Lake Phewa provide the perfect setting to unwind beneath the mirror reflection of Mount Machapuchare.
         </p>
       </div>
     </div>
@@ -121,8 +121,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- 3. GALERIE PHOTO IMMERSIVE (4 PHOTOS HD AVEC LIGHTBOX) -->
     <div class="space-y-6">
       <div>
-        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Annapurna & Pokhara</h3>
+        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Field Photography</span>
+        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Visual Overview of Annapurna & Pokhara</h3>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -144,12 +144,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-8 pt-8 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les sédays Immersive à Annapurna & Pokhara</h3>
-          <p class="text-slate-600 text-sm mt-1">Guaranteed Departures en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">2026/2027 Season</span>
+          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Immersive Expeditions in Annapurna & Pokhara</h3>
+          <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Voir tous les 15 sédays →
+          View all 15 Expeditions →
         </a>
       </div>
 
@@ -157,7 +157,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -175,7 +175,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   {tour.badge}
                 </span>
                 <span class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-bold">
-                  4 à 10 pers.
+                  4 to 10 travelers
                 </span>
               </div>
 
@@ -183,7 +183,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-200">
                   <span>🕒 {tour.duration}</span>
                   <span>•</span>
-                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} avis)</span>
+                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} reviews)</span>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →
@@ -249,7 +249,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 
@@ -318,47 +318,47 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Government of Nepal</span>
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
-        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée in Nepal</p>
+        <p class="text-xs text-slate-500 font-medium">Officially registered and licensed ecotourism & expedition company in Nepal</p>
       </div>
 
       <div class="py-5 space-y-3.5 text-xs text-slate-700">
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificate of Incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Official</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
-          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+          <p class="text-slate-900 font-black text-sm">Office of the Company Registrar, Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Registration No.: 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Pursuant to Sub-Section (1) of Section 5 of the Companies Act, 2006 of Nepal.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Tax & VAT Registration</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Verified</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
-          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+          <p class="text-slate-900 font-black text-sm">Inland Revenue Department of Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">PAN Tax ID: 623537310</p>
+          <p class="text-[11px] text-slate-500">Jurisdiction: Inland Revenue Office Nepalgunj.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
-          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
-          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Registered Office & Operations</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Nepal</p>
+          <p class="text-[11px] text-slate-500">Founder & Director: Pawan Kumar Thapa (Native Bardia Master Tracker)</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
-          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
-          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+          <p class="font-bold text-[#0e8354] text-xs">State-Licensed Operating Activities:</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Licensed organization of wildlife safaris, walking tracking of Bengal tigers, wild river expeditions (Karnali Rafting), wilderness bush camps, and certified ecotourism.</p>
         </div>
       </div>
 
       <div class="pt-2">
         <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
-          Fermer les informations légales
+          Close Legal Notice
         </button>
       </div>
     </div>

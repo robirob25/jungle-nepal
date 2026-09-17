@@ -4,7 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import toursData from '../../../data/tours.json';
+import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["nepal-sauvage", "nepal-immersion-totale", "jungle-extreme"].includes(t.slug));
 
@@ -14,35 +14,33 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
 <Layout 
   title="Suklaphanta National Park | Destinations Jungle Nepal Adventure"
-  description="Situé dans l’extrême ouest du Népal, à la frontière de l’Inde, le parc national de Suklaphanta est l’un des joyaux les plus sauvages et les moins fréq"
+  description="Located in far-western Nepal on the border with India, Suklaphanta National Park is one of the wildest, most preserved sanctuaries in South Asia."
   image="/assets/original_site/suklaphanta.webp"
   lang="en"
   isDarkHeader={true}
 >
-  <Header lang="en" currentPath="/destinations/suklaphanta.html" />
+  <Header lang="en" currentPath="/en/destinations/suklaphanta" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta National Park" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
-      
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
-        <a href="/en/" class="hover:text-white">Accueil</a>
+        <a href="/en/" class="hover:text-white">Home</a>
         <span>›</span>
         <a href="/en/destinations" class="hover:text-white">Destinations</a>
         <span>›</span>
         <span class="text-amber-100 font-bold">Suklaphanta National Park</span>
       </nav>
 
-      
       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
         Suklaphanta National Park
       </h1>
       <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
-        Les plus grandes hardes de cerfs des marais au monde & ouest sauvage
+        The world's largest herds of swamp deer & Nepal's untamed wild west
       </p>
     </div>
   </div>
@@ -55,14 +53,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <!-- Colonne Gauche : 100% Contenu Texte Officiel junglenepal.com -->
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
+        <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Wild Immersion</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-          Explorer Suklaphanta National Park
+          Explore Suklaphanta National Park
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
-          <p>Situé dans l’extrême ouest du Népal, à la frontière de l’Inde, le parc national de Suklaphanta est l’un des joyaux les plus sauvages et les moins fréquentés du pays. Encore totalement préservé des circuits touristiques classiques, Suklaphanta offre une expérience de safari pur, paisible et authentique.</p>
-          <p>La renommée de Suklaphanta repose avant tout sur sa vaste prairie ouverte (Phanta), la plus grande d'Asie du Sud (54 km²). C'est ici que vit la plus importante harde de cerfs des marais (Barasingha) au monde, comptant plus de 2 000 individus. Voir des centaines de grands mâles aux bois majestueux traverser la brume matinale est un spectacle inoubliable. Le parc est également un habitat vital pour le tigre du Bengale, le léopard d'Asie, les éléphants sauvages et le rare florican du Bengale.</p>
-          <p>Explorer Suklaphanta, c’est faire le choix d’un safari brut, hors des sentiers battus. Accompagnés de guides locaux expérimentés, vous découvrez une nature où le silence n'est rompu que par les bruits de la jungle. Visiter Suklaphanta, c'est aussi soutenir concrètement un modèle de conservation communautaire pionnier in Nepal.</p>
+          <p>Located in the far west of Nepal on the Indian border, Suklaphanta National Park is one of the wildest and least frequented jewels in the country. Still completely preserved from mass tourism, Suklaphanta offers a pure, peaceful, and authentic safari experience.</p>
+          <p>Suklaphanta's worldwide fame rests upon its vast open grassland (Phanta), the largest in South Asia (54 sq km). This is where the largest herd of swamp deer (Barasingha) in the world thrives, numbering over 2,000 individuals. Watching hundreds of stags with magnificent antlers crossing through the morning mist is an unforgettable sight. The park is also a vital sanctuary for royal Bengal tigers, Indian leopards, wild elephants, and the rare Bengal florican.</p>
+          <p>Exploring Suklaphanta means choosing a raw, off-the-beaten-path safari. Guided by our experienced local trackers, you discover wilderness where the silence is broken only by the sounds of the jungle. Visiting Suklaphanta also directly supports a pioneering community-led conservation model in Nepal.</p>
         </div>
       </div>
 
@@ -70,34 +68,34 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-5 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-xl space-y-6 sticky top-28">
         <h3 class="font-black text-xl text-slate-950 pb-3 border-b border-slate-100 flex items-center gap-2">
           <svg class="w-5 h-5 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Technical & Practical Overview</span>
+          <span>Practical & Technical Overview</span>
         </h3>
         
         <div class="space-y-4 text-sm">
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Meilleure période</p>
-          <p class="font-bold text-slate-900 mt-0.5">De novembre à mai (Prairies dégagées, grands rassemblements d'animaux)</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Best Season</p>
+          <p class="font-bold text-slate-900 mt-0.5">November to May (Clear grasslands, great wildlife gatherings)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Mode d'exploration</p>
-          <p class="font-bold text-slate-900 mt-0.5">Pistes 4x4 ouvertes, tours d'affût panoramiques et marches guidées</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Exploration Mode</p>
+          <p class="font-bold text-slate-900 mt-0.5">Open 4x4 safaris, panoramic watchtowers, and guided walking tracking</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Faune exceptionnelle</p>
-          <p class="font-bold text-slate-900 mt-0.5">+2000 cerfs des marais, hardes d'éléphants sauvages, tigres et léopards</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Remarkable Wildlife</p>
+          <p class="font-bold text-slate-900 mt-0.5">+2,000 swamp deer, wild elephant herds, tigers, and leopards</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Fréquentation</p>
-          <p class="font-bold text-slate-900 mt-0.5">Quasi-nulle (Sanctuaire 100% exclusif sans aucune foule touristique)</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Visitor Density</p>
+          <p class="font-bold text-slate-900 mt-0.5">Near zero (100% exclusive sanctuary without tourist crowds)</p>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Hébergement</p>
-          <p class="font-bold text-slate-900 mt-0.5">Campements de brousse confortables & lodges locaux authentiques</p>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Accommodation</p>
+          <p class="font-bold text-slate-900 mt-0.5">Comfortable safari camps & authentic local lodges</p>
         </div>
         </div>
 
-        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Suklaphanta National Park" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Suklaphanta National Park →
+        <a href="https://wa.me/33695413227?text=Hello%20Robin%2C%20I%20would%20like%20information%20about%20Suklaphanta%20National%20Park" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+          Ask a question about Suklaphanta National Park →
         </a>
       </div>
 
@@ -107,13 +105,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="p-8 sm:p-12 rounded-3xl bg-safari-100 border border-slate-200 space-y-4">
       <div class="max-w-3xl space-y-3">
         <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
-          Ouest Sauvage
+          Wild West
         </span>
         <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-          Villages ruraux du Teraï Occidental
+          Rural Villages of Western Terai
         </h3>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
-          L'extrême ouest népalais est resté fidèle aux rythmes agricoles traditionnels. Les communautés locales perpétuent un mode de vie respectueux des cycles de la nature et vous accueillent avec une bienveillance sincère et chaleureuse.
+          Far from the bustle of major cities, far-western Nepal has preserved its pastoral soul and intact traditions. The local Rana Tharu communities live in tune with agricultural seasons and share deep, ancestral respect for this untamed frontier.
         </p>
       </div>
     </div>
@@ -121,21 +119,21 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- 3. GALERIE PHOTO IMMERSIVE (4 PHOTOS HD AVEC LIGHTBOX) -->
     <div class="space-y-6">
       <div>
-        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Suklaphanta National Park</h3>
+        <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Field Photography</span>
+        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Visual Overview of Suklaphanta National Park</h3>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/suklaphanta.webp" alt="Panneau d'entrée de la réserve de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/suklaphanta.webp" alt="Entrance gate to Suklaphanta Wildlife Reserve" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/curated_gallery/deer_pair_savanna.webp" alt="Cerfs des marais dans les grandes savanes de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/curated_gallery/deer_pair_savanna.webp" alt="Swamp deer herds in the great savannas of Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/tigre_bardia.webp" alt="Tigre du Bengale de l'ouest sauvage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/original_site/tigre_bardia.webp" alt="Royal Bengal tiger of the wild west" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" alt="Grand Nilgaut mâle dans la forêt de Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" alt="Large male Blue Bull nilgai in Suklaphanta forest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -144,12 +142,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-8 pt-8 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les sédays Immersive à Suklaphanta National Park</h3>
-          <p class="text-slate-600 text-sm mt-1">Guaranteed Departures en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">2026/2027 Season</span>
+          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Immersive Expeditions in Suklaphanta National Park</h3>
+          <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Voir tous les 15 sédays →
+          View all 15 Expeditions →
         </a>
       </div>
 
@@ -157,7 +155,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -175,7 +173,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   {tour.badge}
                 </span>
                 <span class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-bold">
-                  4 à 10 pers.
+                  4 to 10 travelers
                 </span>
               </div>
 
@@ -183,7 +181,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-200">
                   <span>🕒 {tour.duration}</span>
                   <span>•</span>
-                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} avis)</span>
+                  <span class="text-amber-100">★ {tour.rating} ({tour.reviews} reviews)</span>
                 </div>
               </div>
             </div>
@@ -213,7 +211,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →
@@ -249,7 +247,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 
@@ -323,47 +321,47 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Gouvernement du Népal</span>
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Government of Nepal</span>
         <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure Pvt. Ltd.</h3>
-        <p class="text-xs text-slate-500 font-medium">Société d'écotourisme et d'expéditions officiellement enregistrée et agréée in Nepal</p>
+        <p class="text-xs text-slate-500 font-medium">Officially registered and licensed ecotourism & expedition company in Nepal</p>
       </div>
 
       <div class="py-5 space-y-3.5 text-xs text-slate-700">
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificat d'incorporation</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Certificate of Incorporation</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Official</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Registre des Compagnies (Office of the Company Registrar)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83</p>
-          <p class="text-[11px] text-slate-500">Conformément à la sous-section (1) de la section 5 du Companies Act, 2006 du Népal.</p>
+          <p class="text-slate-900 font-black text-sm">Office of the Company Registrar, Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">Registration No.: 384414/82/83</p>
+          <p class="text-[11px] text-slate-500">Pursuant to Sub-Section (1) of Section 5 of the Companies Act, 2006 of Nepal.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-500 uppercase text-[10px]">Enregistrement Fiscal & Taxes</span>
-            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Vérifié</span>
+            <span class="font-bold text-slate-500 uppercase text-[10px]">Tax & VAT Registration</span>
+            <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Verified</span>
           </div>
-          <p class="text-slate-900 font-black text-sm">Département des Revenus Intérieurs (Inland Revenue Department)</p>
-          <p class="font-mono text-xs font-bold text-slate-700">Numéro PAN : 623537310</p>
-          <p class="text-[11px] text-slate-500">Bureau fiscal de référence : Inland Revenue Office Nepalgunj.</p>
+          <p class="text-slate-900 font-black text-sm">Inland Revenue Department of Nepal</p>
+          <p class="font-mono text-xs font-bold text-slate-700">PAN Tax ID: 623537310</p>
+          <p class="text-[11px] text-slate-500">Jurisdiction: Inland Revenue Office Nepalgunj.</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-          <span class="font-bold text-slate-500 uppercase text-[10px] block">Siège Social & Exploitation</span>
-          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Népal</p>
-          <p class="text-[11px] text-slate-500">Fondateur & Gérant : Pawan Kumar Thapa (Chef Pisteur natif de Bardia)</p>
+          <span class="font-bold text-slate-500 uppercase text-[10px] block">Registered Office & Operations</span>
+          <p class="font-bold text-slate-900 text-xs">Thakurdwara Ward No. 9, Thakurbaba Municipality, Bardia District, Lumbini Province, Nepal</p>
+          <p class="text-[11px] text-slate-500">Founder & Director: Pawan Kumar Thapa (Native Bardia Master Tracker)</p>
         </div>
 
         <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-slate-800 space-y-1.5 font-medium">
-          <p class="font-bold text-[#0e8354] text-xs">🛡️ Activités autorisées sous licence d'État :</p>
-          <p class="text-[11px] leading-relaxed text-slate-700">Organisation officielle de safaris faune sauvage (Wildlife Safaris), traque pédestre du tigre du Bengale, expéditions en rivières sauvages (Rafting Karnali), logistique de bivouacs et éco-tourisme certifié.</p>
+          <p class="font-bold text-[#0e8354] text-xs">State-Licensed Operating Activities:</p>
+          <p class="text-[11px] leading-relaxed text-slate-700">Licensed organization of wildlife safaris, walking tracking of Bengal tigers, wild river expeditions (Karnali Rafting), wilderness bush camps, and certified ecotourism.</p>
         </div>
       </div>
 
       <div class="pt-2">
         <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
-          Fermer les informations légales
+          Close Legal Notice
         </button>
       </div>
     </div>
