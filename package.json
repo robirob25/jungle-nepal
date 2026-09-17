@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --port 8088 --host",
     "start": "astro dev --port 8088 --host",
-    "build": "astro build",
+    "build": "astro build && python3 ensure_dual_routes.py && cp public/.htaccess dist/.htaccess && python3 tools/sync_tours_robust.py",
     "preview": "astro preview --port 8088 --host"
   },
   "dependencies": {

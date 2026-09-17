@@ -4,7 +4,7 @@
 
 Options -Indexes -MultiViews
 
-<FilesMatch "^\.|\.(bak|config|sql|fla|psd|ini|log|sh|inc|env|git|json|yaml|yml|md)$">
+<FilesMatch "^\.|\.(bak|config|sql|fla|psd|ini|log|sh|inc|env|git|yaml|yml|md)$">
     <IfModule mod_authz_core.c>
         Require all denied
     </IfModule>
@@ -39,16 +39,19 @@ Options -Indexes -MultiViews
     RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
     RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
 
-    # Redirect /index or /index.html directly to root domain /
-    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index(\.html)?\ HTTP/ [NC]
-    RewriteRule ^(.*)index(\.html)?$ https://junglenepal.com/$1 [R=301,L]
+    # DirectoryIndex configuration for Astro SSG
+    DirectoryIndex index.html
 
-    # Clean URL Trailing Slash & .html Removal for subpages
-    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-    RewriteRule ^ /%1 [NC,L,R=301]
+    # Redirect root /index.html to /
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
+    RewriteRule ^index\.html$ https://junglenepal.com/ [R=301,L]
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # Serve existing files and directories directly (prevents infinite redirect loops)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Map extensionless URLs (e.g. /en/about -> /en/about.html)
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
