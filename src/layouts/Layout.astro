@@ -599,6 +599,193 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     </div>
   </div>
 
+  <!-- MODAL DE RÉSERVATION / DEVIS EXPÉDITION SPÉCIFIQUE (ÉLITE & DIRECT BOOKING) -->
+  <div id="tour-booking-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/85 backdrop-blur-md transition-all duration-300 overflow-y-auto">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl sm:rounded-[32px] shadow-2xl border border-slate-200/90 overflow-hidden my-auto max-h-[92vh] flex flex-col animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="relative bg-gradient-to-r from-[#032317] via-[#053222] to-[#032317] text-white p-6 sm:p-8 shrink-0">
+        <button type="button" onclick="closeTourBookingModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer z-10" aria-label={isEn ? "Close window" : "Fermer la fenêtre"}>
+          ✕
+        </button>
+
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-extrabold text-[11px] uppercase tracking-widest border border-emerald-400/30 mb-2">
+          <span>{isEn ? "Expedition Booking & Inquiry" : "Réservation & Devis d'expédition"}</span>
+        </span>
+        <h3 id="booking-modal-tour-title" class="text-xl sm:text-2xl font-black text-white tracking-tight leading-tight">
+          {isEn ? "Book Your Expedition" : "Réserver votre expédition"}
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1 font-medium leading-relaxed">
+          {isEn ? "Direct booking inquiry with Robin and the local team. Quick confirmation within 24h." : "Demande directe avec Robin et l'équipe locale. Confirmation rapide sous 24h."}
+        </p>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-5 text-slate-900 flex-1">
+        
+        <!-- Success Alert -->
+        <div id="booking-modal-success" class="hidden p-5 rounded-2xl bg-emerald-900/10 border-2 border-emerald-800/40 text-emerald-950 shadow-xl transition-all">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-base shrink-0 shadow-md">✓</div>
+            <div>
+              <h4 class="font-black text-base text-emerald-950">{isEn ? "Booking Request Transmitted!" : "Demande de réservation transmise !"}</h4>
+              <p class="text-xs text-emerald-800 mt-1 font-medium leading-relaxed">
+                {isEn ? "Thank you! We have received your expedition booking request. Robin will contact you via Email / WhatsApp within 24h to confirm availability and dates." : "Merci ! Nous avons bien reçu votre demande de réservation. Robin vous contacte par Email / WhatsApp sous 24h pour valider vos dates et formalités."}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Error Alert -->
+        <div id="booking-modal-error" class="hidden p-4 rounded-2xl bg-rose-500/10 border-2 border-rose-500/40 text-rose-950 shadow-md">
+          <p class="text-xs font-semibold" id="booking-modal-error-text">{isEn ? "An error occurred. Please verify your details or contact us directly on WhatsApp." : "Une erreur est survenue. Veuillez vérifier vos informations ou nous contacter directement sur WhatsApp."}</p>
+        </div>
+
+        <form id="tour-booking-form" onsubmit="handleTourBookingSubmit(event)" class="space-y-4 text-sm">
+          
+          <!-- Configuration: Dates & Nombre de voyageurs -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Date de départ souhaitée -->
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
+                {isEn ? "Departure Date / Period" : "Date de départ souhaitée"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="booking-date-input" 
+                placeholder={isEn ? "e.g. November 2026, April 2027, or flexible" : "Ex: Novembre 2026, Avril 2027, ou dates flexibles"} 
+                required 
+                class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" 
+              />
+            </div>
+
+            <!-- Nombre de voyageurs -->
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
+                {isEn ? "Number of Travelers" : "Nombre d'inscrits"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <div class="flex items-center gap-2">
+                <select 
+                  id="booking-travelers-select" 
+                  onchange="updateBookingModalCalculations()" 
+                  class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-bold text-slate-900 focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all cursor-pointer"
+                >
+                  <option value="1">1 {isEn ? "person" : "personne"}</option>
+                  <option value="2" selected>2 {isEn ? "persons" : "personnes"}</option>
+                  <option value="3">3 {isEn ? "persons" : "personnes"}</option>
+                  <option value="4">4 {isEn ? "persons" : "personnes"}</option>
+                  <option value="5">5 {isEn ? "persons" : "personnes"}</option>
+                  <option value="6">6 {isEn ? "persons" : "personnes"}</option>
+                  <option value="7">7 {isEn ? "persons" : "personnes"}</option>
+                  <option value="8">8+ {isEn ? "persons (group)" : "personnes (groupe)"}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Option Camping / Bivouac Toggle -->
+          <div id="booking-modal-option-container" class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-emerald-50/40 transition-colors">
+            <label class="flex items-start gap-3 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="booking-modal-camping-checkbox" 
+                onchange="toggleBookingModalCamping(this.checked)" 
+                class="mt-1 w-5 h-5 rounded-lg text-[#0e8354] focus:ring-[#0e8354] border-slate-300 cursor-pointer" 
+              />
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-extrabold text-xs text-slate-900">
+                    {isEn ? "Option: Wild Jungle Bivouac / Camping Night" : "Option : Nuit en Bivouac / Camping sauvage en jungle"}
+                  </span>
+                  <span id="booking-modal-camping-price-tag" class="text-xs font-black text-[#0e8354] bg-emerald-100/80 px-2.5 py-0.5 rounded-full">
+                    +350 € / pers
+                  </span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
+                  {isEn ? "Total immersion at Lalmati Bhale camp with our trackers, campfire & deep jungle night sounds." : "Immersion totale au camp de Lalmati Bhale avec nos pisteurs, feu de camp et écoute nocturne."}
+                </p>
+              </div>
+            </label>
+          </div>
+
+          <!-- Dynamic Live Price Calculation Summary Card -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white border border-white/10 shadow-lg">
+            <div class="flex items-center justify-between text-xs text-slate-300 border-b border-white/10 pb-2">
+              <span>{isEn ? "Base Price per Person:" : "Prix de base par personne :"}</span>
+              <span id="booking-modal-base-display" class="font-bold text-white">1 990 €</span>
+            </div>
+            <div id="booking-modal-option-row" class="hidden flex items-center justify-between text-xs text-emerald-400 border-b border-white/10 py-1.5">
+              <span>{isEn ? "Camping Option:" : "Option Bivouac sauvage :"}</span>
+              <span id="booking-modal-option-display" class="font-bold">+350 € / pers</span>
+            </div>
+            <div class="flex items-baseline justify-between pt-2.5">
+              <div>
+                <p class="text-[10px] font-black uppercase tracking-wider text-slate-400">
+                  {isEn ? "Total Estimated (" : "Total estimé ("}<span id="booking-modal-count-display">2</span> {isEn ? "travelers)" : "voyageurs)"}
+                </p>
+                <p class="text-[11px] text-emerald-400 font-semibold mt-0.5">
+                  {isEn ? "Deposit (30%): " : "Acompte inscription (30%) : "}<span id="booking-modal-deposit-display">1 194 €</span>
+                </p>
+              </div>
+              <div class="text-right">
+                <span id="booking-modal-total-display" class="text-2xl sm:text-3xl font-black text-white tracking-tight">3 980 €</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traveler Information -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                {isEn ? "First Name" : "Prénom"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="text" id="booking-firstname" placeholder={isEn ? "Your first name" : "Votre prénom"} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                {isEn ? "Last Name" : "Nom"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="text" id="booking-lastname" placeholder={isEn ? "Your last name" : "Votre nom"} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                {isEn ? "Email Address" : "Email de contact"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="email" id="booking-email" placeholder="nom@email.com" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+            <div>
+              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+                {isEn ? "Phone / WhatsApp" : "Téléphone / WhatsApp"} <span class="text-[#0e8354]">*</span>
+              </label>
+              <input type="tel" id="booking-phone" placeholder="+33 6 12 34 56 78" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
+            </div>
+          </div>
+
+          <!-- Message / Notes -->
+          <div>
+            <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1">
+              {isEn ? "Message & Specific Requests (Optional)" : "Précisions ou demandes particulières (Optionnel)"}
+            </label>
+            <textarea id="booking-notes" rows="2" placeholder={isEn ? "Questions, specific dietary requirements, room preferences, physical conditioning..." : "Questions, régime alimentaire, préférences de chambre, niveau physique..."} class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="booking-submit-btn" class="w-full py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/40 hover:scale-[1.01] active:scale-98 transition-all cursor-pointer text-center">
+            {isEn ? "Confirm & Send My Booking Inquiry →" : "Confirmer et envoyer ma demande de réservation →"}
+          </button>
+
+          <p class="text-[11px] text-slate-500 text-center font-medium">
+            🔒 {isEn ? "No immediate payment required. Confirmation and booking dossier handled directly with Robin." : "Aucun paiement immédiat requis. Validation des disponibilités et du devis en direct avec Robin."}
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
   <script is:inline>
     // Universal Custom Tour Modal Controls
     window.openCustomTourModal = function() {
@@ -617,11 +804,263 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       }
     };
 
+    // Universal Specific Tour Booking Modal Controls
+    window.currentBookingConfig = {
+      title: '',
+      basePrice: 1990,
+      hasCamping: false,
+      campingPrice: 350
+    };
+
+    window.openTourBookingModal = function(config) {
+      var isEn = document.documentElement.lang === 'en';
+      
+      var title = (config && config.title) || "";
+      var basePrice = (config && config.basePrice) || 0;
+      var hasCamping = config && typeof config.hasCamping === 'boolean' ? config.hasCamping : false;
+      var campingPrice = (config && config.campingPrice) || 350;
+
+      if (!title) {
+        var bookingWidget = document.getElementById('booking-widget');
+        if (bookingWidget) {
+          var h3 = bookingWidget.querySelector('h3');
+          if (h3) title = h3.textContent.trim();
+        }
+        if (!title) {
+          var h1 = document.querySelector('h1');
+          if (h1) title = h1.textContent.trim();
+        }
+      }
+
+      if (!basePrice) {
+        var priceDisplay = document.getElementById('tour-price-display');
+        if (priceDisplay) {
+          if (priceDisplay.getAttribute('data-base-price')) {
+            basePrice = parseInt(priceDisplay.getAttribute('data-base-price'), 10) || 1990;
+          } else {
+            var num = priceDisplay.textContent.replace(/[^0-9]/g, '');
+            if (num) basePrice = parseInt(num, 10);
+          }
+        } else {
+          var bookingWidget = document.getElementById('booking-widget');
+          if (bookingWidget) {
+            var priceMatch = bookingWidget.textContent.match(/(?:À partir de|From)\s*([0-9\s,]+)\s*€/i);
+            if (priceMatch && priceMatch[1]) {
+              basePrice = parseInt(priceMatch[1].replace(/[^0-9]/g, ''), 10);
+            }
+          }
+        }
+      }
+      if (!basePrice) basePrice = 1990;
+
+      if (!hasCamping) {
+        if (document.getElementById('camping-option-card') || document.getElementById('toggle-camping-btn')) {
+          hasCamping = true;
+        }
+      }
+
+      window.currentBookingConfig = {
+        title: title || (isEn ? "Nepal Safari & Expedition" : "Séjour Safari Népal"),
+        basePrice: basePrice,
+        hasCamping: hasCamping,
+        campingPrice: campingPrice
+      };
+
+      var titleEl = document.getElementById('booking-modal-tour-title');
+      if (titleEl) titleEl.textContent = window.currentBookingConfig.title;
+
+      var campingContainer = document.getElementById('booking-modal-option-container');
+      var campingCheckbox = document.getElementById('booking-modal-camping-checkbox');
+      
+      if (campingContainer) {
+        if (hasCamping) {
+          campingContainer.classList.remove('hidden');
+          if (campingCheckbox) {
+            campingCheckbox.checked = !!window.isCampingSelected;
+          }
+        } else {
+          campingContainer.classList.add('hidden');
+          if (campingCheckbox) campingCheckbox.checked = false;
+        }
+      }
+
+      window.updateBookingModalCalculations();
+
+      var m = document.getElementById('tour-booking-modal');
+      if (m) {
+        m.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    window.closeTourBookingModal = function() {
+      var m = document.getElementById('tour-booking-modal');
+      if (m) {
+        m.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    };
+
+    window.toggleBookingModalCamping = function(isChecked) {
+      if (typeof window.isCampingSelected !== 'undefined') {
+        if (window.isCampingSelected !== isChecked) {
+          if (typeof window.toggleCampingOption === 'function') {
+            window.toggleCampingOption(350);
+          } else {
+            window.isCampingSelected = isChecked;
+          }
+        }
+      } else {
+        window.isCampingSelected = isChecked;
+      }
+      window.updateBookingModalCalculations();
+    };
+
+    window.updateBookingModalCalculations = function() {
+      var isEn = document.documentElement.lang === 'en';
+      var config = window.currentBookingConfig || { basePrice: 1990, hasCamping: false, campingPrice: 350 };
+      var travelersSelect = document.getElementById('booking-travelers-select');
+      var travelers = travelersSelect ? parseInt(travelersSelect.value, 10) || 2 : 2;
+
+      var campingCheckbox = document.getElementById('booking-modal-camping-checkbox');
+      var isCamping = campingCheckbox && campingCheckbox.checked && config.hasCamping;
+
+      var basePrice = config.basePrice || 1990;
+      var extraPerPerson = isCamping ? (config.campingPrice || 350) : 0;
+      var pricePerPerson = basePrice + extraPerPerson;
+      var total = pricePerPerson * travelers;
+      var deposit = Math.round(total * 0.3);
+
+      function fmt(n) {
+        return isEn ? n.toLocaleString('en-US') + ' €' : n.toLocaleString('fr-FR') + ' €';
+      }
+
+      var baseDisplay = document.getElementById('booking-modal-base-display');
+      if (baseDisplay) baseDisplay.textContent = fmt(basePrice);
+
+      var optionRow = document.getElementById('booking-modal-option-row');
+      var optionDisplay = document.getElementById('booking-modal-option-display');
+      if (optionRow && optionDisplay) {
+        if (isCamping) {
+          optionRow.classList.remove('hidden');
+          optionDisplay.textContent = '+' + fmt(config.campingPrice || 350) + ' / ' + (isEn ? 'person' : 'pers.');
+        } else {
+          optionRow.classList.add('hidden');
+        }
+      }
+
+      var countDisplay = document.getElementById('booking-modal-count-display');
+      if (countDisplay) countDisplay.textContent = travelers;
+
+      var depositDisplay = document.getElementById('booking-modal-deposit-display');
+      if (depositDisplay) depositDisplay.textContent = fmt(deposit);
+
+      var totalDisplay = document.getElementById('booking-modal-total-display');
+      if (totalDisplay) totalDisplay.textContent = fmt(total);
+    };
+
+    window.handleTourBookingSubmit = async function(e) {
+      if (e && e.preventDefault) e.preventDefault();
+
+      var isEn = document.documentElement.lang === 'en';
+      var btn = document.getElementById('booking-submit-btn');
+      var successBox = document.getElementById('booking-modal-success');
+      var errorBox = document.getElementById('booking-modal-error');
+      var form = document.getElementById('tour-booking-form');
+
+      if (successBox) successBox.classList.add('hidden');
+      if (errorBox) errorBox.classList.add('hidden');
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = isEn ? 'Transmitting booking request...' : 'Transmission de votre réservation en cours...';
+      }
+
+      var config = window.currentBookingConfig || {};
+      var dateVal = (document.getElementById('booking-date-input') || {}).value || '';
+      var travelersVal = (document.getElementById('booking-travelers-select') || {}).value || '2';
+      var isCamping = (document.getElementById('booking-modal-camping-checkbox') || {}).checked;
+      var firstname = (document.getElementById('booking-firstname') || {}).value || '';
+      var lastname = (document.getElementById('booking-lastname') || {}).value || '';
+      var email = (document.getElementById('booking-email') || {}).value || '';
+      var phone = (document.getElementById('booking-phone') || {}).value || '';
+      var notes = (document.getElementById('booking-notes') || {}).value || '';
+      
+      var totalVal = (document.getElementById('booking-modal-total-display') || {}).textContent || '';
+      var depositVal = (document.getElementById('booking-modal-deposit-display') || {}).textContent || '';
+
+      var payload = {
+        _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
+        type_demande: "Réservation Expédition Circuit",
+        circuit: config.title || "Circuit Jungle Nepal",
+        date_depart_souhaitee: dateVal,
+        nombre_inscrits: travelersVal,
+        option_camping_sauvage: isCamping ? "OUI (+350 €/pers.)" : "NON (Hébergement standard)",
+        estimation_prix_total: totalVal,
+        acompte_30_pourcent: depositVal,
+        client_nom_complet: firstname + ' ' + lastname,
+        email: email,
+        telephone_whatsapp: phone,
+        remarques_demandes: notes,
+        page_url: window.location.href,
+        date_envoi: new Date().toLocaleString(isEn ? 'en-US' : 'fr-FR')
+      };
+
+      var isSuccess = false;
+      try {
+        var res = await fetch('https://formsubmit.co/ajax/junglenepaladventure@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) isSuccess = true;
+      } catch (err) {
+        console.warn('Booking submit fetch error:', err);
+      }
+
+      if (!isSuccess) {
+        try {
+          var res2 = await fetch('https://formsubmit.co/junglenepaladventure@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (res2.ok) isSuccess = true;
+        } catch (err2) {}
+      }
+
+      if (isSuccess) {
+        if (form) form.reset();
+        if (successBox) successBox.classList.remove('hidden');
+        if (btn) {
+          btn.innerHTML = isEn ? '✓ Booking request sent successfully!' : '✓ Demande de réservation transmise avec succès !';
+          btn.classList.add('bg-emerald-700');
+          setTimeout(function() {
+            closeTourBookingModal();
+            btn.innerHTML = isEn ? 'Confirm & Send My Booking Inquiry →' : 'Confirmer et envoyer ma demande de réservation →';
+            btn.classList.remove('bg-emerald-700');
+            btn.disabled = false;
+          }, 3500);
+        }
+      } else {
+        if (errorBox) errorBox.classList.remove('hidden');
+        if (btn) {
+          btn.innerHTML = isEn ? 'Retry submission →' : 'Réessayer l\'envoi →';
+          btn.disabled = false;
+        }
+      }
+      return false;
+    };
+
     // Close on background click
     document.addEventListener('click', function(e) {
-      var m = document.getElementById('custom-tour-modal');
-      if (m && e.target === m) {
+      var customModal = document.getElementById('custom-tour-modal');
+      if (customModal && e.target === customModal) {
         closeCustomTourModal();
+      }
+      var bookingModal = document.getElementById('tour-booking-modal');
+      if (bookingModal && e.target === bookingModal) {
+        closeTourBookingModal();
       }
     });
 
@@ -629,6 +1068,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         closeCustomTourModal();
+        closeTourBookingModal();
       }
     });
 

@@ -1056,7 +1056,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           
 
           <!-- Primary CTA Button -->
-          <a href="/contact.html#formulaire-contact" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">Réserver ma place →</a>
+          <button type="button" onclick="openTourBookingModal()" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">Réserver ma place →</button>
 
           <!-- Dual Secondary Actions (WhatsApp & PDF) -->
           <div class="grid grid-cols-2 gap-2.5 pt-1">
@@ -1720,9 +1720,10 @@ function toggleMobileMenu() {
     var baseTourPrice = 2190;
     var isCampingSelected = false;
 
-    function toggleCampingOption(extraCost) {
+    window.toggleCampingOption = function toggleCampingOption(extraCost) {
       extraCost = extraCost || 350;
       isCampingSelected = !isCampingSelected;
+      window.isCampingSelected = isCampingSelected;
       var total = isCampingSelected ? (baseTourPrice + extraCost) : baseTourPrice;
 
       // 1. Update Main Sidebar Price Display
