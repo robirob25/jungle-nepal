@@ -1,10 +1,15 @@
 ---
+import { getLocalizedPath } from '../../../i18n/utils';
+
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import toursData from '../../../data/tours.json';
 
 const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari"].includes(t.slug));
+
+const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
+const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
 <Layout 

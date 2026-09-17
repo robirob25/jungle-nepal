@@ -1,6 +1,11 @@
 ---
+import { getLocalizedPath } from '../../i18n/utils';
+
 import Layout from '../../layouts/Layout.astro';
 import toursData from '../../data/tours.json';
+
+const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
+const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
 <Layout title="À propos | Jungle Nepal Adventure – Notre histoire & nos pisteurs" lang="en">
