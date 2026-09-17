@@ -1,9 +1,16 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
 interface Props {
   lang?: 'fr' | 'en';
 }
 
-const { lang = 'fr' } = Astro.props;
+const { lang } = Astro.props;
+const currentLang = lang || getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+const isEn = currentLang === 'en';
+
+const prefix = isEn ? '/en' : '';
 ---
 
 <footer class="bg-[#040d08] text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-emerald-950/60 font-sans">
@@ -14,11 +21,13 @@ const { lang = 'fr' } = Astro.props;
       
       <!-- COL 1: Brand & Official Legal Details -->
       <div class="space-y-4 lg:col-span-1">
-        <a href="/" class="inline-block">
+        <a href={isEn ? "/en/" : "/"} class="inline-block">
           <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
         </a>
         <p class="text-slate-400 text-xs leading-relaxed">
-          Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia.
+          {isEn 
+            ? "Local boutique eco-tourism agency & immersive wildlife safaris in Nepal. Kathmandu & Bardia National Park."
+            : "Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia."}
         </p>
         <div class="pt-1 space-y-2">
           <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-900/30 hover:bg-emerald-800/40 text-emerald-400 font-bold text-xs border border-emerald-700/40 transition-colors whitespace-nowrap">
@@ -29,8 +38,8 @@ const { lang = 'fr' } = Astro.props;
         </div>
         <div class="pt-2 text-[11px] text-slate-400 space-y-1 font-medium border-t border-white/10">
           <p class="font-bold text-slate-200">Jungle Nepal Adventure Pvt. Ltd.</p>
-          <p>Immatriculation : <strong class="text-slate-200 font-mono">N° 384414/82/83</strong></p>
-          <p>Numéro fiscal : <strong class="text-slate-200 font-mono">623537310</strong></p>
+          <p>{isEn ? "Registration" : "Immatriculation"} : <strong class="text-slate-200 font-mono">N° 384414/82/83</strong></p>
+          <p>{isEn ? "Tax ID" : "Numéro fiscal"} : <strong class="text-slate-200 font-mono">623537310</strong></p>
           <p>Thakurdwara-09, Bardia, Népal</p>
         </div>
       </div>
@@ -38,18 +47,18 @@ const { lang = 'fr' } = Astro.props;
       <!-- COL 2: Tous les 15 Séjours -->
       <div class="space-y-3">
         <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          Tous les 15 Séjours
+          {isEn ? "All 15 Expeditions" : "Tous les 15 Séjours"}
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href="/tours/bardia-explorateur.html" class="hover:text-slate-200 transition-colors">Bardia Explorateur (5j)</a></li>
-          <li><a href="/tours/chitwan-culture.html" class="hover:text-slate-200 transition-colors">Chitwan & Jungle (4j)</a></li>
-          <li><a href="/tours/nepal-sauvage.html" class="hover:text-slate-200 transition-colors">Népal Sauvage 360° (15j)</a></li>
-          <li><a href="/tours/babai-special.html" class="hover:text-slate-200 transition-colors">Babai Spécial Tigres (5j)</a></li>
-          <li><a href="/tours/bardia-babai-camping.html" class="hover:text-slate-200 transition-colors">Bardia Babai Bivouac (8j)</a></li>
-          <li><a href="/tours/rafting-safari.html" class="hover:text-slate-200 transition-colors">Rafting Karnali & Safari (18j)</a></li>
-          <li><a href="/tours/tiji-mustang.html" class="hover:text-slate-200 transition-colors">Tiji Festival Mustang (13j)</a></li>
-          <li><a href="/tours/nepal-immersion-totale.html" class="hover:text-slate-200 transition-colors">Népal Immersion Totale (14j)</a></li>
-          <li class="pt-1.5"><a href="/#prochains-departs" class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>Voir les 15 séjours</span><span>→</span></a></li>
+          <li><a href={`${prefix}/tours/bardia-explorateur.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia Explorer (5d)" : "Bardia Explorateur (5j)"}</a></li>
+          <li><a href={`${prefix}/tours/chitwan-culture.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Chitwan & Jungle (4d)" : "Chitwan & Jungle (4j)"}</a></li>
+          <li><a href={`${prefix}/tours/nepal-sauvage.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Wild Nepal 360° (15d)" : "Népal Sauvage 360° (15j)"}</a></li>
+          <li><a href={`${prefix}/tours/babai-special.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Babai Tiger Special (5d)" : "Babai Spécial Tigres (5j)"}</a></li>
+          <li><a href={`${prefix}/tours/bardia-babai-camping.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia Babai Bivouac (8d)" : "Bardia Babai Bivouac (8j)"}</a></li>
+          <li><a href={`${prefix}/tours/rafting-safari.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Karnali Rafting & Safari (18d)" : "Rafting Karnali & Safari (18j)"}</a></li>
+          <li><a href={`${prefix}/tours/tiji-mustang.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Mustang Tiji Festival (13d)" : "Tiji Festival Mustang (13j)"}</a></li>
+          <li><a href={`${prefix}/tours/nepal-immersion-totale.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Nepal Total Immersion (14d)" : "Népal Immersion Totale (14j)"}</a></li>
+          <li class="pt-1.5"><a href={isEn ? "/en/#prochains-departs" : "/#prochains-departs"} class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>{isEn ? "View all 15 trips" : "Voir les 15 séjours"}</span><span>→</span></a></li>
         </ul>
       </div>
 
@@ -59,12 +68,12 @@ const { lang = 'fr' } = Astro.props;
           Destinations
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href="/destinations/bardia.html" class="hover:text-slate-200 transition-colors">Parc national de Bardia</a></li>
-          <li><a href="/destinations/chitwan.html" class="hover:text-slate-200 transition-colors">Parc national de Chitwan</a></li>
-          <li><a href="/destinations/suklaphanta.html" class="hover:text-slate-200 transition-colors">Parc national de Suklaphanta</a></li>
-          <li><a href="/destinations/annapurna.html" class="hover:text-slate-200 transition-colors">Les Annapurna & Pokhara</a></li>
-          <li><a href="/destinations/katmandou.html" class="hover:text-slate-200 transition-colors">Katmandou</a></li>
-          <li class="pt-1.5"><a href="/destinations.html" class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>Toutes les destinations</span><span>→</span></a></li>
+          <li><a href={`${prefix}/destinations/bardia.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia National Park" : "Parc national de Bardia"}</a></li>
+          <li><a href={`${prefix}/destinations/chitwan.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Chitwan National Park" : "Parc national de Chitwan"}</a></li>
+          <li><a href={`${prefix}/destinations/suklaphanta.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Suklaphanta National Park" : "Parc national de Suklaphanta"}</a></li>
+          <li><a href={`${prefix}/destinations/annapurna.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Annapurna & Pokhara" : "Les Annapurna & Pokhara"}</a></li>
+          <li><a href={`${prefix}/destinations/katmandou.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Kathmandu Valley" : "Katmandou"}</a></li>
+          <li class="pt-1.5"><a href={`${prefix}/destinations.html`} class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>{isEn ? "All Destinations" : "Toutes les destinations"}</span><span>→</span></a></li>
         </ul>
       </div>
 
@@ -74,27 +83,27 @@ const { lang = 'fr' } = Astro.props;
           Navigation
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href="/#pisteurs" class="hover:text-slate-200 transition-colors">Nos guides</a></li>
-          <li><a href="/#galerie-faune" class="hover:text-slate-200 transition-colors">Galerie faune</a></li>
-          <li><a href="/a-propos.html" class="hover:text-slate-200 transition-colors">À propos</a></li>
-          <li><a href="/blog.html" class="hover:text-slate-200 transition-colors">Blog</a></li>
-          <li><a href="/mentions-legales" class="hover:text-slate-200 transition-colors">Mentions légales</a></li>
-          <li><a href="/contact.html" class="hover:text-slate-200 transition-colors">Contact</a></li>
+          <li><a href={isEn ? "/en/#pisteurs" : "/#pisteurs"} class="hover:text-slate-200 transition-colors">{isEn ? "Our Guides" : "Nos guides"}</a></li>
+          <li><a href={isEn ? "/en/#galerie-faune" : "/#galerie-faune"} class="hover:text-slate-200 transition-colors">{isEn ? "Wildlife Gallery" : "Galerie faune"}</a></li>
+          <li><a href={`${prefix}/a-propos.html`} class="hover:text-slate-200 transition-colors">{isEn ? "About Us" : "À propos"}</a></li>
+          <li><a href={`${prefix}/blog.html`} class="hover:text-slate-200 transition-colors">Blog</a></li>
+          <li><a href={`${prefix}/mentions-legales`} class="hover:text-slate-200 transition-colors">{isEn ? "Legal Mentions" : "Mentions légales"}</a></li>
+          <li><a href={`${prefix}/contact.html`} class="hover:text-slate-200 transition-colors">Contact</a></li>
         </ul>
       </div>
 
       <!-- COL 5: Contact & Réservation -->
       <div class="space-y-3">
         <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          Contact & Réservation
+          {isEn ? "Contact & Booking" : "Contact & Réservation"}
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href="/contact.html" class="hover:text-slate-200 transition-colors">Demande de devis sur-mesure</a></li>
-          <li><a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">Contacter Robin sur WhatsApp</a></li>
+          <li><a href={`${prefix}/contact.html`} class="hover:text-slate-200 transition-colors">{isEn ? "Custom Quote Request" : "Demande de devis sur-mesure"}</a></li>
+          <li><a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">{isEn ? "Contact Robin on WhatsApp" : "Contacter Robin sur WhatsApp"}</a></li>
         </ul>
         <div class="pt-3 border-t border-white/10 text-slate-400 text-xs space-y-1">
-          <p class="text-slate-200 font-bold">Micro-groupes 4 à 10 pers.</p>
-          <p class="text-slate-400">100% Pisteurs natifs</p>
+          <p class="text-slate-200 font-bold">{isEn ? "Small groups 4 to 10 max" : "Micro-groupes 4 à 10 pers."}</p>
+          <p class="text-slate-400">{isEn ? "100% Native Trackers" : "100% Pisteurs natifs"}</p>
         </div>
       </div>
 
@@ -103,21 +112,22 @@ const { lang = 'fr' } = Astro.props;
     <!-- Bottom Bar with Official Legal Certifications -->
     <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
       <div class="space-y-1 text-center md:text-left">
-        <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. Tous droits réservés.</p>
-        <p class="text-[11px] text-slate-400">Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310</p>
+        <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. {isEn ? "All rights reserved." : "Tous droits réservés."}</p>
+        <p class="text-[11px] text-slate-400">{isEn ? "Official local agency licensed by Nepal Ministry of Industry & Tourism • Reg. 384414/82/83 • PAN 623537310" : "Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310"}</p>
       </div>
       <div class="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-xs">
         <button onclick="openLegalModal()" class="text-slate-200 hover:text-white font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/60 px-3.5 py-1.5 rounded-xl border border-emerald-700/40">
-          <span>Agréments & Licences officielles</span>
+          <span>{isEn ? "Official Licenses & Accreditations" : "Agréments & Licences officielles"}</span>
         </button>
         <span>•</span>
-        <a href="/mentions-legales" class="hover:text-white transition-colors">Mentions légales</a>
+        <a href={`${prefix}/mentions-legales`} class="hover:text-white transition-colors">{isEn ? "Legal Mentions" : "Mentions légales"}</a>
         <span>•</span>
-        <a href="/a-propos.html" class="hover:text-white transition-colors">À propos</a>
+        <a href={`${prefix}/a-propos.html`} class="hover:text-white transition-colors">{isEn ? "About" : "À propos"}</a>
         <span>•</span>
-        <a href="/contact.html" class="hover:text-white transition-colors">Contact</a>
+        <a href={`${prefix}/contact.html`} class="hover:text-white transition-colors">Contact</a>
       </div>
     </div>
 
   </div>
 </footer>
+

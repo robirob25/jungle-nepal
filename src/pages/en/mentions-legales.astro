@@ -1,0 +1,231 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Mentions Légales, Conditions Générales & Politique de Confidentialité" description="Mentions légales, immatriculation d'agence officielle, conditions de réservation, politique d'annulation et de remboursement conforme WeTravel." lang="en">
+
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <aside aria-label="Bannière d'information" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex-1 flex items-center justify-center gap-1.5 text-center text-[11px] sm:text-xs">
+        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 avec le code <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-sm leading-none px-1 cursor-pointer shrink-0" aria-label="Fermer">✕</button>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <Header isTransparent={false} currentPath="/mentions-legales" />
+
+  <!-- HERO BANNER -->
+  <section class="relative bg-slate-950 text-white pt-32 pb-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-400 font-semibold mb-2">
+        <a href="/en/" class="hover:text-white transition-colors">Accueil</a>
+        <span>›</span>
+        <span class="text-amber-100 font-bold">Mentions Légales & Conditions</span>
+      </nav>
+      <span class="text-xs font-black uppercase tracking-widest text-[#0e8354] bg-[#0e8354]/10 px-3 py-1 rounded-full border border-[#0e8354]/30 inline-block">Transparence & Conformité WeTravel</span>
+      <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+        Mentions Légales & Conditions Générales de Vente
+      </h1>
+      <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        Informations juridiques, immatriculation officielle au Népal, politique de réservation, d'annulation et protection des données personnelles.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-10 font-sans text-slate-800">
+
+    <!-- 1. IDENTITÉ DE L'ÉDITEUR & LICENCES -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          1
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Éditeur du site & Exploitant de l'agence
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>Le site internet <strong class="text-slate-950">https://junglenepal.com</strong> est édité par l'agence réceptive locale :</p>
+        <ul class="space-y-1.5 pl-4 border-l-2 border-[#0e8354] font-medium text-slate-800">
+          <li><strong>Raison sociale :</strong> Jungle Nepal Adventure Pvt. Ltd.</li>
+          <li><strong>Statut juridique :</strong> Société à responsabilité limitée de droit népalais, agréée par le Ministère de l'Industrie et l'Office National du Tourisme du Népal.</li>
+          <li><strong>Numéro d'immatriculation (Company Registration No.) :</strong> <span class="font-mono">384414/82/83</span></li>
+          <li><strong>Numéro d'identification fiscale (PAN No.) :</strong> <span class="font-mono">623537310</span></li>
+          <li><strong>Siège d'exploitation :</strong> Thakurdwara-09, Parc National de Bardia, Province de Lumbini, Népal</li>
+          <li><strong>Bureau de coordination & logistique :</strong> Thamel, Kathmandu, Népal</li>
+          <li><strong>Directeur Général :</strong> Pawan Thapa</li>
+          <li><strong>Manager & Co-Fondateur :</strong> Kiran Pokhrel</li>
+          <li><strong>Coordination Voyageurs & Relations France / Europe :</strong> Robin Rozier</li>
+          <li><strong>Email officiel :</strong> <a href="mailto:contact@junglenepal.com" class="text-[#0e8354] font-bold hover:underline">contact@junglenepal.com</a></li>
+          <li><strong>Ligne directe / WhatsApp :</strong> <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="text-[#0e8354] font-bold hover:underline">+33 6 95 41 32 27</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. HÉBERGEMENT -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          2
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Hébergement de la plateforme
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>Le site est hébergé sur les infrastructures sécurisées de :</p>
+        <ul class="space-y-1.5 pl-4 border-l-2 border-[#0e8354] font-medium text-slate-800">
+          <li><strong>Hébergeur :</strong> Hostinger International Ltd. / Hostinger Operations UAB</li>
+          <li><strong>Adresse :</strong> Švitrigailos str. 34, 03230 Vilnius, Lituanie</li>
+          <li><strong>Site Web :</strong> <a href="https://www.hostinger.com" target="_blank" rel="noopener noreferrer" class="text-[#0e8354] font-bold hover:underline">https://www.hostinger.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. MODALITÉS DE PAIEMENT & PLATEFORME SECURISEE WETRAVEL -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          3
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Réservations & Modalités de Paiement (WeTravel)
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>
+          Pour garantir la plus haute sécurité financière à nos voyageurs internationaux, les réservations et transactions peuvent être opérées via la plateforme de paiement certifiée <strong>WeTravel</strong> (conforme PCI-DSS Niveau 1 et cryptage SSL 256 bits).
+        </p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Acompte de confirmation :</strong> Un acompte de <strong>30%</strong> du montant total du séjour est requis pour bloquer définitivement votre place en micro-groupe, réserver les hébergements en lodge/bivouac et émettre les permis des parcs nationaux.</li>
+          <li><strong>Règlement du solde :</strong> Le solde de 70% est payable au plus tard <strong>30 days</strong> avant la date de début de votre expédition (ou sur place selon les modalités convenues lors de votre devis personnalisé).</li>
+          <li><strong>Devises acceptées :</strong> Euros (€ - EUR) et Dollars US ($ - USD). Les frais bancaires de conversion éventuels sont à la charge de l'émetteur.</li>
+          <li><strong>Moyens de paiement acceptés :</strong> Cartes bancaires (Visa, Mastercard, American Express), virements bancaires internationaux sécurisés SEPA/SWIFT.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. POLITIQUE D'ANNULATION ET DE REMBOURSEMENT (WETRAVEL COMPLIANT) -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          4
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Politique d'Annulation & de Remboursement
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>En cas d'annulation de votre fait, le barème de remboursement applicable est le suivant (notification par écrit à contact@junglenepal.com) :</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm border border-slate-200 rounded-xl overflow-hidden mt-2">
+            <thead class="bg-slate-900 text-white font-bold">
+              <tr>
+                <th class="p-3">Délai avant le départ</th>
+                <th class="p-3">Conditions de remboursement</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-700">
+              <tr class="bg-emerald-50/50">
+                <td class="p-3 font-semibold text-slate-900">Plus de 45 days avant le départ</td>
+                <td class="p-3 font-bold text-[#0e8354]">Remboursement de 100% de l'acompte (hors frais bancaires et permis nominatifs non remboursables émis)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-900">Entre 44 et 30 days avant le départ</td>
+                <td class="p-3">Conservation de l'acompte de 30% (possibilité de report sur une session ultérieure sur accord)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-900">Entre 29 et 15 days avant le départ</td>
+                <td class="p-3">Remboursement de 50% du montant total du séjour</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Moins de 14 days ou non-présentation (No-Show)</td>
+                <td class="p-3 text-slate-600">Aucun remboursement (frais logistiques et d'encadrement déjà engagés à 100%)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 italic mt-2">
+          * Annulation du fait de l'agence (ex: conditions de sécurité exceptionnelles, force majeure) : Remboursement intégral des sommes versées ou proposition d'un itinéraire alternatif de valeur équivalente.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. ASSURANCE VOYAGE OBLIGATOIRE & SÉCURITÉ -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          5
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Assurance Voyage, Rapatriement & Responsabilité
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>
+          En raison de la nature immersive des safaris à pied et expéditions en jungle/montagne, chaque voyageur doit obligatoirement souscrire avant son départ une <strong>assurance individuelle multirisque</strong> couvrant :
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Les frais médicaux et d'hospitalisation d'urgence au Népal.</li>
+          <li>Le rapatriement sanitaire d'urgence et l'évacuation par hélicoptère (couvrant l'altitude de l'itinéraire concerné).</li>
+          <li>L'assurance annulation et la perte/vol de bagages et matériel photographique.</li>
+        </ul>
+        <p class="pt-1">
+          L'agence décline toute responsabilité en cas d'omission de souscription d'une telle assurance par le voyageur. Sur le terrain, nos maîtres pisteurs et chefs d'expédition sont seuls habilités à adapter l'itinéraire pour des motifs stricts de sécurité face à la faune ou aux crues de rivières.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. PROPRIÉTÉ INTELLECTUELLE -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          6
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Propriété intellectuelle & Droits photographiques
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>
+          L'ensemble des photographies animalières, visuels, textes descriptifs des circuits, logos et structure du site sont la propriété exclusive de <strong>Jungle Nepal Adventure Pvt. Ltd.</strong> ou de ses contributeurs agréés.
+        </p>
+        <p>
+          Toute reproduction ou diffusion sans autorisation préalable écrite est passible de poursuites au titre du droit de la propriété intellectuelle.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. PROTECTION DES DONNÉES (RGPD) -->
+    <section class="space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-[#0e8354] flex items-center justify-center font-black text-lg border border-emerald-200 shrink-0">
+          7
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+          Protection des données personnelles (RGPD)
+        </h2>
+      </div>
+      <div class="text-sm sm:text-base text-slate-700 leading-relaxed space-y-3 pt-2">
+        <p>
+          Les informations collectées lors de vos demandes sont strictement réservées à l'organisation de vos expéditions au Népal (réservations d'hôtels, permis des parcs auprès des autorités gouvernementales).
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+          <li><strong>Confidentialité garantie :</strong> Vos coordonnées ne sont jamais vendues ou cédées à des tiers.</li>
+          <li><strong>Droit de modification/suppression :</strong> Vous pouvez demander la suppression de vos données à tout moment en écrivant à <strong class="text-slate-950">contact@junglenepal.com</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <Footer lang="en" />
+
+</Layout>

@@ -1,9 +1,11 @@
 ---
+import { getLangFromUrl, getLocalizedPath } from '../i18n/utils';
+
 interface Props {
   title: string;
   description?: string;
   image?: string;
-  lang?: string;
+  lang?: 'fr' | 'en';
   isDarkHeader?: boolean;
 }
 
@@ -11,24 +13,39 @@ const {
   title, 
   description = "Découvrez le Népal sauvage en micro-groupes (4 à 10 pers). 15 séjours d'exception : safaris à pied à Bardia, tracking du tigre du Bengale, bivouacs en jungle et immersion himalayenne.",
   image = "/assets/logo_dark.png",
-  lang = "fr",
+  lang,
   isDarkHeader = false
 } = Astro.props;
 
+const currentLang = lang || getLangFromUrl(Astro.url);
 const pageTitle = title.includes('Jungle Nepal Adventure') ? title : `${title} | Jungle Nepal Adventure`;
+
 let rawPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '');
 if (rawPath === '/index' || rawPath === '') rawPath = '';
 const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://junglenepal.com/';
+
+// Compute Hreflang Alternates
+const frPath = getLocalizedPath(Astro.url, 'fr');
+const enPath = getLocalizedPath(Astro.url, 'en');
+
+const frUrl = `https://junglenepal.com${frPath.endsWith('/') || frPath.endsWith('.html') ? frPath : frPath + '/'}`;
+const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith('.html') ? enPath : enPath + '/'}`;
 ---
 
 <!DOCTYPE html>
-<html lang={lang} class="scroll-smooth scroll-pt-24 sm:scroll-pt-28">
+<html lang={currentLang} class="scroll-smooth scroll-pt-24 sm:scroll-pt-28">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>{pageTitle}</title>
   <meta name="description" content={description} />
   <meta name="google-site-verification" content="v-MTU6bSNI-rDYxEb_jUVG4wxZs2yHAQfxWo756DKNU" />
+
+  <!-- HREFLANG ALTERNATES (International Technical SEO) -->
+  <link rel="alternate" hreflang="fr" href={frUrl} />
+  <link rel="alternate" hreflang="en" href={enUrl} />
+  <link rel="alternate" hreflang="x-default" href={frUrl} />
+
   <!-- HIGH-PERFORMANCE PRELOADS (Responsive LCP Optimization) -->
   <link rel="preload" href="/assets/hero/hero_1_tiger_water_mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
   <link rel="preload" href="/assets/hero/hero_1_tiger_water.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
@@ -77,7 +94,7 @@ const canonicalUrl = rawPath ? `https://junglenepal.com${rawPath}` : 'https://ju
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Jungle Nepal Adventure" />
-  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale" content={currentLang === 'en' ? 'en_US' : 'fr_FR'} />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
