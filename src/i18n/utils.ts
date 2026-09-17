@@ -14,22 +14,34 @@ export function useTranslations(lang: 'fr' | 'en') {
 
 export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
   let path = url.pathname;
+  const isEnCurrent = path.startsWith('/en/') || path === '/en' || path === '/en.html';
 
-  // Normalize: strip leading /en if present (including /en.html or /en/)
-  path = path.replace(/^\/en(\.html|\/|$)/, '/');
+  // Normalize path without leading /en
+  let base = path.replace(/^\/en(\.html|\/|$)/, '/');
+  if (!base.startsWith('/')) base = '/' + base;
 
-  if (!path.startsWith('/')) {
-    path = '/' + path;
+  // Clean trailing .html or / for mapping
+  let norm = base.replace(/\.html$/, '').replace(/\/$/, '');
+
+  // Exact route translation map between FR and EN
+  const routeMap: Record<string, { fr: string; en: string }> = {
+    '': { fr: '/', en: '/en/' },
+    '/index': { fr: '/', en: '/en/' },
+    '/a-propos': { fr: '/a-propos.html', en: '/en/about.html' },
+    '/about': { fr: '/a-propos.html', en: '/en/about.html' },
+    '/mentions-legales': { fr: '/mentions-legales.html', en: '/en/legal-mentions.html' },
+    '/legal-mentions': { fr: '/mentions-legales.html', en: '/en/legal-mentions.html' },
+  };
+
+  if (routeMap[norm]) {
+    return routeMap[norm][targetLang];
   }
 
-  // Handle root homepage
-  if (path === '/' || path === '/index.html' || path === '') {
-    return targetLang === 'en' ? '/en/' : '/';
-  }
-
+  // Fallback for general routes (/destinations, /tours/..., /blog/...)
   if (targetLang === 'en') {
-    return `/en${path}`;
+    if (base === '/' || base === '') return '/en/';
+    return `/en${base.endsWith('.html') || base.includes('/tours/') || base.includes('/destinations/') || base.includes('/blog/') ? base : base + '.html'}`;
+  } else {
+    return base === '' ? '/' : base;
   }
-
-  return path;
 }

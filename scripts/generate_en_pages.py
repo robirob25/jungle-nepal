@@ -20,10 +20,11 @@ FR_TO_EN_REPLACEMENTS = [
     ('href="/"', 'href="/en/"'),
     ("href='/'", "href='/en/'"),
     ('href="/#', 'href="/en/#'),
-    ('href="/a-propos.html"', 'href="/en/a-propos.html"'),
+    ('href="/a-propos.html"', 'href="/en/about.html"'),
     ('href="/contact.html"', 'href="/en/contact.html"'),
-    ('href="/mentions-legales"', 'href="/en/mentions-legales"'),
-    ('href="/mentions-legales.html"', 'href="/en/mentions-legales.html"'),
+    ('href="/mentions-legales"', 'href="/en/legal-mentions.html"'),
+    ('href="/mentions-legales.html"', 'href="/en/legal-mentions.html"'),
+    ('data/blog_posts.json', 'data/blog_posts.en.json'),
     ('href="/destinations.html"', 'href="/en/destinations.html"'),
     ('href="/destinations/', 'href="/en/destinations/'),
     ('href="/tours/', 'href="/en/tours/'),
@@ -143,9 +144,16 @@ def main():
         for file in files:
             if not file.endswith(".astro"):
                 continue
-                
+            
+            target_file = file
+            if file == "a-propos.astro":
+                target_file = "about.astro"
+            elif file == "mentions-legales.astro":
+                target_file = "legal-mentions.astro"
+
             src_full = os.path.join(root, file)
-            rel_path = os.path.relpath(src_full, PAGES_DIR)
+            rel_dir = os.path.relpath(root, PAGES_DIR)
+            rel_path = os.path.join(rel_dir, target_file) if rel_dir != "." else target_file
             dst_full = os.path.join(EN_DIR, rel_path)
             
             rel_depth = len(rel_path.split(os.sep))
