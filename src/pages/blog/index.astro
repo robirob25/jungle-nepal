@@ -8,8 +8,8 @@ import posts from '../../data/blog_posts.json';
 
 // Sort posts by date descending
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-const featuredPost = sortedPosts[0];
-const otherPosts = sortedPosts.slice(1);
+const featuredPost = posts.find(p => p.slug === 'agence-safari-nepal-francophone') || sortedPosts[0];
+const otherPosts = sortedPosts.filter(p => p.slug !== featuredPost.slug);
 
 // Category counts for dynamic filter pills
 const categoryCounts = posts.reduce((acc, p) => {
@@ -44,9 +44,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <Header isTransparent={false} currentPath="/blog" />
 
   <!-- HERO BANNER -->
-  <section class="relative min-h-[48vh] sm:min-h-[54vh] flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white border-b border-white/10">
+  <section class="relative min-h-[48vh] sm:min-h-[54vh] flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 text-white border-b border-white/10 z-20">
     <!-- Cinematic Background Image with Gradient Overlay -->
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0 overflow-hidden">
       <img 
         src="/assets/original_site/tigre_bardia.webp" 
         alt="Jungle du Népal" 
@@ -77,7 +77,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </p>
 
       <!-- Instant Live Search Bar + Dropdown -->
-      <div class="w-full max-w-2xl pt-2 relative">
+      <div class="w-full max-w-2xl pt-2 relative z-[100]">
         <form onsubmit="event.preventDefault(); document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'});" class="relative group/search">
           <input 
             type="text" 
@@ -101,11 +101,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </form>
 
         <!-- Live Instant Suggestions Dropdown -->
-        <div id="search-suggestions-box" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#041d13]/98 backdrop-blur-2xl border border-white/15 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-hidden z-50 text-left divide-y divide-white/10">
+        <div id="search-suggestions-box" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#041d13] border border-emerald-500/30 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden z-[100] text-left divide-y divide-white/10">
           <div id="suggestions-list" class="max-h-80 overflow-y-auto p-2 space-y-1"></div>
-          <div class="p-3 bg-black/30 flex items-center justify-between text-xs text-slate-300">
+          <div class="p-3 bg-black/40 flex items-center justify-between text-xs text-slate-300 border-t border-white/10">
             <span id="suggestions-summary">Appuyez sur Entrée pour voir tous les résultats</span>
-            <button type="button" onclick="document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'}); hideSuggestions();" class="text-amber-300 hover:text-amber-200 font-bold">
+            <button type="button" onclick="document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'}); hideSuggestions();" class="text-amber-300 hover:text-amber-200 font-bold cursor-pointer">
               Voir dans la grille ↓
             </button>
           </div>

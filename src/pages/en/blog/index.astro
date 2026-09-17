@@ -8,8 +8,8 @@ import posts from '../../../data/blog_posts.en.json';
 
 // Sort posts by date descending
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-const featuredPost = sortedPosts[0];
-const otherPosts = sortedPosts.slice(1);
+const featuredPost = posts.find(p => p.slug === 'agence-safari-nepal-francophone') || sortedPosts[0];
+const otherPosts = sortedPosts.filter(p => p.slug !== featuredPost.slug);
 
 // Category counts for dynamic filter pills
 const categoryCounts = posts.reduce((acc, p) => {
@@ -24,32 +24,32 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
 <Layout 
-  title="Blog et guides de voyage | Jungle Nepal Adventure" 
-  description="Guides complets, conseils d'experts et récits d'expéditions sauvages in Nepal : pister le tigre du Bengale, observer la faune à Bardia et Chitwan, préparer votre voyage." 
+  title="Blog & Travel Guides | Jungle Nepal Adventure" 
+  description="Comprehensive guides, expert tips, and wild expedition stories in Nepal: tracking Bengal tigers, wildlife watching in Bardia and Chitwan, planning your trip." 
   image={featuredPost?.featuredImage || "/assets/original_site/tigre_bardia.webp"}
   lang="en"
 >
 
   <!-- TOP PROMO BAR -->
-  <aside aria-label="Bannière d'information" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
+  <aside aria-label="Information banner" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
       <div class="flex-1 flex items-center justify-center gap-1.5 text-center text-[11px] sm:text-xs">
-        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 avec le code <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+        <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip with code <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
-      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-sm leading-none px-1 cursor-pointer shrink-0" aria-label="Fermer">✕</button>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/80 hover:text-white text-sm leading-none px-1 cursor-pointer shrink-0" aria-label="Close">✕</button>
     </div>
   </aside>
 
   <!-- HEADER -->
-  <Header isTransparent={false} currentPath="/blog" />
+  <Header isTransparent={false} currentPath="/en/blog" lang="en" />
 
   <!-- HERO BANNER -->
-  <section class="relative min-h-[48vh] sm:min-h-[54vh] flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white border-b border-white/10">
+  <section class="relative min-h-[48vh] sm:min-h-[54vh] flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 text-white border-b border-white/10 z-20">
     <!-- Cinematic Background Image with Gradient Overlay -->
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0 overflow-hidden">
       <img 
         src="/assets/original_site/tigre_bardia.webp" 
-        alt="Jungle du Népal" 
+        alt="Jungle Nepal" 
         class="w-full h-full object-cover opacity-35 filter brightness-90 contrast-110 scale-105"
         loading="eager"
       />
@@ -61,29 +61,29 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center space-y-6">
       <!-- Breadcrumb Navigation -->
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-400 font-semibold mb-1">
-        <a href="/en/" class="hover:text-white transition-colors">Accueil</a>
+        <a href="/en/" class="hover:text-white transition-colors">Home</a>
         <span>›</span>
-        <span class="text-amber-100 font-bold">Blog et guides de voyage</span>
+        <span class="text-amber-100 font-bold">Blog & Travel Guides</span>
       </nav>
 
       <!-- Main H1 Title -->
       <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.08] drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)]">
-        Blog et guides de voyage
+        Blog & Travel Guides
       </h1>
 
       <!-- Refined Subtitle -->
       <p class="text-base sm:text-xl text-slate-200 max-w-2xl font-medium leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
-        Conseils d'experts locaux, fiches espèces, repérages des pistes de Bardia et Chitwan, et récits Immersive pour réussir votre voyage au cœur du Népal sauvage.
+        Local expert advice, species sheets, Bardia & Chitwan trail reports, and immersive stories for your wild Nepal adventure.
       </p>
 
       <!-- Instant Live Search Bar + Dropdown -->
-      <div class="w-full max-w-2xl pt-2 relative">
+      <div class="w-full max-w-2xl pt-2 relative z-[100]">
         <form onsubmit="event.preventDefault(); document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'});" class="relative group/search">
           <input 
             type="text" 
             id="blog-search-input"
             autocomplete="off"
-            placeholder="Rechercher un guide (ex: tigre, bardia, budget, matériel, oiseaux, météo...)..." 
+            placeholder="Search a guide (e.g. tiger, bardia, budget, gear, birds, weather...)..." 
             class="w-full px-5 py-4 pl-12 pr-12 rounded-2xl bg-white/10 hover:bg-white/15 focus:bg-slate-900/95 border border-white/20 focus:border-emerald-400 text-white placeholder-slate-300 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 text-sm sm:text-base transition-all duration-200 backdrop-blur-xl shadow-2xl"
           />
           <svg class="w-5 h-5 text-emerald-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none transition-transform duration-200 group-focus-within/search:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,19 +94,19 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             id="clear-search-btn" 
             onclick="clearSearch()" 
             class="hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center text-xs font-bold transition-colors cursor-pointer"
-            aria-label="Effacer la recherche"
+            aria-label="Clear search"
           >
             ✕
           </button>
         </form>
 
         <!-- Live Instant Suggestions Dropdown -->
-        <div id="search-suggestions-box" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#041d13]/98 backdrop-blur-2xl border border-white/15 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-hidden z-50 text-left divide-y divide-white/10">
+        <div id="search-suggestions-box" class="hidden absolute top-full left-0 right-0 mt-2 bg-[#041d13] border border-emerald-500/30 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden z-[100] text-left divide-y divide-white/10">
           <div id="suggestions-list" class="max-h-80 overflow-y-auto p-2 space-y-1"></div>
-          <div class="p-3 bg-black/30 flex items-center justify-between text-xs text-slate-300">
-            <span id="suggestions-summary">Appuyez sur Entrée pour voir tous les résultats</span>
-            <button type="button" onclick="document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'}); hideSuggestions();" class="text-amber-300 hover:text-amber-200 font-bold">
-              Voir dans la grille ↓
+          <div class="p-3 bg-black/40 flex items-center justify-between text-xs text-slate-300 border-t border-white/10">
+            <span id="suggestions-summary">Press Enter to view all results</span>
+            <button type="button" onclick="document.getElementById('articles-grid-section').scrollIntoView({behavior: 'smooth'}); hideSuggestions();" class="text-amber-300 hover:text-amber-200 font-bold cursor-pointer">
+              View in grid ↓
             </button>
           </div>
         </div>
