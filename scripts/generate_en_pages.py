@@ -65,12 +65,38 @@ FR_TO_EN_REPLACEMENTS = [
     ('aria-label="Rechercher"', 'aria-label="Search"'),
 
     # Filter Carousel Pills
+    ("Mixe jungle et montagne (5)", "Jungle & Mountain Blend (5)"),
+    ("Safaris et grands félins (11)", "Safaris & Big Cats (11)"),
+    ("Bivouacs et nuits sauvages (5)", "Jungle Bivouacs & Wild Nights (5)"),
+    ("Rhinocéros et Chitwan (3)", "Rhinos & Chitwan (3)"),
+    ("Rafting et expéditions rivières (3)", "Rafting & River Expeditions (3)"),
+    ("Himalaya, Mustang et spiritualité (6)", "Himalaya, Mustang & Spirituality (6)"),
     ("Safaris & Tigres", "Safaris & Tigers"),
     ("Bivouacs Jungle", "Jungle Bivouacs"),
     ("Rhinocéros & Chitwan", "Rhinos & Chitwan"),
     ("Rafting & Aventure", "Rafting & Adventure"),
     ("Mustang & Himalaya", "Mustang & Himalayas"),
     ("Tours Immersion", "Immersion Tours"),
+
+    # Tour Titles
+    ("Jungle extrême – spécial faune sauvage", "Extreme Jungle – Wildlife Special"),
+    ("Népal sauvage – de la jungle aux montagnes sacrées", "Wild Nepal – From Jungle to Sacred Mountains"),
+    ("Chitwan + Bardia – l’aventure jungle complète", "Chitwan + Bardia – Complete Jungle Adventure"),
+    ("Chitwan + Bardia – l'aventure jungle complète", "Chitwan + Bardia – Complete Jungle Adventure"),
+    ("Bardia explorateur – 5 jours dans la jungle", "Bardia Explorer – 5 Days in the Wild Jungle"),
+    ("Chitwan – culture et jungle sauvage", "Chitwan – Culture & Wild Jungle"),
+    ("Rivières sauvages et patrimoines cachés – expédition et rafting", "Wild Rivers & Hidden Heritage – Rafting Expedition"),
+    ("Bardia – aventure immersive en jungle et camping sauvage", "Bardia Wild Night – Jungle Bivouac & Camping"),
+    ("Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus", "Rara Lake & Bardia Expedition – Ultimate Off-the-Beaten-Path Expedition"),
+    ("Rara Lake & Bardia expedition – l'ultime aventure hors sentiers battus", "Rara Lake & Bardia Expedition – Ultimate Off-the-Beaten-Path Expedition"),
+    ("Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée", "Bardia Babai Valley – Wild Camping in Unspoiled Nature"),
+    ("Bardia Babai vallée – camping sauvage au cœur d'une nature vierge et isolée", "Bardia Babai Valley – Wild Camping in Unspoiled Nature"),
+    ("Népal – immersion totale : culture, vie sauvage et aventure", "Nepal Total Immersion – Culture, Wildlife & Himalaya"),
+    ("Deep into the wild : Babai spécial experience – 5 jours", "Deep into the Wild: Babai Special Experience – 5 Days"),
+    ("Tiji Festival – Upper Mustang", "Tiji Festival in Upper Mustang – Culture & High Trek"),
+    ("Népal – carnet de dessin et de voyage – 15 jours", "Nepal Sketchbook & Travel Journal – 15 Days"),
+    ("Immersion spirituelle en Himalaya", "Spiritual & Nature Immersion in the Himalayas"),
+    ("Expédition : panthère des neiges exclusive (17 jours)", "Snow Leopard Expedition – Himalayan High Altitude (17 Days)"),
 
     # Catalog & Section Badges / Headings
     ("Départs garantis • Petits groupes de 4 à 10 explorateurs", "Guaranteed Departures • Small Groups of 4 to 10 Explorers"),
