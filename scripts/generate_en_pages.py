@@ -12,7 +12,7 @@ FR_TO_EN_REPLACEMENTS = [
     ('lang: "fr"', 'lang: "en"'),
     ("lang: 'fr'", "lang: 'en'"),
     ('fr-FR', 'en-US'),
-    ('https://junglenepal.com/a-propos.html', 'https://junglenepal.com/en/a-propos.html'),
+    ('https://junglenepal.com/a-propos.html', 'https://junglenepal.com/en/about.html'),
     ('https://junglenepal.com/contact.html', 'https://junglenepal.com/en/contact.html'),
     ('https://junglenepal.com/destinations.html', 'https://junglenepal.com/en/destinations.html'),
 
@@ -31,11 +31,53 @@ FR_TO_EN_REPLACEMENTS = [
     ('href="/blog.html"', 'href="/en/blog.html"'),
     ('href="/blog/', 'href="/en/blog/'),
 
-    # Common UI & Navigation
+    # Hero & Homepage Titles & Subtitles
+    ("L'autre côté du Népal", "The Other Side of Nepal"),
+    ("Là où les routes s’arrêtent.", "Where roads end."),
+    ("Là où les routes s'arrêtent.", "Where roads end."),
+    ("Là où les territoires sauvages recommencanent.", "Where untamed wilderness begins."),
+    ("Là où les territoires sauvages recommencent.", "Where untamed wilderness begins."),
+    ("Guidé par ceux qui y vivent.", "Guided by those who live there."),
+    ("Offrez-vous votre voyage nature au Népal.", "Embark on your ultimate wildlife adventure in Nepal."),
+
+    # Search Box & Filters
+    ("<span>OÙ ?</span>", "<span>WHERE?</span>"),
+    ("<span>QUAND ?</span>", "<span>WHEN?</span>"),
+    ("Tous les sédays (15)", "All 15 Expeditions"),
+    ("Tous les sédays", "All Expeditions"),
+    ("Tous les séjours (15)", "All 15 Expeditions"),
+    ("Tous les séjours", "All Expeditions"),
     ("Tous les 15 séjours", "All 15 Expeditions"),
     ("Tous les 15 Séjours", "All 15 Expeditions"),
     ("Les 15 séjours", "15 Expeditions"),
     ("15 séjours d'exception", "15 Exclusive Expeditions"),
+    ("Safaris & Grands Félins (Bardia & Himalaya)", "Safaris & Big Cats (Bardia & Himalayas)"),
+    ("Bivouacs & Nuits Sauvages en Jungle", "Jungle Bivouacs & Wild Nights"),
+    ("Rhinocéros & Parc de Chitwan", "Rhinos & Chitwan National Park"),
+    ("Rafting & Expéditions Rivières", "Rafting & River Expeditions"),
+    ("Himalaya, mustang & spiritualité", "Himalayas, Mustang & Spirituality"),
+    ("Grands Tours Immersion 360°", "360° Total Immersion Tours"),
+    ("Toute l'année", "All Year Round"),
+    ("Printemps", "Spring"),
+    ("Automne", "Autumn"),
+    ("Hiver", "Winter"),
+    (">Rechercher<", ">Search Expeditions<"),
+    ('aria-label="Rechercher"', 'aria-label="Search"'),
+
+    # Filter Carousel Pills
+    ("Safaris & Tigres", "Safaris & Tigers"),
+    ("Bivouacs Jungle", "Jungle Bivouacs"),
+    ("Rhinocéros & Chitwan", "Rhinos & Chitwan"),
+    ("Rafting & Aventure", "Rafting & Adventure"),
+    ("Mustang & Himalaya", "Mustang & Himalayas"),
+    ("Tours Immersion", "Immersion Tours"),
+
+    # Catalog & Section Badges / Headings
+    ("Départs garantis • Petits groupes de 4 à 10 explorateurs", "Guaranteed Departures • Small Groups of 4 to 10 Explorers"),
+    ("immersifs", "Immersive"),
+    ("au Népal", "in Nepal"),
+    ("Sélectionnez votre aventure pour explorer le détail jour par jour, la fiche d'inclusions et réserver votre place.", "Select your adventure to view day-by-day itineraries, complete inclusions, and reserve your spot."),
+    ("Créer un séjour sur-mesure", "Create a Custom Trip"),
     ("Découvrir le circuit", "View Expedition Details"),
     ("Découvrir la destination", "Discover Destination"),
     ("Voir le séjour", "View Expedition"),
@@ -43,7 +85,6 @@ FR_TO_EN_REPLACEMENTS = [
     ("Toutes les destinations", "All Destinations"),
     ("Voir toutes les destinations", "View All Destinations"),
     ("Demander un devis sur-mesure", "Request a Custom Quote"),
-    ("Créer un séjour sur-mesure", "Create a Custom Trip"),
     ("Réserver ce voyage", "Book This Trip"),
     ("Poser une question à Robin sur WhatsApp", "Ask Robin on WhatsApp"),
     ("Contacter Robin sur WhatsApp", "Contact Robin on WhatsApp"),
@@ -54,21 +95,6 @@ FR_TO_EN_REPLACEMENTS = [
     ("À partir de", "From"),
     ("Jours", "Days"),
     ("jours", "days"),
-
-    # Common Section Headers
-    ("Itinéraire Jour par Jour", "Day-by-Day Itinerary"),
-    ("Fiche pratique & technique", "Technical & Practical Overview"),
-    ("Ce qui est inclus / non inclus", "Inclusions & Exclusions"),
-    ("Ce qui est inclus", "What's Included"),
-    ("Ce qui n'est pas inclus", "What's Not Included"),
-    ("Foire aux questions", "Frequently Asked Questions"),
-    ("Questions fréquentes", "Frequently Asked Questions"),
-    ("Avis des voyageurs", "Traveler Reviews"),
-    ("Nos guides pisteurs", "Our Local Trackers & Guides"),
-    ("Galerie faune", "Wildlife Gallery"),
-    ("Informations pratiques", "Practical Details"),
-    ("Budget & Tarifs", "Pricing & Budget"),
-    ("Conseils de préparation", "Preparation Tips"),
 
     # Destinations Names & Subtitles
     ("Parc national de Bardia", "Bardia National Park"),
@@ -81,6 +107,28 @@ FR_TO_EN_REPLACEMENTS = [
     ("Cerfs des marais & ouest sauvage", "Swamp Deer & Untamed Wild West"),
     ("Sommets mythiques & balcons alpins", "Sacred Peaks & Alpine Balconies"),
     ("Vallée des rois & temples sacrés", "Valley of Kings & Sacred Temples"),
+
+    # Concept / Spirit & Guides
+    ("L'esprit safari au Népal", "The Safari Spirit in Nepal"),
+    ("L'esprit safari", "The Safari Spirit"),
+    ("Pourquoi nos expéditions sont uniques", "Why Our Expeditions Are Unique"),
+    ("Nos guides pisteurs", "Our Native Trackers & Guides"),
+    ("Nos guides", "Our Guides"),
+    ("Nés dans le Teraï, formés par la jungle.", "Born in the Terai, raised by the jungle."),
+
+    # Common Section Headers
+    ("Itinéraire Jour par Jour", "Day-by-Day Itinerary"),
+    ("Fiche pratique & technique", "Technical & Practical Overview"),
+    ("Ce qui est inclus / non inclus", "Inclusions & Exclusions"),
+    ("Ce qui est inclus", "What's Included"),
+    ("Ce qui n'est pas inclus", "What's Not Included"),
+    ("Foire aux questions", "Frequently Asked Questions"),
+    ("Questions fréquentes", "Frequently Asked Questions"),
+    ("Avis des voyageurs", "Traveler Reviews"),
+    ("Galerie faune", "Wildlife Gallery"),
+    ("Informations pratiques", "Practical Details"),
+    ("Budget & Tarifs", "Pricing & Budget"),
+    ("Conseils de préparation", "Preparation Tips"),
 
     # Days
     ("Jour 1", "Day 1"),
@@ -104,8 +152,6 @@ FR_TO_EN_REPLACEMENTS = [
 ]
 
 def adjust_imports(content, rel_depth):
-    # rel_depth = 1 for /en/index.astro -> import Layout from '../layouts/Layout.astro' becomes '../../layouts/Layout.astro'
-    # rel_depth = 2 for /en/tours/foo.astro -> import Layout from '../../layouts/Layout.astro' becomes '../../../layouts/Layout.astro'
     prefix = "../" * (rel_depth + 1)
     
     content = re.sub(r"from\s+['\"](\.\./)+layouts/", f"from '{prefix}layouts/", content)
