@@ -8,7 +8,7 @@ import posts from '../../data/blog_posts.json';
 
 // Sort posts by date descending
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-const featuredPost = posts.find(p => p.slug === 'agence-safari-nepal-francophone') || sortedPosts[0];
+const featuredPost = posts.find(p => p.slug === 'voir-des-tigres-au-nepal') || sortedPosts[0];
 const otherPosts = sortedPosts.filter(p => p.slug !== featuredPost.slug);
 
 // Category counts for dynamic filter pills
