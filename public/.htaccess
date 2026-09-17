@@ -42,6 +42,10 @@ Options -Indexes -MultiViews
     # DirectoryIndex configuration for Astro SSG
     DirectoryIndex index.html
 
+    # Redirect external requests ending in .html to clean URLs (e.g. /blog.html -> /blog)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)\.html\ HTTP/ [NC]
+    RewriteRule ^(.*)\.html$ https://junglenepal.com/$1 [R=301,L]
+
     # Redirect root /index.html to /
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
     RewriteRule ^index\.html$ https://junglenepal.com/ [R=301,L]
@@ -51,7 +55,7 @@ Options -Indexes -MultiViews
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
 
-    # Map extensionless URLs (e.g. /en/about -> /en/about.html)
+    # Map extensionless URLs to .html fallback if directory or index file doesn't match
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.*)$ $1.html [L]
 </IfModule>

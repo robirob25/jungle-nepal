@@ -32,7 +32,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
         <a href="/en/" class="hover:text-white">Accueil</a>
         <span>›</span>
-        <a href="/en/destinations.html" class="hover:text-white">Destinations</a>
+        <a href="/en/destinations" class="hover:text-white">Destinations</a>
         <span>›</span>
         <span class="text-amber-100 font-bold">Annapurna & Pokhara</span>
       </nav>
@@ -157,7 +157,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/tours/${tour.slug}.html'`}
+            onclick={`window.location.href='/tours/${tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -213,7 +213,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/tours/${tour.slug}.html`}
+                  href={`/tours/${tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →

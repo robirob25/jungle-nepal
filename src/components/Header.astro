@@ -14,12 +14,12 @@ const t = useTranslations(currentLang);
 
 const homeUrl = currentLang === 'en' ? '/en/' : '/';
 const toursUrl = currentLang === 'en' ? '/en/#prochains-departs' : '/#prochains-departs';
-const destUrl = currentLang === 'en' ? '/en/destinations.html' : '/destinations.html';
+const destUrl = currentLang === 'en' ? '/en/destinations' : '/destinations';
 const guidesUrl = currentLang === 'en' ? (homeUrl + '#pisteurs') : '/#pisteurs';
 const galleryUrl = currentLang === 'en' ? (homeUrl + '#galerie-faune') : '/#galerie-faune';
-const aboutUrl = currentLang === 'en' ? '/en/a-propos.html' : '/a-propos.html';
-const blogUrl = currentLang === 'en' ? '/en/blog.html' : '/blog.html';
-const contactUrl = currentLang === 'en' ? '/en/contact.html' : '/contact.html';
+const aboutUrl = currentLang === 'en' ? '/en/a-propos' : '/a-propos';
+const blogUrl = currentLang === 'en' ? '/en/blog' : '/blog';
+const contactUrl = currentLang === 'en' ? '/en/contact' : '/contact';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');

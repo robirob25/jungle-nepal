@@ -14,10 +14,10 @@ export function useTranslations(lang: 'fr' | 'en') {
 
 export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
   let path = url.pathname;
-  const isEnCurrent = path.startsWith('/en/') || path === '/en' || path === '/en.html';
+  const isEnCurrent = path.startsWith('/en/') || path === '/en';
 
   // Normalize path without leading /en
-  let base = path.replace(/^\/en(\.html|\/|$)/, '/');
+  let base = path.replace(/^\/en(\/|$)/, '/');
   if (!base.startsWith('/')) base = '/' + base;
 
   // Clean trailing .html or / for mapping
@@ -27,10 +27,10 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
   const routeMap: Record<string, { fr: string; en: string }> = {
     '': { fr: '/', en: '/en/' },
     '/index': { fr: '/', en: '/en/' },
-    '/a-propos': { fr: '/a-propos.html', en: '/en/about.html' },
-    '/about': { fr: '/a-propos.html', en: '/en/about.html' },
-    '/mentions-legales': { fr: '/mentions-legales.html', en: '/en/legal-mentions.html' },
-    '/legal-mentions': { fr: '/mentions-legales.html', en: '/en/legal-mentions.html' },
+    '/a-propos': { fr: '/a-propos', en: '/en/about' },
+    '/about': { fr: '/a-propos', en: '/en/about' },
+    '/mentions-legales': { fr: '/mentions-legales', en: '/en/legal-mentions' },
+    '/legal-mentions': { fr: '/mentions-legales', en: '/en/legal-mentions' },
   };
 
   if (routeMap[norm]) {
@@ -38,10 +38,11 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
   }
 
   // Fallback for general routes (/destinations, /tours/..., /blog/...)
+  const cleanBase = base.replace(/\.html$/, '').replace(/\/$/, '');
   if (targetLang === 'en') {
-    if (base === '/' || base === '') return '/en/';
-    return `/en${base.endsWith('.html') || base.includes('/tours/') || base.includes('/destinations/') || base.includes('/blog/') ? base : base + '.html'}`;
+    if (cleanBase === '' || cleanBase === '/') return '/en/';
+    return `/en${cleanBase}`;
   } else {
-    return base === '' ? '/' : base;
+    return cleanBase === '' ? '/' : cleanBase;
   }
 }

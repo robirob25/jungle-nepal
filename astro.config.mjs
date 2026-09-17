@@ -11,7 +11,7 @@ export default defineConfig({
     }
   },
   build: {
-    format: 'file'
+    format: 'directory'
   },
   server: {
     port: 8088,
