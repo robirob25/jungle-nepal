@@ -1002,6 +1002,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
       var payload = {
         _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
+        _template: "table",
+        _captcha: "false",
+        _replyto: email,
         type_demande: "Réservation Expédition Circuit",
         circuit: config.title || "Circuit Jungle Nepal",
         date_depart_souhaitee: dateVal,
