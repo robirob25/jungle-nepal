@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://junglenepal.com/</loc>
     <lastmod>2026-09-18</lastmod>
@@ -9,6 +10,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tigre_bardia.webp</image:loc>
+      <image:title>Safari et tracking du tigre au Népal</image:title>
+      <image:caption>Tigre du Bengale sauvage (Panthera tigris) dans son habitat naturel de jungle tropicale au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/</loc>
@@ -18,6 +24,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tigre_bardia.webp</image:loc>
+      <image:title>Nepal wildlife and tiger safari</image:title>
+      <image:caption>Wild Bengal tiger (Panthera tigris) in its natural tropical jungle habitat in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/</loc>
@@ -27,6 +38,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/tigre_bengale_traversee_riviere.webp</image:loc>
+      <image:title>Blog et guides safari au Népal</image:title>
+      <image:caption>Tigre du Bengale (Panthera tigris) traversant une rivière dans les cours d'eau de la forêt de sals au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/</loc>
@@ -36,6 +52,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/tigre_bengale_traversee_riviere.webp</image:loc>
+      <image:title>Nepal safari blog and field guides</image:title>
+      <image:caption>Bengal tiger (Panthera tigris) crossing a river channel through the riverbeds of the sal forest in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/contact/</loc>
@@ -63,6 +84,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/a-propos/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/a-propos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/a-propos/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/img_3.webp</image:loc>
+      <image:title>Équipe Jungle Nepal Adventure</image:title>
+      <image:caption>Observation de la faune sauvage et safari (img 3) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/a-propos/</loc>
@@ -72,6 +98,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/a-propos/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/a-propos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/a-propos/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/img_3.webp</image:loc>
+      <image:title>Jungle Nepal Adventure Team</image:title>
+      <image:caption>Wildlife observation and jungle safari (img 3) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/mentions-legales/</loc>
@@ -99,6 +130,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/destinations/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/destinations/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/destinations/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/rhino_unicorne_brume.webp</image:loc>
+      <image:title>Destinations safaris au Népal</image:title>
+      <image:caption>Grand rhinocéros unicorne (Rhinoceros unicornis) émergeant de la brume matinale dans les prairies humides alluviales au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/destinations/</loc>
@@ -108,6 +144,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/destinations/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/destinations/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/destinations/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/rhino_unicorne_brume.webp</image:loc>
+      <image:title>Nepal safari destinations</image:title>
+      <image:caption>Greater one-horned rhinoceros (Rhinoceros unicornis) emerging through morning mist in the damp alluvial floodplains in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/destinations/bardia/</loc>
@@ -207,6 +248,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/jungle-extreme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/jungle-extreme/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/jungle-extreme/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp</image:loc>
+      <image:title>Jungle extrême – spécial faune sauvage</image:title>
+      <image:caption>Léopard indien (Panthera pardus fusca) camouflé dans les branchages dans la frondaison d'un arbre de sal au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/jungle-extreme/</loc>
@@ -216,6 +262,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/jungle-extreme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/jungle-extreme/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/jungle-extreme/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp</image:loc>
+      <image:title>Jungle extrême – spécial faune sauvage</image:title>
+      <image:caption>Indian leopard (Panthera pardus fusca) camouflaged among tree branches within the dense foliage of a sal tree in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/nepal-sauvage/</loc>
@@ -225,6 +276,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/nepal-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/nepal-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/nepal-sauvage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/himalayas_sunrise_peaks.webp</image:loc>
+      <image:title>Népal sauvage – de la jungle aux montagnes sacrées</image:title>
+      <image:caption>Observation de la faune sauvage et safari (himalayas sunrise peaks) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/nepal-sauvage/</loc>
@@ -234,6 +290,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/nepal-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/nepal-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/nepal-sauvage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/himalayas_sunrise_peaks.webp</image:loc>
+      <image:title>Népal sauvage – de la jungle aux montagnes sacrées</image:title>
+      <image:caption>Wildlife observation and jungle safari (himalayas sunrise peaks) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/chitwan-bardia-complete/</loc>
@@ -243,6 +304,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/chitwan-bardia-complete/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/chitwan-bardia-complete/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/chitwan-bardia-complete/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_tigre_bengale2.webp</image:loc>
+      <image:title>Chitwan + Bardia – l’aventure jungle complète</image:title>
+      <image:caption>Tigre du Bengale sauvage (Panthera tigris) dans son habitat naturel de jungle tropicale au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/chitwan-bardia-complete/</loc>
@@ -252,6 +318,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/chitwan-bardia-complete/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/chitwan-bardia-complete/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/chitwan-bardia-complete/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_tigre_bengale2.webp</image:loc>
+      <image:title>Chitwan + Bardia – l’aventure jungle complète</image:title>
+      <image:caption>Wild Bengal tiger (Panthera tigris) in its natural tropical jungle habitat in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/bardia-explorateur/</loc>
@@ -261,6 +332,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-explorateur/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-explorateur/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-explorateur/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tigre_bardia.webp</image:loc>
+      <image:title>Bardia explorateur – 5 jours dans la jungle</image:title>
+      <image:caption>Tigre du Bengale sauvage (Panthera tigris) dans son habitat naturel de jungle tropicale au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/bardia-explorateur/</loc>
@@ -270,6 +346,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-explorateur/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-explorateur/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-explorateur/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tigre_bardia.webp</image:loc>
+      <image:title>Bardia explorateur – 5 jours dans la jungle</image:title>
+      <image:caption>Wild Bengal tiger (Panthera tigris) in its natural tropical jungle habitat in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/chitwan-culture/</loc>
@@ -279,6 +360,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/chitwan-culture/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/chitwan-culture/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/chitwan-culture/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/chitwan_rhino.webp</image:loc>
+      <image:title>Chitwan – culture et jungle sauvage</image:title>
+      <image:caption>Grand rhinocéros d'Asie (Rhinoceros unicornis) au cœur des savanes d'herbes géantes au parc national de Chitwan, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/chitwan-culture/</loc>
@@ -288,6 +374,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/chitwan-culture/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/chitwan-culture/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/chitwan-culture/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/chitwan_rhino.webp</image:loc>
+      <image:title>Chitwan – culture et jungle sauvage</image:title>
+      <image:caption>Asian greater one-horned rhinoceros amidst towering elephant grasslands in Chitwan National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/rafting-safari/</loc>
@@ -297,6 +388,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/rafting-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/rafting-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/rafting-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bardia_river.webp</image:loc>
+      <image:title>Rivières sauvages et patrimoines cachés – expédition et rafting</image:title>
+      <image:caption>Guide naturaliste et pisteurs locaux en safari à pied d'observation de la faune en immersion totale dans la forêt primaire au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/rafting-safari/</loc>
@@ -306,6 +402,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/rafting-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/rafting-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/rafting-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bardia_river.webp</image:loc>
+      <image:title>Rivières sauvages et patrimoines cachés – expédition et rafting</image:title>
+      <image:caption>Local naturalist guides and wildlife trackers on foot safari deep inside the primary tropical forest in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/bardia-nuit-sauvage/</loc>
@@ -315,6 +416,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-nuit-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-nuit-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-nuit-sauvage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/camping_sauvage_bardia.webp</image:loc>
+      <image:title>Bardia – aventure immersive en jungle et camping sauvage</image:title>
+      <image:caption>Campement de bivouac sauvage et safari nature Jungle Nepal Adventure au bord de la rivière Babai au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/bardia-nuit-sauvage/</loc>
@@ -324,6 +430,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-nuit-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-nuit-sauvage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-nuit-sauvage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/camping_sauvage_bardia.webp</image:loc>
+      <image:title>Bardia – aventure immersive en jungle et camping sauvage</image:title>
+      <image:caption>Wild jungle wilderness campsite with Jungle Nepal Adventure along the remote Babai River in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/rara-lake-bardia/</loc>
@@ -333,6 +444,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/rara-lake-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/rara-lake-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/rara-lake-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/lac_rara_orig.webp</image:loc>
+      <image:title>Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus</image:title>
+      <image:caption>Observation de la faune sauvage et safari (lac rara orig) au parc national du lac Rara, haut Himalaya népalais</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/rara-lake-bardia/</loc>
@@ -342,6 +458,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/rara-lake-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/rara-lake-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/rara-lake-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/lac_rara_orig.webp</image:loc>
+      <image:title>Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus</image:title>
+      <image:caption>Wildlife observation and jungle safari (lac rara orig) in Rara Lake National Park, High Himalayas, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/bardia-babai-camping/</loc>
@@ -351,6 +472,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-babai-camping/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-babai-camping/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-babai-camping/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/babai_walk.webp</image:loc>
+      <image:title>Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée</image:title>
+      <image:caption>Observation de la faune sauvage et safari (babai walk) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/bardia-babai-camping/</loc>
@@ -360,6 +486,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/bardia-babai-camping/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/bardia-babai-camping/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/bardia-babai-camping/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/babai_walk.webp</image:loc>
+      <image:title>Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée</image:title>
+      <image:caption>Wildlife observation and jungle safari (babai walk) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/nepal-immersion-totale/</loc>
@@ -369,6 +500,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/nepal-immersion-totale/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/nepal-immersion-totale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/nepal-immersion-totale/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp</image:loc>
+      <image:title>Népal – immersion totale : culture, vie sauvage et aventure</image:title>
+      <image:caption>Guide naturaliste et pisteurs locaux en safari à pied d'observation de la faune en immersion totale dans la forêt primaire au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/nepal-immersion-totale/</loc>
@@ -378,6 +514,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/nepal-immersion-totale/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/nepal-immersion-totale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/nepal-immersion-totale/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp</image:loc>
+      <image:title>Népal – immersion totale : culture, vie sauvage et aventure</image:title>
+      <image:caption>Local naturalist guides and wildlife trackers on foot safari deep inside the primary tropical forest in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/babai-special/</loc>
@@ -387,6 +528,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/babai-special/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/babai-special/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/babai-special/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/elephant_bardia.webp</image:loc>
+      <image:title>Deep into the wild : Babai spécial experience – 5 jours</image:title>
+      <image:caption>Grand éléphant sauvage d'Asie (Elephas maximus) traversant les savanes inondables au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/babai-special/</loc>
@@ -396,6 +542,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/babai-special/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/babai-special/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/babai-special/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/elephant_bardia.webp</image:loc>
+      <image:title>Deep into the wild : Babai spécial experience – 5 jours</image:title>
+      <image:caption>Majestic wild Asian bull elephant (Elephas maximus) crossing the vast alluvial floodplains in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/tiji-mustang/</loc>
@@ -405,6 +556,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/tiji-mustang/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/tiji-mustang/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/tiji-mustang/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tiji_festival_orig.webp</image:loc>
+      <image:title>Tiji Festival – Upper Mustang</image:title>
+      <image:caption>Observation de la faune sauvage et safari (tiji festival orig) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/tiji-mustang/</loc>
@@ -414,6 +570,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/tiji-mustang/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/tiji-mustang/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/tiji-mustang/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/tiji_festival_orig.webp</image:loc>
+      <image:title>Tiji Festival – Upper Mustang</image:title>
+      <image:caption>Wildlife observation and jungle safari (tiji festival orig) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/carnet-de-voyage/</loc>
@@ -423,6 +584,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/carnet-de-voyage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/carnet-de-voyage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/carnet-de-voyage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/antoine_wild5.webp</image:loc>
+      <image:title>Népal – carnet de dessin et de voyage – 15 jours</image:title>
+      <image:caption>Observation de la faune sauvage et safari (antoine wild5) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/carnet-de-voyage/</loc>
@@ -432,6 +598,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/carnet-de-voyage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/carnet-de-voyage/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/carnet-de-voyage/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/antoine_wild5.webp</image:loc>
+      <image:title>Népal – carnet de dessin et de voyage – 15 jours</image:title>
+      <image:caption>Wildlife observation and jungle safari (antoine wild5) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/immersion-spirituelle/</loc>
@@ -441,6 +612,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/immersion-spirituelle/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/immersion-spirituelle/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/immersion-spirituelle/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/temple_sacred.webp</image:loc>
+      <image:title>Immersion spirituelle en Himalaya</image:title>
+      <image:caption>Grand Stupa bouddhiste sacré de Boudhanath orné de drapeaux de prières au cœur du patrimoine spirituel népalais au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/immersion-spirituelle/</loc>
@@ -450,6 +626,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/immersion-spirituelle/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/immersion-spirituelle/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/immersion-spirituelle/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/original_site/temple_sacred.webp</image:loc>
+      <image:title>Immersion spirituelle en Himalaya</image:title>
+      <image:caption>Sacred Buddhist Boudhanath Stupa draped with prayer flags in the historic spiritual heart of Kathmandu in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/tours/panthere-des-neiges/</loc>
@@ -459,6 +640,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/panthere-des-neiges/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/panthere-des-neiges/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/panthere-des-neiges/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/snow-leopard/snow_leopard_portrait.webp</image:loc>
+      <image:title>Expédition : panthère des neiges exclusive (17 jours)</image:title>
+      <image:caption>Panthère des neiges (Panthera uncia), le fantôme de l'Himalaya sur une falaise rocheuse escarpée balayée par les vents au hautes vallées himalayennes du Mustang et Dolpo, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/tours/panthere-des-neiges/</loc>
@@ -468,6 +654,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/tours/panthere-des-neiges/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/tours/panthere-des-neiges/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/tours/panthere-des-neiges/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/snow-leopard/snow_leopard_portrait.webp</image:loc>
+      <image:title>Expédition : panthère des neiges exclusive (17 jours)</image:title>
+      <image:caption>Snow leopard (Panthera uncia), ghost of the high Himalayas upon a steep, wind-swept rocky crag in high Himalayan valleys of Mustang and Dolpo, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/voir-des-tigres-au-nepal/</loc>
@@ -477,6 +668,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/voir-des-tigres-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/voir-des-tigres-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/voir-des-tigres-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/33.png</image:loc>
+      <image:title>Où voir des tigres au Népal : les meilleurs parcs pour observer le tigre du Bengale</image:title>
+      <image:caption>Observation de la faune sauvage et safari (33) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/voir-des-tigres-au-nepal/</loc>
@@ -486,6 +682,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/voir-des-tigres-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/voir-des-tigres-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/voir-des-tigres-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/33.png</image:loc>
+      <image:title>Où voir des tigres in Nepal : les meilleurs parcs pour observer le tigre du Bengale</image:title>
+      <image:caption>Wildlife observation and jungle safari (33) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal/</loc>
@@ -495,6 +696,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-complet-parc-national-de-bardia-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC08889.jpg</image:loc>
+      <image:title>Guide complet du parc national de Bardia : tigres, safaris et conseils (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (dsc08889) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/guide-complet-parc-national-de-bardia-nepal/</loc>
@@ -504,6 +710,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-complet-parc-national-de-bardia-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC08889.jpg</image:loc>
+      <image:title>Guide complet du parc national de Bardia : tigres, safaris et conseils (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (dsc08889) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/prix-dun-safari-au-nepal/</loc>
@@ -513,6 +724,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/prix-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/prix-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/prix-dun-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/12.png</image:loc>
+      <image:title>Combien coûte un safari au Népal : prix, budget et conseils</image:title>
+      <image:caption>Observation de la faune sauvage et safari (12) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/prix-dun-safari-au-nepal/</loc>
@@ -522,24 +738,39 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/prix-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/prix-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/prix-dun-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/12.png</image:loc>
+      <image:title>Combien coûte un safari in Nepal : prix, budget et conseils</image:title>
+      <image:caption>Wildlife observation and jungle safari (12) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir/</loc>
     <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/14.png</image:loc>
+      <image:title>Bardia ou Chitwan : quel parc choisir pour un safari au Népal ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (14) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/bardia-ou-chitwan-quel-parc-choisir/</loc>
     <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/14.png</image:loc>
+      <image:title>Bardia ou Chitwan : quel parc choisir pour un safari in Nepal ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (14) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/</loc>
@@ -549,6 +780,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/tigre_bengale_traversee_riviere.webp</image:loc>
+      <image:title>Safari Népal vs safari Inde (Ranthambore, Corbett) : pourquoi le Népal offre une expérience plus brute et à pied (2026)</image:title>
+      <image:caption>Tigre du Bengale (Panthera tigris) traversant une rivière dans les cours d'eau de la forêt de sals au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/</loc>
@@ -558,6 +794,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/tigre_bengale_traversee_riviere.webp</image:loc>
+      <image:title>Nepal vs India Safari (Ranthambore, Corbett): Why Nepal Offers a Rawer, Walking Experience (2026)</image:title>
+      <image:caption>Bengal tiger (Panthera tigris) crossing a river channel through the riverbeds of the sal forest in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal/</loc>
@@ -567,6 +808,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comment-organiser-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/6-1.png</image:loc>
+      <image:title>Comment organiser un safari au Népal : guide complet pour préparer votre aventure</image:title>
+      <image:caption>Observation de la faune sauvage et safari (6 1) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/comment-organiser-un-safari-au-nepal/</loc>
@@ -576,6 +822,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comment-organiser-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/6-1.png</image:loc>
+      <image:title>Comment organiser un safari in Nepal : guide complet pour préparer votre aventure</image:title>
+      <image:caption>Wildlife observation and jungle safari (6 1) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet/</loc>
@@ -585,6 +836,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-a-pied-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC02283.jpg</image:loc>
+      <image:title>Safari à pied au Népal : guide complet du walking safari à Bardia (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (dsc02283) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-a-pied-au-nepal-guide-complet/</loc>
@@ -594,6 +850,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-a-pied-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC02283.jpg</image:loc>
+      <image:title>Walking Safari in Nepal: Complete Guide to Bardia Walking Safaris (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (dsc02283) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/</loc>
@@ -603,6 +864,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp</image:loc>
+      <image:title>L'art du pistage en jungle au Népal : traces, cris d'alarme et secrets des guides (2026)</image:title>
+      <image:caption>Tigre du Bengale sauvage (Panthera tigris) dans son habitat naturel de jungle tropicale au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/</loc>
@@ -612,6 +878,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/art-du-pistage-jungle-nepal-traces-cris-alarme/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp</image:loc>
+      <image:title>The Art of Jungle Tracking in Nepal: Pugmarks, Alarm Calls, and Tracker Secrets (2026)</image:title>
+      <image:caption>Wild Bengal tiger (Panthera tigris) in its natural tropical jungle habitat in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal/</loc>
@@ -621,6 +892,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-parc-national-de-chitwan-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/17.png</image:loc>
+      <image:title>Guide complet du parc national de Chitwan : safari, faune et conseils</image:title>
+      <image:caption>Observation de la faune sauvage et safari (17) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/guide-parc-national-de-chitwan-nepal/</loc>
@@ -630,6 +906,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-parc-national-de-chitwan-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/17.png</image:loc>
+      <image:title>Guide complet du parc national de Chitwan : safari, faune et conseils</image:title>
+      <image:caption>Wildlife observation and jungle safari (17) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide/</loc>
@@ -639,6 +920,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/43.png</image:loc>
+      <image:title>Quand partir au Népal pour un safari : guide des meilleures saisons</image:title>
+      <image:caption>Observation de la faune sauvage et safari (43) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/quand-partir-au-nepal-pour-un-safari-guide/</loc>
@@ -648,6 +934,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/43.png</image:loc>
+      <image:title>Quand partir in Nepal pour un safari : guide des meilleures saisons</image:title>
+      <image:caption>Wildlife observation and jungle safari (43) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia/</loc>
@@ -657,6 +948,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/pister-le-tigre-du-bengale-a-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-06-0000273210-Safari-pirogue-a-Chitwan-scaled.jpg</image:loc>
+      <image:title>Pister le tigre du Bengale à Bardia : récit, chances de vue et photos réelles d’un safari au Népal</image:title>
+      <image:caption>Safari fluvial silencieux en pirogue traditionnelle en bois glissant sur les eaux calmes de la rivière au parc national de Chitwan, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/pister-le-tigre-du-bengale-a-bardia/</loc>
@@ -666,6 +962,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/pister-le-tigre-du-bengale-a-bardia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-06-0000273210-Safari-pirogue-a-Chitwan-scaled.jpg</image:loc>
+      <image:title>Pister le Tigre du Bengale in Bardia : Récit, chances de vue et photos réelles d’un safari in Nepal</image:title>
+      <image:caption>Silent river safari in a traditional wooden dugout canoe gliding along calm river channels in Chitwan National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/</loc>
@@ -675,6 +976,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bardia_camp.webp</image:loc>
+      <image:title>Santé, paludisme et vaccins pour un safari au Népal : conseils et précautions dans le Teraï (2026)</image:title>
+      <image:caption>Campement de bivouac sauvage et safari nature Jungle Nepal Adventure au bord de la rivière Babai au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/</loc>
@@ -684,6 +990,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/sante-paludisme-vaccins-safari-nepal-conseils-medicaux/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/adrien_bardia_camp.webp</image:loc>
+      <image:title>Health, Malaria, and Vaccines for a Nepal Safari: Field Medical Advice in the Terai (2026)</image:title>
+      <image:caption>Wild jungle wilderness campsite with Jungle Nepal Adventure along the remote Babai River in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/</loc>
@@ -693,6 +1004,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-10-0000275395-LArbre-scaled.jpg</image:loc>
+      <image:title>Safari Bardia : prix, forfaits et ce que ça inclut (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (2026 05 10 0000275395 larbre scaled) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/</loc>
@@ -702,6 +1018,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-10-0000275395-LArbre-scaled.jpg</image:loc>
+      <image:title>Safari Bardia : Prix, Forfaits et Ce Que Ça Inclut (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (2026 05 10 0000275395 larbre scaled) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal/</loc>
@@ -711,6 +1032,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/7.png</image:loc>
+      <image:title>Combien de jours prévoir pour un safari au Népal ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (7) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/combien-de-jours-pour-un-safari-au-nepal/</loc>
@@ -720,6 +1046,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/7.png</image:loc>
+      <image:title>Combien de jours prévoir pour un safari in Nepal ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (7) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta/</loc>
@@ -729,6 +1060,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-complet-parc-national-de-suklaphanta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/Suklaphanta-cerf.jpg</image:loc>
+      <image:title>Parc national de Suklaphanta : guide complet pour un safari au Népal</image:title>
+      <image:caption>Observation de la faune sauvage et safari (suklaphanta cerf) au réserve faunique de Suklaphanta, Teraï occidental, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/guide-complet-parc-national-de-suklaphanta/</loc>
@@ -738,6 +1074,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/guide-complet-parc-national-de-suklaphanta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/Suklaphanta-cerf.jpg</image:loc>
+      <image:title>Parc national de Suklaphanta : guide complet pour un safari in Nepal</image:title>
+      <image:caption>Wildlife observation and jungle safari (suklaphanta cerf) in Suklaphanta Wildlife Reserve, Western Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet/</loc>
@@ -747,6 +1088,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC06483.jpg</image:loc>
+      <image:title>Combiner trek et safari au Népal : guide complet entre Himalaya et jungle</image:title>
+      <image:caption>Observation de la faune sauvage et safari (dsc06483) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/combiner-trek-et-safari-au-nepal-guide-complet/</loc>
@@ -756,6 +1102,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC06483.jpg</image:loc>
+      <image:title>Combiner trek et safari in Nepal : guide complet entre Himalaya et jungle</image:title>
+      <image:caption>Wildlife observation and jungle safari (dsc06483) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/</loc>
@@ -765,6 +1116,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-08-0000274123-Le-Repos-du-Materiel-scaled.jpg</image:loc>
+      <image:title>Camping safari à Bardia : nuits en pleine jungle au Népal (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (2026 05 08 0000274123 le repos du materiel scaled) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/</loc>
@@ -774,6 +1130,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-08-0000274123-Le-Repos-du-Materiel-scaled.jpg</image:loc>
+      <image:title>Camping Safari in Bardia : Nuits en Pleine Jungle in Nepal (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (2026 05 08 0000274123 le repos du materiel scaled) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/leopard-indien-panthere-nepal-guide-safari/</loc>
@@ -783,6 +1144,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/leopard-indien-panthere-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/leopard-indien-panthere-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/leopard-indien-panthere-nepal-guide-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/leopard_indien_camouflage.webp</image:loc>
+      <image:title>Le léopard indien au Népal : guide d'observation, territoires et rivalité avec le tigre (2026)</image:title>
+      <image:caption>Léopard indien (Panthera pardus fusca) camouflé dans les branchages dans la frondaison d'un arbre de sal au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/leopard-indien-panthere-nepal-guide-safari/</loc>
@@ -792,6 +1158,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/leopard-indien-panthere-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/leopard-indien-panthere-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/leopard-indien-panthere-nepal-guide-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/leopard_indien_camouflage.webp</image:loc>
+      <image:title>The Indian Leopard in Nepal: Wildlife Guide, Territories, and Coexistence with Tigers (2026)</image:title>
+      <image:caption>Indian leopard (Panthera pardus fusca) camouflaged among tree branches within the dense foliage of a sal tree in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/</loc>
@@ -801,6 +1172,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/calao_bicorne_canopee.webp</image:loc>
+      <image:title>Nos oiseaux préférés de Bardia : les calaos et joyaux ailés du Teraï (2026)</image:title>
+      <image:caption>Grand calao bicorne (Buceros bicornis) perché au sommet de la canopée sur une branche maîtresse de figuier sauvage au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/</loc>
@@ -810,6 +1186,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/oiseaux-bardia-calao-bicorne-rollier-indien-tchitrec-paradis/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/calao_bicorne_canopee.webp</image:loc>
+      <image:title>Our Favorite Birds of Bardia: Great Hornbill, Indian Roller & Paradise Flycatcher (2026)</image:title>
+      <image:caption>Great Hornbill (Buceros bicornis) perched atop the primary canopy upon a massive wild fig branch in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils/</loc>
@@ -819,6 +1200,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-09-0000274579-Elephant-on-the-road-scaled.jpg</image:loc>
+      <image:title>Safari photo au Népal : conseils, matériel et meilleurs spots (2026)</image:title>
+      <image:caption>Grand éléphant sauvage d'Asie (Elephas maximus) traversant les savanes inondables au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-photo-au-nepal-spots-materiel-conseils/</loc>
@@ -828,6 +1214,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-09-0000274579-Elephant-on-the-road-scaled.jpg</image:loc>
+      <image:title>Photo Safari in Nepal: Tips, Camera Gear & Best Spots (2026)</image:title>
+      <image:caption>Majestic wild Asian bull elephant (Elephas maximus) crossing the vast alluvial floodplains in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche/</loc>
@@ -837,6 +1228,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC00246.jpg</image:loc>
+      <image:title>Le safari éthique au Népal : pourquoi privilégier la jeep et la marche ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (dsc00246) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/le-safari-ethique-au-nepal-privilegier-la-marche/</loc>
@@ -846,6 +1242,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/DSC00246.jpg</image:loc>
+      <image:title>Le Safari Éthique in Nepal : Pourquoi privilégier la Jeep et la marche ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (dsc00246) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/agence-safari-nepal-francophone/</loc>
@@ -855,6 +1256,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/agence-safari-nepal-francophone/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/agence-safari-nepal-francophone/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/agence-safari-nepal-francophone/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/3c0aa0ce-9964-466e-86b3-225f0fb8c69f.jpg</image:loc>
+      <image:title>Agence safari Népal francophone : l'expertise Jungle Nepal Adventure</image:title>
+      <image:caption>Observation de la faune sauvage et safari (3c0aa0ce 9964 466e 86b3 225f0fb8c69f) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/agence-safari-nepal-francophone/</loc>
@@ -864,6 +1270,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/agence-safari-nepal-francophone/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/agence-safari-nepal-francophone/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/agence-safari-nepal-francophone/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/3c0aa0ce-9964-466e-86b3-225f0fb8c69f.jpg</image:loc>
+      <image:title>Agence Safari Népal Francophone : L'Expertise Jungle Nepal Adventure</image:title>
+      <image:caption>Wildlife observation and jungle safari (3c0aa0ce 9964 466e 86b3 225f0fb8c69f) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/sac-safari-nepal/</loc>
@@ -873,6 +1284,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/sac-safari-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/sac-safari-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/sac-safari-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/1.png</image:loc>
+      <image:title>Que mettre dans son sac pour un safari au Népal ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (1) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/sac-safari-nepal/</loc>
@@ -882,6 +1298,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/sac-safari-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/sac-safari-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/sac-safari-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/1.png</image:loc>
+      <image:title>Que mettre dans son sac pour un safari in Nepal ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (1) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite/</loc>
@@ -891,6 +1312,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-en-famille-guide-securite/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-09-0000274716-Mere-et-son-petit-Elephant-dAsie-Elephas-maximus-scaled.jpg</image:loc>
+      <image:title>Safari Népal en famille : guide pratique et sécurité (2026)</image:title>
+      <image:caption>Éléphante d'Asie sauvage (Elephas maximus) et son petit éléphanteau longeant un corridor forestier tropical au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-nepal-en-famille-guide-securite/</loc>
@@ -900,6 +1326,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-en-famille-guide-securite/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-09-0000274716-Mere-et-son-petit-Elephant-dAsie-Elephas-maximus-scaled.jpg</image:loc>
+      <image:title>Safari Népal en famille : Guide pratique et sécurité (2026)</image:title>
+      <image:caption>Wild Asian elephant cow (Elephas maximus) accompanying her young calf navigating a tropical riverine corridor in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/condition-physique-safari-a-pied-nepal/</loc>
@@ -909,6 +1340,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/condition-physique-safari-a-pied-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/condition-physique-safari-a-pied-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/condition-physique-safari-a-pied-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_safari_a_pied.webp</image:loc>
+      <image:title>Condition physique et safari à pied au Népal : faut-il être sportif ? (guide 2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (julien safari a pied) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/condition-physique-safari-a-pied-nepal/</loc>
@@ -918,6 +1354,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/condition-physique-safari-a-pied-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/condition-physique-safari-a-pied-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/condition-physique-safari-a-pied-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_photos/julien_safari_a_pied.webp</image:loc>
+      <image:title>Physical Fitness & Walking Safari in Nepal: Do You Need to Be an Athlete? (2026 Guide)</image:title>
+      <image:caption>Wildlife observation and jungle safari (julien safari a pied) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal/</loc>
@@ -927,6 +1368,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/45-1.png</image:loc>
+      <image:title>Quels animaux peut-on voir lors d’un safari au Népal ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (45 1) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/quels-animaux-voir-lors-dun-safari-au-nepal/</loc>
@@ -936,6 +1382,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/45-1.png</image:loc>
+      <image:title>Quels animaux peut-on voir lors d’un safari in Nepal ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (45 1) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/comportement-du-tigre-du-bengale/</loc>
@@ -945,6 +1396,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comportement-du-tigre-du-bengale/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comportement-du-tigre-du-bengale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comportement-du-tigre-du-bengale/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/20.png</image:loc>
+      <image:title>Le comportement du tigre du Bengale : comprendre le roi de la jungle</image:title>
+      <image:caption>Observation de la faune sauvage et safari (20) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/comportement-du-tigre-du-bengale/</loc>
@@ -954,6 +1410,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comportement-du-tigre-du-bengale/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comportement-du-tigre-du-bengale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comportement-du-tigre-du-bengale/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/20.png</image:loc>
+      <image:title>Le comportement du tigre du Bengale : comprendre le roi de la jungle</image:title>
+      <image:caption>Wildlife observation and jungle safari (20) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis/</loc>
@@ -963,6 +1424,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comportement-du-rhinoceros-unicornis/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/11-1.png</image:loc>
+      <image:title>Le comportement du rhinocéros unicornis : comprendre ce géant du Népal</image:title>
+      <image:caption>Observation de la faune sauvage et safari (11 1) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/comportement-du-rhinoceros-unicornis/</loc>
@@ -972,6 +1438,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/comportement-du-rhinoceros-unicornis/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/11-1.png</image:loc>
+      <image:title>Le comportement du rhinocéros unicornis : comprendre ce géant du Népal</image:title>
+      <image:caption>Wildlife observation and jungle safari (11 1) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/elephant-sauvage-nepal-guide-safari/</loc>
@@ -981,6 +1452,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/elephant-sauvage-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/elephant-sauvage-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/elephant-sauvage-nepal-guide-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/Elephant_d_Asie_1.webp</image:loc>
+      <image:title>L’éléphant sauvage d’Asie au Népal : géants du Teraï, migrations et pistage (2026)</image:title>
+      <image:caption>Grand éléphant sauvage d'Asie (Elephas maximus) traversant les savanes inondables au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/elephant-sauvage-nepal-guide-safari/</loc>
@@ -990,6 +1466,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/elephant-sauvage-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/elephant-sauvage-nepal-guide-safari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/elephant-sauvage-nepal-guide-safari/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/Elephant_d_Asie_1.webp</image:loc>
+      <image:title>Wild Asian Elephants in Nepal: Terai Giants & Safe Tracking Guide (2026)</image:title>
+      <image:caption>Majestic wild Asian bull elephant (Elephas maximus) crossing the vast alluvial floodplains in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/gavial-du-gange-crocodiles-nepal-guide/</loc>
@@ -999,6 +1480,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/gavial_gange_nage_riviere.webp</image:loc>
+      <image:title>Le gavial du Gange et le crocodile des marais au Népal : guide d'observation (2026)</image:title>
+      <image:caption>Gavial du Gange (Gavialis gangeticus) au museau effilé thermorégulant au soleil sur un banc de sable préservé de la rivière Karnali au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/gavial-du-gange-crocodiles-nepal-guide/</loc>
@@ -1008,6 +1494,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/gavial-du-gange-crocodiles-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/gavial_gange_nage_riviere.webp</image:loc>
+      <image:title>Gharials and Mugger Crocodiles in Nepal: Ultimate Wildlife Guide (2026)</image:title>
+      <image:caption>Gharial crocodile (Gavialis gangeticus) with slender snout basking in the sun on a pristine sandbar along the Karnali River in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-pirogue-rafting-nepal-guide/</loc>
@@ -1017,6 +1508,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-pirogue-rafting-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-pirogue-rafting-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-pirogue-rafting-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-06_-_0000273210_-_Safari_pirogue___Chitwan.webp</image:loc>
+      <image:title>Safari en pirogue et rafting au Népal : observer la faune au fil de l'eau (2026)</image:title>
+      <image:caption>Safari fluvial silencieux en pirogue traditionnelle en bois glissant sur les eaux calmes de la rivière au parc national de Chitwan, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-pirogue-rafting-nepal-guide/</loc>
@@ -1026,6 +1522,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-pirogue-rafting-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-pirogue-rafting-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-pirogue-rafting-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-06_-_0000273210_-_Safari_pirogue___Chitwan.webp</image:loc>
+      <image:title>Canoe Safari and Wildlife Rafting in Nepal: River Expeditions (2026 Guide)</image:title>
+      <image:caption>Silent river safari in a traditional wooden dugout canoe gliding along calm river channels in Chitwan National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/panthere-des-neiges-au-nepal/</loc>
@@ -1035,6 +1536,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/panthere-des-neiges-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/panthere-des-neiges-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/panthere-des-neiges-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-03-0000272161-Boudhanath-Temple-scaled.jpg</image:loc>
+      <image:title>Panthère des neiges au Népal : expédition, chances et réalité (2026)</image:title>
+      <image:caption>Grand Stupa bouddhiste sacré de Boudhanath orné de drapeaux de prières au cœur du patrimoine spirituel népalais au vallée de Katmandou, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/panthere-des-neiges-au-nepal/</loc>
@@ -1044,6 +1550,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/panthere-des-neiges-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/panthere-des-neiges-au-nepal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/panthere-des-neiges-au-nepal/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/2026-05-03-0000272161-Boudhanath-Temple-scaled.jpg</image:loc>
+      <image:title>Panthère des Neiges in Nepal : Expédition, Chances et Réalité (2026)</image:title>
+      <image:caption>Sacred Buddhist Boudhanath Stupa draped with prayer flags in the historic spiritual heart of Kathmandu in Kathmandu Valley, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle/</loc>
@@ -1053,6 +1564,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/culture-tharu-nepal-immersion-jungle/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-11_-_0000275631_-_P_cheuse.webp</image:loc>
+      <image:title>Immersion chez le peuple Tharu au Népal : traditions, vie en jungle et savoir ancestral (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (2026 05 11   0000275631   p cheuse) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/culture-tharu-nepal-immersion-jungle/</loc>
@@ -1062,6 +1578,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/culture-tharu-nepal-immersion-jungle/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/2026-05-11_-_0000275631_-_P_cheuse.webp</image:loc>
+      <image:title>Tharu Culture in Nepal: Jungle Traditions, Village Life & Indigenous Tracking (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (2026 05 11   0000275631   p cheuse) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/</loc>
@@ -1071,6 +1592,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/calao-bicorne-great-hornbill-bardia-scaled.jpg</image:loc>
+      <image:title>Observer les oiseaux au Népal : guide complet du birdwatching à Bardia et Chitwan</image:title>
+      <image:caption>Grand calao bicorne (Buceros bicornis) perché au sommet de la canopée sur une branche maîtresse de figuier sauvage au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/</loc>
@@ -1080,6 +1606,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/calao-bicorne-great-hornbill-bardia-scaled.jpg</image:loc>
+      <image:title>Birdwatching in Nepal: Complete Guide to Birding in Bardia & Chitwan</image:title>
+      <image:caption>Great Hornbill (Buceros bicornis) perched atop the primary canopy upon a massive wild fig branch in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/</loc>
@@ -1089,6 +1620,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/aigle_serpentaire_drongo_ciel.webp</image:loc>
+      <image:title>Rapaces, chouettes et vautours du Népal : guide des oiseaux de proie du Teraï (2026)</image:title>
+      <image:caption>Observation de la faune sauvage et safari (aigle serpentaire drongo ciel) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/</loc>
@@ -1098,6 +1634,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/rapaces-chouettes-oiseaux-proie-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/aigle_serpentaire_drongo_ciel.webp</image:loc>
+      <image:title>Raptors, Owls and Vultures of Nepal: Guide to Birds of Prey (2026)</image:title>
+      <image:caption>Wildlife observation and jungle safari (aigle serpentaire drongo ciel) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/animaux-rares-safari-nepal-guide/</loc>
@@ -1107,6 +1648,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/animaux-rares-safari-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/animaux-rares-safari-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/animaux-rares-safari-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/Tigre_du_bengale_6.webp</image:loc>
+      <image:title>Les animaux les plus rares à observer en safari au Népal : guide des espèces secrètes (2026)</image:title>
+      <image:caption>Tigre du Bengale sauvage (Panthera tigris) dans son habitat naturel de jungle tropicale au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/animaux-rares-safari-nepal-guide/</loc>
@@ -1116,6 +1662,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/animaux-rares-safari-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/animaux-rares-safari-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/animaux-rares-safari-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/drive_wildlife/Tigre_du_bengale_6.webp</image:loc>
+      <image:title>Rare Wildlife in Nepal: Secret Species to Spot on a Jungle Safari (2026 Guide)</image:title>
+      <image:caption>Wild Bengal tiger (Panthera tigris) in its natural tropical jungle habitat in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/singes-nepal-langurs-macaques-guide/</loc>
@@ -1125,6 +1676,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/singes-nepal-langurs-macaques-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/singes-nepal-langurs-macaques-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/singes-nepal-langurs-macaques-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/langur_gris_cri_alarme.webp</image:loc>
+      <image:title>Les singes du Népal : langurs sacrés et macaques, sentinelles de la jungle (2026)</image:title>
+      <image:caption>Langur sacré d'Hanuman (Semnopithecus hector) servant de sentinelle anti-prédateur perché sur une termitière dans la forêt de sals au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/singes-nepal-langurs-macaques-guide/</loc>
@@ -1134,6 +1690,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/singes-nepal-langurs-macaques-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/singes-nepal-langurs-macaques-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/singes-nepal-langurs-macaques-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/langur_gris_cri_alarme.webp</image:loc>
+      <image:title>Monkeys of Nepal: Sacred Langurs & Macaques, Jungle Sentinels (2026 Guide)</image:title>
+      <image:caption>Hanuman Grey Langur (Semnopithecus hector) keeping watch as jungle sentinel perched atop a termite mound in the sal forest in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/</loc>
@@ -1143,6 +1704,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/nilgaut_male_taureau_bleu.webp</image:loc>
+      <image:title>L’antilope nilgaut et les cerfs sauvages du Népal : le taureau bleu et les ongulés du Teraï (2026)</image:title>
+      <image:caption>Antilope Nilgaut ou Taureau Bleu (Boselaphus tragocamelus) dans les plaines ouvertes et clairières sèches au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/</loc>
@@ -1152,6 +1718,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/nilgaut-cerfs-ongules-sauvages-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/nilgaut_male_taureau_bleu.webp</image:loc>
+      <image:title>Nilgai Antelope & Wild Deer of Nepal: Blue Bulls and Terai Ungulates (2026)</image:title>
+      <image:caption>Nilgai or Blue Bull antelope (Boselaphus tragocamelus) across open grasslands and scrub borders in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/reptiles-varans-agames-serpents-nepal-guide/</loc>
@@ -1161,6 +1732,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/varan_bengale_berges_sable.webp</image:loc>
+      <image:title>Varans, agames et serpents du Népal : guide des reptiles et créatures secrètes (2026)</image:title>
+      <image:caption>Varan du Bengale (Varanus bengalensis), dragon des terres basses longeant les berges sablonneuses de la jungle au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/reptiles-varans-agames-serpents-nepal-guide/</loc>
@@ -1170,6 +1746,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/reptiles-varans-agames-serpents-nepal-guide/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/curated_gallery/varan_bengale_berges_sable.webp</image:loc>
+      <image:title>Monitor Lizards, Agamas and Reptiles of Nepal: Secret Jungle Creatures (2026 Guide)</image:title>
+      <image:caption>Bengal monitor lizard (Varanus bengalensis) scouting along sandy riverbanks in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/trek-jungle-nepal-safari-pied/</loc>
@@ -1179,6 +1760,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/trek-jungle-nepal-safari-pied/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/trek-jungle-nepal-safari-pied/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/trek-jungle-nepal-safari-pied/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/Humain-13xxxx-scaled.jpg</image:loc>
+      <image:title>Trek en jungle au Népal : guide complet du safari à pied</image:title>
+      <image:caption>Observation de la faune sauvage et safari (humain 13xxxx scaled) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/trek-jungle-nepal-safari-pied/</loc>
@@ -1188,6 +1774,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/trek-jungle-nepal-safari-pied/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/trek-jungle-nepal-safari-pied/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/trek-jungle-nepal-safari-pied/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/Humain-13xxxx-scaled.jpg</image:loc>
+      <image:title>Trek en Jungle in Nepal : Guide Complet du Safari à Pied</image:title>
+      <image:caption>Wildlife observation and jungle safari (humain 13xxxx scaled) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir/</loc>
@@ -1197,6 +1788,11 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-ou-afrique-que-choisir/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/31.png</image:loc>
+      <image:title>Safari Népal ou Afrique : que choisir ?</image:title>
+      <image:caption>Observation de la faune sauvage et safari (31) au parc national de Bardia, Teraï, Népal</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://junglenepal.com/en/blog/safari-nepal-ou-afrique-que-choisir/</loc>
@@ -1206,5 +1802,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://junglenepal.com/en/blog/safari-nepal-ou-afrique-que-choisir/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir/"/>
+    <image:image>
+      <image:loc>https://junglenepal.com/assets/blog/31.png</image:loc>
+      <image:title>Safari Népal ou Afrique : que choisir ?</image:title>
+      <image:caption>Wildlife observation and jungle safari (31) in Bardia National Park, Terai, Nepal</image:caption>
+    </image:image>
   </url>
 </urlset>
