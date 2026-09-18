@@ -6,10 +6,9 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import posts from '../../../data/blog_posts.en.json';
 
-// Sort posts by date descending
-const sortedPosts = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-const featuredPost = posts.find(p => p.slug === 'voir-des-tigres-au-nepal') || sortedPosts[0];
-const otherPosts = sortedPosts.filter(p => p.slug !== featuredPost.slug);
+// Curated SEO priority order (Pillars & Highest intent queries first)
+const featuredPost = posts[0];
+const otherPosts = posts.slice(1);
 
 // Category counts for dynamic filter pills
 const categoryCounts = posts.reduce((acc, p) => {
