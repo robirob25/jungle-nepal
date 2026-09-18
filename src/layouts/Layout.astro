@@ -53,7 +53,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="preload" href="/assets/logo.webp" as="image" type="image/webp">
 
   <!-- Content Security Policy (Strict Security & XSS Mitigation) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://*.gstatic.com https://www.gstatic.com https://unpkg.com https://www.youtube.com https://s.ytimg.com https://www.googletagmanager.com https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://translate.googleapis.com https://fonts.googleapis.com https://*.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com https://*.gstatic.com data:; img-src 'self' data: https: blob: https://*.google-analytics.com https://*.googletagmanager.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com https://translate.google.com; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://*.gstatic.com https://www.gstatic.com https://unpkg.com https://www.youtube.com https://s.ytimg.com https://www.googletagmanager.com https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googleapis.com https://translate.googleapis.com https://translate-pa.googleapis.com https://formsubmit.co; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://translate.googleapis.com https://fonts.googleapis.com https://*.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com https://*.gstatic.com data:; img-src 'self' data: https: blob: https://*.google-analytics.com https://*.googletagmanager.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com https://translate.google.com; object-src 'none'; base-uri 'self';">
 
   <!-- Google tag (gtag.js) - Google Analytics 4 -->
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VZNY16DX6Y"></script>
@@ -900,6 +900,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         document.body.style.overflow = 'hidden';
       }
     };
+
+    window.openBookingForm = window.openTourBookingModal;
+    window.openBookingModal = window.openTourBookingModal;
 
     window.closeTourBookingModal = function() {
       var m = document.getElementById('tour-booking-modal');
