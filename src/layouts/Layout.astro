@@ -1189,6 +1189,80 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
       }
       return false;
     };
+
+    // Universal Tour Share Menu & Clipboard Handler
+    window.handleShareTour = function(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
+      var menu = document.getElementById('share-menu');
+      var pageUrl = window.location.href;
+      var pageTitle = document.title || 'Jungle Nepal Adventure';
+
+      if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        navigator.share({
+          title: pageTitle,
+          url: pageUrl
+        }).catch(function() {});
+        return;
+      }
+
+      if (!menu) return;
+      var isClosed = menu.classList.contains('opacity-0');
+      
+      if (!isClosed) {
+        menu.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+      } else {
+        var wa = document.getElementById('share-whatsapp');
+        if (wa) {
+          wa.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(pageTitle + ' ' + pageUrl);
+        }
+        var mail = document.getElementById('share-email');
+        if (mail) {
+          var isEn = document.documentElement.lang === 'en';
+          mail.href = 'mailto:?subject=' + encodeURIComponent(pageTitle) + '&body=' + encodeURIComponent((isEn ? 'Check out this journey in Nepal: ' : 'Découvrez ce voyage au Népal : ') + pageUrl);
+        }
+        menu.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+          lucide.createIcons();
+        }
+      }
+    };
+
+    window.copyTourLink = function() {
+      var pageUrl = window.location.href;
+      function showCopyToast() {
+        var isEn = document.documentElement.lang === 'en';
+        var copyBtn = document.querySelector('#share-menu button span');
+        if (copyBtn) {
+          var orig = copyBtn.textContent;
+          copyBtn.textContent = isEn ? '✓ Link copied!' : '✓ Lien copié !';
+          setTimeout(function() { copyBtn.textContent = orig; }, 2500);
+        }
+      }
+      function fallbackCopy() {
+        var input = document.createElement('input');
+        input.value = pageUrl;
+        document.body.appendChild(input);
+        input.select();
+        try {
+          document.execCommand('copy');
+          showCopyToast();
+        } catch (err) {}
+        document.body.removeChild(input);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(pageUrl).then(showCopyToast).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+    };
+
+    document.addEventListener('click', function(e) {
+      var shareBtn = document.getElementById('share-btn');
+      var shareMenu = document.getElementById('share-menu');
+      if (shareMenu && !shareMenu.contains(e.target) && (!shareBtn || !shareBtn.contains(e.target))) {
+        shareMenu.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+      }
+    });
   </script>
 
 
