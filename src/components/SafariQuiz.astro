@@ -56,20 +56,20 @@ const isEn = lang === 'en';
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Short stay (3 to 5 days)" : "Court séjour (3 à 5 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Express escape to Chitwan or Bardia from Kathmandu / Pokhara" : "Escapade express à Chitwan ou Bardia depuis Katmandou"}</div>
+              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Short stay (2 to 5 days)" : "Court séjour (2 à 5 jours)"}</div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Express escape to Chitwan, Bardia or Babai from Kathmandu / Pokhara" : "Escapade express à Chitwan, Bardia ou Babai depuis Katmandou"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
               <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "One week (6 to 9 days)" : "Une semaine (6 à 9 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Focused immersion without wasting transit time" : "Immersion complète sur un parc sans perte de temps"}</div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Focused wilderness immersion without wasting transit time" : "Immersion complète en jungle et bivouac sans perte de temps"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
               <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "The optimal duration for tracking, wild valleys, and balance" : "Le format idéal pour alterner pistes, vallées secrètes et repos"}</div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "The optimal duration for tracking, multi-parks, and Mustang" : "Le format idéal pour combiner les parcs, vallées secrètes ou le Mustang"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Grand expedition (15 to 22 days)" : "Grande immersion (15 à 22 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Full multi-park expeditions, Rara Lake, Mustang or cross-country" : "Expéditions intégrales, lac Rara, Mustang ou traversée totale"}</div>
+              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Grand expedition (15 to 18 days)" : "Grande immersion (15 à 18 jours)"}</div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Rara Lake, Snow Leopard, wild rafting or full Nepal crossing" : "Expéditions intégrales, lac Rara, panthère des neiges ou rafting"}</div>
             </button>
           </div>
         </div>
@@ -238,149 +238,202 @@ const isEn = lang === 'en';
   let currentStep = 1;
   const totalSteps = 5;
 
+  // 100% Authentic Tours Data matching exact site catalog
   const toursData = [
     {
-      slug: "rara-lake-bardia",
-      title: isEn ? "Rara Lake & Bardia Expedition (16 Days)" : "Lac Rara & Safari Bardia (16 jours)",
-      days: 16,
-      price: "2 550 €",
-      image: "/assets/original_site/lac_rara_orig.webp",
-      url: isEn ? "/en/tours/rara-lake-bardia" : "/tours/rara-lake-bardia",
+      slug: "jungle-extreme",
+      title: isEn ? "Jungle Extreme – Wildlife Special (15 Days)" : "Jungle extrême – spécial faune sauvage (15 jours)",
+      days: 15,
+      price: "2 500 €",
+      image: "/assets/tours_thumbs/julien_leopard_indien.webp",
+      url: isEn ? "/en/tours/jungle-extreme" : "/tours/jungle-extreme",
       matchDesc: isEn 
-        ? "The supreme Himalayan & jungle combination: crystal alpine waters of Rara Lake followed by deep tiger tracking in Bardia."
-        : "Le combiné suprême montagne & jungle : joyau alpin du lac Rara en altitude puis immersion féline à Bardia.",
-      tags: { duration: ["classic", "grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["mixed", "lodge", "camping"], pace: ["mountain", "moderate"] },
+        ? "Deep wilderness expedition designed for seasoned photographers: big cat tracking, remote watchtowers, and total silence."
+        : "Expédition intense pour photographes et passionnés : pistage des félins, miradors isolés et immersion sauvage intégrale.",
+      tags: { duration: ["grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger"], style: ["mixed", "camping", "lodge"], pace: ["adventurous", "moderate"] },
       scoreWeight: 10
     },
     {
-      slug: "nepal-immersion-totale",
-      title: isEn ? "Nepal Total Immersion: Trek & Safari (18 Days)" : "Népal Immersion Totale : Trek & Safari (18 jours)",
-      days: 18,
-      price: "2 600 €",
-      image: "/assets/drive_photos/adrien_bhaktapur2.webp",
-      url: isEn ? "/en/tours/nepal-immersion-totale" : "/tours/nepal-immersion-totale",
+      slug: "nepal-sauvage",
+      title: isEn ? "Wild Nepal – From Jungle to Sacred Peaks (15 Days)" : "Népal sauvage – de la jungle aux montagnes sacrées (15 jours)",
+      days: 15,
+      price: "2 300 €",
+      image: "/assets/tours_thumbs/himalayas_sunrise_peaks.webp",
+      url: isEn ? "/en/tours/nepal-sauvage" : "/tours/nepal-sauvage",
       matchDesc: isEn 
-        ? "The complete panorama: Kathmandu Valley cultural treasures, Himalayan ridges, rafting, and wildlife in Chitwan & Bardia."
-        : "La grande traversée du Népal : patrimoine de Katmandou, contreforts de l'Himalaya, rafting et safaris à Chitwan et Bardia.",
-      tags: { duration: ["grand"], group: ["solo", "couple", "family", "friends_photo"], wildlife: ["mix_mountain_jungle", "rhino_gentle", "tiger"], style: ["lodge", "mixed", "culture_spirit"], pace: ["moderate", "mountain", "easy"] },
+        ? "Grand crossing connecting Himalayan sunrise viewpoints with the untamed lowlands of Bardia and Suklaphanta."
+        : "Grande traversée reliant les balcons de l'Himalaya aux réserves sauvages de Bardia et Suklaphanta.",
+      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["lodge", "mixed"], pace: ["mountain", "moderate"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "chitwan-bardia-complete",
+      title: isEn ? "Chitwan + Bardia – Complete Jungle Adventure (12 Days)" : "Chitwan + Bardia – l’aventure jungle complète (12 jours)",
+      days: 12,
+      price: "1 990 €",
+      image: "/assets/tours_thumbs/julien_tigre_bengale2.webp",
+      url: isEn ? "/en/tours/chitwan-bardia-complete" : "/tours/chitwan-bardia-complete",
+      matchDesc: isEn 
+        ? "The supreme comparison itinerary exploring both iconic national parks for maximum wildlife diversity."
+        : "Le grand classique comparatif explorant les deux parcs majeurs du Teraï pour une diversité faunique complète.",
+      tags: { duration: ["classic"], group: ["couple", "solo", "friends_photo", "family"], wildlife: ["tiger", "rhino_gentle"], style: ["lodge", "mixed"], pace: ["moderate", "easy"] },
       scoreWeight: 10
     },
     {
       slug: "bardia-explorateur",
-      title: isEn ? "Bardia Explorer (12 Days)" : "Bardia Explorateur (12 jours)",
-      days: 12,
-      price: "1 890 €",
-      image: "/assets/original_site/tigre_bardia.webp",
+      title: isEn ? "Bardia Explorer – 5 Days in the Jungle" : "Bardia explorateur – 5 jours dans la jungle",
+      days: 5,
+      price: "490 €",
+      image: "/assets/tours_thumbs/tigre_bardia.webp",
       url: isEn ? "/en/tours/bardia-explorateur" : "/tours/bardia-explorateur",
       matchDesc: isEn 
-        ? "The absolute benchmark for on-foot tiger tracking in Bardia with comfortable eco-lodge base."
-        : "La référence absolue pour pister le tigre du Bengale à pied à Bardia avec camp de base en lodge.",
-      tags: { duration: ["classic"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["lodge", "mixed"], pace: ["moderate"] },
+        ? "Focused 5-day on-foot tiger tracking immersion in Bardia with comfortable local eco-lodge base."
+        : "Immersion de 5 jours 100% à pied à Bardia avec camp de base en lodge pour maximiser les chances de croiser le tigre.",
+      tags: { duration: ["short"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["lodge", "mixed"], pace: ["moderate"] },
       scoreWeight: 10
     },
     {
       slug: "chitwan-culture",
-      title: isEn ? "Chitwan & Tharu Culture (7 Days)" : "Chitwan & Culture Tharu (7 jours)",
-      days: 7,
-      price: "1 190 €",
-      image: "/assets/original_site/chitwan_rhino.webp",
+      title: isEn ? "Chitwan – Culture & Wild Jungle (4 Days)" : "Chitwan – culture et jungle sauvage (4 jours)",
+      days: 4,
+      price: "600 €",
+      image: "/assets/tours_thumbs/chitwan_rhino.webp",
       url: isEn ? "/en/tours/chitwan-culture" : "/tours/chitwan-culture",
       matchDesc: isEn 
-        ? "Ideal short family or couple getaway: one-horned rhinos, dugout canoes and authentic Tharu encounters."
-        : "Idéal pour une escapade courte en famille ou en couple : rhinocéros, pirogues sur la Rapti et culture Tharu.",
-      tags: { duration: ["short", "week"], group: ["family", "couple", "solo"], wildlife: ["rhino_gentle"], style: ["lodge", "culture_spirit"], pace: ["easy"] },
-      scoreWeight: 9
-    },
-    {
-      slug: "bardia-nuit-sauvage",
-      title: isEn ? "Bardia Wild Night (8 Days)" : "Bardia Nuit Sauvage (8 jours)",
-      days: 8,
-      price: "1 450 €",
-      image: "/assets/original_site/camping_sauvage_bardia.webp",
-      url: isEn ? "/en/tours/bardia-nuit-sauvage" : "/tours/bardia-nuit-sauvage",
-      matchDesc: isEn 
-        ? "Intense 1-week format focusing on dusk and dawn big cat activity around watering holes."
-        : "Format intense d'une semaine axé sur les heures crépusculaires et les affûts nocturnes stratégiques.",
-      tags: { duration: ["week"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["mixed", "lodge"], pace: ["moderate"] },
-      scoreWeight: 8
-    },
-    {
-      slug: "chitwan-bardia-complete",
-      title: isEn ? "Grand Combined Chitwan & Bardia (15 Days)" : "Combiné Intégral Chitwan & Bardia (15 jours)",
-      days: 15,
-      price: "2 490 €",
-      image: "/assets/drive_photos/julien_tigre_bengale2.webp",
-      url: isEn ? "/en/tours/chitwan-bardia-complete" : "/tours/chitwan-bardia-complete",
-      matchDesc: isEn 
-        ? "The ultimate multi-park journey comparing both iconic reserves with maximum wildlife variety."
-        : "Le grand classique comparatif explorant les deux joyaux du Teraï pour une diversité faunique totale.",
-      tags: { duration: ["classic", "grand"], group: ["couple", "solo", "friends_photo"], wildlife: ["tiger", "rhino_gentle"], style: ["lodge", "mixed"], pace: ["moderate", "easy"] },
-      scoreWeight: 9
-    },
-    {
-      slug: "bardia-babai-camping",
-      title: isEn ? "Babai Valley Wilderness Bivouac (14 Days)" : "Bardia & Bivouac Sauvage Vallée de Babai (14 jours)",
-      days: 14,
-      price: "2 350 €",
-      image: "/assets/original_site/babai_walk.webp",
-      url: isEn ? "/en/tours/bardia-babai-camping" : "/tours/bardia-babai-camping",
-      matchDesc: isEn 
-        ? "Total wilderness immersion: nights under tents along the wild Babai river, isolated from civilization."
-        : "Immersion sauvage totale avec nuits sous tente au bord de la rivière Babai, loin de toute présence humaine.",
-      tags: { duration: ["classic", "grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+        ? "Ideal short family or couple getaway: one-horned rhinos, dugout canoes on the Rapti river and Tharu culture."
+        : "Idéal pour une escapade courte en famille ou en couple : rhinocéros unicornes, pirogue et immersion Tharu.",
+      tags: { duration: ["short"], group: ["family", "couple", "solo"], wildlife: ["rhino_gentle"], style: ["lodge", "culture_spirit"], pace: ["easy"] },
       scoreWeight: 9
     },
     {
       slug: "rafting-safari",
-      title: isEn ? "Karnali Rafting & River Safari (9 Days)" : "Rafting & Safari Fluvial Karnali (9 jours)",
-      days: 9,
-      price: "1 590 €",
-      image: "/assets/drive_photos/adrien_bardia_river.webp",
+      title: isEn ? "Wild Rivers & Hidden Heritage – Rafting & Expedition (18 Days)" : "Rivières sauvages et patrimoines cachés – expédition et rafting (18 jours)",
+      days: 18,
+      price: "2 190 €",
+      image: "/assets/tours_thumbs/adrien_bardia_river.webp",
       url: isEn ? "/en/tours/rafting-safari" : "/tours/rafting-safari",
       matchDesc: isEn 
-        ? "Active waterway expedition: glide past gharials, rare river dolphins, and pristine riverside camps."
-        : "Aventure aquatique : descente au fil de l'eau, observation des gavials, oiseaux rares et bivouacs sur le sable.",
-      tags: { duration: ["week", "classic"], group: ["friends_photo", "solo", "couple"], wildlife: ["river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+        ? "Grand 18-day expedition: navigate untamed Karnali river rapids, riverside bivouacs, and deep wildlife observation."
+        : "Grande aventure de 18 jours : descente des gorges de la Karnali en rafting, bivouacs sur le sable et safari sauvage.",
+      tags: { duration: ["grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "bardia-nuit-sauvage",
+      title: isEn ? "Bardia – Immersive Jungle Adventure & Wild Camping (2 Days)" : "Bardia – aventure immersive en jungle et camping sauvage (2 jours)",
+      days: 2,
+      price: "350 €",
+      image: "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      url: isEn ? "/en/tours/bardia-nuit-sauvage" : "/tours/bardia-nuit-sauvage",
+      matchDesc: isEn 
+        ? "Ultra-concentrated 2-day wilderness escape with night bivouac inside the jungle and sunrise tracking."
+        : "Escapade ultra-intense de 2 jours avec nuit en bivouac au cœur de la forêt et affûts au lever du jour.",
+      tags: { duration: ["short"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["camping", "mixed"], pace: ["moderate", "adventurous"] },
       scoreWeight: 8
     },
     {
-      slug: "panthere-des-neiges",
-      title: isEn ? "Snow Leopard Expedition (17 Days)" : "Expédition Panthère des Neiges (17 jours)",
+      slug: "rara-lake-bardia",
+      title: isEn ? "Rara Lake & Bardia Expedition – Off the Beaten Track (17 Days)" : "Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus (17 jours)",
       days: 17,
-      price: "4 300 €",
-      image: "/assets/snow-leopard/snow_leopard_portrait.webp",
-      url: isEn ? "/en/tours/panthere-des-neiges" : "/tours/panthere-des-neiges",
+      price: "2 550 €",
+      image: "/assets/tours_thumbs/lac_rara_orig.webp",
+      url: isEn ? "/en/tours/rara-lake-bardia" : "/tours/rara-lake-bardia",
       matchDesc: isEn 
-        ? "High Himalayan high-altitude adventure searching for the legendary ghost cat in Mustang & Dolpo."
-        : "Quête mythique de haute altitude dans les vallées himalayennes sauvages du Mustang et du Dolpo.",
-      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard", "mix_mountain_jungle"], style: ["mixed", "lodge"], pace: ["mountain"] },
+        ? "The absolute high-altitude & jungle epic: pristine alpine shores of Rara Lake followed by wild tiger tracking in Bardia."
+        : "L'épopée ultime entre sommets et plaines : lac Rara d'altitude dans l'Himalaya puis pistage du tigre à Bardia.",
+      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["mixed", "lodge", "camping"], pace: ["mountain", "moderate"] },
+      scoreWeight: 10
+    },
+    {
+      slug: "bardia-babai-camping",
+      title: isEn ? "Bardia Babai Valley – Wild Camping in Untouched Nature (8 Days)" : "Bardia Babai vallée – camping sauvage au cœur d’une nature vierge (8 jours)",
+      days: 8,
+      price: "1 200 €",
+      image: "/assets/tours_thumbs/babai_walk.webp",
+      url: isEn ? "/en/tours/bardia-babai-camping" : "/tours/bardia-babai-camping",
+      matchDesc: isEn 
+        ? "Pure 8-day wilderness: isolated nights under tents along the Babai river, far from any human footprint."
+        : "Immersion sauvage de 8 jours : nuits sous tente au bord de la rivière Babai, loin de toute présence humaine.",
+      tags: { duration: ["week"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "nepal-immersion-totale",
+      title: isEn ? "Nepal – Total Immersion: Culture, Wildlife & Adventure (14 Days)" : "Népal – immersion totale : culture, vie sauvage et aventure (14 jours)",
+      days: 14,
+      price: "2 600 €",
+      image: "/assets/tours_thumbs/adrien_bhaktapur2.webp",
+      url: isEn ? "/en/tours/nepal-immersion-totale" : "/tours/nepal-immersion-totale",
+      matchDesc: isEn 
+        ? "Complete 14-day panorama: ancient Kathmandu Valley heritage, Himalayan foothills, rafting, and safaris in Chitwan & Bardia."
+        : "Le tour complet de 14 jours : patrimoine de Katmandou, contreforts himalayens, rafting et safaris à Chitwan & Bardia.",
+      tags: { duration: ["classic"], group: ["solo", "couple", "family", "friends_photo"], wildlife: ["mix_mountain_jungle", "rhino_gentle", "tiger"], style: ["lodge", "mixed", "culture_spirit"], pace: ["moderate", "mountain", "easy"] },
       scoreWeight: 10
     },
     {
       slug: "babai-special",
-      title: isEn ? "Secret Babai Valley (10 Days)" : "Vallée Secrète de Babai (10 jours)",
-      days: 10,
-      price: "1 790 €",
-      image: "/assets/original_site/elephant_bardia.webp",
+      title: isEn ? "Deep into the Wild: Babai Special Experience (5 Days)" : "Deep into the wild : Babai spécial experience (5 jours)",
+      days: 5,
+      price: "900 €",
+      image: "/assets/tours_thumbs/elephant_bardia.webp",
       url: isEn ? "/en/tours/babai-special" : "/tours/babai-special",
       matchDesc: isEn 
-        ? "Exclusive immersion in Bardia's most remote valley, tailored for trackers seeking pure untouched nature."
-        : "Immersion exclusive dans la zone la plus sauvage et préservée de Bardia, idéale pour les pisteurs en quête de solitude.",
-      tags: { duration: ["classic", "week"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+        ? "Exclusive 5-day immersion in Bardia's most secluded valley, designed for trackers seeking pure untouched nature."
+        : "Immersion exclusive de 5 jours dans la vallée secrète de Babai, taillée pour les pisteurs en quête de solitude.",
+      tags: { duration: ["short"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
       scoreWeight: 9
     },
     {
       slug: "tiji-mustang",
-      title: isEn ? "Tiji Festival & Mustang Odyssey (16 Days)" : "Festival Tiji & Odyssée Mustang (16 jours)",
-      days: 16,
-      price: "3 650 €",
-      image: "/assets/original_site/tiji_festival_orig.webp",
+      title: isEn ? "Tiji Festival – Upper Mustang (13 Days)" : "Tiji Festival – Upper Mustang (13 jours)",
+      days: 13,
+      price: "3 500 €",
+      image: "/assets/tours_thumbs/tiji_festival_orig.webp",
       url: isEn ? "/en/tours/tiji-mustang" : "/tours/tiji-mustang",
       matchDesc: isEn 
-        ? "Ancient Tibetan culture in the Upper Mustang kingdom combined with Himalayan wilderness."
-        : "Culture tibétaine millénaire dans l'ancien royaume du Mustang et paysages himalayens minéraux grandioses.",
-      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "snow_leopard"], style: ["lodge", "culture_spirit", "mixed"], pace: ["mountain", "moderate"] },
+        ? "13-day cultural odyssey in the mystical walled kingdom of Lo Manthang during the sacred Tiji masked ceremonies."
+        : "Odyssée culturelle de 13 jours au royaume interdit du Mustang pour assister aux cérémonies sacrées du festival Tiji.",
+      tags: { duration: ["classic"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "snow_leopard"], style: ["lodge", "culture_spirit", "mixed"], pace: ["mountain", "moderate"] },
       scoreWeight: 9
+    },
+    {
+      slug: "carnet-de-voyage",
+      title: isEn ? "Nepal – Travel Sketchbook & Drawing (15 Days)" : "Népal – carnet de dessin et de voyage (15 jours)",
+      days: 15,
+      price: "2 100 €",
+      image: "/assets/tours_thumbs/antoine_wild5.webp",
+      url: isEn ? "/en/tours/carnet-de-voyage" : "/tours/carnet-de-voyage",
+      matchDesc: isEn 
+        ? "15-day artistic itinerary combining heritage sketching in Kathmandu with wildlife observation in the Terai."
+        : "Voyage artistique de 15 jours alliant dessin du patrimoine à Katmandou et observation contemplative de la faune.",
+      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["rhino_gentle", "tiger"], style: ["lodge", "culture_spirit"], pace: ["easy", "moderate"] },
+      scoreWeight: 8
+    },
+    {
+      slug: "immersion-spirituelle",
+      title: isEn ? "Spiritual Immersion in the Himalayas (12 Days)" : "Immersion spirituelle en Himalaya (12 jours)",
+      days: 12,
+      price: "1 890 €",
+      image: "/assets/tours_thumbs/temple_sacred.webp",
+      url: isEn ? "/en/tours/immersion-spirituelle" : "/tours/immersion-spirituelle",
+      matchDesc: isEn 
+        ? "12-day mindful journey: sacred monasteries, meditation retreats in Himalayan valleys, and peaceful nature walks."
+        : "Séjour ressourçant de 12 jours entre monastères sacrés, méditation face aux sommets et nature préservée.",
+      tags: { duration: ["classic"], group: ["solo", "couple"], wildlife: ["mix_mountain_jungle"], style: ["lodge", "culture_spirit"], pace: ["easy", "moderate"] },
+      scoreWeight: 8
+    },
+    {
+      slug: "panthere-des-neiges",
+      title: isEn ? "Snow Leopard Exclusive Expedition (17 Days)" : "Expédition : panthère des neiges exclusive (17 jours)",
+      days: 17,
+      price: "4 300 €",
+      image: "/assets/tours_thumbs/snow_leopard_portrait.webp",
+      url: isEn ? "/en/tours/panthere-des-neiges" : "/tours/panthere-des-neiges",
+      matchDesc: isEn 
+        ? "Mythic 17-day high Himalayan winter expedition in Mustang and Dolpo crags tracking the ghost cat."
+        : "Quête mythique de 17 jours en haute altitude dans les falaises du Mustang et du Dolpo sur les traces du grand félin.",
+      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard", "mix_mountain_jungle"], style: ["mixed", "lodge"], pace: ["mountain"] },
+      scoreWeight: 10
     }
   ];
 
@@ -480,7 +533,7 @@ const isEn = lang === 'en';
             </div>
 
             <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner">
-              <img src="${match.image}" alt="${match.title}" onerror="this.src='/assets/original_site/tigre_bardia.webp'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img src="${match.image}" alt="${match.title}" onerror="this.src='/assets/tours_thumbs/tigre_bardia.webp'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
 
             <div class="space-y-1">
