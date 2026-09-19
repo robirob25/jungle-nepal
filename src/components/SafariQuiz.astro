@@ -99,15 +99,19 @@ const isEn = lang === 'en';
           </div>
         </div>
 
-        <!-- STEP 3: WILDLIFE FOCUS -->
+        <!-- STEP 3: WILDLIFE & TRIP FOCUS -->
         <div class="quiz-step hidden space-y-4" data-step="3">
           <h3 class="text-lg sm:text-xl font-extrabold text-white">
-            {isEn ? "3. What is your primary wildlife goal?" : "3. Quel est votre objectif animalier prioritaire ?"}
+            {isEn ? "3. What is your primary trip & wildlife focus?" : "3. Quel est l'objectif prioritaire de votre voyage ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
             <button type="button" onclick="selectQuizOption('wildlife', 'tiger')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
               <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Bengal Tiger on foot" : "Le Tigre du Bengale à pied"}</div>
               <div class="text-xs text-slate-400 mt-1">{isEn ? "Pure on-foot tracking and riverbank blinds in Bardia" : "Traque sensorielle et affûts en bord de rivière à Bardia"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('wildlife', 'mix_mountain_jungle')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-emerald-500/30 hover:border-emerald-400 text-left transition-all group ring-1 ring-emerald-500/20">
+              <div class="font-bold text-sm text-emerald-300 group-hover:text-emerald-200">{isEn ? "Mountain & Jungle Mix (Trek + Safari)" : "Combiné Montagne & Jungle (Trek + Safari)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Himalayan alpine lakes & summits combined with wild Terai lowlands" : "Lacs d'altitude & sommets himalayens combinés aux safaris du Teraï"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('wildlife', 'rhino_gentle')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
               <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "One-horned Rhinos & Elephants" : "Rhinocéros unicornes & Éléphants"}</div>
@@ -117,7 +121,7 @@ const isEn = lang === 'en';
               <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Snow Leopard (High Himalayas)" : "La Panthère des neiges (Himalaya)"}</div>
               <div class="text-xs text-slate-400 mt-1">{isEn ? "High-altitude winter expedition in Mustang and Dolpo crags" : "Expédition d'altitude dans les falaises du Mustang / Dolpo"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group sm:col-span-2 lg:col-span-2">
               <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "River safari (Gharials, Birds & Rafting)" : "Safari aquatique (Oiseaux, Gavials & Rafting)"}</div>
               <div class="text-xs text-slate-400 mt-1">{isEn ? "Dugout canoes, rafting on the Karnali, rare kingfishers" : "Pirogues traditionnelles, descente de rivière et calaos"}</div>
             </button>
@@ -139,12 +143,12 @@ const isEn = lang === 'en';
               <div class="text-xs text-slate-400 mt-1">{isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('style', 'mixed')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Balanced Mix (Lodge + Bivouac)" : "Mix équilibré (Lodge + Bivouac)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson de la nuit en jungle avec le confort des lodges"}</div>
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Balanced Mix (Lodge + Bivouac / Refuge)" : "Mix équilibré (Lodge + Bivouac / Refuge)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson des nuits en nature avec le confort des lodges"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('style', 'culture_spirit')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
               <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Cultural & Spiritual Immersion" : "Immersion culturelle & sérénité"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Homestays in Tharu villages, monasteries, and yoga" : "Maisons d'hôtes Tharu traditionnelles, ashram et nature"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Homestays in Tharu villages, monasteries, and heritage" : "Maisons d'hôtes traditionnelles, ashram et patrimoine"}</div>
             </button>
           </div>
         </div>
@@ -164,12 +168,12 @@ const isEn = lang === 'en';
               <div class="text-xs text-slate-400 mt-1">{isEn ? "Active tracking along riverbeds and sal forests on flat terrain" : "Pistage actif en forêt et sur les berges, terrain plat"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('pace', 'adventurous')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Adventurous & Endurance" : "Aventure & Endurance"}</div>
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Adventurous Jungle Exploration" : "Aventure & Jungle Dense"}</div>
               <div class="text-xs text-slate-400 mt-1">{isEn ? "Deep jungle bushwalking, river wading, and backwoods exploration" : "Progression en jungle dense, traversée de gués et autonomie"}</div>
             </button>
             <button type="button" onclick="selectQuizOption('pace', 'mountain')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "High mountain trekking" : "Trekking de haute montagne"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Altitude hiking, passes over 4,000m, mountain trails" : "Randonnée d'altitude, sentiers escarpés et cols à +4000m"}</div>
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Mountain Trekking / High Altitude" : "Trekking Montagne / Altitude"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Alpine hiking trails, panoramic ridges, passes over 3,000-4,000m" : "Sentiers himalayens, crêtes panoramiques et cols d'altitude"}</div>
             </button>
           </div>
         </div>
@@ -235,6 +239,32 @@ const isEn = lang === 'en';
   const totalSteps = 5;
 
   const toursData = [
+    {
+      slug: "rara-lake-bardia",
+      title: isEn ? "Rara Lake & Bardia Expedition (16 Days)" : "Lac Rara & Safari Bardia (16 jours)",
+      days: 16,
+      price: "2 550 €",
+      image: "/assets/original_site/lac_rara_orig.webp",
+      url: isEn ? "/en/tours/rara-lake-bardia" : "/tours/rara-lake-bardia",
+      matchDesc: isEn 
+        ? "The supreme Himalayan & jungle combination: crystal alpine waters of Rara Lake followed by deep tiger tracking in Bardia."
+        : "Le combiné suprême montagne & jungle : joyau alpin du lac Rara en altitude puis immersion féline à Bardia.",
+      tags: { duration: ["classic", "grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["mixed", "lodge", "camping"], pace: ["mountain", "moderate"] },
+      scoreWeight: 10
+    },
+    {
+      slug: "nepal-immersion-totale",
+      title: isEn ? "Nepal Total Immersion: Trek & Safari (18 Days)" : "Népal Immersion Totale : Trek & Safari (18 jours)",
+      days: 18,
+      price: "2 600 €",
+      image: "/assets/drive_photos/adrien_bhaktapur2.webp",
+      url: isEn ? "/en/tours/nepal-immersion-totale" : "/tours/nepal-immersion-totale",
+      matchDesc: isEn 
+        ? "The complete panorama: Kathmandu Valley cultural treasures, Himalayan ridges, rafting, and wildlife in Chitwan & Bardia."
+        : "La grande traversée du Népal : patrimoine de Katmandou, contreforts de l'Himalaya, rafting et safaris à Chitwan et Bardia.",
+      tags: { duration: ["grand"], group: ["solo", "couple", "family", "friends_photo"], wildlife: ["mix_mountain_jungle", "rhino_gentle", "tiger"], style: ["lodge", "mixed", "culture_spirit"], pace: ["moderate", "mountain", "easy"] },
+      scoreWeight: 10
+    },
     {
       slug: "bardia-explorateur",
       title: isEn ? "Bardia Explorer (12 Days)" : "Bardia Explorateur (12 jours)",
@@ -323,8 +353,34 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "High Himalayan high-altitude adventure searching for the legendary ghost cat in Mustang & Dolpo."
         : "Quête mythique de haute altitude dans les vallées himalayennes sauvages du Mustang et du Dolpo.",
-      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard"], style: ["mixed", "lodge"], pace: ["mountain"] },
+      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard", "mix_mountain_jungle"], style: ["mixed", "lodge"], pace: ["mountain"] },
       scoreWeight: 10
+    },
+    {
+      slug: "babai-special",
+      title: isEn ? "Secret Babai Valley (10 Days)" : "Vallée Secrète de Babai (10 jours)",
+      days: 10,
+      price: "1 790 €",
+      image: "/assets/curated_gallery/adrien_bardia_camp.webp",
+      url: isEn ? "/en/tours/babai-special" : "/tours/babai-special",
+      matchDesc: isEn 
+        ? "Exclusive immersion in Bardia's most remote valley, tailored for trackers seeking pure untouched nature."
+        : "Immersion exclusive dans la zone la plus sauvage et préservée de Bardia, idéale pour les pisteurs en quête de solitude.",
+      tags: { duration: ["classic", "week"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "tiji-mustang",
+      title: isEn ? "Tiji Festival & Mustang Odyssey (16 Days)" : "Festival Tiji & Odyssée Mustang (16 jours)",
+      days: 16,
+      price: "3 650 €",
+      image: "/assets/original_site/lac_rara_orig.webp",
+      url: isEn ? "/en/tours/tiji-mustang" : "/tours/tiji-mustang",
+      matchDesc: isEn 
+        ? "Ancient Tibetan culture in the Upper Mustang kingdom combined with Himalayan wilderness."
+        : "Culture tibétaine millénaire dans l'ancien royaume du Mustang et paysages himalayens minéraux grandioses.",
+      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "snow_leopard"], style: ["lodge", "culture_spirit", "mixed"], pace: ["mountain", "moderate"] },
+      scoreWeight: 9
     }
   ];
 
