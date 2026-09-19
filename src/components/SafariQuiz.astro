@@ -1,0 +1,471 @@
+---
+interface Props {
+  lang?: 'fr' | 'en';
+}
+
+const { lang = 'fr' } = Astro.props;
+const isEn = lang === 'en';
+---
+
+<section id="safari-quiz-section" class="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 text-white border-t border-b border-white/10 overflow-hidden">
+  <!-- Ambient background lighting -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-96 bg-gradient-to-br from-emerald-900/20 via-transparent to-transparent blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-4xl mx-auto">
+    
+    <!-- SECTION HEADER -->
+    <div class="text-center space-y-3 mb-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+        </svg>
+        <span>{isEn ? "Interactive Finder" : "Sélection interactive"}</span>
+      </div>
+
+      <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white">
+        {isEn ? "Which safari in Nepal is right for you?" : "Quel safari au Népal est fait pour vous ?"}
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto font-normal">
+        {isEn 
+          ? "Answer 5 quick questions to discover the exact expeditions matching your dates, group size, and wildlife goals."
+          : "Répondez à 5 questions précises pour identifier les expéditions correspondant exactement à vos dates, votre groupe et vos attentes faune."}
+      </p>
+    </div>
+
+    <!-- QUIZ CONTAINER BOX -->
+    <div class="bg-[#041d13]/80 border border-emerald-500/20 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative">
+      
+      <!-- PROGRESS BAR -->
+      <div id="quiz-progress-wrapper" class="mb-8 space-y-2">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-400">
+          <span id="quiz-step-label">{isEn ? "Question 1 of 5" : "Question 1 sur 5"}</span>
+          <span id="quiz-step-percent" class="text-emerald-400">20%</span>
+        </div>
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+          <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-emerald-500 to-amber-400 transition-all duration-300 w-1/5"></div>
+        </div>
+      </div>
+
+      <!-- QUESTIONS FORM CONTAINER -->
+      <div id="quiz-steps-container">
+
+        <!-- STEP 1: DURATION -->
+        <div class="quiz-step space-y-4" data-step="1">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            {isEn ? "1. How much time do you have for your journey?" : "1. Quelle durée envisagez-vous pour votre voyage ?"}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Short stay (3 to 5 days)" : "Court séjour (3 à 5 jours)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Express escape to Chitwan or Bardia from Kathmandu / Pokhara" : "Escapade express à Chitwan ou Bardia depuis Katmandou"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Safari week (6 to 9 days)" : "Semaine safari (6 à 9 jours)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Focused immersion without wasting transit time" : "Immersion complète sur un parc sans perte de temps"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "The optimal duration for tiger tracking and remote valleys" : "Le format idéal pour maximiser les chances de voir les tigres"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Grand expedition (15 to 22 days)" : "Grande immersion (15 à 22 jours)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Full multi-park expeditions, Rara Lake or high mountains" : "Expéditions intégrales, lac Rara, Mustang ou traversée totale"}</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: GROUP PROFILE -->
+        <div class="quiz-step hidden space-y-4" data-step="2">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            {isEn ? "2. Who will be traveling?" : "2. Quelle est la composition de votre groupe ?"}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="button" onclick="selectQuizOption('group', 'solo')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Solo traveler" : "Voyageur solo"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Join a small shared group (4 to 10 pers) with friendly vibes" : "Rejoindre un petit groupe convivial (4 à 10 pers)"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('group', 'couple')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Couple / Duo" : "Couple / Duo"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Wild romance, charming eco-lodges, and shared nature" : "Ambiance sauvage, lodges de charme et nature partagée"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('group', 'family')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Family with kids / teenagers" : "Famille avec enfants / adolescents"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Accessible wildlife, canoes, Tharu culture, high safety" : "Faune accessible (rhinos, éléphants), pirogue et sécurité"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('group', 'friends_photo')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Friends / Wildlife photographers" : "Amis / Photographes naturalistes"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Extended hides, golden hour patience, and specialized guides" : "Affûts prolongés, silence, patience et lumière dorée"}</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: WILDLIFE FOCUS -->
+        <div class="quiz-step hidden space-y-4" data-step="3">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            {isEn ? "3. What is your primary wildlife goal?" : "3. Quel est votre objectif animalier prioritaire ?"}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="button" onclick="selectQuizOption('wildlife', 'tiger')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Bengal Tiger on foot" : "Le Tigre du Bengale à pied"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Pure on-foot tracking and riverbank blinds in Bardia" : "Traque sensorielle et affûts en bord de rivière à Bardia"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('wildlife', 'rhino_gentle')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "One-horned Rhinos & Elephants" : "Rhinocéros unicornes & Éléphants"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Gentle riparian safaris and wetlands in Chitwan" : "Immersion accessible dans les marécages de Chitwan"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('wildlife', 'snow_leopard')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Snow Leopard (High Himalayas)" : "La Panthère des neiges (Himalaya)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "High-altitude winter expedition in Mustang and Dolpo crags" : "Expédition d'altitude dans les falaises du Mustang / Dolpo"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "River safari (Gharials, Birds & Rafting)" : "Safari aquatique (Oiseaux, Gavials & Rafting)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Dugout canoes, rafting on the Karnali, rare kingfishers" : "Pirogues traditionnelles, descente de rivière et calaos"}</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 4: ACCOMMODATION & STYLE -->
+        <div class="quiz-step hidden space-y-4" data-step="4">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            {isEn ? "4. What accommodation style suits you best?" : "4. Quel type d'hébergement préférez-vous ?"}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="button" onclick="selectQuizOption('style', 'lodge')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Comfortable Eco-lodges" : "100% Lodges & Confort"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Private rooms, warm showers, serene garden relaxation" : "Chambres soignées, douches chaudes et confort après la marche"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('style', 'camping')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Wilderness Jungle Bivouac" : "Bivouac sauvage sous tente"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('style', 'mixed')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Balanced Mix (Lodge + Bivouac)" : "Mix équilibré (Lodge + Bivouac)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson de la nuit en jungle avec le confort des lodges"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('style', 'culture_spirit')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Cultural & Spiritual Immersion" : "Immersion culturelle & sérénité"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Homestays in Tharu villages, monasteries, and yoga" : "Maisons d'hôtes Tharu traditionnelles, ashram et nature"}</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 5: PHYSICAL PACE -->
+        <div class="quiz-step hidden space-y-4" data-step="5">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            {isEn ? "5. What walking pace and physical effort do you desire?" : "5. Quel rythme de marche et effort physique souhaitez-vous ?"}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="button" onclick="selectQuizOption('pace', 'easy')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Accessible to all" : "Accessible à tous"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Gentle strolls, hide lookouts, jeep & canoe transfers" : "Petites marches tranquilles, miradors, pirogues et jeeps"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('pace', 'moderate')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Regular walking (4 to 6 hrs/day)" : "Marche régulière (4 à 6h / jour)"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Active tracking along riverbeds and sal forests on flat terrain" : "Pistage actif en forêt et sur les berges, terrain plat"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('pace', 'adventurous')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Adventurous & Endurance" : "Aventure & Endurance"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Deep jungle bushwalking, river wading, and backwoods exploration" : "Progression en jungle dense, traversée de gués et autonomie"}</div>
+            </button>
+            <button type="button" onclick="selectQuizOption('pace', 'mountain')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
+              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "High mountain trekking" : "Trekking de haute montagne"}</div>
+              <div class="text-xs text-slate-400 mt-1">{isEn ? "Altitude hiking, passes over 4,000m, mountain trails" : "Randonnée d'altitude, sentiers escarpés et cols à +4000m"}</div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RESULTS CONTAINER (Hidden initially) -->
+      <div id="quiz-results-container" class="hidden space-y-6 animate-in fade-in zoom-in-95 duration-300">
+        <div class="text-center space-y-2 border-b border-white/10 pb-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+            <span>✓</span>
+            <span>{isEn ? "Analysis complete" : "Analyse terminée"}</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-white">
+            {isEn ? "Here are your 2 ideal safari matches:" : "Voici vos 2 séjours recommandés sur-mesure :"}
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto" id="quiz-results-summary"></p>
+        </div>
+
+        <!-- Matched Tours Cards Grid -->
+        <div id="quiz-matched-cards" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+        <!-- Action Footer -->
+        <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <button type="button" onclick="resetSafariQuiz()" class="text-xs text-slate-400 hover:text-white transition-colors underline cursor-pointer">
+            {isEn ? "← Restart the quiz" : "← Recommencer le test"}
+          </button>
+          
+          <a id="quiz-whatsapp-btn" href="https://wa.me/33695413227" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-black text-xs transition-all shadow-lg">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.534 1.769.814 2.796.814 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.758 0-3.407-.46-4.848-1.265l-5.152 1.352 1.376-5.023c-.902-1.492-1.376-3.208-1.376-5.064 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+            </svg>
+            <span>{isEn ? "Discuss this selection with Robin on WhatsApp" : "Discuter de cette sélection avec Robin sur WhatsApp"}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- NAVIGATION FOOTER (Back button) -->
+      <div id="quiz-nav-footer" class="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+        <button id="quiz-back-btn" type="button" onclick="prevQuizStep()" class="hidden hover:text-white transition-colors cursor-pointer flex items-center gap-1 font-bold">
+          <span>←</span>
+          <span>{isEn ? "Previous question" : "Question précédente"}</span>
+        </button>
+        <span class="text-[11px] text-slate-500 ml-auto">
+          {isEn ? "100% free & non-binding" : "100% gratuit et sans engagement"}
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script is:inline define:vars={{ isEn }}>
+  const quizAnswers = {
+    duration: '',
+    group: '',
+    wildlife: '',
+    style: '',
+    pace: ''
+  };
+
+  let currentStep = 1;
+  const totalSteps = 5;
+
+  const toursData = [
+    {
+      slug: "bardia-explorateur",
+      title: isEn ? "Bardia Explorer (12 Days)" : "Bardia Explorateur (12 jours)",
+      days: 12,
+      price: "1 890 €",
+      image: "/assets/original_site/tigre_bardia.webp",
+      url: isEn ? "/en/tours/bardia-explorateur" : "/tours/bardia-explorateur",
+      matchDesc: isEn 
+        ? "The absolute benchmark for on-foot tiger tracking in Bardia with comfortable eco-lodge base."
+        : "La référence absolue pour pister le tigre du Bengale à pied à Bardia avec camp de base en lodge.",
+      tags: { duration: ["classic"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["lodge", "mixed"], pace: ["moderate"] },
+      scoreWeight: 10
+    },
+    {
+      slug: "chitwan-culture",
+      title: isEn ? "Chitwan & Tharu Culture (7 Days)" : "Chitwan & Culture Tharu (7 jours)",
+      days: 7,
+      price: "1 190 €",
+      image: "/assets/curated_gallery/rhino_unicorne_brume.webp",
+      url: isEn ? "/en/tours/chitwan-culture" : "/tours/chitwan-culture",
+      matchDesc: isEn 
+        ? "Ideal short family or couple getaway: one-horned rhinos, dugout canoes and authentic Tharu encounters."
+        : "Idéal pour une escapade courte en famille ou en couple : rhinocéros, pirogues sur la Rapti et culture Tharu.",
+      tags: { duration: ["short", "week"], group: ["family", "couple", "solo"], wildlife: ["rhino_gentle"], style: ["lodge", "culture_spirit"], pace: ["easy"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "bardia-nuit-sauvage",
+      title: isEn ? "Bardia Wild Night (8 Days)" : "Bardia Nuit Sauvage (8 jours)",
+      days: 8,
+      price: "1 450 €",
+      image: "/assets/curated_gallery/tigre_bengale_traversee_riviere.webp",
+      url: isEn ? "/en/tours/bardia-nuit-sauvage" : "/tours/bardia-nuit-sauvage",
+      matchDesc: isEn 
+        ? "Intense 1-week format focusing on dusk and dawn big cat activity around watering holes."
+        : "Format intense d'une semaine axé sur les heures crépusculaires et les affûts nocturnes stratégiques.",
+      tags: { duration: ["week"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["mixed", "lodge"], pace: ["moderate"] },
+      scoreWeight: 8
+    },
+    {
+      slug: "chitwan-bardia-complete",
+      title: isEn ? "Grand Combined Chitwan & Bardia (15 Days)" : "Combiné Intégral Chitwan & Bardia (15 jours)",
+      days: 15,
+      price: "2 490 €",
+      image: "/assets/hero/hero_1_tiger_water.webp",
+      url: isEn ? "/en/tours/chitwan-bardia-complete" : "/tours/chitwan-bardia-complete",
+      matchDesc: isEn 
+        ? "The ultimate multi-park journey comparing both iconic reserves with maximum wildlife variety."
+        : "Le grand classique comparatif explorant les deux joyaux du Teraï pour une diversité faunique totale.",
+      tags: { duration: ["classic", "grand"], group: ["couple", "solo", "friends_photo"], wildlife: ["tiger", "rhino_gentle"], style: ["lodge", "mixed"], pace: ["moderate", "easy"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "bardia-babai-camping",
+      title: isEn ? "Babai Valley Wilderness Bivouac (14 Days)" : "Bardia & Bivouac Sauvage Vallée de Babai (14 jours)",
+      days: 14,
+      price: "2 350 €",
+      image: "/assets/curated_gallery/adrien_bardia_camp.webp",
+      url: isEn ? "/en/tours/bardia-babai-camping" : "/tours/bardia-babai-camping",
+      matchDesc: isEn 
+        ? "Total wilderness immersion: nights under tents along the wild Babai river, isolated from civilization."
+        : "Immersion sauvage totale avec nuits sous tente au bord de la rivière Babai, loin de toute présence humaine.",
+      tags: { duration: ["classic", "grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      scoreWeight: 9
+    },
+    {
+      slug: "rafting-safari",
+      title: isEn ? "Karnali Rafting & River Safari (9 Days)" : "Rafting & Safari Fluvial Karnali (9 jours)",
+      days: 9,
+      price: "1 590 €",
+      image: "/assets/curated_gallery/varan_bengale_berges_sable.webp",
+      url: isEn ? "/en/tours/rafting-safari" : "/tours/rafting-safari",
+      matchDesc: isEn 
+        ? "Active waterway expedition: glide past gharials, rare river dolphins, and pristine riverside camps."
+        : "Aventure aquatique : descente au fil de l'eau, observation des gavials, oiseaux rares et bivouacs sur le sable.",
+      tags: { duration: ["week", "classic"], group: ["friends_photo", "solo", "couple"], wildlife: ["river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      scoreWeight: 8
+    },
+    {
+      slug: "panthere-des-neiges",
+      title: isEn ? "Snow Leopard Expedition (17 Days)" : "Expédition Panthère des Neiges (17 jours)",
+      days: 17,
+      price: "4 300 €",
+      image: "/assets/curated_gallery/duo_rapaces_au_nid.webp",
+      url: isEn ? "/en/tours/panthere-des-neiges" : "/tours/panthere-des-neiges",
+      matchDesc: isEn 
+        ? "High Himalayan high-altitude adventure searching for the legendary ghost cat in Mustang & Dolpo."
+        : "Quête mythique de haute altitude dans les vallées himalayennes sauvages du Mustang et du Dolpo.",
+      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard"], style: ["mixed", "lodge"], pace: ["mountain"] },
+      scoreWeight: 10
+    }
+  ];
+
+  window.selectQuizOption = function(category, value) {
+    quizAnswers[category] = value;
+    if (currentStep < totalSteps) {
+      currentStep++;
+      updateQuizView();
+    } else {
+      calculateAndShowResults();
+    }
+  };
+
+  window.prevQuizStep = function() {
+    if (currentStep > 1) {
+      currentStep--;
+      updateQuizView();
+    }
+  };
+
+  window.resetSafariQuiz = function() {
+    quizAnswers.duration = '';
+    quizAnswers.group = '';
+    quizAnswers.wildlife = '';
+    quizAnswers.style = '';
+    quizAnswers.pace = '';
+    currentStep = 1;
+    document.getElementById('quiz-results-container').classList.add('hidden');
+    document.getElementById('quiz-steps-container').classList.remove('hidden');
+    document.getElementById('quiz-progress-wrapper').classList.remove('hidden');
+    document.getElementById('quiz-nav-footer').classList.remove('hidden');
+    updateQuizView();
+  };
+
+  function updateQuizView() {
+    // Show active step
+    document.querySelectorAll('.quiz-step').forEach(stepEl => {
+      const stepNum = parseInt(stepEl.getAttribute('data-step'));
+      if (stepNum === currentStep) {
+        stepEl.classList.remove('hidden');
+      } else {
+        stepEl.classList.add('hidden');
+      }
+    });
+
+    // Update progress bar
+    const percent = Math.round((currentStep / totalSteps) * 100);
+    document.getElementById('quiz-step-label').textContent = isEn ? `Question ${currentStep} of ${totalSteps}` : `Question ${currentStep} sur ${totalSteps}`;
+    document.getElementById('quiz-step-percent').textContent = `${percent}%`;
+    document.getElementById('quiz-progress-bar').style.width = `${percent}%`;
+
+    // Back button visibility
+    const backBtn = document.getElementById('quiz-back-btn');
+    if (currentStep > 1) {
+      backBtn.classList.remove('hidden');
+    } else {
+      backBtn.classList.add('hidden');
+    }
+  }
+
+  function calculateAndShowResults() {
+    // Score each tour based on user answers
+    const scoredTours = toursData.map(tour => {
+      let score = 0;
+      let totalCriteria = 5;
+
+      if (tour.tags.duration.includes(quizAnswers.duration)) score += 20;
+      if (tour.tags.group.includes(quizAnswers.group)) score += 20;
+      if (tour.tags.wildlife.includes(quizAnswers.wildlife)) score += 30; // High weight
+      if (tour.tags.style.includes(quizAnswers.style)) score += 15;
+      if (tour.tags.pace.includes(quizAnswers.pace)) score += 15;
+
+      return {
+        ...tour,
+        calculatedScore: score
+      };
+    });
+
+    scoredTours.sort((a, b) => b.calculatedScore - a.calculatedScore);
+    const topMatches = scoredTours.slice(0, 2);
+
+    // Render results
+    const cardsContainer = document.getElementById('quiz-matched-cards');
+    cardsContainer.innerHTML = '';
+
+    topMatches.forEach((match, idx) => {
+      const matchPercentage = Math.min(99, Math.max(88, match.calculatedScore + (idx === 0 ? 5 : 0)));
+      const isFirst = idx === 0;
+
+      const cardHtml = `
+        <div class="rounded-2xl bg-white/5 border ${isFirst ? 'border-emerald-400/60 ring-2 ring-emerald-500/30' : 'border-white/10'} p-5 flex flex-col justify-between space-y-4 shadow-xl">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-0.5 rounded-full ${isFirst ? 'bg-emerald-500 text-slate-950 font-black' : 'bg-white/10 text-white font-bold'} text-[11px] uppercase tracking-wider">
+                ${isFirst ? (isEn ? "Top Recommendation" : "Recommandation n°1") : (isEn ? "Tailored Alternative" : "Option Alternative")}
+              </span>
+              <span class="text-xs font-black text-amber-300">${matchPercentage}% ${isEn ? "match" : "compatible"}</span>
+            </div>
+
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-900 border border-white/10">
+              <img src="${match.image}" alt="${match.title}" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+
+            <div>
+              <h4 class="text-base sm:text-lg font-black text-white leading-tight">${match.title}</h4>
+              <div class="flex items-center gap-3 text-xs font-bold text-slate-300 mt-1">
+                <span>⏱ ${match.days} ${isEn ? "days" : "jours"}</span>
+                <span>•</span>
+                <span class="text-emerald-400 font-black">${match.price} / ${isEn ? "pers" : "pers"}</span>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed font-normal">${match.matchDesc}</p>
+          </div>
+
+          <div class="pt-3 border-t border-white/10 flex items-center gap-2">
+            <a href="${match.url}" class="flex-1 py-2.5 px-4 rounded-xl ${isFirst ? 'bg-emerald-600 hover:bg-emerald-500 text-white' : 'bg-white/10 hover:bg-white/20 text-white'} text-center font-bold text-xs transition-colors shadow">
+              ${isEn ? "View Itinerary →" : "Voir l'itinéraire →"}
+            </a>
+          </div>
+        </div>
+      `;
+      cardsContainer.innerHTML += cardHtml;
+    });
+
+    // Update WhatsApp link with pre-filled message
+    const waText = isEn 
+      ? `Hello Robin, I just took the Safari Quiz on your website (Duration: ${quizAnswers.duration}, Focus: ${quizAnswers.wildlife}, Group: ${quizAnswers.group}). I am interested in ${topMatches[0].title}. Could you provide details?`
+      : `Bonjour Robin, je viens de faire le quiz safari sur votre site (Durée: ${quizAnswers.duration}, Faune: ${quizAnswers.wildlife}, Groupe: ${quizAnswers.group}). Je suis intéressé par le circuit ${topMatches[0].title}. Pouvez-vous m'en dire plus ?`;
+    
+    document.getElementById('quiz-whatsapp-btn').href = `https://wa.me/33695413227?text=${encodeURIComponent(waText)}`;
+
+    // Update Summary
+    document.getElementById('quiz-results-summary').textContent = isEn 
+      ? `Based on your selection for ${quizAnswers.group} and your interest in ${quizAnswers.wildlife}, these itineraries offer the best field success rate.`
+      : `Selon votre profil (${quizAnswers.group}) et votre priorité faune, ces itinéraires garantissent les plus hauts taux d'observation sur le terrain.`;
+
+    // Switch views
+    document.getElementById('quiz-steps-container').classList.add('hidden');
+    document.getElementById('quiz-progress-wrapper').classList.add('hidden');
+    document.getElementById('quiz-nav-footer').classList.add('hidden');
+    document.getElementById('quiz-results-container').classList.remove('hidden');
+  }
+</script>

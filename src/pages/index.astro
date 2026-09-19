@@ -1,7 +1,7 @@
 ---
 import { getLocalizedPath } from '../i18n/utils';
-
 import Layout from '../layouts/Layout.astro';
+import SafariQuiz from '../components/SafariQuiz.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -551,7 +551,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </p>
         </div>
 
-        <div class="shrink-0">
+        <div class="shrink-0 flex flex-wrap items-center gap-3">
+          <a href="#safari-quiz-section" class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-amber-200 border border-amber-400/30 font-bold text-xs sm:text-sm shadow-md transition-all">
+            <span>Trouver mon circuit idéal en 1 min ↓</span>
+          </a>
           <button type="button" onclick="openCustomTourModal()" class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs sm:text-sm shadow-lg shadow-[#0e8354]/25 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer">
             <span>Créer un séjour sur-mesure →</span>
           </button>
@@ -1518,6 +1521,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
     </div>
   </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6.5. SAFARI QUIZ (FIND YOUR PERFECT ITINERARY) -->
+  <!-- ========================================================================= -->
+  <SafariQuiz lang="fr" />
 
         <!-- ========================================================================= -->
   <!-- 7. CARTE DES DESTINATIONS & EXPÉDITIONS (RESPONSIVE & CLEAN MOBILE) -->
