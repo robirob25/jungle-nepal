@@ -7,42 +7,42 @@ const { lang = 'fr' } = Astro.props;
 const isEn = lang === 'en';
 ---
 
-<section id="safari-quiz-section" class="relative py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 text-white border-t border-b border-white/10 overflow-hidden">
-  <!-- Ambient background lighting -->
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-96 bg-gradient-to-br from-emerald-900/20 via-transparent to-transparent blur-3xl pointer-events-none"></div>
+<section id="safari-quiz-section" class="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-t border-b border-slate-200/80 overflow-hidden">
+  <!-- Subtle ambient glow -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-96 bg-gradient-to-br from-emerald-100/40 via-amber-50/20 to-transparent blur-3xl pointer-events-none"></div>
 
   <div class="relative max-w-4xl mx-auto">
     
     <!-- SECTION HEADER -->
     <div class="text-center space-y-3 mb-10">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
-        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#0e8354] text-xs font-black uppercase tracking-wider shadow-sm">
+        <svg class="w-3.5 h-3.5 text-[#0e8354]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
         </svg>
-        <span>{isEn ? "Interactive Finder" : "Sélection interactive"}</span>
+        <span>{isEn ? "Interactive Safari Finder" : "Guide de Choix Interactif"}</span>
       </div>
 
-      <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white">
+      <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-slate-900">
         {isEn ? "Which safari in Nepal is right for you?" : "Quel safari au Népal est fait pour vous ?"}
       </h2>
-      <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto font-normal">
+      <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-normal">
         {isEn 
           ? "Answer 5 quick questions to discover the exact expeditions matching your dates, group size, and wildlife goals."
           : "Répondez à 5 questions précises pour identifier les expéditions correspondant exactement à vos dates, votre groupe et vos attentes faune."}
       </p>
     </div>
 
-    <!-- QUIZ CONTAINER BOX -->
-    <div class="bg-[#041d13]/80 border border-emerald-500/20 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative">
+    <!-- QUIZ CONTAINER BOX (Luminous White Card with Soft Shadow) -->
+    <div class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-[0_20px_60px_rgba(4,29,19,0.06)] relative ring-1 ring-slate-900/5">
       
       <!-- PROGRESS BAR -->
       <div id="quiz-progress-wrapper" class="mb-8 space-y-2">
-        <div class="flex items-center justify-between text-xs font-bold text-slate-400">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-500">
           <span id="quiz-step-label">{isEn ? "Question 1 of 5" : "Question 1 sur 5"}</span>
-          <span id="quiz-step-percent" class="text-emerald-400">20%</span>
+          <span id="quiz-step-percent" class="text-[#0e8354] font-black">20%</span>
         </div>
-        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
-          <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-emerald-500 to-amber-400 transition-all duration-300 w-1/5"></div>
+        <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/60">
+          <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-[#0e8354] to-amber-500 rounded-full transition-all duration-300 w-1/5"></div>
         </div>
       </div>
 
@@ -51,129 +51,129 @@ const isEn = lang === 'en';
 
         <!-- STEP 1: DURATION -->
         <div class="quiz-step space-y-4" data-step="1">
-          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900">
             {isEn ? "1. How much time do you have for your journey?" : "1. Quelle durée envisagez-vous pour votre voyage ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Short stay (3 to 5 days)" : "Court séjour (3 à 5 jours)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Express escape to Chitwan or Bardia from Kathmandu / Pokhara" : "Escapade express à Chitwan ou Bardia depuis Katmandou"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+            <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Short stay (3 to 5 days)" : "Court séjour (3 à 5 jours)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Express escape to Chitwan or Bardia from Kathmandu / Pokhara" : "Escapade express à Chitwan ou Bardia depuis Katmandou"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Safari week (6 to 9 days)" : "Semaine safari (6 à 9 jours)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Focused immersion without wasting transit time" : "Immersion complète sur un parc sans perte de temps"}</div>
+            <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Safari week (6 to 9 days)" : "Semaine safari (6 à 9 jours)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Focused immersion without wasting transit time" : "Immersion complète sur un parc sans perte de temps"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "The optimal duration for tiger tracking and remote valleys" : "Le format idéal pour maximiser les chances de voir les tigres"}</div>
+            <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "The optimal duration for tiger tracking and remote valleys" : "Le format idéal pour maximiser les chances de voir les tigres"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Grand expedition (15 to 22 days)" : "Grande immersion (15 à 22 jours)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Full multi-park expeditions, Rara Lake or high mountains" : "Expéditions intégrales, lac Rara, Mustang ou traversée totale"}</div>
+            <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Grand expedition (15 to 22 days)" : "Grande immersion (15 à 22 jours)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Full multi-park expeditions, Rara Lake or high mountains" : "Expéditions intégrales, lac Rara, Mustang ou traversée totale"}</div>
             </button>
           </div>
         </div>
 
         <!-- STEP 2: GROUP PROFILE -->
         <div class="quiz-step hidden space-y-4" data-step="2">
-          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900">
             {isEn ? "2. Who will be traveling?" : "2. Quelle est la composition de votre groupe ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <button type="button" onclick="selectQuizOption('group', 'solo')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Solo traveler" : "Voyageur solo"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Join a small shared group (4 to 10 pers) with friendly vibes" : "Rejoindre un petit groupe convivial (4 à 10 pers)"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+            <button type="button" onclick="selectQuizOption('group', 'solo')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Solo traveler" : "Voyageur solo"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Join a small shared group (4 to 10 pers) with friendly vibes" : "Rejoindre un petit groupe convivial (4 à 10 pers)"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'couple')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Couple / Duo" : "Couple / Duo"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Wild romance, charming eco-lodges, and shared nature" : "Ambiance sauvage, lodges de charme et nature partagée"}</div>
+            <button type="button" onclick="selectQuizOption('group', 'couple')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Couple / Duo" : "Couple / Duo"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Wild romance, charming eco-lodges, and shared nature" : "Ambiance sauvage, lodges de charme et nature partagée"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'family')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Family with kids / teenagers" : "Famille avec enfants / adolescents"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Accessible wildlife, canoes, Tharu culture, high safety" : "Faune accessible (rhinos, éléphants), pirogue et sécurité"}</div>
+            <button type="button" onclick="selectQuizOption('group', 'family')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Family with kids / teenagers" : "Famille avec enfants / adolescents"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Accessible wildlife, canoes, Tharu culture, high safety" : "Faune accessible (rhinos, éléphants), pirogue et sécurité"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'friends_photo')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Friends / Wildlife photographers" : "Amis / Photographes naturalistes"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Extended hides, golden hour patience, and specialized guides" : "Affûts prolongés, silence, patience et lumière dorée"}</div>
+            <button type="button" onclick="selectQuizOption('group', 'friends_photo')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Friends / Wildlife photographers" : "Amis / Photographes naturalistes"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Extended hides, golden hour patience, and specialized guides" : "Affûts prolongés, silence, patience et lumière dorée"}</div>
             </button>
           </div>
         </div>
 
         <!-- STEP 3: WILDLIFE & TRIP FOCUS -->
         <div class="quiz-step hidden space-y-4" data-step="3">
-          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900">
             {isEn ? "3. What is your primary trip & wildlife focus?" : "3. Quel est l'objectif prioritaire de votre voyage ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
-            <button type="button" onclick="selectQuizOption('wildlife', 'tiger')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Bengal Tiger on foot" : "Le Tigre du Bengale à pied"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Pure on-foot tracking and riverbank blinds in Bardia" : "Traque sensorielle et affûts en bord de rivière à Bardia"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-2">
+            <button type="button" onclick="selectQuizOption('wildlife', 'tiger')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Bengal Tiger on foot" : "Le Tigre du Bengale à pied"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Pure on-foot tracking and riverbank blinds in Bardia" : "Traque sensorielle et affûts en bord de rivière à Bardia"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'mix_mountain_jungle')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-emerald-500/30 hover:border-emerald-400 text-left transition-all group ring-1 ring-emerald-500/20">
-              <div class="font-bold text-sm text-emerald-300 group-hover:text-emerald-200">{isEn ? "Mountain & Jungle Mix (Trek + Safari)" : "Combiné Montagne & Jungle (Trek + Safari)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Himalayan alpine lakes & summits combined with wild Terai lowlands" : "Lacs d'altitude & sommets himalayens combinés aux safaris du Teraï"}</div>
+            <button type="button" onclick="selectQuizOption('wildlife', 'mix_mountain_jungle')" class="quiz-opt-btn p-4.5 rounded-2xl bg-emerald-50/50 hover:bg-emerald-100/60 border border-emerald-300 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer ring-1 ring-emerald-500/20">
+              <div class="font-extrabold text-sm text-[#0e8354] group-hover:text-[#0c6d46] transition-colors">{isEn ? "Mountain & Jungle Mix (Trek + Safari)" : "Combiné Montagne & Jungle (Trek + Safari)"}</div>
+              <div class="text-xs text-slate-600 mt-1 leading-relaxed">{isEn ? "Himalayan alpine lakes & summits combined with wild Terai lowlands" : "Lacs d'altitude & sommets himalayens combinés aux safaris du Teraï"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'rhino_gentle')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "One-horned Rhinos & Elephants" : "Rhinocéros unicornes & Éléphants"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Gentle riparian safaris and wetlands in Chitwan" : "Immersion accessible dans les marécages de Chitwan"}</div>
+            <button type="button" onclick="selectQuizOption('wildlife', 'rhino_gentle')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "One-horned Rhinos & Elephants" : "Rhinocéros unicornes & Éléphants"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Gentle riparian safaris and wetlands in Chitwan" : "Immersion accessible dans les marécages de Chitwan"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'snow_leopard')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Snow Leopard (High Himalayas)" : "La Panthère des neiges (Himalaya)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "High-altitude winter expedition in Mustang and Dolpo crags" : "Expédition d'altitude dans les falaises du Mustang / Dolpo"}</div>
+            <button type="button" onclick="selectQuizOption('wildlife', 'snow_leopard')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Snow Leopard (High Himalayas)" : "La Panthère des neiges (Himalaya)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "High-altitude winter expedition in Mustang and Dolpo crags" : "Expédition d'altitude dans les falaises du Mustang / Dolpo"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group sm:col-span-2 lg:col-span-2">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "River safari (Gharials, Birds & Rafting)" : "Safari aquatique (Oiseaux, Gavials & Rafting)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Dugout canoes, rafting on the Karnali, rare kingfishers" : "Pirogues traditionnelles, descente de rivière et calaos"}</div>
+            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer sm:col-span-2 lg:col-span-2">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "River safari (Gharials, Birds & Rafting)" : "Safari aquatique (Oiseaux, Gavials & Rafting)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Dugout canoes, rafting on the Karnali, rare kingfishers" : "Pirogues traditionnelles, descente de rivière et calaos"}</div>
             </button>
           </div>
         </div>
 
         <!-- STEP 4: ACCOMMODATION & STYLE -->
         <div class="quiz-step hidden space-y-4" data-step="4">
-          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900">
             {isEn ? "4. What accommodation style suits you best?" : "4. Quel type d'hébergement préférez-vous ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <button type="button" onclick="selectQuizOption('style', 'lodge')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Comfortable Eco-lodges" : "100% Lodges & Confort"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Private rooms, warm showers, serene garden relaxation" : "Chambres soignées, douches chaudes et confort après la marche"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+            <button type="button" onclick="selectQuizOption('style', 'lodge')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Comfortable Eco-lodges" : "100% Lodges & Confort"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Private rooms, warm showers, serene garden relaxation" : "Chambres soignées, douches chaudes et confort après la marche"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('style', 'camping')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Wilderness Jungle Bivouac" : "Bivouac sauvage sous tente"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp"}</div>
+            <button type="button" onclick="selectQuizOption('style', 'camping')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Wilderness Jungle Bivouac" : "Bivouac sauvage sous tente"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('style', 'mixed')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Balanced Mix (Lodge + Bivouac / Refuge)" : "Mix équilibré (Lodge + Bivouac / Refuge)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson des nuits en nature avec le confort des lodges"}</div>
+            <button type="button" onclick="selectQuizOption('style', 'mixed')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Balanced Mix (Lodge + Bivouac / Refuge)" : "Mix équilibré (Lodge + Bivouac / Refuge)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson des nuits en nature avec le confort des lodges"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('style', 'culture_spirit')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Cultural & Spiritual Immersion" : "Immersion culturelle & sérénité"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Homestays in Tharu villages, monasteries, and heritage" : "Maisons d'hôtes traditionnelles, ashram et patrimoine"}</div>
+            <button type="button" onclick="selectQuizOption('style', 'culture_spirit')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Cultural & Spiritual Immersion" : "Immersion culturelle & sérénité"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Homestays in Tharu villages, monasteries, and heritage" : "Maisons d'hôtes traditionnelles, ashram et patrimoine"}</div>
             </button>
           </div>
         </div>
 
         <!-- STEP 5: PHYSICAL PACE -->
         <div class="quiz-step hidden space-y-4" data-step="5">
-          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+          <h3 class="text-lg sm:text-xl font-black text-slate-900">
             {isEn ? "5. What walking pace and physical effort do you desire?" : "5. Quel rythme de marche et effort physique souhaitez-vous ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <button type="button" onclick="selectQuizOption('pace', 'easy')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Accessible to all" : "Accessible à tous"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Gentle strolls, hide lookouts, jeep & canoe transfers" : "Petites marches tranquilles, miradors, pirogues et jeeps"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+            <button type="button" onclick="selectQuizOption('pace', 'easy')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Accessible to all" : "Accessible à tous"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Gentle strolls, hide lookouts, jeep & canoe transfers" : "Petites marches tranquilles, miradors, pirogues et jeeps"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'moderate')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Regular walking (4 to 6 hrs/day)" : "Marche régulière (4 à 6h / jour)"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Active tracking along riverbeds and sal forests on flat terrain" : "Pistage actif en forêt et sur les berges, terrain plat"}</div>
+            <button type="button" onclick="selectQuizOption('pace', 'moderate')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Regular walking (4 to 6 hrs/day)" : "Marche régulière (4 à 6h / jour)"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Active tracking along riverbeds and sal forests on flat terrain" : "Pistage actif en forêt et sur les berges, terrain plat"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'adventurous')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Adventurous Jungle Exploration" : "Aventure & Jungle Dense"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Deep jungle bushwalking, river wading, and backwoods exploration" : "Progression en jungle dense, traversée de gués et autonomie"}</div>
+            <button type="button" onclick="selectQuizOption('pace', 'adventurous')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Adventurous Jungle Exploration" : "Aventure & Jungle Dense"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Deep jungle bushwalking, river wading, and backwoods exploration" : "Progression en jungle dense, traversée de gués et autonomie"}</div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'mountain')" class="quiz-opt-btn p-4 rounded-2xl bg-white/5 hover:bg-emerald-950/60 border border-white/10 hover:border-emerald-500/40 text-left transition-all group">
-              <div class="font-bold text-sm text-white group-hover:text-emerald-300">{isEn ? "Mountain Trekking / High Altitude" : "Trekking Montagne / Altitude"}</div>
-              <div class="text-xs text-slate-400 mt-1">{isEn ? "Alpine hiking trails, panoramic ridges, passes over 3,000-4,000m" : "Sentiers himalayens, crêtes panoramiques et cols d'altitude"}</div>
+            <button type="button" onclick="selectQuizOption('pace', 'mountain')" class="quiz-opt-btn p-4.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/70 border border-slate-200/80 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="font-extrabold text-sm text-slate-900 group-hover:text-[#0e8354] transition-colors">{isEn ? "Mountain Trekking / High Altitude" : "Trekking Montagne / Altitude"}</div>
+              <div class="text-xs text-slate-500 mt-1 leading-relaxed group-hover:text-slate-700">{isEn ? "Alpine hiking trails, panoramic ridges, passes over 3,000-4,000m" : "Sentiers himalayens, crêtes panoramiques et cols d'altitude"}</div>
             </button>
           </div>
         </div>
@@ -182,27 +182,27 @@ const isEn = lang === 'en';
 
       <!-- RESULTS CONTAINER (Hidden initially) -->
       <div id="quiz-results-container" class="hidden space-y-6 animate-in fade-in zoom-in-95 duration-300">
-        <div class="text-center space-y-2 border-b border-white/10 pb-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+        <div class="text-center space-y-2 border-b border-slate-200 pb-6">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-[#0e8354] text-xs font-black border border-emerald-300">
             <span>✓</span>
             <span>{isEn ? "Analysis complete" : "Analyse terminée"}</span>
           </div>
-          <h3 class="text-xl sm:text-2xl font-black text-white">
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900">
             {isEn ? "Here are your 2 ideal safari matches:" : "Voici vos 2 séjours recommandés sur-mesure :"}
           </h3>
-          <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto" id="quiz-results-summary"></p>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto" id="quiz-results-summary"></p>
         </div>
 
         <!-- Matched Tours Cards Grid -->
         <div id="quiz-matched-cards" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
 
         <!-- Action Footer -->
-        <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <button type="button" onclick="resetSafariQuiz()" class="text-xs text-slate-400 hover:text-white transition-colors underline cursor-pointer">
+        <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <button type="button" onclick="resetSafariQuiz()" class="text-xs font-bold text-slate-500 hover:text-slate-900 transition-colors underline cursor-pointer">
             {isEn ? "← Restart the quiz" : "← Recommencer le test"}
           </button>
           
-          <a id="quiz-whatsapp-btn" href="https://wa.me/33695413227" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-black text-xs transition-all shadow-lg">
+          <a id="quiz-whatsapp-btn" href="https://wa.me/33695413227" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-black text-xs transition-all shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.534 1.769.814 2.796.814 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.758 0-3.407-.46-4.848-1.265l-5.152 1.352 1.376-5.023c-.902-1.492-1.376-3.208-1.376-5.064 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
             </svg>
@@ -212,12 +212,12 @@ const isEn = lang === 'en';
       </div>
 
       <!-- NAVIGATION FOOTER (Back button) -->
-      <div id="quiz-nav-footer" class="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
-        <button id="quiz-back-btn" type="button" onclick="prevQuizStep()" class="hidden hover:text-white transition-colors cursor-pointer flex items-center gap-1 font-bold">
+      <div id="quiz-nav-footer" class="mt-8 pt-4 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500">
+        <button id="quiz-back-btn" type="button" onclick="prevQuizStep()" class="hidden hover:text-slate-900 transition-colors cursor-pointer flex items-center gap-1 font-bold">
           <span>←</span>
           <span>{isEn ? "Previous question" : "Question précédente"}</span>
         </button>
-        <span class="text-[11px] text-slate-500 ml-auto">
+        <span class="text-[11px] text-slate-500 ml-auto font-medium">
           {isEn ? "100% free & non-binding" : "100% gratuit et sans engagement"}
         </span>
       </div>
@@ -445,7 +445,6 @@ const isEn = lang === 'en';
     // Score each tour based on user answers
     const scoredTours = toursData.map(tour => {
       let score = 0;
-      let totalCriteria = 5;
 
       if (tour.tags.duration.includes(quizAnswers.duration)) score += 20;
       if (tour.tags.group.includes(quizAnswers.group)) score += 20;
@@ -471,33 +470,33 @@ const isEn = lang === 'en';
       const isFirst = idx === 0;
 
       const cardHtml = `
-        <div class="rounded-2xl bg-white/5 border ${isFirst ? 'border-emerald-400/60 ring-2 ring-emerald-500/30' : 'border-white/10'} p-5 flex flex-col justify-between space-y-4 shadow-xl">
+        <div class="rounded-2xl ${isFirst ? 'bg-gradient-to-b from-emerald-50/50 via-white to-white border-2 border-[#0e8354] ring-4 ring-emerald-500/10' : 'bg-white border border-slate-200'} p-5 sm:p-6 flex flex-col justify-between space-y-4 shadow-lg hover:shadow-xl transition-all">
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2.5 py-0.5 rounded-full ${isFirst ? 'bg-emerald-500 text-slate-950 font-black' : 'bg-white/10 text-white font-bold'} text-[11px] uppercase tracking-wider">
+              <span class="px-3 py-1 rounded-full ${isFirst ? 'bg-[#0e8354] text-white font-black' : 'bg-slate-100 text-slate-700 font-bold border border-slate-200'} text-[11px] uppercase tracking-wider">
                 ${isFirst ? (isEn ? "Top Recommendation" : "Recommandation n°1") : (isEn ? "Tailored Alternative" : "Option Alternative")}
               </span>
-              <span class="text-xs font-black text-amber-300">${matchPercentage}% ${isEn ? "match" : "compatible"}</span>
+              <span class="text-xs font-black text-[#0e8354]">${matchPercentage}% ${isEn ? "match" : "compatible"}</span>
             </div>
 
-            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-900 border border-white/10">
-              <img src="${match.image}" alt="${match.title}" class="w-full h-full object-cover" loading="lazy" />
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200 shadow-inner">
+              <img src="${match.image}" alt="${match.title}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
 
             <div>
-              <h4 class="text-base sm:text-lg font-black text-white leading-tight">${match.title}</h4>
-              <div class="flex items-center gap-3 text-xs font-bold text-slate-300 mt-1">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-tight">${match.title}</h4>
+              <div class="flex items-center gap-3 text-xs font-bold text-slate-600 mt-1">
                 <span>⏱ ${match.days} ${isEn ? "days" : "jours"}</span>
                 <span>•</span>
-                <span class="text-emerald-400 font-black">${match.price} / ${isEn ? "pers" : "pers"}</span>
+                <span class="text-[#0e8354] font-black">${match.price} / ${isEn ? "pers" : "pers"}</span>
               </div>
             </div>
 
-            <p class="text-xs text-slate-300 leading-relaxed font-normal">${match.matchDesc}</p>
+            <p class="text-xs text-slate-600 leading-relaxed font-normal">${match.matchDesc}</p>
           </div>
 
-          <div class="pt-3 border-t border-white/10 flex items-center gap-2">
-            <a href="${match.url}" class="flex-1 py-2.5 px-4 rounded-xl ${isFirst ? 'bg-emerald-600 hover:bg-emerald-500 text-white' : 'bg-white/10 hover:bg-white/20 text-white'} text-center font-bold text-xs transition-colors shadow">
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-2">
+            <a href="${match.url}" class="flex-1 py-3 px-4 rounded-xl ${isFirst ? 'bg-[#0e8354] hover:bg-[#0c6d46] text-white shadow-md' : 'bg-slate-900 hover:bg-slate-800 text-white shadow'} text-center font-black text-xs transition-colors">
               ${isEn ? "View Itinerary →" : "Voir l'itinéraire →"}
             </a>
           </div>
