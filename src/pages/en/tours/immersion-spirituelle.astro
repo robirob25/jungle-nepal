@@ -48,7 +48,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
         <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip <span class="hidden sm:inline">with code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
-      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer"></button>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
     </div>
   </aside>
 
@@ -180,7 +180,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex items-center justify-between pb-3 border-b border-white/10">
       <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
       <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Close menu">
-        
+        ✕
       </button>
     </div>
 
@@ -200,6 +200,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="rounded-2xl bg-white/5 overflow-hidden">
         <button onclick="document.getElementById('mobile-dest-sub').classList.toggle('hidden'); document.getElementById('mobile-dest-arrow').classList.toggle('rotate-180');" class="w-full px-3.5 py-2.5 flex items-center justify-between text-white hover:bg-white/10 transition-colors text-left cursor-pointer">
           <span class="flex items-center gap-2.5">
+            <span>🗺️</span>
             <span>Destinations</span>
           </span>
           <svg id="mobile-dest-arrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -266,6 +267,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
       <!-- Blog (safarinepal.fr) -->
       <a href="/en/blog" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
+        <span>📝</span>
         <span>Blog</span>
         <span class="text-[10px] bg-white/10 text-slate-300 px-1.5 py-0.5 rounded font-mono ml-auto">↗</span>
       </a>
@@ -728,12 +730,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span>Included in the rate</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-emerald-950 font-medium">
-                <li class="flex items-start gap-2"><span>All accommodations (selected boutique eco-lodges & traditional heritage hotels)</span></li>
-                <li class="flex items-start gap-2"><span>Full-board in the jungle (3 healthy and locally prepared meals daily)</span></li>
-                <li class="flex items-start gap-2"><span>Domestic flights & private ground transfers specified in the itinerary</span></li>
-                <li class="flex items-start gap-2"><span>Official National Park conservation permits & entry fees</span></li>
-                <li class="flex items-start gap-2"><span>Mentoring by certified native master trackers (Pawan / Kiran)</span></li>
-                <li class="flex items-start gap-2"><span>Dedicated 24/7 personalized assistance from Robin & local concierge</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>All accommodations (selected boutique eco-lodges & traditional heritage hotels)</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Full-board in the jungle (3 healthy and locally prepared meals daily)</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Domestic flights & private ground transfers specified in the itinerary</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Official National Park conservation permits & entry fees</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Mentoring by certified native master trackers (Pawan / Kiran)</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Dedicated 24/7 personalized assistance from Robin & local concierge</span></li>
               </ul>
             </div>
 
@@ -743,11 +745,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span>Not included</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 font-medium">
-                <li class="flex items-start gap-2"><span>International flights (Home country – Kathmandu)</span></li>
-                <li class="flex items-start gap-2"><span>Nepalese tourist visa fees (approx. $30 to $50 on arrival)</span></li>
-                <li class="flex items-start gap-2"><span>Alcoholic beverages and personal expenses</span></li>
-                <li class="flex items-start gap-2"><span>Mandatory personal travel & medical evacuation insurance</span></li>
-                <li class="flex items-start gap-2"><span>Discretionary tips for local trackers, camp staff, and drivers</span></li>
+                <li class="flex items-start gap-2"><span>✕</span><span>International flights (Home country – Kathmandu)</span></li>
+                <li class="flex items-start gap-2"><span>✕</span><span>Nepalese tourist visa fees (approx. $30 to $50 on arrival)</span></li>
+                <li class="flex items-start gap-2"><span>✕</span><span>Alcoholic beverages and personal expenses</span></li>
+                <li class="flex items-start gap-2"><span>✕</span><span>Mandatory personal travel & medical evacuation insurance</span></li>
+                <li class="flex items-start gap-2"><span>✕</span><span>Discretionary tips for local trackers, camp staff, and drivers</span></li>
               </ul>
             </div>
           </div>
@@ -765,7 +767,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               </p>
             </div>
             <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-2xl border border-emerald-200 self-start sm:self-auto">
-              <span class="text-[#00b67a] font-black text-lg"> 5.0</span>
+              <span class="text-[#00b67a] font-black text-lg">★ 5.0</span>
               <span class="text-xs font-bold text-slate-700">Google Reviews</span>
             </div>
           </div>
@@ -782,7 +784,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                     <p class="text-[11px] text-slate-400">Verified Explorer • Safari Bardia & Babai</p>
                   </div>
                 </div>
-                <div class="flex text-amber-400 text-xs"></div>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
                 “An unforgettable experience with Pawan and Robin. Observing a wild Bengal tiger on foot in complete safety remains the greatest travel moment of my life. Everything was perfectly orchestrated.”
@@ -800,7 +802,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                     <p class="text-[11px] text-slate-400">Verified Explorer • Expédition Bivouac</p>
                   </div>
                 </div>
-                <div class="flex text-amber-400 text-xs"></div>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
                 “The bivouac nights in the heart of Babai Valley are pure magic. The trackers' naturalist expertise is astounding. An authentic, deeply respectful journey into raw nature.”
@@ -1046,7 +1048,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               
               <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
                 <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-100 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
-                  <span> Spécial dessin & carnet</span>
+                  <span>🎨 Spécial dessin & carnet</span>
                 </span>
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
                   4-10 pers.
@@ -1112,7 +1114,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               
               <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
                 <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-100 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
-                  <span> Coup de cœur</span>
+                  <span>❤️ Coup de cœur</span>
                 </span>
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
                   4-10 pers.
@@ -1422,7 +1424,7 @@ function toggleMobileMenu() {
         class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 text-slate-200 border border-white/15 flex items-center justify-center text-sm shadow-md active:scale-95 transition-all"
         aria-label="Contact on WhatsApp"
       >
-        
+        💬
       </a>
       <button 
         onclick="openTourBookingModal()" 
@@ -1437,7 +1439,7 @@ function toggleMobileMenu() {
   <!-- MODAL AGRÉMENTS LÉGAUX ET LICENCES OFFICIELLES DU NÉPAL -->
   <div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 transition-opacity duration-300">
     <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 text-slate-900 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer"></button>
+      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer">✕</button>
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
