@@ -48,7 +48,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
         <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip <span class="hidden sm:inline">with code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
-      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer"></button>
     </div>
   </aside>
 
@@ -180,7 +180,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex items-center justify-between pb-3 border-b border-white/10">
       <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
       <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Close menu">
-        ✕
+        
       </button>
     </div>
 
@@ -200,7 +200,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="rounded-2xl bg-white/5 overflow-hidden">
         <button onclick="document.getElementById('mobile-dest-sub').classList.toggle('hidden'); document.getElementById('mobile-dest-arrow').classList.toggle('rotate-180');" class="w-full px-3.5 py-2.5 flex items-center justify-between text-white hover:bg-white/10 transition-colors text-left cursor-pointer">
           <span class="flex items-center gap-2.5">
-            <span>🗺️</span>
             <span>Destinations</span>
           </span>
           <svg id="mobile-dest-arrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -267,7 +266,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
       <!-- Blog (safarinepal.fr) -->
       <a href="/en/blog" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>📝</span>
         <span>Blog</span>
         <span class="text-[10px] bg-white/10 text-slate-300 px-1.5 py-0.5 rounded font-mono ml-auto">↗</span>
       </a>
@@ -475,19 +473,19 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
               <div class="flex items-start gap-2.5">
-                <span class="text-slate-200 font-black">✓</span>
+                <span class="text-slate-200 font-black"></span>
                 <span class="text-slate-300">You dream of observing the most secretive high-altitude predator in its natural habitat</span>
               </div>
               <div class="flex items-start gap-2.5">
-                <span class="text-slate-200 font-black">✓</span>
+                <span class="text-slate-200 font-black"></span>
                 <span class="text-slate-300">You appreciate patient morning vigils and scanning dramatic ridge lines through spotting scopes</span>
               </div>
               <div class="flex items-start gap-2.5">
-                <span class="text-slate-200 font-black">✓</span>
+                <span class="text-slate-200 font-black"></span>
                 <span class="text-slate-300">Vous recherchez un équilibre parfait entre marche d'altitude, culture Newar et spiritualité tibétaine.</span>
               </div>
               <div class="flex items-start gap-2.5">
-                <span class="text-slate-200 font-black">✓</span>
+                <span class="text-slate-200 font-black"></span>
                 <span class="text-slate-300">You wish to travel in an exclusive micro-group (max 8 explorers) with experienced trackersncadrement d'élite.</span>
               </div>
             </div>
@@ -559,7 +557,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">Nine full days in the field dedicated to tracking and observing the Snow Leopard alongside our experienced Himalayan master trackers equipped with Swarovski HD spotting scopes. Flexible pacing includes cultural transition at the 600-year-old Braka Gompa monastery.</p>
               <div class="pt-2 flex flex-wrap gap-2 text-[11px] font-bold text-amber-100">
                 <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">Twilight Hides</span>
-                <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">🔭 HD Spotting Scopes</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15"> HD Spotting Scopes</span>
                 <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">Braka Gompa (600 years)</span>
               </div>
             </div>
@@ -619,7 +617,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="p-6 sm:p-7 rounded-3xl bg-emerald-50/80 border border-emerald-200 space-y-4">
               <h3 class="font-extrabold text-base text-emerald-950 flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full bg-[#0e8354] text-white flex items-center justify-center text-xs">✓</span>
+                <span class="w-6 h-6 rounded-full bg-[#0e8354] text-white flex items-center justify-center text-xs"></span>
                 <span>Included in the rate (4 300 €)</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
@@ -636,7 +634,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
             <div class="p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
               <h3 class="font-extrabold text-base text-slate-900 flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs">✕</span>
+                <span class="w-6 h-6 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs"></span>
                 <span>Not included</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
@@ -661,7 +659,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               </p>
             </div>
             <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-2xl border border-emerald-200 self-start sm:self-auto">
-              <span class="text-[#00b67a] font-black text-lg">★ 5.0</span>
+              <span class="text-[#00b67a] font-black text-lg"> 5.0</span>
               <span class="text-xs font-bold text-slate-700">Google Reviews</span>
             </div>
           </div>
@@ -678,7 +676,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                     <p class="text-[11px] text-slate-400">Verified Explorer • Safari Bardia & Babai</p>
                   </div>
                 </div>
-                <div class="flex text-amber-400 text-xs">★★★★★</div>
+                <div class="flex text-amber-400 text-xs"></div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
                 “An unforgettable experience with Pawan and Robin. Observing a wild Bengal tiger on foot in complete safety remains the greatest travel moment of my life. Everything was perfectly orchestrated.”
@@ -696,7 +694,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                     <p class="text-[11px] text-slate-400">Verified Explorer • Expédition Bivouac</p>
                   </div>
                 </div>
-                <div class="flex text-amber-400 text-xs">★★★★★</div>
+                <div class="flex text-amber-400 text-xs"></div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
                 “The bivouac nights in the heart of Babai Valley are pure magic. The trackers' naturalist expertise is astounding. An authentic, deeply respectful journey into raw nature.”
@@ -942,7 +940,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               
               <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
                 <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-100 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
-                  <span>❤️ Traveler Favorite</span>
+                  <span> Traveler Favorite</span>
                 </span>
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
                   4-10 pers.
@@ -1008,7 +1006,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               
               <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
                 <span class="inline-flex items-center gap-1.5 bg-jungle-950/90 backdrop-blur-md text-amber-100 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-400/30 shadow-md">
-                  <span>🏔️ Off-the-Beaten-Track</span>
+                  <span> Off-the-Beaten-Track</span>
                 </span>
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">
                   4-10 pers.
@@ -1318,7 +1316,7 @@ function toggleMobileMenu() {
         class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 text-slate-200 border border-white/15 flex items-center justify-center text-sm shadow-md active:scale-95 transition-all"
         aria-label="Contact on WhatsApp"
       >
-        💬
+        
       </a>
       <button 
         onclick="openTourBookingModal()" 
@@ -1333,7 +1331,7 @@ function toggleMobileMenu() {
   <!-- MODAL AGRÉMENTS LÉGAUX ET LICENCES OFFICIELLES DU NÉPAL -->
   <div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 transition-opacity duration-300">
     <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 text-slate-900 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer">✕</button>
+      <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer"></button>
       
       <div class="text-center space-y-2 pb-4 border-b border-slate-100">
         
