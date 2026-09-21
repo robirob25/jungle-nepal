@@ -13,7 +13,7 @@ const isEn = lang === 'en';
 
   <div class="relative max-w-4xl mx-auto">
     
-    <!-- SECTION HEADER (Airy & elegant) -->
+    <!-- SECTION HEADER -->
     <div class="text-center space-y-4 mb-12 sm:mb-14">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-[#0e8354] text-xs font-black uppercase tracking-wider shadow-xs">
         <svg class="w-3.5 h-3.5 text-[#0e8354]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,12 +27,12 @@ const isEn = lang === 'en';
       </h2>
       <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed">
         {isEn 
-          ? "Answer 5 quick questions to discover the exact expeditions matching your dates, travel style, and adventure goals."
-          : "Répondez à 5 questions précises pour identifier les expéditions correspondant exactement à votre profil, vos dates et vos envies d'aventure."}
+          ? "Select your traveler profile and preferences to discover the exact expeditions matching your adventure goals."
+          : "Définissez votre profil de voyageur et vos envies pour découvrir les expéditions correspondant exactement à vos attentes."}
       </p>
     </div>
 
-    <!-- QUIZ CONTAINER BOX (Airy luxury card with generous breathing room) -->
+    <!-- QUIZ CONTAINER BOX -->
     <div class="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-12 lg:p-14 shadow-[0_25px_70px_rgba(4,29,19,0.06)] relative ring-1 ring-slate-900/5">
       
       <!-- PROGRESS BAR -->
@@ -49,132 +49,305 @@ const isEn = lang === 'en';
       <!-- QUESTIONS FORM CONTAINER -->
       <div id="quiz-steps-container">
 
-        <!-- STEP 1: DURATION -->
+        <!-- STEP 1: TRAVELER PROFILE -->
         <div class="quiz-step space-y-5" data-step="1">
           <h3 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
-            {isEn ? "1. How much time do you have for your journey?" : "1. Quelle durée envisagez-vous pour votre voyage ?"}
+            {isEn ? "1. Which traveler profile describes you best?" : "1. Quel profil de voyageur vous correspond le mieux ?"}
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Short stay (2 to 5 days)" : "Court séjour (2 à 5 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Express escape to Chitwan, Bardia or Babai from Kathmandu / Pokhara" : "Escapade express à Chitwan, Bardia ou Babai depuis Katmandou"}</div>
+            
+            <button type="button" onclick="selectQuizOption('profile', 'photographer')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">📸</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Wildlife Photographer" : "Photographe animalier"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Extended hides, golden hour patience, quiet tracking and respect for wildlife" : "Affûts prolongés, lumière dorée, patience, silence et respect du vivant"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "One week (6 to 9 days)" : "Une semaine (6 à 9 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Focused wilderness immersion without wasting transit time" : "Immersion complète en jungle et bivouac sans perte de temps"}</div>
+
+            <button type="button" onclick="selectQuizOption('profile', 'adventurer')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">🧭</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Wilderness Adventurer" : "Aventurier & Explorateur"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Off the beaten path, pure wilderness immersion, river bivouacs and secluded valleys" : "Hors sentiers battus, immersion sauvage totale, bivouac au bord de l'eau et vallées isolées"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "The optimal duration for tracking, multi-parks, and Mustang" : "Le format idéal pour combiner les parcs, vallées secrètes ou le Mustang"}</div>
+
+            <button type="button" onclick="selectQuizOption('profile', 'nature_lover')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">🌿</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Nature & Wildlife Enthusiast" : "Amoureux de la faune & Découverte"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Gentle & rich observation of iconic wildlife: tigers, rhinos, elephants, colorful birds" : "Observation sereine des animaux emblématiques : tigres, rhinos, éléphants et oiseaux"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Grand expedition (15 to 18 days)" : "Grande immersion (15 à 18 jours)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Rara Lake, Snow Leopard, wild rafting or full Nepal crossing" : "Expéditions intégrales, lac Rara, panthère des neiges ou rafting"}</div>
+
+            <button type="button" onclick="selectQuizOption('profile', 'mountain_jungle')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">🏔️</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Trekker & Mountain-Jungle Explorer" : "Randonneur & Grands Espaces (Trek + Safari)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Combining Himalayan alpine peaks or lakes with untamed lowlands of the Terai" : "Relier les panoramas himalayens et lacs d'altitude aux réserves sauvages du Teraï"}
+              </div>
             </button>
+
+            <button type="button" onclick="selectQuizOption('profile', 'cultural_mindful')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer sm:col-span-2">
+              <div class="flex items-center gap-2.5">
+                <span class="text-2xl">🛕</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Cultural & Mindful Traveler" : "Voyageur contemplatif, Culture & Sérénité"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Sacred monasteries, authentic Tharu village immersion, serenity, sketching and heritage" : "Monastères sacrés, immersion villageoise Tharu, sérénité, carnet de dessin et patrimoine"}
+              </div>
+            </button>
+
           </div>
         </div>
 
-        <!-- STEP 2: GROUP PROFILE -->
+        <!-- STEP 2: DURATION -->
         <div class="quiz-step hidden space-y-5" data-step="2">
           <h3 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
-            {isEn ? "2. Who will be traveling?" : "2. Quelle est la composition de votre groupe ?"}
+            {isEn ? "2. How much time do you have for your journey?" : "2. Quelle durée envisagez-vous pour votre voyage ?"}
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <button type="button" onclick="selectQuizOption('group', 'solo')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Solo traveler" : "Voyageur solo"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Join a small shared group (4 to 10 pers) with friendly vibes" : "Rejoindre un petit groupe convivial (4 à 10 pers)"}</div>
+            
+            <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">⚡</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Short stay (2 to 5 days)" : "Court séjour express (2 à 5 jours)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Concentrated getaway to Chitwan, Bardia or Babai from Kathmandu / Pokhara" : "Escapade concentrée à Chitwan, Bardia ou Babai depuis Katmandou"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'couple')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Couple / Duo" : "Couple / Duo"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Wild romance, charming eco-lodges, and shared nature" : "Ambiance sauvage, lodges de charme et nature partagée"}</div>
+
+            <button type="button" onclick="selectQuizOption('duration', 'week')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🌿</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "One week (6 to 9 days)" : "Une semaine (6 à 9 jours)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Focused wilderness immersion without wasting transit time" : "Immersion ciblée et intense en pleine nature sans perte de temps"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'family')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Family with kids / teenagers" : "Famille avec enfants / adolescents"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Accessible wildlife, canoes, Tharu culture, high safety" : "Faune accessible (rhinos, éléphants), pirogue et sécurité"}</div>
+
+            <button type="button" onclick="selectQuizOption('duration', 'classic')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🗺️</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Classic circuit (10 to 14 days)" : "Circuit classique (10 à 14 jours)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "The optimal duration to combine multiple parks, wildlife and culture" : "Le format idéal pour combiner plusieurs parcs, faune et culture"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('group', 'friends_photo')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Friends / Photographers" : "Amis / Photographes"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Extended hides, golden hour patience, and specialized guides" : "Affûts prolongés, silence, patience et lumière dorée"}</div>
+
+            <button type="button" onclick="selectQuizOption('duration', 'grand')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🧭</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Grand expedition (15+ days)" : "Grande immersion (15 jours et +)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Grand crossings, Rara Lake, snow leopard expeditions or wild river rafting" : "Grandes traversées, lac Rara, panthère des neiges ou descente en rafting"}
+              </div>
             </button>
+
           </div>
         </div>
 
-        <!-- STEP 3: WILDLIFE & TRIP FOCUS -->
+        <!-- STEP 3: GROUP PROFILE -->
         <div class="quiz-step hidden space-y-5" data-step="3">
           <h3 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
-            {isEn ? "3. What is your primary trip & wildlife focus?" : "3. Quel est l'objectif prioritaire de votre voyage ?"}
+            {isEn ? "3. Who will be traveling with you?" : "3. Avec qui partez-vous ?"}
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
-            <button type="button" onclick="selectQuizOption('wildlife', 'tiger')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Bengal Tiger on foot" : "Le Tigre du Bengale à pied"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Pure on-foot tracking and riverbank blinds in Bardia" : "Traque sensorielle et affûts en bord de rivière à Bardia"}</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <button type="button" onclick="selectQuizOption('group', 'solo')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">👤</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Solo traveler" : "Voyageur solo"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Join a friendly small group (4 to 10 pers) or tailored private departure" : "Rejoindre un petit groupe convivial (4 à 10 pers) ou départ sur-mesure"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'mix_mountain_jungle')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-emerald-50/50 hover:bg-emerald-100/70 border border-emerald-300 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer ring-1 ring-emerald-500/20">
-              <div class="font-extrabold text-[15px] sm:text-base text-[#0e8354] group-hover:text-[#0c6d46] transition-colors leading-snug">{isEn ? "Mountain & Jungle Mix (Trek + Safari)" : "Combiné Montagne & Jungle (Trek + Safari)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-600 mt-1.5 leading-relaxed">{isEn ? "Himalayan alpine lakes & summits combined with wild Terai lowlands" : "Lacs d'altitude & sommets himalayens combinés aux safaris du Teraï"}</div>
+
+            <button type="button" onclick="selectQuizOption('group', 'couple')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">👫</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Couple / Duo" : "Couple / Duo"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Wild atmosphere, charming eco-lodges and shared natural moments" : "Ambiance sauvage, lodges de charme et nature partagée"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'rhino_gentle')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "One-horned Rhinos & Elephants" : "Rhinocéros unicornes & Éléphants"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Gentle riparian safaris and wetlands in Chitwan" : "Immersion accessible dans les marécages de Chitwan"}</div>
+
+            <button type="button" onclick="selectQuizOption('group', 'family')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">👨‍👩‍👧</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Family or Friends" : "En famille ou entre amis"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Accessible wildlife, canoes, high safety, comfort and wonder" : "Faune accessible (rhinos, éléphants), pirogues, sécurité et émerveillement"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'snow_leopard')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Snow Leopard (High Himalayas)" : "La Panthère des neiges (Himalaya)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "High-altitude winter expedition in Mustang and Dolpo crags" : "Expédition d'altitude dans les falaises du Mustang / Dolpo"}</div>
+
+            <button type="button" onclick="selectQuizOption('group', 'friends_photo')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">📸</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Dedicated Photo Group / Passionate Friends" : "Amis passionnés / Photographes"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Sharing the same focus: extended hides, field patience and prime photo spots" : "Partager les mêmes exigences : longues heures d'affût, patience et spots photo"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('wildlife', 'river_birds')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer sm:col-span-2 lg:col-span-2">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "River safari (Gharials, Birds & Rafting)" : "Safari aquatique (Oiseaux, Gavials & Rafting)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Dugout canoes, rafting on the Karnali, rare kingfishers" : "Pirogues traditionnelles, descente de rivière et calaos"}</div>
-            </button>
+
           </div>
         </div>
 
         <!-- STEP 4: ACCOMMODATION & STYLE -->
         <div class="quiz-step hidden space-y-5" data-step="4">
           <h3 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
-            {isEn ? "4. What accommodation style suits you best?" : "4. Quel type d'hébergement préférez-vous ?"}
+            {isEn ? "4. What accommodation & atmosphere suits you best?" : "4. Quel type d'hébergement et d'ambiance recherchez-vous ?"}
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
             <button type="button" onclick="selectQuizOption('style', 'lodge')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Comfortable Eco-lodges" : "100% Lodges & Confort"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Private rooms, warm showers, serene garden relaxation" : "Chambres soignées, douches chaudes et confort après la marche"}</div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🏡</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Comfortable Eco-lodges" : "100% Eco-Lodges de charme"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Private rooms, hot showers, peaceful garden and relaxation after the field" : "Chambres soignées, douches chaudes et détente au jardin après la journée"}
+              </div>
             </button>
+
             <button type="button" onclick="selectQuizOption('style', 'camping')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Wilderness Jungle Bivouac" : "Bivouac sauvage sous tente"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp"}</div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">⛺</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Wilderness Jungle Bivouac" : "Bivouac sauvage sous tente"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Campfires and nights along remote riverbanks in Babai" : "Nuits sous tente au bord de la rivière Babai, feu de camp et ciel étoilé"}
+              </div>
             </button>
+
             <button type="button" onclick="selectQuizOption('style', 'mixed')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Balanced Mix (Lodge + Bivouac / Refuge)" : "Mix équilibré (Lodge + Bivouac / Refuge)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "The thrill of wilderness nights backed by lodge recovery" : "Le frisson des nuits en nature avec le confort des lodges"}</div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">⚖️</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Balanced Mix (Lodge + Bivouac)" : "Mix équilibré (Lodges + Bivouac)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "The thrill of wilderness nights backed by comfortable lodge recovery" : "Le frisson des nuits en nature avec le confort des lodges"}
+              </div>
             </button>
+
             <button type="button" onclick="selectQuizOption('style', 'culture_spirit')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Cultural & Spiritual Immersion" : "Immersion culturelle & sérénité"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Homestays in Tharu villages, monasteries, and heritage" : "Maisons d'hôtes traditionnelles, ashram et patrimoine"}</div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🛕</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Traditional Homestays & Heritage" : "Maisons d'hôtes & Sérénité"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Authentic Tharu village homestays, ashrams, temples and rich heritage" : "Maisons d'hôtes traditionnelles Tharu, ashrams et patrimoine"}
+              </div>
             </button>
+
           </div>
         </div>
 
-        <!-- STEP 5: PHYSICAL PACE -->
+        <!-- STEP 5: DREAM EXPERIENCE -->
         <div class="quiz-step hidden space-y-5" data-step="5">
           <h3 class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
-            {isEn ? "5. What walking pace and physical effort do you desire?" : "5. Quel rythme de marche et effort physique souhaitez-vous ?"}
+            {isEn ? "5. What is your ultimate dream experience in Nepal?" : "5. Quel grand moment ou animal vous fait le plus vibrer ?"}
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <button type="button" onclick="selectQuizOption('pace', 'easy')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Accessible to all" : "Accessible à tous"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Gentle strolls, hide lookouts, jeep & canoe transfers" : "Petites marches tranquilles, miradors, pirogues et jeeps"}</div>
+            
+            <button type="button" onclick="selectQuizOption('dream', 'tiger')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🐅</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Tracking the Bengal Tiger" : "Pister le Tigre du Bengale"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Tracking signs, riverbank hides, and big cat encounters in Bardia" : "Indices de présence, affûts en bord de rivière et rencontre avec le grand félin à Bardia"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'moderate')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Regular walking (4 to 6 hrs/day)" : "Marche régulière (4 à 6h / jour)"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Active tracking along riverbeds and sal forests on flat terrain" : "Pistage actif en forêt et sur les berges, terrain plat"}</div>
+
+            <button type="button" onclick="selectQuizOption('dream', 'snow_leopard')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">❄️</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "The Mythic Snow Leopard" : "La mythique Panthère des neiges"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "High-altitude winter quest across the cliffs of Mustang and Dolpo" : "Quête d'altitude dans les falaises sauvages du Mustang et du Dolpo"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'adventurous')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Adventurous Jungle Exploration" : "Aventure & Jungle Dense"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Deep jungle bushwalking, river wading, and backwoods exploration" : "Progression en jungle dense, traversée de gués et autonomie"}</div>
+
+            <button type="button" onclick="selectQuizOption('dream', 'rhino_birds')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🦏</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Rhinos, Wild Elephants & Birdlife" : "Rhinocéros, Éléphants & Oiseaux tropicaux"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "Wetland safaris, dugout canoes, hornbills and rich Terai biodiversity" : "Marécages de Chitwan, pirogues, calaos et biodiversité foisonnante"}
+              </div>
             </button>
-            <button type="button" onclick="selectQuizOption('pace', 'mountain')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
-              <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">{isEn ? "Mountain Trekking / High Altitude" : "Trekking Montagne / Altitude"}</div>
-              <div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 leading-relaxed group-hover:text-slate-700">{isEn ? "Alpine hiking trails, panoramic ridges, passes over 3,000-4,000m" : "Sentiers himalayens, crêtes panoramiques et cols d'altitude"}</div>
+
+            <button type="button" onclick="selectQuizOption('dream', 'river_rafting')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🌊</span>
+                <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  {isEn ? "Wild Rivers & Untamed Waters" : "Rivières sauvages & Rafting (Karnali)"}
+                </div>
+              </div>
+              <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
+                {isEn ? "River descent through wild canyons, pristine beaches, and rare gharials" : "Descente en rafting au fond de gorges vierges, plages de sable et gavials du Gange"}
+              </div>
             </button>
+
           </div>
         </div>
 
@@ -228,11 +401,11 @@ const isEn = lang === 'en';
 
 <script is:inline define:vars={{ isEn }}>
   const quizAnswers = {
+    profile: '',
     duration: '',
     group: '',
-    wildlife: '',
     style: '',
-    pace: ''
+    dream: ''
   };
 
   let currentStep = 1;
@@ -248,9 +421,15 @@ const isEn = lang === 'en';
       image: "/assets/tours_thumbs/julien_leopard_indien.webp",
       url: isEn ? "/en/tours/jungle-extreme" : "/tours/jungle-extreme",
       matchDesc: isEn 
-        ? "Deep wilderness expedition designed for seasoned photographers: big cat tracking, remote watchtowers, and total silence."
+        ? "Deep wilderness expedition designed for dedicated photographers & passionate naturalists: big cat tracking, remote watchtowers, and total silence."
         : "Expédition intense pour photographes et passionnés : pistage des félins, miradors isolés et immersion sauvage intégrale.",
-      tags: { duration: ["grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger"], style: ["mixed", "camping", "lodge"], pace: ["adventurous", "moderate"] },
+      tags: { 
+        profile: ["photographer", "adventurer", "nature_lover"],
+        duration: ["grand"],
+        group: ["friends_photo", "solo", "couple"],
+        style: ["mixed", "camping", "lodge"],
+        dream: ["tiger"]
+      },
       scoreWeight: 10
     },
     {
@@ -263,7 +442,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Grand crossing connecting Himalayan sunrise viewpoints with the untamed lowlands of Bardia and Suklaphanta."
         : "Grande traversée reliant les balcons de l'Himalaya aux réserves sauvages de Bardia et Suklaphanta.",
-      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["lodge", "mixed"], pace: ["mountain", "moderate"] },
+      tags: { 
+        profile: ["mountain_jungle", "adventurer", "nature_lover"],
+        duration: ["grand"],
+        group: ["solo", "couple", "family", "friends_photo"],
+        style: ["lodge", "mixed"],
+        dream: ["tiger", "rhino_birds"]
+      },
       scoreWeight: 9
     },
     {
@@ -276,7 +461,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "The supreme comparison itinerary exploring both iconic national parks for maximum wildlife diversity."
         : "Le grand classique comparatif explorant les deux parcs majeurs du Teraï pour une diversité faunique complète.",
-      tags: { duration: ["classic"], group: ["couple", "solo", "friends_photo", "family"], wildlife: ["tiger", "rhino_gentle"], style: ["lodge", "mixed"], pace: ["moderate", "easy"] },
+      tags: { 
+        profile: ["nature_lover", "photographer", "cultural_mindful"],
+        duration: ["classic"],
+        group: ["couple", "solo", "family", "friends_photo"],
+        style: ["lodge", "mixed"],
+        dream: ["tiger", "rhino_birds"]
+      },
       scoreWeight: 10
     },
     {
@@ -288,8 +479,14 @@ const isEn = lang === 'en';
       url: isEn ? "/en/tours/bardia-explorateur" : "/tours/bardia-explorateur",
       matchDesc: isEn 
         ? "Focused 5-day on-foot tiger tracking immersion in Bardia with comfortable local eco-lodge base."
-        : "Immersion de 5 jours 100% à pied à Bardia avec camp de base en lodge pour maximiser les chances de croiser le tigre.",
-      tags: { duration: ["short"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["lodge", "mixed"], pace: ["moderate"] },
+        : "Immersion de 5 jours à Bardia avec camp de base en lodge pour maximiser les chances de croiser le tigre.",
+      tags: { 
+        profile: ["nature_lover", "photographer", "adventurer"],
+        duration: ["short"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["lodge", "mixed"],
+        dream: ["tiger"]
+      },
       scoreWeight: 10
     },
     {
@@ -302,7 +499,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Ideal short family or couple getaway: one-horned rhinos, dugout canoes on the Rapti river and Tharu culture."
         : "Idéal pour une escapade courte en famille ou en couple : rhinocéros unicornes, pirogue et immersion Tharu.",
-      tags: { duration: ["short"], group: ["family", "couple", "solo"], wildlife: ["rhino_gentle"], style: ["lodge", "culture_spirit"], pace: ["easy"] },
+      tags: { 
+        profile: ["nature_lover", "cultural_mindful"],
+        duration: ["short"],
+        group: ["family", "couple", "solo"],
+        style: ["lodge", "culture_spirit"],
+        dream: ["rhino_birds"]
+      },
       scoreWeight: 9
     },
     {
@@ -315,7 +518,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Grand 18-day expedition: navigate untamed Karnali river rapids, riverside bivouacs, and deep wildlife observation."
         : "Grande aventure de 18 jours : descente des gorges de la Karnali en rafting, bivouacs sur le sable et safari sauvage.",
-      tags: { duration: ["grand"], group: ["friends_photo", "solo", "couple"], wildlife: ["river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      tags: { 
+        profile: ["adventurer", "mountain_jungle", "nature_lover"],
+        duration: ["grand"],
+        group: ["friends_photo", "solo", "couple"],
+        style: ["camping", "mixed"],
+        dream: ["river_rafting"]
+      },
       scoreWeight: 9
     },
     {
@@ -328,7 +537,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Ultra-concentrated 2-day wilderness escape with night bivouac inside the jungle and sunrise tracking."
         : "Escapade ultra-intense de 2 jours avec nuit en bivouac au cœur de la forêt et affûts au lever du jour.",
-      tags: { duration: ["short"], group: ["solo", "couple", "friends_photo"], wildlife: ["tiger"], style: ["camping", "mixed"], pace: ["moderate", "adventurous"] },
+      tags: { 
+        profile: ["adventurer", "photographer", "nature_lover"],
+        duration: ["short"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["camping", "mixed"],
+        dream: ["tiger"]
+      },
       scoreWeight: 8
     },
     {
@@ -341,7 +556,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "The absolute high-altitude & jungle epic: pristine alpine shores of Rara Lake followed by wild tiger tracking in Bardia."
         : "L'épopée ultime entre sommets et plaines : lac Rara d'altitude dans l'Himalaya puis pistage du tigre à Bardia.",
-      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "tiger"], style: ["mixed", "lodge", "camping"], pace: ["mountain", "moderate"] },
+      tags: { 
+        profile: ["mountain_jungle", "adventurer"],
+        duration: ["grand"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["mixed", "lodge", "camping"],
+        dream: ["tiger", "river_rafting"]
+      },
       scoreWeight: 10
     },
     {
@@ -354,7 +575,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Pure 8-day wilderness: isolated nights under tents along the Babai river, far from any human footprint."
         : "Immersion sauvage de 8 jours : nuits sous tente au bord de la rivière Babai, loin de toute présence humaine.",
-      tags: { duration: ["week"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+      tags: { 
+        profile: ["adventurer", "photographer"],
+        duration: ["week"],
+        group: ["friends_photo", "solo", "couple"],
+        style: ["camping", "mixed"],
+        dream: ["tiger", "river_rafting"]
+      },
       scoreWeight: 9
     },
     {
@@ -367,7 +594,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Complete 14-day panorama: ancient Kathmandu Valley heritage, Himalayan foothills, rafting, and safaris in Chitwan & Bardia."
         : "Le tour complet de 14 jours : patrimoine de Katmandou, contreforts himalayens, rafting et safaris à Chitwan & Bardia.",
-      tags: { duration: ["classic"], group: ["solo", "couple", "family", "friends_photo"], wildlife: ["mix_mountain_jungle", "rhino_gentle", "tiger"], style: ["lodge", "mixed", "culture_spirit"], pace: ["moderate", "mountain", "easy"] },
+      tags: { 
+        profile: ["nature_lover", "mountain_jungle", "cultural_mindful"],
+        duration: ["classic"],
+        group: ["solo", "couple", "family", "friends_photo"],
+        style: ["lodge", "mixed", "culture_spirit"],
+        dream: ["tiger", "rhino_birds", "river_rafting"]
+      },
       scoreWeight: 10
     },
     {
@@ -378,9 +611,15 @@ const isEn = lang === 'en';
       image: "/assets/tours_thumbs/elephant_bardia.webp",
       url: isEn ? "/en/tours/babai-special" : "/tours/babai-special",
       matchDesc: isEn 
-        ? "Exclusive 5-day immersion in Bardia's most secluded valley, designed for trackers seeking pure untouched nature."
-        : "Immersion exclusive de 5 jours dans la vallée secrète de Babai, taillée pour les pisteurs en quête de solitude.",
-      tags: { duration: ["short"], group: ["friends_photo", "solo", "couple"], wildlife: ["tiger", "river_birds"], style: ["camping", "mixed"], pace: ["adventurous", "moderate"] },
+        ? "Exclusive 5-day immersion in Bardia's most secluded valley, designed for travelers seeking pure untouched nature."
+        : "Immersion exclusive de 5 jours dans la vallée secrète de Babai, taillée pour les voyageurs en quête de solitude.",
+      tags: { 
+        profile: ["photographer", "adventurer"],
+        duration: ["short"],
+        group: ["friends_photo", "solo", "couple"],
+        style: ["camping", "mixed"],
+        dream: ["tiger"]
+      },
       scoreWeight: 9
     },
     {
@@ -393,7 +632,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "13-day cultural odyssey in the mystical walled kingdom of Lo Manthang during the sacred Tiji masked ceremonies."
         : "Odyssée culturelle de 13 jours au royaume interdit du Mustang pour assister aux cérémonies sacrées du festival Tiji.",
-      tags: { duration: ["classic"], group: ["solo", "couple", "friends_photo"], wildlife: ["mix_mountain_jungle", "snow_leopard"], style: ["lodge", "culture_spirit", "mixed"], pace: ["mountain", "moderate"] },
+      tags: { 
+        profile: ["cultural_mindful", "mountain_jungle"],
+        duration: ["classic"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["lodge", "culture_spirit", "mixed"],
+        dream: ["snow_leopard"]
+      },
       scoreWeight: 9
     },
     {
@@ -406,7 +651,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "15-day artistic itinerary combining heritage sketching in Kathmandu with wildlife observation in the Terai."
         : "Voyage artistique de 15 jours alliant dessin du patrimoine à Katmandou et observation contemplative de la faune.",
-      tags: { duration: ["grand"], group: ["solo", "couple", "friends_photo"], wildlife: ["rhino_gentle", "tiger"], style: ["lodge", "culture_spirit"], pace: ["easy", "moderate"] },
+      tags: { 
+        profile: ["cultural_mindful", "nature_lover"],
+        duration: ["grand"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["lodge", "culture_spirit"],
+        dream: ["rhino_birds", "tiger"]
+      },
       scoreWeight: 8
     },
     {
@@ -419,7 +670,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "12-day mindful journey: sacred monasteries, meditation retreats in Himalayan valleys, and peaceful nature walks."
         : "Séjour ressourçant de 12 jours entre monastères sacrés, méditation face aux sommets et nature préservée.",
-      tags: { duration: ["classic"], group: ["solo", "couple"], wildlife: ["mix_mountain_jungle"], style: ["lodge", "culture_spirit"], pace: ["easy", "moderate"] },
+      tags: { 
+        profile: ["cultural_mindful"],
+        duration: ["classic"],
+        group: ["solo", "couple"],
+        style: ["lodge", "culture_spirit"],
+        dream: ["rhino_birds"]
+      },
       scoreWeight: 8
     },
     {
@@ -432,7 +689,13 @@ const isEn = lang === 'en';
       matchDesc: isEn 
         ? "Mythic 17-day high Himalayan winter expedition in Mustang and Dolpo crags tracking the ghost cat."
         : "Quête mythique de 17 jours en haute altitude dans les falaises du Mustang et du Dolpo sur les traces du grand félin.",
-      tags: { duration: ["grand"], group: ["friends_photo", "solo"], wildlife: ["snow_leopard", "mix_mountain_jungle"], style: ["mixed", "lodge"], pace: ["mountain"] },
+      tags: { 
+        profile: ["photographer", "adventurer", "mountain_jungle"],
+        duration: ["grand"],
+        group: ["friends_photo", "solo", "couple"],
+        style: ["mixed", "lodge"],
+        dream: ["snow_leopard"]
+      },
       scoreWeight: 10
     }
   ];
@@ -455,11 +718,11 @@ const isEn = lang === 'en';
   };
 
   window.resetSafariQuiz = function() {
+    quizAnswers.profile = '';
     quizAnswers.duration = '';
     quizAnswers.group = '';
-    quizAnswers.wildlife = '';
     quizAnswers.style = '';
-    quizAnswers.pace = '';
+    quizAnswers.dream = '';
     currentStep = 1;
     document.getElementById('quiz-results-container').classList.add('hidden');
     document.getElementById('quiz-steps-container').classList.remove('hidden');
@@ -499,27 +762,36 @@ const isEn = lang === 'en';
     const scoredTours = toursData.map(tour => {
       let score = 0;
 
-      if (tour.tags.duration.includes(quizAnswers.duration)) score += 20;
-      if (tour.tags.group.includes(quizAnswers.group)) score += 20;
-      if (tour.tags.wildlife.includes(quizAnswers.wildlife)) score += 30; // High weight
-      if (tour.tags.style.includes(quizAnswers.style)) score += 15;
-      if (tour.tags.pace.includes(quizAnswers.pace)) score += 15;
+      if (tour.tags.profile && tour.tags.profile.includes(quizAnswers.profile)) score += 30; // Primary intent
+      if (tour.tags.dream && tour.tags.dream.includes(quizAnswers.dream)) score += 25; // Dream focus
+      if (tour.tags.duration && tour.tags.duration.includes(quizAnswers.duration)) score += 20; // Time constraint
+      if (tour.tags.group && tour.tags.group.includes(quizAnswers.group)) score += 15;
+      if (tour.tags.style && tour.tags.style.includes(quizAnswers.style)) score += 15;
 
       return {
         ...tour,
-        calculatedScore: score
+        calculatedScore: score + (tour.scoreWeight || 0)
       };
     });
 
     scoredTours.sort((a, b) => b.calculatedScore - a.calculatedScore);
     const topMatches = scoredTours.slice(0, 2);
 
+    // Profile label mapping for summary
+    const profileLabels = {
+      photographer: isEn ? "Photographer" : "Photographe animalier",
+      adventurer: isEn ? "Adventurer" : "Aventurier & Explorateur",
+      nature_lover: isEn ? "Wildlife Lover" : "Amoureux de la faune",
+      mountain_jungle: isEn ? "Trek & Safari" : "Trek & Safari",
+      cultural_mindful: isEn ? "Culture & Serenity" : "Culture & Sérénité"
+    };
+
     // Render results
     const cardsContainer = document.getElementById('quiz-matched-cards');
     cardsContainer.innerHTML = '';
 
     topMatches.forEach((match, idx) => {
-      const matchPercentage = Math.min(99, Math.max(88, match.calculatedScore + (idx === 0 ? 5 : 0)));
+      const matchPercentage = Math.min(99, Math.max(88, Math.round((match.calculatedScore / 115) * 100)));
       const isFirst = idx === 0;
 
       const cardHtml = `
@@ -560,15 +832,15 @@ const isEn = lang === 'en';
 
     // Update WhatsApp link with pre-filled message
     const waText = isEn 
-      ? `Hello Robin, I just took the Travel Quiz on your website (Duration: ${quizAnswers.duration}, Focus: ${quizAnswers.wildlife}, Group: ${quizAnswers.group}). I am interested in ${topMatches[0].title}. Could you provide details?`
-      : `Bonjour Robin, je viens de faire le quiz sur votre site (Durée: ${quizAnswers.duration}, Objectif: ${quizAnswers.wildlife}, Groupe: ${quizAnswers.group}). Je suis intéressé par le circuit ${topMatches[0].title}. Pouvez-vous m'en dire plus ?`;
+      ? `Hello Robin, I just took the Journey Quiz on your website (Profile: ${profileLabels[quizAnswers.profile] || quizAnswers.profile}, Duration: ${quizAnswers.duration}, Focus: ${quizAnswers.dream}). I am interested in ${topMatches[0].title}. Could you tell me more about it?`
+      : `Bonjour Robin, je viens de faire le quiz sur votre site (Profil: ${profileLabels[quizAnswers.profile] || quizAnswers.profile}, Durée: ${quizAnswers.duration}, Objectif: ${quizAnswers.dream}). Je suis intéressé par le circuit ${topMatches[0].title}. Pouvez-vous m'en dire plus ?`;
     
     document.getElementById('quiz-whatsapp-btn').href = `https://wa.me/33695413227?text=${encodeURIComponent(waText)}`;
 
     // Update Summary
     document.getElementById('quiz-results-summary').textContent = isEn 
-      ? `Based on your selection for ${quizAnswers.group} and your trip priorities, these itineraries offer the best field experience and success rate.`
-      : `Selon votre profil (${quizAnswers.group}) et vos priorités de voyage, ces itinéraires garantissent la meilleure expérience et immersion sur le terrain.`;
+      ? `Based on your profile as ${profileLabels[quizAnswers.profile] || 'traveler'} and your adventure goals, these itineraries offer the best experience and wildlife encounter rate in Nepal.`
+      : `Selon votre profil (${profileLabels[quizAnswers.profile] || 'voyageur'}) et vos envies d'aventure, ces itinéraires garantissent la meilleure expérience et immersion sur le terrain au Népal.`;
 
     // Switch views
     document.getElementById('quiz-steps-container').classList.add('hidden');
