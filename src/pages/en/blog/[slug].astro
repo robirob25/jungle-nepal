@@ -270,6 +270,21 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
 
   <Footer lang="en" />
 
+  <!-- Instagram Embed Script Support -->
+  <script is:inline async src="https://www.instagram.com/embed.js"></script>
+  <script is:inline>
+    function initInstagramEmbeds() {
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      }
+    }
+    if (document.readyState === 'complete') {
+      initInstagramEmbeds();
+    } else {
+      window.addEventListener('load', initInstagramEmbeds);
+    }
+  </script>
+
 </Layout>
 
 <style is:global>

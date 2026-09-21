@@ -1,7 +1,7 @@
 ---
 import { getLocalizedPath } from '../i18n/utils';
-
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -12,7 +12,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <!-- 1. TOP ANNOUNCEMENT BANNER -->
   <aside aria-label="Bannière d'information" class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-      
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
         <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 <span class="hidden sm:inline">avec le code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
       </div>
@@ -21,200 +20,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </aside>
 
   <!-- 2. NAVBAR PROPRE STICKY -->
-  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
-      
-      <!-- LEFT: LOGO -->
-      <a href="/" class="flex items-center gap-2 group shrink-0">
-        <img 
-          src="/assets/logo_nav_dark.webp" 
-          alt="Jungle Nepal Adventure Logo" 
-          class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-        />
-      </a>
-
-      <!-- CENTER: NAVIGATION LINKS -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-slate-700">
-        <a href="/#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Tous les 15 séjours</a>
-
-        <!-- Destinations Dropdown -->
-        <div class="relative group py-2">
-          <a href="/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1 cursor-pointer whitespace-nowrap">
-            <span>Destinations</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-
-          <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
-            <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
-              <a href="/destinations/bardia" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Bardia</p>
-                  <p class="text-[10px] text-slate-400">Tigres du Bengale & safaris à pied</p>
-                </div>
-              </a>
-              <a href="/destinations/chitwan" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Chitwan</p>
-                  <p class="text-[10px] text-slate-400">Rhinocéros & pirogues de la Rapti</p>
-                </div>
-              </a>
-              <a href="/destinations/suklaphanta" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Suklaphanta</p>
-                  <p class="text-[10px] text-slate-400">Cerfs des marais & ouest sauvage</p>
-                </div>
-              </a>
-              <a href="/destinations/annapurna" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Les Annapurna & Pokhara</p>
-                  <p class="text-[10px] text-slate-400">Sommets mythiques & balcons alpins</p>
-                </div>
-              </a>
-              <a href="/destinations/katmandou" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Katmandou</p>
-                  <p class="text-[10px] text-slate-400">Vallée des rois & temples sacrés</p>
-                </div>
-              </a>
-              <div class="pt-2 border-t border-white/10 mt-1">
-                <a href="/destinations" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow">
-                  Voir toutes les destinations →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="/#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Nos guides</a>
-          <a href="/#galerie-faune" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Galerie</a>
-        <a href="/a-propos" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">À propos</a>
-        <a href="/blog" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Blog</a>
-        <a href="/contact" class="text-[#0e8354] font-bold border-b-2 border-[#0e8354] pb-0.5 whitespace-nowrap">Contact</a>
-      </nav>
-
-      <!-- RIGHT: ACTIONS -->
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-[#0e8354] text-white font-black text-xs sm:text-[13px] shadow-md shadow-[#0e8354]/25 hover:bg-[#0c6d46] hover:scale-105 active:scale-95 transition-all whitespace-nowrap cursor-pointer">
-          <svg class="w-4 h-4 text-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-          <span class="whitespace-nowrap">WhatsApp</span>
-        </a>
-
-        <!-- LANGUAGE SWITCHER (GLOBE) -->
-        <div class="relative group/lang py-1">
-          <button onclick="toggleLangMenu(this)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 hover:bg-slate-200 border-slate-200 text-slate-700 border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Changer de langue / Change language">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </button>
-          <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-48 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
-            <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-0.5 text-xs font-bold text-white">
-              <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
-              <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-              <button onclick="changeLanguage('de')" data-lang-btn="de" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                <span class="flex items-center gap-2"><span>🇩🇪</span><span>Deutsch</span></span>
-              </button>
-              <button onclick="changeLanguage('es')" data-lang-btn="es" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                <span class="flex items-center gap-2"><span>🇪🇸</span><span>Español</span></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile Hamburger Button -->
-        <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-2xl bg-[#041d13] hover:bg-[#073021] text-white border border-white/10 backdrop-blur-md flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-md p-2" aria-label="Menu principal">
-          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
-          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
-          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
-        </button>
-      </div>
-
-    </div>
-  </header>
-
-  <!-- MOBILE NAVIGATION DRAWER -->
-  <div id="mobile-menu" style="background-color: #041d13 !important;" class="hidden lg:hidden fixed inset-x-3 top-20 z-50 max-h-[85vh] overflow-y-auto bg-[#041d13] border border-white/15 rounded-3xl p-5 text-white shadow-[0_25px_60px_rgba(0,0,0,0.95)] space-y-4 font-sans">
-    <div class="flex items-center justify-between pb-3 border-b border-white/10">
-      <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
-      <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Fermer le menu">✕</button>
-    </div>
-
-    <nav class="space-y-1 text-sm font-bold">
-      <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center justify-between text-white transition-colors">
-        <span class="flex items-center gap-2.5"><span>Tous les 15 séjours</span></span>
-        <span class="text-[10px] bg-white/10 text-slate-200 px-2 py-0.5 rounded-full font-extrabold border border-white/10">15 circuits</span>
-      </a>
-
-      <div class="pt-1">
-        <button onclick="toggleMobileDestinations()" class="w-full px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center justify-between text-slate-200 hover:text-white transition-colors cursor-pointer text-left">
-          <span class="flex items-center gap-2.5"><span>Destinations</span></span>
-          <svg id="mobile-dest-chevron" class="w-4 h-4 text-slate-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        <div id="mobile-destinations-menu" class="hidden pl-6 pr-2 pt-1 pb-2 space-y-1">
-          <a href="/destinations/bardia" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
-            
-            <div><p class="font-bold text-white">Parc national de Bardia</p><p class="text-[10px] text-slate-400">Tigres du Bengale & safaris à pied</p></div>
-          </a>
-          <a href="/destinations/chitwan" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
-            
-            <div><p class="font-bold text-white">Parc national de Chitwan</p><p class="text-[10px] text-slate-400">Rhinocéros & pirogues</p></div>
-          </a>
-          <a href="/destinations/suklaphanta" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
-            
-            <div><p class="font-bold text-white">Parc national de Suklaphanta</p><p class="text-[10px] text-slate-400">Cerfs des marais & ouest sauvage</p></div>
-          </a>
-          <a href="/destinations/annapurna" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
-            
-            <div><p class="font-bold text-white">Les Annapurna & Pokhara</p><p class="text-[10px] text-slate-400">Sommets mythiques & balcons alpins</p></div>
-          </a>
-          <a href="/destinations/katmandou" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
-            
-            <div><p class="font-bold text-white">Katmandou</p><p class="text-[10px] text-slate-400">Vallée des rois & temples sacrés</p></div>
-          </a>
-          <a href="/destinations" onclick="toggleMobileMenu()" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow mt-1">
-            Voir toutes les destinations →
-          </a>
-        </div>
-      </div>
-
-      <a href="/#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>L'esprit safari</span>
-      </a>
-      <a href="/#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a>
-      <a href="/#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>Galerie</span>
-      </a>
-      <a href="/a-propos" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>À propos</span>
-      </a>
-      <a href="/blog" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>📝</span><span>Blog</span><span class="text-[10px] bg-white/10 text-slate-300 px-1.5 py-0.5 rounded font-mono ml-auto">↗</span>
-      </a>
-      <a href="/blog" class="hover:text-amber-100 transition-colors">Blog</a>
-      <a href="/contact" class="px-3.5 py-2.5 rounded-2xl bg-white/15 flex items-center gap-2.5 text-white font-black">
-        <span>Contact</span>
-      </a>
-    </nav>
-
-    <!-- Language Selector Buttons -->
-    <div class="pt-3 border-t border-white/10 space-y-2">
-      <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Langue / Language</span>
-      <div class="grid grid-cols-4 gap-1.5">
-        <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
-        <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-        <button onclick="changeLanguage('de')" data-lang-btn="de" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer"><span>🇩🇪</span> <span>DE</span></button>
-        <button onclick="changeLanguage('es')" data-lang-btn="es" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer"><span>🇪🇸</span> <span>ES</span></button>
-      </div>
-    </div>
-  </div>
+  <Header lang="fr" currentPath="/contact" />
 
   <!-- 3. HERO EN-TÊTE DE LA PAGE CONTACT (PHOTO DRIVE HORIZONTALE EFFET WAHOU) -->
   <section class="relative min-h-[440px] sm:min-h-[500px] flex items-center bg-slate-950 text-white overflow-hidden py-20 sm:py-28 border-b border-white/10">
