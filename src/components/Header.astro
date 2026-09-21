@@ -140,10 +140,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </a>
 
         <!-- Mobile Hamburger Button -->
-        <button onclick="toggleMobileMenu()" class={`lg:hidden w-10 h-10 rounded-2xl ${isTransparent ? 'bg-white/15 hover:bg-white/25 text-white border-white/30' : 'bg-slate-100 hover:bg-slate-200 text-slate-900 border-slate-300'} border backdrop-blur-md flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-sm p-2`} aria-label="Menu">
-          <span class={`w-5 h-[2.5px] ${isTransparent ? 'bg-white' : 'bg-slate-900'} rounded-full block`}></span>
-          <span class={`w-5 h-[2.5px] ${isTransparent ? 'bg-white' : 'bg-slate-900'} rounded-full block`}></span>
-          <span class={`w-5 h-[2.5px] ${isTransparent ? 'bg-white' : 'bg-slate-900'} rounded-full block`}></span>
+        <button onclick="toggleMobileMenu()" class={`lg:hidden w-10 h-10 rounded-2xl ${isTransparent ? "bg-white/15 hover:bg-white/25 text-white border-white/30" : "bg-[#041d13] hover:bg-[#073021] text-white border-white/10"} border backdrop-blur-md flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-md p-2`} aria-label="Menu">
+          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
+          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
+          <span class="w-5 h-[2.5px] bg-white rounded-full block"></span>
         </button>
       </div>
 
@@ -152,7 +152,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 </header>
 
 <!-- MOBILE NAVIGATION DRAWER -->
-<div id="mobile-menu" class="hidden lg:hidden fixed inset-x-3 top-20 z-50 max-h-[85vh] overflow-y-auto bg-slate-950/98 backdrop-blur-2xl border border-white/15 rounded-3xl p-5 text-white shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-4 font-sans">
+<div id="mobile-menu" style="background-color: #041d13 !important;" class="hidden lg:hidden fixed inset-x-3 top-20 z-50 max-h-[85vh] overflow-y-auto bg-[#041d13] border border-white/15 rounded-3xl p-5 text-white shadow-[0_25px_60px_rgba(0,0,0,0.95)] space-y-4 font-sans">
   
   <div class="flex items-center justify-between pb-3 border-b border-white/10">
     <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
