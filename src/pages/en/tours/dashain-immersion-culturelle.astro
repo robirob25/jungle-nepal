@@ -382,7 +382,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <a href="#accompagnateurs" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Your Hosts</a>
           <a href="#dashain" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Dashain Highlights</a>
           <a href="#programme" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Itinerary (15d)</a>
-          <a href="#galerie" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Photo Gallery</a>
           <a href="#inclusions" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Inclusions</a>
           <a href="#faq" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">FAQ</a>
         </div>
@@ -950,139 +949,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </section>
 
-        <!-- SECTION 5: TOUR PHOTO GALLERY -->
-        <section id="galerie" class="pt-8 border-t border-slate-200 space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div>
-              <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-                Tour Photo Gallery (16 captures)
-              </h2>
-              <p class="text-xs sm:text-sm text-slate-600 mt-1">
-                Atmospheres, authentic encounters, and wild encounters captured on the ground in Nepal. Click any image to expand.
-              </p>
-            </div>
-            <button onclick="openLightbox(0)" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold shadow transition-all self-start sm:self-auto cursor-pointer">
-              <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
-              <span>Fullscreen Slideshow</span>
-            </button>
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(0)">
-              <img src="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp" alt="Samantha, Adrien and Sonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Samantha, Adrien & Sonu</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(1)">
-              <img src="/assets/tours/dashain/dashain_10_katmandou_13_1.webp" alt="Kathmandu valley and temples" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Kathmandu & Temples</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(2)">
-              <img src="/assets/tours/dashain/dashain_1_bardia_10_2.webp" alt="Bardia national park jungle safari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Bardia Jungle</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(3)">
-              <img src="/assets/tours/dashain/dashain_12_katmandou_6_1.webp" alt="Local traditions and heritage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Local Life & Culture</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(4)">
-              <img src="/assets/tours/dashain/dashain_2_bardia_28.webp" alt="Tracking wildlife on foot in Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Walking Safari</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(5)">
-              <img src="/assets/tours/dashain/dashain_3_bardia_33_1.webp" alt="Untamed nature along the river" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Karnali River</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(6)">
-              <img src="/assets/tours/dashain/dashain_4_bardia_41_1.webp" alt="Wildlife observation and hideouts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Wildlife Watching</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(7)">
-              <img src="/assets/tours/dashain/dashain_5_bardia_5_1.webp" alt="Jungle trails and dense wilderness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Jungle Trails</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(8)">
-              <img src="/assets/tours/dashain/dashain_6_bardia_9.webp" alt="Preserved landscapes of Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Wild Horizons</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(9)">
-              <img src="/assets/tours/dashain/dashain_7_chitwan_2_1.webp" alt="Terai biodiversity and nature" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Terai Biodiversity</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(10)">
-              <img src="/assets/tours/dashain/dashain_9_g60a4431.webp" alt="Tharu culture and shared moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Culture & Moments</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(11)">
-              <img src="/assets/tours/dashain/dashain_11_katmandou_16_1.webp" alt="Historical monuments and architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Heritage & History</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(12)">
-              <img src="/assets/tours/dashain/dashain_13_mg_7300.webp" alt="Photographic perspective" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Photographic Eye</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(13)">
-              <img src="/assets/tours/dashain/dashain_14_mg_7724.webp" alt="Contemplative expedition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Contemplative Travel</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(14)">
-              <img src="/assets/tours/dashain/dashain_15_mg_9009.webp" alt="Serenity and nature in Nepal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Nature & Serenity</span>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 shadow-sm hover:shadow-md cursor-pointer border border-slate-200" onclick="openLightbox(15)">
-              <img src="/assets/tours/dashain/dashain_16_mg_9936.webp" alt="Memories and authentic human adventure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                <span class="text-[11px] font-bold text-white leading-tight">Human Adventure</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION 6: INCLUSIONS & EXCLUSIONS -->
+        <!-- SECTION 5: INCLUSIONS & EXCLUSIONS -->
         <section id="inclusions" class="pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 mb-6">
             What is included in your journey
