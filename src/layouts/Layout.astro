@@ -692,7 +692,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
             </div>
           </div>
 
-          <!-- Option Camping / Bivouac Toggle -->
+          <!-- Option Camping / Bivouac / Confort Toggle -->
           <div id="booking-modal-option-container" class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-emerald-50/40 transition-colors">
             <label class="flex items-start gap-3 cursor-pointer select-none">
               <input 
@@ -703,14 +703,14 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
               />
               <div class="flex-1">
                 <div class="flex items-center justify-between">
-                  <span class="font-extrabold text-xs text-slate-900">
+                  <span id="booking-modal-option-title" class="font-extrabold text-xs text-slate-900">
                     {isEn ? "Option: Wild Jungle Camping" : "Option : Camping sauvage en jungle"}
                   </span>
                   <span id="booking-modal-camping-price-tag" class="text-xs font-black text-[#0e8354] bg-emerald-100/80 px-2.5 py-0.5 rounded-full">
                     +350 € / pers
                   </span>
                 </div>
-                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
+                <p id="booking-modal-option-desc" class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
                   {isEn ? "Total immersion at Lalmati Bhale camp with our trackers, campfire & deep jungle night sounds." : "Immersion totale au camp de Lalmati Bhale avec nos pisteurs, feu de camp et écoute nocturne."}
                 </p>
               </div>
@@ -724,7 +724,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
               <span id="booking-modal-base-display" class="font-bold text-white">1 990 €</span>
             </div>
             <div id="booking-modal-option-row" class="hidden flex items-center justify-between text-xs text-emerald-400 border-b border-white/10 py-1.5">
-              <span>{isEn ? "Wild Camping Option:" : "Option Camping sauvage :"}</span>
+              <span id="booking-modal-option-row-label">{isEn ? "Wild Camping Option:" : "Option Camping sauvage :"}</span>
               <span id="booking-modal-option-display" class="font-bold">+350 € / pers</span>
             </div>
             <div class="flex items-baseline justify-between pt-2.5">
@@ -862,9 +862,23 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       }
       if (!basePrice) basePrice = 1990;
 
-      if (!hasCamping) {
+      var optionType = 'camping';
+      var optionTitle = isEn ? "Option: Wild Jungle Camping" : "Option : Camping sauvage en jungle";
+      var optionDesc = isEn ? "Total immersion at Lalmati Bhale camp with our trackers, campfire & deep jungle night sounds." : "Immersion totale au camp de Lalmati Bhale avec nos pisteurs, feu de camp et écoute nocturne.";
+      var optionRowLabel = isEn ? "Wild Camping Option:" : "Option Camping sauvage :";
+
+      if (document.getElementById('comfort-option-card') || document.getElementById('toggle-comfort-btn') || document.getElementById('sidebar-comfort-checkbox')) {
+        hasCamping = true;
+        optionType = 'comfort';
+        campingPrice = 390;
+        optionTitle = isEn ? "Option: Single Room Supplement (Private Room)" : "Option : Chambre individuelle (Single)";
+        optionDesc = isEn ? "Private single room accommodation throughout the entire 15-day journey." : "Hébergement en chambre individuelle privée tout au long du séjour.";
+        optionRowLabel = isEn ? "Single Room Option:" : "Option Chambre individuelle :";
+      } else if (!hasCamping) {
         if (document.getElementById('camping-option-card') || document.getElementById('toggle-camping-btn')) {
           hasCamping = true;
+          optionType = 'camping';
+          campingPrice = 350;
         }
       }
 
@@ -872,11 +886,24 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         title: title || (isEn ? "Nepal Safari & Expedition" : "Séjour Safari Népal"),
         basePrice: basePrice,
         hasCamping: hasCamping,
-        campingPrice: campingPrice
+        campingPrice: campingPrice,
+        optionType: optionType,
+        optionTitle: optionTitle,
+        optionDesc: optionDesc,
+        optionRowLabel: optionRowLabel
       };
 
       var titleEl = document.getElementById('booking-modal-tour-title');
       if (titleEl) titleEl.textContent = window.currentBookingConfig.title;
+
+      var optionTitleEl = document.getElementById('booking-modal-option-title');
+      if (optionTitleEl) optionTitleEl.textContent = optionTitle;
+      var optionDescEl = document.getElementById('booking-modal-option-desc');
+      if (optionDescEl) optionDescEl.textContent = optionDesc;
+      var optionPriceTagEl = document.getElementById('booking-modal-camping-price-tag');
+      if (optionPriceTagEl) optionPriceTagEl.textContent = '+' + campingPrice + ' € / pers';
+      var optionRowLabelEl = document.getElementById('booking-modal-option-row-label');
+      if (optionRowLabelEl) optionRowLabelEl.textContent = optionRowLabel;
 
       var campingContainer = document.getElementById('booking-modal-option-container');
       var campingCheckbox = document.getElementById('booking-modal-camping-checkbox');
@@ -885,7 +912,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         if (hasCamping) {
           campingContainer.classList.remove('hidden');
           if (campingCheckbox) {
-            campingCheckbox.checked = !!window.isCampingSelected;
+            campingCheckbox.checked = !!(window.isCampingSelected || window.isComfortSelected);
           }
         } else {
           campingContainer.classList.add('hidden');
@@ -914,16 +941,27 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     };
 
     window.toggleBookingModalCamping = function(isChecked) {
-      if (typeof window.isCampingSelected !== 'undefined') {
-        if (window.isCampingSelected !== isChecked) {
-          if (typeof window.toggleCampingOption === 'function') {
-            window.toggleCampingOption(350);
-          } else {
-            window.isCampingSelected = isChecked;
+      if (window.currentBookingConfig && window.currentBookingConfig.optionType === 'comfort') {
+        if (typeof window.toggleComfortOption === 'function') {
+          if (window.isComfortSelected !== isChecked) {
+            window.toggleComfortOption(390);
           }
+        } else {
+          window.isComfortSelected = isChecked;
+          window.isCampingSelected = isChecked;
         }
       } else {
-        window.isCampingSelected = isChecked;
+        if (typeof window.isCampingSelected !== 'undefined') {
+          if (window.isCampingSelected !== isChecked) {
+            if (typeof window.toggleCampingOption === 'function') {
+              window.toggleCampingOption(350);
+            } else {
+              window.isCampingSelected = isChecked;
+            }
+          }
+        } else {
+          window.isCampingSelected = isChecked;
+        }
       }
       window.updateBookingModalCalculations();
     };
@@ -1001,6 +1039,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var totalVal = (document.getElementById('booking-modal-total-display') || {}).textContent || '';
       var depositVal = (document.getElementById('booking-modal-deposit-display') || {}).textContent || '';
 
+      var optionLabelKey = config.optionType === 'comfort' ? 'option_chambre_individuelle_single' : 'option_camping_sauvage';
+      var optionLabelVal = isCamping ? ("OUI (+" + (config.campingPrice || 350) + " €/pers.)") : "NON (Hébergement standard)";
+
       var payload = {
         _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
         _template: "table",
@@ -1010,7 +1051,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         circuit: config.title || "Circuit Jungle Nepal",
         date_depart_souhaitee: dateVal,
         nombre_inscrits: travelersVal,
-        option_camping_sauvage: isCamping ? "OUI (+350 €/pers.)" : "NON (Hébergement standard)",
+        [optionLabelKey]: optionLabelVal,
         estimation_prix_total: totalVal,
         acompte_30_pourcent: depositVal,
         client_nom_complet: firstname + ' ' + lastname,

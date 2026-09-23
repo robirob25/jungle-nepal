@@ -953,6 +953,36 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </section>
 
+        <!-- Option Confort Chambre Individuelle (+390€) -->
+        <div id="comfort-option-card" class="mb-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-slate-900 via-[#06291a] to-slate-900 text-white border border-amber-400/30 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 transition-all duration-300">
+          <div class="space-y-1.5 flex-1">
+            <div class="flex items-center gap-2.5">
+              <span id="comfort-badge-tag" class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-200 border border-amber-500/30 text-[11px] font-black uppercase tracking-wider">
+                Option Confort
+              </span>
+              <span class="text-xs font-mono font-bold text-amber-300">
+                +390 € / personne
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-black text-white tracking-tight">
+              Option Hébergement en Chambre Individuelle (Single)
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Profitez d'un confort et d'une intimité totale avec une chambre privée garantie tout au long des 15 jours de votre séjour (hôtels de charme à Katmandou et lodge privatif à Bardia).
+            </p>
+          </div>
+          <div class="shrink-0 flex items-center gap-3 w-full sm:w-auto">
+            <button 
+              id="toggle-comfort-btn"
+              onclick="toggleComfortOption(390)" 
+              class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm text-center shadow-lg shadow-amber-950/50 transition-all hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer flex items-center justify-center gap-2"
+            >
+              <span id="comfort-btn-icon">⊕</span>
+              <span id="comfort-btn-text">Ajouter l'option (+390 €)</span>
+            </button>
+          </div>
+        </div>
+
         <!-- SECTION 5: INCLUS & EXCLUS -->
         <section id="inclusions" class="pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 mb-6">
@@ -1073,14 +1103,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Tarif par participant</p>
               <div class="flex items-baseline gap-2">
-                <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">2 490€</span>
+                <span id="tour-price-display" data-base-price="2490" class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">2 490€</span>
                 <span class="text-xs text-slate-500 font-medium">/ pers. (base double)</span>
+              </div>
+              <!-- Notification Badge: Option Confort incluse -->
+              <div id="comfort-included-badge" class="hidden mt-2.5 p-2.5 rounded-2xl bg-amber-50 border border-amber-300 text-[11px] font-extrabold text-amber-900 flex items-center gap-2 shadow-sm transition-all duration-300">
+                <span class="text-sm">✨</span>
+                <span>Inclut l'option chambre individuelle (+390 €)</span>
               </div>
             </div>
           </div>
 
-          <div class="text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
-            <span>Option confort chambre individuelle (Single) : <strong>+390 €</strong></span>
+          <!-- Interactive Comfort Option Checkbox in Sidebar -->
+          <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-amber-50/40 transition-colors">
+            <label class="flex items-center justify-between cursor-pointer select-none">
+              <div class="flex items-center gap-2.5">
+                <input 
+                  type="checkbox" 
+                  id="sidebar-comfort-checkbox" 
+                  onchange="toggleComfortOption(390)" 
+                  class="w-4 h-4 rounded text-[#0e8354] focus:ring-[#0e8354] border-slate-300 cursor-pointer" 
+                />
+                <span class="text-xs font-bold text-slate-800">Chambre individuelle (Single)</span>
+              </div>
+              <span class="text-xs font-black text-slate-900 bg-amber-100 px-2 py-0.5 rounded-full">+390 €</span>
+            </label>
           </div>
 
           <!-- Primary CTA Button -->
@@ -1415,7 +1462,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <div class="fixed bottom-0 inset-x-0 bg-slate-950/95 backdrop-blur-2xl border-t border-white/15 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] z-40 lg:hidden flex items-center justify-between gap-3 shadow-[0_-10px_35px_rgba(0,0,0,0.6)]">
     <div class="min-w-0">
       <span class="text-[9px] text-slate-400 font-bold block uppercase tracking-wider truncate">Tarif / pers.</span>
-      <span class="text-xl font-black text-amber-100 font-mono tracking-tight">2 490€</span>
+      <span id="mobile-bottom-price" class="text-xl font-black text-amber-100 font-mono tracking-tight">2 490€</span>
     </div>
     <div class="flex items-center gap-2 shrink-0">
       <a 
@@ -1527,5 +1574,85 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
     </div>
   </footer>
+
+  <script is:inline>
+    var baseTourPrice = 2490;
+    var isComfortSelected = false;
+
+    window.toggleComfortOption = function toggleComfortOption(extraCost) {
+      extraCost = extraCost || 390;
+      isComfortSelected = !isComfortSelected;
+      window.isComfortSelected = isComfortSelected;
+      var total = isComfortSelected ? (baseTourPrice + extraCost) : baseTourPrice;
+      var totalFormatted = total.toLocaleString('fr-FR') + '€';
+
+      // 1. Update Main Sidebar Price Display
+      var priceEl = document.getElementById('tour-price-display');
+      if (priceEl) {
+        priceEl.textContent = totalFormatted;
+      }
+
+      // 2. Update Mobile Bottom Price
+      var mobilePriceEl = document.getElementById('mobile-bottom-price');
+      if (mobilePriceEl) {
+        mobilePriceEl.textContent = totalFormatted;
+      }
+
+      // 3. Update Sticky Bar Price Display if present
+      var stickyEl = document.getElementById('sticky-price-display');
+      if (stickyEl) {
+        stickyEl.innerHTML = totalFormatted + ' <span class="text-slate-400 font-normal">/ pers.</span>';
+      }
+
+      // 4. Toggle Notification Badge under the Price
+      var badgeEl = document.getElementById('comfort-included-badge');
+      if (badgeEl) {
+        if (isComfortSelected) {
+          badgeEl.classList.remove('hidden');
+        } else {
+          badgeEl.classList.add('hidden');
+        }
+      }
+
+      // 5. Update Sidebar Checkbox
+      var sidebarCheckbox = document.getElementById('sidebar-comfort-checkbox');
+      if (sidebarCheckbox) {
+        sidebarCheckbox.checked = isComfortSelected;
+      }
+
+      // 6. Update Button State and Card Styling
+      var btn = document.getElementById('toggle-comfort-btn');
+      var btnText = document.getElementById('comfort-btn-text');
+      var btnIcon = document.getElementById('comfort-btn-icon');
+      var card = document.getElementById('comfort-option-card');
+      var badgeTag = document.getElementById('comfort-badge-tag');
+
+      if (btn && btnText && btnIcon) {
+        if (isComfortSelected) {
+          btn.classList.remove('bg-amber-500', 'hover:bg-amber-400', 'text-slate-950');
+          btn.classList.add('bg-emerald-600', 'hover:bg-emerald-500', 'text-white', 'shadow-emerald-500/30');
+          btnIcon.textContent = '✓';
+          btnText.textContent = "Option Confort incluse (Retirer)";
+          if (card) card.classList.add('ring-2', 'ring-amber-400/80', 'border-amber-400/50');
+          if (badgeTag) {
+            badgeTag.classList.remove('bg-amber-500/20', 'text-amber-200', 'border-amber-500/30');
+            badgeTag.classList.add('bg-emerald-500/20', 'text-emerald-200', 'border-emerald-500/40');
+            badgeTag.textContent = '✓ Option Activée (+390€)';
+          }
+        } else {
+          btn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500', 'text-white', 'shadow-emerald-500/30');
+          btn.classList.add('bg-amber-500', 'hover:bg-amber-400', 'text-slate-950');
+          btnIcon.textContent = '⊕';
+          btnText.textContent = "Ajouter l'option (+390 €)";
+          if (card) card.classList.remove('ring-2', 'ring-amber-400/80', 'border-amber-400/50');
+          if (badgeTag) {
+            badgeTag.classList.remove('bg-emerald-500/20', 'text-emerald-200', 'border-emerald-500/40');
+            badgeTag.classList.add('bg-amber-500/20', 'text-amber-200', 'border-amber-500/30');
+            badgeTag.textContent = "Option Confort";
+          }
+        }
+      }
+    };
+  </script>
 
 </Layout>
