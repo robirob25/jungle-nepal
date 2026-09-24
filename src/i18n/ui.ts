@@ -7,7 +7,7 @@ export const defaultLang = 'fr';
 
 export const ui = {
   fr: {
-    'nav.tours': 'Tous les 15 séjours',
+    'nav.tours': 'Tous les 16 séjours',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Nos guides',
     'nav.gallery': 'Galerie',
@@ -29,7 +29,7 @@ export const ui = {
     'hero.search_btn': 'Rechercher',
 
     'catalog.sub': 'Départs garantis • Petits groupes de 4 à 10 explorateurs',
-    'catalog.title_1': 'Les 15 séjours ',
+    'catalog.title_1': 'Les 16 séjours ',
     'catalog.title_2': 'immersifs',
     'catalog.title_3': ' au Népal',
     'catalog.desc': 'Sélectionnez votre aventure pour explorer le détail jour par jour, la fiche d\'inclusions et réserver votre place.',
@@ -57,7 +57,7 @@ export const ui = {
     'tour.contact_robin': 'Poser une question à Robin sur WhatsApp →',
   },
   en: {
-    'nav.tours': 'All 15 Expeditions',
+    'nav.tours': 'All 16 Expeditions',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Our Guides',
     'nav.gallery': 'Gallery',

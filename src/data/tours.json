@@ -5,7 +5,7 @@
     "title": "Jungle extrême – spécial faune sauvage",
     "duration": "15 jours",
     "daysCount": 15,
-    "price": "2,500€",
+    "price": "2,490€",
     "originalPrice": null,
     "category": "safari",
     "badge": "Passion faune pro",
@@ -218,7 +218,7 @@
     "title": "Népal sauvage – de la jungle aux montagnes sacrées",
     "duration": "15 jours",
     "daysCount": 15,
-    "price": "2,300€",
+    "price": "2,290€",
     "originalPrice": null,
     "category": "safari",
     "badge": "❤️ Coup de cœur",
@@ -721,7 +721,7 @@
     "title": "Chitwan – culture et jungle sauvage",
     "duration": "4 jours",
     "daysCount": 4,
-    "price": "600€",
+    "price": "590€",
     "originalPrice": null,
     "category": "chitwan",
     "badge": "Rhinos & tharu",
@@ -1538,7 +1538,7 @@
     "title": "Népal – immersion totale : culture, vie sauvage et aventure",
     "duration": "14 jours",
     "daysCount": 14,
-    "price": "2,600€",
+    "price": "2,590€",
     "originalPrice": null,
     "category": "safari",
     "badge": "🔥 Promo -300€",
@@ -1856,7 +1856,7 @@
     "title": "Tiji Festival – Upper Mustang",
     "duration": "13 jours",
     "daysCount": 13,
-    "price": "3,500€",
+    "price": "3,490€",
     "originalPrice": null,
     "category": "culture",
     "badge": "🕉️ Spécial culture",
@@ -2603,5 +2603,41 @@
         "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
       }
     ]
+  },
+  {
+    "slug": "dashain-immersion-culturelle",
+    "rawSlug": "dashain-immersion-culturelle-special-festival",
+    "title": "Immersion culturelle et aventure : Spécial festival de Dashain",
+    "duration": "15 jours",
+    "daysCount": 15,
+    "price": "2,490€",
+    "originalPrice": null,
+    "category": "culture",
+    "badge": "Édition Unique",
+    "rating": null,
+    "reviews": 0,
+    "difficulty": "Modéré",
+    "style": "Culture & Faune",
+    "radar": {
+      "wildlife": 4,
+      "nature": 4,
+      "culture": 5,
+      "relax": 3,
+      "nightlife": 1
+    },
+    "overview": "Un voyage exclusif de 15 jours au cœur des traditions népalaises et de la faune sauvage, guidé par Adrien & Samantha. Immersion exclusive au festival de Dashain en terre Tharu à Bardia, balcons des Annapurnas et traque des tigres du Bengale.",
+    "highlights": [
+      "Partage exclusif des célébrations sacrées de Dashain (Vijaya Dashami) en immersion familiale chez les Tharu.",
+      "Cérémonies des bénédictions (Tika & Jamara) et danses traditionnelles au cœur des villages.",
+      "4 jours de safaris à pied et en jeep dans le parc national de Bardia avec nos maîtres pisteurs.",
+      "Panorama grandiose sur les Annapurnas depuis les balcons de Ghachok et découverte des cités royales."
+    ],
+    "images": [
+      "/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
+      "/assets/tours/dashain/dashain_tika_family_blessing.webp",
+      "/assets/tours/dashain/dashain_bamboo_swing_village.webp",
+      "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
+    ],
+    "days": []
   }
 ]

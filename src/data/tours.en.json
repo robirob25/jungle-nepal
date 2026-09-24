@@ -5,7 +5,7 @@
     "title": "Extreme Jungle – Special Wildlife & Big Cat Expedition – 15 Days",
     "duration": "15 Days",
     "daysCount": 15,
-    "price": "2,500€",
+    "price": "2,490€",
     "originalPrice": null,
     "category": "safari",
     "badge": "🐅 Safari & Big Cats",
@@ -141,7 +141,7 @@
     "title": "Wild Nepal – From Dense Jungle to Sacred Annapurna Peaks – 15 Days",
     "duration": "15 Days",
     "daysCount": 15,
-    "price": "2,300€",
+    "price": "2,290€",
     "originalPrice": null,
     "category": "safari",
     "badge": "🏔️ Himalayas, Mustang & Spirituality",
@@ -483,7 +483,7 @@
     "title": "Chitwan – Wildlife Safari & Indigenous Culture – 4 Days",
     "duration": "4 Days",
     "daysCount": 4,
-    "price": "600€",
+    "price": "590€",
     "originalPrice": null,
     "category": "chitwan",
     "badge": "🦏 Rhinos & Chitwan Wildlife",
@@ -1040,7 +1040,7 @@
     "title": "Nepal Total Immersion – Culture, Wildlife & Adventure – 14 Days",
     "duration": "14 Days",
     "daysCount": 14,
-    "price": "2,600€",
+    "price": "2,590€",
     "originalPrice": null,
     "category": "safari",
     "badge": "🇳🇵 Grand 360° Expeditions",
@@ -1259,7 +1259,7 @@
     "title": "Tiji Festival in Upper Mustang – Forbidden Kingdom – 13 Days",
     "duration": "13 Days",
     "daysCount": 13,
-    "price": "3,500€",
+    "price": "3,490€",
     "originalPrice": null,
     "category": "culture",
     "badge": "🏔️ Himalayas, Mustang & Spirituality",
@@ -1801,5 +1801,41 @@
         "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
       }
     ]
+  },
+  {
+    "slug": "dashain-immersion-culturelle",
+    "rawSlug": "dashain-immersion-culturelle-special-festival",
+    "title": "Cultural Immersion & Adventure: Sacred Dashain Festival Special",
+    "duration": "15 days",
+    "daysCount": 15,
+    "price": "2,490€",
+    "originalPrice": null,
+    "category": "culture",
+    "badge": "Unique Edition",
+    "rating": null,
+    "reviews": 0,
+    "difficulty": "Moderate",
+    "style": "Culture & Wildlife",
+    "radar": {
+      "wildlife": 4,
+      "nature": 4,
+      "culture": 5,
+      "relax": 3,
+      "nightlife": 1
+    },
+    "overview": "An exclusive 15-day journey connecting sacred Nepali festival traditions and untamed wildlife tracking with mentors Adrien & Samantha. Authentic Tharu village Dashain immersion, Annapurna panoramas, and Bardia tiger safaris.",
+    "highlights": [
+      "Exclusive participation in sacred Dashain festivities (Vijaya Dashami) hosted by native Tharu families.",
+      "Traditional Tika & Jamara blessings and cultural folk dances in authentic village communities.",
+      "4 full days of walking tracking and jeep safaris in Bardia National Park with master trackers.",
+      "Sweeping Annapurna mountain panoramas from Ghachok and exploration of Kathmandu's royal heritage."
+    ],
+    "images": [
+      "/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
+      "/assets/tours/dashain/dashain_tika_family_blessing.webp",
+      "/assets/tours/dashain/dashain_bamboo_swing_village.webp",
+      "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
+    ],
+    "days": []
   }
 ]
