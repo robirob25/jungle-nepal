@@ -26,7 +26,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <section class="relative min-h-[440px] sm:min-h-[500px] flex items-center bg-slate-950 text-white overflow-hidden py-20 sm:py-28 border-b border-white/10">
     <!-- Photo Drive Horizontale Authentique (Bardia Sunset River Horizon) -->
     <div class="absolute inset-0 z-0">
-      <img 
+      <img decoding="async" 
         src="/assets/drive_photos/adrien_bardia_sunset.webp" 
         alt="Tigre du Bengale dans la végétation de Bardia au Népal" 
         class="w-full h-full object-cover object-[center_bottom] opacity-65 scale-100 filter brightness-90 contrast-105"
@@ -282,7 +282,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- COL 1: Brand & Official Legal Details -->
       <div class="space-y-4 lg:col-span-1">
         <a href="/" class="inline-block">
-          <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
+          <img decoding="async" src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
         </a>
         <p class="text-slate-400 text-xs leading-relaxed">
           Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia.

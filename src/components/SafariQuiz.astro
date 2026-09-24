@@ -749,7 +749,7 @@ const isEn = lang === 'en';
             </div>
 
             <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner">
-              <img src="${match.image}" alt="${match.title}" onerror="this.src='/assets/tours_thumbs/tigre_bardia.webp'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img decoding="async" src="${match.image}" alt="${match.title}" onerror="this.src='/assets/tours_thumbs/tigre_bardia.webp'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
 
             <div class="space-y-1">

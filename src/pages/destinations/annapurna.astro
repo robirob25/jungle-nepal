@@ -24,7 +24,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img loading="lazy" decoding="async" src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -126,16 +126,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/nepal_landscape.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/fishtail_sacred_himalaya.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/fishtail_sacred_himalaya.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/machapuchare.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/machapuchare.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/himalayas_sunrise_peaks.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/himalayas_sunrise_peaks.webp" alt="Les Annapurna & Pokhara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -249,7 +249,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Photo agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 

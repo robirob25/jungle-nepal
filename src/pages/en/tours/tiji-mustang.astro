@@ -62,7 +62,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- LEFT: LOGO -->
         <div class="flex items-center shrink-0">
           <a href="/en/" class="flex items-center gap-2 group">
-            <img 
+            <img decoding="async" 
               src="/assets/logo_nav_dark.webp" alt="Jungle Nepal Adventure" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform" 
             />
           </a>
@@ -378,17 +378,17 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                             <!-- PHOTO MOSAIC GALLERY WEROAD (CURATED WITH TIGERS IN JUNGLE) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
-        <img src="/assets/original_site/tiji_festival_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
+        <img loading="lazy" decoding="async" src="/assets/original_site/tiji_festival_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
       </div>
       <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
-        <img src="/assets/original_site/mustang_panorama_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(1)"/>
+        <img loading="lazy" decoding="async" src="/assets/original_site/mustang_panorama_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(1)"/>
       </div>
       <div class="hidden md:flex flex-col gap-3 h-full">
         <div class="h-1/2 overflow-hidden rounded-tr-2xl">
-          <img src="/assets/original_site/mustang_village_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(2)"/>
+          <img loading="lazy" decoding="async" src="/assets/original_site/mustang_village_orig.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(2)"/>
         </div>
         <div class="h-1/2 overflow-hidden rounded-br-2xl relative">
-          <img src="/assets/drive_photos/fred_wild5.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(3)"/>
+          <img loading="lazy" decoding="async" src="/assets/drive_photos/fred_wild5.webp" alt="Expédition Nepal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(3)"/>
         </div>
       </div>
 
@@ -827,7 +827,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </section>
 
         <!-- SECTION 6: FAQ -->
-        <section id="faq" class="scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36 sm:scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36 sm: pt-8 border-t border-slate-200">
+        <section id="faq" class="scroll-mt-28 sm:scroll-mt-32 lg:scroll-mt-36 pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl text-slate-950 mb-6 tracking-tight">
             Frequently Asked Questions
           </h2>
@@ -986,7 +986,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="mustang-himalaya culture grand-tour safari" data-title="expédition : panthère des neiges exclusive (17 days)">
           <div>
             <a href="/en/tours/panthere-des-neiges" class="relative h-72 sm:h-80 overflow-hidden block">
-              <img 
+              <img decoding="async" 
                 src="/assets/snow-leopard/snow_leopard_portrait.webp" 
                 alt="Panthère des Neiges en liberté" 
                 class="w-full h-full object-cover  transition-transform duration-500 ease-out" 
@@ -1047,7 +1047,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           
           <div class="relative">
             <a href="/en/tours/immersion-spirituelle" class="relative h-72 sm:h-80 overflow-hidden block">
-              <img 
+              <img decoding="async" 
                 src="/assets/original_site/temple_sacred.webp" 
                 alt="Immersion spirituelle en Himalaya" 
                 class="w-full h-full object-cover  transition-transform duration-500 ease-out"
@@ -1113,7 +1113,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           
           <div class="relative">
             <a href="/en/tours/carnet-de-voyage" class="relative h-72 sm:h-80 overflow-hidden block">
-              <img 
+              <img decoding="async" 
                 src="/assets/drive_photos/antoine_wild5.webp" 
                 alt="Nepal – carnet de dessin et de voyage  – 15 days" 
                 class="w-full h-full object-cover  transition-transform duration-500 ease-out"
@@ -1198,7 +1198,7 @@ function toggleMobileMenu() {
       <!-- COL 1: Brand & Official Legal Details -->
       <div class="space-y-4 lg:col-span-1">
         <a href="/en/" class="inline-block">
-          <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
+          <img decoding="async" src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
         </a>
         <p class="text-slate-400 text-xs leading-relaxed">
           Official local ecotourism and immersive safari agency in Nepal. Kathmandu & Bardia National Park.
@@ -1329,7 +1329,7 @@ function toggleMobileMenu() {
 
     <!-- Main Image Container -->
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center z-20">
-      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl transition-all duration-300">
+      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl transition-all duration-300">
     </div>
   </div>
 

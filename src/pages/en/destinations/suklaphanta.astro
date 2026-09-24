@@ -24,7 +24,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta National Park" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img loading="lazy" decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta National Park" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
@@ -124,16 +124,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/suklaphanta.webp" alt="Entrance gate to Suklaphanta Wildlife Reserve" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Entrance gate to Suklaphanta Wildlife Reserve" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(1)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/curated_gallery/deer_pair_savanna.webp" alt="Swamp deer herds in the great savannas of Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/curated_gallery/deer_pair_savanna.webp" alt="Swamp deer herds in the great savannas of Suklaphanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(2)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/original_site/tigre_bardia.webp" alt="Royal Bengal tiger of the wild west" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Royal Bengal tiger of the wild west" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div onclick="openLightbox(3)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
-          <img src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" alt="Large male Blue Bull nilgai in Suklaphanta forest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <img decoding="async" src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" alt="Large male Blue Bull nilgai in Suklaphanta forest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center">
-      <img id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
+      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Enlarged photo" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl transition-all duration-300" />
     </div>
   </div>
 

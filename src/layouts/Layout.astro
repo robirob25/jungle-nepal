@@ -48,9 +48,13 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="alternate" hreflang="en" href={enUrl} />
   <link rel="alternate" hreflang="x-default" href={frUrl} />
 
-  <!-- HIGH-PERFORMANCE PRELOADS (Responsive LCP Optimization) -->
-  <link rel="preload" href="/assets/hero/hero_1_tiger_water_mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
-  <link rel="preload" href="/assets/hero/hero_1_tiger_water.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+  <!-- HIGH-PERFORMANCE PRELOADS (Only on Homepage to protect internal page bandwidth & scroll) -->
+  {(!rawPath || rawPath === '/' || rawPath === '/en' || rawPath === '/en/') && (
+    <>
+      <link rel="preload" href="/assets/hero/hero_1_tiger_water_mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+      <link rel="preload" href="/assets/hero/hero_1_tiger_water.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+    </>
+  )}
   <link rel="preload" href="/assets/logo.webp" as="image" type="image/webp">
 
   <!-- Content Security Policy (Strict Security & XSS Mitigation) -->
@@ -74,8 +78,15 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="preload" href="/assets/fonts/plus_jakarta_sans_normal_700_23.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
 
-  <!-- Critical Rendering Guarantee (Anti-Flash & Anti-Opacity Zero Fail-Safe) -->
+  <!-- Critical Rendering & Smooth Scroll GPU Acceleration -->
   <style is:inline>
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    img {
+      content-visibility: auto;
+    }
     #trips-grid {
       display: grid !important;
       visibility: visible !important;
@@ -1417,7 +1428,7 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
       
       <!-- Left Column: Visual Image with Tiger -->
       <div class="relative md:col-span-5 h-48 md:h-auto min-h-[220px] overflow-hidden bg-slate-950">
-        <img 
+        <img decoding="async" 
           src="/assets/hero/hero_1_tiger_water.webp" 
           alt={isEn ? "Royal Bengal Tiger in Bardia National Park" : "Tigre royal du Bengale dans le parc national de Bardia"} 
           class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" 

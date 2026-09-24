@@ -26,7 +26,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     
     <!-- LEFT: LOGO BLANC TRANSPARENT -->
     <a href="/" class="flex items-center gap-2 group shrink-0">
-      <img 
+      <img decoding="async" 
         src="/assets/logo_nav_white.webp" 
         alt="Jungle Nepal Adventure Logo" 
         class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
@@ -184,7 +184,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <section class="relative min-h-[580px] sm:min-h-[640px] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
     <!-- Image de fond authentique du Drive -->
     <div class="absolute inset-0 z-0">
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/assets/drive_photos/julien_safari_a_pied.webp" 
         alt="Pistage à pied dans la jungle de Bardia Népal" 
         class="w-full h-full object-cover opacity-55 scale-105 transform filter brightness-80 contrast-105"
@@ -241,7 +241,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         <div class="lg:col-span-6">
           <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/assets/drive_photos/julien_tigre_bengale2.webp" 
               alt="Tigre de Bardia" 
               class="w-full h-[460px] object-cover -scale-x-100 transform"
@@ -262,7 +262,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <section class="relative py-24 sm:py-32 bg-slate-950 text-white overflow-hidden border-y border-white/10">
     <!-- Photo Panoramique Horizontale de l'Himalaya & du Népal Sauvage -->
     <div class="absolute inset-0 z-0">
-      <img 
+      <img decoding="async" 
         src="/assets/original_site/himalayas_sunrise_peaks.webp" 
         alt="Chaîne himalayenne et sommets sacrés au lever du soleil" 
         class="w-full h-full object-cover opacity-55 scale-105 filter brightness-95 contrast-100"
@@ -292,7 +292,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 1. Jungle & Faune Sauvage -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/drive_photos/julien_tigre_bengale3.webp" 
               alt="Safari tigre en jungle" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -324,7 +324,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 2. Montagnes & Hauts Sommets -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/original_site/machapuchare.webp" 
               alt="Sommets sacrés des Annapurna" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -356,7 +356,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 3. Culture & Vie de Village -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/drive_photos/adrien_bhaktapur1.webp" 
               alt="Temples sacrés et vie locale" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -388,7 +388,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 4. Rivières & Bivouacs Sauvages -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/curated_gallery/gavial_gange_nage_riviere.webp" 
               alt="Gavial du Gange rare nageant dans la rivière au Népal" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -444,7 +444,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
-              <img src="/assets/img_2.webp" alt="Pawan Chef Pisteur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/safari_pied.webp'"/>
+              <img loading="lazy" decoding="async" src="/assets/img_2.webp" alt="Pawan Chef Pisteur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/safari_pied.webp'"/>
             </div>
             <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Chef Pisteur & Expert Faune</div>
             <h3 class="font-black text-2xl text-slate-950">Pawan</h3>
@@ -461,7 +461,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
-              <img src="/assets/img_1.webp" alt="Kiran Co-Fondateur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/bivouac_camp.webp'"/>
+              <img loading="lazy" decoding="async" src="/assets/img_1.webp" alt="Kiran Co-Fondateur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/bivouac_camp.webp'"/>
             </div>
             <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Co-Fondateur & Logistique Terai</div>
             <h3 class="font-black text-2xl text-slate-950">Kiran</h3>
@@ -478,7 +478,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center">
-              <img src="/assets/img_3.webp" alt="Robin Coordinateur France" class="w-full h-full object-cover object-top"/>
+              <img loading="lazy" decoding="async" src="/assets/img_3.webp" alt="Robin Coordinateur France" class="w-full h-full object-cover object-top"/>
             </div>
             <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Coordinateur Voyageurs France</div>
             <h3 class="font-black text-2xl text-slate-950">Robin</h3>
@@ -500,7 +500,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <section class="relative py-24 sm:py-32 bg-slate-950 text-white overflow-hidden border-y border-white/10">
     <!-- Photo Panoramique Horizontale en Background -->
     <div class="absolute inset-0 z-0">
-      <img 
+      <img decoding="async" 
         src="/assets/drive_photos/adrien_bardia_sunset.webp" 
         alt="Immersion sauvage et respect de la nature au Népal" 
         class="w-full h-full object-cover opacity-55 scale-105 filter brightness-90 contrast-105"
@@ -530,7 +530,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 1. Zéro exploitation animale -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/curated_gallery/troupeau_elephants_asie_lisiere.webp" 
               alt="Éléphants sauvages libres en jungle" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -559,7 +559,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 2. Pistage silencieux à pied -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/original_site/safari_pied.webp" 
               alt="Pistage silencieux à pied dans la jungle" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -588,7 +588,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 3. Micro-groupes stricts -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/original_site/bivouac_camp.webp" 
               alt="Micro groupe en campement sauvage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -617,7 +617,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- 4. Retombées 100% locales -->
         <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] p-7 flex flex-col justify-between shadow-2xl border border-white/15 bg-slate-950 transition-all duration-300 hover:border-white/30 hover:-translate-y-1">
           <div class="absolute inset-0 z-0">
-            <img 
+            <img decoding="async" 
               src="/assets/drive_photos/antoine_wild5.webp" 
               alt="Retombées directes pour les communautés et villages" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75 filter brightness-95 contrast-105"
@@ -671,7 +671,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- TOUR 1: Bardia Explorateur (5j) -->
         <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
           <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="/assets/original_site/tigre_route.webp" alt="Bardia explorateur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img loading="lazy" decoding="async" src="/assets/original_site/tigre_route.webp" alt="Bardia explorateur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             
             <div class="absolute top-3 left-3">
               <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
@@ -708,7 +708,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- TOUR 2: Chitwan + Bardia (11j) -->
         <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
           <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan + Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img loading="lazy" decoding="async" src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan + Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             
             <div class="absolute top-3 left-3">
               <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
@@ -745,7 +745,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- TOUR 3: Babai Spécial Tigres (5j) -->
         <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
           <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="/assets/drive_photos/julien_safari_a_pied.webp" alt="Babai spécial tigres" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img loading="lazy" decoding="async" src="/assets/drive_photos/julien_safari_a_pied.webp" alt="Babai spécial tigres" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             
             <div class="absolute top-3 left-3">
               <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
@@ -782,7 +782,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- TOUR 4: Panthère des Neiges (17j) -->
         <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl hover:border-emerald-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
           <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="/assets/snow-leopard/snow_leopard_portrait.webp" alt="Panthère des neiges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img loading="lazy" decoding="async" src="/assets/snow-leopard/snow_leopard_portrait.webp" alt="Panthère des neiges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             
             <div class="absolute top-3 left-3">
               <span class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-[11px] font-black text-amber-100 border border-white/20 shadow-md">
@@ -840,7 +840,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- COL 1: Brand & Official Legal Details -->
       <div class="space-y-4 lg:col-span-1">
         <a href="/" class="inline-block">
-          <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
+          <img decoding="async" src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
         </a>
         <p class="text-slate-400 text-xs leading-relaxed">
           Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia.
