@@ -538,8 +538,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-12">
         <div class="flex-1">
-          <h2 id="tours-section-title" class="font-black text-2xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight">
-            Les 16 séjours <span id="kinetic-immersion" class="inline-block text-[#0e5c3e] transition-all duration-200">immersifs</span> au Népal
+          <h2 id="tours-section-title" class="font-black text-2xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight inline-flex flex-wrap items-center">
+            <span class="whitespace-nowrap">Les 16 séjours&nbsp;</span>
+            <span class="inline-grid place-items-center w-[105px] sm:w-[155px] md:w-[195px] h-[1.25em] text-center select-none overflow-visible shrink-0 align-middle">
+              <span id="kinetic-immersion" class="inline-block text-[#0e5c3e] transition-all duration-200 transform text-center leading-none whitespace-nowrap">immersifs</span>
+            </span>
+            <span class="whitespace-nowrap">&nbsp;au Népal</span>
           </h2>
           <p class="mt-2.5 sm:mt-3 text-sm sm:text-base text-slate-600 max-w-2xl font-normal leading-relaxed">
             Sélectionnez votre aventure pour explorer le détail jour par jour, la fiche d'inclusions et réserver votre place.
