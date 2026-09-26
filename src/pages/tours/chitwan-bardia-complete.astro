@@ -62,9 +62,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- LEFT: LOGO -->
         <div class="flex items-center shrink-0">
           <a href="/" class="flex items-center gap-2 group">
-            <img decoding="async" 
-              src="/assets/logo_nav_dark.webp" alt="Jungle Nepal Adventure" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform" 
-            />
+            <picture>
+              <source srcset="/assets/logo_nav_dark.webp" type="image/webp" />
+              <img src="/assets/logo_nav_dark.png" alt="Jungle Nepal Adventure" width="168" height="48" loading="eager" decoding="sync" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform" />
+            </picture>
           </a>
         </div>
 
