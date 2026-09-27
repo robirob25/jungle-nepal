@@ -1734,7 +1734,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           class="wildlife-tab-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-black transition-all duration-300 border bg-white/10 text-slate-300 hover:bg-white/20 border-white/10 hover:text-white cursor-pointer"
           data-filter="reptiles"
         >
-          Reptiles & Rivers (10)
+          Reptiles & Rivers (11)
         </button>
       </div>
 
@@ -1865,12 +1865,46 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <svg class="w-4 h-4 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
               </div>
             </div>
+
+        <!-- Photo: Gharial Crocodile on the riverbank -->
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="3" onclick="openWildlifeLightbox(3)">
+          <img 
+            src="/assets/curated_gallery/gavial_du_gange_jacinthes_eau.webp" 
+            alt="Gharial Crocodile on the riverbank - Rapti River • Chitwan" 
+            width="1024"
+            height="682"
+            style="aspect-ratio: 1024/682;"
+            class="w-full h-auto block filter brightness-95 group-hover:brightness-105 transition-all duration-300" loading="lazy"
+            decoding="async"
+          />
+          <div class="absolute top-3.5 left-3.5 z-10 pointer-events-none">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/20 text-[11px] font-black text-amber-100 shadow-md">
+              <span>Rapti River • Chitwan</span>
+            </span>
+          </div>
+          <div class="absolute bottom-3.5 left-3.5 right-3.5 z-10 p-3.5 rounded-2xl bg-slate-950/90 backdrop-blur-xl border border-white/15 text-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-2xl pointer-events-none">
+            <div class="flex items-center justify-between gap-3">
+              <div class="min-w-0 flex-1">
+                <h3 class="font-black text-sm sm:text-base text-white group-hover:text-amber-100 transition-colors leading-tight truncate">
+                  Gharial Crocodile on the riverbank
+                </h3>
+                <p class="text-xs text-slate-300 mt-0.5 font-medium truncate">
+                  Prehistoric fish-eating crocodilian basking among floating water hyacinths
+                </p>
+              </div>
+              <div class="w-8 h-8 rounded-xl bg-white/10 text-slate-200 flex items-center justify-center shrink-0 border border-white/10">
+                <svg class="w-4 h-4 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
           </div>
 
         </div>
 
         <!-- Photo 4: Rhinocéros unicorne et martins -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="3" onclick="openWildlifeLightbox(3)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="4" onclick="openWildlifeLightbox(4)">
           
           <img 
             src="/assets/curated_gallery/rhino_unicorne_oiseaux_pique_boeuf.webp" 
@@ -1913,7 +1947,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 5: Grand Calao bicorne -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="4" onclick="openWildlifeLightbox(4)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="5" onclick="openWildlifeLightbox(5)">
           
           <img 
             src="/assets/curated_gallery/calao_bicorne_canopee.webp" 
@@ -1956,7 +1990,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 6: Tigre du Bengale royal -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="5" onclick="openWildlifeLightbox(5)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="6" onclick="openWildlifeLightbox(6)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_pistage.webp" 
@@ -1999,7 +2033,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 7: Léopard d'Asie en affût -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="6" onclick="openWildlifeLightbox(6)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="7" onclick="openWildlifeLightbox(7)">
           
           <img 
             src="/assets/curated_gallery/leopard_asie_affut_lisiere.webp" 
@@ -2042,7 +2076,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 8: Regard perçant du Tigre -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="7" onclick="openWildlifeLightbox(7)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="8" onclick="openWildlifeLightbox(8)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_embuscade_vertical.webp" 
@@ -2085,7 +2119,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 9: Grand Rhinocéros unicorne -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="8" onclick="openWildlifeLightbox(8)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="9" onclick="openWildlifeLightbox(9)">
           
           <img 
             src="/assets/curated_gallery/rhino_unicorne_brume.webp" 
@@ -2128,7 +2162,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 10: Paon bleu en parade nuptiale -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="9" onclick="openWildlifeLightbox(9)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="10" onclick="openWildlifeLightbox(10)">
           
           <img 
             src="/assets/curated_gallery/paon_bleu_parade_roue.webp" 
@@ -2171,7 +2205,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 11: Tchitrec de paradis d'Asie (Asian Paradise Flycatcher) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="10" onclick="openWildlifeLightbox(10)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="11" onclick="openWildlifeLightbox(11)">
           
           <img 
             src="/assets/curated_gallery/tchitrec_paradis_longues_rectrices.webp" 
@@ -2214,7 +2248,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 12: Tigre du Bengale au point d'eau -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="11" onclick="openWildlifeLightbox(11)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="12" onclick="openWildlifeLightbox(12)">
           
           <img 
             src="/assets/curated_gallery/tiger_water_pond.webp" 
@@ -2257,7 +2291,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 13: Éléphant sauvage d'Asie -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="12" onclick="openWildlifeLightbox(12)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="13" onclick="openWildlifeLightbox(13)">
           
           <img 
             src="/assets/curated_gallery/elephant_asie_male_jungle.webp" 
@@ -2300,7 +2334,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 14: Agame des jardins (Lézard arboricole) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="13" onclick="openWildlifeLightbox(13)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="14" onclick="openWildlifeLightbox(14)">
           
           <img 
             src="/assets/curated_gallery/lezard_agame_jardin_camouflage.webp" 
@@ -2343,7 +2377,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 15: Marabout chevelu en affût -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="14" onclick="openWildlifeLightbox(14)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="15" onclick="openWildlifeLightbox(15)">
           
           <img 
             src="/assets/curated_gallery/marabout_chevelu_pose_marais.webp" 
@@ -2386,7 +2420,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 16: Gavial du Gange en nage -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="15" onclick="openWildlifeLightbox(15)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="16" onclick="openWildlifeLightbox(16)">
           
           <img 
             src="/assets/curated_gallery/gavial_gange_nage_riviere.webp" 
@@ -2429,7 +2463,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 17: Tigre du Bengale traversant la rivière -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="16" onclick="openWildlifeLightbox(16)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="17" onclick="openWildlifeLightbox(17)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_traversee_riviere.webp" 
@@ -2472,7 +2506,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 18: Bébé singe et sa mère -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="17" onclick="openWildlifeLightbox(17)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="18" onclick="openWildlifeLightbox(18)">
           
           <img 
             src="/assets/curated_gallery/bebe_macaque_mere.webp" 
@@ -2515,7 +2549,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 19: Semnopithèque ardoisé (Cri d'alarme) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="18" onclick="openWildlifeLightbox(18)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="19" onclick="openWildlifeLightbox(19)">
           
           <img 
             src="/assets/curated_gallery/langur_gris_cri_alarme.webp" 
@@ -2558,7 +2592,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 20: Varan du Bengale (Lézard géant) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="19" onclick="openWildlifeLightbox(19)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="20" onclick="openWildlifeLightbox(20)">
           
           <img 
             src="/assets/curated_gallery/varan_bengale_arbre.webp" 
@@ -2601,7 +2635,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 21: Portrait d'Éléphant d'Asie -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="20" onclick="openWildlifeLightbox(20)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="21" onclick="openWildlifeLightbox(21)">
           
           <img 
             src="/assets/curated_gallery/portrait_elephant_asie.webp" 
@@ -2644,7 +2678,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 22: Ours lippu (Sloth Bear) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="21" onclick="openWildlifeLightbox(21)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="22" onclick="openWildlifeLightbox(22)">
           
           <img 
             src="/assets/drive_wildlife/Ours_lippu_1.webp" 
@@ -2687,7 +2721,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 23: Cerfs des marais (Barasingha) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="22" onclick="openWildlifeLightbox(22)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="23" onclick="openWildlifeLightbox(23)">
           
           <img 
             src="/assets/curated_gallery/deer_pair_savanna.webp" 
@@ -2730,7 +2764,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 24: Antilopes Nilgaut (Taureau bleu) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="23" onclick="openWildlifeLightbox(23)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="24" onclick="openWildlifeLightbox(24)">
           
           <img 
             src="/assets/curated_gallery/nilgai_mother_calf.webp" 
@@ -2773,7 +2807,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 25: Marabout chevelu en vol -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="24" onclick="openWildlifeLightbox(24)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="25" onclick="openWildlifeLightbox(25)">
           
           <img 
             src="/assets/curated_gallery/marabout_chevelu_envol.webp" 
@@ -2816,7 +2850,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 26: Duo de rapaces au nid -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="25" onclick="openWildlifeLightbox(25)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="26" onclick="openWildlifeLightbox(26)">
           
           <img 
             src="/assets/curated_gallery/duo_rapaces_au_nid.webp" 
@@ -2859,7 +2893,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 27: Rollier indien (Indian Roller) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="26" onclick="openWildlifeLightbox(26)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="27" onclick="openWildlifeLightbox(27)">
           
           <img 
             src="/assets/curated_gallery/rollier_indien_perche.webp" 
@@ -2902,7 +2936,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 28: Rollier indien à l'envol -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="27" onclick="openWildlifeLightbox(27)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="28" onclick="openWildlifeLightbox(28)">
           
           <img 
             src="/assets/curated_gallery/rollier_indien_envol_turquoise.webp" 
@@ -2945,7 +2979,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 29: Aigle serpentaire en plein vol -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="28" onclick="openWildlifeLightbox(28)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="29" onclick="openWildlifeLightbox(29)">
           
           <img 
             src="/assets/curated_gallery/aigle_serpentaire_vol.webp" 
@@ -2988,7 +3022,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 30: Éléphant d'Asie de face -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="29" onclick="openWildlifeLightbox(29)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="30" onclick="openWildlifeLightbox(30)">
           
           <img 
             src="/assets/curated_gallery/elephant_asie_face_jungle.webp" 
@@ -3031,7 +3065,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 31: Langur gris sentinelle -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="30" onclick="openWildlifeLightbox(30)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="31" onclick="openWildlifeLightbox(31)">
           
           <img 
             src="/assets/curated_gallery/langur_sentinelle_termitiere.webp" 
@@ -3074,7 +3108,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 32: Duo de Martins-chasseurs -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="31" onclick="openWildlifeLightbox(31)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="32" onclick="openWildlifeLightbox(32)">
           
           <img 
             src="/assets/curated_gallery/duo_martins_chasseurs.webp" 
@@ -3117,7 +3151,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 33: Cerf Sambar à la baignade -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="32" onclick="openWildlifeLightbox(32)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="33" onclick="openWildlifeLightbox(33)">
           
           <img 
             src="/assets/curated_gallery/cerf_sambar_dans_eau.webp" 
@@ -3160,7 +3194,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 34: Roussette géante d'Inde en vol -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="33" onclick="openWildlifeLightbox(33)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="34" onclick="openWildlifeLightbox(34)">
           
           <img 
             src="/assets/curated_gallery/roussette_chauve_souris_vol.webp" 
@@ -3203,7 +3237,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 35: Tigre du Bengale dans la savane -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="34" onclick="openWildlifeLightbox(34)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="35" onclick="openWildlifeLightbox(35)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_hautes_herbes.webp" 
@@ -3246,7 +3280,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 36: Pic à dos d'or (Flameback) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="35" onclick="openWildlifeLightbox(35)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="36" onclick="openWildlifeLightbox(36)">
           
           <img 
             src="/assets/curated_gallery/pic_flamboyant_ailes_or.webp" 
@@ -3289,7 +3323,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 37: Serpent de la jungle en affût -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="36" onclick="openWildlifeLightbox(36)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="37" onclick="openWildlifeLightbox(37)">
           
           <img 
             src="/assets/curated_gallery/serpent_jungle_tronc_fleuri.webp" 
@@ -3332,7 +3366,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 38: Mangouste grise d'Inde -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="37" onclick="openWildlifeLightbox(37)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="38" onclick="openWildlifeLightbox(38)">
           
           <img 
             src="/assets/curated_gallery/mangouste_grise_jungle.webp" 
@@ -3375,7 +3409,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 39: Chevêchette de jungle (Chouette) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="38" onclick="openWildlifeLightbox(38)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="39" onclick="openWildlifeLightbox(39)">
           
           <img 
             src="/assets/curated_gallery/chevechette_jungle_chouette.webp" 
@@ -3418,7 +3452,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 40: Grue antigone (Sarus Crane) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="39" onclick="openWildlifeLightbox(39)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="40" onclick="openWildlifeLightbox(40)">
           
           <img 
             src="/assets/curated_gallery/grue_antigone_savane.webp" 
@@ -3461,7 +3495,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 41: Chacal doré (Golden Jackal) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="40" onclick="openWildlifeLightbox(40)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="41" onclick="openWildlifeLightbox(41)">
           
           <img 
             src="/assets/curated_gallery/chacal_dore_herbes.webp" 
@@ -3504,7 +3538,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 42: Taureau bleu (Mâle Nilgaut adulte) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="41" onclick="openWildlifeLightbox(41)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="42" onclick="openWildlifeLightbox(42)">
           
           <img 
             src="/assets/curated_gallery/nilgaut_male_taureau_bleu.webp" 
@@ -3547,7 +3581,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 43: Ibis noir à cou rouge (Red-naped Ibis) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="42" onclick="openWildlifeLightbox(42)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="43" onclick="openWildlifeLightbox(43)">
           
           <img 
             src="/assets/curated_gallery/ibis_noir_cou_rouge.webp" 
@@ -3590,7 +3624,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 44: Rollier indien sur branche haute -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="43" onclick="openWildlifeLightbox(43)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="44" onclick="openWildlifeLightbox(44)">
           
           <img 
             src="/assets/curated_gallery/rollier_indien_branche_morte.webp" 
@@ -3633,7 +3667,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 45: Aigle serpentaire et Drongo -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="44" onclick="openWildlifeLightbox(44)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="45" onclick="openWildlifeLightbox(45)">
           
           <img 
             src="/assets/curated_gallery/aigle_serpentaire_drongo_ciel.webp" 
@@ -3676,7 +3710,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 46: Tigre du Bengale en approche -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="45" onclick="openWildlifeLightbox(45)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="46" onclick="openWildlifeLightbox(46)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_face_arbre_foret.webp" 
@@ -3719,7 +3753,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 47: Trio de Vautours en vigie -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="46" onclick="openWildlifeLightbox(46)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="47" onclick="openWildlifeLightbox(47)">
           
           <img 
             src="/assets/curated_gallery/trio_vautours_arbre_mort.webp" 
@@ -3762,7 +3796,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 48: Tigre du Bengale à la baignade -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="47" onclick="openWildlifeLightbox(47)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="48" onclick="openWildlifeLightbox(48)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_baignade_eau.webp" 
@@ -3805,7 +3839,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 49: Aigle dans son aire séculaire -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="48" onclick="openWildlifeLightbox(48)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="49" onclick="openWildlifeLightbox(49)">
           
           <img 
             src="/assets/curated_gallery/aigle_au_nid_observation.webp" 
@@ -3848,7 +3882,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 50: Élanion blanc en piqué -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="49" onclick="openWildlifeLightbox(49)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="50" onclick="openWildlifeLightbox(50)">
           
           <img 
             src="/assets/curated_gallery/elanion_blanc_vol_pique.webp" 
@@ -3891,7 +3925,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 51: Petit-duc indien (Chouette au creux de l'arbre) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="50" onclick="openWildlifeLightbox(50)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="51" onclick="openWildlifeLightbox(51)">
           
           <img 
             src="/assets/curated_gallery/petit_duc_indien_creux_arbre.webp" 
@@ -3934,7 +3968,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
                 <!-- Photo 52: Ours lippu en recherche de termites -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="51" onclick="openWildlifeLightbox(51)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="52" onclick="openWildlifeLightbox(52)">
           
           <img 
             src="/assets/drive_wildlife/Ours_lippu_1.webp" 
@@ -3973,7 +4007,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 53: Cerf Sambar dans la rivière -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="52" onclick="openWildlifeLightbox(52)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="53" onclick="openWildlifeLightbox(53)">
           
           <img 
             src="/assets/curated_gallery/cerf_sambar_dans_eau.webp" 
@@ -4012,7 +4046,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 54: Tigre du Bengale dans la pénombre -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="53" onclick="openWildlifeLightbox(53)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="felins" data-idx="54" onclick="openWildlifeLightbox(54)">
           
           <img 
             src="/assets/curated_gallery/tigre_bengale_penombre_sal.webp" 
@@ -4055,7 +4089,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 55: Cerf aboyeur (Muntjac indien) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="54" onclick="openWildlifeLightbox(54)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="55" onclick="openWildlifeLightbox(55)">
           
           <img 
             src="/assets/curated_gallery/cerf_aboyeur_muntjac.webp" 
@@ -4098,7 +4132,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 56: Cerf Axis (Chital tacheté) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="55" onclick="openWildlifeLightbox(55)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="56" onclick="openWildlifeLightbox(56)">
           
           <img 
             src="/assets/curated_gallery/cerf_axis_chital_tachete.webp" 
@@ -4141,7 +4175,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 57: Harde de Cerfs Axis en clairière -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="56" onclick="openWildlifeLightbox(56)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="57" onclick="openWildlifeLightbox(57)">
           
           <img 
             src="/assets/curated_gallery/troupe_chitals_clairiere.webp" 
@@ -4184,7 +4218,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 58: Troupeau d'éléphants d'Asie -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="57" onclick="openWildlifeLightbox(57)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="mammiferes" data-idx="58" onclick="openWildlifeLightbox(58)">
           
           <img 
             src="/assets/curated_gallery/troupeau_elephants_asie_lisiere.webp" 
@@ -4227,7 +4261,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 59: Chevêche brame (Chouette tachetée) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="58" onclick="openWildlifeLightbox(58)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="59" onclick="openWildlifeLightbox(59)">
           
           <img 
             src="/assets/curated_gallery/cheveche_brame_chouette_tachetee.webp" 
@@ -4270,7 +4304,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 60: Martin-pêcheur pie (Pied Kingfisher) -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="59" onclick="openWildlifeLightbox(59)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="60" onclick="openWildlifeLightbox(60)">
           
           <img 
             src="/assets/curated_gallery/martin_pecheur_pie_rapide.webp" 
@@ -4313,7 +4347,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 61: Loriot à capuchon noir -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="60" onclick="openWildlifeLightbox(60)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="61" onclick="openWildlifeLightbox(61)">
           
           <img 
             src="/assets/curated_gallery/loriot_capuchon_noir_or.webp" 
@@ -4356,7 +4390,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 62: Jacana bronzé -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="61" onclick="openWildlifeLightbox(61)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="62" onclick="openWildlifeLightbox(62)">
           
           <img 
             src="/assets/curated_gallery/jacana_bronze_nenuphars.webp" 
@@ -4399,7 +4433,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 63: Barbu à plastron rouge -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="62" onclick="openWildlifeLightbox(62)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="oiseaux" data-idx="63" onclick="openWildlifeLightbox(63)">
           
           <img 
             src="/assets/curated_gallery/barbu_plastron_rouge_rubis.webp" 
@@ -4442,7 +4476,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 64: Agame arlequin mâle -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="63" onclick="openWildlifeLightbox(63)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="64" onclick="openWildlifeLightbox(64)">
           
           <img 
             src="/assets/curated_gallery/agame_arlequin_male_rocher.webp" 
@@ -4485,7 +4519,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 65: Agame des rochers au soleil -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="64" onclick="openWildlifeLightbox(64)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="65" onclick="openWildlifeLightbox(65)">
           
           <img 
             src="/assets/curated_gallery/agame_des_rochers_soleil.webp" 
@@ -4528,7 +4562,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 66: Varan du Bengale sur berge -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="65" onclick="openWildlifeLightbox(65)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="66" onclick="openWildlifeLightbox(66)">
           
           <img 
             src="/assets/curated_gallery/varan_bengale_berges_sable.webp" 
@@ -4571,7 +4605,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 67: Serpent d'eau du Terai -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="66" onclick="openWildlifeLightbox(66)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="67" onclick="openWildlifeLightbox(67)">
           
           <img 
             src="/assets/curated_gallery/serpent_eau_terai_courant.webp" 
@@ -4614,7 +4648,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Photo 68: Agame arboricole multicolore -->
-        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="67" onclick="openWildlifeLightbox(67)">
+        <div class="wildlife-card break-inside-avoid mb-6 relative rounded-3xl overflow-hidden group cursor-pointer border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-emerald-800/50 hover:shadow-[0_20px_50px_rgba(14,131,84,0.25)] transition-all duration-300 bg-slate-900" data-category="reptiles" data-idx="68" onclick="openWildlifeLightbox(68)">
           
           <img 
             src="/assets/curated_gallery/agame_arboricole_multicolore.webp" 
@@ -5403,7 +5437,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 </script>
 <script is:inline>
   // WILDLIFE GALLERY CONTROLLER WITH PAGINATION & LIGHTBOX
-  window.wildlifeData = [{"file": "/assets/curated_gallery/tiger_territory_marking.webp", "title": "Bengal Tiger Territory Marking", "desc": "Scent-marking an ancient tree in the primary forest", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/perruche_tete_prune_fleur.webp", "title": "Plum-headed Parakeet", "desc": "Brilliant multicolor plumage feeding on nectar from a forest blossom", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/crocodile_marais_rapti.webp", "title": "Mugger Crocodile", "desc": "Apex river predator at the water surface with mirror reflection", "location": "Rapti River • Chitwan", "category": "reptiles", "aspect": 0.5625}, {"file": "/assets/curated_gallery/rhino_unicorne_oiseaux_pique_boeuf.webp", "title": "One-horned Rhino & Mynas", "desc": "Natural symbiosis in Chitwan's tall elephant grass", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/calao_bicorne_canopee.webp", "title": "Great Hornbill", "desc": "Spectacular canopy sentinel perched high above the forest", "location": "Chitwan National Park", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tigre_bengale_pistage.webp", "title": "Royal Bengal Tiger", "desc": "Powerful stalk through dense subtropical vegetation", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/leopard_asie_affut_lisiere.webp", "title": "Indian Leopard on the Lookout", "desc": "Spotted big cat quietly observing from the jungle edge", "location": "Bardia National Park", "category": "felins", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tigre_bengale_embuscade_vertical.webp", "title": "Piercing Gaze of the Tiger", "desc": "Captivating vertical portrait of a big cat stalking behind a sal trunk", "location": "Dense Bardia Forest", "category": "felins", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/rhino_unicorne_brume.webp", "title": "Greater One-horned Rhino", "desc": "Prehistoric silhouette emerging through the morning mist", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/paon_bleu_parade_roue.webp", "title": "Indian Peafowl Courtship Display", "desc": "Magical feather wheel unfurled in the early morning light", "location": "Wild Bardia Borders", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tchitrec_paradis_longues_rectrices.webp", "title": "Asian Paradise Flycatcher", "desc": "Legendary forest bird adorned with pure white ribbon-like tail feathers", "location": "Pristine Bardia Undergrowth", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tiger_water_pond.webp", "title": "Bengal Tiger at the Waterhole", "desc": "Dominant male cooling off on the riverbanks", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/elephant_asie_male_jungle.webp", "title": "Wild Asian Bull Elephant", "desc": "Solitary tusker emerging quietly from the dense Sal forest", "location": "Bardia Primary Forest", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/lezard_agame_jardin_camouflage.webp", "title": "Oriental Garden Lizard", "desc": "Subtle camouflage among tangled branches and lush leaves", "location": "Bardia Forest Edge", "category": "reptiles", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/marabout_chevelu_pose_marais.webp", "title": "Lesser Adjutant Stork on Watch", "desc": "Fascinating austere silhouette surveying the flooded wetlands", "location": "Bardia Wetlands", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/gavial_gange_nage_riviere.webp", "title": "Gharial Swimming", "desc": "Critically endangered fish-eating crocodilian slicing through river currents", "location": "Karnali River • Bardia", "category": "reptiles", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/tigre_bengale_traversee_riviere.webp", "title": "Bengal Tiger Crossing River", "desc": "Powerful feline cutting through the golden waters at sunset", "location": "Babai River • Bardia", "category": "felins", "aspect": 0.5625}, {"file": "/assets/curated_gallery/bebe_macaque_mere.webp", "title": "Rhesus Macaque Mother & Infant", "desc": "Innocent gaze and maternal tenderness within the troop", "location": "Bardia & Kathmandu", "category": "mammiferes", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/langur_gris_cri_alarme.webp", "title": "Tarai Gray Langur (Alarm Call)", "desc": "Piercing danger call signaling a hunting tiger nearby", "location": "Bardia Canopy", "category": "mammiferes", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/varan_bengale_arbre.webp", "title": "Bengal Monitor Lizard", "desc": "Giant prehistoric reptile climbing an ancient banyan trunk", "location": "Bardia National Park", "category": "reptiles", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/portrait_elephant_asie.webp", "title": "Wild Asian Elephant Close-up", "desc": "Striking portrait highlighting the weathered gaze and tusks of a mature bull", "location": "Bardia Primary Forest", "category": "mammiferes", "aspect": 1.3333333333333333}, {"file": "/assets/drive_wildlife/Ours_lippu_1.webp", "title": "Sloth Bear", "desc": "Fascinating shaggy mammal with long curved claws foraging termite mounds", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/deer_pair_savanna.webp", "title": "Swamp Deer (Barasingha)", "desc": "Alert pair of stags in the golden grasslands of the Terai", "location": "Suklaphanta National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/nilgai_mother_calf.webp", "title": "Nilgai Antelopes (Blue Bull)", "desc": "Mother and fawn alert at the forest edge in Bardia", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/marabout_chevelu_envol.webp", "title": "Lesser Adjutant in Flight", "desc": "Majestic takeoff above mist-covered floodplain savannahs at dawn", "location": "Terai Wetlands", "category": "oiseaux", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/duo_rapaces_au_nid.webp", "title": "Pair of Raptors at Nest", "desc": "Two young crested eagles observing the canopy from their eyrie", "location": "Bardia National Park", "category": "oiseaux", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/rollier_indien_perche.webp", "title": "Indian Roller Perched", "desc": "Sacred bird with pastel and sky-blue hues hunting from an open branch", "location": "Suklaphanta Plains", "category": "oiseaux", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/rollier_indien_envol_turquoise.webp", "title": "Indian Roller Taking Flight", "desc": "Dazzling display of turquoise-blue wings in mid-flight", "location": "Bardia National Park", "category": "oiseaux", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/aigle_serpentaire_vol.webp", "title": "Crested Serpent Eagle in Flight", "desc": "Majestic raptor with barred wings gliding low above the forest", "location": "Bardia National Park", "category": "oiseaux", "aspect": 0.7998046875}, {"file": "/assets/curated_gallery/elephant_asie_face_jungle.webp", "title": "Asian Elephant Head-on Encounter", "desc": "Awe-inspiring frontal encounter in the heart of primary jungle", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/langur_sentinelle_termitiere.webp", "title": "Sentinel Gray Langur", "desc": "Watchful sentinel monitoring the open plains from a high elevated root", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.4008207934336525}, {"file": "/assets/curated_gallery/duo_martins_chasseurs.webp", "title": "Pair of White-throated Kingfishers", "desc": "Vibrant turquoise fishing duo perched beside river shallows", "location": "Bardia Wetlands", "category": "oiseaux", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/cerf_sambar_dans_eau.webp", "title": "Sambar Deer Bathing", "desc": "Asia's largest deer crossing a golden sunlit river tributary", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/roussette_chauve_souris_vol.webp", "title": "Indian Flying Fox in Flight", "desc": "Giant fruit bat soaring through the twilight forest canopy", "location": "Bardia & Kathmandu Canopy", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/tigre_bengale_hautes_herbes.webp", "title": "Bengal Tiger in Elephant Grass", "desc": "Big cat moving silently through the towering Terai savannah", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/pic_flamboyant_ailes_or.webp", "title": "Greater Flameback Woodpecker", "desc": "Spectacular bird displaying golden-crimson wings on a dry trunk", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/serpent_jungle_tronc_fleuri.webp", "title": "Jungle Tree Snake on Watch", "desc": "Slender climbing snake coiled around a blooming forest branch", "location": "Bardia Wetlands", "category": "reptiles", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/mangouste_grise_jungle.webp", "title": "Indian Grey Mongoose", "desc": "Quick, fearless small predator hunting along the forest floor", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/chevechette_jungle_chouette.webp", "title": "Jungle Owlet", "desc": "Fascinating small nocturnal owl with piercing golden eyes", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/grue_antigone_savane.webp", "title": "Sarus Crane", "desc": "The world's tallest flying bird striding across golden marshlands", "location": "Terai Marshes & Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/chacal_dore_herbes.webp", "title": "Golden Jackal", "desc": "Wild canine with amber eyes roaming silently through dry scrub", "location": "Bardia Forest Margins", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/nilgaut_male_taureau_bleu.webp", "title": "Blue Bull (Mature Male Nilgai)", "desc": "Impressive adult male with distinctive slate-blue coat and white fetlocks", "location": "Suklaphanta National Park", "category": "mammiferes", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/ibis_noir_cou_rouge.webp", "title": "Red-naped Ibis", "desc": "Large wading bird with a long decurved bill probing wetland shallows", "location": "Terai Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/rollier_indien_branche_morte.webp", "title": "Indian Roller on High Branch", "desc": "Sapphire and amethyst bird silhouetted against an open sky", "location": "Suklaphanta Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/aigle_serpentaire_drongo_ciel.webp", "title": "Serpent Eagle & Black Drongo", "desc": "Dramatic aerial mobbing chase high above the canopy", "location": "Bardia Skies", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/tigre_bengale_face_arbre_foret.webp", "title": "Bengal Tiger Approaching", "desc": "The king of the jungle walking directly toward the camera", "location": "Bardia National Park", "category": "felins", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/trio_vautours_arbre_mort.webp", "title": "Trio of Vultures on Watch", "desc": "Three large scavengers roosting atop a dead tree in the savannah", "location": "Suklaphanta & Bardia Plains", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tigre_bengale_baignade_eau.webp", "title": "Bengal Tiger Bathing in Pool", "desc": "Intimate moment of coolness in a secluded wilderness waterhole", "location": "Bardia Floodplains", "category": "felins", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/aigle_au_nid_observation.webp", "title": "Eagle in Century-old Eyrie", "desc": "Sharp golden gaze commanding panoramic views of the river valley", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/elanion_blanc_vol_pique.webp", "title": "Black-winged Kite Hovering", "desc": "Pure white plumage and outstretched talons hunting beneath azure skies", "location": "Open Suklaphanta Plains", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/petit_duc_indien_creux_arbre.webp", "title": "Indian Scops Owl in Tree Hollow", "desc": "Perfect camouflage inside a hollow trunk beside spider silk", "location": "Wild Bardia Forests", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/drive_wildlife/Ours_lippu_1.webp", "title": "Sloth Bear Foraging", "desc": "Nocturnal insectivore excavating termite mounds in dry sal woodlands", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666875}, {"file": "/assets/curated_gallery/cerf_sambar_dans_eau.webp", "title": "Sambar Stag in Water", "desc": "Majestic stag crossing shallow rapids in the evening golden light", "location": "Bardia National Park", "category": "felins", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tigre_bengale_penombre_sal.webp", "title": "Bengal Tiger in Sal Shadows", "desc": "Intense tracking through the towering, shadowed sal groves", "location": "Bardia National Park", "category": "felins", "aspect": 0.5625}, {"file": "/assets/curated_gallery/cerf_aboyeur_muntjac.webp", "title": "Indian Barking Deer (Muntjac)", "desc": "Shy and elusive small deer darting through the undergrowth", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/cerf_axis_chital_tachete.webp", "title": "Spotted Deer (Axis Chital)", "desc": "Graceful deer with white-spotted coat wandering through sunlit glades", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/troupe_chitals_clairiere.webp", "title": "Chital Herd in Forest Clearing", "desc": "Peaceful family group grazing together in the warm evening light", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/troupeau_elephants_asie_lisiere.webp", "title": "Wild Asian Elephant Herd", "desc": "Matriarch and calf moving together along the forest edge", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/cheveche_brame_chouette_tachetee.webp", "title": "Spotted Owlet", "desc": "Compact owl with piercing golden eyes surveying from its roost", "location": "Chitwan National Park", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/martin_pecheur_pie_rapide.webp", "title": "Pied Kingfisher", "desc": "Master of hover-fishing plunging into river rapids", "location": "Rapti River • Chitwan", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/loriot_capuchon_noir_or.webp", "title": "Black-hooded Oriole", "desc": "Brilliant golden-yellow plumage contrasting with a jet-black head", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/jacana_bronze_nenuphars.webp", "title": "Bronze-winged Jacana", "desc": "Long-toed wetland bird walking effortlessly on floating lily pads", "location": "Chitwan Marshes", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/barbu_plastron_rouge_rubis.webp", "title": "Coppersmith Barbet", "desc": "Vibrant crimson-breasted frugivore calling from high tree cavities", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_arlequin_male_rocher.webp", "title": "Male Harlequin Agama", "desc": "Vividly colored lizard displaying territory on sun-warmed rocks", "location": "Bardia Rocky Areas", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_des_rochers_soleil.webp", "title": "Rock Agama Basking", "desc": "Thermoregulating reptile warming up on smooth river boulders", "location": "Karnali Riverbanks • Bardia", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/varan_bengale_berges_sable.webp", "title": "Bengal Monitor on Riverbank", "desc": "Large reptile actively foraging gravel bars and driftwood roots", "location": "Bardia National Park", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/serpent_eau_terai_courant.webp", "title": "Checkered Keelback Water Snake", "desc": "Semi-aquatic snake undulating gracefully through riverbank shallows", "location": "Rapti River • Chitwan", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_arboricole_multicolore.webp", "title": "Multicolor Tree Agama", "desc": "Remarkable agility climbing ancient century-old Sal tree trunks", "location": "Bardia Forest", "category": "reptiles", "aspect": 0.5625}];
+  window.wildlifeData = [{"file": "/assets/curated_gallery/tiger_territory_marking.webp", "title": "Bengal Tiger Territory Marking", "desc": "Scent-marking an ancient tree in the primary forest", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/perruche_tete_prune_fleur.webp", "title": "Plum-headed Parakeet", "desc": "Brilliant multicolor plumage feeding on nectar from a forest blossom", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/crocodile_marais_rapti.webp", "title": "Mugger Crocodile", "desc": "Apex river predator at the water surface with mirror reflection", "location": "Rapti River • Chitwan", "category": "reptiles", "aspect": 0.5625}, {"file": "/assets/curated_gallery/gavial_du_gange_jacinthes_eau.webp", "title": "Gharial Crocodile on the riverbank", "desc": "Prehistoric fish-eating crocodilian basking among floating water hyacinths", "location": "Rapti River • Chitwan", "category": "reptiles", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/rhino_unicorne_oiseaux_pique_boeuf.webp", "title": "One-horned Rhino & Mynas", "desc": "Natural symbiosis in Chitwan's tall elephant grass", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/calao_bicorne_canopee.webp", "title": "Great Hornbill", "desc": "Spectacular canopy sentinel perched high above the forest", "location": "Chitwan National Park", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tigre_bengale_pistage.webp", "title": "Royal Bengal Tiger", "desc": "Powerful stalk through dense subtropical vegetation", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/leopard_asie_affut_lisiere.webp", "title": "Indian Leopard on the Lookout", "desc": "Spotted big cat quietly observing from the jungle edge", "location": "Bardia National Park", "category": "felins", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tigre_bengale_embuscade_vertical.webp", "title": "Piercing Gaze of the Tiger", "desc": "Captivating vertical portrait of a big cat stalking behind a sal trunk", "location": "Dense Bardia Forest", "category": "felins", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/rhino_unicorne_brume.webp", "title": "Greater One-horned Rhino", "desc": "Prehistoric silhouette emerging through the morning mist", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/paon_bleu_parade_roue.webp", "title": "Indian Peafowl Courtship Display", "desc": "Magical feather wheel unfurled in the early morning light", "location": "Wild Bardia Borders", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tchitrec_paradis_longues_rectrices.webp", "title": "Asian Paradise Flycatcher", "desc": "Legendary forest bird adorned with pure white ribbon-like tail feathers", "location": "Pristine Bardia Undergrowth", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tiger_water_pond.webp", "title": "Bengal Tiger at the Waterhole", "desc": "Dominant male cooling off on the riverbanks", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/elephant_asie_male_jungle.webp", "title": "Wild Asian Bull Elephant", "desc": "Solitary tusker emerging quietly from the dense Sal forest", "location": "Bardia Primary Forest", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/lezard_agame_jardin_camouflage.webp", "title": "Oriental Garden Lizard", "desc": "Subtle camouflage among tangled branches and lush leaves", "location": "Bardia Forest Edge", "category": "reptiles", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/marabout_chevelu_pose_marais.webp", "title": "Lesser Adjutant Stork on Watch", "desc": "Fascinating austere silhouette surveying the flooded wetlands", "location": "Bardia Wetlands", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/gavial_gange_nage_riviere.webp", "title": "Gharial Swimming", "desc": "Critically endangered fish-eating crocodilian slicing through river currents", "location": "Karnali River • Bardia", "category": "reptiles", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/tigre_bengale_traversee_riviere.webp", "title": "Bengal Tiger Crossing River", "desc": "Powerful feline cutting through the golden waters at sunset", "location": "Babai River • Bardia", "category": "felins", "aspect": 0.5625}, {"file": "/assets/curated_gallery/bebe_macaque_mere.webp", "title": "Rhesus Macaque Mother & Infant", "desc": "Innocent gaze and maternal tenderness within the troop", "location": "Bardia & Kathmandu", "category": "mammiferes", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/langur_gris_cri_alarme.webp", "title": "Tarai Gray Langur (Alarm Call)", "desc": "Piercing danger call signaling a hunting tiger nearby", "location": "Bardia Canopy", "category": "mammiferes", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/varan_bengale_arbre.webp", "title": "Bengal Monitor Lizard", "desc": "Giant prehistoric reptile climbing an ancient banyan trunk", "location": "Bardia National Park", "category": "reptiles", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/portrait_elephant_asie.webp", "title": "Wild Asian Elephant Close-up", "desc": "Striking portrait highlighting the weathered gaze and tusks of a mature bull", "location": "Bardia Primary Forest", "category": "mammiferes", "aspect": 1.3333333333333333}, {"file": "/assets/drive_wildlife/Ours_lippu_1.webp", "title": "Sloth Bear", "desc": "Fascinating shaggy mammal with long curved claws foraging termite mounds", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/deer_pair_savanna.webp", "title": "Swamp Deer (Barasingha)", "desc": "Alert pair of stags in the golden grasslands of the Terai", "location": "Suklaphanta National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/nilgai_mother_calf.webp", "title": "Nilgai Antelopes (Blue Bull)", "desc": "Mother and fawn alert at the forest edge in Bardia", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/marabout_chevelu_envol.webp", "title": "Lesser Adjutant in Flight", "desc": "Majestic takeoff above mist-covered floodplain savannahs at dawn", "location": "Terai Wetlands", "category": "oiseaux", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/duo_rapaces_au_nid.webp", "title": "Pair of Raptors at Nest", "desc": "Two young crested eagles observing the canopy from their eyrie", "location": "Bardia National Park", "category": "oiseaux", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/rollier_indien_perche.webp", "title": "Indian Roller Perched", "desc": "Sacred bird with pastel and sky-blue hues hunting from an open branch", "location": "Suklaphanta Plains", "category": "oiseaux", "aspect": 1.2503052503052503}, {"file": "/assets/curated_gallery/rollier_indien_envol_turquoise.webp", "title": "Indian Roller Taking Flight", "desc": "Dazzling display of turquoise-blue wings in mid-flight", "location": "Bardia National Park", "category": "oiseaux", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/aigle_serpentaire_vol.webp", "title": "Crested Serpent Eagle in Flight", "desc": "Majestic raptor with barred wings gliding low above the forest", "location": "Bardia National Park", "category": "oiseaux", "aspect": 0.7998046875}, {"file": "/assets/curated_gallery/elephant_asie_face_jungle.webp", "title": "Asian Elephant Head-on Encounter", "desc": "Awe-inspiring frontal encounter in the heart of primary jungle", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.7138671875}, {"file": "/assets/curated_gallery/langur_sentinelle_termitiere.webp", "title": "Sentinel Gray Langur", "desc": "Watchful sentinel monitoring the open plains from a high elevated root", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.4008207934336525}, {"file": "/assets/curated_gallery/duo_martins_chasseurs.webp", "title": "Pair of White-throated Kingfishers", "desc": "Vibrant turquoise fishing duo perched beside river shallows", "location": "Bardia Wetlands", "category": "oiseaux", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/cerf_sambar_dans_eau.webp", "title": "Sambar Deer Bathing", "desc": "Asia's largest deer crossing a golden sunlit river tributary", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/roussette_chauve_souris_vol.webp", "title": "Indian Flying Fox in Flight", "desc": "Giant fruit bat soaring through the twilight forest canopy", "location": "Bardia & Kathmandu Canopy", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/tigre_bengale_hautes_herbes.webp", "title": "Bengal Tiger in Elephant Grass", "desc": "Big cat moving silently through the towering Terai savannah", "location": "Bardia National Park", "category": "felins", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/pic_flamboyant_ailes_or.webp", "title": "Greater Flameback Woodpecker", "desc": "Spectacular bird displaying golden-crimson wings on a dry trunk", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/serpent_jungle_tronc_fleuri.webp", "title": "Jungle Tree Snake on Watch", "desc": "Slender climbing snake coiled around a blooming forest branch", "location": "Bardia Wetlands", "category": "reptiles", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/mangouste_grise_jungle.webp", "title": "Indian Grey Mongoose", "desc": "Quick, fearless small predator hunting along the forest floor", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666015625}, {"file": "/assets/curated_gallery/chevechette_jungle_chouette.webp", "title": "Jungle Owlet", "desc": "Fascinating small nocturnal owl with piercing golden eyes", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/grue_antigone_savane.webp", "title": "Sarus Crane", "desc": "The world's tallest flying bird striding across golden marshlands", "location": "Terai Marshes & Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/chacal_dore_herbes.webp", "title": "Golden Jackal", "desc": "Wild canine with amber eyes roaming silently through dry scrub", "location": "Bardia Forest Margins", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/nilgaut_male_taureau_bleu.webp", "title": "Blue Bull (Mature Male Nilgai)", "desc": "Impressive adult male with distinctive slate-blue coat and white fetlocks", "location": "Suklaphanta National Park", "category": "mammiferes", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/ibis_noir_cou_rouge.webp", "title": "Red-naped Ibis", "desc": "Large wading bird with a long decurved bill probing wetland shallows", "location": "Terai Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/rollier_indien_branche_morte.webp", "title": "Indian Roller on High Branch", "desc": "Sapphire and amethyst bird silhouetted against an open sky", "location": "Suklaphanta Plains", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/aigle_serpentaire_drongo_ciel.webp", "title": "Serpent Eagle & Black Drongo", "desc": "Dramatic aerial mobbing chase high above the canopy", "location": "Bardia Skies", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/tigre_bengale_face_arbre_foret.webp", "title": "Bengal Tiger Approaching", "desc": "The king of the jungle walking directly toward the camera", "location": "Bardia National Park", "category": "felins", "aspect": 0.5615234375}, {"file": "/assets/curated_gallery/trio_vautours_arbre_mort.webp", "title": "Trio of Vultures on Watch", "desc": "Three large scavengers roosting atop a dead tree in the savannah", "location": "Suklaphanta & Bardia Plains", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/tigre_bengale_baignade_eau.webp", "title": "Bengal Tiger Bathing in Pool", "desc": "Intimate moment of coolness in a secluded wilderness waterhole", "location": "Bardia Floodplains", "category": "felins", "aspect": 1.501466275659824}, {"file": "/assets/curated_gallery/aigle_au_nid_observation.webp", "title": "Eagle in Century-old Eyrie", "desc": "Sharp golden gaze commanding panoramic views of the river valley", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/elanion_blanc_vol_pique.webp", "title": "Black-winged Kite Hovering", "desc": "Pure white plumage and outstretched talons hunting beneath azure skies", "location": "Open Suklaphanta Plains", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/curated_gallery/petit_duc_indien_creux_arbre.webp", "title": "Indian Scops Owl in Tree Hollow", "desc": "Perfect camouflage inside a hollow trunk beside spider silk", "location": "Wild Bardia Forests", "category": "oiseaux", "aspect": 1.7808695652173914}, {"file": "/assets/drive_wildlife/Ours_lippu_1.webp", "title": "Sloth Bear Foraging", "desc": "Nocturnal insectivore excavating termite mounds in dry sal woodlands", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.666875}, {"file": "/assets/curated_gallery/cerf_sambar_dans_eau.webp", "title": "Sambar Stag in Water", "desc": "Majestic stag crossing shallow rapids in the evening golden light", "location": "Bardia National Park", "category": "felins", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/tigre_bengale_penombre_sal.webp", "title": "Bengal Tiger in Sal Shadows", "desc": "Intense tracking through the towering, shadowed sal groves", "location": "Bardia National Park", "category": "felins", "aspect": 0.5625}, {"file": "/assets/curated_gallery/cerf_aboyeur_muntjac.webp", "title": "Indian Barking Deer (Muntjac)", "desc": "Shy and elusive small deer darting through the undergrowth", "location": "Chitwan National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/cerf_axis_chital_tachete.webp", "title": "Spotted Deer (Axis Chital)", "desc": "Graceful deer with white-spotted coat wandering through sunlit glades", "location": "Bardia National Park", "category": "mammiferes", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/troupe_chitals_clairiere.webp", "title": "Chital Herd in Forest Clearing", "desc": "Peaceful family group grazing together in the warm evening light", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/troupeau_elephants_asie_lisiere.webp", "title": "Wild Asian Elephant Herd", "desc": "Matriarch and calf moving together along the forest edge", "location": "Bardia National Park", "category": "mammiferes", "aspect": 0.5625}, {"file": "/assets/curated_gallery/cheveche_brame_chouette_tachetee.webp", "title": "Spotted Owlet", "desc": "Compact owl with piercing golden eyes surveying from its roost", "location": "Chitwan National Park", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/martin_pecheur_pie_rapide.webp", "title": "Pied Kingfisher", "desc": "Master of hover-fishing plunging into river rapids", "location": "Rapti River • Chitwan", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/loriot_capuchon_noir_or.webp", "title": "Black-hooded Oriole", "desc": "Brilliant golden-yellow plumage contrasting with a jet-black head", "location": "Bardia Canopy", "category": "oiseaux", "aspect": 0.5625}, {"file": "/assets/curated_gallery/jacana_bronze_nenuphars.webp", "title": "Bronze-winged Jacana", "desc": "Long-toed wetland bird walking effortlessly on floating lily pads", "location": "Chitwan Marshes", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/barbu_plastron_rouge_rubis.webp", "title": "Coppersmith Barbet", "desc": "Vibrant crimson-breasted frugivore calling from high tree cavities", "location": "Bardia Forests", "category": "oiseaux", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_arlequin_male_rocher.webp", "title": "Male Harlequin Agama", "desc": "Vividly colored lizard displaying territory on sun-warmed rocks", "location": "Bardia Rocky Areas", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_des_rochers_soleil.webp", "title": "Rock Agama Basking", "desc": "Thermoregulating reptile warming up on smooth river boulders", "location": "Karnali Riverbanks • Bardia", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/varan_bengale_berges_sable.webp", "title": "Bengal Monitor on Riverbank", "desc": "Large reptile actively foraging gravel bars and driftwood roots", "location": "Bardia National Park", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/serpent_eau_terai_courant.webp", "title": "Checkered Keelback Water Snake", "desc": "Semi-aquatic snake undulating gracefully through riverbank shallows", "location": "Rapti River • Chitwan", "category": "reptiles", "aspect": 1.7777777777777777}, {"file": "/assets/curated_gallery/agame_arboricole_multicolore.webp", "title": "Multicolor Tree Agama", "desc": "Remarkable agility climbing ancient century-old Sal tree trunks", "location": "Bardia Forest", "category": "reptiles", "aspect": 0.5625}];
   window.currentWildlifeIndex = 0;
   window.currentWildlifeCategory = 'all';
   // Check if mobile screen (width < 640px) -> show exactly 6 photos, otherwise 21 on desktop
