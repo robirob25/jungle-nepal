@@ -884,7 +884,14 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var optionDesc = isEn ? "Total immersion at Lalmati Bhale camp with our trackers, campfire & deep jungle night sounds." : "Immersion totale au camp de Lalmati Bhale avec nos pisteurs, feu de camp et écoute nocturne.";
       var optionRowLabel = isEn ? "Wild Camping Option:" : "Option Camping sauvage :";
 
-      if (document.getElementById('comfort-option-card') || document.getElementById('toggle-comfort-btn') || document.getElementById('sidebar-comfort-checkbox')) {
+      if (document.getElementById('guide-room-option-card') || document.getElementById('toggle-guide-room-btn')) {
+        hasCamping = true;
+        optionType = 'guide-room';
+        campingPrice = 12;
+        optionTitle = isEn ? "Option: Night at your guide's place" : "Option : Nuit chez votre guide";
+        optionDesc = isEn ? "Air-conditioned room, traditional dinner & breakfast next morning included." : "Chambre climatisée, dîner traditionnel & petit-déjeuner le lendemain matin inclus.";
+        optionRowLabel = isEn ? "Guide Accommodation (+12€):" : "Nuit chez le guide (+12€) :";
+      } else if (document.getElementById('comfort-option-card') || document.getElementById('toggle-comfort-btn') || document.getElementById('sidebar-comfort-checkbox')) {
         hasCamping = true;
         optionType = 'comfort';
         campingPrice = 390;
