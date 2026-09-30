@@ -11,7 +11,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "name": "Walking Safari — Bardia National Park (1 Day)",
+  "name": "Bardia: Walking Safari in Bardia – Full Day in Nepal's Jungle",
   "description": "A full day deep into the heart of Bardia National Park on foot. Track Bengal tigers, one-horned rhinos, and wild Asian elephants with our senior jungle guides and trackers.",
   "image": "https://junglenepal.com/assets/tours_thumbs/safari_pied_kiran_baton.webp",
   "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers", "Hikers"],
@@ -37,7 +37,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 }
 </script>
 
-<Layout title="Walking Safari — Bardia National Park (1 Day) | Jungle Nepal Adventure" lang="en">
+<Layout title="Bardia: Walking Safari in Bardia – Full Day in Nepal's Jungle | Jungle Nepal Adventure" lang="en">
 
   <!-- TOP BAR PROMO -->
   <aside class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 relative z-50 text-center border-b border-emerald-800/20" id="top-bar">
@@ -101,13 +101,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <a href="/en/destinations/annapurna" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
                     <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Annapurna & Pokhara</p>
-                    <p class="text-[10px] text-slate-400">Himalayan peaks & alpine trails</p>
+                    <p class="text-[10px] text-slate-400">Legendary peaks & scenic balconies</p>
                   </div>
                 </a>
                 <a href="/en/destinations/katmandou" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
-                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Kathmandu Valley</p>
-                    <p class="text-[10px] text-slate-400">Sacred temples & royal squares</p>
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Kathmandu</p>
+                    <p class="text-[10px] text-slate-400">Valley of kings & sacred temples</p>
                   </div>
                 </a>
                 <div class="pt-2 border-t border-white/10 mt-1">
@@ -119,7 +119,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
           </div>
 
-          <a href="/en#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Our trackers</a>
+          <a href="/en#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Our guides</a>
           <a href="/en#galerie-faune" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Gallery</a>
           <a href="/en/about" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">About</a>
           <a href="/blog" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Blog</a>
@@ -207,46 +207,48 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <a href="/en/destinations/annapurna" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
             <div>
               <p class="font-bold text-white">Annapurna & Pokhara</p>
-              <p class="text-[10px] text-slate-400">Himalayan peaks & alpine trails</p>
+              <p class="text-[10px] text-slate-400">Legendary peaks & scenic balconies</p>
             </div>
           </a>
           <a href="/en/destinations/katmandou" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
             <div>
-              <p class="font-bold text-white">Kathmandu Valley</p>
-              <p class="text-[10px] text-slate-400">Sacred temples & royal squares</p>
+              <p class="font-bold text-white">Kathmandu</p>
+              <p class="text-[10px] text-slate-400">Valley of kings & sacred temples</p>
             </div>
-          </a>
-          <a href="/en/destinations" onclick="toggleMobileMenu()" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow mt-1">
-            View all destinations →
           </a>
         </div>
       </div>
 
-      <a href="/en#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Our trackers</a>
-      <a href="/en#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>Gallery</span>
+      <a href="/en#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Our guides
       </a>
-      <a href="/en/about" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>About</span>
+      <a href="/en#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Gallery
       </a>
-      <a href="/blog" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>📝</span>
-        <span>Blog</span>
+      <a href="/en/about" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        About
       </a>
-      <a href="/en/contact" class="px-3.5 py-2.5 rounded-2xl hover:bg-white/10 flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors">
-        <span>Contact</span>
+      <a href="/blog" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Blog
+      </a>
+      <a href="/en/contact" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Contact
       </a>
     </nav>
 
-    <div class="pt-3 border-t border-white/10 space-y-2">
-      <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Language</span>
-      <div class="grid grid-cols-4 gap-1.5">
-        <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
-        <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-        <button onclick="changeLanguage('de')" data-lang-btn="de" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer">
+    <div class="pt-3 border-t border-white/10">
+      <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Languages</p>
+      <div class="grid grid-cols-2 gap-2">
+        <a href={frTargetUrl} class="py-2.5 px-3 rounded-xl bg-white/10 text-white font-extrabold text-xs flex items-center justify-center gap-2 border border-white/10">
+          <span>🇫🇷</span> <span>FR</span>
+        </a>
+        <a href={enTargetUrl} class="py-2.5 px-3 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center gap-2">
+          <span>🇬🇧</span> <span>EN</span>
+        </a>
+        <button onclick="changeLanguage('de')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer">
           <span>🇩🇪</span> <span>DE</span>
         </button>
-        <button onclick="changeLanguage('es')" data-lang-btn="es" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer">
+        <button onclick="changeLanguage('es')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer">
           <span>🇪🇸</span> <span>ES</span>
         </button>
       </div>
@@ -275,20 +277,17 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <span>›</span>
       <a href="/en#prochains-departs" class="hover:text-slate-900">Our 17 Tours</a>
       <span>›</span>
-      <span class="text-slate-900 font-bold truncate">Walking Safari — Bardia National Park</span>
+      <span class="text-slate-900 font-bold truncate">Walking safari in Bardia National Park</span>
     </nav>
 
     <!-- Header Title & Badges Row -->
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#0e8354] font-black text-xs uppercase tracking-wider mb-2">
-          <span>Short Stays • 1-Day Immersion</span>
-        </div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          WALKING SAFARI — BARDIA NATIONAL PARK
+          Walking safari in Bardia National Park
         </h1>
         <p class="text-base sm:text-xl font-bold text-[#0e8354] mt-1.5">
-          A full day deep into the heart of the jungle
+          A full day in the heart of the jungle
         </p>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
@@ -332,26 +331,26 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
     </div>
 
-    <!-- PHOTO MOSAIC GALLERY (5 PHOTOS) -->
+    <!-- PHOTO MOSAIC GALLERY (7 PHOTOS INCLUDING PAWAN'S ROOM) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
-        <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_pied_kiran_baton.webp" alt="Tracker Kiran seen from behind holding bamboo stick in Bardia" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
+        <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_pied_kiran_baton.webp" alt="Tracker seen from behind holding bamboo stick in Bardia" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
       </div>
       <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
-        <img loading="lazy" decoding="async" src="/assets/tours_thumbs/tigre_jungle_marche.webp" alt="Wild Bengal Tiger walking in Bardia forest" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(1)"/>
+        <img loading="lazy" decoding="async" src="/assets/tours_thumbs/tigre_jungle_marche.webp" alt="Royal Bengal Tiger walking through Bardia jungle" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(1)"/>
       </div>
       <div class="hidden md:flex flex-col gap-3 h-full">
         <div class="h-1/2 overflow-hidden rounded-tr-2xl">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/rhino_vegetation_bardia.webp" alt="Greater one-horned rhino in dense vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="Air-conditioned private room at guide Pawan's homestay" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(4)"/>
         </div>
         <div class="h-1/2 overflow-hidden rounded-br-2xl relative">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/elephant_sal_foret_bardia.webp" alt="Wild elephant under tall Sal forest canopy" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(3)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/rhino_vegetation_bardia.webp" alt="Greater one-horned rhino in dense vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
         </div>
       </div>
 
       <button onclick="openLightbox(0)" class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md hover:bg-white text-slate-900 font-bold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg border border-slate-200 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer">
         <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
-        <span>View all 5 photos</span>
+        <span>View all 7 photos (safari & bedroom)</span>
       </button>
     </div>
 
@@ -360,14 +359,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex items-center justify-between gap-4">
         <div class="hidden sm:flex items-center gap-2.5 shrink-0 min-w-0">
           <div class="min-w-0">
-            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[240px]">Walking Safari — Bardia</p>
+            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[240px]">Walking safari — Bardia</p>
             <p class="text-[11px] font-bold text-[#0e8354]"><span id="subnav-price-display">50€</span> <span class="text-slate-400 font-normal">/ pers.</span></p>
           </div>
         </div>
 
         <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 overflow-x-auto no-scrollbar text-xs sm:text-sm font-bold text-slate-600 py-1">
           <a href="#apercu" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Overview</a>
-          <a href="#option-nuit" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Guide Stay (+12€)</a>
+          <a href="#option-nuit" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Night at Pawan's (+12€)</a>
           <a href="#deroulement" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Schedule</a>
           <a href="#inclusions" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Inclusions</a>
           <a href="#avis-voyageurs" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Reviews</a>
@@ -409,7 +408,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <!-- Wilderness Ethics Warning -->
           <div class="p-5 sm:p-6 rounded-3xl bg-amber-500/10 border-2 border-amber-500/30 text-slate-900 space-y-2">
-            <div class="flex items-center gap-2 text-amber-900 font-extrabold text-sm uppercase tracking-wider">
+            <div class="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
               <span class="text-lg">⚠️</span>
               <span>100% Wild Nature Commitment</span>
             </div>
@@ -454,41 +453,50 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </section>
 
-        <!-- SECTION 2: GUIDE STAY OPTION -->
+        <!-- SECTION 2: OPTION NUIT CHEZ PAWAN (GUIDE SENIOR BBC) -->
         <section id="option-nuit" class="scroll-mt-28 pt-8 border-t border-slate-200">
           <div class="space-y-4">
-            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">All-Inclusive Comfort & Cultural Homestay</span>
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Local immersion & comfort</span>
             <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-              Option: Night at your guide's place (+12 €)
+              Option: Night at your guide Pawan's place (+12 €)
             </h2>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-              To extend your local immersion with warm hospitality and homecooked meals, you can add a comfortable homestay night at your guide's family residence in Thakurdwara.
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+              To extend your experience in an authentic and warm setting, you have the opportunity to stay at <strong>Pawan's place</strong>, a senior guide and elite tracker in Bardia for over 20 years. Pawan regularly guides and accompanies international film crews, including for <strong>BBC</strong> wildlife documentaries.
             </p>
           </div>
 
-          <!-- Interactive Option Card -->
+          <!-- Interactive Option Card with bedroom photo preview -->
           <div id="guide-room-option-card" class="mt-6 p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-emerald-950 to-slate-900 text-white border border-emerald-500/30 shadow-2xl relative overflow-hidden transition-all duration-300 hover:border-emerald-400/50">
-            <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-              <div class="space-y-2">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center relative z-10">
+              
+              <!-- Left Details -->
+              <div class="md:col-span-8 space-y-3">
                 <div class="flex items-center gap-2">
-                  <span class="px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-extrabold text-[11px] border border-emerald-400/30 uppercase tracking-wider">Recommended Option</span>
+                  <span class="px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-extrabold text-[11px] border border-emerald-400/30 uppercase tracking-wider">At Pawan's (BBC Guide • 20 years exp.)</span>
                   <span class="text-xs font-bold text-amber-300">+12 € / person</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">
-                  AC Private Room + Homecooked Dinner + Breakfast
+                  AC Private Room + Traditional Dinner + Breakfast
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal max-w-xl">
-                  Enjoy a private air-conditioned bedroom with private bathroom, an authentic Nepali family dinner (homemade Dal Bhat) in the evening, and a hearty breakfast before or after your safari day.
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                  Stay in a spacious private bedroom equipped with a comfortable bed, air conditioning, a sofa, and an en-suite private bathroom with shower. In the evening, share a traditional homemade Nepali dinner (Dal Bhat) with the family, and enjoy a hearty breakfast the next morning.
                 </p>
                 <ul class="text-xs text-emerald-200/90 space-y-1 pt-1">
-                  <li class="flex items-center gap-2">✓ Air-conditioned private room (AC) & bathroom</li>
-                  <li class="flex items-center gap-2">✓ Traditional homemade dinner in the evening</li>
-                  <li class="flex items-center gap-2">✓ Energizing breakfast the following morning</li>
+                  <li class="flex items-center gap-2">✓ Air-conditioned private room (AC) with en-suite bathroom and shower</li>
+                  <li class="flex items-center gap-2">✓ Traditional homemade dinner cooked with the family in the evening</li>
+                  <li class="flex items-center gap-2">✓ Complete energizing breakfast the following morning</li>
+                  <li class="flex items-center gap-2">✓ Exclusive discussions with Pawan about his 20 years in the wild and BBC filming stories</li>
                 </ul>
               </div>
 
-              <div class="shrink-0 flex flex-col items-center sm:items-end gap-3 pt-2 sm:pt-0">
-                <div class="text-center sm:text-right">
+              <!-- Right: Mini gallery & CTA -->
+              <div class="md:col-span-4 flex flex-col items-center md:items-end gap-3 pt-2 md:pt-0">
+                <div class="grid grid-cols-2 gap-2 w-full max-w-[240px] cursor-pointer" onclick="openLightbox(4)">
+                  <img src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="AC bedroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
+                  <img src="/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp" alt="En-suite bathroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
+                </div>
+                <div class="text-center md:text-right w-full">
                   <span class="text-xs text-slate-400 block font-bold uppercase tracking-wider">Total with option</span>
                   <span class="text-3xl sm:text-4xl font-black text-amber-300 font-mono tracking-tight">62 €</span>
                 </div>
@@ -496,22 +504,24 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   id="toggle-guide-room-btn"
                   type="button" 
                   onclick="toggleGuideOption()" 
-                  class="w-full sm:w-auto px-6 py-3 rounded-2xl font-black text-xs transition-all duration-200 cursor-pointer shadow-lg bg-[#0e8354] hover:bg-[#0c6d46] text-white flex items-center justify-center gap-2 active:scale-95"
+                  class="w-full px-5 py-3 rounded-2xl font-black text-xs transition-all duration-200 cursor-pointer shadow-lg bg-[#0e8354] hover:bg-[#0c6d46] text-white flex items-center justify-center gap-2 active:scale-95"
                 >
                   <span id="guide-room-btn-text">Add option (+12€)</span>
                   <span id="guide-room-btn-icon">＋</span>
                 </button>
               </div>
+
             </div>
+
           </div>
         </section>
 
         <!-- SECTION 3: DAILY SCHEDULE -->
         <section id="deroulement" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
           <div>
-            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Organization & Logistics</span>
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Organization and schedule</span>
             <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">
-              Your Typical Walking Safari Day
+              Your typical walking safari day
             </h2>
           </div>
 
@@ -521,9 +531,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 06:30 AM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Early Morning Departure & Safety Briefing</h3>
+                <h3 class="font-bold text-slate-900 text-base">Early morning departure & safety briefing</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Pick-up from your lodge in Thakurdwara. Local transfer to the park entrance gate. Permit verification and in-depth silent wilderness protocol briefing from your guide and tracker.
+                  Pick-up from your lodge in Thakurdwara (or at Pawan's). Local transfer included to the park entrance gate. Permit verification and silent wilderness tracking protocol briefing from your guide and tracker.
                 </p>
               </div>
             </div>
@@ -533,9 +543,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 07:30 AM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Sal Canopy Exploration & Track Inspection</h3>
+                <h3 class="font-bold text-slate-900 text-base">Sal forest immersion & track stalking</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Deep penetration into the cathedral Sal forest and minor river crossings. Trackers analyze fresh pugmarks in soft riverbeds and interpret deer warning alarms.
+                  Deep exploration of the towering Sal cathedral forest and riverbanks. Guides inspect fresh mud for tiger pugmarks, rhino paths, and listen attentively to deer alarm calls.
                 </p>
               </div>
             </div>
@@ -545,9 +555,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 12:30 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Jungle Picnic Lunch by the Waterholes</h3>
+                <h3 class="font-bold text-slate-900 text-base">Jungle picnic lunch in the wild</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Restful picnic lunch sheltered under a natural tree canopy or machan (watchtower) overlooking an active watering spot.
+                  Restful picnic lunch sheltered under a natural canopy or watchtower (machan) facing an active waterhole.
                 </p>
               </div>
             </div>
@@ -557,9 +567,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 02:30 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Riverbank Stalking & Grassland Ambush</h3>
+                <h3 class="font-bold text-slate-900 text-base">Riverbank stalking & grassland hide</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Tracking along the vast Karnali/Geruwa river channels and tall elephant grass where rhinos and tigers frequently emerge to cool down.
+                  Tracking along the alluvial plains and gravel islands of the Karnali/Geruwa river where rhinos and big cats emerge to drink.
                 </p>
               </div>
             </div>
@@ -569,9 +579,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 06:00 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Exit & Evening Debriefing</h3>
+                <h3 class="font-bold text-slate-900 text-base">Return to Thakurdwara & debriefing</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Exit the reserve before dusk and return to Thakurdwara to review the day’s sightings over fresh masala tea.
+                  Exit the park before dusk. Return to your lodge or to Pawan's homestay (if option selected) to discuss the day's encounters over warm masala tea.
                 </p>
               </div>
             </div>
@@ -588,16 +598,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-6 rounded-3xl bg-emerald-50/70 border border-emerald-200/80 space-y-3">
               <h3 class="font-black text-emerald-950 text-sm uppercase tracking-wider flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-[#0e8354]"></span>
-                <span>Included in Base Rate (50 €)</span>
+                <span>Included in base rate (50 €)</span>
               </h3>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>1 Senior certified native jungle guide</span>
+                  <span>1 experienced native jungle guide</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>1 Experienced field assistant tracker</span>
+                  <span>1 assistant tracker for enhanced safety</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
@@ -617,7 +627,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3">
               <h3 class="font-black text-slate-800 text-sm uppercase tracking-wider flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-                <span>Not Included</span>
+                <span>Not included</span>
               </h3>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
                 <li class="flex items-start gap-2">
@@ -646,7 +656,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="flex items-center justify-between gap-4 mb-6">
             <div>
               <h2 class="font-black text-2xl text-slate-950 tracking-tight">
-                Explorer Reviews
+                Explorer reviews
               </h2>
               <p class="text-xs text-slate-500 font-semibold mt-1">Average rating: 5.0/5 based on 24 verified walking safaris</p>
             </div>
@@ -674,12 +684,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <div class="flex items-center justify-between">
                 <div>
                   <h4 class="font-bold text-sm text-slate-900">Mark S.</h4>
-                  <p class="text-[11px] text-slate-400">Wildlife Photographer • Safari + Guide Stay Option</p>
+                  <p class="text-[11px] text-slate-400">Wildlife Photographer • Safari + Pawan Homestay Option</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                "The guide homestay option is unbeatable value: great AC room, wonderful home dinner, and immediate early start right next to the park entrance."
+                "Staying at Pawan's place is unbeatable: fantastic AC room, delicious homemade family dinner, and fascinating BBC filming stories in the evening. Highly recommended!"
               </p>
             </div>
           </div>
@@ -688,7 +698,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- SECTION 6: FAQ -->
         <section id="faq" class="scroll-mt-28 pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl text-slate-950 mb-6 tracking-tight">
-            Frequently Asked Questions
+            Frequently asked questions
           </h2>
 
           <div class="space-y-3 text-sm">
@@ -714,11 +724,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
             <details class="group bg-white p-4 rounded-2xl border border-slate-200">
               <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
-                <span>How does the guide stay option (+12 €) work?</span>
+                <span>How does the night at Pawan's place (+12 €) work?</span>
                 <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
               </summary>
               <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                It includes a private AC room at our guide's homestay in Thakurdwara, homemade evening dinner, and breakfast the next morning.
+                It includes a private AC bedroom with en-suite bathroom at senior guide Pawan's home in Thakurdwara, homemade evening dinner with his family, and breakfast the next morning.
               </p>
             </details>
           </div>
@@ -731,9 +741,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div id="booking-widget" class="sticky top-[76px] bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-xl space-y-4">
           
           <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Short Stay • Full Day</span>
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Short stay • Full day</span>
             <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
-              WALKING SAFARI — BARDIA NATIONAL PARK
+              Walking safari in Bardia National Park
             </h3>
             <p class="text-xs text-slate-500 font-semibold mt-1">1 Day (6:30 AM - 6:00 PM) • From 1 Person</p>
           </div>
@@ -759,11 +769,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               />
               <div class="flex-1">
                 <div class="flex items-center justify-between gap-1">
-                  <span class="text-xs font-black text-slate-900">Guide Stay Option</span>
+                  <span class="text-xs font-black text-slate-900">Night at Pawan's (BBC guide)</span>
                   <span class="text-xs font-black text-[#0e8354]">+12 €</span>
                 </div>
                 <p class="text-[11px] text-slate-600 leading-snug mt-0.5">
-                  AC Room + Traditional Dinner + Breakfast
+                  Private AC room + traditional dinner + breakfast
                 </p>
               </div>
             </label>
@@ -808,7 +818,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
           <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Continue exploring</span>
-          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Other Short Stays in Bardia</h2>
+          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Other short stays in Bardia</h2>
         </div>
         <a href="/en#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
           <span>View all Nepal tours</span>
@@ -922,10 +932,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         <div class="space-y-3">
           <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-            Our Tours
+            Our tours
           </h4>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="/en/tours/safari-pied-bardia" class="text-amber-100 font-bold hover:underline">Walking Safari Bardia (1d)</a></li>
+            <li><a href="/en/tours/safari-pied-bardia" class="text-amber-100 font-bold hover:underline">Walking safari Bardia (1d)</a></li>
             <li><a href="/en/tours/bardia-nuit-sauvage" class="hover:text-slate-200 transition-colors">Bardia Wild Night (2d)</a></li>
             <li><a href="/en/tours/bardia-explorateur" class="hover:text-slate-200 transition-colors">Bardia Explorer (5d)</a></li>
             <li><a href="/en/tours/babai-special" class="hover:text-slate-200 transition-colors">Babai Tiger Special (5d)</a></li>
@@ -952,7 +962,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             Navigation
           </h4>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="/en#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Our trackers</a></li>
+            <li><a href="/en#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Our guides</a></li>
             <li><a href="/en#galerie-faune" class="hover:text-slate-200 transition-colors">Gallery</a></li>
             <li><a href="/en/about" class="hover:text-slate-200 transition-colors">About</a></li>
             <li><a href="/blog" class="hover:text-slate-200 transition-colors">Blog</a></li>
@@ -962,7 +972,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         <div class="space-y-3">
           <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-            Contact & Quotes
+            Contact & quotes
           </h4>
           <ul class="space-y-2 text-slate-400">
             <li><a href="/en/contact" class="hover:text-slate-200 transition-colors">Custom Safari Quote</a></li>
@@ -985,7 +995,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <div id="lightbox-modal" class="fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="if(event.target===this)closeLightbox()">
     <div class="absolute top-6 left-6 right-6 flex items-center justify-between text-white z-30">
       <div id="lightbox-counter" class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-black border border-white/20">
-        1 / 5
+        1 / 7
       </div>
       <button onclick="closeLightbox()" class="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-xl" aria-label="Close gallery">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -1033,12 +1043,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
   <script is:inline defer src="/assets/js/translator.js"></script>
   <script is:inline>
-    // Gallery & Lightbox
+    // Gallery & Lightbox with 7 photos
     window.galleryImages = [
       "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
       "/assets/tours_thumbs/tigre_jungle_marche.webp",
       "/assets/tours_thumbs/rhino_vegetation_bardia.webp",
       "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/chambre_pawan_bardia.webp",
+      "/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp",
       "/assets/tours_thumbs/guide_jumelles_arbre_bardia.webp"
     ];
     window.currentImageIndex = 0;
@@ -1149,7 +1161,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           toggleBtn.classList.remove('bg-[#0e8354]', 'hover:bg-[#0c6d46]');
           toggleBtn.classList.add('bg-amber-400', 'hover:bg-amber-500', 'text-slate-950');
         }
-        if (ctaBtnText) ctaBtnText.textContent = "Book with Guide Homestay (62 €) →";
+        if (ctaBtnText) ctaBtnText.textContent = "Book with Pawan Homestay (62 €) →";
       } else {
         if (btnText) btnText.textContent = "Add option (+12€)";
         if (btnIcon) btnIcon.textContent = "＋";
@@ -1160,7 +1172,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         if (ctaBtnText) ctaBtnText.textContent = "Book this safari (50 €) →";
       }
 
-      var tourTitle = encodeURIComponent(window.isGuideOptionSelected ? "Walking Safari Bardia + Guide Homestay (62€)" : "1-Day Walking Safari Bardia (50€)");
+      var tourTitle = encodeURIComponent(window.isGuideOptionSelected ? "Walking Safari Bardia + Pawan Homestay (62€)" : "1-Day Walking Safari Bardia (50€)");
       var waUrl = "https://wa.me/33695413227?text=" + encodeURIComponent("Hello Robin, I would like to book: ") + tourTitle;
       var waBtn = document.getElementById('sidebar-whatsapp-btn');
       if (waBtn) waBtn.href = waUrl;
