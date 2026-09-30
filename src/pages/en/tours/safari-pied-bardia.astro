@@ -135,16 +135,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </button>
-            <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-48 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
-              <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-0.5 text-xs font-bold text-white">
+            <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-32 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
+              <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-1 text-xs font-bold text-white">
                 <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
                 <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-                <button onclick="changeLanguage('de')" data-lang-btn="de" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                  <span class="flex items-center gap-2"><span>🇩🇪</span><span>Deutsch</span></span>
-                </button>
-                <button onclick="changeLanguage('es')" data-lang-btn="es" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                  <span class="flex items-center gap-2"><span>🇪🇸</span><span>Español</span></span>
-                </button>
               </div>
             </div>
           </div>
@@ -245,12 +239,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <a href={enTargetUrl} class="py-2.5 px-3 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center gap-2">
           <span>🇬🇧</span> <span>EN</span>
         </a>
-        <button onclick="changeLanguage('de')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer">
-          <span>🇩🇪</span> <span>DE</span>
-        </button>
-        <button onclick="changeLanguage('es')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer">
-          <span>🇪🇸</span> <span>ES</span>
-        </button>
       </div>
     </div>
 
@@ -331,7 +319,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
     </div>
 
-    <!-- PHOTO MOSAIC GALLERY (7 PHOTOS INCLUDING PAWAN'S ROOM) -->
+    <!-- PHOTO MOSAIC GALLERY (5 PHOTOS) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
         <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_pied_kiran_baton.webp" alt="Tracker seen from behind holding bamboo stick in Bardia" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
@@ -341,16 +329,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
       <div class="hidden md:flex flex-col gap-3 h-full">
         <div class="h-1/2 overflow-hidden rounded-tr-2xl">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="Air-conditioned private room at guide Pawan's homestay" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(4)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/rhino_vegetation_bardia.webp" alt="Greater one-horned rhino in dense vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
         </div>
         <div class="h-1/2 overflow-hidden rounded-br-2xl relative">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/rhino_vegetation_bardia.webp" alt="Greater one-horned rhino in dense vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/elephant_sal_foret_bardia.webp" alt="Wild elephant under tall Sal forest canopy" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(3)"/>
         </div>
       </div>
 
       <button onclick="openLightbox(0)" class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md hover:bg-white text-slate-900 font-bold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg border border-slate-200 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer">
         <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
-        <span>View all 7 photos (safari & bedroom)</span>
+        <span>View all 5 photos</span>
       </button>
     </div>
 
@@ -457,7 +445,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
               <!-- Right: Mini gallery & CTA -->
               <div class="md:col-span-4 flex flex-col items-center md:items-end gap-3 pt-2 md:pt-0">
-                <div class="grid grid-cols-2 gap-2 w-full max-w-[240px] cursor-pointer" onclick="openLightbox(4)">
+                <div class="grid grid-cols-2 gap-2 w-full max-w-[240px] cursor-pointer" onclick="openRoomLightbox(0)">
                   <img src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="AC bedroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
                   <img src="/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp" alt="En-suite bathroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
                 </div>
@@ -960,7 +948,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <div id="lightbox-modal" class="fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="if(event.target===this)closeLightbox()">
     <div class="absolute top-6 left-6 right-6 flex items-center justify-between text-white z-30">
       <div id="lightbox-counter" class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-black border border-white/20">
-        1 / 7
+        1 / 5
       </div>
       <button onclick="closeLightbox()" class="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-xl" aria-label="Close gallery">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -1008,19 +996,38 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
   <script is:inline defer src="/assets/js/translator.js"></script>
   <script is:inline>
-    // Gallery & Lightbox with 7 photos
-    window.galleryImages = [
+    // Gallery & Lightbox (5 Photos)
+    window.mainGalleryImages = [
       "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
       "/assets/tours_thumbs/tigre_jungle_marche.webp",
       "/assets/tours_thumbs/rhino_vegetation_bardia.webp",
       "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
-      "/assets/tours_thumbs/chambre_pawan_bardia.webp",
-      "/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp",
       "/assets/tours_thumbs/guide_jumelles_arbre_bardia.webp"
     ];
+    window.roomImages = [
+      "/assets/tours_thumbs/chambre_pawan_bardia.webp",
+      "/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp"
+    ];
+    window.galleryImages = window.mainGalleryImages;
     window.currentImageIndex = 0;
 
     window.openLightbox = function(index) {
+      window.galleryImages = window.mainGalleryImages;
+      window.currentImageIndex = typeof index === 'number' ? index : 0;
+      window.updateLightboxContent();
+      var modal = document.getElementById('lightbox-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        setTimeout(function() {
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+        }, 10);
+      }
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.openRoomLightbox = function(index) {
+      window.galleryImages = window.roomImages;
       window.currentImageIndex = typeof index === 'number' ? index : 0;
       window.updateLightboxContent();
       var modal = document.getElementById('lightbox-modal');
@@ -1042,6 +1049,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         setTimeout(function() {
           modal.classList.add('hidden');
           document.body.style.overflow = '';
+          window.galleryImages = window.mainGalleryImages;
         }, 300);
       }
     };
