@@ -2639,5 +2639,89 @@
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
     "days": []
+  },
+  {
+    "slug": "safari-pied-bardia",
+    "rawSlug": "safari-pied-bardia",
+    "title": "Safari à pied au parc national de Bardia",
+    "duration": "1 jour",
+    "daysCount": 1,
+    "price": "50€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "1 jour d'immersion",
+    "rating": 5.0,
+    "reviews": 24,
+    "difficulty": "Modéré",
+    "style": "Immersion & Traque à pied",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "Une journée entière au cœur de la jungle de Bardia. Accompagné d'un guide jungle et d'un assistant pisteur, partez à pied à la recherche du tigre du Bengale, des rhinocéros et des éléphants sauvages.",
+    "highlights": [
+      "Traque à pied 100% sauvage dans le parc national de Bardia.",
+      "Encadrement par 1 guide jungle expérimenté + 1 assistant pisteur.",
+      "Déjeuner inclus pris directement au cœur de la jungle.",
+      "Option nuit chez Pawan (guide BBC) en chambre privée climatisée."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp",
+      "/assets/tours_thumbs/rhino_vegetation_bardia.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Safari à pied journée complète à Bardia",
+        "desc": "Départ à 6h30 pour une journée complète d'observation et de traque à pied dans la jungle de Bardia. Déjeuner pique-nique inclus sous la canopée. Retour vers 18h00."
+      }
+    ]
+  },
+  {
+    "slug": "safari-pied-chitwan",
+    "rawSlug": "safari-pied-chitwan",
+    "title": "Safari à pied au parc national de Chitwan",
+    "duration": "1 jour",
+    "daysCount": 1,
+    "price": "70€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "1 jour d'immersion",
+    "rating": 5.0,
+    "reviews": 21,
+    "difficulty": "Modéré",
+    "style": "Immersion & Traque à pied",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "Découvrez Chitwan autrement : à pied. Loin des Jeeps, vivez une journée complète d'immersion avec 1 guide jungle et 1 assistant à la recherche des tigres, rhinocéros et ours lippus.",
+    "highlights": [
+      "Découverte à pied silencieuse et respectueuse du parc national de Chitwan.",
+      "1 guide naturaliste certifié + 1 assistant pisteur dédiés.",
+      "Déjeuner en pleine nature inclus.",
+      "Idéal pour compléter un voyage après un trek au Népal."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_ours_lippu.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_rhino_hautes_herbes.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_crocodile_marais.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Safari à pied journée complète à Chitwan",
+        "desc": "Départ à 6h30 avec traversée en pirogue sur la Rapti. Traque à pied dans les forêts et hautes herbes. Déjeuner en pleine nature inclus. Retour vers 18h00."
+      }
+    ]
   }
 ]

@@ -431,8 +431,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
             <div class="relative mt-0.5">
                                                       <select id="search-dest" name="destination" aria-label="Choisir une destination ou un type de séjour" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">Tous les séjours (17)</option>
-            <option value="sejours-courts">Séjours courts (5 séjours)</option>
+            <option value="all">Tous les séjours (18)</option>
+            <option value="sejours-courts">Séjours courts (6 séjours)</option>
             <option value="safari">Safaris & Grands Félins (Bardia & Himalaya)</option>
             <option value="bivouac">Bivouacs & Nuits Sauvages en Jungle</option>
             <option value="chitwan">Rhinocéros & Parc de Chitwan</option>
@@ -499,22 +499,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
         <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
           <span>Tous les séjours</span>
-          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">17</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">18</span>
         </button>
         <button type="button" onclick="filterTrips('sejours-courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="sejours-courts">
-          <span>Séjours courts (5)</span>
+          <span>Séjours courts (6)</span>
         </button>
         <button type="button" onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
           <span>Mixe jungle et montagne (6)</span>
         </button>
         <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
-          <span>Safaris et grands félins (13)</span>
+          <span>Safaris et grands félins (14)</span>
         </button>
         <button type="button" onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
           <span>Bivouacs et nuits sauvages (5)</span>
         </button>
         <button type="button" onclick="filterTrips('chitwan')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="chitwan">
-          <span>Rhinocéros et Chitwan (3)</span>
+          <span>Rhinocéros et Chitwan (4)</span>
         </button>
         <button type="button" onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="rafting">
           <span>Rafting et expéditions rivières (3)</span>
@@ -878,6 +878,70 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
               </div>
               <a href="/tours/safari-pied-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>Découvrir l'activité</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- CIRCUIT : SAFARI À PIED CHITWAN (1 JOUR / 70€) -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="safari à pied – parc national de chitwan">
+          
+          <div class="relative">
+            <a href="/tours/safari-pied-chitwan" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp" 
+                alt="Safari à pied — Parc national de Chitwan" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full border border-white/20 font-semibold shadow">
+                  Dès 1 pers.
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 jour</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (21)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Népal Sauvage • Séjour Court</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/tours/safari-pied-chitwan">Safari à pied au parc national de Chitwan</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Découvrez Chitwan autrement : à pied. Une journée complète d'immersion avec 1 guide jungle et 1 assistant pisteur à la recherche des tigres, rhinocéros et ours lippus. Déjeuner en pleine nature inclus.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Tarif par personne</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">70€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Déjeuner inclus</span>
+                </div>
+              </div>
+              <a href="/tours/safari-pied-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
                 <span>Découvrir l'activité</span>
                 <span>→</span>
               </a>

@@ -1,0 +1,969 @@
+---
+import { getLocalizedPath } from '../../i18n/utils';
+import Layout from '../../layouts/Layout.astro';
+
+const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
+const enTargetUrl = getLocalizedPath(Astro.url, 'en');
+---
+
+<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Chitwan : Safari à pied à Chitwan – Journée complète dans la jungle du Népal",
+  "description": "Découvrez le Parc national de Chitwan à pied. Une journée complète d'immersion avec 1 guide jungle et 1 assistant pour pister tigres du Bengale, rhinocéros unicornes, ours lippus et oiseaux sauvages.",
+  "image": "https://junglenepal.com/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+  "touristType": ["Amoureux de nature", "Photographes animaliers", "Randonneurs", "Aventuriers"],
+  "offers": {
+    "@type": "Offer",
+    "price": "70",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/safari-pied-chitwan"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "21",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<Layout title="Chitwan : Safari à pied à Chitwan – Journée complète dans la jungle du Népal | Jungle Nepal Adventure" lang="fr">
+
+  <!-- TOP BAR PROMO -->
+  <aside class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 relative z-50 text-center border-b border-emerald-800/20" id="top-bar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+        <span><strong class="text-amber-300">Immersion 100% sauvage</strong> à Chitwan • Traque à pied & guides naturalistes certifiés</span>
+      </div>
+      <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="relative z-40 bg-white border-b border-slate-200 py-2.5 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-4 h-14 sm:h-16">
+        <div class="flex items-center shrink-0">
+          <a href="/" class="flex items-center gap-2 group">
+            <img 
+              src="/assets/logo_header_dark.png" 
+              alt="Jungle Nepal Adventure" 
+              width="168" 
+              height="48" 
+              loading="eager" 
+              decoding="sync" 
+              class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-200" 
+            />
+          </a>
+        </div>
+
+        <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-slate-700">
+          <a href="/#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Tous les 17 séjours</a>
+
+          <div class="relative group py-2">
+            <a href="/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1 cursor-pointer whitespace-nowrap">
+              <span>Destinations</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
+                <a href="/destinations/bardia" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+                  <div class="flex-1">
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Bardia</p>
+                    <p class="text-[10px] text-slate-400">Tigres du Bengale & safaris à pied</p>
+                  </div>
+                </a>
+                <a href="/destinations/chitwan" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+                  <div class="flex-1">
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Chitwan</p>
+                    <p class="text-[10px] text-slate-400">Rhinocéros & pirogues de la Rapti</p>
+                  </div>
+                </a>
+                <a href="/destinations/suklaphanta" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+                  <div class="flex-1">
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Parc national de Suklaphanta</p>
+                    <p class="text-[10px] text-slate-400">Cerfs des marais & ouest sauvage</p>
+                  </div>
+                </a>
+                <a href="/destinations/annapurna" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+                  <div class="flex-1">
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Les Annapurna & Pokhara</p>
+                    <p class="text-[10px] text-slate-400">Treks d'altitude & contreforts</p>
+                  </div>
+                </a>
+                <a href="/destinations/katmandou" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
+                  <div class="flex-1">
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Katmandou & Vallée</p>
+                    <p class="text-[10px] text-slate-400">Patrimoine UNESCO & temples</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Nos guides</a>
+          <a href="/#galerie-faune" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Galerie</a>
+          <a href="/a-propos" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">À propos</a>
+          <a href="/blog" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Blog</a>
+          <a href="/contact" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <!-- LANGUAGE SWITCHER (FR / EN ONLY) -->
+          <div class="flex items-center bg-slate-100 border border-slate-200/80 rounded-full p-0.5 text-[11px] font-bold">
+            <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 shadow-xs">FR</span>
+            <a href="/en/tours/safari-pied-chitwan" class="px-2 py-0.5 rounded-full text-slate-600 hover:text-slate-950 transition-colors">EN</a>
+          </div>
+
+          <button onclick="openTourBookingModal()" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white text-xs font-bold transition-all shadow-sm cursor-pointer whitespace-nowrap">
+            <span>Réserver (70€)</span>
+          </button>
+
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 cursor-pointer" aria-label="Menu mobile">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl p-6 text-white overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-10 w-auto"/>
+      <button onclick="toggleMobileMenu()" class="p-2 text-white/80 hover:text-white text-xl">✕</button>
+    </div>
+    <div class="py-6 space-y-4 text-base font-semibold">
+      <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Tous les séjours</a>
+      <a href="/destinations/bardia" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Parc national de Bardia</a>
+      <a href="/destinations/chitwan" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Parc national de Chitwan</a>
+      <a href="/destinations/suklaphanta" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Parc national de Suklaphanta</a>
+      <a href="/#concept" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Nos guides</a>
+      <a href="/#galerie-faune" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Galerie faune</a>
+      <a href="/a-propos" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">À propos</a>
+      <a href="/blog" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Blog</a>
+      <a href="/contact" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Contact & devis</a>
+    </div>
+  </div>
+
+  <!-- MAIN TOUR CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 font-sans">
+    
+    <!-- Breadcrumbs -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500 font-semibold mb-3 overflow-x-auto whitespace-nowrap">
+      <a href="/" class="hover:text-slate-900 flex items-center gap-1">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Accueil</span>
+      </a>
+      <span>›</span>
+      <a href="/#prochains-departs" class="hover:text-slate-900">Nos séjours</a>
+      <span>›</span>
+      <span class="text-slate-900 font-bold truncate">Safari à pied au parc national de Chitwan</span>
+    </nav>
+
+    <!-- Header Title & Badges Row -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
+      <div>
+        <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
+          Safari à pied au parc national de Chitwan
+        </h1>
+        <p class="text-base sm:text-xl font-bold text-[#0e8354] mt-1.5">
+          Découvrez Chitwan autrement : à pied
+        </p>
+        <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+          <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
+            <svg class="w-4 h-4 text-amber-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            <span>1 journée (6h30 – 18h00)</span>
+          </span>
+          <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 font-bold px-3 py-1 rounded-full border border-emerald-200">
+            <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>5.0 (21 avis vérifiés)</span>
+          </div>
+          <span class="text-xs font-bold bg-slate-900 text-amber-100 px-3 py-1 rounded-full border border-amber-300/30">
+            1 guide jungle + 1 assistant
+          </span>
+          <span class="text-xs font-bold bg-emerald-950 text-emerald-300 px-3 py-1 rounded-full border border-emerald-700/40">
+            Déjeuner en pleine nature inclus
+          </span>
+        </div>
+      </div>
+
+      <!-- BOUTON PARTAGER -->
+      <div class="relative shrink-0">
+        <button id="share-btn" onclick="handleShareTour()" class="flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 bg-white text-xs font-extrabold text-slate-800 hover:text-[#0e8354] hover:border-[#0e8354] shadow-sm hover:shadow transition-all group cursor-pointer">
+          <svg class="w-4 h-4 text-slate-500 group-hover:text-[#0e8354] transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
+          <span>Partager cette activité</span>
+        </button>
+
+        <div id="share-menu" class="absolute right-0 top-full mt-2 w-64 opacity-0 translate-y-2 pointer-events-none transition-all duration-200 z-50">
+          <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-2 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-1 text-white">
+            <button onclick="copyTourLink()" class="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-bold text-white hover:bg-white/10 transition-colors text-left cursor-pointer group/item">
+              <span class="w-7 h-7 rounded-lg bg-white/10 text-slate-200 flex items-center justify-center shrink-0">🔗</span>
+              <span class="group-hover/item:text-amber-100 transition-colors">Copier le lien direct</span>
+            </button>
+            <a id="share-whatsapp" href="#" target="_blank" class="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-bold text-white hover:bg-white/10 transition-colors text-left cursor-pointer group/item">
+              <div class="w-7 h-7 rounded-lg bg-white/10 text-[#25D366] flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <span class="group-hover/item:text-amber-100 transition-colors">Envoyer sur WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO MOSAIC GALLERY (5 PHOTOS) -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
+      <div class="md:col-span-2 h-full overflow-hidden">
+        <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp" alt="Guide naturaliste dans la jungle de Chitwan" class="w-full h-full object-cover object-center transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
+      </div>
+      <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
+        <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_pied_chitwan_ours_lippu.webp" alt="Ours lippu sauvage sur le sentier de Chitwan" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(1)"/>
+      </div>
+      <div class="hidden md:flex flex-col gap-3 h-full">
+        <div class="h-1/2 overflow-hidden rounded-tr-2xl">
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_pied_chitwan_rhino_hautes_herbes.webp" alt="Rhinocéros unicorne au cœur des hautes herbes" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
+        </div>
+        <div class="h-1/2 overflow-hidden rounded-br-2xl relative">
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_pied_chitwan_crocodile_marais.webp" alt="Crocodile des marais émergeant des eaux calmes" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(3)"/>
+        </div>
+      </div>
+
+      <button onclick="openLightbox(0)" class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md hover:bg-white text-slate-900 font-bold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg border border-slate-200 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer">
+        <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+        <span>Voir les 5 photos</span>
+      </button>
+    </div>
+
+    <!-- STICKY SUB-NAV BAR -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-md py-2.5 sm:py-3 transition-all -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10" aria-label="Navigation du séjour">
+      <div class="flex items-center justify-between gap-4">
+        <div class="hidden sm:flex items-center gap-2.5 shrink-0 min-w-0">
+          <div class="min-w-0">
+            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[240px]">Safari à pied — Chitwan</p>
+            <p class="text-[11px] font-bold text-[#0e8354]">70€ <span class="text-slate-400 font-normal">/ pers.</span></p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 overflow-x-auto no-scrollbar text-xs sm:text-sm font-bold text-slate-600 py-1">
+          <a href="#apercu" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Aperçu</a>
+          <a href="#apres-trek" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Idéal après un trek</a>
+          <a href="#deroulement" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Organisation</a>
+          <a href="#inclusions" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Inclus</a>
+          <a href="#avis-voyageurs" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Avis</a>
+          <a href="#faq" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">FAQ</a>
+        </div>
+
+        <button onclick="openTourBookingModal()" class="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow transition-all cursor-pointer">
+          <span>Réserver (70€)</span>
+          <span>→</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- 2-COLUMN MAIN CONTENT GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+      
+      <!-- LEFT COLUMN -->
+      <div class="lg:col-span-8 space-y-12 lg:space-y-14">
+        
+        <!-- SECTION 1: APERÇU -->
+        <section id="apercu" class="space-y-6">
+          <div class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
+              Découvrez Chitwan autrement : à pied
+            </h2>
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Loin de la simple traversée du parc en Jeep, cette journée permet de <strong>découvrir le Parc national de Chitwan à pied</strong>, accompagné d’un guide jungle et d’un assistant.
+            </p>
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Départ tôt le matin pour profiter des heures les plus favorables à l’activité animale. Tout au long de la journée, votre équipe recherche traces, empreintes, cris d’alarme et autres indices permettant de localiser la faune.
+            </p>
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              <strong>Le tigre du Bengale constitue notre recherche principale</strong>, mais Chitwan offre également d’importantes possibilités d’observation du <strong>rhinocéros unicorne</strong>, ainsi que de nombreux autres mammifères et oiseaux (ours lippus, cervidés, singes, gavials du Gange et crocodiles des marais).
+            </p>
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Le déjeuner est pris directement dans la nature au cours de la journée, au cœur de la végétation tropicale.
+            </p>
+          </div>
+
+          <!-- Avertissement Faune Sauvage -->
+          <div class="p-5 sm:p-6 rounded-3xl bg-amber-500/10 border border-amber-500/30 text-slate-900 space-y-2">
+            <div class="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
+              <span class="text-base">⚠️</span>
+              <span>Engagement éthique et observation naturelle</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+              Les animaux évoluent librement dans leur milieu naturel. Aucune observation ne peut être garantie. La traque à pied privilégie le silence, la patience et le respect absolu des distances de sécurité avec la faune sauvage.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 2: IDÉAL APRÈS UN TREK AU NÉPAL -->
+        <section id="apres-trek" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-5">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-[#0e8354] font-extrabold text-xs uppercase tracking-wider">Combiné trek & safari</span>
+          </div>
+          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+            Idéal après un trek au Népal
+          </h2>
+          <div class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-slate-900 to-emerald-950 text-white border border-emerald-500/20 shadow-xl space-y-4">
+            <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
+              Cette formule est particulièrement adaptée aux voyageurs qui terminent un trek dans l'Himalaya (Tour des Annapurnas, Camp de Base de l'Annapurna, Manaslu, Langtang ou région de Pokhara) et souhaitent <strong>ajouter une véritable journée de safari nature sans acheter un circuit complet</strong> de plusieurs semaines.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 space-y-1">
+                <span class="font-extrabold text-amber-300 block">Flexibilité totale</span>
+                <span class="text-slate-300">Intégrez une journée complète à votre propre itinéraire de voyage.</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 space-y-1">
+                <span class="font-extrabold text-amber-300 block">Contraste saisissant</span>
+                <span class="text-slate-300">Passez des hauts sommets enneigés à la moiteur de la jungle subtropicale.</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 space-y-1">
+                <span class="font-extrabold text-amber-300 block">Tarif direct local</span>
+                <span class="text-slate-300">70 € / personne tout inclus (guide, assistant, permis & déjeuner).</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: ORGANISATION & DÉROULEMENT -->
+        <section id="deroulement" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
+          <div class="space-y-2">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Déroulement complet</span>
+            <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+              Organisation de votre journée de safari à pied
+            </h2>
+          </div>
+
+          <div class="relative pl-6 sm:pl-8 border-l-2 border-emerald-600/30 space-y-8">
+            
+            <!-- Etape 1 -->
+            <div class="relative group">
+              <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-emerald-950 border-2 border-emerald-500 flex items-center justify-center text-xs font-black text-emerald-300">
+                1
+              </div>
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-[#0e8354]">6h30 — Départ matinal</span>
+                <h3 class="font-black text-lg text-slate-950">Briefing de sécurité & traversée en pirogue</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  Rencontre avec votre guide naturaliste et votre assistant pisteur. Briefing complet sur les gestes et consignes de sécurité à pied. Transfert et traversée matinale de la rivière Rapti pour pénétrer au cœur du parc national dès le lever du soleil.
+                </p>
+              </div>
+            </div>
+
+            <!-- Etape 2 -->
+            <div class="relative group">
+              <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-emerald-950 border-2 border-emerald-500 flex items-center justify-center text-xs font-black text-emerald-300">
+                2
+              </div>
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-[#0e8354]">Matinée — Traque & immersion</span>
+                <h3 class="font-black text-lg text-slate-950">Progression silencieuse dans les habitats de Chitwan</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  Recherche des indices de présence : empreintes fraîches de tigres, frottements d'arbres, écoute attentive des cris d'alarme des cervidés et des singes entelles. Traversée des forêts de Sal, des zones humides et des prairies d'herbe à éléphant propices aux rhinocéros.
+                </p>
+              </div>
+            </div>
+
+            <!-- Etape 3 -->
+            <div class="relative group">
+              <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-emerald-950 border-2 border-emerald-500 flex items-center justify-center text-xs font-black text-emerald-300">
+                3
+              </div>
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-[#0e8354]">12h30 — Pause méridienne</span>
+                <h3 class="font-black text-lg text-slate-950">Déjeuner pique-nique au cœur de la jungle</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  Déjeuner complet et frais emporté par l'équipe, dégusté dans un poste d'observation sécurisé ou à l'ombre de grands arbres près d'un point d'eau. Moment de repos pendant les heures chaudes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Etape 4 -->
+            <div class="relative group">
+              <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-emerald-950 border-2 border-emerald-500 flex items-center justify-center text-xs font-black text-emerald-300">
+                4
+              </div>
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-[#0e8354]">Après-midi & Crépuscule</span>
+                <h3 class="font-black text-lg text-slate-950">Affûts stratégiques aux points d'eau & retour</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  Reprise de l'exploration vers les berges et clairières où les animaux viennent s'abreuver en fin d'après-midi. Observation des crocodiles et oiseaux aquatiques, puis retour vers la lisière du parc vers 18h00.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 4: INCLUSIONS & INFOS PRATIQUES -->
+        <section id="inclusions" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
+          <div class="space-y-2">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Détails du tarif (70 €)</span>
+            <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+              Ce qui est inclus dans votre journée
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="p-6 rounded-3xl bg-emerald-50/60 border border-emerald-200/80 space-y-3">
+              <h3 class="font-black text-base text-emerald-950 flex items-center gap-2">
+                <span class="text-emerald-600">✓</span>
+                <span>Inclus dans le prix</span>
+              </h3>
+              <ul class="space-y-2 text-xs sm:text-sm text-emerald-900/90 font-normal">
+                <li class="flex items-start gap-2"><span>•</span><span><strong>1 guide naturaliste certifié</strong> + <strong>1 assistant pisteur</strong> dédiés</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span><strong>Permis d'entrée officiel</strong> du Parc national de Chitwan</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span><strong>Déjeuner complet</strong> pris en pleine nature</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span><strong>Transport local</strong> aller-retour jusqu'à l'entrée du parc</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span>Traversée en pirogue traditionnelle sur la rivière Rapti</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span>Eau potable filtrée pour la journée</span></li>
+              </ul>
+            </div>
+
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 space-y-3">
+              <h3 class="font-black text-base text-slate-900 flex items-center gap-2">
+                <span class="text-slate-400">✕</span>
+                <span>Non inclus</span>
+              </h3>
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-600 font-normal">
+                <li class="flex items-start gap-2"><span>•</span><span>Hébergement (formule en journée complète)</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span>Boissons gazeuses ou alcoolisées personnelles</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span>Pourboires pour l'équipe locale (à discrétion)</span></li>
+                <li class="flex items-start gap-2"><span>•</span><span>Assurance voyage personnelle et rapatriement</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 5: AVIS VOYAGEURS -->
+        <section id="avis-voyageurs" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Retours d'expérience</span>
+              <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">
+                Avis de nos voyageurs
+              </h2>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-black text-[#0e8354]">5.0</span>
+              <div class="flex text-amber-400 text-xs">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-sm text-slate-900">Camille & Thomas</h4>
+                  <p class="text-[11px] text-slate-400">Voyageurs • Safari à pied d'une journée après le trek des Annapurnas</p>
+                </div>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
+                « Nous venions de finir notre trek et cherchions une immersion sauvage à Chitwan sans les convois de jeeps à touristes. Ce safari à pied a été une révélation : nous avons croisé 3 rhinocéros unicornes et un ours lippu à distance respectueuse. L'encadrement par le guide et son assistant était irréprochable. »
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-sm text-slate-900">Nicolas V.</h4>
+                  <p class="text-[11px] text-slate-400">Photographe naturaliste • Safari à pied journée complète</p>
+                </div>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
+                « La qualité du pistage à pied est remarquable. Prendre le temps d'écouter la jungle et de progresser en silence permet des observations qu'on ne fait jamais en véhicule motorisé. Le déjeuner dans la jungle était très bon et l'organisation parfaite. »
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: FAQ -->
+        <section id="faq" class="scroll-mt-28 pt-8 border-t border-slate-200">
+          <h2 class="font-black text-2xl text-slate-950 mb-6 tracking-tight">
+            Questions fréquentes sur le safari à pied à Chitwan
+          </h2>
+
+          <div class="space-y-3 text-sm">
+            <details class="group bg-white p-4 rounded-2xl border border-slate-200">
+              <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                <span>Quelle est la différence entre un safari à pied et en Jeep à Chitwan ?</span>
+                <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                Le safari à pied offre une immersion sensorielle totale : aucun bruit de moteur, progression silencieuse sur les sentiers étroits inaccessibles aux véhicules, et un contact direct avec la lecture des empreintes et des bruits de la jungle.
+              </p>
+            </details>
+
+            <details class="group bg-white p-4 rounded-2xl border border-slate-200">
+              <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                <span>Comment se passe la sécurité à pied ?</span>
+                <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                Vous êtes toujours encadré par <strong>deux professionnels natifs formés</strong> (un guide en tête et un assistant en serre-file). Ils respectent rigoureusement les distances de sécurité avec les rhinocéros, éléphants et ours, et connaissent parfaitement la topographie du parc.
+              </p>
+            </details>
+
+            <details class="group bg-white p-4 rounded-2xl border border-slate-200">
+              <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                <span>Combien de kilomètres marche-t-on durant la journée ?</span>
+                <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                Le rythme est calme et ponctué de pauses d'observation régulières. On parcourt généralement entre 10 et 15 kilomètres sur terrain plat tout au long de la journée de 6h30 à 18h00.
+              </p>
+            </details>
+
+            <details class="group bg-white p-4 rounded-2xl border border-slate-200">
+              <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+                <span>Comment réserver si je viens d'un trek ou de Pokhara ?</span>
+                <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                Vous pouvez réserver à l'avance pour la date de votre choix en nous contactant directement par WhatsApp ou via le formulaire. Chitwan (Sauraha) est facilement accessible en bus touristique ou transfert privé depuis Pokhara ou Katmandou.
+              </p>
+            </details>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN: STICKY BOOKING CARD -->
+      <div class="lg:col-span-4">
+        <div id="booking-widget" class="sticky top-[76px] bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-xl space-y-4">
+          
+          <!-- Header: Badge & Title -->
+          <div>
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Séjour court • Journée complète</span>
+            <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
+              Safari à pied — Parc national de Chitwan
+            </h3>
+            <p class="text-xs text-slate-500 font-semibold mt-1">1 jour (6h30 – 18h00) • Dès 1 personne</p>
+          </div>
+
+          <!-- Price Row -->
+          <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between">
+            <div>
+              <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Tarif par personne</p>
+              <div class="flex items-baseline gap-2">
+                <span id="tour-price-display" class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">70€</span>
+                <span class="text-xs text-slate-500 font-medium">/ personne</span>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-[11px] font-bold border border-emerald-200">
+              Déjeuner inclus
+            </span>
+          </div>
+
+          <!-- Features list -->
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5 text-xs text-slate-700">
+            <p class="flex items-center gap-2 font-medium">
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span>1 guide jungle + 1 assistant pisteur</span>
+            </p>
+            <p class="flex items-center gap-2 font-medium">
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span>Permis d'entrée officiel du parc inclus</span>
+            </p>
+            <p class="flex items-center gap-2 font-medium">
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span>Déjeuner en pleine nature inclus</span>
+            </p>
+            <p class="flex items-center gap-2 font-medium">
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span>Traversée en pirogue de la Rapti</span>
+            </p>
+          </div>
+
+          <!-- Primary CTA Button -->
+          <button 
+            onclick="openTourBookingModal()" 
+            class="w-full py-4 px-6 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/20 active:scale-98 transition-all text-center cursor-pointer"
+          >
+            <span id="cta-button-text">Réserver ce safari (70 €) →</span>
+          </button>
+
+          <!-- WhatsApp Direct Link -->
+          <a 
+            id="sidebar-whatsapp-btn"
+            href="https://wa.me/33695413227?text=Bonjour%20Robin,%20je%20souhaite%20r%C3%A9server%20le%20safari%20%C3%A0%20pied%20%C3%A0%20Chitwan%20(70%E2%82%AC)" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-full py-3 px-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-[#0e8354] font-extrabold text-xs flex items-center justify-center gap-2 border border-emerald-200 transition-colors"
+          >
+            <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>Poser une question sur WhatsApp</span>
+          </a>
+
+          <!-- Trust Badges -->
+          <div class="pt-3 border-t border-slate-100 space-y-2 text-[11px] text-slate-500 font-medium">
+            <div class="flex items-center gap-2">
+              <span class="text-[#0e8354]">🛡️</span>
+              <span>Guides locaux natifs certifiés par le parc</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-[#0e8354]">⚡</span>
+              <span>Confirmation et réponse rapide garantie</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RELATED TOURS SECTION -->
+    <section class="mt-20 pt-12 border-t border-slate-200">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Autres découvertes</span>
+          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">
+            Complétez votre voyage au Népal
+          </h2>
+        </div>
+        <a href="/#prochains-departs" class="text-xs font-extrabold text-[#0e8354] hover:underline hidden sm:inline-block">
+          Voir tous les séjours →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Tour 1 -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative">
+            <a href="/tours/safari-pied-bardia" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/tours_thumbs/safari_pied_kiran_baton.webp" alt="Safari à pied à Bardia" class="w-full h-full object-cover object-left transition-transform duration-500 ease-out" loading="lazy"/>
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">1 jour</span>
+              </div>
+            </a>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
+                <a href="/tours/safari-pied-bardia">Safari à pied — Parc national de Bardia</a>
+              </h3>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">Immersion totale à pied dans l'extrême ouest sauvage du Népal.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-bold uppercase">Tarif</span>
+                <p class="font-black text-xl text-slate-950">50€</p>
+              </div>
+              <a href="/tours/safari-pied-bardia" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Découvrir →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 2 -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative">
+            <a href="/tours/chitwan-culture" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan aventure & culture Tharu" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">4 jours</span>
+              </div>
+            </a>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
+                <a href="/tours/chitwan-culture">Chitwan : Immersion & Faune (4j)</a>
+              </h3>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">Rhinocéros, pirogues sur la Rapti et rencontre avec la culture Tharu.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-bold uppercase">Dès</span>
+                <p class="font-black text-xl text-slate-950">590€</p>
+              </div>
+              <a href="/tours/chitwan-culture" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Découvrir →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 3 -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative">
+            <a href="/tours/bardia-explorateur" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Bardia explorateur – 5 jours dans la jungle" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">5 jours</span>
+              </div>
+            </a>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
+                <a href="/tours/bardia-explorateur">Bardia Explorateur (5j)</a>
+              </h3>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">5 jours intenses de safari à pied et en jeep dans le royaume du tigre.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-bold uppercase">Dès</span>
+                <p class="font-black text-xl text-slate-950">690€</p>
+              </div>
+              <a href="/tours/bardia-explorateur" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Découvrir →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#040d08] text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-emerald-950/60 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 pb-14 border-b border-white/10 text-xs">
+        
+        <div class="space-y-4 lg:col-span-1">
+          <a href="/" class="inline-block">
+            <img decoding="async" src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300"/>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou, Chitwan & Parc National de Bardia.
+          </p>
+          <div class="pt-1 space-y-2">
+            <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-900/30 hover:bg-emerald-800/40 text-emerald-400 font-bold text-xs border border-emerald-700/40 transition-colors whitespace-nowrap">
+              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp : +33 6 95 41 32 27</span>
+            </a>
+            <p class="text-slate-400">Email : <strong class="text-white font-medium">contact@junglenepal.com</strong></p>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
+            Nos séjours
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/tours/safari-pied-chitwan" class="text-amber-100 font-bold hover:underline">Safari à pied Chitwan (1j)</a></li>
+            <li><a href="/tours/safari-pied-bardia" class="hover:text-slate-200 transition-colors">Safari à pied Bardia (1j)</a></li>
+            <li><a href="/tours/chitwan-culture" class="hover:text-slate-200 transition-colors">Chitwan Immersion (4j)</a></li>
+            <li><a href="/tours/bardia-explorateur" class="hover:text-slate-200 transition-colors">Bardia Explorateur (5j)</a></li>
+            <li><a href="/tours/bardia-babai-camping" class="hover:text-slate-200 transition-colors">Bardia Babai Bivouac (8j)</a></li>
+            <li><a href="/tours/nepal-sauvage" class="hover:text-slate-200 transition-colors">Népal Sauvage 360° (15j)</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
+            Destinations
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/destinations/chitwan" class="hover:text-slate-200 transition-colors">Parc national de Chitwan</a></li>
+            <li><a href="/destinations/bardia" class="hover:text-slate-200 transition-colors">Parc national de Bardia</a></li>
+            <li><a href="/destinations/suklaphanta" class="hover:text-slate-200 transition-colors">Parc national de Suklaphanta</a></li>
+            <li><a href="/destinations/annapurna" class="hover:text-slate-200 transition-colors">Les Annapurna & Pokhara</a></li>
+            <li><a href="/destinations/katmandou" class="hover:text-slate-200 transition-colors">Katmandou</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
+            Navigation
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/#concept" class="hover:text-amber-100 transition-colors whitespace-nowrap">Nos guides</a></li>
+            <li><a href="/#galerie-faune" class="hover:text-slate-200 transition-colors">Galerie</a></li>
+            <li><a href="/a-propos" class="hover:text-slate-200 transition-colors">À propos</a></li>
+            <li><a href="/blog" class="hover:text-slate-200 transition-colors">Blog</a></li>
+            <li><a href="/contact" class="hover:text-slate-200 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
+            Contact & devis
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="/contact" class="hover:text-slate-200 transition-colors">Demande de devis sur-mesure</a></li>
+            <li><a href="https://wa.me/33695413227" target="_blank" class="hover:text-slate-200 transition-colors">Contacter Robin sur WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div class="space-y-1 text-center md:text-left">
+          <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. Tous droits réservés.</p>
+          <p class="text-[11px] text-slate-400">Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="if(event.target===this)closeLightbox()">
+    <div class="absolute top-6 left-6 right-6 flex items-center justify-between text-white z-30">
+      <div id="lightbox-counter" class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-black border border-white/20">
+        1 / 5
+      </div>
+      <button onclick="closeLightbox()" class="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-xl" aria-label="Fermer la galerie">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <button onclick="prevLightboxImage(event)" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-900/80 hover:bg-slate-900 border border-white/20 text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 shadow-2xl cursor-pointer" aria-label="Photo précédente">
+      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button onclick="nextLightboxImage(event)" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-900/80 hover:bg-slate-900 border border-white/20 text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 z-30 shadow-2xl cursor-pointer" aria-label="Photo suivante">
+      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+
+    <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center z-20">
+      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Photo agrandie du safari à pied à Chitwan" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl transition-all duration-300">
+    </div>
+  </div>
+
+  <!-- STICKY MOBILE BOTTOM BOOKING BAR -->
+  <div class="fixed bottom-0 inset-x-0 bg-slate-950/95 backdrop-blur-2xl border-t border-white/15 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] z-40 lg:hidden flex items-center justify-between gap-3 shadow-[0_-10px_35px_rgba(0,0,0,0.6)]">
+    <div class="min-w-0">
+      <span class="text-[9px] text-slate-400 font-bold block uppercase tracking-wider truncate">Tarif / pers.</span>
+      <span class="text-xl font-black text-amber-100 font-mono tracking-tight">70€</span>
+    </div>
+    <div class="flex items-center gap-2 shrink-0">
+      <a 
+        href="https://wa.me/33695413227?text=Bonjour%20Robin,%20je%20souhaite%20r%C3%A9server%20le%20safari%20%C3%A0%20pied%20%C3%A0%20Chitwan%20(70%E2%82%AC)" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 text-slate-200 border border-white/15 flex items-center justify-center text-sm shadow-md active:scale-95 transition-all"
+        aria-label="Contacter sur WhatsApp"
+      >
+        💬
+      </a>
+      <button 
+        onclick="openTourBookingModal()" 
+        class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5"
+      >
+        <span>Réserver</span>
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+
+  <script is:inline defer src="/assets/js/translator.js"></script>
+  <script is:inline>
+    // Gallery & Lightbox (5 Photos)
+    window.mainGalleryImages = [
+      "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_ours_lippu.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_rhino_hautes_herbes.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_crocodile_marais.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_pisteur_affut.webp"
+    ];
+    window.galleryImages = window.mainGalleryImages;
+    window.currentImageIndex = 0;
+
+    window.openLightbox = function(index) {
+      window.galleryImages = window.mainGalleryImages;
+      window.currentImageIndex = typeof index === 'number' ? index : 0;
+      window.updateLightboxContent();
+      var modal = document.getElementById('lightbox-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        setTimeout(function() {
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+        }, 10);
+      }
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLightbox = function() {
+      var modal = document.getElementById('lightbox-modal');
+      if (modal) {
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0');
+        setTimeout(function() {
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
+    };
+
+    window.updateLightboxContent = function() {
+      var img = document.getElementById('lightbox-image');
+      var counter = document.getElementById('lightbox-counter');
+      if (img && window.galleryImages && window.galleryImages[window.currentImageIndex]) {
+        img.src = window.galleryImages[window.currentImageIndex];
+      }
+      if (counter && window.galleryImages) {
+        counter.textContent = (window.currentImageIndex + 1) + ' / ' + window.galleryImages.length;
+      }
+    };
+
+    window.prevLightboxImage = function(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
+      if (!window.galleryImages || !window.galleryImages.length) return;
+      window.currentImageIndex = (window.currentImageIndex - 1 + window.galleryImages.length) % window.galleryImages.length;
+      window.updateLightboxContent();
+    };
+
+    window.nextLightboxImage = function(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
+      if (!window.galleryImages || !window.galleryImages.length) return;
+      window.currentImageIndex = (window.currentImageIndex + 1) % window.galleryImages.length;
+      window.updateLightboxContent();
+    };
+
+    document.addEventListener('keydown', function(e) {
+      var modal = document.getElementById('lightbox-modal');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') window.closeLightbox();
+        if (e.key === 'ArrowLeft') window.prevLightboxImage();
+        if (e.key === 'ArrowRight') window.nextLightboxImage();
+      }
+    });
+
+    // Mobile Menu
+    function toggleMobileMenu() {
+      var menu = document.getElementById("mobile-menu");
+      if (menu) menu.classList.toggle("hidden");
+    }
+
+    window.handleShareTour = function() {
+      var shareMenu = document.getElementById('share-menu');
+      if (shareMenu) {
+        var isHidden = shareMenu.classList.contains('opacity-0');
+        if (isHidden) {
+          shareMenu.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+          shareMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          shareMenu.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+          shareMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+      }
+    };
+
+    window.copyTourLink = function() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+          alert('Lien copié dans le presse-papier !');
+        });
+      }
+    };
+  </script>
+
+</Layout>

@@ -1837,5 +1837,89 @@
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
     "days": []
+  },
+  {
+    "slug": "safari-pied-bardia",
+    "rawSlug": "safari-pied-bardia",
+    "title": "Walking Safari in Bardia National Park",
+    "duration": "1 day",
+    "daysCount": 1,
+    "price": "50€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "1 day immersion",
+    "rating": 5.0,
+    "reviews": 24,
+    "difficulty": "Moderate",
+    "style": "Immersion & Foot Tracking",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "A full day deep into the heart of Bardia National Park on foot. Track Bengal tigers, one-horned rhinos, and wild Asian elephants with our senior jungle guides and trackers.",
+    "highlights": [
+      "100% wild foot tracking in Bardia National Park.",
+      "Guided by 1 experienced jungle guide + 1 tracker.",
+      "Picnic lunch included directly in the jungle.",
+      "Option for overnight stay at Pawan's (BBC guide) with private AC room."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp",
+      "/assets/tours_thumbs/rhino_vegetation_bardia.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Day 1 – Full Day Walking Safari in Bardia",
+        "desc": "Departure at 6:30 AM for a full day of foot tracking and wildlife observation in Bardia jungle. Bush lunch included. Return around 6:00 PM."
+      }
+    ]
+  },
+  {
+    "slug": "safari-pied-chitwan",
+    "rawSlug": "safari-pied-chitwan",
+    "title": "Walking Safari in Chitwan National Park",
+    "duration": "1 day",
+    "daysCount": 1,
+    "price": "70€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "1 day immersion",
+    "rating": 5.0,
+    "reviews": 21,
+    "difficulty": "Moderate",
+    "style": "Immersion & Foot Tracking",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 1,
+      "nightlife": 0
+    },
+    "overview": "Discover Chitwan differently: on foot. Far from standard jeeps, experience a full day of silent wildlife tracking with 1 naturalist guide and 1 tracker.",
+    "highlights": [
+      "Silent and respectful foot exploration in Chitwan National Park.",
+      "1 certified naturalist guide + 1 dedicated tracker.",
+      "Bush picnic lunch in nature included.",
+      "Ideal after a trek in the Himalayas."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_ours_lippu.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_rhino_hautes_herbes.webp",
+      "/assets/tours_thumbs/safari_pied_chitwan_crocodile_marais.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Day 1 – Full Day Walking Safari in Chitwan",
+        "desc": "Departure at 6:30 AM with dugout wooden canoe crossing of Rapti river. Tracking in forests and grasslands. Bush picnic lunch included. Return around 6:00 PM."
+      }
+    ]
   }
 ]
