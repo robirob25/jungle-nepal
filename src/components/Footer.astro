@@ -156,31 +156,31 @@ const prefix = isEn ? '/en' : '';
       <!-- MyWay SAS Box -->
       <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1.5 text-slate-800">
         <div class="flex items-center justify-between">
-          <span class="font-bold text-slate-600 uppercase text-[10px]">{isEn ? "Official Licensed Tour Operator" : "Opérateur de voyages officiel (Vendeur)"}</span>
+          <span class="font-bold text-slate-600 uppercase text-[10px]">{isEn ? "Official Licensed Tour Operator (Seller)" : "Opérateur de voyages officiel (Vendeur)"}</span>
           <span class="font-black text-[#0e8354] bg-emerald-100 px-2 py-0.5 rounded text-[10px]">Atout France</span>
         </div>
         <p class="text-slate-950 font-black text-sm">MYWAY SAS</p>
-        <p class="font-mono text-xs font-bold text-slate-800">Licence Atout France : IM059190009 · SIRET 85137544400011</p>
-        <p class="text-[11px] text-slate-600">Garantie financière : Groupama Assurance-Crédit & Caution · RCP : Generali IARD.</p>
-        <p class="text-[11px] text-slate-600">Robin Rozier / Jungle Nepal Adventure intervient en qualité de conseiller voyage indépendant et apporteur d'affaires membre du Collectif My Way.</p>
+        <p class="font-mono text-xs font-bold text-slate-800">{isEn ? "Atout France License: IM059190009 · SIRET 85137544400011" : "Licence Atout France : IM059190009 · SIRET 85137544400011"}</p>
+        <p class="text-[11px] text-slate-600">{isEn ? "Financial Guarantee: GROUPAMA ASSURANCE-CRÉDIT & CAUTION · Professional Civil Liability: GENERALI IARD." : "Garantie financière : Groupama Assurance-Crédit & Caution · RCP : Generali IARD."}</p>
+        <p class="text-[11px] text-slate-600">{isEn ? "Robin Rozier / Jungle Nepal Adventure operates as an independent travel advisor, member of Collectif My Way, acting as a business introducer for MYWAY SAS." : "Robin Rozier / Jungle Nepal Adventure intervient en qualité de conseiller voyage indépendant et apporteur d'affaires membre du Collectif My Way."}</p>
       </div>
 
       <!-- Local DMC Incorporation -->
       <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
         <div class="flex items-center justify-between">
           <span class="font-bold text-slate-500 uppercase text-[10px]">{isEn ? "Local DMC Partner in Nepal" : "Réceptif local au Népal"}</span>
-          <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+          <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">{isEn ? "Official" : "Officiel"}</span>
         </div>
         <p class="text-slate-900 font-black text-sm">Jungle Nepal Adventure Pvt. Ltd.</p>
-        <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83 · PAN : 623537310</p>
-        <p class="text-[11px] text-slate-500">Agréé par le Ministère de l'Industrie et le Conseil du Tourisme du Népal. Direction : Pawan Thapa (Chef pisteur) & Kiran Pokhrel.</p>
+        <p class="font-mono text-xs font-bold text-slate-700">{isEn ? "Registration No: 384414/82/83 · PAN: 623537310" : "N° d'enregistrement : 384414/82/83 · PAN : 623537310"}</p>
+        <p class="text-[11px] text-slate-500">{isEn ? "Registered & licensed by the Ministry of Industry and Nepal Tourism Board. Leadership: Pawan Thapa (Lead Tracker) & Kiran Pokhrel." : "Agréé par le Ministère de l'Industrie et le Conseil du Tourisme du Népal. Direction : Pawan Thapa (Chef pisteur) & Kiran Pokhrel."}</p>
       </div>
 
       <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-        <span class="font-bold text-slate-500 uppercase text-[10px] block">{isEn ? "Conseiller Voyage Indépendant France" : "Conseiller Voyage Indépendant France"}</span>
-        <p class="font-bold text-slate-900 text-xs">Robin Rozier — Jungle Nepal Adventure (Autoentreprise)</p>
+        <span class="font-bold text-slate-500 uppercase text-[10px] block">{isEn ? "Independent Travel Advisor (France)" : "Conseiller Voyage Indépendant France"}</span>
+        <p class="font-bold text-slate-900 text-xs">Robin Rozier — Jungle Nepal Adventure ({isEn ? "Sole Proprietorship" : "Autoentreprise"})</p>
         <p class="font-mono text-xs text-slate-700">SIRET 91025797100010 · RCS BESANCON</p>
-        <p class="text-[11px] text-slate-500">4 rue guy moquet, 66310 Estagel · junglenepaladventure@gmail.com</p>
+        <p class="text-[11px] text-slate-500">4 rue guy moquet, 66310 Estagel, France · junglenepaladventure@gmail.com</p>
       </div>
 
     </div>
