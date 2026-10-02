@@ -26,18 +26,19 @@ const prefix = isEn ? '/en' : '';
         </a>
         <p class="text-slate-400 text-xs leading-relaxed">
           {isEn 
-            ? "Local boutique eco-tourism agency & immersive wildlife safaris in Nepal. Kathmandu & Bardia National Park."
-            : "Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Katmandou & Parc National de Bardia."}
+            ? "Jungle Nepal Adventure, independent travel advisor, member of Collectif My Way. Immersive wildlife safaris & high-end eco-tourism in Nepal."
+            : "Jungle Nepal Adventure, conseiller voyage indépendant, membre du Collectif My Way. Safaris animaliers immersifs & écotourisme d'exception au Népal."}
         </p>
         <div class="pt-1 space-y-2">
           <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-900/30 hover:bg-emerald-800/40 text-emerald-400 font-bold text-xs border border-emerald-700/40 transition-colors whitespace-nowrap">
             <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             <span>WhatsApp : +33 6 95 41 32 27</span>
           </a>
-          <p class="text-slate-400">Email : <strong class="text-white font-medium">contact@junglenepal.com</strong></p>
+          <p class="text-slate-400">Email : <strong class="text-white font-medium">junglenepaladventure@gmail.com</strong></p>
         </div>
         <div class="pt-2 text-[11px] text-slate-400 space-y-1 font-medium border-t border-white/10">
-          <p class="font-bold text-slate-200">Jungle Nepal Adventure Pvt. Ltd.</p>
+          <p class="font-bold text-slate-200">{isEn ? "Local DMC Partner in Nepal:" : "Réceptif local au Népal :"}</p>
+          <p class="text-slate-300 font-semibold">Jungle Nepal Adventure Pvt. Ltd.</p>
           <p>{isEn ? "Registration" : "Immatriculation"} : <strong class="text-slate-200 font-mono">N° 384414/82/83</strong></p>
           <p>{isEn ? "Tax ID" : "Numéro fiscal"} : <strong class="text-slate-200 font-mono">623537310</strong></p>
           <p>Thakurdwara-09, Bardia, Népal</p>
@@ -111,11 +112,15 @@ const prefix = isEn ? '/en' : '';
 
     <!-- Bottom Bar with Official Legal Certifications -->
     <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-      <div class="space-y-1 text-center md:text-left">
-        <p>© 2026 Jungle Nepal Adventure Pvt. Ltd. {isEn ? "All rights reserved." : "Tous droits réservés."}</p>
-        <p class="text-[11px] text-slate-400">{isEn ? "Official local agency licensed by Nepal Ministry of Industry & Tourism • Reg. 384414/82/83 • PAN 623537310" : "Agence locale officielle agréée par le Ministère de l'Industrie et du Tourisme du Népal • Reg. 384414/82/83 • PAN 623537310"}</p>
+      <div class="space-y-1.5 text-center md:text-left max-w-3xl">
+        <p class="font-bold text-slate-200">© 2026 Jungle Nepal Adventure. {isEn ? "All rights reserved." : "Tous droits réservés."}</p>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          {isEn 
+            ? "Jungle Nepal Adventure, independent travel advisor, member of Collectif My Way. Trips are sold by MYWAY SAS, registered travel operator Atout France IM059190009."
+            : "Jungle Nepal Adventure, conseiller voyage indépendant, membre du Collectif My Way. Les séjours sont vendus par MYWAY SAS, opérateur de voyages immatriculé Atout France IM059190009."}
+        </p>
       </div>
-      <div class="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-xs">
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-xs shrink-0">
         <button onclick="openLegalModal()" class="text-slate-200 hover:text-white font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/60 px-3.5 py-1.5 rounded-xl border border-emerald-700/40">
           <span>{isEn ? "Official Licenses & Accreditations" : "Agréments & Licences officielles"}</span>
         </button>
@@ -131,3 +136,74 @@ const prefix = isEn ? '/en' : '';
   </div>
 </footer>
 
+<!-- MODAL AGRÉMENTS LÉGAUX ET LICENCES OFFICIELLES DU NÉPAL & MYWAY -->
+<div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 transition-opacity duration-300">
+  <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 text-slate-900 relative max-h-[90vh] overflow-y-auto font-sans">
+    <button onclick="closeLegalModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-800 font-bold transition-colors cursor-pointer" aria-label="Fermer">✕</button>
+    
+    <div class="text-center space-y-2 pb-4 border-b border-slate-100">
+      <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#0e8354] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+        {isEn ? "Regulatory Framework & Accreditations" : "Cadre Réglementaire & Agréments"}
+      </span>
+      <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Jungle Nepal Adventure</h3>
+      <p class="text-xs text-slate-500 font-medium">
+        {isEn ? "Independent travel advisor & licensed local tour operator partner" : "Conseiller voyage indépendant membre du Collectif My Way & réceptif local au Népal"}
+      </p>
+    </div>
+
+    <div class="py-5 space-y-3.5 text-xs text-slate-700">
+      
+      <!-- MyWay SAS Box -->
+      <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1.5 text-slate-800">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-slate-600 uppercase text-[10px]">{isEn ? "Official Licensed Tour Operator" : "Opérateur de voyages officiel (Vendeur)"}</span>
+          <span class="font-black text-[#0e8354] bg-emerald-100 px-2 py-0.5 rounded text-[10px]">Atout France</span>
+        </div>
+        <p class="text-slate-950 font-black text-sm">MYWAY SAS</p>
+        <p class="font-mono text-xs font-bold text-slate-800">Licence Atout France : IM059190009 · SIRET 85137544400011</p>
+        <p class="text-[11px] text-slate-600">Garantie financière : Groupama Assurance-Crédit & Caution · RCP : Generali IARD.</p>
+        <p class="text-[11px] text-slate-600">Robin Rozier / Jungle Nepal Adventure intervient en qualité de conseiller voyage indépendant et apporteur d'affaires membre du Collectif My Way.</p>
+      </div>
+
+      <!-- Local DMC Incorporation -->
+      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-slate-500 uppercase text-[10px]">{isEn ? "Local DMC Partner in Nepal" : "Réceptif local au Népal"}</span>
+          <span class="font-black text-[#0e8354] bg-emerald-100/60 px-2 py-0.5 rounded text-[10px]">Officiel</span>
+        </div>
+        <p class="text-slate-900 font-black text-sm">Jungle Nepal Adventure Pvt. Ltd.</p>
+        <p class="font-mono text-xs font-bold text-slate-700">N° d'enregistrement : 384414/82/83 · PAN : 623537310</p>
+        <p class="text-[11px] text-slate-500">Agréé par le Ministère de l'Industrie et le Conseil du Tourisme du Népal. Direction : Pawan Thapa (Chef pisteur) & Kiran Pokhrel.</p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+        <span class="font-bold text-slate-500 uppercase text-[10px] block">{isEn ? "Conseiller Voyage Indépendant France" : "Conseiller Voyage Indépendant France"}</span>
+        <p class="font-bold text-slate-900 text-xs">Robin Rozier — Jungle Nepal Adventure (Autoentreprise)</p>
+        <p class="font-mono text-xs text-slate-700">SIRET 91025797100010 · RCS BESANCON</p>
+        <p class="text-[11px] text-slate-500">4 rue guy moquet, 66310 Estagel · junglenepaladventure@gmail.com</p>
+      </div>
+
+    </div>
+
+    <div class="pt-2">
+      <button onclick="closeLegalModal()" class="w-full py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors cursor-pointer">
+        {isEn ? "Close Legal Information" : "Fermer les informations légales"}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+if (!window.openLegalModal) {
+  window.openLegalModal = function() {
+    var m = document.getElementById('legal-modal');
+    if (m) m.classList.remove('hidden');
+  };
+}
+if (!window.closeLegalModal) {
+  window.closeLegalModal = function() {
+    var m = document.getElementById('legal-modal');
+    if (m) m.classList.add('hidden');
+  };
+}
+</script>
