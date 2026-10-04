@@ -1,3 +1,7 @@
+
+# 301 REDIRECT DOMAIN FUSION: safarinepal.com -> junglenepal.com
+RewriteCond %{HTTP_HOST} ^(?:www\.)?safarinepal\.com$ [NC]
+RewriteRule ^(.*)$ https://junglenepal.com/ [R=301,L]
 # =========================================================================
 # JUNGLE NEPAL ADVENTURE - MILITARY-GRADE CYBERSECURITY & CLEAN URLS
 # =========================================================================
