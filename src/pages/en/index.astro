@@ -46,7 +46,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <!-- Center: Navigation épurée blanche -->
     <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] font-bold text-white/90 drop-shadow absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">All 21 Expeditions</a>
+      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">Tours &amp; Expeditions</a>
+      <a href="#activites" class="hover:text-amber-100 transition-colors">Activities</a>
       <div class="relative group py-2">
           <a href="/en/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
             <span>Destinations</span>
@@ -164,9 +165,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <nav class="flex flex-col space-y-1.5 font-bold text-sm">
       
       <!-- 1. All Expeditions -->
+      <!-- 1. Tours & Expeditions -->
       <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
-        <span>All 21 Expeditions</span>
-        <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">20</span>
+        <span>Tours &amp; Expeditions</span>
+        <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">16</span>
+      </a>
+
+      <!-- 1b. Day Activities -->
+      <a href="/en/#activites" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+        <span>Activities (1 day)</span>
+        <span class="bg-amber-500 text-slate-950 text-[11px] px-2.5 py-0.5 rounded-full font-black">5</span>
       </a>
 
       <!-- 2. Destinations Dropdown Accordion -->
@@ -497,26 +505,26 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   <!-- Conteneur des Catégories Scrollable -->
       <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
         <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
-          <span>All Expeditions</span>
-          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">21</span>
+          <span>All Tours</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">16</span>
         </button>
         <button type="button" onclick="filterTrips('sejours-courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="sejours-courts">
-          <span>Short Stays (9)</span>
+          <span>Short Stays (4)</span>
         </button>
         <button type="button" onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
           <span>Jungle & Mountain Blend (6)</span>
         </button>
         <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
-          <span>Safaris & Big Cats (17)</span>
+          <span>Safaris & Big Cats (12)</span>
         </button>
         <button type="button" onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
           <span>Jungle Bivouacs & Wild Nights (5)</span>
         </button>
         <button type="button" onclick="filterTrips('chitwan')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="chitwan">
-          <span>Rhinos & Chitwan (5)</span>
+          <span>Rhinos & Chitwan (3)</span>
         </button>
         <button type="button" onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="rafting">
-          <span>Rafting & River Expeditions (4)</span>
+          <span>Rafting & River Expeditions (3)</span>
         </button>
         <button type="button" onclick="filterTrips('mustang-himalaya')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="mustang-himalaya">
           <span>Himalaya, Mustang & Spirituality (7)</span>
@@ -629,6 +637,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
 
         </article>
+
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="extreme jungle – special wildlife & big cat expedition – 15 days">
           
           <div class="relative">
@@ -813,262 +822,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
               </div>
               <a href="/en/tours/chitwan-bardia-complete" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
-                <span>View Expedition Details</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- TOUR: WALKING SAFARI BARDIA (1 DAY / 50€) -->
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts" data-title="walking safari – bardia national park">
-          
-          <div class="relative">
-            <a href="/en/tours/safari-pied-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
-              <img loading="lazy" 
-                src="/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp" 
-                alt="Walking Safari — Bardia National Park (1 Day)" 
-                class="w-full h-full object-cover object-left transition-transform duration-500 ease-out group-hover:scale-105"
-                decoding="async"
-              />
-              
-              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-                <span class="bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full border border-white/20 font-semibold shadow">
-                  From 1 traveler
-                </span>
-              </div>
-
-              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
-                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
-                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                  <span class="font-bold text-slate-100">1 day</span>
-                </div>
-                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
-                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>5.0 (24)</span>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
-            <div>
-              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Wild Nepal • Short Stay</span>
-              </div>
-              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
-                <a href="/en/tours/safari-pied-bardia">Walking safari in Bardia National Park</a>
-              </h3>
-              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
-                A full day deep into the heart of the jungle. Track Bengal tigers, rhinos, and wild elephants on foot with a senior guide and assistant tracker. Packed jungle lunch included.
-              </p>
-            </div>
-
-            <div class="mt-5 pt-4 border-t border-slate-200/80">
-              <div class="flex items-center justify-between gap-2">
-                <div>
-                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Rate per person</p>
-                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">50€</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Guide Stay +12€</span>
-                </div>
-              </div>
-              <a href="/en/tours/safari-pied-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
-                <span>View Expedition Details</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- CIRCUIT : JEEP SAFARI BARDIA (1 DAY / 190€) -->
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts bardia" data-title="private jeep safari – bardia national park">
-          
-          <div class="relative">
-            <a href="/en/tours/safari-jeep-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
-              <img loading="lazy" 
-                src="/assets/tours_thumbs/safari_jeep_groupe_bardia.webp" 
-                alt="Private Jeep Safari — Bardia National Park" 
-                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
-                decoding="async"
-              />
-              
-              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
-                  Private 4x4 Jeep
-                </span>
-              </div>
-
-              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
-                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
-                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                  <span class="font-bold text-slate-100">1 day</span>
-                </div>
-                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
-                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>5.0 (19)</span>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
-            <div>
-              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Wild Nepal • Private 4x4</span>
-              </div>
-              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
-                <a href="/en/tours/safari-jeep-bardia">Private Jeep Safari in Bardia National Park</a>
-              </h3>
-              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
-                Explore deep remote sectors of Bardia in a private 4x4 with driver, senior guide, and elite tracker. Cross rivers to maximize Bengal tiger encounter opportunities.
-              </p>
-            </div>
-
-            <div class="mt-5 pt-4 border-t border-slate-200/80">
-              <div class="flex items-center justify-between gap-2">
-                <div>
-                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">All-inclusive rate</p>
-                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Guide Stay +12€</span>
-                </div>
-              </div>
-              <a href="/en/tours/safari-jeep-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
-                <span>View Expedition Details</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- CIRCUIT : WALKING SAFARI CHITWAN (1 DAY / 70€) -->
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="walking safari – chitwan national park">
-          
-          <div class="relative">
-            <a href="/en/tours/safari-pied-chitwan" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
-              <img loading="lazy" 
-                src="/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp" 
-                alt="Walking safari — Chitwan National Park" 
-                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
-                decoding="async"
-              />
-              
-              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-                <span class="bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full border border-white/20 font-semibold shadow">
-                  From 1 pers.
-                </span>
-              </div>
-
-              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
-                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
-                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                  <span class="font-bold text-slate-100">1 day</span>
-                </div>
-                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
-                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>5.0 (21)</span>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
-            <div>
-              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Wild Nepal • Short Stay</span>
-              </div>
-              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
-                <a href="/en/tours/safari-pied-chitwan">Walking safari in Chitwan National Park</a>
-              </h3>
-              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
-                Discover Chitwan differently: on foot. A full day immersive tracking experience with 1 naturalist guide and 1 tracker to search for tigers, rhinos, and sloth bears. Bush picnic included.
-              </p>
-            </div>
-
-            <div class="mt-5 pt-4 border-t border-slate-200/80">
-              <div class="flex items-center justify-between gap-2">
-                <div>
-                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Price per person</p>
-                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">70€</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Lunch included</span>
-                </div>
-              </div>
-              <a href="/en/tours/safari-pied-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
-                <span>View Expedition Details</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- CIRCUIT : PRIVATE JEEP SAFARI CHITWAN (1 DAY / 190€) -->
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="private jeep safari – chitwan national park">
-          
-          <div class="relative">
-            <a href="/en/tours/safari-jeep-chitwan" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
-              <img loading="lazy" 
-                src="/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp" 
-                alt="Private Jeep safari — Chitwan National Park" 
-                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
-                decoding="async"
-              />
-              
-              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
-                  Private 4x4 Jeep
-                </span>
-              </div>
-
-              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
-                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
-                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                  <span class="font-bold text-slate-100">1 day</span>
-                </div>
-                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
-                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>5.0 (22)</span>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
-            <div>
-              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Wild Nepal • Private 4x4</span>
-              </div>
-              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
-                <a href="/en/tours/safari-jeep-chitwan">Private Jeep Safari in Chitwan National Park</a>
-              </h3>
-              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
-                Explore the grasslands and Sal forests of Chitwan in a private 4x4 with driver, senior naturalist guide, and elite tracker tracking rhinos and Bengal tigers.
-              </p>
-            </div>
-
-            <div class="mt-5 pt-4 border-t border-slate-200/80">
-              <div class="flex items-center justify-between gap-2">
-                <div>
-                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">All-inclusive rate</p>
-                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Lunch included</span>
-                </div>
-              </div>
-              <a href="/en/tours/safari-jeep-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
                 <span>View Expedition Details</span>
                 <span>→</span>
               </a>
@@ -1842,7 +1595,363 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </article>
       </div>
     </div>
+  
+  <!-- ========================================================================= -->
+  <!-- 6.2. DEDICATED SECTION : DAY ACTIVITIES & WILDLIFE SAFARIS (1 DAY) -->
+  <!-- ========================================================================= -->
+  <section id="activites" class="scroll-mt-20 sm:scroll-mt-24 pt-14 sm:pt-20 pb-16 sm:pb-24 bg-[#051811] text-white border-t border-emerald-950/60 relative overflow-hidden">
+    <!-- Ambient jungle glow -->
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 sm:mb-14 pb-8 border-b border-white/10">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 font-extrabold text-[11px] tracking-wider uppercase mb-3 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>1-Day Excursions • No Mandatory Accommodation</span>
+          </div>
+          <h2 class="font-black text-2xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+            Day Activities &amp; Wildlife Safaris
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+            Already in Nepal or planning your travel independently? Join our master trackers and senior naturalists for an exclusive day of pure immersion in Bardia and Chitwan (private 4x4 safari, walking tracking or silent river rafting).
+          </p>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-3">
+          <span class="text-xs font-bold text-slate-300 bg-white/10 px-4 py-2 rounded-2xl border border-white/10">
+            5 dedicated field activities
+          </span>
+          <a href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20a%20day%20activity%20in%20Nepal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-100 hover:scale-100 active:scale-95 transition-all shadow-lg whitespace-nowrap">
+            <span>Chat on WhatsApp</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid of 5 Activities (1-Day) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts" data-title="walking safari – bardia national park">
+          
+          <div class="relative">
+            <a href="/en/tours/safari-pied-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp" 
+                alt="Walking Safari — Bardia National Park (1 Day)" 
+                class="w-full h-full object-cover object-left transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full border border-white/20 font-semibold shadow">
+                  From 1 traveler
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 day</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (24)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Wild Nepal • Short Stay</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/safari-pied-bardia">Walking safari in Bardia National Park</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                A full day deep into the heart of the jungle. Track Bengal tigers, rhinos, and wild elephants on foot with a senior guide and assistant tracker. Packed jungle lunch included.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Rate per person</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">50€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Guide Stay +12€</span>
+                </div>
+              </div>
+              <a href="/en/tours/safari-pied-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>View Expedition Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts bardia" data-title="private jeep safari – bardia national park">
+          
+          <div class="relative">
+            <a href="/en/tours/safari-jeep-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/safari_jeep_groupe_bardia.webp" 
+                alt="Private Jeep Safari — Bardia National Park" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                  Private 4x4 Jeep
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 day</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (19)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Wild Nepal • Private 4x4</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/safari-jeep-bardia">Private Jeep Safari in Bardia National Park</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Explore deep remote sectors of Bardia in a private 4x4 with driver, senior guide, and elite tracker. Cross rivers to maximize Bengal tiger encounter opportunities.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">All-inclusive rate</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Guide Stay +12€</span>
+                </div>
+              </div>
+              <a href="/en/tours/safari-jeep-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>View Expedition Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="walking safari – chitwan national park">
+          
+          <div class="relative">
+            <a href="/en/tours/safari-pied-chitwan" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp" 
+                alt="Walking safari — Chitwan National Park" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full border border-white/20 font-semibold shadow">
+                  From 1 pers.
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 day</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (21)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Wild Nepal • Short Stay</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/safari-pied-chitwan">Walking safari in Chitwan National Park</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Discover Chitwan differently: on foot. A full day immersive tracking experience with 1 naturalist guide and 1 tracker to search for tigers, rhinos, and sloth bears. Bush picnic included.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Price per person</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">70€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Lunch included</span>
+                </div>
+              </div>
+              <a href="/en/tours/safari-pied-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>View Expedition Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="private jeep safari – chitwan national park">
+          
+          <div class="relative">
+            <a href="/en/tours/safari-jeep-chitwan" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp" 
+                alt="Private Jeep safari — Chitwan National Park" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                  Private 4x4 Jeep
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 day</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (22)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Wild Nepal • Private 4x4</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/safari-jeep-chitwan">Private Jeep Safari in Chitwan National Park</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Explore the grasslands and Sal forests of Chitwan in a private 4x4 with driver, senior naturalist guide, and elite tracker tracking rhinos and Bengal tigers.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">All-inclusive rate</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Lunch included</span>
+                </div>
+              </div>
+              <a href="/en/tours/safari-jeep-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>View Expedition Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts rafting bardia" data-title="rafting safari – bardia national park">
+          
+          <div class="relative">
+            <a href="/en/tours/rafting-safari-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/rafting_karnali_guide_voyageur_duo.webp" 
+                alt="Rafting safari au fil de l'eau sur la rivière Karnali à Bardia" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                  Rafting privatisé
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 day</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (18)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Bardia Sauvage • Au fil de l'eau</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/en/tours/rafting-safari-bardia">Rafting Safari in Bardia National Park</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Descendez les eaux sauvages de la Karnali en raft privatisé avec barreur pro, guide naturaliste et pisteur pour observer dauphins du Gange, gavials et tigres.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">All-inclusive rate</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Pique-nique & Transferts</span>
+                </div>
+              </div>
+              <a href="/en/tours/rafting-safari-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>Discover activity</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
   </section>
+</section>
 
   <!-- ========================================================================= -->
   <!-- 6.5. SAFARI QUIZ (FIND YOUR PERFECT ITINERARY) -->
@@ -4958,7 +5067,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     }
 
         function filterTrips(category) {
-      const cards = document.querySelectorAll('.trip-card');
+      const cards = document.querySelectorAll('#trips-grid .trip-card');
       const pills = document.querySelectorAll('.category-pill');
       let visibleCount = 0;
 

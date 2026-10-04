@@ -53,23 +53,33 @@ const prefix = isEn ? '/en' : '';
         </div>
       </div>
 
-      <!-- COL 2: Tous les Séjours -->
+      <!-- COL 2: Circuits & Voyages Immersifs -->
       <div class="space-y-3">
         <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          {isEn ? "All 20 Expeditions" : "Tous les 20 Séjours"}
+          {isEn ? "Immersive Tours (16)" : "Circuits Immersifs (16)"}
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href={`${prefix}/tours/safari-jeep-bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Jeep Safari Bardia (1d)" : "Safari Jeep Bardia (1j)"}</a></li>
-          <li><a href={`${prefix}/tours/safari-jeep-chitwan`} class="hover:text-slate-200 transition-colors">{isEn ? "Jeep Safari Chitwan (1d)" : "Safari Jeep Chitwan (1j)"}</a></li>
-          <li><a href={`${prefix}/tours/safari-pied-bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Walking Safari Bardia (1d)" : "Safari à pied Bardia (1j)"}</a></li>
-          <li><a href={`${prefix}/tours/safari-pied-chitwan`} class="hover:text-slate-200 transition-colors">{isEn ? "Walking Safari Chitwan (1d)" : "Safari à pied Chitwan (1j)"}</a></li>
           <li><a href={`${prefix}/tours/bardia-explorateur`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia Explorer (5d)" : "Bardia Explorateur (5j)"}</a></li>
           <li><a href={`${prefix}/tours/chitwan-culture`} class="hover:text-slate-200 transition-colors">{isEn ? "Chitwan & Jungle (4d)" : "Chitwan & Jungle (4j)"}</a></li>
           <li><a href={`${prefix}/tours/nepal-sauvage`} class="hover:text-slate-200 transition-colors">{isEn ? "Wild Nepal 360° (15d)" : "Népal Sauvage 360° (15j)"}</a></li>
           <li><a href={`${prefix}/tours/babai-special`} class="hover:text-slate-200 transition-colors">{isEn ? "Babai Tiger Special (5d)" : "Babai Spécial Tigres (5j)"}</a></li>
           <li><a href={`${prefix}/tours/bardia-babai-camping`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia Babai Bivouac (8d)" : "Bardia Babai Bivouac (8j)"}</a></li>
           <li><a href={`${prefix}/tours/rafting-safari`} class="hover:text-slate-200 transition-colors">{isEn ? "Karnali Rafting & Safari (18d)" : "Rafting Karnali & Safari (18j)"}</a></li>
-          <li class="pt-1.5"><a href={isEn ? "/en/#prochains-departs" : "/#prochains-departs"} class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>{isEn ? "View all 21 trips" : "Voir les 21 séjours"}</span><span>→</span></a></li>
+          <li><a href={`${prefix}/tours/panthere-des-neiges`} class="hover:text-slate-200 transition-colors">{isEn ? "Snow Leopard (17d)" : "Panthère des neiges (17j)"}</a></li>
+          <li class="pt-1.5"><a href={isEn ? "/en/#prochains-departs" : "/#prochains-departs"} class="text-amber-100 font-bold hover:underline flex items-center gap-1"><span>{isEn ? "View 16 tours" : "Voir les 16 circuits"}</span><span>→</span></a></li>
+        </ul>
+
+        <!-- Activités 1 jour sous-bloc -->
+        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2 pt-3">
+          {isEn ? "Activities (1 Day)" : "Activités (1 Jour)"}
+        </h4>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href={`${prefix}/tours/safari-pied-bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Walking Safari Bardia" : "Safari à pied Bardia (50€)"}</a></li>
+          <li><a href={`${prefix}/tours/safari-jeep-bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Jeep Safari Bardia" : "Safari Jeep Bardia (190€)"}</a></li>
+          <li><a href={`${prefix}/tours/rafting-safari-bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Rafting Safari Bardia" : "Rafting Safari Bardia (190€)"}</a></li>
+          <li><a href={`${prefix}/tours/safari-pied-chitwan`} class="hover:text-slate-200 transition-colors">{isEn ? "Walking Safari Chitwan" : "Safari à pied Chitwan (70€)"}</a></li>
+          <li><a href={`${prefix}/tours/safari-jeep-chitwan`} class="hover:text-slate-200 transition-colors">{isEn ? "Jeep Safari Chitwan" : "Safari Jeep Chitwan (190€)"}</a></li>
+          <li class="pt-1"><a href={isEn ? "/en/#activites" : "/#activites"} class="text-emerald-400 font-bold hover:underline flex items-center gap-1"><span>{isEn ? "View all activities" : "Voir les 5 activités"}</span><span>→</span></a></li>
         </ul>
       </div>
 
