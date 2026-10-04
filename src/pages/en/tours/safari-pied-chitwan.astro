@@ -122,11 +122,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <a href="/en/contact" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Contact</a>
         </nav>
 
-        <div class="flex items-center gap-3">
-          <!-- LANGUAGE SWITCHER (FR / EN ONLY) -->
-          <div class="flex items-center bg-slate-100 border border-slate-200/80 rounded-full p-0.5 text-[11px] font-bold">
-            <a href="/tours/safari-pied-chitwan" class="px-2 py-0.5 rounded-full text-slate-600 hover:text-slate-950 transition-colors">FR</a>
-            <span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 shadow-xs">EN</span>
+        <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          <!-- LANGUAGE SWITCHER (GLOBE DROPDOWN) -->
+          <div class="relative group/lang py-1">
+            <button onclick="toggleLangMenu(this)" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-slate-100 hover:bg-slate-200 border-slate-200 text-slate-700 border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Change language">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </button>
+            <div class="lang-dropdown-box absolute right-0 top-full mt-1.5 w-32 opacity-0 translate-y-2 pointer-events-none group-hover/lang:opacity-100 group-hover/lang:translate-y-0 group-hover/lang:pointer-events-auto transition-all duration-200 z-50">
+              <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-1 text-xs font-bold text-white">
+                <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
+                <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
+              </div>
+            </div>
           </div>
 
           <button onclick="openTourBookingModal()" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white text-xs font-bold transition-all shadow-sm cursor-pointer whitespace-nowrap">
