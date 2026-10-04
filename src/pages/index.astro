@@ -46,7 +46,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <!-- Center: Navigation épurée blanche -->
     <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] font-bold text-white/90 drop-shadow absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">Tous les 17 séjours</a>
+      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">Tous les 20 séjours</a>
       <div class="relative group py-2">
           <a href="/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
             <span>Destinations</span>
@@ -165,8 +165,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <!-- 1. Tous les séjours -->
       <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
-        <span>Tous les 17 séjours</span>
-        <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">17</span>
+        <span>Tous les 20 séjours</span>
+        <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">20</span>
       </a>
 
       <!-- 2. Destinations Dropdown Accordion -->
@@ -265,7 +265,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </a>
 
       <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="w-full text-center py-3.5 px-4 rounded-2xl bg-[#0e5c3e] flex items-center justify-center text-center hover:bg-[#0c6d46] text-white font-black text-xs shadow transition-all">
-        Explorer les 16 séjours et départs →
+        Explorer les 20 séjours et départs →
       </a>
     </div>
 
@@ -432,14 +432,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
             <div class="relative mt-0.5">
                                                       <select id="search-dest" name="destination" aria-label="Choisir une destination ou un type de séjour" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">Tous les séjours (18)</option>
-            <option value="sejours-courts">Séjours courts (6 séjours)</option>
-            <option value="safari">Safaris & Grands Félins (Bardia & Himalaya)</option>
-            <option value="bivouac">Bivouacs & Nuits Sauvages en Jungle</option>
-            <option value="chitwan">Rhinocéros & Parc de Chitwan</option>
-            <option value="rafting">Rafting & Expéditions Rivières</option>
-            <option value="mustang-himalaya">Himalaya, mustang & spiritualité</option>
-            <option value="grand-tour">Grands Tours Immersion 360°</option>
+            <option value="all">Tous les séjours (20)</option>
+            <option value="sejours-courts">Séjours courts (8 séjours)</option>
+            <option value="safari">Safaris & Grands Félins (16 séjours)</option>
+            <option value="bivouac">Bivouacs & Nuits Sauvages (5 séjours)</option>
+            <option value="chitwan">Rhinocéros & Parc de Chitwan (5 séjours)</option>
+            <option value="rafting">Rafting & Expéditions Rivières (3 séjours)</option>
+            <option value="mustang-himalaya">Himalaya, Mustang & Spiritualité (7 séjours)</option>
+            <option value="grand-tour">Grands Tours Immersion 360° (6 séjours)</option>
           </select>
               <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-slate-400">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -500,22 +500,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
         <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
           <span>Tous les séjours</span>
-          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">18</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">20</span>
         </button>
         <button type="button" onclick="filterTrips('sejours-courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="sejours-courts">
-          <span>Séjours courts (6)</span>
+          <span>Séjours courts (8)</span>
         </button>
         <button type="button" onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
           <span>Mixe jungle et montagne (6)</span>
         </button>
         <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
-          <span>Safaris et grands félins (14)</span>
+          <span>Safaris et grands félins (16)</span>
         </button>
         <button type="button" onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
           <span>Bivouacs et nuits sauvages (5)</span>
         </button>
         <button type="button" onclick="filterTrips('chitwan')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="chitwan">
-          <span>Rhinocéros et Chitwan (4)</span>
+          <span>Rhinocéros et Chitwan (5)</span>
         </button>
         <button type="button" onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="rafting">
           <span>Rafting et expéditions rivières (3)</span>
@@ -536,7 +536,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 6. LES 17 CIRCUITS (GRILLE COMPLÈTE) -->
+  <!-- 6. LES 20 CIRCUITS (GRILLE COMPLÈTE) -->
   <!-- ========================================================================= -->
   <section id="prochains-departs" class="scroll-mt-20 sm:scroll-mt-24 pt-6 sm:pt-8 lg:pt-10 pb-16 sm:pb-20 bg-[#faf8f5]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -544,7 +544,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-12">
         <div class="flex-1">
           <h2 id="tours-section-title" class="font-black text-2xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight inline-flex flex-wrap items-center">
-            <span class="whitespace-nowrap">Les 17 séjours&nbsp;</span>
+            <span class="whitespace-nowrap">Les 20 séjours&nbsp;</span>
             <span class="inline-grid place-items-center w-[105px] sm:w-[155px] md:w-[195px] h-[1.25em] text-center select-none overflow-visible shrink-0 align-middle">
               <span id="kinetic-immersion" class="inline-block text-[#0e5c3e] transition-all duration-200 transform text-center leading-none whitespace-nowrap">immersifs</span>
             </span>
@@ -1015,7 +1015,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-        <!-- CIRCUIT : SAFARI EN JEEP CHITWAN (1 JOUR / 185€) -->
+        <!-- CIRCUIT : SAFARI EN JEEP CHITWAN (1 JOUR / 190€) -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="safari en jeep – parc national de chitwan">
           
           <div class="relative">
@@ -1064,7 +1064,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <div class="flex items-center justify-between gap-2">
                 <div>
                   <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Tarif tout compris</p>
-                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">185€</span>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
                 </div>
                 <div class="text-right">
                   <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Déjeuner inclus</span>
@@ -4501,7 +4501,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
         <div class="flex items-center gap-3 shrink-0">
           <a href="#prochains-departs" class="px-6 py-3 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-100 hover:scale-100 active:scale-95 transition-all shadow-lg">
-            Explorer les 15 circuits faune →
+            Explorer les 20 séjours faune →
           </a>
         </div>
       </div>
@@ -4627,7 +4627,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Direct Action Bar -->
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#prochains-departs" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/40 hover:scale-100 active:scale-95 transition-all text-center">
-            Explorer les 16 séjours 2026/2027 →
+            Explorer les 20 séjours 2026/2027 →
           </a>
           <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm backdrop-blur-md transition-all text-center flex items-center justify-center gap-2 whitespace-nowrap">
             <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
