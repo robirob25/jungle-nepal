@@ -2768,5 +2768,48 @@
         "desc": "Départ à 06h00 en jeep privatisée. Traque matinale des empreintes en forêt de Sal, corridors d'éléphants, pique-nique en mirador et affûts le long de la Geruwa. Retour vers 18h00."
       }
     ]
+  },
+  {
+    "slug": "safari-jeep-chitwan",
+    "rawSlug": "safari-jeep-chitwan",
+    "title": "Safari en Jeep au Parc National de Chitwan",
+    "duration": "1 jour",
+    "daysCount": 1,
+    "price": "185€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Jeep 4x4 privatisée",
+    "rating": 5.0,
+    "reviews": 22,
+    "difficulty": "Facile",
+    "style": "4x4 Privatisé & Forêt de Sal",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 3,
+      "nightlife": 0
+    },
+    "overview": "Explorez les plaines et jungles de Chitwan en Jeep safari privatisée. Accédez aux corridors calmes avec chauffeur, guide naturaliste senior et pisteur d'élite à la recherche des rhinocéros unicornes et tigres.",
+    "highlights": [
+      "Véhicule 4x4 privatisé avec chauffeur professionnel, carburant et permis inclus.",
+      "Trio d'experts sur le terrain : 1 chauffeur + 1 guide senior + 1 pisteur d'élite.",
+      "Accès aux corridors sauvages reculés, marécages et méandres de la Rapti / Narayani.",
+      "Déjeuner pique-nique au mirador sauvage inclus."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+      "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp",
+      "/assets/tours_thumbs/safari_jeep_elephant_foret_chitwan.webp",
+      "/assets/tours_thumbs/safari_jeep_gavial_riviere_chitwan.webp",
+      "/assets/tours_thumbs/safari_jeep_paon_roue_chitwan.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Jour 1 – Exploration complète 4x4 des plaines et forêts de Sal de Chitwan",
+        "desc": "Départ à 06h00 en jeep privatisée depuis Sauraha. Traversée de la Rapti, inspection des pistes sablonneuses de Sal, marécages aux rhinocéros, déjeuner pique-nique en mirador et affûts fluviaux. Retour vers 18h00."
+      }
+    ]
   }
 ]
