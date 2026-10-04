@@ -29,10 +29,10 @@
     ],
     "images": [
       "/assets/drive_photos/julien_leopard_indien.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-3.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png"
+      "/assets/tours_thumbs/julien_tigre_bengale2.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp",
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp"
     ],
     "days": [
       {
@@ -165,10 +165,10 @@
     ],
     "images": [
       "/assets/original_site/himalayas_sunrise_peaks.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-700x430.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-27-at-13.17.14.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_9675-1-scaled.jpeg"
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/adrien_bhaktapur2.webp",
+      "/assets/tours_thumbs/adrien_bardia_river.webp",
+      "/assets/tours_thumbs/temple_sacred.webp"
     ],
     "days": [
       {
@@ -302,10 +302,10 @@
     ],
     "images": [
       "/assets/drive_photos/julien_tigre_bengale2.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/12/rhinoceros-Nepal.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+      "/assets/tours_thumbs/chitwan_rhino.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp"
     ],
     "days": [
       {
@@ -421,10 +421,10 @@
     ],
     "images": [
       "/assets/original_site/tigre_bardia.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/12/P1133754-scaled.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg"
+      "/assets/tours_thumbs/guide_jumelles_arbre_bardia.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp"
     ],
     "days": [
       {
@@ -507,10 +507,10 @@
     ],
     "images": [
       "/assets/original_site/chitwan_rhino.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/03/68.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg"
+      "/assets/tours_thumbs/adrien_bardia_river.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp"
     ],
     "days": [
       {
@@ -587,10 +587,10 @@
     ],
     "images": [
       "/assets/drive_photos/adrien_bardia_river.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-landscape-2388105_1920-1.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg"
+      "/assets/tours_thumbs/himalayas_sunrise_peaks.webp",
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/temple_sacred.webp"
     ],
     "days": [
       {
@@ -740,10 +740,10 @@
     ],
     "images": [
       "/assets/original_site/camping_sauvage_bardia.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/03/Ajouter-un-titre-8.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+      "/assets/tours_thumbs/himalayas_sunrise_peaks.webp",
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp"
     ],
     "days": [
       {
@@ -816,10 +816,10 @@
     ],
     "images": [
       "/assets/original_site/lac_rara_orig.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Design-sans-titre-2.webp",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg"
+      "/assets/tours_thumbs/lac_rara_orig.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp"
     ],
     "days": [
       {
@@ -963,10 +963,10 @@
     ],
     "images": [
       "/assets/original_site/babai_walk.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg"
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/tigre_bardia.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp",
+      "/assets/tours_thumbs/adrien_bardia_river.webp"
     ],
     "days": [
       {
@@ -1064,10 +1064,10 @@
     ],
     "images": [
       "/assets/drive_photos/adrien_bhaktapur2.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/elephants-1900332_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp"
     ],
     "days": [
       {
@@ -1197,10 +1197,10 @@
     ],
     "images": [
       "/assets/original_site/elephant_bardia.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/tigre.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/tigre-sur-route.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/Campement-dans-la-jungle-Bardia-Nepalc.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/WhatsApp-Image-2025-11-21-at-08.58.01.jpeg"
+      "/assets/tours_thumbs/tigre_bardia.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp",
+      "/assets/tours_thumbs/camping_sauvage_bardia.webp",
+      "/assets/tours_thumbs/adrien_bardia_river.webp"
     ],
     "days": [
       {
@@ -1283,10 +1283,10 @@
     ],
     "images": [
       "/assets/original_site/tiji_festival_orig.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/1.png",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_9675-1-scaled.jpeg"
+      "/assets/blog/voyageurs_briefing_baton_marche_safari_bardia.png",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp"
     ],
     "days": [
       {
@@ -1409,10 +1409,10 @@
     ],
     "images": [
       "/assets/drive_photos/antoine_wild5.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2025/12/Safari-a-pied-Bardia-600x800.png"
+      "/assets/tours_thumbs/adrien_bhaktapur2.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/safari_pied_kiran_baton.webp"
     ],
     "days": [
       {
@@ -1545,10 +1545,10 @@
     ],
     "images": [
       "/assets/original_site/temple_sacred.webp",
-      "https://junglenepal.com/wp-content/uploads/2017/01/IMG_0177-1-scaled.jpeg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/buddha-2641500_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/temple-5790023_1920.jpg",
-      "https://junglenepal.com/wp-content/uploads/2017/01/nepal-5258059_1920.jpg"
+      "/assets/drive_photos/antoine_wild5.webp",
+      "/assets/tours_thumbs/adrien_bhaktapur2.webp",
+      "/assets/tours_thumbs/temple_sacred.webp",
+      "/assets/tours_thumbs/temple_sacred.webp"
     ],
     "days": [
       {
