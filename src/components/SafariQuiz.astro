@@ -113,10 +113,10 @@ const isEn = lang === 'en';
             
             <button type="button" onclick="selectQuizOption('duration', 'short')" class="quiz-opt-btn p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-emerald-50/80 border border-slate-200 hover:border-[#0e8354] text-left transition-all duration-200 group shadow-xs hover:shadow-md cursor-pointer">
               <div class="font-extrabold text-[15px] sm:text-base text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
-                {isEn ? "Short stay (2 to 5 days)" : "Court séjour express (2 à 5 jours)"}
+                {isEn ? "1-Day Excursion or Short Stay (1 to 5 days)" : "Excursion 1 jour ou court séjour (1 à 5 jours)"}
               </div>
               <div class="text-xs sm:text-[13px] text-slate-500 mt-2 leading-relaxed group-hover:text-slate-700">
-                {isEn ? "Concentrated getaway to Chitwan, Bardia or Babai from Kathmandu / Pokhara" : "Escapade concentrée à Chitwan, Bardia ou Babai depuis Katmandou"}
+                {isEn ? "Safari day trip (Jeep / on foot) or concentrated getaway to Bardia / Chitwan" : "Journée safari express (en jeep ou à pied) ou escapade concentrée à Bardia / Chitwan"}
               </div>
             </button>
 
@@ -446,6 +446,82 @@ const isEn = lang === 'en';
       scoreWeight: 9
     },
     {
+      slug: "safari-pied-bardia",
+      title: isEn ? "Walking Safari in Bardia National Park (1 Day)" : "Safari à pied au Parc National de Bardia (1 jour)",
+      days: 1,
+      price: "50 €",
+      image: "/assets/tours_thumbs/safari_pied_kiran_baton.webp",
+      url: isEn ? "/en/tours/safari-pied-bardia" : "/tours/safari-pied-bardia",
+      matchDesc: isEn 
+        ? "Thrilling 1-day walking safari in Bardia with senior jungle guide & master tracker: silent tracking of Bengal tigers, rhinos & wild elephants."
+        : "Journée complète d'immersion à pied à Bardia avec guide senior et pisteur d'élite : traque silencieuse du tigre du Bengale et sensations uniques.",
+      tags: { 
+        profile: ["adventurer", "photographer", "nature_lover"],
+        duration: ["short"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["lodge", "mixed", "camping", "culture_spirit"],
+        dream: ["tiger"]
+      },
+      scoreWeight: 10
+    },
+    {
+      slug: "safari-jeep-bardia",
+      title: isEn ? "Private Jeep Safari in Bardia National Park (1 Day)" : "Safari en Jeep au Parc National de Bardia (1 jour)",
+      days: 1,
+      price: "190 €",
+      image: "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
+      url: isEn ? "/en/tours/safari-jeep-bardia" : "/tours/safari-jeep-bardia",
+      matchDesc: isEn 
+        ? "Exclusive 1-day private 4x4 safari to reach remote rivers and core tiger corridors in Bardia with driver, senior guide and tracker."
+        : "Journée complète en 4x4 privatisé pour sillonner les corridors reculés de Bardia et maximiser les chances de croiser le tigre avec chauffeur, guide et pisteur.",
+      tags: { 
+        profile: ["nature_lover", "photographer", "adventurer"],
+        duration: ["short"],
+        group: ["couple", "family", "friends_photo", "solo"],
+        style: ["lodge", "mixed", "culture_spirit"],
+        dream: ["tiger"]
+      },
+      scoreWeight: 10
+    },
+    {
+      slug: "safari-pied-chitwan",
+      title: isEn ? "Walking Safari in Chitwan National Park (1 Day)" : "Safari à pied au Parc National de Chitwan (1 jour)",
+      days: 1,
+      price: "70 €",
+      image: "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+      url: isEn ? "/en/tours/safari-pied-chitwan" : "/tours/safari-pied-chitwan",
+      matchDesc: isEn 
+        ? "Intense 1-day foot safari through Chitwan's Sal forests and tall elephant grasses: tracking one-horned rhinos, sloth bears and birds."
+        : "Journée entière à pied à Chitwan guidée par un naturaliste : pistage des rhinocéros unicornes, ours lippus et oiseaux au ras du sol.",
+      tags: { 
+        profile: ["nature_lover", "adventurer", "cultural_mindful"],
+        duration: ["short"],
+        group: ["solo", "couple", "friends_photo"],
+        style: ["lodge", "culture_spirit", "mixed"],
+        dream: ["rhino_birds", "tiger"]
+      },
+      scoreWeight: 10
+    },
+    {
+      slug: "safari-jeep-chitwan",
+      title: isEn ? "Private Jeep Safari in Chitwan National Park (1 Day)" : "Safari en Jeep au Parc National de Chitwan (1 jour)",
+      days: 1,
+      price: "190 €",
+      image: "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+      url: isEn ? "/en/tours/safari-jeep-chitwan" : "/tours/safari-jeep-chitwan",
+      matchDesc: isEn 
+        ? "Full-day private 4x4 safari across Chitwan's savannas and riverbanks: prime sightings of rhinos, gharials, tigers and wild elephants."
+        : "Exploration complète en jeep 4x4 privatisée à travers les plaines et cours d'eau de Chitwan : rhinocéros unicornes, gavials, ours et tigres.",
+      tags: { 
+        profile: ["nature_lover", "cultural_mindful", "photographer"],
+        duration: ["short"],
+        group: ["family", "couple", "solo", "friends_photo"],
+        style: ["lodge", "culture_spirit"],
+        dream: ["rhino_birds", "tiger"]
+      },
+      scoreWeight: 10
+    },
+    {
       slug: "rafting-safari",
       title: isEn ? "Wild Rivers & Hidden Heritage – Rafting & Expedition (18 Days)" : "Rivières sauvages et patrimoines cachés – expédition et rafting (18 jours)",
       days: 18,
@@ -708,9 +784,21 @@ const isEn = lang === 'en';
 
       if (tour.tags.profile && tour.tags.profile.includes(quizAnswers.profile)) score += 30; // Primary intent
       if (tour.tags.dream && tour.tags.dream.includes(quizAnswers.dream)) score += 25; // Dream focus
-      if (tour.tags.duration && tour.tags.duration.includes(quizAnswers.duration)) score += 20; // Time constraint
+      
+      // Time constraint: hard filter weighting so duration matches decisively
+      if (tour.tags.duration && tour.tags.duration.includes(quizAnswers.duration)) {
+        score += 45;
+      } else {
+        score -= 20; // penalize mismatching durations
+      }
+
       if (tour.tags.group && tour.tags.group.includes(quizAnswers.group)) score += 15;
       if (tour.tags.style && tour.tags.style.includes(quizAnswers.style)) score += 15;
+
+      // Special bonus for 1-day safari excursions when short duration is selected
+      if (quizAnswers.duration === 'short' && (tour.slug.startsWith('safari-pied-') || tour.slug.startsWith('safari-jeep-'))) {
+        score += 15;
+      }
 
       return {
         ...tour,
