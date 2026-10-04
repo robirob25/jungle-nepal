@@ -1921,5 +1921,48 @@
         "desc": "Departure at 6:30 AM with dugout wooden canoe crossing of Rapti river. Tracking in forests and grasslands. Bush picnic lunch included. Return around 6:00 PM."
       }
     ]
+  },
+  {
+    "slug": "safari-jeep-bardia",
+    "rawSlug": "safari-jeep-bardia",
+    "title": "Private Jeep Safari in Bardia National Park",
+    "duration": "1 day",
+    "daysCount": 1,
+    "price": "190€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Private 4x4 Jeep",
+    "rating": 5.0,
+    "reviews": 19,
+    "difficulty": "Easy",
+    "style": "Private 4x4 & Deep Tracking",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 3,
+      "nightlife": 0
+    },
+    "overview": "Explore remote areas of Bardia in a private 4x4 safari Jeep. Cross rivers and access remote wildlife corridors with a professional driver, senior jungle guide, and elite tracker in search of the Bengal tiger.",
+    "highlights": [
+      "Private 4x4 vehicle with professional driver, fuel, and park permits included.",
+      "Elite field trio: 1 driver + 1 senior jungle guide + 1 elite tracker.",
+      "Access remote wild corridors and floodplains unreachable on foot in a single day.",
+      "Bush picnic lunch at a wild watchtower included + optional night at Pawan's (+12€)."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_jeep_chauffeur_bardia.webp",
+      "/assets/tours_thumbs/safari_jeep_tigre_bengale_bardia.webp",
+      "/assets/tours_thumbs/safari_jeep_elephants_sauvages_bardia.webp",
+      "/assets/tours_thumbs/safari_jeep_guide_monoculaire_bardia.webp",
+      "/assets/tours_thumbs/rhino_vegetation_bardia.webp"
+    ],
+    "days": [
+      {
+        "day": 1,
+        "title": "Day 1 – Full-Day 4x4 Exploration of Deep Bardia Sectors",
+        "desc": "Departure at 06:00 AM by private jeep. Morning track inspection in the Sal forest, elephant corridors, watchtower picnic lunch, and riverside hides along the Geruwa. Return around 06:00 PM."
+      }
+    ]
   }
 ]
