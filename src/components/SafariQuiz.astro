@@ -522,6 +522,25 @@ const isEn = lang === 'en';
       scoreWeight: 10
     },
     {
+      slug: "rafting-safari-bardia",
+      title: isEn ? "Karnali River Rafting Safari in Bardia (1 Day)" : "Rafting Safari sur la rivière Karnali à Bardia (1 jour)",
+      days: 1,
+      price: "190 €",
+      image: "/assets/tours_thumbs/rafting_karnali_guide_voyageur_duo.webp",
+      url: isEn ? "/en/tours/rafting-safari-bardia" : "/tours/rafting-safari-bardia",
+      matchDesc: isEn 
+        ? "Silent full-day river rafting safari down the Karnali in Bardia: stealth observation of river dolphins, gharial crocodiles, bathing elephants & tigers."
+        : "Journée d'immersion fluviale silencieuse en raft privatisé sur la rivière Karnali : dauphins du Gange, crocodiles gavials, éléphants et tigres.",
+      tags: { 
+        profile: ["adventurer", "nature_lover", "photographer"],
+        duration: ["short"],
+        group: ["couple", "solo", "family", "friends_photo"],
+        style: ["lodge", "mixed", "camping"],
+        dream: ["river_rafting", "tiger", "rhino_birds"]
+      },
+      scoreWeight: 10
+    },
+    {
       slug: "rafting-safari",
       title: isEn ? "Wild Rivers & Hidden Heritage – Rafting & Expedition (18 Days)" : "Rivières sauvages et patrimoines cachés – expédition et rafting (18 jours)",
       days: 18,
@@ -796,7 +815,7 @@ const isEn = lang === 'en';
       if (tour.tags.style && tour.tags.style.includes(quizAnswers.style)) score += 15;
 
       // Special bonus for 1-day safari excursions when short duration is selected
-      if (quizAnswers.duration === 'short' && (tour.slug.startsWith('safari-pied-') || tour.slug.startsWith('safari-jeep-'))) {
+      if (quizAnswers.duration === 'short' && (tour.slug.startsWith('safari-pied-') || tour.slug.startsWith('safari-jeep-') || tour.slug === 'rafting-safari-bardia')) {
         score += 15;
       }
 

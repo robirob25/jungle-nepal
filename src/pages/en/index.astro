@@ -46,7 +46,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <!-- Center: Navigation épurée blanche -->
     <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] font-bold text-white/90 drop-shadow absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">All 20 Expeditions</a>
+      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">All 21 Expeditions</a>
       <div class="relative group py-2">
           <a href="/en/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
             <span>Destinations</span>
@@ -165,7 +165,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <!-- 1. All Expeditions -->
       <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
-        <span>All 20 Expeditions</span>
+        <span>All 21 Expeditions</span>
         <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">20</span>
       </a>
 
@@ -265,7 +265,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </a>
 
       <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="w-full text-center py-3.5 px-4 rounded-2xl bg-[#0e5c3e] flex items-center justify-center text-center hover:bg-[#0c6d46] text-white font-black text-xs shadow transition-all">
-        Explore All 20 Expeditions →
+        Explore All 21 Expeditions →
       </a>
     </div>
 
@@ -430,12 +430,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
             <div class="relative mt-0.5">
                                                       <select id="search-dest" name="destination" aria-label="Choose a destination or expedition type" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">All 20 Expeditions</option>
-            <option value="sejours-courts">Short Stays (8 tours)</option>
-            <option value="safari">Safaris & Big Cats (16 tours)</option>
+            <option value="all">All 21 Expeditions</option>
+            <option value="sejours-courts">Short Stays (9 tours)</option>
+            <option value="safari">Safaris & Big Cats (17 tours)</option>
             <option value="bivouac">Jungle Bivouacs & Wild Nights (5 tours)</option>
             <option value="chitwan">Rhinos & Chitwan National Park (5 tours)</option>
-            <option value="rafting">Rafting & River Expeditions (3 tours)</option>
+            <option value="rafting">Rafting & River Expeditions (4 tours)</option>
             <option value="mustang-himalaya">Himalayas, Mustang & Spirituality (7 tours)</option>
             <option value="grand-tour">360° Total Immersion Tours (6 tours)</option>
           </select>
@@ -498,16 +498,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
         <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
           <span>All Expeditions</span>
-          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">20</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">21</span>
         </button>
         <button type="button" onclick="filterTrips('sejours-courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="sejours-courts">
-          <span>Short Stays (8)</span>
+          <span>Short Stays (9)</span>
         </button>
         <button type="button" onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
           <span>Jungle & Mountain Blend (6)</span>
         </button>
         <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
-          <span>Safaris & Big Cats (16)</span>
+          <span>Safaris & Big Cats (17)</span>
         </button>
         <button type="button" onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
           <span>Jungle Bivouacs & Wild Nights (5)</span>
@@ -516,7 +516,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <span>Rhinos & Chitwan (5)</span>
         </button>
         <button type="button" onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="rafting">
-          <span>Rafting & River Expeditions (3)</span>
+          <span>Rafting & River Expeditions (4)</span>
         </button>
         <button type="button" onclick="filterTrips('mustang-himalaya')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="mustang-himalaya">
           <span>Himalaya, Mustang & Spirituality (7)</span>
@@ -534,7 +534,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 6. THE 20 EXPEDITIONS (FULL GRID) -->
+  <!-- 6. THE 21 EXPEDITIONS (FULL GRID) -->
   <!-- ========================================================================= -->
   <section id="prochains-departs" class="scroll-mt-20 sm:scroll-mt-24 pt-6 sm:pt-8 lg:pt-10 pb-16 sm:pb-20 bg-[#faf8f5]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -4624,7 +4624,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Direct Action Bar -->
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#prochains-departs" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/40 hover:scale-100 active:scale-95 transition-all text-center">
-            Explore All 20 Expeditions 2026/2027 →
+            Explore All 21 Expeditions 2026/2027 →
           </a>
           <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm backdrop-blur-md transition-all text-center flex items-center justify-center gap-2 whitespace-nowrap">
             <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>

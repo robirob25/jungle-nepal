@@ -46,7 +46,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     <!-- Center: Navigation épurée blanche -->
     <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] font-bold text-white/90 drop-shadow absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">Tous les 20 séjours</a>
+      <a href="#prochains-departs" class="hover:text-amber-100 transition-colors">Tous les 21 séjours</a>
       <div class="relative group py-2">
           <a href="/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
             <span>Destinations</span>
@@ -165,7 +165,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <!-- 1. Tous les séjours -->
       <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
-        <span>Tous les 20 séjours</span>
+        <span>Tous les 21 séjours</span>
         <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">20</span>
       </a>
 
@@ -265,7 +265,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </a>
 
       <a href="/#prochains-departs" onclick="toggleMobileMenu()" class="w-full text-center py-3.5 px-4 rounded-2xl bg-[#0e5c3e] flex items-center justify-center text-center hover:bg-[#0c6d46] text-white font-black text-xs shadow transition-all">
-        Explorer les 20 séjours et départs →
+        Explorer les 21 séjours et départs →
       </a>
     </div>
 
@@ -432,12 +432,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
             <div class="relative mt-0.5">
                                                       <select id="search-dest" name="destination" aria-label="Choisir une destination ou un type de séjour" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">Tous les séjours (20)</option>
-            <option value="sejours-courts">Séjours courts (8 séjours)</option>
-            <option value="safari">Safaris & Grands Félins (16 séjours)</option>
+            <option value="all">Tous les séjours (21)</option>
+            <option value="sejours-courts">Séjours courts (9 séjours)</option>
+            <option value="safari">Safaris & Grands Félins (17 séjours)</option>
             <option value="bivouac">Bivouacs & Nuits Sauvages (5 séjours)</option>
             <option value="chitwan">Rhinocéros & Parc de Chitwan (5 séjours)</option>
-            <option value="rafting">Rafting & Expéditions Rivières (3 séjours)</option>
+            <option value="rafting">Rafting & Expéditions Rivières (4 séjours)</option>
             <option value="mustang-himalaya">Himalaya, Mustang & Spiritualité (7 séjours)</option>
             <option value="grand-tour">Grands Tours Immersion 360° (6 séjours)</option>
           </select>
@@ -500,16 +500,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div id="categories-scroll-container" class="flex-1 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
         <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
           <span>Tous les séjours</span>
-          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">20</span>
+          <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">21</span>
         </button>
         <button type="button" onclick="filterTrips('sejours-courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="sejours-courts">
-          <span>Séjours courts (8)</span>
+          <span>Séjours courts (9)</span>
         </button>
         <button type="button" onclick="filterTrips('grand-tour')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="grand-tour">
           <span>Mixe jungle et montagne (6)</span>
         </button>
         <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
-          <span>Safaris et grands félins (16)</span>
+          <span>Safaris et grands félins (17)</span>
         </button>
         <button type="button" onclick="filterTrips('bivouac')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="bivouac">
           <span>Bivouacs et nuits sauvages (5)</span>
@@ -518,7 +518,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <span>Rhinocéros et Chitwan (5)</span>
         </button>
         <button type="button" onclick="filterTrips('rafting')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="rafting">
-          <span>Rafting et expéditions rivières (3)</span>
+          <span>Rafting et expéditions rivières (4)</span>
         </button>
         <button type="button" onclick="filterTrips('mustang-himalaya')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="mustang-himalaya">
           <span>Himalaya, Mustang et spiritualité (7)</span>
@@ -544,7 +544,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-12">
         <div class="flex-1">
           <h2 id="tours-section-title" class="font-black text-2xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight inline-flex flex-wrap items-center">
-            <span class="whitespace-nowrap">Les 20 séjours&nbsp;</span>
+            <span class="whitespace-nowrap">Les 21 séjours&nbsp;</span>
             <span class="inline-grid place-items-center w-[105px] sm:w-[155px] md:w-[195px] h-[1.25em] text-center select-none overflow-visible shrink-0 align-middle">
               <span id="kinetic-immersion" class="inline-block text-[#0e5c3e] transition-all duration-200 transform text-center leading-none whitespace-nowrap">immersifs</span>
             </span>
@@ -1071,6 +1071,70 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
               </div>
               <a href="/tours/safari-jeep-chitwan" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
+                <span>Découvrir l'activité</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- CIRCUIT : RAFTING SAFARI BARDIA (1 JOUR / 190€) -->
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts rafting bardia" data-title="rafting safari – parc national de bardia">
+          
+          <div class="relative">
+            <a href="/tours/rafting-safari-bardia" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
+              <img loading="lazy" 
+                src="/assets/tours_thumbs/rafting_karnali_guide_voyageur_duo.webp" 
+                alt="Rafting safari au fil de l'eau sur la rivière Karnali à Bardia" 
+                class="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                decoding="async"
+              />
+              
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                <span class="bg-[#0e8354] text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                  Rafting privatisé
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs z-10">
+                <div class="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                  <span class="font-bold text-slate-100">1 jour</span>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500 text-jungle-950 font-black px-2.5 py-1 rounded-full shadow">
+                  <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>5.0 (18)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50/50">
+            <div>
+              <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                <span>Bardia Sauvage • Au fil de l'eau</span>
+              </div>
+              <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
+                <a href="/tours/rafting-safari-bardia">Rafting safari au parc national de Bardia</a>
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 line-clamp-2 leading-relaxed font-normal">
+                Descendez les eaux sauvages de la Karnali en raft privatisé avec barreur pro, guide naturaliste et pisteur pour observer dauphins du Gange, gavials et tigres.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-200/80">
+              <div class="flex items-center justify-between gap-2">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">Tarif tout compris</p>
+                  <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight leading-none">190€</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">Pique-nique & Transferts</span>
+                </div>
+              </div>
+              <a href="/tours/rafting-safari-bardia" class="w-full mt-3.5 py-3.5 px-5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-emerald-950/20 active:scale-98 transition-all text-center leading-none min-h-[46px]">
                 <span>Découvrir l'activité</span>
                 <span>→</span>
               </a>
@@ -4501,7 +4565,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
         <div class="flex items-center gap-3 shrink-0">
           <a href="#prochains-departs" class="px-6 py-3 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-100 hover:scale-100 active:scale-95 transition-all shadow-lg">
-            Explorer les 20 séjours faune →
+            Explorer les 21 séjours faune →
           </a>
         </div>
       </div>
@@ -4627,7 +4691,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Direct Action Bar -->
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#prochains-departs" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/40 hover:scale-100 active:scale-95 transition-all text-center">
-            Explorer les 20 séjours 2026/2027 →
+            Explorer les 21 séjours 2026/2027 →
           </a>
           <a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm backdrop-blur-md transition-all text-center flex items-center justify-center gap-2 whitespace-nowrap">
             <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
