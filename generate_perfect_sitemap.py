@@ -89,13 +89,37 @@ for route, priority, changefreq in STATIC_ROUTES:
     <xhtml:link rel="alternate" hreflang="x-default" href="{fr_url}"/>
   </url>""")
 
-# 2. Tours and Activities Routes (FR & EN)
-for tour in TOURS:
-    fr_url = f"https://junglenepal.com/tours/{tour}/"
-    en_url = f"https://junglenepal.com/en/tours/{tour}/"
+TOUR_MAPPING = {
+    "safari-pied-bardia": "bardia-walking-safari",
+    "safari-jeep-bardia": "bardia-jeep-safari",
+    "safari-pied-chitwan": "chitwan-walking-safari",
+    "safari-jeep-chitwan": "chitwan-jeep-safari",
+    "rafting-safari-bardia": "bardia-rafting-safari",
+    "bardia-explorateur": "bardia-tiger-safari-5-days",
+    "jungle-extreme": "nepal-wildlife-safari-15-days",
+    "bardia-nuit-sauvage": "bardia-bivouac-camping-safari",
+    "chitwan-culture": "chitwan-safari-cultural-tour",
+    "chitwan-bardia-complete": "chitwan-bardia-combined-safari",
+    "nepal-sauvage": "wild-nepal-safari-annapurna-trek",
+    "bardia-babai-camping": "babai-valley-wild-camping-safari",
+    "babai-special": "babai-valley-tiger-tracking-5-days",
+    "rafting-safari": "karnali-rafting-and-wildlife-safari",
+    "panthere-des-neiges": "snow-leopard-expedition-nepal",
+    "rara-lake-bardia": "rara-lake-bardia-expedition",
+    "nepal-immersion-totale": "nepal-wildlife-culture-immersion",
+    "carnet-de-voyage": "nepal-sketching-travel-journal-tour",
+    "immersion-spirituelle": "himalaya-spiritual-immersion-tour",
+    "dashain-immersion-culturelle": "dashain-festival-tharu-cultural-tour",
+    "tiji-mustang": "tiji-festival-upper-mustang-trek"
+}
+
+# 2. Tours and Activities Routes (FR & EN with strict international SEO slugs)
+for fr_slug, en_slug in TOUR_MAPPING.items():
+    fr_url = f"https://junglenepal.com/tours/{fr_slug}/"
+    en_url = f"https://junglenepal.com/en/tours/{en_slug}/"
     
     # Higher priority for 1-day activities and key flagship tours
-    priority = "0.9" if tour in ["safari-pied-bardia", "safari-jeep-bardia", "safari-pied-chitwan", "bardia-explorateur", "chitwan-culture"] else "0.85"
+    priority = "0.9" if fr_slug in ["safari-pied-bardia", "safari-jeep-bardia", "safari-pied-chitwan", "bardia-explorateur", "chitwan-culture"] else "0.85"
     
     xml_entries.append(f"""  <url>
     <loc>{fr_url}</loc>

@@ -26,7 +26,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/dashain-immersion-culturelle"
+    "url": "https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour"
   },
   "provider": {
     "@type": "TravelAgency",
@@ -109,6 +109,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- CENTER: STREAMLINED NAVIGATION -->
         <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-slate-700">
           <a href="/en/#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Tours & expeditions</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
 
           <!-- Destinations Dropdown -->
           <div class="relative group py-2">
@@ -217,6 +218,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
         <span>Tours & expeditions</span>
         <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">15</span>
+      </a>
+
+      <!-- Activities -->
+      <a href="/en/#activites" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+        <span class="flex items-center gap-2.5">
+          <span>Activities</span>
+        </span>
+        <span class="bg-amber-500 text-slate-950 text-[11px] px-2.5 py-0.5 rounded-full font-black">5</span>
       </a>
 
       <div class="rounded-2xl bg-white/5 overflow-hidden">
@@ -1212,7 +1221,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Card 1: Jungle Extrême -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/jungle-extreme" class="relative h-72 sm:h-80 overflow-hidden block">
+            <a href="/en/tours/nepal-wildlife-safari-15-days" class="relative h-72 sm:h-80 overflow-hidden block">
               <img decoding="async" 
                 src="/assets/drive_photos/adrien_tigre1.webp" 
                 alt="Extreme Jungle – Wildlife Special" 
@@ -1238,7 +1247,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5">Bardia • Wildlife Special</div>
               <h3 class="font-black text-xl text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
-                <a href="/en/tours/jungle-extreme">Extreme Jungle – Wildlife Special</a>
+                <a href="/en/tours/nepal-wildlife-safari-15-days">Extreme Jungle – Wildlife Special</a>
               </h3>
               <p class="mt-3 text-sm text-slate-600 line-clamp-2">Intensive immersion dedicated to tracking Bengal tigers and rhinos on foot with our native master trackers.</p>
             </div>
@@ -1249,7 +1258,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   <span class="font-black text-2xl text-slate-950">990€</span>
                 </div>
               </div>
-              <a href="/en/tours/jungle-extreme" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
+              <a href="/en/tours/nepal-wildlife-safari-15-days" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
                 <span>Explore Tour</span> <span>→</span>
               </a>
             </div>
@@ -1259,7 +1268,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Card 2: Népal Immersion Totale -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/nepal-immersion-totale" class="relative h-72 sm:h-80 overflow-hidden block">
+            <a href="/en/tours/nepal-wildlife-culture-immersion" class="relative h-72 sm:h-80 overflow-hidden block">
               <img decoding="async" 
                 src="/assets/drive_photos/adrien_bhaktapur2.webp" 
                 alt="Nepal Total Immersion: Culture, Wildlife & Adventure" 
@@ -1280,7 +1289,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5">Culture & Nature</div>
               <h3 class="font-black text-xl text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
-                <a href="/en/tours/nepal-immersion-totale">Nepal Total Immersion: Culture & Wildlife</a>
+                <a href="/en/tours/nepal-wildlife-culture-immersion">Nepal Total Immersion: Culture & Wildlife</a>
               </h3>
               <p class="mt-3 text-sm text-slate-600 line-clamp-2">Kathmandu royal heritage, Trisuli rafting and deep walking safaris across Nepal's wild sanctuaries.</p>
             </div>
@@ -1291,7 +1300,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   <span class="font-black text-2xl text-slate-950">2,590€</span>
                 </div>
               </div>
-              <a href="/en/tours/nepal-immersion-totale" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
+              <a href="/en/tours/nepal-wildlife-culture-immersion" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
                 <span>Explore Tour</span> <span>→</span>
               </a>
             </div>
@@ -1301,7 +1310,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Card 3: Carnet de Voyage -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/carnet-de-voyage" class="relative h-72 sm:h-80 overflow-hidden block">
+            <a href="/en/tours/nepal-sketching-travel-journal-tour" class="relative h-72 sm:h-80 overflow-hidden block">
               <img decoding="async" 
                 src="/assets/tours_thumbs/antoine_wild5.webp" 
                 alt="Nepal Sketchbook & Travel Journal" 
@@ -1322,7 +1331,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5">Art & Immersion</div>
               <h3 class="font-black text-xl text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
-                <a href="/en/tours/carnet-de-voyage">Nepal Sketchbook & Travel Journal</a>
+                <a href="/en/tours/nepal-sketching-travel-journal-tour">Nepal Sketchbook & Travel Journal</a>
               </h3>
               <p class="mt-3 text-sm text-slate-600 line-clamp-2">Sketching Nepal's soul from the royal courtyards of Bhaktapur to the wild riverbanks of Bardia.</p>
             </div>
@@ -1333,7 +1342,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                   <span class="font-black text-2xl text-slate-950">2,100€</span>
                 </div>
               </div>
-              <a href="/en/tours/carnet-de-voyage" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
+              <a href="/en/tours/nepal-sketching-travel-journal-tour" class="w-full mt-3 py-3 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs flex items-center justify-center gap-2">
                 <span>Explore Tour</span> <span>→</span>
               </a>
             </div>

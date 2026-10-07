@@ -12,22 +12,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "name": "Bardia: Private 4x4 Jeep Safari in Bardia National Park – Full Day Wildlife Quest",
-  "description": "Full day private 4x4 Jeep safari exploration deep into Bardia National Park. Track royal Bengal tigers, wild elephants, and one-horned rhinos with private driver, senior naturalist guide, and expert tracker.",
-  "image": "https://junglenepal.com/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
+  "name": "Bardia: Walking Safari in Bardia – Full Day in Nepal's Jungle",
+  "description": "A full day deep into the heart of Bardia National Park on foot. Track Bengal tigers, one-horned rhinos, and wild Asian elephants with our senior jungle guides and trackers.",
+  "image": "https://junglenepal.com/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
   "touristType": [
     "Nature Lovers",
     "Wildlife Photographers",
     "Adventurers",
-    "Families"
+    "Hikers"
   ],
   "offers": {
     "@type": "Offer",
-    "price": "190",
+    "price": "50",
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/safari-jeep-bardia"
+    "url": "https://junglenepal.com/en/tours/bardia-walking-safari"
   },
   "provider": {
     "@type": "TravelAgency",
@@ -45,7 +45,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "19",
+    "reviewCount": "24",
     "bestRating": "5"
   },
   "itinerary": {
@@ -57,8 +57,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         "position": 1,
         "item": {
           "@type": "TouristAttraction",
-          "name": "Day 1 – Full-Day 4x4 Exploration of Deep Bardia Sectors",
-          "description": "Departure at 06:00 AM by private jeep. Morning track inspection in the Sal forest, elephant corridors, watchtower picnic lunch, and riverside hides along the Geruwa. Return around 06:00 PM."
+          "name": "Day 1 – Full Day Walking Safari in Bardia",
+          "description": "Departure at 6:30 AM for a full day of foot tracking and wildlife observation in Bardia jungle. Bush lunch included. Return around 6:00 PM."
         }
       }
     ]
@@ -67,13 +67,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </script>
 
 
-<Layout title="Bardia: Private Jeep Safari in Bardia National Park – Full Day 4x4 | Jungle Nepal Adventure" lang="en">
+<Layout title="Bardia: Walking Safari in Bardia – Full Day in Nepal's Jungle | Jungle Nepal Adventure" lang="en">
 
   <!-- TOP BAR PROMO -->
   <aside class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 relative z-50 text-center border-b border-emerald-800/20" id="top-bar">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
-        <span><strong class="text-amber-300">Private 4x4 Safari Expedition</strong> in Bardia • Deep Wilderness Access & Tiger Tracking</span>
+        <span><strong class="text-amber-300">100% Wild Foot Tracking</strong> in Bardia • Certified Native Master Guides</span>
       </div>
       <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
     </div>
@@ -84,7 +84,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-4 h-14 sm:h-16">
         <div class="flex items-center shrink-0">
-          <a href="/en/" class="flex items-center gap-2 group">
+          <a href="/en" class="flex items-center gap-2 group">
             <img 
               src="/assets/logo_header_dark.png" 
               alt="Jungle Nepal Adventure" 
@@ -98,7 +98,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-slate-700">
-          <a href="/en/#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">All Expeditions</a>
+          <a href="/en#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">All 17 tours</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
 
           <div class="relative group py-2">
             <a href="/en/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1 cursor-pointer whitespace-nowrap">
@@ -113,46 +114,50 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <a href="/en/destinations/bardia" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
                     <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Bardia National Park</p>
-                    <p class="text-[10px] text-slate-400">Bengal Tigers & Walking / 4x4 Safaris</p>
+                    <p class="text-[10px] text-slate-400">Bengal tigers & walking safaris</p>
                   </div>
                 </a>
                 <a href="/en/destinations/chitwan" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
                     <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Chitwan National Park</p>
-                    <p class="text-[10px] text-slate-400">One-Horned Rhinos & Rapti Canoes</p>
+                    <p class="text-[10px] text-slate-400">One-horned rhinos & Rapti canoes</p>
                   </div>
                 </a>
                 <a href="/en/destinations/suklaphanta" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
                     <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Suklaphanta National Park</p>
-                    <p class="text-[10px] text-slate-400">Swamp Deer & Wild West</p>
+                    <p class="text-[10px] text-slate-400">Swamp deer & wild grasslands</p>
                   </div>
                 </a>
                 <a href="/en/destinations/annapurna" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
                     <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Annapurna & Pokhara</p>
-                    <p class="text-[10px] text-slate-400">High Altitude Treks & Alpine Passes</p>
+                    <p class="text-[10px] text-slate-400">Legendary peaks & scenic balconies</p>
                   </div>
                 </a>
                 <a href="/en/destinations/katmandou" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                   <div class="flex-1">
-                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Kathmandu Valley</p>
-                    <p class="text-[10px] text-slate-400">UNESCO Heritage & Sacred Temples</p>
+                    <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">Kathmandu</p>
+                    <p class="text-[10px] text-slate-400">Valley of kings & sacred temples</p>
                   </div>
                 </a>
+                <div class="pt-2 border-t border-white/10 mt-1">
+                  <a href="/en/destinations" class="block w-full text-center py-2 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs transition-colors shadow">
+                    View all destinations →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <a href="/en/#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Our Guides</a>
-          <a href="/en/#galerie-faune" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Gallery</a>
-          <a href="/en/about" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">About Us</a>
-          <a href="/en/blog" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Blog</a>
+          <a href="/en#concept" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Our guides</a>
+          <a href="/en#galerie-faune" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Gallery</a>
+          <a href="/en/about" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">About</a>
+          <a href="/blog" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Blog</a>
           <a href="/en/contact" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Contact</a>
         </nav>
 
         <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
-          <!-- LANGUAGE SWITCHER (GLOBE DROPDOWN) -->
           <div class="relative group/lang py-1">
             <button onclick="toggleLangMenu(this)" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-slate-100 hover:bg-slate-200 border-slate-200 text-slate-700 border backdrop-blur-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer" aria-label="Change language">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -169,12 +174,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
           </div>
 
-          <button onclick="openTourBookingModal()" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white text-xs font-bold transition-all shadow-sm cursor-pointer whitespace-nowrap">
-            <span>Book Now (190€)</span>
-          </button>
-
-          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 cursor-pointer" aria-label="Mobile Menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 backdrop-blur-md flex flex-col items-center justify-center gap-1 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-sm p-1.5" aria-label="Menu">
+            <span class="w-4 h-[2px] bg-slate-900 rounded-full block"></span>
+            <span class="w-4 h-[2px] bg-slate-900 rounded-full block"></span>
+            <span class="w-4 h-[2px] bg-slate-900 rounded-full block"></span>
           </button>
         </div>
       </div>
@@ -182,21 +185,102 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </header>
 
   <!-- MOBILE NAVIGATION DRAWER -->
-  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl p-6 text-white overflow-y-auto">
-    <div class="flex items-center justify-between pb-6 border-b border-white/10">
-      <img src="/assets/logo_nav_white.webp" alt="Jungle Nepal Adventure" class="h-10 w-auto"/>
-      <button onclick="toggleMobileMenu()" class="p-2 text-white/80 hover:text-white text-xl">✕</button>
+  <div id="mobile-menu" style="background-color: #041d13 !important;" class="hidden lg:hidden fixed inset-x-3 top-20 z-50 max-h-[85vh] overflow-y-auto bg-[#041d13] border border-white/15 rounded-3xl p-5 text-white shadow-[0_25px_60px_rgba(0,0,0,0.95)] space-y-4 font-sans">
+    <div class="flex items-center justify-between pb-3 border-b border-white/10">
+      <span class="text-xs font-black uppercase tracking-widest text-slate-200">Navigation</span>
+      <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-sm font-bold transition-colors cursor-pointer" aria-label="Close menu">
+        ✕
+      </button>
     </div>
-    <div class="py-6 space-y-4 text-base font-semibold">
-      <a href="/en/#prochains-departs" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">All Expeditions</a>
-      <a href="/en/destinations/bardia" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Bardia National Park</a>
-      <a href="/en/destinations/chitwan" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Chitwan National Park</a>
-      <a href="/en/destinations/suklaphanta" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Suklaphanta National Park</a>
-      <a href="/en/#concept" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Our Guides</a>
-      <a href="/en/#galerie-faune" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Wildlife Gallery</a>
-      <a href="/en/about" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">About Us</a>
-      <a href="/en/blog" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Blog</a>
-      <a href="/en/contact" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">Contact & Custom Quote</a>
+
+    <nav class="flex flex-col space-y-1.5 font-bold text-sm">
+      <a href="/en#prochains-departs" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+        <span>All 17 tours</span>
+        <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">17</span>
+      </a>
+
+      <div class="rounded-2xl bg-white/5 overflow-hidden">
+        <button onclick="document.getElementById('mobile-dest-sub').classList.toggle('hidden'); document.getElementById('mobile-dest-arrow').classList.toggle('rotate-180');" class="w-full px-3.5 py-2.5 flex items-center justify-between text-white hover:bg-white/10 transition-colors text-left cursor-pointer">
+          <span class="flex items-center gap-2.5">
+            <span>🗺️</span>
+            <span>Destinations</span>
+          </span>
+          <svg id="mobile-dest-arrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div id="mobile-dest-sub" class="hidden px-2 pb-2.5 space-y-1 border-t border-white/5 pt-2">
+          <a href="/en/destinations/bardia" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            <div>
+              <p class="font-bold text-white">Bardia National Park</p>
+              <p class="text-[10px] text-slate-400">Bengal tigers & walking safaris</p>
+            </div>
+          </a>
+          <a href="/en/destinations/chitwan" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            <div>
+              <p class="font-bold text-white">Chitwan National Park</p>
+              <p class="text-[10px] text-slate-400">One-horned rhinos & Rapti canoes</p>
+            </div>
+          </a>
+          <a href="/en/destinations/suklaphanta" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            <div>
+              <p class="font-bold text-white">Suklaphanta National Park</p>
+              <p class="text-[10px] text-slate-400">Swamp deer & wild grasslands</p>
+            </div>
+          </a>
+          <a href="/en/destinations/annapurna" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            <div>
+              <p class="font-bold text-white">Annapurna & Pokhara</p>
+              <p class="text-[10px] text-slate-400">Legendary peaks & scenic balconies</p>
+            </div>
+          </a>
+          <a href="/en/destinations/katmandou" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/10 text-xs text-slate-300 hover:text-white transition-colors">
+            <div>
+              <p class="font-bold text-white">Kathmandu</p>
+              <p class="text-[10px] text-slate-400">Valley of kings & sacred temples</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="/en#concept" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Our guides
+      </a>
+      <a href="/en#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Gallery
+      </a>
+      <a href="/en/about" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        About
+      </a>
+      <a href="/blog" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Blog
+      </a>
+      <a href="/en/contact" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 text-white transition-colors">
+        Contact
+      </a>
+    </nav>
+
+    <div class="pt-3 border-t border-white/10">
+      <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Languages</p>
+      <div class="grid grid-cols-2 gap-2">
+        <a href={frTargetUrl} class="py-2.5 px-3 rounded-xl bg-white/10 text-white font-extrabold text-xs flex items-center justify-center gap-2 border border-white/10">
+          <span>🇫🇷</span> <span>FR</span>
+        </a>
+        <a href={enTargetUrl} class="py-2.5 px-3 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center gap-2">
+          <span>🇬🇧</span> <span>EN</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-3 border-t border-white/10 flex flex-col gap-2">
+      <a href="https://wa.me/33695413227" target="_blank" class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-white text-slate-950 text-center font-black text-xs shadow hover:bg-slate-100 transition-all">
+        <svg class="w-4 h-4 text-[#0e8354]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        <span>WhatsApp (+33 6 95 41 32 27)</span>
+      </a>
+      <a href="/en#prochains-departs" onclick="toggleMobileMenu()" class="w-full text-center py-3.5 px-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#0c6d46] text-white font-black text-xs shadow transition-all">
+        Explore all 17 tours & departures →
+      </a>
     </div>
   </div>
 
@@ -205,39 +289,40 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     
     <!-- Breadcrumbs -->
     <nav class="flex items-center gap-2 text-xs text-slate-500 font-semibold mb-3 overflow-x-auto whitespace-nowrap">
-      <a href="/en/" class="hover:text-slate-900 flex items-center gap-1">
+      <a href="/en" class="hover:text-slate-900 flex items-center gap-1">
         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
         <span>Home</span>
       </a>
       <span>›</span>
-      <a href="/en/#prochains-departs" class="hover:text-slate-900">Expeditions</a>
+      <a href="/en#prochains-departs" class="hover:text-slate-900">Our 17 Tours</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
       <span>›</span>
-      <span class="text-slate-900 font-bold truncate">Private Jeep Safari in Bardia National Park</span>
+      <span class="text-slate-900 font-bold truncate">Walking safari in Bardia National Park</span>
     </nav>
 
     <!-- Header Title & Badges Row -->
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Private Jeep Safari in Bardia National Park
+          Walking safari in Bardia National Park
         </h1>
         <p class="text-base sm:text-xl font-bold text-[#0e8354] mt-1.5">
-          Explore remote wilderness corridors by private 4x4 Jeep
+          A full day in the heart of the jungle
         </p>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
             <svg class="w-4 h-4 text-amber-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
-            <span>Full Day (06:00 AM – 06:00 PM)</span>
+            <span>Full Day (6:30 AM - 6:00 PM)</span>
           </span>
           <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 font-bold px-3 py-1 rounded-full border border-emerald-200">
             <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            <span>5.0 (19 verified reviews)</span>
+            <span>5.0 (24 verified reviews)</span>
           </div>
           <span class="text-xs font-bold bg-slate-900 text-amber-100 px-3 py-1 rounded-full border border-amber-300/30">
-            Private 4x4 Jeep + Driver
+            1 Guide + 1 Assistant Tracker
           </span>
           <span class="text-xs font-bold bg-emerald-950 text-emerald-300 px-3 py-1 rounded-full border border-emerald-700/40">
-            1 Senior Guide + 1 Lead Tracker
+            Jungle lunch included
           </span>
         </div>
       </div>
@@ -259,7 +344,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <div class="w-7 h-7 rounded-lg bg-white/10 text-[#25D366] flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
               </div>
-              <span class="group-hover/item:text-amber-100 transition-colors">Share on WhatsApp</span>
+              <span class="group-hover/item:text-amber-100 transition-colors">Send via WhatsApp</span>
             </a>
           </div>
         </div>
@@ -269,23 +354,23 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- PHOTO MOSAIC GALLERY (5 PHOTOS) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
-        <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_jeep_groupe_bardia.webp" alt="Explorers and crew in 4x4 safari Jeep in Bardia National Park" class="w-full h-full object-cover object-center transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
+        <img loading="eager" decoding="sync" src="/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp" alt="Tracker seen from behind holding bamboo stick in Bardia" class="w-full h-full object-cover object-left transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(0)"/>
       </div>
       <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
-        <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_jeep_tigre_bengale_bardia.webp" alt="Royal Bengal Tiger in lush jungle vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(1)"/>
+        <img loading="lazy" decoding="async" src="/assets/tours_thumbs/tigre_jungle_marche.webp" alt="Royal Bengal Tiger walking through Bardia jungle" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(1)"/>
       </div>
       <div class="hidden md:flex flex-col gap-3 h-full">
         <div class="h-1/2 overflow-hidden rounded-tr-2xl">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_jeep_elephants_sauvages_bardia.webp" alt="Wild Asian elephants in the grasslands" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/rhino_vegetation_bardia.webp" alt="Greater one-horned rhino in dense vegetation" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(2)"/>
         </div>
         <div class="h-1/2 overflow-hidden rounded-br-2xl relative">
-          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/safari_jeep_guide_monoculaire_bardia.webp" alt="Expert jungle tracker scanning with thermal monocular" class="w-full h-full object-cover object-top transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(3)"/>
+          <img loading="lazy" decoding="async" src="/assets/tours_thumbs/elephant_sal_foret_bardia.webp" alt="Wild elephant under tall Sal forest canopy" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer hover:scale-105 transition-transform duration-500" onclick="openLightbox(3)"/>
         </div>
       </div>
 
       <button onclick="openLightbox(0)" class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md hover:bg-white text-slate-900 font-bold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg border border-slate-200 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer">
         <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
-        <span>View all 7 photos</span>
+        <span>View all 5 photos</span>
       </button>
     </div>
 
@@ -294,22 +379,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex items-center justify-between gap-4">
         <div class="hidden sm:flex items-center gap-2.5 shrink-0 min-w-0">
           <div class="min-w-0">
-            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[240px]">Jeep Safari — Bardia</p>
-            <p class="text-[11px] font-bold text-[#0e8354]"><span id="subnav-price-display">190€</span> <span class="text-slate-400 font-normal">/ pers.</span></p>
+            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[240px]">Walking safari — Bardia</p>
+            <p class="text-[11px] font-bold text-[#0e8354]"><span id="subnav-price-display">50€</span> <span class="text-slate-400 font-normal">/ pers.</span></p>
           </div>
         </div>
 
         <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 overflow-x-auto no-scrollbar text-xs sm:text-sm font-bold text-slate-600 py-1">
           <a href="#apercu" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Overview</a>
-          <a href="#option-nuit" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Pawan Homestay (+€12)</a>
-          <a href="#deroulement" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Itinerary</a>
+          <a href="#option-nuit" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Night at Pawan's (+12€)</a>
+          <a href="#deroulement" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Schedule</a>
           <a href="#inclusions" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Inclusions</a>
           <a href="#avis-voyageurs" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Reviews</a>
           <a href="#faq" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">FAQ</a>
         </div>
 
         <button onclick="openTourBookingModal()" class="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow transition-all cursor-pointer">
-          <span>Book Now (190€)</span>
+          <span>Book Now (50€)</span>
           <span>→</span>
         </button>
       </div>
@@ -321,225 +406,167 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- LEFT COLUMN -->
       <div class="lg:col-span-8 space-y-12 lg:space-y-14">
         
-        <!-- SECTION 1: APERÇU -->
+        <!-- SECTION 1: OVERVIEW -->
         <section id="apercu" class="space-y-6">
           <div class="space-y-4">
             <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
-              Explore remote wilderness corridors of Bardia by private 4x4 Jeep
+              Head into the deep wilderness of Bardia National Park on foot
             </h2>
             <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-              Embark on a full-day motorized expedition deep into the most secluded, untamed sectors of Bardia National Park. A private 4x4 off-road vehicle enables you to cover vast distances, ford jungle rivers, and access isolated wildlife corridors unreachable on foot within a single day.
+              Step into the pristine core of <strong>Bardia National Park</strong> for an entire day dedicated to active wildlife tracking on foot. Away from the noise of jeep engines, walking is the purest, most thrilling, and most respectful way to encounter Asia’s great mammals.
             </p>
-            <p class="text-base text-slate-700 leading-relaxed font-normal">
-              Aboard a specially adapted open-top safari vehicle, you are accompanied by an <strong>experienced jungle driver</strong>, a <strong>senior naturalist guide</strong>, and an <strong>elite tracker</strong>. Together, they navigate deep forest trails and alluvial grasslands, tracking fresh nocturnal pugmarks and reading alarm calls across the canopy.
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Accompanied by an <strong>experienced jungle guide</strong> and a <strong>tracker assistant</strong>, you leave conventional paths to navigate diverse ecosystems, reading fresh tracks, scent markings, and animal movement corridors.
             </p>
-            <p class="text-base text-slate-700 leading-relaxed font-normal">
-              <strong>The primary focus:</strong> maximizing your chances to encounter the king of the jungle, the <strong>Royal Bengal Tiger</strong>. The mobility of the jeep lets you reach remote strategic spots swiftly (such as the far banks of the Karnali river or secluded observation towers) while vastly increasing opportunities to spot <strong>greater one-horned rhinos</strong>, <strong>wild elephants</strong>, <strong>leopards</strong>, herds of <strong>spotted and sambar deer</strong>, as well as fish-eating gharial crocodiles basking on river sandbanks.
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              <strong>The main goal of the day: the Royal Bengal Tiger</strong>. While sightings in pure wilderness can never be guaranteed, the journey is also an exceptional opportunity to track the <strong>Greater one-horned rhino</strong>, <strong>wild Asian elephant herds</strong>, spotted deer, sambars, langurs, and hundreds of bird species.
             </p>
-            <p class="text-base text-slate-700 leading-relaxed font-normal">
-              A bush picnic lunch is shared in the heart of nature atop a secure observation tower overlooking a waterhole or clearing. 100% turnkey experience: all entry permits and official vehicle authorizations are fully handled and included.
-            </p>
-          </div>
-
-          <!-- ETHICS & WILD NATURE COMMITMENT -->
-          <div class="p-5 sm:p-6 rounded-2xl bg-amber-50/80 border border-amber-200/90 text-amber-950 text-xs sm:text-sm space-y-2">
-            <div class="flex items-center gap-2 font-black text-amber-900 uppercase tracking-wider text-xs">
-              <span>⚠️</span>
-              <span>100% Wild Nature & Ethical Wildlife Commitment</span>
-            </div>
-            <p class="leading-relaxed">
-              Wildlife roams freely across a pristine ecosystem spanning nearly 1,000 km². Animal movements are entirely natural and unpredictable; no specific sightings can be guaranteed in advance. Our jeep moves at slow, respectful speeds, with engines shut off near observation blinds to protect animal peace and ensure authentic, undisturbed wildlife viewing.
+            <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Lunch is enjoyed directly inside the jungle beneath ancient Sal trees, allowing you to immerse fully without losing a single moment outside the reserve.
             </p>
           </div>
 
-          <!-- KEY FACTS CARDS -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-              <span class="text-slate-400 font-bold block uppercase text-[10px]">Duration</span>
-              <span class="font-black text-slate-900 text-sm mt-0.5 block">Full Day</span>
-              <span class="text-slate-500 text-[11px]">06:00 AM – 06:00 PM</span>
+          <!-- Wilderness Ethics Warning -->
+          <div class="p-5 sm:p-6 rounded-3xl bg-amber-500/10 border border-amber-500/30 text-slate-900 space-y-2">
+            <div class="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
+              <span class="text-base">⚠️</span>
+              <span>100% Wild Nature Commitment</span>
             </div>
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-              <span class="text-slate-400 font-bold block uppercase text-[10px]">Vehicle</span>
-              <span class="font-black text-slate-900 text-sm mt-0.5 block">Private 4x4 Jeep</span>
-              <span class="text-slate-500 text-[11px]">Open-top Safari Spec</span>
-            </div>
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-              <span class="text-slate-400 font-bold block uppercase text-[10px]">Field Crew</span>
-              <span class="font-black text-slate-900 text-sm mt-0.5 block">Expert Trio</span>
-              <span class="text-slate-500 text-[11px]">Driver + 2 Guides</span>
-            </div>
-            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200/80">
-              <span class="text-[#0e8354] font-bold block uppercase text-[10px]">Meals & Permits</span>
-              <span class="font-black text-[#0e8354] text-sm mt-0.5 block">100% Included</span>
-              <span class="text-slate-600 text-[11px]">Bush picnic + all permits</span>
-            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+              Wildlife roams freely in its natural, unfenced habitat. Animal movements are entirely wild and unpredictable, and no specific encounter (especially with tigers) can be guaranteed. Every walking safari is an authentic adventure guided by field signs, alarm calls, and patience.
+            </p>
           </div>
         </section>
 
-        <!-- SECTION 2: OPTION NUIT CHEZ PAWAN (+€12) -->
-        <section id="option-nuit" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
-          <div>
-            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Local Immersion & Comfort</span>
-            <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">
-              Optional Homestay at Senior Guide Pawan's Home (+€12)
+        <!-- SECTION 2: OPTION NUIT CHEZ PAWAN (GUIDE SENIOR BBC) -->
+        <section id="option-nuit" class="scroll-mt-28 pt-8 border-t border-slate-200">
+          <div class="space-y-4">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Local immersion & comfort</span>
+            <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+              Option: Night at your guide Pawan's place (+12 €)
             </h2>
-            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-              To extend your experience in a warm and authentic family setting, you have the opportunity to stay at Pawan's homestay. Pawan has been an elite wildlife guide and master tracker in Bardia for over 20 years, regularly leading international documentary crews including <strong>BBC Wildlife</strong>.
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+              To extend your experience in an authentic and warm setting, you have the opportunity to stay at <strong>Pawan's place</strong>, a senior guide and elite tracker in Bardia for over 20 years. Pawan regularly guides and accompanies international film crews, including for <strong>BBC</strong> wildlife documentaries.
             </p>
           </div>
 
-          <!-- OPTION BOX -->
-          <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-emerald-950 via-[#0a3d28] to-[#041d13] text-white shadow-xl border border-emerald-700/50 space-y-6">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/10">
-              <div>
-                <span class="text-xs font-bold text-amber-300 uppercase tracking-widest">At Pawan's (BBC Guide • 20+ Years Experience)</span>
-                <h3 class="text-xl sm:text-2xl font-black mt-1">Private AC Room + Traditional Dinner + Breakfast</h3>
+          <!-- Interactive Option Card with bedroom photo preview -->
+          <div id="guide-room-option-card" class="mt-6 p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-emerald-950 to-slate-900 text-white border border-emerald-500/30 shadow-2xl relative overflow-hidden transition-all duration-300 hover:border-emerald-400/50">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center relative z-10">
+              
+              <!-- Left Details -->
+              <div class="md:col-span-8 space-y-3">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-extrabold text-[11px] border border-emerald-400/30 uppercase tracking-wider">At Pawan's (BBC Guide • 20 years exp.)</span>
+                  <span class="text-xs font-bold text-amber-300">+12 € / person</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">
+                  AC Private Room + Traditional Dinner + Breakfast
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                  Stay in a spacious private bedroom equipped with a comfortable bed, air conditioning, a sofa, and an en-suite private bathroom with shower. In the evening, share a traditional homemade Nepali dinner (Dal Bhat) with the family, and enjoy a hearty breakfast the next morning.
+                </p>
+                <ul class="text-xs text-emerald-200/90 space-y-1 pt-1">
+                  <li class="flex items-center gap-2">✓ Air-conditioned private room (AC) with en-suite bathroom and shower</li>
+                  <li class="flex items-center gap-2">✓ Traditional homemade dinner cooked with the family in the evening</li>
+                  <li class="flex items-center gap-2">✓ Complete energizing breakfast the following morning</li>
+                  <li class="flex items-center gap-2">✓ Exclusive discussions with Pawan about his 20 years in the wild and BBC filming stories</li>
+                </ul>
               </div>
-              <div class="text-right shrink-0">
-                <span class="text-2xl sm:text-3xl font-black text-amber-300 font-mono">+12 €</span>
-                <span class="text-xs text-slate-300 block">/ person</span>
+
+              <!-- Right: Mini gallery & CTA -->
+              <div class="md:col-span-4 flex flex-col items-center md:items-end gap-3 pt-2 md:pt-0">
+                <div class="grid grid-cols-2 gap-2 w-full max-w-[240px] cursor-pointer" onclick="openRoomLightbox(0)">
+                  <img src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="AC bedroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
+                  <img src="/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp" alt="En-suite bathroom at Pawan's" class="w-full h-20 object-cover rounded-xl border border-white/20 hover:scale-105 transition-transform" />
+                </div>
+                <div class="text-center md:text-right w-full">
+                  <span class="text-xs text-slate-400 block font-bold uppercase tracking-wider">Total with option</span>
+                  <span class="text-3xl sm:text-4xl font-black text-amber-300 font-mono tracking-tight">62 €</span>
+                </div>
+                <button 
+                  id="toggle-guide-room-btn"
+                  type="button" 
+                  onclick="toggleGuideOption()" 
+                  class="w-full px-5 py-3 rounded-2xl font-black text-xs transition-all duration-200 cursor-pointer shadow-lg bg-[#0e8354] hover:bg-[#0c6d46] text-white flex items-center justify-center gap-2 active:scale-95"
+                >
+                  <span id="guide-room-btn-text">Add option (+12€)</span>
+                  <span id="guide-room-btn-icon">＋</span>
+                </button>
               </div>
+
             </div>
 
-            <!-- Photos Room Pawan -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="rounded-2xl overflow-hidden border border-white/15 h-52 relative group">
-                <img loading="lazy" decoding="async" src="/assets/tours_thumbs/chambre_pawan_bardia.webp" alt="Private AC room at Pawan's home in Bardia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openRoomLightbox(0)"/>
-                <div class="absolute bottom-2 left-2 bg-slate-950/80 px-2.5 py-1 rounded-lg text-[11px] font-bold text-white">Private bedroom with double bed & AC</div>
-              </div>
-              <div class="rounded-2xl overflow-hidden border border-white/15 h-52 relative group">
-                <img loading="lazy" decoding="async" src="/assets/tours_thumbs/salle_de_bain_pawan_bardia.webp" alt="Ensuite private bathroom with shower" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openRoomLightbox(1)"/>
-                <div class="absolute bottom-2 left-2 bg-slate-950/80 px-2.5 py-1 rounded-lg text-[11px] font-bold text-white">Private bathroom with shower</div>
-              </div>
-            </div>
-
-            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-              Stay in a spacious private bedroom equipped with a comfortable bed, air conditioning, sofa, and ensuite private bathroom with shower. Enjoy a traditional home-cooked Nepali dinner (Dal Bhat) in the evening, and a hearty breakfast the next morning.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-200 pt-2">
-              <div class="flex items-center gap-2">
-                <span class="text-amber-400 font-bold">✓</span>
-                <span>Private air-conditioned room (AC) with ensuite bathroom & shower</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-amber-400 font-bold">✓</span>
-                <span>Home-cooked traditional Nepali dinner with the family</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-amber-400 font-bold">✓</span>
-                <span>Hearty breakfast included the next morning</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-amber-400 font-bold">✓</span>
-                <span>Exclusive discussions with Pawan about his BBC filming expeditions</span>
-              </div>
-            </div>
-
-            <!-- Interactive Toggle -->
-            <div class="pt-4 border-t border-white/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <p class="text-xs font-bold text-white">Add Pawan's homestay option to your Jeep safari day:</p>
-                <p class="text-[11px] text-slate-300">Total all-inclusive with option: <strong class="text-amber-300 font-mono text-sm">202 €</strong></p>
-              </div>
-              <label class="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 px-4 py-2.5 rounded-2xl border border-white/20 cursor-pointer transition-all select-none">
-                <input 
-                  type="checkbox" 
-                  id="guide-room-checkbox" 
-                  onchange="toggleGuideOption(this.checked)"
-                  class="w-5 h-5 rounded border-white/30 text-[#0e8354] focus:ring-[#0e8354] cursor-pointer"
-                />
-                <span class="text-xs font-extrabold text-white">Add option (+€12)</span>
-              </label>
-            </div>
           </div>
         </section>
 
-        <!-- SECTION 3: ITINERARY -->
+        <!-- SECTION 3: DAILY SCHEDULE -->
         <section id="deroulement" class="scroll-mt-28 pt-8 border-t border-slate-200 space-y-6">
           <div>
-            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Organization & Itinerary</span>
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Organization and schedule</span>
             <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">
-              Your Typical Jeep Safari Day
+              Your typical walking safari day
             </h2>
           </div>
 
           <div class="space-y-4">
-            <!-- Step 1 -->
             <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                06:00
+                06:30 AM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Early Morning Departure & 4x4 Boarding</h3>
+                <h3 class="font-bold text-slate-900 text-base">Early morning departure & safety briefing</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Direct pickup from your accommodation in Thakurdwara (or Pawan's home). Board your private open-top 4x4 safari jeep and drive to the national park gate. Permit verification (already prepaid) and safety briefing.
+                  Pick-up from your lodge in Thakurdwara (or at Pawan's). Local transfer included to the park entrance gate. Permit verification and silent wilderness tracking protocol briefing from your guide and tracker.
                 </p>
               </div>
             </div>
 
-            <!-- Step 2 -->
             <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                06:45
+                07:30 AM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Entering Deep Sectors & Pugmark Tracking</h3>
+                <h3 class="font-bold text-slate-900 text-base">Sal forest immersion & track stalking</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Enter the park at first light. Slow progression through the cathedral Sal forest, inspecting sandy riverbeds and trails for fresh nocturnal predator tracks. Engine-off listening stops near forest clearings.
+                  Deep exploration of the towering Sal cathedral forest and riverbanks. Guides inspect fresh mud for tiger pugmarks, rhino paths, and listen attentively to deer alarm calls.
                 </p>
               </div>
             </div>
 
-            <!-- Step 3 -->
             <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                10:30
+                12:30 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">River Trails & Megaherbivore Corridors</h3>
+                <h3 class="font-bold text-slate-900 text-base">Jungle picnic lunch in the wild</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Fording secondary channels and exploring elephant migratory corridors and alluvial floodplain feeding grounds frequented by one-horned rhinos.
+                  Restful picnic lunch sheltered under a natural canopy or watchtower (machan) facing an active waterhole.
                 </p>
               </div>
             </div>
 
-            <!-- Step 4 -->
             <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                12:30
+                02:30 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Picnic Lunch at Wild Viewpoint Blind</h3>
+                <h3 class="font-bold text-slate-900 text-base">Riverbank stalking & grassland hide</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Secure stop at an elevated wooden observation tower (Machan) overlooking a waterhole or savanna clearing. Bush picnic lunch while glassing the shores with binoculars.
+                  Tracking along the alluvial plains and gravel islands of the Karnali/Geruwa river where rhinos and big cats emerge to drink.
                 </p>
               </div>
             </div>
 
-            <!-- Step 5 -->
             <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                14:30
+                06:00 PM
               </div>
               <div>
-                <h3 class="font-bold text-slate-900 text-base">Afternoon Drive & Geruwa River Blinds</h3>
+                <h3 class="font-bold text-slate-900 text-base">Return to Thakurdwara & debriefing</h3>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Drive westward towards the wide gravel banks of the Geruwa River. Strategic positioning where animals converge to drink and bathe during warmer afternoon hours.
-                </p>
-              </div>
-            </div>
-
-            <!-- Step 6 -->
-            <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-[#0e8354] font-black text-sm flex items-center justify-center shrink-0 border border-emerald-200">
-                18:00
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-base">Return to Thakurdwara & Debriefing</h3>
-                <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                  Exit the park before dusk. Return to your lodge or Pawan's home to review SD cards and relive the day's highlights over warm masala tea.
+                  Exit the park before dusk. Return to your lodge or to Pawan's homestay (if option selected) to discuss the day's encounters over warm masala tea.
                 </p>
               </div>
             </div>
@@ -549,47 +576,35 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- SECTION 4: INCLUSIONS & EXCLUSIONS -->
         <section id="inclusions" class="scroll-mt-28 pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl text-slate-950 mb-6 tracking-tight">
-            What's Included in Your Expedition
+            What is included in your safari
           </h2>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="p-6 rounded-3xl bg-emerald-50/70 border border-emerald-200/80 space-y-3">
               <h3 class="font-black text-emerald-950 text-sm uppercase tracking-wider flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-[#0e8354]"></span>
-                <span>Included in Full All-Inclusive Price (€190)</span>
+                <span>Included in base rate (50 €)</span>
               </h3>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Official Bardia National Park entry permit (included for traveler)</span>
+                  <span>1 experienced native jungle guide</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Government 4x4 vehicle national park entry permit & tax</span>
+                  <span>1 assistant tracker for enhanced safety</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Private 4x4 safari Jeep for the day with professional driver and fuel</span>
+                  <span>Packed lunch taken directly inside the jungle</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>1 experienced senior naturalist jungle guide native to Bardia</span>
+                  <span>Roundtrip local transportation to the park gate</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>1 assistant tracker for maximum safety and double spotting power</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Bush picnic lunch enjoyed in the heart of the jungle</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Pickup and return to your local accommodation in Thakurdwara</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-[#0e8354] font-bold">✓</span>
-                  <span>Full safety briefing and orientation</span>
+                  <span>Full safety briefing and wildlife protocols</span>
                 </li>
               </ul>
             </div>
@@ -597,20 +612,24 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3">
               <h3 class="font-black text-slate-800 text-sm uppercase tracking-wider flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-                <span>Not Included</span>
+                <span>Not included</span>
               </h3>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                  <span class="text-slate-400 font-bold">✕</span>
+                  <span>Official Bardia Park Entrance Permit (government fee)</span>
+                </li>
                 <li class="flex items-start gap-2">
                   <span class="text-slate-400 font-bold">✕</span>
                   <span>Personal beverages and extra snacks</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-slate-400 font-bold">✕</span>
-                  <span>Personal travel insurance and medical repatriation</span>
+                  <span>Personal travel and medical insurance</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-slate-400 font-bold">✕</span>
-                  <span>Gratuities for driver, guide, and tracker (at your own discretion)</span>
+                  <span>Gratuities for guides and trackers (discretionary)</span>
                 </li>
               </ul>
             </div>
@@ -622,9 +641,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="flex items-center justify-between gap-4 mb-6">
             <div>
               <h2 class="font-black text-2xl text-slate-950 tracking-tight">
-                Explorer Reviews
+                Explorer reviews
               </h2>
-              <p class="text-xs text-slate-500 font-semibold mt-1">Average rating: 5.0/5 based on 19 verified Bardia Jeep safari reviews</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1">Average rating: 5.0/5 based on 24 verified walking safaris</p>
             </div>
             <div class="text-right">
               <span class="text-2xl font-black text-[#0e8354]">5.0</span>
@@ -636,26 +655,26 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="font-bold text-sm text-slate-900">Julien & Claire</h4>
-                  <p class="text-[11px] text-slate-400">Verified Travelers • 1-Day Private Jeep Safari</p>
+                  <h4 class="font-bold text-sm text-slate-900">David & Emma</h4>
+                  <p class="text-[11px] text-slate-400">Verified Travelers • 1-Day Walking Safari</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                "Having the jeep exclusively for ourselves with the driver and two native guides made all the difference. We reached the westernmost corners of Bardia and watched a tigress cross the sandy track less than 25 meters ahead. Truly unforgettable!"
+                "Tracking on foot with Kiran was the highlight of our Nepal trip. We encountered a rhino at 30 meters and spotted fresh tiger prints along the river. Incredible professionalism and safety throughout."
               </p>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="font-bold text-sm text-slate-900">François D.</h4>
-                  <p class="text-[11px] text-slate-400">Family Explorer • Jeep Safari + Pawan Homestay</p>
+                  <h4 class="font-bold text-sm text-slate-900">Mark S.</h4>
+                  <p class="text-[11px] text-slate-400">Wildlife Photographer • Safari + Pawan Homestay Option</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                "Ideal formula with our kids: the security of the jeep combined with total open-air wilderness immersion. Staying at Pawan's home was a delightful cultural experience with delicious family food and captivating wildlife stories."
+                "Staying at Pawan's place is unbeatable: fantastic AC room, delicious homemade family dinner, and fascinating BBC filming stories in the evening. Highly recommended!"
               </p>
             </div>
           </div>
@@ -664,47 +683,37 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- SECTION 6: FAQ -->
         <section id="faq" class="scroll-mt-28 pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl text-slate-950 mb-6 tracking-tight">
-            Frequently Asked Questions
+            Frequently asked questions
           </h2>
 
           <div class="space-y-3 text-sm">
             <details class="group bg-white p-4 rounded-2xl border border-slate-200">
               <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
-                <span>Is the vehicle completely private?</span>
+                <span>Is it safe to walk on foot in the jungle?</span>
                 <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
               </summary>
               <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                Yes, the 4x4 off-road safari jeep is <strong>100% private for you</strong> (solo, couple, family, or your private group). You are never mixed with other unknown travelers.
+                Safety is our highest priority. You are always escorted by <strong>two licensed native professionals</strong> (one senior guide and one assistant tracker) who know every terrain nuance and maintain strict safety distances.
               </p>
             </details>
 
             <details class="group bg-white p-4 rounded-2xl border border-slate-200">
               <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
-                <span>What is the difference between a Jeep safari and a walking safari?</span>
+                <span>Can I book as a solo traveler?</span>
                 <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
               </summary>
               <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                The jeep covers significantly more ground (40 to 70 km of forest trails) and reaches isolated sectors without physical fatigue. The walking safari provides silent, ground-level sensory tracking. Combining both on different days gives the ultimate Bardia wildlife experience.
+                Yes! This tour is available starting from <strong>just 1 person</strong> on private or micro-group terms.
               </p>
             </details>
 
             <details class="group bg-white p-4 rounded-2xl border border-slate-200">
               <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
-                <span>How does Pawan's homestay option work (+€12)?</span>
+                <span>How does the night at Pawan's place (+12 €) work?</span>
                 <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
               </summary>
               <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                The option includes one night in a private air-conditioned room with private ensuite bathroom and shower at Pawan's home in Thakurdwara, traditional home-cooked Nepali dinner in the evening, and breakfast the next morning.
-              </p>
-            </details>
-
-            <details class="group bg-white p-4 rounded-2xl border border-slate-200">
-              <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
-                <span>Are all entry permits included?</span>
-                <svg class="w-4 h-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-              </summary>
-              <p class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                Yes! The €190 flat price covers all official government taxes and entrance fees: your individual national park permit and the official vehicle entry permit.
+                It includes a private AC bedroom with en-suite bathroom at senior guide Pawan's home in Thakurdwara, homemade evening dinner with his family, and breakfast the next morning.
               </p>
             </details>
           </div>
@@ -716,21 +725,19 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-4">
         <div id="booking-widget" class="sticky top-[76px] bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-xl space-y-4">
           
-          <!-- Header: Badge & Title -->
           <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Short Trip • Private 4x4 Day</span>
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Short stay • Full day</span>
             <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
-              Jeep Safari — Bardia National Park
+              Walking safari in Bardia National Park
             </h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">1 Day (06:00 AM – 06:00 PM) • From 1 Person</p>
+            <p class="text-xs text-slate-500 font-semibold mt-1">1 Day (6:30 AM - 6:00 PM) • From 1 Person</p>
           </div>
 
-          <!-- Price Row -->
           <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between">
             <div>
-              <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Price per person</p>
+              <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Rate per person</p>
               <div class="flex items-baseline gap-2">
-                <span id="tour-price-display" data-base-price="190" class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">190€</span>
+                <span id="tour-price-display" data-base-price="50" class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">50€</span>
                 <span class="text-xs text-slate-500 font-medium">/ person</span>
               </div>
             </div>
@@ -747,11 +754,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               />
               <div class="flex-1">
                 <div class="flex items-center justify-between gap-1">
-                  <span class="text-xs font-black text-slate-900">Pawan Homestay (+€12)</span>
-                  <span class="text-xs font-black text-[#0e8354]">+€12</span>
+                  <span class="text-xs font-black text-slate-900">Night at Pawan's (BBC guide)</span>
+                  <span class="text-xs font-black text-[#0e8354]">+12 €</span>
                 </div>
                 <p class="text-[11px] text-slate-600 leading-snug mt-0.5">
-                  Private AC Room + Home Dinner + Breakfast
+                  Private AC room + traditional dinner + breakfast
                 </p>
               </div>
             </label>
@@ -759,12 +766,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <!-- Primary CTA Button -->
           <button type="button" onclick="openTourBookingModal()" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">
-            <span id="cta-button-text">Book This Safari (€190) →</span>
+            <span id="cta-button-text">Book this safari (50 €) →</span>
           </button>
 
           <!-- Secondary Action (WhatsApp) -->
           <div class="pt-1">
-            <a id="sidebar-whatsapp-btn" href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20the%20jeep%20safari%20in%20Bardia%20(190%E2%82%AC)" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-emerald-50/90 hover:bg-emerald-100 text-[#0e8354] font-bold text-xs border border-emerald-200/80 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 cursor-pointer select-none">
+            <a id="sidebar-whatsapp-btn" href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20the%201-Day%20Walking%20Safari%20in%20Bardia%20(50%E2%82%AC)" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-emerald-50/90 hover:bg-emerald-100 text-[#0e8354] font-bold text-xs border border-emerald-200/80 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 cursor-pointer select-none">
               <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
               <span>Chat with Robin on WhatsApp</span>
             </a>
@@ -774,15 +781,15 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="space-y-1.5 text-xs text-slate-500 pt-3 border-t border-slate-100 font-medium">
             <div class="flex items-center gap-2">
               <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Private 4x4 Jeep (no mixed strangers)</span>
+              <span>Guaranteed departure from 1 traveler</span>
             </div>
             <div class="flex items-center gap-2">
               <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>All park entrance & vehicle permits included</span>
+              <span>Jungle lunch & local transfers included</span>
             </div>
             <div class="flex items-center gap-2">
               <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Expert crew: Driver + Senior Guide + Tracker</span>
+              <span>Expert native trackers</span>
             </div>
           </div>
 
@@ -791,15 +798,15 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     </div>
 
-    <!-- SECTION : OTHER SIMILAR SHORT TOURS -->
+    <!-- SECTION : RELATED SHORT STAYS -->
     <section class="mt-20 pt-12 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
-          <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Continue Exploration</span>
-          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Other Short Safaris in Bardia</h2>
+          <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Continue exploring</span>
+          <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Other short stays in Bardia</h2>
         </div>
-        <a href="/en/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>View all Nepal expeditions</span>
+        <a href="/en#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
+          <span>View all Nepal tours</span>
           <span>→</span>
         </a>
       </div>
@@ -807,60 +814,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/safari-pied-bardia" class="relative h-64 overflow-hidden block">
-              <img decoding="async" src="/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp" alt="Walking safari in Bardia" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
-              <div class="absolute top-4 left-4 flex gap-2 z-10">
-                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">1 day</span>
-              </div>
-            </a>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/safari-pied-bardia">Walking Safari in Bardia (1d)</a>
-              </h3>
-              <p class="mt-2 text-xs text-slate-600 line-clamp-2">The ultimate ground-level tracking experience with native guide and tracker.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <div>
-                <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
-                <p class="font-black text-xl text-slate-950">50€</p>
-              </div>
-              <a href="/en/tours/safari-pied-bardia" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-          <div class="relative">
-            <a href="/en/tours/bardia-explorateur" class="relative h-64 overflow-hidden block">
-              <img decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Bardia Explorer" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
-              <div class="absolute top-4 left-4 flex gap-2 z-10">
-                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">5 days</span>
-              </div>
-            </a>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/bardia-explorateur">Bardia Explorer (5d)</a>
-              </h3>
-              <p class="mt-2 text-xs text-slate-600 line-clamp-2">Concentrated wilderness immersion in Nepal's best preserved national park.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <div>
-                <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
-                <p class="font-black text-xl text-slate-950">490€</p>
-              </div>
-              <a href="/en/tours/bardia-explorateur" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-          <div class="relative">
-            <a href="/en/tours/bardia-nuit-sauvage" class="relative h-64 overflow-hidden block">
-              <img decoding="async" src="/assets/original_site/camping_sauvage_bardia.webp" alt="Wild Bivouac in Bardia" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
+            <a href="/en/tours/bardia-bivouac-camping-safari" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/original_site/camping_sauvage_bardia.webp" alt="Bardia Wild Night – Bush Camping" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
               <div class="absolute top-4 left-4 flex gap-2 z-10">
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">2 days</span>
               </div>
@@ -869,16 +824,68 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/bardia-nuit-sauvage">Bardia – Wild Bivouac & Camping (2d)</a>
+                <a href="/en/tours/bardia-bivouac-camping-safari">Bardia Wild Night Camping (2d)</a>
               </h3>
-              <p class="mt-2 text-xs text-slate-600 line-clamp-2">An intense 2-day micro-adventure with a night in the deepest jungle.</p>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">An intense 2-day micro-adventure with a tented night in deep jungle.</p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
               <div>
                 <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
                 <p class="font-black text-xl text-slate-950">350€</p>
               </div>
-              <a href="/en/tours/bardia-nuit-sauvage" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+              <a href="/en/tours/bardia-bivouac-camping-safari" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative">
+            <a href="/en/tours/bardia-tiger-safari-5-days" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Bardia Explorer – 5 Days in the Jungle" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">5 days</span>
+              </div>
+            </a>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
+                <a href="/en/tours/bardia-tiger-safari-5-days">Bardia Explorer (5d)</a>
+              </h3>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">Immersive wildlife exploration in Nepal's best-preserved national park.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
+                <p class="font-black text-xl text-slate-950">490€</p>
+              </div>
+              <a href="/en/tours/bardia-tiger-safari-5-days" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative">
+            <a href="/en/tours/babai-valley-tiger-tracking-5-days" class="relative h-64 overflow-hidden block">
+              <img decoding="async" src="/assets/original_site/elephant_bardia.webp" alt="Babai Tiger Special – 5 Days" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">5 days</span>
+              </div>
+            </a>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
+                <a href="/en/tours/babai-valley-tiger-tracking-5-days">Deep into the Wild: Babai (5d)</a>
+              </h3>
+              <p class="mt-2 text-xs text-slate-600 line-clamp-2">Untamed wilderness expedition into the remote Babai Valley.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
+                <p class="font-black text-xl text-slate-950">900€</p>
+              </div>
+              <a href="/en/tours/babai-valley-tiger-tracking-5-days" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
             </div>
           </div>
         </article>
@@ -909,24 +916,24 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </button>
 
     <div class="relative max-w-5xl max-h-[85vh] flex items-center justify-center z-20">
-      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Enlarged Bardia jeep safari photo" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl transition-all duration-300">
+      <img loading="lazy" decoding="async" id="lightbox-image" src="" alt="Enlarged safari photo" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl transition-all duration-300">
     </div>
   </div>
 
   <!-- STICKY MOBILE BOTTOM BOOKING BAR -->
   <div class="fixed bottom-0 inset-x-0 bg-slate-950/95 backdrop-blur-2xl border-t border-white/15 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] z-40 lg:hidden flex items-center justify-between gap-3 shadow-[0_-10px_35px_rgba(0,0,0,0.6)]">
     <div class="min-w-0">
-      <span class="text-[9px] text-slate-400 font-bold block uppercase tracking-wider truncate">Price / pers.</span>
-      <span id="mobile-bottom-price" class="text-xl font-black text-amber-100 font-mono tracking-tight">190€</span>
+      <span class="text-[9px] text-slate-400 font-bold block uppercase tracking-wider truncate">Rate / pers.</span>
+      <span id="mobile-bottom-price" class="text-xl font-black text-amber-100 font-mono tracking-tight">50€</span>
     </div>
     <div class="flex items-center gap-2 shrink-0">
       <a 
         id="mobile-bottom-whatsapp"
-        href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20the%20jeep%20safari%20in%20Bardia%20(190%E2%82%AC)" 
+        href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20the%201-Day%20Walking%20Safari%20in%20Bardia%20(50%E2%82%AC)" 
         target="_blank" 
         rel="noopener noreferrer" 
         class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 text-slate-200 border border-white/15 flex items-center justify-center text-sm shadow-md active:scale-95 transition-all"
-        aria-label="Contact on WhatsApp"
+        aria-label="Chat on WhatsApp"
       >
         💬
       </a>
@@ -944,13 +951,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script is:inline>
     // Gallery & Lightbox (5 Photos)
     window.mainGalleryImages = [
-      "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
-      "/assets/tours_thumbs/safari_jeep_tigre_face_bardia.webp",
-      "/assets/tours_thumbs/safari_jeep_coucher_soleil_bardia.webp",
-      "/assets/tours_thumbs/safari_jeep_tigre_bengale_bardia.webp",
-      "/assets/tours_thumbs/safari_jeep_elephants_sauvages_bardia.webp",
-      "/assets/tours_thumbs/safari_jeep_guide_monoculaire_bardia.webp",
-      "/assets/tours_thumbs/rhino_vegetation_bardia.webp"
+      "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
+      "/assets/tours_thumbs/tigre_jungle_marche.webp",
+      "/assets/tours_thumbs/rhino_vegetation_bardia.webp",
+      "/assets/tours_thumbs/elephant_sal_foret_bardia.webp",
+      "/assets/tours_thumbs/guide_jumelles_arbre_bardia.webp"
     ];
     window.roomImages = [
       "/assets/tours_thumbs/chambre_pawan_bardia.webp",
@@ -997,6 +1002,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         setTimeout(function() {
           modal.classList.add('hidden');
           document.body.style.overflow = '';
+          window.galleryImages = window.mainGalleryImages;
         }, 300);
       }
     };
@@ -1041,6 +1047,65 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       if (menu) menu.classList.toggle("hidden");
     }
 
+    // Interactive Guide Room Option (+12€) Controller
+    window.isGuideOptionSelected = false;
+
+    window.toggleGuideOption = function(forceState) {
+      if (typeof forceState === 'boolean') {
+        window.isGuideOptionSelected = forceState;
+      } else {
+        window.isGuideOptionSelected = !window.isGuideOptionSelected;
+      }
+      
+      window.isCampingSelected = window.isGuideOptionSelected;
+
+      var basePrice = 50;
+      var optionPrice = 12;
+      var currentPrice = window.isGuideOptionSelected ? (basePrice + optionPrice) : basePrice;
+
+      var priceDisplay = document.getElementById('tour-price-display');
+      if (priceDisplay) priceDisplay.textContent = currentPrice + '€';
+
+      var subnavPrice = document.getElementById('subnav-price-display');
+      if (subnavPrice) subnavPrice.textContent = currentPrice + '€';
+
+      var mobileBottomPrice = document.getElementById('mobile-bottom-price');
+      if (mobileBottomPrice) mobileBottomPrice.textContent = currentPrice + '€';
+
+      var checkbox = document.getElementById('sidebar-guide-room-checkbox');
+      if (checkbox) checkbox.checked = window.isGuideOptionSelected;
+
+      var btnText = document.getElementById('guide-room-btn-text');
+      var btnIcon = document.getElementById('guide-room-btn-icon');
+      var toggleBtn = document.getElementById('toggle-guide-room-btn');
+      var ctaBtnText = document.getElementById('cta-button-text');
+
+      if (window.isGuideOptionSelected) {
+        if (btnText) btnText.textContent = "Option selected (62€)";
+        if (btnIcon) btnIcon.textContent = "✓";
+        if (toggleBtn) {
+          toggleBtn.classList.remove('bg-[#0e8354]', 'hover:bg-[#0c6d46]');
+          toggleBtn.classList.add('bg-amber-400', 'hover:bg-amber-500', 'text-slate-950');
+        }
+        if (ctaBtnText) ctaBtnText.textContent = "Book with Pawan Homestay (62 €) →";
+      } else {
+        if (btnText) btnText.textContent = "Add option (+12€)";
+        if (btnIcon) btnIcon.textContent = "＋";
+        if (toggleBtn) {
+          toggleBtn.classList.add('bg-[#0e8354]', 'hover:bg-[#0c6d46]');
+          toggleBtn.classList.remove('bg-amber-400', 'hover:bg-amber-500', 'text-slate-950');
+        }
+        if (ctaBtnText) ctaBtnText.textContent = "Book this safari (50 €) →";
+      }
+
+      var tourTitle = encodeURIComponent(window.isGuideOptionSelected ? "Walking Safari Bardia + Pawan Homestay (62€)" : "1-Day Walking Safari Bardia (50€)");
+      var waUrl = "https://wa.me/33695413227?text=" + encodeURIComponent("Hello Robin, I would like to book: ") + tourTitle;
+      var waBtn = document.getElementById('sidebar-whatsapp-btn');
+      if (waBtn) waBtn.href = waUrl;
+      var waMobile = document.getElementById('mobile-bottom-whatsapp');
+      if (waMobile) waMobile.href = waUrl;
+    };
+
     window.handleShareTour = function() {
       var shareMenu = document.getElementById('share-menu');
       if (shareMenu) {
@@ -1060,68 +1125,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         navigator.clipboard.writeText(window.location.href).then(function() {
           alert('Link copied to clipboard!');
         });
-      }
-    };
-
-    // Toggle option nuit chez Pawan (+€12)
-    window.hasGuideRoomOption = false;
-
-    window.toggleGuideOption = function(isChecked) {
-      window.hasGuideRoomOption = isChecked;
-      
-      var cb1 = document.getElementById('guide-room-checkbox');
-      var cb2 = document.getElementById('sidebar-guide-room-checkbox');
-      if (cb1) cb1.checked = isChecked;
-      if (cb2) cb2.checked = isChecked;
-
-      var basePrice = 190;
-      var optionPrice = 12;
-      var finalPrice = isChecked ? (basePrice + optionPrice) : basePrice;
-
-      var priceDisplay = document.getElementById('tour-price-display');
-      if (priceDisplay) {
-        priceDisplay.textContent = finalPrice + '€';
-      }
-
-      var subnavPriceDisplay = document.getElementById('subnav-price-display');
-      if (subnavPriceDisplay) {
-        subnavPriceDisplay.textContent = finalPrice + '€';
-      }
-
-      var mobileBottomPrice = document.getElementById('mobile-bottom-price');
-      if (mobileBottomPrice) {
-        mobileBottomPrice.textContent = finalPrice + '€';
-      }
-
-      var ctaBtn = document.getElementById('cta-button-text');
-      if (ctaBtn) {
-        ctaBtn.textContent = 'Book this safari (' + finalPrice + ' €) →';
-      }
-
-      var waText = isChecked 
-        ? "Hello Robin, I would like to book the private jeep safari in Bardia with the Pawan homestay option (" + finalPrice + "€)" 
-        : "Hello Robin, I would like to book the private jeep safari in Bardia (" + finalPrice + "€)";
-
-      var sidebarWaBtn = document.getElementById('sidebar-whatsapp-btn');
-      if (sidebarWaBtn) {
-        sidebarWaBtn.href = "https://wa.me/33695413227?text=" + encodeURIComponent(waText);
-      }
-
-      var mobileWaBtn = document.getElementById('mobile-bottom-whatsapp');
-      if (mobileWaBtn) {
-        mobileWaBtn.href = "https://wa.me/33695413227?text=" + encodeURIComponent(waText);
-      }
-    };
-
-    window.openTourBookingModal = function() {
-      var finalPrice = window.hasGuideRoomOption ? 202 : 190;
-      var tourTitle = "Private Jeep Safari in Bardia National Park" + (window.hasGuideRoomOption ? " + Pawan Homestay" : "");
-      
-      if (typeof window.openBookingModal === 'function') {
-        window.openBookingModal(tourTitle, finalPrice + '€');
-      } else {
-        var msg = "Hello Robin, I would like to book: " + tourTitle + " (" + finalPrice + "€/pers).";
-        window.open("https://wa.me/33695413227?text=" + encodeURIComponent(msg), '_blank');
       }
     };
   </script>

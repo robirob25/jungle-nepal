@@ -8,6 +8,7 @@ export const defaultLang = 'fr';
 export const ui = {
   fr: {
     'nav.tours': 'Tous les 16 séjours',
+    'nav.activities': 'Activités',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Nos guides',
     'nav.gallery': 'Galerie',
@@ -58,6 +59,7 @@ export const ui = {
   },
   en: {
     'nav.tours': 'All 16 Expeditions',
+    'nav.activities': 'Activities',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Our Guides',
     'nav.gallery': 'Gallery',

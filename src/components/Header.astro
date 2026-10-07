@@ -14,6 +14,7 @@ const t = useTranslations(currentLang);
 
 const homeUrl = currentLang === 'en' ? '/en/' : '/';
 const toursUrl = currentLang === 'en' ? '/en/#prochains-departs' : '/#prochains-departs';
+const activitiesUrl = currentLang === 'en' ? '/en/#activites' : '/#activites';
 const destUrl = currentLang === 'en' ? '/en/destinations' : '/destinations';
 const guidesUrl = currentLang === 'en' ? (homeUrl + '#pisteurs') : '/#pisteurs';
 const galleryUrl = currentLang === 'en' ? (homeUrl + '#galerie-faune') : '/#galerie-faune';
@@ -48,6 +49,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <nav class={`hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-semibold ${isTransparent ? 'text-white/90' : 'text-slate-700'}`}>
         <a href={toursUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           {t('nav.tours')}
+        </a>
+
+        <a href={activitiesUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
+          {t('nav.activities')}
         </a>
 
         <!-- Destinations Dropdown -->
@@ -168,7 +173,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <nav class="flex flex-col space-y-1.5 font-bold text-sm">
     <a href={toursUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
       <span>{t('nav.tours')}</span>
-      <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">15</span>
+      <span class="bg-[#0e8354] text-white text-[11px] px-2.5 py-0.5 rounded-full font-black">16</span>
+    </a>
+
+    <a href={activitiesUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 flex items-center justify-between text-white transition-colors">
+      <span>{t('nav.activities')}</span>
+      <span class="bg-amber-500 text-slate-950 text-[11px] px-2.5 py-0.5 rounded-full font-black">5</span>
     </a>
 
     <div class="rounded-2xl bg-white/5 overflow-hidden">

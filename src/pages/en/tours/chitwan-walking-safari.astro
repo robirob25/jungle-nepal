@@ -27,7 +27,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/safari-pied-chitwan"
+    "url": "https://junglenepal.com/en/tours/chitwan-walking-safari"
   },
   "provider": {
     "@type": "TravelAgency",
@@ -99,6 +99,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         <nav class="hidden lg:flex items-center justify-center gap-5 xl:gap-7 text-[13px] xl:text-[14px] font-semibold text-slate-700">
           <a href="/en#prochains-departs" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">All 17 tours</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
 
           <div class="relative group py-2">
             <a href="/en/destinations" class="hover:text-[#0e8354] transition-colors flex items-center gap-1 cursor-pointer whitespace-nowrap">
@@ -189,6 +190,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     </div>
     <div class="py-6 space-y-4 text-base font-semibold">
       <a href="/en#prochains-departs" onclick="toggleMobileMenu()" class="block py-2 hover:text-[#0e8354]">All tours</a>
+      <a href="/en/#activites" onclick="toggleMobileMenu()" class="block py-2 text-amber-300 hover:text-white">Day Activities</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
       <a href="/en/destinations/bardia" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Bardia National Park</a>
       <a href="/en/destinations/chitwan" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Chitwan National Park</a>
       <a href="/en/destinations/suklaphanta" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white">Suklaphanta National Park</a>
@@ -211,6 +214,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </a>
       <span>›</span>
       <a href="/en#prochains-departs" class="hover:text-slate-900">Our tours</a>
+          <a href="/en/#activites" class="hover:text-[#0e8354] transition-colors whitespace-nowrap">Activities</a>
       <span>›</span>
       <span class="text-slate-900 font-bold truncate">Walking safari in Chitwan National Park</span>
     </nav>
@@ -691,7 +695,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Tour 1 -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/safari-pied-bardia" class="relative h-64 overflow-hidden block">
+            <a href="/en/tours/bardia-walking-safari" class="relative h-64 overflow-hidden block">
               <img decoding="async" src="/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp" alt="Walking safari in Bardia" class="w-full h-full object-cover object-left transition-transform duration-500 ease-out" loading="lazy"/>
               <div class="absolute top-4 left-4 flex gap-2 z-10">
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">1 day</span>
@@ -701,7 +705,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/safari-pied-bardia">Walking safari — Bardia National Park</a>
+                <a href="/en/tours/bardia-walking-safari">Walking safari — Bardia National Park</a>
               </h3>
               <p class="mt-2 text-xs text-slate-600 line-clamp-2">Complete immersion on foot in western Nepal's wild kingdom.</p>
             </div>
@@ -710,7 +714,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span class="text-[10px] text-slate-400 font-bold uppercase">Price</span>
                 <p class="font-black text-xl text-slate-950">50€</p>
               </div>
-              <a href="/en/tours/safari-pied-bardia" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+              <a href="/en/tours/bardia-walking-safari" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
             </div>
           </div>
         </article>
@@ -718,7 +722,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Tour 2 -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/chitwan-culture" class="relative h-64 overflow-hidden block">
+            <a href="/en/tours/chitwan-safari-cultural-tour" class="relative h-64 overflow-hidden block">
               <img decoding="async" src="/assets/original_site/chitwan_rhino.webp" alt="Chitwan Wildlife & Tharu Immersion" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
               <div class="absolute top-4 left-4 flex gap-2 z-10">
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">4 days</span>
@@ -728,7 +732,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/chitwan-culture">Chitwan: Wildlife & Culture (4d)</a>
+                <a href="/en/tours/chitwan-safari-cultural-tour">Chitwan: Wildlife & Culture (4d)</a>
               </h3>
               <p class="mt-2 text-xs text-slate-600 line-clamp-2">Rhinos, Rapti canoeing and authentic Tharu cultural immersion.</p>
             </div>
@@ -737,7 +741,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
                 <p class="font-black text-xl text-slate-950">590€</p>
               </div>
-              <a href="/en/tours/chitwan-culture" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+              <a href="/en/tours/chitwan-safari-cultural-tour" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
             </div>
           </div>
         </article>
@@ -745,7 +749,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- Tour 3 -->
         <article class="trip-card group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="relative">
-            <a href="/en/tours/bardia-explorateur" class="relative h-64 overflow-hidden block">
+            <a href="/en/tours/bardia-tiger-safari-5-days" class="relative h-64 overflow-hidden block">
               <img decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Bardia Explorer – 5 days in the jungle" class="w-full h-full object-cover transition-transform duration-500 ease-out" loading="lazy"/>
               <div class="absolute top-4 left-4 flex gap-2 z-10">
                 <span class="bg-black/40 backdrop-blur-md text-slate-200 text-xs px-2.5 py-1 rounded-full border border-white/15 font-semibold">5 days</span>
@@ -755,7 +759,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="font-black text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors">
-                <a href="/en/tours/bardia-explorateur">Bardia Explorer (5d)</a>
+                <a href="/en/tours/bardia-tiger-safari-5-days">Bardia Explorer (5d)</a>
               </h3>
               <p class="mt-2 text-xs text-slate-600 line-clamp-2">5 intense days of walking and jeep tracking in Bengal tiger territory.</p>
             </div>
@@ -764,7 +768,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span class="text-[10px] text-slate-400 font-bold uppercase">From</span>
                 <p class="font-black text-xl text-slate-950">690€</p>
               </div>
-              <a href="/en/tours/bardia-explorateur" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
+              <a href="/en/tours/bardia-tiger-safari-5-days" class="px-4 py-2 rounded-xl bg-[#0e5c3e] text-white font-bold text-xs">Discover →</a>
             </div>
           </div>
         </article>
