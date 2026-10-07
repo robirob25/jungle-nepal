@@ -19,7 +19,7 @@ const {
 
 const currentLang = lang || getLangFromUrl(Astro.url);
 const isEn = currentLang === 'en';
-const pageTitle = title.includes('Jungle Nepal Adventure') ? title : `${title} | Jungle Nepal Adventure`;
+const pageTitle = (title.includes('Jungle Nepal') || title.length >= 45) ? title : `${title} | Jungle Nepal Adventure`;
 
 let rawPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '');
 if (rawPath === '/index' || rawPath === '') rawPath = '';
@@ -336,6 +336,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       });
     </script>
 
+    <slot name="head" />
   </head>
 <body class="bg-[#faf8f5] text-slate-800 font-sans antialiased selection:bg-[#0e8354] selection:text-white">
   <slot />

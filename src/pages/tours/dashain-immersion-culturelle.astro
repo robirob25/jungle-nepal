@@ -7,33 +7,70 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Immersion culturelle et aventure au Népal : Spécial festival de Dashain",
-    "description": "Un voyage exclusif de 15 jours au cœur des traditions népalaises et de la faune sauvage, guidé par Adrien & Samantha. Immersion exclusive au festival de Dashain en terre Tharu à Bardia, balcons des Annapurnas et traque des tigres du Bengale.",
-    "image": "https://junglenepal.com/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
-    "touristType": ["Voyageurs contemplatifs", "Amoureux de culture & nature", "Photographes"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,490",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/dashain-immersion-culturelle.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Immersion culturelle et aventure au Népal : Spécial festival de Dashain",
+  "description": "Un voyage exclusif de 15 jours au cœur des traditions népalaises et de la faune sauvage, guidé par Adrien & Samantha. Immersion exclusive au festival de Dashain en terre Tharu à Bardia, balcons des Annapurnas et traque des tigres du Bengale.",
+  "image": "https://junglenepal.com/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
+  "touristType": [
+    "Voyageurs contemplatifs",
+    "Amoureux de culture & nature",
+    "Photographes"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2490",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/dashain-immersion-culturelle"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Faut-il être photographe confirmé pour participer ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas du tout ! Ce voyage est ouvert à tous les voyageurs curieux, qu'ils soient équipés d'un appareil professionnel, d'un smartphone ou simplement désireux de contempler le pays. Adrien et Samantha adaptent leurs conseils au niveau et aux envies de chacun."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi célébrer Dashain en village plutôt qu'à Katmandou ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "À Katmandou, Dashain vide la ville de ses habitants qui rentrent dans leurs familles. Dans les villages Tharu de Bardia, la fête est vécue de façon très chaleureuse, communautaire et intime. C'est une opportunité unique d'échanges vrais et authentiques."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout 
-  title="Immersion culturelle & aventure au Népal : Spécial festival de Dashain (15j) | Jungle Nepal Adventure" 
+  title="Voyage Népal Immersion & Safari : Festival Dashain 2027" 
   description="Voyage exclusif de 15 jours au Népal pour le festival de Dashain avec Adrien & Samantha. Katmandou, balcons des Annapurnas, village Gurung et safaris tigres à Bardia."
   image="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp"
   lang="fr"
@@ -289,7 +326,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Immersion culturelle et aventure au Népal : Spécial festival de Dashain
+          Immersion culturelle Tharu et safaris à Bardia : Spécial Dashain 2027
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
@@ -1169,7 +1206,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

@@ -1,0 +1,233 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface ItineraryDay {
+  day: number | string;
+  title: string;
+  desc?: string;
+  description?: string;
+}
+
+interface TourOffer {
+  price?: string | number;
+  priceCurrency?: string;
+  availability?: string;
+  validFrom?: string;
+  url?: string;
+}
+
+interface AuthorProps {
+  name?: string;
+  jobTitle?: string;
+  url?: string;
+}
+
+interface Props {
+  type?: 'TouristTrip' | 'BlogPosting' | 'FAQPage' | 'Organization' | 'BreadcrumbList';
+  // Common / WebPage
+  name?: string;
+  description?: string;
+  url?: string;
+  image?: string | string[];
+  lang?: 'fr' | 'en';
+  // TouristTrip Props
+  touristType?: string[];
+  offers?: TourOffer;
+  itinerary?: ItineraryDay[];
+  ratingValue?: string | number;
+  reviewCount?: string | number;
+  // BlogPosting Props
+  headline?: string;
+  datePublished?: string;
+  dateModified?: string;
+  author?: AuthorProps;
+  about?: string[];
+  // FAQ Props
+  faqs?: FAQItem[];
+  // Breadcrumb Props
+  breadcrumbs?: { name: string; url: string }[];
+}
+
+const {
+  type,
+  name,
+  description,
+  url,
+  image = 'https://junglenepal.com/assets/original_site/tigre_bardia.webp',
+  lang = 'fr',
+  touristType = ['Amoureux de nature', 'Photographes animaliers', 'Aventuriers'],
+  offers,
+  itinerary = [],
+  ratingValue,
+  reviewCount,
+  headline,
+  datePublished,
+  dateModified,
+  author = {
+    name: 'Robin Rozier',
+    jobTitle: 'Guide & Coordinateur Jungle Nepal Adventure',
+    url: 'https://junglenepal.com/a-propos'
+  },
+  about = ['Parc national de Bardia', 'Tigre du Bengale', 'Faune sauvage du Népal', 'Safari éthique'],
+  faqs = [],
+  breadcrumbs = []
+} = Astro.props;
+
+const currentUrl = url || Astro.url.href;
+const canonicalOrigin = 'https://junglenepal.com';
+const resolvedImage = Array.isArray(image)
+  ? image.map(img => img.startsWith('http') ? img : `${canonicalOrigin}${img.startsWith('/') ? '' : '/'}${img}`)
+  : (image.startsWith('http') ? image : `${canonicalOrigin}${image.startsWith('/') ? '' : '/'}${image}`);
+
+// Provider Organization block
+const providerOrganization = {
+  '@type': 'TravelAgency',
+  'name': 'Jungle Nepal Adventure',
+  'url': canonicalOrigin,
+  'logo': `${canonicalOrigin}/assets/logo_nav_white.png`,
+  'email': 'contact@junglenepal.com',
+  'telephone': '+33695413227',
+  'address': {
+    '@type': 'PostalAddress',
+    'addressLocality': 'Bardia & Katmandou',
+    'addressCountry': 'NP'
+  }
+};
+
+// 1. TOURIST TRIP SCHEMA
+let touristTripSchema = null;
+if (type === 'TouristTrip') {
+  const cleanPrice = offers?.price ? String(offers.price).replace(/[^0-9]/g, '') : null;
+
+  touristTripSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    'name': name || headline,
+    'description': description,
+    'image': resolvedImage,
+    'touristType': touristType,
+    'provider': providerOrganization,
+    ...(cleanPrice ? {
+      'offers': {
+        '@type': 'Offer',
+        'price': cleanPrice,
+        'priceCurrency': offers?.priceCurrency || 'EUR',
+        'availability': offers?.availability || 'https://schema.org/InStock',
+        'validFrom': offers?.validFrom || '2026-01-01',
+        'url': offers?.url || currentUrl
+      }
+    } : {}),
+    ...(itinerary && itinerary.length > 0 ? {
+      'itinerary': {
+        '@type': 'ItemList',
+        'numberOfItems': itinerary.length,
+        'itemListElement': itinerary.map((item, idx) => ({
+          '@type': 'ListItem',
+          'position': idx + 1,
+          'item': {
+            '@type': 'TouristAttraction',
+            'name': item.title || `Jour ${item.day}`,
+            'description': item.desc || item.description || ''
+          }
+        }))
+      }
+    } : {}),
+    ...(ratingValue ? {
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': String(ratingValue),
+        'reviewCount': String(reviewCount || '25'),
+        'bestRating': '5'
+      }
+    } : {})
+  };
+}
+
+// 2. BLOG POSTING SCHEMA
+let blogPostingSchema = null;
+if (type === 'BlogPosting') {
+  blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    'headline': headline || name,
+    'description': description,
+    'image': Array.isArray(resolvedImage) ? resolvedImage : [resolvedImage],
+    'datePublished': datePublished,
+    'dateModified': dateModified || datePublished,
+    'inLanguage': lang === 'en' ? 'en-US' : 'fr-FR',
+    'author': {
+      '@type': 'Person',
+      'name': author.name || 'Robin Rozier',
+      'jobTitle': author.jobTitle || 'Guide & Coordinateur Jungle Nepal Adventure',
+      'url': author.url ? (author.url.startsWith('http') ? author.url : `${canonicalOrigin}${author.url}`) : `${canonicalOrigin}/a-propos`
+    },
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Jungle Nepal Adventure',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': `${canonicalOrigin}/assets/logo_nav_white.png`
+      }
+    },
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': currentUrl
+    },
+    'about': about.map(term => ({
+      '@type': 'Thing',
+      'name': term
+    }))
+  };
+}
+
+// 3. FAQ PAGE SCHEMA
+let faqPageSchema = null;
+if (faqs && faqs.length > 0) {
+  faqPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer
+      }
+    }))
+  };
+}
+
+// 4. BREADCRUMB SCHEMA
+let breadcrumbSchema = null;
+if (breadcrumbs && breadcrumbs.length > 0) {
+  breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbs.map((crumb, idx) => ({
+      '@type': 'ListItem',
+      'position': idx + 1,
+      'name': crumb.name,
+      'item': crumb.url.startsWith('http') ? crumb.url : `${canonicalOrigin}${crumb.url}`
+    }))
+  };
+}
+---
+
+{touristTripSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(touristTripSchema)} />
+)}
+
+{blogPostingSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+)}
+
+{faqPageSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />
+)}
+
+{breadcrumbSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+)}

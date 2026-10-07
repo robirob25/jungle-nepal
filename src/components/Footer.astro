@@ -113,16 +113,49 @@ const prefix = isEn ? '/en' : '';
         </ul>
       </div>
 
-      <!-- COL 5: Contact & Réservation -->
-      <div class="space-y-3">
-        <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
-          {isEn ? "Contact & Booking" : "Contact & Réservation"}
-        </h4>
-        <ul class="space-y-2 text-slate-400">
-          <li><a href={`${prefix}/contact`} class="hover:text-slate-200 transition-colors">{isEn ? "Custom Quote Request" : "Demande de devis sur-mesure"}</a></li>
-          <li><a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">{isEn ? "Contact Robin on WhatsApp" : "Contacter Robin sur WhatsApp"}</a></li>
-        </ul>
-        <div class="pt-3 border-t border-white/10 text-slate-400 text-xs space-y-1">
+      <!-- COL 5: Contact & Réservation & Réseaux Sociaux -->
+      <div class="space-y-4">
+        <div class="space-y-3">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest border-b border-white/10 pb-2">
+            {isEn ? "Contact & Booking" : "Contact & Réservation"}
+          </h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href={`${prefix}/contact`} class="hover:text-slate-200 transition-colors">{isEn ? "Custom Quote Request" : "Demande de devis sur-mesure"}</a></li>
+            <li><a href="https://wa.me/33695413227" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors">{isEn ? "Contact Robin on WhatsApp" : "Contacter Robin sur WhatsApp"}</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons & Links -->
+        <div class="pt-2 border-t border-white/10 space-y-2.5">
+          <h4 class="font-black text-white text-xs uppercase tracking-widest">
+            {isEn ? "Follow Our Expeditions" : "Suivez nos expéditions"}
+          </h4>
+          <div class="flex items-center gap-2.5">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/jungle.nepal.adventure/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Jungle Nepal Adventure" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-emerald-900/40 border border-white/10 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105" title="Instagram @jungle.nepal.adventure">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61584840598638" target="_blank" rel="noopener noreferrer" aria-label="Facebook Jungle Nepal Adventure" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-emerald-900/40 border border-white/10 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105" title="Facebook Jungle Nepal Adventure">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/watch?v=nApJul2Wgxo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Documentaire Jungle Nepal Adventure" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-emerald-900/40 border border-white/10 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105" title="YouTube Jungle Nepal Adventure">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-white/10 text-slate-400 text-xs space-y-1">
           <p class="text-slate-200 font-bold">{isEn ? "Small groups 4 to 10 max" : "Micro-groupes 4 à 10 pers."}</p>
           <p class="text-slate-400">{isEn ? "100% Native Trackers" : "100% Pisteurs natifs"}</p>
         </div>

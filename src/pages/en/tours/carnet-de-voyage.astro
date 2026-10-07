@@ -8,35 +8,237 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Nepal Sketching & Travel Journaling Expedition – 15 Days",
-    "description": "This exclusive 15-day journey is custom-designed as an immersive travel sketching, watercolor, and creative exploration experience. The goal is not merely to visit Nepal, but to observe its colors, sketch its heritage, and create a lasting personal journal guided by professional illustrator Sarah Plage. From the carved wooden windows of Bhaktapur and the historic ridge town of Bandipur to panoramic mountain balconies in Ghachok and tiger safaris in Bardia, every day includes dedicated pauses to paint, sketch, and capture the soul of the country.",
-    "image": "https://junglenepal.com/assets/drive_photos/antoine_wild5.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,100",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/carnet-de-voyage"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "16",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Nepal Sketching & Travel Journaling Expedition – 15 Days",
+  "description": "This exclusive 15-day journey is custom-designed as an immersive travel sketching, watercolor, and creative exploration experience. The goal is not merely to visit Nepal, but to observe its colors, sketch its heritage, and create a lasting personal journal guided by professional illustrator Sarah Plage. From the carved wooden windows of Bhaktapur and the historic ridge town of Bandipur to panoramic mountain balconies in Ghachok and tiger safaris in Bardia, every day includes dedicated pauses to paint, sketch, and capture the soul of the country.",
+  "image": "https://junglenepal.com/assets/drive_photos/antoine_wild5.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2100",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/carnet-de-voyage"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "16",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 15,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Welcome at airport, hotel transfer, distribution of expedition sketch kits, and gentle evening walk in Thamel."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Medieval Bhaktapur Sketching Session",
+          "description": "Spend the day sketching carved wooden windows, pottery squares, and pagodas in historic Bhaktapur."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Drive to Bandipur Hilltop Village",
+          "description": "Scenic journey to Bandipur. Afternoon sketching old Newar townhouses, slate streets, and valley viewpoints."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Bandipur to Traditional Village of Ghachok",
+          "description": "Travel into the Annapurna foothills to Ghachok, an authentic farming village with stunning views of Machapuchare."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Watercolor Workshop in Ghachok",
+          "description": "Paint terraced fields, buffalos, and Himalayan peaks from village balconies. Interact with welcoming village elders."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Nature Walks & Forest Portraits",
+          "description": "Gentle nature walk through bamboo groves and mountain streams. Sketching local flora and village life."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Ghachok to Lakeside Pokhara",
+          "description": "Short drive to Pokhara. Afternoon watercolor session by Lake Phewa capturing boats and reflections."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Pokhara to Spiritual Lumbini",
+          "description": "Descend to Lumbini. Evening contemplative sketching at the sacred Mayadevi pond under the bodhi tree."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Travel to Bardia National Park",
+          "description": "Drive west through the Terai plains to Bardia. Settle into our eco-lodge and prepare for wildlife art."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Bardia: Sketching Riverbanks & Wildlife",
+          "description": "Peaceful day sketching along the Geruwa River. Observe birdlife, crocodiles, and deer at water's edge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Open 4x4 Jeep Safari in Bardia",
+          "description": "Full-day safari combining wildlife observation and photography for field sketching references."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Walking Safari in the Jungle",
+          "description": "Quiet walking tracking in core forest zones. Quick field sketching from elevated observation towers."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Tharu Village Portraits & Cultural Art",
+          "description": "Visit local Tharu homes, learn traditional mud-wall painting techniques, and sketch village daily life."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – Flight Back to Kathmandu",
+          "description": "Domestic flight from Nepalgunj to Kathmandu. Collective exhibition and sharing of journals over farewell dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 15 – International Departure",
+          "description": "Private airport transfer for your departure flight."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Nepal – carnet de dessin et de voyage – 15 days | Jungle Nepal Adventure" lang="en">

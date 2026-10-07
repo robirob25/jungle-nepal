@@ -8,35 +8,255 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus",
-    "description": "Traversez le Népal d’est en ouest lors d’une expédition d’exception de 17 jours reliant deux des joyaux les plus sauvages du pays. Après les étapes culturelles de Katmandou, Pokhara et Lumbini, vous emprunterez les pistes spectaculaires de l’extrême ouest népalais à travers Surkhet et Kalikot. Vous découvrirez d’abord la beauté alpine du lac Rara, perle d’eau turquoise perchée à 3 000 m au milieu des forêts de pins et de genévriers, avant de redescendre vers la chaleur tropicale et les denses forêts de Bardia pour pister le tigre du Bengale à pied.",
-    "image": "https://junglenepal.com/assets/original_site/lac_rara_orig.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,550",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/rara-lake-bardia.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "18",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus",
+  "description": "Traversez le Népal d’est en ouest lors d’une expédition d’exception de 17 jours reliant deux des joyaux les plus sauvages du pays. Après les étapes culturelles de Katmandou, Pokhara et Lumbini, vous emprunterez les pistes spectaculaires de l’extrême ouest népalais à travers Surkhet et Kalikot. Vous découvrirez d’abord la beauté alpine du lac Rara, perle d’eau turquoise perchée à 3 000 m au milieu des forêts de pins et de genévriers, avant de redescendre vers la chaleur tropicale et les denses forêts de Bardia pour pister le tigre du Bengale à pied.",
+  "image": "https://junglenepal.com/assets/original_site/lac_rara_orig.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2550",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/rara-lake-bardia"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "18",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 17,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Arrivée à Katmandou",
+          "description": "Arrivée dans la capitale vibrante du Népal puis transfert à votre hôtel. Journée libre pour explorer les rues alentours ou simplement vous reposer avant le début de l’aventure."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Exploration culturelle de Katmandou",
+          "description": "Découvrez les trésors spirituels et historiques de la ville, dont le temple sacré de Pashupatinath, l’imposant stupa de Boudhanath, le panoramique Swayambhunath (Temple des Singes) et l’historique Durbar Square."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Route vers Pokhara",
+          "description": "Après le petit-déjeuner, prenez la route panoramique vers Pokhara, la capitale de l’aventure au Népal, entourée de montagnes majestueuses et de lacs paisibles."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Exploration de Pokhara",
+          "description": "Visitez les sites emblématiques de Pokhara, dont Devi’s Fall, les grottes cachées, le Musée de la Montagne, et profitez d’une balade en bateau sur le lac Phewa, avec les reflets grandioses de la chaîne des Annapurna."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 – Route vers Lumbini et visite du lieu de naissance du Bouddha",
+          "description": "Route vers Lumbini, lieu de naissance du Bouddha. Après le déjeuner, découvrez le temple sacré de Maya Devi et les monastères environnants pour une immersion dans l’héritage bouddhiste."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 6 – Route vers Surkhet",
+          "description": "Commencez l’aventure hors des sentiers battus par une longue route vers Surkhet, porte d’entrée des régions occidentales les plus reculées du Népal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 7 – Route vers Kalikot",
+          "description": "Poursuivez votre progression dans les paysages escarpés du Népal, en traversant rivières et collines jusqu’au district isolé de Kalikot."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 8 – Arrivée au lac Rara",
+          "description": "Arrivée au splendide lac Rara, le plus grand et le plus préservé du Népal, entouré de forêts alpines intactes et de sommets enneigés."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 9 – Exploration du lac Rara et de Murma Top",
+          "description": "Passez la journée à découvrir la beauté paisible de Rara, avec une courte randonnée jusqu’à Murma Top pour une vue panoramique sur le lac et les montagnes alentours."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 10 – Route retour vers Kalikot",
+          "description": "Faites vos adieux à la tranquillité de Rara et entamez le trajet retour en empruntant de nouveau les routes montagneuses jusqu’à Kalikot."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 11 – Route vers le parc national de Bardia",
+          "description": "Prenez la route en direction des jungles du Teraï et du parc national de Bardia, le parc le plus reculé du Népal, refuge des tigres, rhinocéros et éléphants sauvages."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 12 - Safari en jeep",
+          "description": "Partez au cœur de la nature sauvage de Bardia lors d’un safari en jeep d’une journée, à la recherche d’animaux difficiles à observer, et profitez d’un déjeuner pique-nique en pleine jungle."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 13 – Nouveau safari en jeep d’une journée",
+          "description": "Explorez de nouvelles zones du parc lors d’un second safari, augmentant vos chances d’apercevoir des tigres du Bengale, des gavials et des oiseaux rares dans leur habitat naturel."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 14 – Dernier safari en jeep et immersion dans la jungle",
+          "description": "Une dernière journée au cœur de la jungle pour profiter pleinement de la beauté intacte et de la faune variée de Bardia avant de retourner au lodge pour une soirée détente."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 15 – Journée libre et repos",
+          "description": "Profitez d’une journée de repos bien méritée pour vous détendre, repenser au voyage ou explorer le village environnant à votre rythme."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 16 – Vol vers Katmandou",
+          "description": "Vol retour vers Katmandou, avec du temps pour quelques achats de dernière minute, un peu de visite ou simplement de la détente avant le départ."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 17 – Départ",
+          "description": "Transfert vers l’aéroport pour votre vol retour, avec en mémoire les montagnes, les jungles et les merveilles cachées du Népal."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus | Jungle Nepal Adventure" lang="fr">
@@ -1087,7 +1307,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

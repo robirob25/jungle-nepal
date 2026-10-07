@@ -7,15 +7,20 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
-<script type="application/ld+json">
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Chitwan : Safari à pied à Chitwan – Journée complète dans la jungle du Népal",
   "description": "Découvrez le Parc national de Chitwan à pied. Une journée complète d'immersion avec 1 guide jungle et 1 assistant pour pister tigres du Bengale, rhinocéros unicornes, ours lippus et oiseaux sauvages.",
   "image": "https://junglenepal.com/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
-  "touristType": ["Amoureux de nature", "Photographes animaliers", "Randonneurs", "Aventuriers"],
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Randonneurs",
+    "Aventuriers"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "70",
@@ -27,16 +32,40 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "provider": {
     "@type": "TravelAgency",
     "name": "Jungle Nepal Adventure",
-    "url": "https://junglenepal.com"
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "reviewCount": "21",
     "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Safari à pied journée complète à Chitwan",
+          "description": "Départ à 6h30 avec traversée en pirogue sur la Rapti. Traque à pied dans les forêts et hautes herbes. Déjeuner en pleine nature inclus. Retour vers 18h00."
+        }
+      }
+    ]
   }
 }
-</script>
+  </script>
+
 
 <Layout title="Chitwan : Safari à pied à Chitwan – Journée complète dans la jungle du Népal | Jungle Nepal Adventure" lang="fr">
 

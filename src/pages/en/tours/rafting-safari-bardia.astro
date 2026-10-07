@@ -7,15 +7,20 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
-<script type="application/ld+json">
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Bardia: River Karnali Rafting Safari – Full Day Wilderness Float in Bardia National Park",
   "description": "Full-day peaceful river rafting safari down the Karnali and Geruwa rivers in Bardia. Observe Gangetic river dolphins, gharial crocodiles, swimming wild elephants and tigers with expert skipper, senior naturalist guide and elite tracker.",
   "image": "https://junglenepal.com/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp",
-  "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers", "Families"],
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers",
+    "Families"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "190",
@@ -27,7 +32,15 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "provider": {
     "@type": "TravelAgency",
     "name": "Jungle Nepal Adventure",
-    "url": "https://junglenepal.com/en/"
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -36,7 +49,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "bestRating": "5"
   }
 }
-</script>
+  </script>
+
 
 <Layout title="Bardia: Karnali River Rafting Safari in Bardia National Park – Full Day Float | Jungle Nepal Adventure" lang="en">
 

@@ -7,15 +7,20 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
-<script type="application/ld+json">
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Bardia : Safari à pied à Bardia – Journée complète dans la jungle du Népal",
   "description": "Une journée entière au cœur de la jungle de Bardia. Safari pédestre guidé par un maître pisteur et un assistant à la recherche du tigre du Bengale, rhinocéros unicorne et éléphants sauvages.",
   "image": "https://junglenepal.com/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
-  "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers", "Randonneurs"],
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers",
+    "Randonneurs"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "50",
@@ -27,16 +32,40 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "provider": {
     "@type": "TravelAgency",
     "name": "Jungle Nepal Adventure",
-    "url": "https://junglenepal.com"
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "reviewCount": "24",
     "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Safari à pied journée complète à Bardia",
+          "description": "Départ à 6h30 pour une journée complète d'observation et de traque à pied dans la jungle de Bardia. Déjeuner pique-nique inclus sous la canopée. Retour vers 18h00."
+        }
+      }
+    ]
   }
 }
-</script>
+  </script>
+
 
 <Layout title="Bardia : Safari à pied à Bardia – Journée complète dans la jungle du Népal | Jungle Nepal Adventure" lang="fr">
 

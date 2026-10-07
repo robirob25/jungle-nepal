@@ -8,38 +8,240 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Jungle extrême – spécial faune sauvage",
-    "description": "Des temples sacrés de Katmandou aux forêts primaires les plus secrètes du Teraï, chaque étape de ce périple de 15 jours est conçue pour maximiser l’observation de la grande faune népalaise. Accompagné de maîtres pisteurs natifs, vous explorerez tour à tour les réserves majeures de Chitwan, de Bardia et de Suklaphanta. Entre affûts silencieux à l’aube sur les berges et marches d’approche au cœur des forêts de sal, vous traquerez le tigre du Bengale, le léopard indien, le rhinocéros unicorne et les hardes d’éléphants sauvages. Ce séjour exclusif en micro-groupe offre une immersion photographique et naturaliste sans compromis. Loin des circuits touristiques classiques, vous alternerez safaris en jeep ouverte, descentes en pirogue traditionnelle sur les rivières où se prélassent les gavials, et veillées nocturnes au son des bruits de la jungle.",
-    "image": "https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,490",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/jungle-extreme.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "21",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Jungle extrême – spécial faune sauvage",
+  "description": "Des temples sacrés de Katmandou aux forêts primaires les plus secrètes du Teraï, chaque étape de ce périple de 15 jours est conçue pour maximiser l’observation de la grande faune népalaise. Accompagné de maîtres pisteurs natifs, vous explorerez tour à tour les réserves majeures de Chitwan, de Bardia et de Suklaphanta. Entre affûts silencieux à l’aube sur les berges et marches d’approche au cœur des forêts de sal, vous traquerez le tigre du Bengale, le léopard indien, le rhinocéros unicorne et les hardes d’éléphants sauvages. Ce séjour exclusif en micro-groupe offre une immersion photographique et naturaliste sans compromis. Loin des circuits touristiques classiques, vous alternerez safaris en jeep ouverte, descentes en pirogue traditionnelle sur les rivières où se prélassent les gavials, et veillées nocturnes au son des bruits de la jungle.",
+  "image": "https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2490",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/jungle-extreme"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "21",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 15,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Arrivé à Katmandou",
+          "description": "Accueil à l’aéroport international de Tribhuvan par notre équipe locale. Transfert privé jusqu’à votre hôtel à Katmandou. Installation et temps libre selon l’heure d’arrivée. Repos après le vol et première découverte du quartier de Thamel. Balade possible dans les rues animées, temples de proximité et scènes de vie locale. Nuit à l’hôtel à Katmandou (hotel 3 étoiles)."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Journée complète de découverte à Katmandou",
+          "description": "Découvrez l’héritage spirituel et culturel de la vallée de Katmandou : Temple de Pashupatinath – lieu de crémation hindou et site majeur de pèlerinage Stupa de Boudhanath – l’un des plus grands stupas au monde Swayambhunath – le célèbre “Monkey Temple”, perché au-dessus de la ville"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Route vers Chitwan (5 heures)",
+          "description": "Après le petit-déjeuner, départ pour le parc national de Chitwan. Déjeuner à l’arrivée. L’après-midi, première immersion dans la jungle avec un safari à pied. Dîner et nuit au lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Safari en jeep à Chitwan",
+          "description": "Une journée entière consacrée à l’exploration de la biodiversité de Chitwan en jeep. Déjeuner pique-nique inclus. Rencontres possibles avec des rhinocéros, des cerfs, des crocodiles, de nombreuses espèces d’oiseaux… et peut-être même un tigre du Bengale. Retour au lodge en fin de journée."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 – Route vers Lumbini (4 heures)",
+          "description": "Après le petit-déjeuner, départ pour Lumbini, lieu de naissance du Bouddha. Déjeuner à l’arrivée, puis visite du jardin sacré. Dîner et nuit à Lumbini."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 6 – Direction Bardia (6 à 7 heures)",
+          "description": "Départ après le petit-déjeuner, avec déjeuner en route. Arrivée dans l’après-midi au village de Betahani, en bordure du Parc National de Bardia. Installation et moment de repos. Plus tard, petite marche dans le village, le long de la rivière. Lumière parfaite pour vos premières ambiances sauvages à Bardia."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 7 – Premier safari à pied dans la jungle de Bardia",
+          "description": "Thé servi avant l’aube. Départ pour le premier safari à pied, accompagné de votre guide naturaliste. Petit-déjeuner puis pique-nique au cœur de la jungle. Observation de la faune, lecture des traces et immersion totale. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner au lodge. Échange et discussion nature avec votre guide autour des observations du jour, au coin du feu."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 8 – deuxième safari à pied dans la jungle de Bardia",
+          "description": "Thé servi avant le lever du jour. Deuxième safari à pied avec votre guide naturaliste. Petit-déjeuner et pique-nique au cœur de la jungle. Temps d’observation et d’immersion. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner et discussion nature avec votre guide autour de la faune observée."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 9 - Jeep safari",
+          "description": "Journée complète de safari en jeep à travers différents habitats dans des coins plus reculés du parc. Déjeuner pique-nique en pleine jungle. Temps d’observation et d’immersion. Rencontres possibles avec éléphants, tigre du bengale, rhinocéros et de nombreux oiseaux. Retour en fin de journée. Dîner et soirée d’histoires autour du feu. Nuit en tree house, au cœur de la jungle."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 10 – Dernier Safari à Bardia",
+          "description": "Session matinale d’observation des oiseaux autour de la tree house. Petit-déjeuner. Dernier safari de la journée pour vos ultimes rencontres animales à Bardia. En soirée, spectacle de danse traditionnelle et dîner d’au revoir."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 11 – Route vers le parc national de Shuklaphanta (3 heures)",
+          "description": "Après le petit-déjeuner, route vers l’ouest en direction du parc national de Shuklaphanta, moins connu mais incroyablement riche en faune. Déjeuner en chemin. Arrivée au lodge, moment de repos. En soirée, visite d’un village traditionnel Rana Tharu."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 12 – Journée jeep à Shuklaphanta",
+          "description": "Explorez les vastes prairies ouvertes et les forêts du parc. Déjeuner pique-nique au coeur de la jungle. À la recherche des cerfs des marais, éléphants sauvages, léopards et oiseaux migrateurs."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 13 – Deuxième journée de safari à Shuklaphanta",
+          "description": "Une nouvelle journée de safari à travers différentes zones du parc. Excellentes opportunités photos notamment de cerf duvaucel et tigre du bengale, découverte de nombreux autres habitats."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 14 – Retour à Katmandou",
+          "description": "Route vers l’aéroport de Dhangadhi puis vol domestique pour Katmandou. Transfert vers votre hôtel. Soirée libre pour vous reposer ou faire quelques achats de dernière minute."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 15 – Départ international",
+          "description": "Transfert à l’aéroport international pour votre vol retour."
+        }
+      }
+    ]
   }
+}
   </script>
 
-<Layout title="Jungle extrême – spécial faune sauvage | Jungle Nepal Adventure" lang="fr">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
+  </script>
+
+<Layout title="Safari Faune Sauvage Népal : 15 Jours Bardia & Chitwan" lang="fr">
 
 
     <!-- TOP BAR PROMO -->
@@ -332,7 +534,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Jungle extrême – spécial faune sauvage
+          Expédition Safari Faune Sauvage 15 Jours : Sur la piste des grands prédateurs
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
@@ -1056,7 +1258,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

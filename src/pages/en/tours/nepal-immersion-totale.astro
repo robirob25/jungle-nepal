@@ -8,35 +8,228 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Nepal Total Immersion – Culture, Wildlife & Adventure – 14 Days",
-    "description": "The quintessential 14-day grand journey showcasing all the natural and cultural wonders of Nepal. From the medieval palaces of Kathmandu, Patan, and Bhaktapur to Himalayan sunrises in Nagarkot and white-water rafting on the Trisuli river. You will then plunge into the primeval wildlife reserves of Chitwan and Bardia for on-foot and jeep safaris, concluding on the tranquil shores of Phewa Lake in Pokhara beneath the Annapurnas.",
-    "image": "https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,590",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/nepal-immersion-totale"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "42",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Nepal Total Immersion – Culture, Wildlife & Adventure – 14 Days",
+  "description": "The quintessential 14-day grand journey showcasing all the natural and cultural wonders of Nepal. From the medieval palaces of Kathmandu, Patan, and Bhaktapur to Himalayan sunrises in Nagarkot and white-water rafting on the Trisuli river. You will then plunge into the primeval wildlife reserves of Chitwan and Bardia for on-foot and jeep safaris, concluding on the tranquil shores of Phewa Lake in Pokhara beneath the Annapurnas.",
+  "image": "https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2590",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/nepal-immersion-totale"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "42",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 14,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Welcome at the airport, private transfer to your hotel, trip briefing, and evening welcome dinner in Thamel."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Kathmandu Heritage Tour",
+          "description": "Visit UNESCO World Heritage sites: Swayambhunath (Monkey Temple), Patan Durbar Square, and Pashupatinath."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Ancient Bhaktapur & Sunset at Nagarkot",
+          "description": "Explore the medieval brick architecture of Bhaktapur, followed by a scenic drive to Nagarkot for panoramic Himalayan views."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Trishuli River Rafting & Drive to Chitwan",
+          "description": "Exciting 3-hour river rafting descent on the Trishuli River. Riverside lunch and drive to Chitwan National Park."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Full-Day Safari in Chitwan",
+          "description": "4x4 jeep safari tracking one-horned rhinos, sloth bears, and deer. Afternoon canoe drift on the Rapti River."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Nature Walk & Drive to Pokhara",
+          "description": "Early morning birdwatching walk, followed by a scenic 5-hour drive to picturesque Pokhara."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Annapurna Sunrise & Pokhara Lakes",
+          "description": "Sunrise over the Annapurnas from Sarangkot, boat ride across Lake Phewa, and visit to World Peace Pagoda."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Drive to Lumbini (Birthplace of Buddha)",
+          "description": "Drive to Lumbini and spend the afternoon exploring the sacred Mayadevi gardens and monastic zone."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Journey West to Bardia National Park",
+          "description": "Scenic road trip through the Terai to Bardia National Park. Settle into our authentic jungle lodge and meet tracker Pawan."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Full-Day 4x4 Jeep Safari in Bardia",
+          "description": "Full-day exploration of core tiger territories in Bardia. Strategic waits at riverbanks and watering holes."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Full-Day Walking Safari on Foot",
+          "description": "Step quietly into the jungle with two master trackers. Track tiger prints, alarm calls, and observe wildlife up close."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Final Safari & Tharu Cultural Evening",
+          "description": "Morning safari followed by an afternoon visit to traditional Tharu villages and an evening cultural dance."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Flight Back to Kathmandu",
+          "description": "Transfer to Nepalgunj Airport and domestic flight to Kathmandu. Rest, shopping, and celebratory farewell dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – International Departure",
+          "description": "Private transfer to Tribhuvan International Airport for your return flight."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Nepal – immersion totale : culture, vie sauvage et aventure | Jungle Nepal Adventure" lang="en">

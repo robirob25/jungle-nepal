@@ -8,35 +8,210 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Immersion spirituelle en Himalaya",
-    "description": "Au cœur de la vallée sacrée de Katmandou et face aux balcons majestueux de l’Himalaya, cette retraite de 12 jours vous invite à vous détendre, respirer et renouer avec l’essentiel. Conçue en partenariat avec l’intervenante Justine Luçon, cette parenthèse bien-être conjugue pratique quotidienne du yoga, méditation guidée et rituels traditionnels. Entre moments de silence régénérants en ashram, découvertes des temples classés à l’UNESCO, cérémonies d’offrandes Aarti au coucher du soleil et marches contemplatives face aux cimes enneigées de Pokhara, vous vivrez un ressourcement profond du corps et de l’esprit."/destinations/katmandou" class="text-slate-200 hover:text-slate-200 font-medium underline decoration-emerald-500/30 underline-offset-2 transition-colors">vallée de Katmandou</a>, entre temples et montagne , cette retraite de 12 jours vous invite à ralentir, respirer et retrouver l’essentiel . Jungle Nepal Adventure a décidé de laisser un espace à l&rsquo;intervenante Justine Luçon, afin de concevoir en partenariat, un tour différent de ceux actuellement proposés. Pendant plusieurs jours ,",
-    "image": "https://junglenepal.com/assets/original_site/temple_sacred.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "1,890",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/immersion-spirituelle.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "17",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Immersion spirituelle en Himalaya",
+  "description": "Au cœur de la vallée sacrée de Katmandou et face aux balcons majestueux de l’Himalaya, cette retraite de 12 jours vous invite à vous détendre, respirer et renouer avec l’essentiel. Cette parenthèse bien-être conjugue pratique quotidienne du yoga, méditation guidée, sonothérapie et rituels traditionnels. Entre moments de silence régénérants en ashram, découvertes des temples classés à l’UNESCO, cérémonies d’offrandes Aarti au coucher du soleil et marches contemplatives face aux cimes enneigées de Pokhara, vous vivrez un ressourcement profond du corps et de l’esprit.",
+  "image": "https://junglenepal.com/assets/original_site/temple_sacred.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "1890",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/immersion-spirituelle"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "17",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 12,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 • Arrivée à Katmandou",
+          "description": "Accueil à l’aéroport international Transfert jusqu’à votre hébergement Installation et temps libre pour récupérer du voyage"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 • Découverte de Katmandou & installation à l’ashram",
+          "description": "09h00 – Visite de Swayambhunath (Temple des Singes) et du Boudhanath Stupa , deux des principaux sites spirituels du Népal. 14h00 – Arrivée et installation dans l’ashram. Après-midi – Marche méditative en montagne et découverte des environs de l’ashram. 18h45 – Méditation du soir. 20h00 – Dîner de bienvenue."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 • Immersion dans la vie de l’ashram",
+          "description": "07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 13h00 – Enseignements philosophiques et méditations guidées. Déjeuner, temps libre et participation au Karma Yoga (activités collectives de l’ashram). 16h30 – 17h30 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 • Spiritualité & découverte culturelle",
+          "description": "07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 17h30 – Excursion à la découverte de plusieurs lieux spirituels emblématiques de la vallée de Katmandou. Temps d’échanges et de contemplation. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 • Journée de silence",
+          "description": "Cette journée est consacrée au Noble Silence , une pratique permettant de vivre pleinement l’instant présent dans un cadre apaisé. 07h30 – 09h00 – Prières et méditation dynamique. Petit-déjeuner. 10h30 – 12h30 – Méditation No-Mind . Déjeuner et temps de repos. 15h30 – 16h30 – Séance de Reiki. Pause thé. 17h00 – 18h00 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 6 • Fin de la retraite & départ pour Pokhara",
+          "description": "07h30 – 09h00 – Dernière pratique de yoga, méditation et cérémonie de clôture. Petit-déjeuner. Transfert vers l’aéroport. 11h00 – Vol intérieur pour Pokhara et après-midi libre pour flâner dans la ville. 17h – Route vers Ghachok et installation dans notre maison en montagne."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 7 • Reconnexion à la nature",
+          "description": "7h30 – Pranayama – Yoga matinal face aux annapurnas Petit déjeuner Matin – Marche consciente au coeur des rizières et des forêts de Gachok avec des temps de pause pour utiliser des mudra , exercices de respiration et méditation de pleine conscience en nature. Déjeuner. Après-midi – Temps libre pour profiter du village ou se reposer. 16h30 – Atelier d’initiation aux bols chantants tibétains. 18h00 – Cercle de partage et méditation guidée au coucher du soleil. Dîner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 8 • Bien-être & intégration",
+          "description": "7h30 – Pranayama – Yin Yoga Petit-déjeuner Matin – Massage intuitif/Reiki Déjeuner. Après-midi – Atelier tantra blanc Temps libre. Diner. Avant le coucher – Yoga Nidra"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 9 • Bien-être & découverte",
+          "description": "7h30 – Pranayama – Réveil musculaire Petit-déjeuner. Journée – Immersion dans la vie locale Retour en fin d’après-midi. 18h – Bain de vibration aux bols chantants pour la pleine lune du castor en Gémeaux Dîner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 10 • Randonnée en Himalaya",
+          "description": "7h00 – Pranayama et Yoga Petit-Déjeuner. Matin : Randonnée accessible jusqu’à un point de vue sur les Annapurnas, avec plusieurs pauses de contemplation. Pique-nique ou déjeuner. Après-midi – Retour tranquillement au village. 17h – Cercle de clôture, dernière pratique aux bols chantants et/ou danse serpentine et rituel de fin de séjour. Dernier diner à Gachok."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 11 • Retour à Katmandou",
+          "description": "Retour vers Katmandou en vol interne. Temps libre pour vos achats. Dernière soirée au Népal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 12 • Départ",
+          "description": "Transfert à l’aéroport international. Vol retour."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Immersion spirituelle en Himalaya | Jungle Nepal Adventure" lang="fr">
@@ -443,7 +618,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <!-- SECTION 1: APERÇU -->
         <section id="apercu" class="space-y-6">
           <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-            Au cœur de la vallée sacrée de Katmandou et face aux balcons majestueux de l’Himalaya, cette retraite de 12 jours vous invite à vous détendre, respirer et renouer avec l’essentiel. Conçue en partenariat avec l’intervenante Justine Luçon, cette parenthèse bien-être conjugue pratique quotidienne du yoga, méditation guidée et rituels traditionnels.
+            Au cœur de la vallée sacrée de Katmandou et face aux balcons majestueux de l’Himalaya, cette retraite de 12 jours vous invite à vous détendre, respirer et renouer avec l’essentiel. Cette parenthèse bien-être conjugue pratique quotidienne du yoga, méditation guidée, sonothérapie et rituels traditionnels au contact des maîtres locaux.
           </p>
           <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
             Entre moments de silence régénérants en ashram, découvertes des temples classés à l’UNESCO, cérémonies d’offrandes Aarti au coucher du soleil et marches contemplatives face aux cimes enneigées de Pokhara, vous vivrez un ressourcement profond du corps et de l’esprit.
@@ -454,7 +629,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <i data-lucide="sparkles" class="w-5 h-5 text-amber-500"></i>
               <span>Les temps forts du voyage</span>
             </h3>
-            <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Retraite spirituelle et ressourcement guidés par Justine Luçon entre ashram et montagnes sacrées.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Pratiques quotidiennes de yoga, méditation guidée, respirations conscientes et journée de silence.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Cérémonie de crémation et dévotion à Pashupatinath, et circumambulation au grand Stupa de Boudhanath.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Séjour contemplatif face aux géants des Annapurnas et rituels de paix au bord du lac de Pokhara.</span></li></ul>
+            <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Pratiques quotidiennes de yoga, méditation guidée, respirations conscientes et journée de silence.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Cérémonie de crémation et dévotion à Pashupatinath, et circumambulation au grand Stupa de Boudhanath.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Séjour contemplatif face aux géants des Annapurnas et rituels de paix au bord du lac de Pokhara.</span></li></ul>
           </div>
         </section>
 
@@ -468,15 +643,15 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="space-y-4">
               <div class="flex items-center justify-between text-sm">
                 <span class="flex items-center gap-2 text-slate-700 font-medium">Faune & pistage</span>
-                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
+                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
               </div>
               <div class="flex items-center justify-between text-sm">
                 <span class="flex items-center gap-2 text-slate-700 font-medium">Nature & aventure</span>
-                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span></div>
+                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
               </div>
               <div class="flex items-center justify-between text-sm">
                 <span class="flex items-center gap-2 text-slate-700 font-medium">Culture & vie locale</span>
-                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span></div>
+                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
               </div>
             </div>
 
@@ -487,11 +662,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               </div>
               <div class="flex items-center justify-between text-sm">
                 <span class="flex items-center gap-2 text-slate-700 font-medium">Soirées & fête</span>
-                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
-              </div>
-              <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-sm font-bold">
-                <span class="text-slate-500">Rythme & effort :</span>
-                <span class="text-[#0e8354] bg-emerald-50 px-3 py-0.5 rounded-full border border-emerald-200">Doux</span>
+                <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0e8354]"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span><span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span></div>
               </div>
             </div>
           </div>
@@ -505,7 +676,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 Itinéraire détaillé (12 jours)
               </h2>
               <p class="text-xs sm:text-sm text-slate-500 mt-1">
-                Programme jour par jour encadré par nos pisteurs natifs de Bardia et guides d'expédition.
+                Programme jour par jour guidé par nos maîtres yogis, intervenants en sonothérapie et accompagnateurs népalais.
               </p>
             </div>
             <button onclick="toggleAllDays()" class="text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] transition-colors cursor-pointer">
@@ -515,207 +686,379 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <div class="space-y-3">
             
+            <!-- J1 -->
             <details open class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J1
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 1 • Arrivée à Katmandou
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 1 • Arrivée à Katmandou
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Accueil & repos</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">Accueil à l’aéroport international Transfert jusqu’à votre hébergement Installation et temps libre pour récupérer du voyage</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">
+                  Accueil à l’aéroport international Tribhuvan, transfert privé jusqu’à votre hébergement, installation et temps libre pour récupérer sereinement du voyage.
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J2 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J2
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 2 • Découverte de Katmandou & installation à l’ashram
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 2 • Découverte de Katmandou & installation à l’ashram
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Temples sacrés & début de la retraite</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">09h00 – Visite de Swayambhunath (Temple des Singes) et du Boudhanath Stupa , deux des principaux sites spirituels du Népal. 14h00 – Arrivée et installation dans l’ashram. Après-midi – Marche méditative en montagne et découverte des environs de l’ashram. 18h45 – Méditation du soir. 20h00 – Dîner de bienvenue.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>09h00 :</strong> Visite de <strong>Swayambhunath</strong> (le temple des singes) et du grand stūpa de <strong>Boudhanath</strong>, deux hauts lieux spirituels de la vallée.</p>
+                  <p><strong>14h00 :</strong> Arrivée et installation à l’ashram.</p>
+                  <p><strong>Après-midi :</strong> Marche méditative en montagne pour s’imprégner de l’énergie paisible des lieux.</p>
+                  <p><strong>18h45 – 20h00 :</strong> Première méditation du soir, suivie du dîner de bienvenue.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J3 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J3
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 3 • Immersion dans la vie de l’ashram
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 3 • Immersion dans la vie de l’ashram
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Yoga traditionnel & méditations</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 13h00 – Enseignements philosophiques et méditations guidées. Déjeuner, temps libre et participation au Karma Yoga (activités collectives de l’ashram). 16h30 – 17h30 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h00 – 10h00 :</strong> Prières et méditation dynamique, Kriya Yoga, puis séance de Hatha Yoga. Petit-déjeuner.</p>
+                  <p><strong>11h30 – 13h00 :</strong> Enseignements philosophiques et méditations guidées.</p>
+                  <p><strong>Après-midi :</strong> Déjeuner, temps de repos et participation au Karma Yoga (activités collectives de l’ashram).</p>
+                  <p><strong>16h30 – 20h00 :</strong> Méditation Kundalini (16h30), méditation collective du soir (18h45) et dîner ayurvédique.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J4 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J4
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 4 • Spiritualité & découverte culturelle
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 4 • Spiritualité & découverte culturelle
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Pratique matinale & hauts lieux de la vallée</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">07h00 – 08h00 – Prières et méditation dynamique. 08h00 – 09h00 – Kriya Yoga. 09h00 – 10h00 – Hatha Yoga. Petit-déjeuner. 11h30 – 17h30 – Excursion à la découverte de plusieurs lieux spirituels emblématiques de la vallée de Katmandou. Temps d’échanges et de contemplation. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h00 – 10h00 :</strong> Prières, Kriya Yoga et Hatha Yoga matinal. Petit-déjeuner.</p>
+                  <p><strong>11h30 – 17h30 :</strong> Excursion à la découverte de sanctuaires emblématiques de la vallée de Katmandou, temps d’échanges et de contemplation.</p>
+                  <p><strong>18h45 – 20h00 :</strong> Méditation du soir à l’ashram et dîner.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J5 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J5
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 5 • Journée de silence
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 5 • Journée de silence (Noble Silence)
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Méditation No-Mind & séance Reiki</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">Cette journée est consacrée au Noble Silence , une pratique permettant de vivre pleinement l’instant présent dans un cadre apaisé. 07h30 – 09h00 – Prières et méditation dynamique. Petit-déjeuner. 10h30 – 12h30 – Méditation No-Mind . Déjeuner et temps de repos. 15h30 – 16h30 – Séance de Reiki. Pause thé. 17h00 – 18h00 – Méditation Kundalini. 18h45 – 20h00 – Méditation du soir. 20h00 – Dîner.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p>Cette journée est entièrement consacrée au <strong>Noble Silence</strong>, une pratique permettant d'apaiser l'esprit et de vivre pleinement l’instant présent dans un cadre calme.</p>
+                  <p><strong>07h30 :</strong> Prières et méditation dynamique. Petit-déjeuner en silence.</p>
+                  <p><strong>10h30 – 12h30 :</strong> Méditation No-Mind. Déjeuner et repos.</p>
+                  <p><strong>15h30 – 16h30 :</strong> Séance collective de Reiki, pause thé.</p>
+                  <p><strong>17h00 – 20h00 :</strong> Méditation Kundalini (17h00), méditation du soir (18h45) et dîner.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J6 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J6
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 6 • Fin de la retraite & départ pour Pokhara
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 6 • Fin de la retraite & départ pour Pokhara
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Vol panoramique & montée à Ghachok</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">07h30 – 09h00 – Dernière pratique de yoga, méditation et cérémonie de clôture. Petit-déjeuner. Transfert vers l’aéroport. 11h00 – Vol intérieur pour Pokhara et après-midi libre pour flâner dans la ville. 17h – Route vers Ghachok et installation dans notre maison en montagne.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h30 – 09h00 :</strong> Dernière pratique de yoga, méditation et cérémonie de clôture de la retraite. Petit-déjeuner, puis transfert vers l’aéroport.</p>
+                  <p><strong>11h00 :</strong> Vol intérieur pour Pokhara et après-midi libre pour flâner au bord du lac Phewa.</p>
+                  <p><strong>17h00 :</strong> Route vers Ghachok et installation dans notre maison d'hôtes en montagne face aux sommets.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J7 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J7
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 7 • Reconnexion à la nature
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 7 • Reconnexion à la nature & bols chantants
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Yoga face aux Annapurnas & marche consciente</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">7h30 – Pranayama – Yoga matinal face aux annapurnas Petit déjeuner Matin – Marche consciente au coeur des rizières et des forêts de Gachok avec des temps de pause pour utiliser des mudra , exercices de respiration et méditation de pleine conscience en nature. Déjeuner. Après-midi – Temps libre pour profiter du village ou se reposer. 16h30 – Atelier d’initiation aux bols chantants tibétains. 18h00 – Cercle de partage et méditation guidée au coucher du soleil. Dîner.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h30 :</strong> Pranayama et yoga matinal face au panorama des Annapurnas. Petit-déjeuner.</p>
+                  <p><strong>Matinée :</strong> Marche consciente au cœur des rizières et des forêts de Ghachok avec des temps de pause pour les mudras, exercices de respiration et méditation en nature.</p>
+                  <p><strong>Après-midi :</strong> Déjeuner, temps libre pour profiter du village ou se reposer.</p>
+                  <p><strong>16h30 – 18h00 :</strong> Atelier d’initiation aux bols chantants tibétains, cercle de partage et méditation guidée au coucher du soleil. Dîner.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J8 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J8
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 8 • Bien-être & intégration
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 8 • Bien-être & intégration
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Yin Yoga, massage & Yoga Nidra</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">7h30 – Pranayama – Yin Yoga Petit-déjeuner Matin – Massage intuitif/Reiki Déjeuner. Après-midi – Atelier tantra blanc Temps libre. Diner. Avant le coucher – Yoga Nidra</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h30 :</strong> Pranayama et séance de Yin Yoga. Petit-déjeuner.</p>
+                  <p><strong>Matinée :</strong> Massage intuitif et séance de Reiki. Déjeuner.</p>
+                  <p><strong>Après-midi :</strong> Atelier tantra blanc et temps libre. Dîner.</p>
+                  <p><strong>Avant le coucher :</strong> Séance apaisante de Yoga Nidra.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J9 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J9
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 9 • Bien-être & découverte
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 9 • Immersion locale & découverte
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Vie de village & bain sonore</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">7h30 – Pranayama – Réveil musculaire Petit-déjeuner. Journée – Immersion dans la vie locale Retour en fin d’après-midi. 18h – Bain de vibration aux bols chantants pour la pleine lune du castor en Gémeaux Dîner.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h30 :</strong> Pranayama et réveil musculaire doux. Petit-déjeuner.</p>
+                  <p><strong>Journée :</strong> Immersion dans la vie locale et partage avec les habitants du village. Retour au lodge en fin d’après-midi.</p>
+                  <p><strong>18h00 :</strong> Bain de vibration aux bols chantants. Dîner traditionnel.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J10 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J10
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 10 • Randonnée en Himalaya
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 10 • Randonnée en Himalaya & cercle de clôture
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Point de vue Annapurnas & rituel sacré</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">7h00 – Pranayama et Yoga Petit-Déjeuner. Matin : Randonnée accessible jusqu’à un point de vue sur les Annapurnas, avec plusieurs pauses de contemplation. Pique-nique ou déjeuner. Après-midi – Retour tranquillement au village. 17h – Cercle de clôture, dernière pratique aux bols chantants et/ou danse serpentine et rituel de fin de séjour. Dernier diner à Gachok.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>07h00 :</strong> Pranayama et yoga. Petit-déjeuner.</p>
+                  <p><strong>Matinée :</strong> Randonnée accessible jusqu’à un point de vue sur les Annapurnas, ponctuée de pauses de contemplation. Déjeuner ou pique-nique en chemin.</p>
+                  <p><strong>Après-midi :</strong> Retour tranquille au village.</p>
+                  <p><strong>17h00 :</strong> Cercle de clôture, dernière pratique aux bols chantants, danse serpentine et rituel de fin de séjour. Dernier dîner festif à Ghachok.</p>
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J11 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J11
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 11 • Retour à Katmandou
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 11 • Retour à Katmandou
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Vol intérieur & temps libre</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">Retour vers Katmandou en vol interne. Temps libre pour vos achats. Dernière soirée au Népal.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">
+                  Vol intérieur Pokhara – Katmandou. Temps libre pour vos achats d'artisanat, vos balades et dernière soirée au Népal.
+                </div>
               </div>
             </details>
-        
-            <details  class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+
+            <!-- J12 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
               <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-3.5">
                   <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     J12
                   </span>
-                  <h4 class="font-bold text-sm sm:text-base text-slate-900">
-                    Jour 12 • Départ
-                  </h4>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900">
+                      Jour 12 • Départ
+                    </h4>
+                    <p class="text-[11px] text-slate-400 font-medium">Transfert aéroport & vol retour</p>
+                  </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
               <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
-                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">Transfert à l’aéroport international. Vol retour.</div>
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">
+                  Transfert privé à l’aéroport international Tribhuvan selon l'horaire de votre vol retour.
+                </div>
+              </div>
+            </details>
+
+            <!-- J11 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50/80 transition-colors">
+                <div class="flex items-center gap-3.5 sm:gap-4">
+                  <span class="w-9 h-9 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border border-emerald-200/80 shadow-xs">
+                    J11
+                  </span>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                      Jour 11 • Retour à Katmandou
+                    </h4>
+                    <span class="text-[11px] font-medium text-emerald-700">Vol panoramique & Dernière soirée népalaise</span>
+                  </div>
+                </div>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 shrink-0"></i>
+              </summary>
+              <div class="p-5 sm:p-6 pt-0 border-t border-slate-100">
+                <div class="pt-4 space-y-4">
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                    Vol intérieur de retour vers la capitale Katmandou. Temps libre dédié aux emplettes d'artisanat local (thangkas, encens, thés de l'Himalaya) et dernière soirée mémorable au Népal.
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50/80 border border-slate-200/60">
+                      <span class="px-2 py-0.5 rounded-md bg-emerald-100/70 text-[#0e8354] font-bold text-[11px] shrink-0">Vol retour</span>
+                      <span class="text-xs text-slate-700 leading-tight">Vol intérieur Pokhara – Katmandou & transfert</span>
+                    </div>
+                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50/80 border border-slate-200/60">
+                      <span class="px-2 py-0.5 rounded-md bg-amber-100/70 text-amber-800 font-bold text-[11px] shrink-0">Soirée</span>
+                      <span class="text-xs text-slate-700 leading-tight">Dernier dîner d'adieu & temps libre shopping</span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-[#0e8354] font-semibold text-[11px] border border-emerald-100">
+                      <span>✈️</span> Vol domestique inclus
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 font-medium text-[11px]">
+                      <span>🛍️</span> Artisanat & Souvenirs
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <!-- J12 -->
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50/80 transition-colors">
+                <div class="flex items-center gap-3.5 sm:gap-4">
+                  <span class="w-9 h-9 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border border-emerald-200/80 shadow-xs">
+                    J12
+                  </span>
+                  <div>
+                    <h4 class="font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                      Jour 12 • Départ International
+                    </h4>
+                    <span class="text-[11px] font-medium text-emerald-700">Transfert privé & Vol retour</span>
+                  </div>
+                </div>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 shrink-0"></i>
+              </summary>
+              <div class="p-5 sm:p-6 pt-0 border-t border-slate-100">
+                <div class="pt-4 space-y-4">
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                    Selon les horaires de votre vol international, transfert privatif organisé par notre équipe jusqu'à l'aéroport Tribhuvan de Katmandou. Départ le cœur empli de sérénité et d'expériences inoubliables.
+                  </p>
+
+                  <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/60 flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded-md bg-emerald-100/70 text-[#0e8354] font-bold text-[11px]">Transfert privé</span>
+                    <span class="text-xs text-slate-700">Prise en charge jusqu’au terminal international</span>
+                  </div>
+                </div>
               </div>
             </details>
         
@@ -967,7 +1310,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>
@@ -1381,6 +1724,12 @@ function toggleMobileMenu() {
   </div>
 
   <script is:inline>
+  function toggleAllDays() {
+    const detailsList = document.querySelectorAll("#programme details");
+    if (!detailsList.length) return;
+    const anyClosed = Array.from(detailsList).some(d => !d.open);
+    detailsList.forEach(d => d.open = anyClosed);
+  }
   function openLegalModal() {
     const m = document.getElementById('legal-modal');
     if (m) m.classList.remove('hidden');

@@ -8,35 +8,147 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Deep into the wild : Babai spécial experience – 5 jours",
-    "description": "Ce n’est pas un simple tour dans la jungle : c’est une expédition exclusive de 5 jours au cœur de l’une des zones les plus reculées et intactes du Népal. La vallée de Babai se niche loin à l’intérieur du parc national de Bardia, bien au-delà des sentiers fréquentés. Très peu de voyageurs y ont accès, et encore moins ont le privilège de passer la nuit sur les rives sauvages de sa rivière. Guidé par nos pisteurs d’élite, vous remonterez le lit de la Babai entre gorges rocheuses et savanes préservées. Dans ce sanctuaire absolu où règne le grand tigre du Bengale, vous observerez éléphants sauvages, crocodiles gavials et une multitude d’oiseaux rares dans des conditions de solitude totale.",
-    "image": "https://junglenepal.com/assets/original_site/elephant_bardia.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "900",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/babai-special.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "19",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Deep into the wild : Babai spécial experience – 5 jours",
+  "description": "Ce n’est pas un simple tour dans la jungle : c’est une expédition exclusive de 5 jours au cœur de l’une des zones les plus reculées et intactes du Népal. La vallée de Babai se niche loin à l’intérieur du parc national de Bardia, bien au-delà des sentiers fréquentés. Très peu de voyageurs y ont accès, et encore moins ont le privilège de passer la nuit sur les rives sauvages de sa rivière. Guidé par nos pisteurs d’élite, vous remonterez le lit de la Babai entre gorges rocheuses et savanes préservées. Dans ce sanctuaire absolu où règne le grand tigre du Bengale, vous observerez éléphants sauvages, crocodiles gavials et une multitude d’oiseaux rares dans des conditions de solitude totale.",
+  "image": "https://junglenepal.com/assets/original_site/elephant_bardia.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "900",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/babai-special"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "19",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Bienvenue dans la nature sauvage",
+          "description": "Prise en charge à l’aéroport de Nepalgunj ou à Kolhapur puis transfert jusqu’aux rives de la rivière Babai à Chepang. Après le déjeuner, profitez d’un safari paisible en bateau à l’intérieur du parc, idéal pour l’observation de la faune. À l’arrivée, installation au Rhino Camp, aménagé au bord de la rivière. Plus tard, petite marche autour du camp avant le dîner et la nuit en pleine jungle."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Sur les traces du tigre",
+          "description": "Réveil avec un thé matinal, suivi d’une marche douce le long de la rivière et des lisières de forêt. Après le petit-déjeuner, départ avec votre guide pour une expédition de pistage du tigre. Le déjeuner est servi en pique-nique au bord de la rivière. L’après-midi, poursuite de la marche à travers la jungle jusqu’à Nilgai Camp, votre deuxième campement en pleine nature. Dîner et nuit entourés des sons de la jungle."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Descente de la rivière et retour",
+          "description": "Débutez par un thé matinal et une marche autour du camp. Après le petit-déjeuner, profitez d’une dernière marche guidée dans la jungle jusqu’au déjeuner. L’après-midi, descente en bateau le long de la rivière Babai jusqu’à la route principale, où un véhicule vous attendra pour vous ramener au lodge. Dîner et nuit au lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Safari dans l’ouest du parc et immersion culturelle",
+          "description": "Après un petit-déjeuner tranquille, partez pour une journée complète de safari en jeep dans le secteur ouest du parc national de Bardia. Retour en soirée pour le dîner suivi d’une performance culturelle traditionnelle Tharu. Un aperçu de la vie de celles et ceux qui habitent cette terre sauvage."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 – Départ",
+          "description": "Après le petit-déjeuner, au revoir et transfert vers l’aéroport ou votre prochaine destination."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Deep into the wild : Babai spécial experience – 5 jours | Jungle Nepal Adventure" lang="fr">
@@ -880,7 +992,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

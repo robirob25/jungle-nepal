@@ -8,38 +8,132 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Bardia – aventure immersive en jungle et camping sauvage",
-    "description": "Une micro-aventure intense et magique de 2 jours au cœur des territoires sauvages de Bardia. Cette formule courte vous fait vivre l’expérience inoubliable d’une nuit sous tente au plus profond de la jungle, lorsque la forêt s’éveille et que les prédateurs partent en chasse. Accompagné de guides experts qui décryptent le moindre cri d’alarme des cerfs et des oiseaux, vous explorerez les prairies ouvertes, les points d’eau stratégiques et les berges de la rivière pour des observations animalières mémorables.",
-    "image": "https://junglenepal.com/assets/original_site/camping_sauvage_bardia.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "350",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/bardia-nuit-sauvage.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "31",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Bardia – aventure immersive en jungle et camping sauvage",
+  "description": "Une micro-aventure intense et magique de 2 jours au cœur des territoires sauvages de Bardia. Cette formule courte vous fait vivre l’expérience inoubliable d’une nuit sous tente au plus profond de la jungle, lorsque la forêt s’éveille et que les prédateurs partent en chasse. Accompagné de guides experts qui décryptent le moindre cri d’alarme des cerfs et des oiseaux, vous explorerez les prairies ouvertes, les points d’eau stratégiques et les berges de la rivière pour des observations animalières mémorables.",
+  "image": "https://junglenepal.com/assets/original_site/camping_sauvage_bardia.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "350",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/bardia-nuit-sauvage"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "31",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Prise en charge à Nepalgunj",
+          "description": "Nous venons vous chercher à l’aéroport de Nepalgunj ou à n’importe quelle gare routière. De là, route vers votre lodge situé aux abords du parc national de Bardia. Installez-vous, reposez-vous et faites connaissance avec l’équipe locale qui vous accompagnera pendant l’aventure."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Safari en jeep et nuit en camping au cœur de la nature",
+          "description": "Départ tôt le matin pour une journée complète de safari en jeep au cœur du parc national de Bardia. Explorez rives, prairies et forêts profondes à la recherche de la faune. Dans l’après-midi, installation du camp dans une zone reculée du parc pour une nuit en pleine jungle."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Safari en jeep et retour au village",
+          "description": "Safari en jeep le matin pour continuer la recherche de la faune dans de nouvelles zones du parc. Après le safari, retour au village et installation au lodge pour une soirée tranquille."
+        }
+      }
+    ]
   }
+}
   </script>
 
-<Layout title="Bardia – aventure immersive en jungle et camping sauvage | Jungle Nepal Adventure" lang="fr">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
+  </script>
+
+<Layout title="Safari Bivouac à Bardia : Nuit Sauvage en Jungle au Népal" lang="fr">
 
 
     <!-- TOP BAR PROMO -->
@@ -332,7 +426,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Bardia – aventure immersive en jungle et camping sauvage
+          Bardia en immersion sauvage : Bivouac et safaris à pied
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
@@ -810,7 +904,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

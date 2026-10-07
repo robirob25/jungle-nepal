@@ -7,33 +7,70 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Cultural Immersion and Adventure in Nepal: Dashain Festival Special",
-    "description": "An exclusive 15-day journey into Nepalese traditions and wild nature, hosted by visual creators Adrien & Samantha. Authentic Dashain festival immersion in a Tharu village in Bardia, Annapurna balcony views, and Royal Bengal tiger tracking.",
-    "image": "https://junglenepal.com/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
-    "touristType": ["Mindful Travelers", "Culture & Wildlife Enthusiasts", "Photographers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,490",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/dashain-immersion-culturelle"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Cultural Immersion and Adventure in Nepal: Dashain Festival Special",
+  "description": "An exclusive 15-day journey into Nepalese traditions and wild nature, hosted by visual creators Adrien & Samantha. Authentic Dashain festival immersion in a Tharu village in Bardia, Annapurna balcony views, and Royal Bengal tiger tracking.",
+  "image": "https://junglenepal.com/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
+  "touristType": [
+    "Mindful Travelers",
+    "Culture & Wildlife Enthusiasts",
+    "Photographers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2490",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/dashain-immersion-culturelle"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to be an experienced photographer to join?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not at all! This journey is designed for all curious travelers, whether equipped with professional gear, a smartphone, or simply traveling with open eyes. Adrien and Samantha adapt their guidance to everyone's individual level and artistic desires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why celebrate Dashain in a village rather than Kathmandu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During Dashain, Kathmandu largely empties as families travel to their ancestral hometowns. In Bardia's Tharu villages, the celebration is communal, intimate, and deeply authentic—allowing travelers to experience genuine cultural hospitality."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout 
-  title="Cultural Immersion & Adventure in Nepal: Dashain Festival Special (15d) | Jungle Nepal Adventure" 
+  title="Nepal Immersion Journey & Safari: Dashain Festival 2027" 
   description="Exclusive 15-day journey in Nepal for Dashain Festival guided by Adrien & Samantha. Kathmandu, Annapurna balconies, Gurung heritage and Bardia tiger safaris."
   image="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp"
   lang="en"
@@ -289,7 +326,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Cultural Immersion & Adventure in Nepal: Dashain Festival Special
+          Tharu Cultural Immersion & Bardia Safaris: Dashain Festival Special 2027
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">

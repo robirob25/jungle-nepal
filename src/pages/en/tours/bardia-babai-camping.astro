@@ -8,35 +8,174 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Bardia Babai Valley – Wild Camping in Untamed Nature – 8 Days",
-    "description": "One of the most authentic and immersive wilderness adventures in Asia: 8 full days exploring the mythical Babai Valley. Completely isolated from modern civilization, this sanctuary allows you to cruise pristine waterways and sleep in comfortable safari tented camps on secluded sandbanks. Accompanied by expert rangers and native trackers, you will follow fresh predator tracks, explore uncharted jungle pockets, and experience the unfiltered thrill of true wilderness living around the campfire.",
-    "image": "https://junglenepal.com/assets/original_site/babai_walk.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "1,200",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/bardia-babai-camping"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "24",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Bardia Babai Valley – Wild Camping in Untamed Nature – 8 Days",
+  "description": "One of the most authentic and immersive wilderness adventures in Asia: 8 full days exploring the mythical Babai Valley. Completely isolated from modern civilization, this sanctuary allows you to cruise pristine waterways and sleep in comfortable safari tented camps on secluded sandbanks. Accompanied by expert rangers and native trackers, you will follow fresh predator tracks, explore uncharted jungle pockets, and experience the unfiltered thrill of true wilderness living around the campfire.",
+  "image": "https://junglenepal.com/assets/original_site/babai_walk.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "1200",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/bardia-babai-camping"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "24",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 8,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival & First Steps into the Wild",
+          "description": "Arrival at Nepalgunj Airport and private scenic transfer to Bardia. Settle into the lodge, meet your naturalist guides, and receive a complete safety and expedition briefing. Take an evening walk around the lodge to spot golden jackals and birdlife. Dinner and overnight at the lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Tracking Tigers & Ascending the River",
+          "description": "Early departure to the entrance of the Babai Valley. Begin walking tracking along the riverbeds where predator tracks are fresh in the morning sand. Establish the first wild camp on a secure sandbank. Campfire dinner and night in tents listening to nocturnal jungle calls."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Into the Heart of Babai",
+          "description": "A full day dedicated to tracking big cats and herds of wild elephants. Hike through dense sal forests, tall elephant grass, and rocky gorges. Strategic waiting posts at natural water points. Second night of wild camping under the pristine Himalayan night sky."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – From River to Forest Canopies",
+          "description": "Continue exploring the remote valley corridors. Observe marsh deer (Barasingha), nilgai antelopes, and endangered gharials basking in the sun. Third night in wilderness bivouac with our field camp crew."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Full-Day 4x4 Jeep Safari",
+          "description": "Exit the deep valley and transition to an open 4x4 safari jeep to cover greater distances across the western grasslands and riverbanks of Bardia. Return to the comfort of the eco-lodge for a hot shower and hearty local dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Rest & Life on the Riverbanks",
+          "description": "A slower-paced day dedicated to river observation. Traditional wooden dugout canoe drift on the Geruwa River, peaceful photography pauses, and birdwatching. Overnight at the eco-lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Tharu Cultural Immersion Day",
+          "description": "Visit traditional Tharu villages on foot or by bicycle. Discover their mud-and-thatch architecture, organic agriculture, and animist traditions. Evening cultural performance and traditional feast."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Return to Kathmandu",
+          "description": "Final breakfast in the peaceful jungle morning. Private transfer to Nepalgunj Airport and flight back to Kathmandu."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée | Jungle Nepal Adventure" lang="en">

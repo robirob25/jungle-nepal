@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
+import SchemaOrg from '../../../components/SchemaOrg.astro';
 import posts from '../../../data/blog_posts.en.json';
 
 export async function getStaticPaths() {
@@ -47,79 +48,29 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
   image={post.featuredImage}
   lang="en"
 >
-
-  <!-- SCHEMA.ORG ARTICLE JSON-LD -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.description,
-    "image": [
-      post.featuredImage.startsWith('http') ? post.featuredImage : `https://junglenepaladventure.com${post.featuredImage}`
-    ],
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": [{
-      "@type": "Person",
-      "name": "Robin Rozier",
-      "jobTitle": "Naturalist Guide & Expedition Photographer",
-      "url": "https://junglenepaladventure.com/en/about"
-    }],
-    "publisher": {
-      "@type": "Organization",
-      "name": "Jungle Nepal Adventure",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://junglenepaladventure.com/assets/logo_nav_white.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://junglenepaladventure.com/en/blog/${post.slug}`
-    }
-  })} />
-
-  <!-- SCHEMA.ORG BREADCRUMB LIST -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://junglenepaladventure.com/en"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://junglenepaladventure.com/en/blog"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": post.title,
-        "item": `https://junglenepaladventure.com/en/blog/${post.slug}`
-      }
-    ]
-  })} />
-
-  <!-- SCHEMA.ORG FAQ PAGE JSON-LD (IF FAQS PRESENT) -->
-  {faqs.length > 0 && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map((f) => ({
-        "@type": "Question",
-        "name": f.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": f.answer
-        }
-      }))
-    })} />
-  )}
+  <SchemaOrg
+    slot="head"
+    type="BlogPosting"
+    headline={post.title}
+    description={post.description}
+    image={post.featuredImage}
+    url={`https://junglenepal.com/en/blog/${post.slug}`}
+    datePublished={post.date}
+    dateModified={post.date}
+    lang="en"
+    author={{
+      name: "Robin Rozier",
+      jobTitle: "Naturalist Guide & Trip Coordinator",
+      url: "/en/about"
+    }}
+    about={["Bardia National Park", "Nepal Safari", "Royal Bengal Tiger", "Ethical Wildlife Tours"]}
+    faqs={faqs}
+    breadcrumbs={[
+      { name: "Home", url: "/en" },
+      { name: "Blog", url: "/en/blog" },
+      { name: post.title, url: `/en/blog/${post.slug}` }
+    ]}
+  />
 
   <!-- TOP PROMO BAR -->
   <aside aria-label="Information banner" class="bg-gradient-to-r from-[#073021] via-[#0e5c3e] to-[#073021] text-white text-xs sm:text-[13px] py-2 px-3 sm:px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">

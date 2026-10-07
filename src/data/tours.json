@@ -2271,15 +2271,14 @@
     "difficulty": "Doux",
     "style": "Retraite Spirituelle & Yoga",
     "radar": {
-      "wildlife": 2,
-      "nature": 5,
-      "culture": 5,
+      "wildlife": 1,
+      "nature": 4,
+      "culture": 4,
       "relax": 5,
-      "nightlife": 0
+      "nightlife": 2
     },
-    "overview": "Au cœur de la vallée de Katmandou, entre temples et montagne , cette retraite de 12 jours vous invite à ralentir, respirer et retrouver l’essentiel . Jungle Nepal Adventure a décidé de laisser un espace à l&rsquo;intervenante Justine Luçon, afin de concevoir en partenariat, un tour différent de ceux actuellement proposés. Pendant plusieurs jours ,",
+    "overview": "Au cœur de la vallée sacrée de Katmandou et face aux balcons majestueux de l’Himalaya, cette retraite de 12 jours vous invite à vous détendre, respirer et renouer avec l’essentiel. Cette parenthèse bien-être conjugue pratique quotidienne du yoga, méditation guidée, sonothérapie et rituels traditionnels.",
     "highlights": [
-      "Retraite spirituelle et ressourcement guidés par Justine Luçon entre ashram et montagnes sacrées.",
       "Pratiques quotidiennes de yoga, méditation guidée, respirations conscientes et journée de silence.",
       "Cérémonie de crémation et dévotion à Pashupatinath, et circumambulation au grand Stupa de Boudhanath.",
       "Séjour contemplatif face aux géants des Annapurnas et rituels de paix au bord du lac de Pokhara."

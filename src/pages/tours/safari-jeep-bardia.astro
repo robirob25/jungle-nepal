@@ -7,15 +7,20 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
-<script type="application/ld+json">
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Bardia : Safari en Jeep au Parc National de Bardia – Journée complète 4x4 privatisé",
   "description": "Journée complète d'exploration motorisée en jeep privatisée au cœur des secteurs les plus profonds du parc national de Bardia. Traque du tigre du Bengale, éléphants et rhinocéros avec chauffeur, guide senior et pisteur d'élite.",
   "image": "https://junglenepal.com/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
-  "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers", "Familles"],
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers",
+    "Familles"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "190",
@@ -27,16 +32,40 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "provider": {
     "@type": "TravelAgency",
     "name": "Jungle Nepal Adventure",
-    "url": "https://junglenepal.com"
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "reviewCount": "19",
     "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Exploration complète 4x4 des secteurs profonds de Bardia",
+          "description": "Départ à 06h00 en jeep privatisée. Traque matinale des empreintes en forêt de Sal, corridors d'éléphants, pique-nique en mirador et affûts le long de la Geruwa. Retour vers 18h00."
+        }
+      }
+    ]
   }
 }
-</script>
+  </script>
+
 
 <Layout title="Bardia : Safari en Jeep au Parc National de Bardia – 4x4 Privatisé | Jungle Nepal Adventure" lang="fr">
 

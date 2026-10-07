@@ -8,35 +8,228 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Népal – immersion totale : culture, vie sauvage et aventure",
-    "description": "Le grand voyage de référence pour découvrir toute la richesse et la diversité du Népal en 14 jours. De l’art newar et des palais royaux de Katmandou, Patan et Bhaktapur jusqu’aux panoramas himalayens de Nagarkot au lever du soleil, l’aventure prend une dimension spectaculaire avec une descente en rafting sur la rivière Trisuli. Vous plongerez ensuite au cœur des réserves sauvages de Chitwan et de Bardia pour des safaris complets à pied, en pirogue et en 4x4, avant de terminer par la sérénité du lac Phewa à Pokhara au pied du massif des Annapurnas.",
-    "image": "https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,590",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/nepal-immersion-totale.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "42",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Népal – immersion totale : culture, vie sauvage et aventure",
+  "description": "Le grand voyage de référence pour découvrir toute la richesse et la diversité du Népal en 14 jours. De l’art newar et des palais royaux de Katmandou, Patan et Bhaktapur jusqu’aux panoramas himalayens de Nagarkot au lever du soleil, l’aventure prend une dimension spectaculaire avec une descente en rafting sur la rivière Trisuli. Vous plongerez ensuite au cœur des réserves sauvages de Chitwan et de Bardia pour des safaris complets à pied, en pirogue et en 4x4, avant de terminer par la sérénité du lac Phewa à Pokhara au pied du massif des Annapurnas.",
+  "image": "https://junglenepal.com/assets/drive_photos/adrien_bhaktapur2.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2590",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/nepal-immersion-totale"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "42",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 14,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Arrivée à Katmandou",
+          "description": "Arrivée à Katmandou et transfert à votre hôtel. Journée libre pour vous reposer, explorer les rues alentour ou découvrir l’énergie vibrante de la capitale népalaise."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Journée complète de visite de Katmandou",
+          "description": "Visite des sites les plus emblématiques de la ville : le sacré temple de Pashupatinath, l’imposante stupa de Boudhanath, le Swayambhunath perché sur sa colline (le temple des singes), et l’historique Durbar Square, chacun offrant un aperçu du riche héritage culturel et spirituel du Népal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Patan et Bhaktapur, nuit à Nagarkot",
+          "description": "Après le petit déjeuner, exploration des Durbar Squares de Patan et Bhaktapur, célèbres pour leurs temples raffinés et leur charme médiéval. Après le déjeuner, route vers Nagarkot, un village perché réputé pour ses vues panoramiques sur l’Himalaya, où vous passerez la nuit."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Rafting sur la rivière Trisuli et route vers Chitwan",
+          "description": "Vivez une aventure exaltante de trois heures de rafting en eaux vives sur la rivière Trisuli. Ensuite, poursuite du trajet vers le parc national de Chitwan, site classé au patrimoine mondial de l’UNESCO, réputé pour sa faune exceptionnelle et ses paysages luxuriants"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 – Journée complète de safari en jeep à Chitwan",
+          "description": "Partez pour un safari en jeep d’une journée complète au cœur de la jungle, avec déjeuner à emporter, à la recherche des rhinocéros, des cerfs, des crocodiles et du discret tigre du Bengale. Retour au lodge en fin de journée pour vous détendre."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 6 – Marche en jungle et route vers Pokhara",
+          "description": "Commencez la journée par une marche de deux heures en pleine jungle, offrant une perspective unique sur la nature. Après le petit déjeuner et un moment de repos au lodge, profitez du déjeuner avant de prendre la route vers la ville pittoresque de Pokhara"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 7 – Exploration de Pokhara",
+          "description": "Visitez les fascinantes chutes de Davis, explorez des grottes cachées, découvrez le musée de la montagne et profitez d’une paisible balade en bateau sur le lac Phewa, avec la chaîne des Annapurnas se reflétant à la surface de l’eau."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 8 – Route vers Lumbini et visite du lieu de naissance du Bouddha",
+          "description": "Après le petit déjeuner, route vers Lumbini, le lieu de naissance du Bouddha. Après le déjeuner, visite du temple sacré Maya Devi et exploration des monastères environnants dans ce lieu de pèlerinage paisible."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 9 – Route vers Bardia et visite d’un village Tharu",
+          "description": "Départ pour le parc national de Bardia, un sanctuaire sauvage isolé et préservé. Déjeuner à l’arrivée, puis promenade en soirée dans un village Tharu traditionnel pour découvrir la culture locale de ce peuple indigène."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 10 – Journée complète de safari en jeep à Bardia",
+          "description": "Passez la journée en safari en jeep dans la nature sauvage de Bardia, à la recherche d’animaux tels que les tigres, les éléphants sauvages et les gavials. Déjeunez au cœur de la jungle avant de retourner au resort en fin de journée."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 11 – Nouvelle journée complète de safari en jeep",
+          "description": "Une nouvelle journée dédiée à l’exploration de la faune au cœur de Bardia À chaque safari, les chances d’apercevoir des animaux rares augmentent, et la beauté de la jungle devient encore plus immersive."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 12 – Dernier safari en jeep et spectacle culturel Tharu",
+          "description": "Profitez d’un dernier safari en jeep d’une journée complète, au cœur de la nature intacte de Bardia. En soirée, après le dîner, assistez à un spectacle de danse traditionnelle Tharu, vibrant hommage aux traditions du peuple local."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 13 – Vol pour Katmandou",
+          "description": "Vol retour pour Katmandou et dernière soirée dans la capitale animée du Népal, avec du temps pour quelques achats de dernière minute ou un moment de détente."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 14 – Départ",
+          "description": "Après le petit déjeuner, transfert vers l’aéroport pour votre vol retour, emportant avec vous des souvenirs inoubliables des paysages variés du Népal, de sa riche culture et de sa faune exceptionnelle."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Népal – immersion totale : culture, vie sauvage et aventure | Jungle Nepal Adventure" lang="fr">
@@ -1036,7 +1229,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

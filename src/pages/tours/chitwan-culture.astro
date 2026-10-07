@@ -8,35 +8,138 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Chitwan – culture et jungle sauvage",
-    "description": "Ce circuit de 4 jours condense le meilleur du parc national de Chitwan en alliant safaris animaliers de premier ordre et découverte humaine authentique. Vous partirez en pirogue à l’aube sur la Rapti pour observer gavials du Gange et martins-pêcheurs, puis en safari jeep pour pister rhinocéros et hardes de cervidés. Le voyage fait également la part belle à la rencontre avec la communauté autochtone Tharu, qui préserve des traditions séculaires d’architecture en pisé, de danses rituelles et de pharmacopée traditionnelle au contact de la forêt.",
-    "image": "https://junglenepal.com/assets/original_site/chitwan_rhino.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "590",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/chitwan-culture.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "28",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Chitwan – culture et jungle sauvage",
+  "description": "Ce circuit de 4 jours condense le meilleur du parc national de Chitwan en alliant safaris animaliers de premier ordre et découverte humaine authentique. Vous partirez en pirogue à l’aube sur la Rapti pour observer gavials du Gange et martins-pêcheurs, puis en safari jeep pour pister rhinocéros et hardes de cervidés. Le voyage fait également la part belle à la rencontre avec la communauté autochtone Tharu, qui préserve des traditions séculaires d’architecture en pisé, de danses rituelles et de pharmacopée traditionnelle au contact de la forêt.",
+  "image": "https://junglenepal.com/assets/original_site/chitwan_rhino.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "590",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/chitwan-culture"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "28",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Transfert vers Chitwan",
+          "description": "Prise en charge à Katmandou et route vers le parc national de Chitwan (5–6 heures). Arrivée à votre écolodge ou guesthouse dans un village Tharu. Après le déjeuner, profitez d’une paisible balade en canoë sur la rivière Rapti, où vous pourrez observer crocodiles, martins-pêcheurs et autre vie aquatique Dîner et nuit sur place."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Aventure safari en jungle",
+          "description": "Après le petit déjeuner, départ pour un safari en jeep d’une journée complète au cœur du parc national. Vous explorerez différentes zones connues pour leurs rhinocéros, éléphants, cerfs et — avec un peu de chance — tigres. Déjeuner à emporter à l’intérieur du parc. Retour en soirée pour le dîner et le repos"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Immersion dans la culture Tharu",
+          "description": "Passez la matinée à visiter un village Tharu voisin avec un guide local. Découvrez les maisons traditionnelles, les méthodes agricoles et les coutumes ancestrales. Après-midi libre pour vous détendre ou vous promener autour du lodge. En soirée, profitez d’un spectacle de danse culturelle avec la communauté"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Retour à Katmandou",
+          "description": "Après le petit déjeuner, transfert retour vers Katmandou"
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Chitwan – culture et jungle sauvage | Jungle Nepal Adventure" lang="fr">
@@ -828,7 +931,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

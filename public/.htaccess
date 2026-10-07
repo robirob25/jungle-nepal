@@ -102,6 +102,12 @@ Options -Indexes -MultiViews
     </FilesMatch>
 </IfModule>
 
+# 301 REDIRECTS FOR LEGACY OFFER PAGES (GOOGLE SITELINKS)
+Redirect 301 /nos-offres/ https://junglenepal.com/#prochains-departs
+Redirect 301 /nos-offres https://junglenepal.com/#prochains-departs
+Redirect 301 /offres/ https://junglenepal.com/#prochains-departs
+Redirect 301 /offres https://junglenepal.com/#prochains-departs
+
 # 301 REDIRECTS (Legacy WordPress Slugs Preservation)
 Redirect 301 /agence-de-safaris-au-nepal/ /a-propos
 Redirect 301 /agence-de-safaris-au-nepal /a-propos
@@ -183,3 +189,20 @@ Redirect 301 /comportement-du-rhinoceros-unicornis/ /blog/comportement-du-rhinoc
 Redirect 301 /comportement-du-rhinoceros-unicornis /blog/comportement-du-rhinoceros-unicornis
 Redirect 301 /safari-nepal-ou-afrique-que-choisir/ /blog/safari-nepal-ou-afrique-que-choisir
 Redirect 301 /safari-nepal-ou-afrique-que-choisir /blog/safari-nepal-ou-afrique-que-choisir
+
+# 301 REDIRECTS - CIRCUITS SLUG ALIASES
+Redirect 301 /circuits/bardia-explorateur/ /tours/bardia-explorateur
+Redirect 301 /circuits/bardia-explorateur /tours/bardia-explorateur
+Redirect 301 /circuits/safari-bardia-5-jours/ /tours/bardia-explorateur
+Redirect 301 /circuits/safari-bardia-5-jours /tours/bardia-explorateur
+Redirect 301 /circuits/safari-bivouac-bardia/ /tours/bardia-nuit-sauvage
+Redirect 301 /circuits/safari-bivouac-bardia /tours/bardia-nuit-sauvage
+Redirect 301 /circuits/safari-faune-sauvage-15-jours/ /tours/jungle-extreme
+Redirect 301 /circuits/safari-faune-sauvage-15-jours /tours/jungle-extreme
+Redirect 301 /circuits/jungle-extreme/ /tours/jungle-extreme
+Redirect 301 /circuits/jungle-extreme /tours/jungle-extreme
+Redirect 301 /circuits/safari-pied-bardia/ /tours/safari-pied-bardia
+Redirect 301 /circuits/safari-pied-bardia /tours/safari-pied-bardia
+Redirect 301 /circuits/safari-jeep-bardia/ /tours/safari-jeep-bardia
+Redirect 301 /circuits/safari-jeep-bardia /tours/safari-jeep-bardia
+

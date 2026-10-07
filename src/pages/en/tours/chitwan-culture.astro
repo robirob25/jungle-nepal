@@ -8,35 +8,138 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Chitwan – Wildlife Safari & Indigenous Culture – 4 Days",
-    "description": "This 4-day escape combines thrilling wildlife safaris with the warm hospitality of indigenous heritage in Chitwan. Glide past gharials and kingfishers on the Rapti river at sunrise, and embark on open jeep safaris tracking rhinos and deer. You will also immerse yourself in the rich culture of the indigenous Tharu community, discovering traditional mud architecture, ancient folk dances, and ancestral knowledge of the forest.",
-    "image": "https://junglenepal.com/assets/original_site/chitwan_rhino.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "590",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/chitwan-culture"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "28",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Chitwan – Wildlife Safari & Indigenous Culture – 4 Days",
+  "description": "This 4-day escape combines thrilling wildlife safaris with the warm hospitality of indigenous heritage in Chitwan. Glide past gharials and kingfishers on the Rapti river at sunrise, and embark on open jeep safaris tracking rhinos and deer. You will also immerse yourself in the rich culture of the indigenous Tharu community, discovering traditional mud architecture, ancient folk dances, and ancestral knowledge of the forest.",
+  "image": "https://junglenepal.com/assets/original_site/chitwan_rhino.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "590",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/chitwan-culture"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "28",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Transfer to Chitwan & Sunset on the Rapti",
+          "description": "Scenic private transfer or flight from Kathmandu to Chitwan (Sauraha). Settle into your charming riverside eco-lodge. In the late afternoon, enjoy a peaceful sunset walk along the Rapti River, frequently visited by rhinos coming down to bathe. Traditional dinner at the lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Jungle Safari Adventure & River Canoe",
+          "description": "Glide down the calm Rapti River in a traditional wooden dugout canoe, viewing endangered fish-eating gharials, mugger crocodiles, and kingfishers. Continue on a guided nature walk into the buffer zone, followed by an afternoon open 4x4 jeep safari deep inside Chitwan National Park tracking rhinos, sloth bears, and leopards."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Tharu Village Immersion & Birdwatching",
+          "description": "Early morning birdwatching tour with a specialist guide (Chitwan hosts over 500 avian species). After breakfast, explore traditional Tharu villages by foot or ox-cart. In the evening, attend an authentic Tharu stick dance performance celebrating local history and animist traditions."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Return to Kathmandu or Pokhara",
+          "description": "Enjoy a relaxed breakfast overlooking the river. Private transfer back to Kathmandu or onward to the tranquil lakes of Pokhara."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Chitwan – culture et jungle sauvage | Jungle Nepal Adventure" lang="en">

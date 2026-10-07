@@ -8,35 +8,147 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Deep Into the Wild: Babai Special Experience – 5 Days",
-    "description": "This is not a simple jungle safari: it is an exclusive 5-day expedition deep into one of the most secluded and untouched valleys in the Himalayas. The Babai Valley lies tucked away inside Bardia National Park, far beyond standard tourist trails where very few travelers ever set foot. Guided by our elite master trackers, you will follow the wild Babai river between dramatic gorges and pristine grasslands, camping under the stars in the heart of royal Bengal tiger territory alongside wild elephant herds and rare gharials.",
-    "image": "https://junglenepal.com/assets/original_site/elephant_bardia.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "900",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/babai-special"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "19",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Deep Into the Wild: Babai Special Experience – 5 Days",
+  "description": "This is not a simple jungle safari: it is an exclusive 5-day expedition deep into one of the most secluded and untouched valleys in the Himalayas. The Babai Valley lies tucked away inside Bardia National Park, far beyond standard tourist trails where very few travelers ever set foot. Guided by our elite master trackers, you will follow the wild Babai river between dramatic gorges and pristine grasslands, camping under the stars in the heart of royal Bengal tiger territory alongside wild elephant herds and rare gharials.",
+  "image": "https://junglenepal.com/assets/original_site/elephant_bardia.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "900",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/babai-special"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "19",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Welcome to the Untamed Wilderness",
+          "description": "Pickup at Nepalgunj Airport or Kohalpur and private scenic transfer to the banks of the Babai River at Chepang. After lunch, enjoy a peaceful boat safari deep inside the national park, ideal for spotting riverine wildlife, mugger crocodiles, and water birds. Upon arrival at Rhino Camp along the riverbank, check in to your tented camp. Later, take a gentle late-afternoon walk around the campsite before a hot dinner and an immersive first night under the stars."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – On the Trail of the Bengal Tiger",
+          "description": "Wake up to morning tea at dawn, followed by a gentle tracking walk along the riverbanks and forest clearings. After breakfast, head out with your master tracker for an intensive tiger-tracking expedition on foot. Enjoy a riverside picnic lunch surrounded by wild nature. In the afternoon, continue hiking through deep sal forests to Nilgai Camp, your second bush campsite. Enjoy campfire dinner and a night enveloped in pure jungle sounds."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – River Drift & Return to Lodge",
+          "description": "Start with early morning tea and a nature walk around the campsite. After breakfast, embark on a final guided jungle trek until lunchtime. In the afternoon, drift down the peaceful Babai River by raft or boat to the main road, where private transport awaits to take you back to our comfortable eco-lodge. Dinner and overnight stay at the lodge."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Western Sector Jeep Safari & Cultural Immersion",
+          "description": "After a relaxed breakfast, depart for a full-day open 4x4 jeep safari exploring the remote western sector of Bardia National Park. Track one-horned rhinos, wild elephants, and spotted deer. Return in the evening for dinner followed by an authentic traditional Tharu cultural dance performance, offering deep insight into the indigenous heritage of Bardia."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Farewell & Departure",
+          "description": "After breakfast, bid farewell to our local team and enjoy a private transfer to Nepalgunj Airport for your flight back to Kathmandu or on to your next adventure."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Deep into the wild : Babai spécial experience – 5 days | Jungle Nepal Adventure" lang="en">

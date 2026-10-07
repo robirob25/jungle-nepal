@@ -8,35 +8,255 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Path Adventure – 17 Days",
-    "description": "Cross Nepal from east to west on an epic 17-day expedition off the beaten track. After visiting Kathmandu, Pokhara, and Lumbini, venture into the rugged tracks of remote western Nepal through Surkhet and Kalikot. Discover the turquoise alpine waters of Rara Lake, Nepal’s largest and most pristine mountain lake at 3,000 meters altitude, before descending into the dense subtropical jungles of Bardia to track wild Bengal tigers on foot.",
-    "image": "https://junglenepal.com/assets/original_site/lac_rara_orig.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,550",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/rara-lake-bardia"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "18",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Path Adventure – 17 Days",
+  "description": "Cross Nepal from east to west on an epic 17-day expedition off the beaten track. After visiting Kathmandu, Pokhara, and Lumbini, venture into the rugged tracks of remote western Nepal through Surkhet and Kalikot. Discover the turquoise alpine waters of Rara Lake, Nepal’s largest and most pristine mountain lake at 3,000 meters altitude, before descending into the dense subtropical jungles of Bardia to track wild Bengal tigers on foot.",
+  "image": "https://junglenepal.com/assets/original_site/lac_rara_orig.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2550",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/rara-lake-bardia"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "18",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 17,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport, meet our expedition team, private transfer to hotel, and leisure time in Thamel."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Cultural Exploration of Kathmandu",
+          "description": "Explore the historic temples of Kathmandu Valley: Pashupatinath, Boudhanath, and Kathmandu Durbar Square."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Drive to Pokhara",
+          "description": "Scenic road trip to Pokhara, nestled beside Phewa Lake with views of the Annapurna mountain range."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Exploration of Pokhara Valley",
+          "description": "Boating on Phewa Lake, visiting World Peace Pagoda, and exploring local mountain viewpoints."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Drive to Lumbini (Birthplace of Buddha)",
+          "description": "Drive southwest to Lumbini and tour the sacred Mayadevi Temple and monastic garden complexes."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Drive to Surkhet",
+          "description": "Journey northwest through rural hill roads into the historic valley of Surkhet in Western Nepal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Scenic Road to Kalikot",
+          "description": "Ascend dramatic gorges along the Karnali Highway to Kalikot, enjoying rugged mountain panoramas."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Arrival at Sapphire Lake Rara",
+          "description": "Drive and hike through rhododendron and pine forests to reach Lake Rara (3,000m), Nepal's largest and most pristine alpine lake."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Exploration of Lake Rara & Murma Top",
+          "description": "Trek around the sapphire lakeshore and hike up to Murma Top (3,700m) for a 360° panoramic view of the lake and snowy peaks."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Return Drive to Kalikot",
+          "description": "Bid farewell to Lake Rara and retrace the mountain track back down to Kalikot for an overnight stop."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Drive South to Bardia National Park",
+          "description": "Descend from the mountains into the warm Terai lowlands, arriving at our tranquil jungle lodge at Bardia."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Full-Day 4x4 Safari in Bardia",
+          "description": "Dawn-to-dusk jeep safari exploring prime tiger and rhino habitats across Bardia with expert trackers."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Second Day of Intensive Safari",
+          "description": "Explore riverine forests, watchtowers, and natural watering holes for big cats and Asian elephants."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – Walking Safari & Deep Jungle Immersion",
+          "description": "Experience the pulse of the jungle on foot with our native Tharu trackers. Safe, quiet, and thrilling close-up nature tracking."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 15 – Leisure Day & Tharu Village Walk",
+          "description": "Relax at the lodge, visit local village artisans, and enjoy an evening traditional Tharu cultural celebration."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 16 – Flight to Kathmandu",
+          "description": "Short drive to Nepalgunj Airport for domestic flight back to Kathmandu. Free afternoon for shopping."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 17 – International Departure",
+          "description": "Private transfer to airport for your return flight home."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus | Jungle Nepal Adventure" lang="en">

@@ -8,35 +8,219 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Tiji Festival in Upper Mustang – Forbidden Kingdom – 13 Days",
-    "description": "An exclusive 13-day cultural pilgrimage into Upper Mustang, the forbidden ancient Tibetan kingdom of Lo. Hidden behind the Himalayan giants of Annapurna and Dhaulagiri, this dramatic arid landscape has preserved its ancestral customs untouched by time. Witness the sacred three-day Tiji Festival inside the walled city of Lo Manthang as lamas perform ancient masked ritual dances, and explore cliffside cave monasteries carved into thousand-foot canyons.",
-    "image": "https://junglenepal.com/assets/original_site/tiji_festival_orig.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "3,490",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/tiji-mustang"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "12",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Tiji Festival in Upper Mustang – Forbidden Kingdom – 13 Days",
+  "description": "An exclusive 13-day cultural pilgrimage into Upper Mustang, the forbidden ancient Tibetan kingdom of Lo. Hidden behind the Himalayan giants of Annapurna and Dhaulagiri, this dramatic arid landscape has preserved its ancestral customs untouched by time. Witness the sacred three-day Tiji Festival inside the walled city of Lo Manthang as lamas perform ancient masked ritual dances, and explore cliffside cave monasteries carved into thousand-foot canyons.",
+  "image": "https://junglenepal.com/assets/original_site/tiji_festival_orig.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "3490",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/tiji-mustang"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "12",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 13,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Welcome at airport, private transfer to hotel, expedition briefing, and special Mustang permit processing."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Kathmandu Valley Heritage",
+          "description": "Visit sacred Buddhist sites: Boudhanath Stupa and Swayambhunath, preparing for the spiritual journey ahead."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Drive to Pokhara",
+          "description": "Scenic road transfer to Pokhara along mountain rivers. Evening stroll along Lake Phewa."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Drive to Kalopani via Kali Gandaki Gorge",
+          "description": "Enter the world's deepest gorge between Annapurna and Dhaulagiri, reaching the pine forests of Kalopani."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Drive to Ancient Kagbeni",
+          "description": "Drive through Jomsom and Marpha to Kagbeni, the medieval fortified gateway to Upper Mustang."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Enter Upper Mustang to Ghami",
+          "description": "Cross high passes with views of red cliffs, ancient sky caves, and mani walls to reach the village of Ghami."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Drive to the Walled Capital: Lo Manthang",
+          "description": "Traverse stunning desert canyons to reach the historic walled city of Lo Manthang, seat of the King of Mustang."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Lo Manthang – Opening of the Tiji Festival",
+          "description": "Witness the dramatic opening day of the Tiji Festival: sounding of long horns, unrolling of the giant Thangka, and masked sacred dances."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Tiji Festival Celebrations & Chhoser Caves",
+          "description": "Attend second day dances symbolizing the victory of dharma over demons. Afternoon visit to the multi-story Sky Caves of Chhoser."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Drive South to Sacred Muktinath",
+          "description": "Journey south to holy Muktinath (3,710m), sacred pilgrimage site for both Buddhists and Hindus with eternal natural flame."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Descend to Tatopani Natural Hot Springs",
+          "description": "Scenic drive descending the gorge to Tatopani. Relax in natural thermal hot springs beside the river."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Drive to Pokhara & Fly to Kathmandu",
+          "description": "Drive to Pokhara and connect with a short scenic flight to Kathmandu. Celebration dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Farewell & International Departure",
+          "description": "Private transfer to Tribhuvan International Airport for your journey home."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Tiji Festival – Upper Mustang | Jungle Nepal Adventure" lang="en">

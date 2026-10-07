@@ -8,38 +8,240 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Extreme Jungle – Special Wildlife & Big Cat Expedition – 15 Days",
-    "description": "From the sacred UNESCO temples of Kathmandu to the densest primary jungles of the Terai lowlands, every single day of this 15-day expedition is engineered for supreme wildlife photography and field encounters. Led by veteran native trackers, you will explore Nepal’s three premier wilderness sanctuaries: Chitwan, Bardia, and the remote savannas of Suklaphanta. Tracking Bengal tigers, Indian leopards, Asian one-horned rhinos, and wild elephant herds on foot and in open 4x4 vehicles, this small-group expedition balances silent dawn riverbank blinds, dugout canoe river glides past gharials, and nocturnal forest watchtowers.",
-    "image": "https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,490",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/jungle-extreme"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "21",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Extreme Jungle – Special Wildlife & Big Cat Expedition – 15 Days",
+  "description": "From the sacred UNESCO temples of Kathmandu to the densest primary jungles of the Terai lowlands, every single day of this 15-day expedition is engineered for supreme wildlife photography and field encounters. Led by veteran native trackers, you will explore Nepal’s three premier wilderness sanctuaries: Chitwan, Bardia, and the remote savannas of Suklaphanta. Tracking Bengal tigers, Indian leopards, Asian one-horned rhinos, and wild elephant herds on foot and in open 4x4 vehicles, this small-group expedition balances silent dawn riverbank blinds, dugout canoe river glides past gharials, and nocturnal forest watchtowers.",
+  "image": "https://junglenepal.com/assets/drive_photos/julien_leopard_indien.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2490",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/jungle-extreme"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "21",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 15,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Welcome at Tribhuvan International Airport by our local team. Private transfer to your hotel in Kathmandu. Rest after your flight, explore Thamel's vibrant streets, and attend the evening expedition briefing with Robin and our team."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Cultural Day in Kathmandu Valley",
+          "description": "Discover the sacred spiritual heritage of Kathmandu: Swayambhunath stupa, Patan Durbar Square, and Pashupatinath. Equipment check and final preparations for the safari."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Drive to Chitwan National Park",
+          "description": "Scenic 5-hour drive descending through the Trishuli river valley into Chitwan. Check-in at the eco-lodge, late afternoon nature walk along the Rapti River, and early dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Full-Day 4x4 Safari in Chitwan",
+          "description": "Spend the entire day inside Chitwan National Park tracking Greater One-Horned Rhinos, sloth bears, and Asian leopards. Picnic lunch inside the park."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Drive to Lumbini & Spiritual Pause",
+          "description": "Drive west across the Terai plains to Lumbini (4 hours). Visit the sacred birthplace of Lord Buddha, peaceful monasteries, and prepare for the long drive into Western Nepal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Journey to Bardia National Park",
+          "description": "Scenic 6 to 7-hour road journey through rural Terai farmland and sal forests to Bardia National Park. Settle into our authentic jungle lodge. Evening briefing with Pawan."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – First Full-Day Walking Safari in Bardia",
+          "description": "Enter the jungle on foot at sunrise with two certified Tharu master trackers. Walk along tiger corridors, riverbanks, and elephant grass clearings. High-adrenaline tracking on foot."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Second Full-Day Walking Safari in Core Tiger Zones",
+          "description": "A second full day dedicated to tracking big cats on foot. Strategic waits at prime waterholes and riverbanks. Picnic lunch in the forest canopy."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Full-Day 4x4 Jeep Safari Across Bardia",
+          "description": "Cover larger distances by open 4x4 safari jeep exploring the western grasslands and northern riverbanks of Bardia. Great opportunities for tigers, rhinos, and wild Asian elephants."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Final Day in Bardia & Babai River Sector",
+          "description": "Final intensive tracking day in Bardia exploring remote hides and river watchtowers. Evening Tharu cultural celebration and dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Drive to Suklaphanta National Park (3 Hours)",
+          "description": "Drive west to Nepal's Far West frontier: Suklaphanta National Park, home to the world's largest herd of swamp deer (Barasingha) and a thriving tiger population. Settle into our local safari camp."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Full-Day Jeep Safari in Suklaphanta",
+          "description": "Explore the vast savannah grasslands of Suklaphanta by open jeep. Spot hundreds of swamp deer, wild boars, jackals, and track Bengal tigers across open vistas."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Second Day of Safari & Birding in Suklaphanta",
+          "description": "Intensive morning and afternoon safaris exploring Rani Tal lake, elephant trails, and grassland swamps. Exceptional birdlife and predator sightings."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – Flight Back to Kathmandu",
+          "description": "Transfer to Dhangadhi Airport for your domestic flight to Kathmandu. Settle into your hotel, shopping in Thamel, and celebratory farewell dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 15 – International Departure",
+          "description": "Private transfer to Tribhuvan International Airport for your flight back home."
+        }
+      }
+    ]
   }
+}
   </script>
 
-<Layout title="Jungle extrême – spécial faune sauvage | Jungle Nepal Adventure" lang="en">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
+  </script>
+
+<Layout title="Nepal Wildlife Safari 15 Days: Bardia & Chitwan Big Cats Tour" lang="en">
 
 
     <!-- TOP BAR PROMO -->
@@ -332,7 +534,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
       <div>
         <h1 class="font-black text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
-          Extreme Jungle – Special Wildlife & Big Cat Expedition – 15 Days
+          Wildlife Safari Expedition 15 Days: On the Trail of Nepal's Big Cats
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">

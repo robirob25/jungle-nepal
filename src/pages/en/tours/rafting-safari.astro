@@ -8,35 +8,264 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition – 18 Days",
-    "description": "A grand 18-day expedition for lovers of untamed wilderness and active exploration. After discovering Kathmandu and Pokhara, journey into the remote Dhorpatan Hunting Reserve and traditional Magar mountain villages at Taksera. The centerpiece of your journey takes you down thrilling white-water rapids on a self-sustained multi-day river descent with pristine sandbank bivouacs, concluding with unforgettable wildlife safaris in Bardia National Park.",
-    "image": "https://junglenepal.com/assets/drive_photos/adrien_bardia_river.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,190",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/rafting-safari"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "15",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition – 18 Days",
+  "description": "A grand 18-day expedition for lovers of untamed wilderness and active exploration. After discovering Kathmandu and Pokhara, journey into the remote Dhorpatan Hunting Reserve and traditional Magar mountain villages at Taksera. The centerpiece of your journey takes you down thrilling white-water rapids on a self-sustained multi-day river descent with pristine sandbank bivouacs, concluding with unforgettable wildlife safaris in Bardia National Park.",
+  "image": "https://junglenepal.com/assets/drive_photos/adrien_bardia_river.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2190",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/rafting-safari"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "15",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 18,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu",
+          "description": "Welcome at Tribhuvan International Airport by our team. Private transfer to your hotel. Rest, leisure time in Thamel, and evening expedition briefing."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Exploration of Kathmandu Valley",
+          "description": "Discover the rich cultural heritage of Kathmandu: Swayambhunath stupa, Pashupatinath, and historic Newar streets."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Drive to Pokhara",
+          "description": "Scenic road journey along the Trishuli and Marsyangdi rivers to the peaceful lakeside city of Pokhara beneath the Annapurnas."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Exploration of Pokhara",
+          "description": "Sunrise view from Sarangkot over the Annapurna range, boat ride on Phewa Lake, and visit to Devi's Falls and Tibetan settlements."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 5 – Drive to Dhorpatan Hunting Reserve",
+          "description": "Off-road 4x4 expedition into Dhorpatan Hunting Reserve, Nepal's only hunting reserve, famous for blue sheep (bharal) and alpine meadows."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 6 – Exploration of Dhorpatan Wilderness",
+          "description": "Hike across high-altitude plateaus and pine forests observing wildlife and traditional pastoral communities."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 7 – Journey to Taksera (Magar Heritage Village)",
+          "description": "Drive through dramatic mountain terrain to Taksera, an ancient Magar village with distinct stone architecture and shamanic traditions."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 8 – Drive to Maikot (Hidden Mountain Gem)",
+          "description": "Cross rugged valleys to Maikot, a remote hamlet untouched by modern tourism, surrounded by steep pine-covered peaks."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 9 – Drive to Rukumkot & Lotus Lake",
+          "description": "Journey to picturesque Rukumkot, known as the place of 52 lakes and 53 hills, visiting Kamal Pokhari (Lotus Lake)."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 10 – Drive to Surkhet Valley",
+          "description": "Descend from the mountains into the broad subtropical valley of Surkhet, gateway to the Karnali and Bheri rivers."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 11 – Launch of the Bheri River Rafting Expedition",
+          "description": "Meet our expert river guides, complete safety training, and launch rafts onto the crystal-clear waters of the Bheri River. Camp on a pristine white sandbank."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 12 – Thrilling River Rapids & Wilderness Camping",
+          "description": "Full day of exhilarating Class III-IV white-water rafting through secluded canyons inaccessible by road. Second night in riverside bush camp under the stars."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 13 – Final River Rapids & Transfer to Bardia",
+          "description": "Complete the river descent to the confluence with the Karnali River. Pack up rafts and private transfer to our jungle eco-lodge in Bardia."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – Full-Day 4x4 Jeep Safari in Bardia",
+          "description": "Enter Bardia National Park for a full day of open-top jeep tracking targeting Royal Bengal tigers, Asian rhinos, and wild elephant herds."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 15 – Second Safari & Walking Track in Bardia",
+          "description": "Intensive tracking on foot with our native Tharu master trackers along prime tiger corridors and river crossing points."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 16 – Final Safari & Tharu Cultural Performance",
+          "description": "Morning safari followed by an evening celebration with local Tharu dances and traditional festive meal."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 17 – Domestic Flight to Kathmandu",
+          "description": "Private transfer to Nepalgunj Airport and flight back to Kathmandu. Free evening in Thamel for shopping and farewell dinner."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 18 – International Departure",
+          "description": "Private airport transfer for your departure flight with unforgettable Himalayan memories."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Rivières sauvages et patrimoines cachés – expédition et rafting | Jungle Nepal Adventure" lang="en">

@@ -8,35 +8,237 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Népal – carnet de dessin et de voyage – 15 jours",
-    "description": "Ce voyage exclusif de 15 jours a été entièrement pensé comme une expérience immersive de carnet de voyage et de création artistique. L’objectif n’est pas simplement de traverser le Népal, mais de prendre le temps de le contempler, de le dessiner et d’en capturer l’âme au jour le jour. Tout au long de l’expédition, vous serez accompagné par la dessinatrice professionnelle Sarah Plage, qui guidera chaque participant dans la pratique du croquis sur le vif et de l’aquarelle. Depuis les ruelles pavées et les toits sculptés de Bhaktapur et Bandipur jusqu’aux panoramas spectaculaires du village de Ghachok et aux safaris animaliers de Bardia, chaque journée ménage des pauses contemplatives pour poser vos couleurs et composer un carnet de route personnel et inoubliable.",
-    "image": "https://junglenepal.com/assets/drive_photos/antoine_wild5.webp",
-    "touristType": ["Amoureux de nature", "Photographes animaliers", "Aventuriers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "2,100",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/tours/carnet-de-voyage.html"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "16",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Népal – carnet de dessin et de voyage – 15 jours",
+  "description": "Ce voyage exclusif de 15 jours a été entièrement pensé comme une expérience immersive de carnet de voyage et de création artistique. L’objectif n’est pas simplement de traverser le Népal, mais de prendre le temps de le contempler, de le dessiner et d’en capturer l’âme au jour le jour. Tout au long de l’expédition, vous serez accompagné par la dessinatrice professionnelle Sarah Plage, qui guidera chaque participant dans la pratique du croquis sur le vif et de l’aquarelle. Depuis les ruelles pavées et les toits sculptés de Bhaktapur et Bandipur jusqu’aux panoramas spectaculaires du village de Ghachok et aux safaris animaliers de Bardia, chaque journée ménage des pauses contemplatives pour poser vos couleurs et composer un carnet de route personnel et inoubliable.",
+  "image": "https://junglenepal.com/assets/drive_photos/antoine_wild5.webp",
+  "touristType": [
+    "Amoureux de nature",
+    "Photographes animaliers",
+    "Aventuriers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "2100",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/tours/carnet-de-voyage"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "16",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 15,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 1 – Arrivé à Katmandou",
+          "description": "Accueil à l’aéroport, transfert et installation à l’hôtel. Temps libre selon l’heure d’arrivée."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 2 – Bhaktapur",
+          "description": "Visite de Bhaktapur, ancienne cité royale classée UNESCO. Découverte des places historiques, temples et architecture traditionnelle. Première session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 3 – Katmandou → Bandipur",
+          "description": "Visite des principaux sites de Kathmandu : Pashupatinath et Boudhanath Stupa. Route vers Bandipur. Installation et session de dessin en fin de journée."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 4 – Bandipur → Ghachok",
+          "description": "Départ pour Ghachok. Installation dans le village. Découverte de la vie locale et temps de repos."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 5 – Ghachok",
+          "description": "Balade dans le village et ses environs. Observation de la vie quotidienne. Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 6 – Ghachok",
+          "description": "Deuxième journée d’exploration du village. Points de vue sur les Annapurna. Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 7 – Ghachok → Pokhara",
+          "description": "Route pour Pokhara. Balade sur le lac. Temps libre et repos."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 8 – Pokhara → Lumbini",
+          "description": "Départ pour Lumbini. Visite des temples et sites sacrés liés à la naissance du Buddha. Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 9 – Lumbini → Bardia",
+          "description": "Route vers Bardia. Installation dans le village. Après-midi libre et repos."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 10 – Bardia",
+          "description": "Découverte du village et de la culture Tharu. Activités culturelles locales. Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 11 – Bardia (Safari jeep)",
+          "description": "Première journée de safari en jeep dans le parc national de Bardia. Observation de la faune (tigres, éléphants, rhinocéros). Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 12 – Bardia (Safari à pied)",
+          "description": "Safari à pied accompagné de guides. Observation de la faune et des traces. Session de dessin."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 13 – Bardia",
+          "description": "Cours de cuisine traditionnelle le matin. Après-midi libre et repos."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 14 – Bardia → Katmandou",
+          "description": "Vol retour vers Kathmandu avec vue sur l’Himalaya. Installation à l’hôtel."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Jour 15 – Départ",
+          "description": "Transfert à l’aéroport et vol retour."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment réserver un tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je personnaliser mon voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolument ! Notre équipe peut vous aider à créer une expérience sur mesure selon votre budget et vos préférences. Dites-nous simplement ce que vous recherchez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des réductions disponibles ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous proposons des réductions pour les réservations de groupe. Contactez-nous pour plus de détails sur nos tarifs groupés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’une assurance voyage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, vous devez souscrire une assurance voyage dans votre pays d’origine couvrant les activités prévues et les rapatriements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui est inclus dans le prix du tour ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos tours incluent généralement l’hébergement, les repas, le transport, les excursions guidées et les permis nécessaires. Les détails peuvent varier selon le tour, donc veuillez consulter la description ou nous contacter pour des informations précises."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Népal – carnet de dessin et de voyage – 15 jours | Jungle Nepal Adventure" lang="fr">
@@ -1018,7 +1220,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight mt-1">Vous pourriez aussi aimer ces expéditions</h2>
         </div>
         <a href="/#prochains-departs" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] hover:underline">
-          <span>Voir les 21 séjours au Népal</span>
+          <span>Découvrir nos 16 circuits au Népal</span>
           <span>→</span>
         </a>
       </div>

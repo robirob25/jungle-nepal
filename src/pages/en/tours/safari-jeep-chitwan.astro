@@ -7,15 +7,20 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
-<script type="application/ld+json">
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Chitwan: Private Jeep Safari in Chitwan National Park – Full Day 4x4 Exploration",
   "description": "Full-day private 4x4 safari expedition in Chitwan National Park. Track one-horned rhinos, Bengal tigers, wild elephants, and sloth bears with a professional driver, senior naturalist guide, and elite tracker.",
   "image": "https://junglenepal.com/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
-  "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers", "Families"],
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers",
+    "Families"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "190",
@@ -27,16 +32,40 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "provider": {
     "@type": "TravelAgency",
     "name": "Jungle Nepal Adventure",
-    "url": "https://junglenepal.com"
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "reviewCount": "22",
     "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Full-Day 4x4 Exploration of Chitwan Grasslands & Sal Forests",
+          "description": "Departure at 06:00 AM by private jeep from Sauraha. Rapti river crossing, tracking sandy trails through Sal forest, rhino wetlands, watchtower picnic lunch, and riverside hides. Return around 06:00 PM."
+        }
+      }
+    ]
   }
 }
-</script>
+  </script>
+
 
 <Layout title="Chitwan: Private Jeep Safari in Chitwan National Park – 4x4 Tour | Jungle Nepal Adventure" lang="en">
 

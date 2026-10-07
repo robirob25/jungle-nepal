@@ -8,35 +8,183 @@ const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-  <!-- SCHEMA.ORG TOURIST TRIP JSON-LD (RICH SNIPPETS GOOGLE) -->
+  <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Exclusive Snow Leopard Expedition (17 Days)",
-    "description": "Embark on an extraordinary 17-day expedition tracking the most elusive and legendary big cat on Earth: the Snow Leopard ('Ghost of the Mountains'). High in the remote wilderness of Manang (3,600m – 4,500m) and the Annapurnas, experience 9 full field ...",
-    "image": "https://junglenepal.com/assets/snow-leopard/snow_leopard_portrait.webp",
-    "touristType": ["Nature Lovers", "Wildlife Photographers", "Adventurers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "4300",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-08-01",
-      "url": "https://junglenepal.com/en/tours/panthere-des-neiges"
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Jungle Nepal Adventure",
-      "url": "https://junglenepal.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "35",
-      "bestRating": "5"
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Exclusive Snow Leopard Expedition (17 Days)",
+  "description": "Embark on an extraordinary 17-day expedition tracking the most elusive and legendary big cat on Earth: the Snow Leopard ('Ghost of the Mountains'). High in the remote wilderness of Manang (3,600m – 4,500m) and the Annapurnas, experience 9 full field ...",
+  "image": "https://junglenepal.com/assets/snow-leopard/snow_leopard_portrait.webp",
+  "touristType": [
+    "Nature Lovers",
+    "Wildlife Photographers",
+    "Adventurers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "4300",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-08-01",
+    "url": "https://junglenepal.com/en/tours/panthere-des-neiges"
+  },
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Jungle Nepal Adventure",
+    "url": "https://junglenepal.com",
+    "logo": "https://junglenepal.com/assets/logo_nav_white.png",
+    "email": "contact@junglenepal.com",
+    "telephone": "+33695413227",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bardia & Katmandou",
+      "addressCountry": "NP"
     }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "35",
+    "bestRating": "5"
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 9,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 1 – Arrival in Kathmandu – Transfer to Historic Bhaktapur",
+          "description": "Welcome at the international airport and private transfer directly to the historic medieval city of Bhaktapur. Check into your hotel for an expedition presentation. This choice offers immediate cultural immersion away from the bustling capital center."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 2 – Scenic Flight Kathmandu to Pokhara: Annapurna Panorama",
+          "description": "30-minute domestic flight to Pokhara offering breathtaking vistas of the Annapurna mountain range. Afternoon at leisure around Lake Phewa to make final gear checks and enjoy the mountains."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 3 – Pokhara to Chame (2,700 m): 4x4 Trail & Hot Springs",
+          "description": "Depart by private 4x4 for Chame (approx. 6h trail). Marks the beginning of the valley ascent and the first altitude acclimatization stage. In the late afternoon, enjoy natural thermal hot springs beside the river."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 4 – Chame to Manang (3,600 m) & Gangapurna Lake Acclimatization Hike",
+          "description": "2-hour drive to reach Manang. To safely validate this second acclimatization tier, embark on a hike toward the turquoise glacial lake of Gangapurna. Overnight in Manang."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Days 5 to 13 (9 Days) – Snow Leopard Tracking Expedition",
+          "description": "Nine full days in the field dedicated to tracking and observing the Snow Leopard alongside our experienced Himalayan master trackers equipped with Swarovski HD spotting scopes. Flexible pacing includes cultural transition at the 600-year-old Braka Gompa monastery."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 14 – Manang to Bandipur: Valley Descent & Traditional Newar Village",
+          "description": "Begin descending from high altitude. 6 to 7-hour road journey to Bandipur, a traditional Newar village renowned for preserved 18th-century architecture and mountain vistas."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 15 – Bandipur to Kathmandu & Leisure Evening in Thamel",
+          "description": "Return drive to Kathmandu (approx. 4 hours). Check into hotel and enjoy free time to rest and explore Thamel's vibrant artisan alleys."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 16 – Kathmandu Valley UNESCO Cultural Heritage",
+          "description": "Full day discovering the greatest cultural monuments of the Kathmandu Valley (Swayambhunath, Pashupatinath, ancient artisan streets)."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "TouristAttraction",
+          "name": "Day 17 – Airport Transfer & International Departure",
+          "description": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
+        }
+      }
+    ]
   }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book an expedition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you select your expedition, our team will send your booking confirmation by email. To confirm your reservation, a 30% deposit is required upon registration. The remaining balance is payable upon arrival in Kathmandu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our local team crafts bespoke private itineraries tailored to your dates, preferences, and pace. Simply let us know what you envision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there group discounts available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer special rates for small private groups and families. Contact us for custom pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need travel insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you must hold personal travel insurance covering safari activities, remote wilderness, and medical evacuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the expedition price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our expeditions include boutique eco-lodge accommodations, all meals in the field, private transport, certified master trackers, and all official national park permits."
+      }
+    }
+  ]
+}
   </script>
 
 <Layout title="Expédition : panthère des neiges exclusive (17 days) | Jungle Nepal Adventure" lang="en">
