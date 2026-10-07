@@ -54,6 +54,89 @@ Options -Indexes -MultiViews
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
     RewriteRule ^index\.html$ https://junglenepal.com/ [R=301,L]
 
+    # ==========================================================================
+    # SEO 301 PERMANENT REDIRECTS (ZERO REGRESSION & ZERO 404)
+    # ==========================================================================
+    RewriteRule ^nos-offres/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^offres/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^nos-aventures/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^nos-tours-a-venir/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^nos-recommandations/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^voyage-nature-au-nepal-safari-et-aventures-hors-sentiers-battus/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
+    RewriteRule ^agence-de-safaris-au-nepal/?$ https://junglenepal.com/a-propos [R=301,L,NE]
+    RewriteRule ^about-us/?$ https://junglenepal.com/a-propos [R=301,L,NE]
+    RewriteRule ^about/?$ https://junglenepal.com/a-propos [R=301,L,NE]
+    RewriteRule ^notre-histoire/?$ https://junglenepal.com/a-propos [R=301,L,NE]
+    RewriteRule ^contact-us/?$ https://junglenepal.com/contact [R=301,L,NE]
+    RewriteRule ^nos-destinations/?$ https://junglenepal.com/destinations [R=301,L,NE]
+    RewriteRule ^parc-national-de-bardia/?$ https://junglenepal.com/destinations/bardia [R=301,L,NE]
+    RewriteRule ^parc-national-de-chitwan/?$ https://junglenepal.com/destinations/chitwan [R=301,L,NE]
+    RewriteRule ^parc-national-de-suklaphanta/?$ https://junglenepal.com/destinations/suklaphanta [R=301,L,NE]
+    RewriteRule ^annapurnas-pokhara/?$ https://junglenepal.com/destinations/annapurna [R=301,L,NE]
+    RewriteRule ^annapurna-region/?$ https://junglenepal.com/destinations/annapurna [R=301,L,NE]
+    RewriteRule ^katmandou-vallee-des-rois/?$ https://junglenepal.com/destinations/katmandou [R=301,L,NE]
+    RewriteRule ^katmandou/?$ https://junglenepal.com/destinations/katmandou [R=301,L,NE]
+    RewriteRule ^tour/jungle-extreme-special-faune-sauvage/?$ https://junglenepal.com/tours/jungle-extreme [R=301,L,NE]
+    RewriteRule ^tour/nepal-sauvage-de-la-jungle-aux-montagnes-sacrees/?$ https://junglenepal.com/tours/nepal-sauvage [R=301,L,NE]
+    RewriteRule ^tour/chitwan-bardia-laventure-jungle-complete/?$ https://junglenepal.com/tours/chitwan-bardia-complete [R=301,L,NE]
+    RewriteRule ^tour/bardia-explorateur-5-jours-dans-la-jungle/?$ https://junglenepal.com/tours/bardia-explorateur [R=301,L,NE]
+    RewriteRule ^tour/chitwan-culture-et-jungle-sauvage/?$ https://junglenepal.com/tours/chitwan-culture [R=301,L,NE]
+    RewriteRule ^tour/rivieres-sauvages-et-patrimoines-caches-expedition-et-rafting/?$ https://junglenepal.com/tours/rafting-safari [R=301,L,NE]
+    RewriteRule ^tour/bardia-aventure-immersive-en-jungle-et-camping-sauvage/?$ https://junglenepal.com/tours/bardia-nuit-sauvage [R=301,L,NE]
+    RewriteRule ^tour/rara-lake-bardia-expedition-lultime-aventure-hors-sentiers-battus/?$ https://junglenepal.com/tours/rara-lake-bardia [R=301,L,NE]
+    RewriteRule ^tour/bardia-babai-vallee-camping-sauvage-au-coeur-dune-nature-vierge-et-isolee/?$ https://junglenepal.com/tours/bardia-babai-camping [R=301,L,NE]
+    RewriteRule ^tour/nepal-immersion-totale-culture-vie-sauvage-et-aventure/?$ https://junglenepal.com/tours/nepal-immersion-totale [R=301,L,NE]
+    RewriteRule ^tour/deep-into-the-wild-babai-special-experience-5-jours/?$ https://junglenepal.com/tours/babai-special [R=301,L,NE]
+    RewriteRule ^tour/tiji-festival-tour-upper-mustang/?$ https://junglenepal.com/tours/tiji-mustang [R=301,L,NE]
+    RewriteRule ^tour/nepal-special-carnet-de-voyage/?$ https://junglenepal.com/tours/carnet-de-voyage [R=301,L,NE]
+    RewriteRule ^tour/immersion-spirituelle-en-himalaya/?$ https://junglenepal.com/tours/immersion-spirituelle [R=301,L,NE]
+    RewriteRule ^tour/dashain-immersion-culturelle-special-festival/?$ https://junglenepal.com/tours/dashain-immersion-culturelle [R=301,L,NE]
+    RewriteRule ^circuits/bardia-explorateur/?$ https://junglenepal.com/tours/bardia-explorateur [R=301,L,NE]
+    RewriteRule ^circuits/safari-bardia-5-jours/?$ https://junglenepal.com/tours/bardia-explorateur [R=301,L,NE]
+    RewriteRule ^circuits/safari-bivouac-bardia/?$ https://junglenepal.com/tours/bardia-nuit-sauvage [R=301,L,NE]
+    RewriteRule ^circuits/safari-faune-sauvage-15-jours/?$ https://junglenepal.com/tours/jungle-extreme [R=301,L,NE]
+    RewriteRule ^circuits/jungle-extreme/?$ https://junglenepal.com/tours/jungle-extreme [R=301,L,NE]
+    RewriteRule ^circuits/safari-pied-bardia/?$ https://junglenepal.com/tours/safari-pied-bardia [R=301,L,NE]
+    RewriteRule ^circuits/safari-jeep-bardia/?$ https://junglenepal.com/tours/safari-jeep-bardia [R=301,L,NE]
+    RewriteRule ^circuits/safari-pied-chitwan/?$ https://junglenepal.com/tours/safari-pied-chitwan [R=301,L,NE]
+    RewriteRule ^circuits/safari-jeep-chitwan/?$ https://junglenepal.com/tours/safari-jeep-chitwan [R=301,L,NE]
+    RewriteRule ^safaris/?$ https://junglenepal.com/tours/jungle-extreme [R=301,L,NE]
+    RewriteRule ^babai-valley-la-vallee-oubliee-du-nepal-sauvage/?$ https://junglenepal.com/blog/babai-valley-vallee-oubliee-safari-sauvage [R=301,L,NE]
+    RewriteRule ^bardia-ou-chitwan-safari-nepal/?$ https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir [R=301,L,NE]
+    RewriteRule ^camping-jungle-nepal/?$ https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal [R=301,L,NE]
+    RewriteRule ^culture-tharu-a-bardia-traditions-villages-et-vie-locale/?$ https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle [R=301,L,NE]
+    RewriteRule ^la-faune-du-nepal-a-la-rencontre-du-big-5-de-bardia/?$ https://junglenepal.com/blog/animaux-bardia-faune-parc-national [R=301,L,NE]
+    RewriteRule ^quand-partir-au-nepal/?$ https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide [R=301,L,NE]
+    RewriteRule ^safari-a-pied-au-nepal-est-ce-dangereux/?$ https://junglenepal.com/blog/safari-a-pied-nepal-danger-regles-securite-guide [R=301,L,NE]
+    RewriteRule ^safari-au-nepal-vivre-la-jungle-autrement-loin-des-circuits-touristiques/?$ https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal [R=301,L,NE]
+    RewriteRule ^safari-dans-le-parc-national-de-bardia-au-nepal/?$ https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal [R=301,L,NE]
+    RewriteRule ^safari-tigre-nepal/?$ https://junglenepal.com/blog/voir-des-tigres-au-nepal [R=301,L,NE]
+    RewriteRule ^observer-les-oiseaux-au-nepal-guide-birdwatching/?$ https://junglenepal.com/blog/observer-les-oiseaux-au-nepal-guide-birdwatching [R=301,L,NE]
+    RewriteRule ^safari-a-pied-au-nepal-guide-complet/?$ https://junglenepal.com/blog/safari-a-pied-au-nepal-guide-complet [R=301,L,NE]
+    RewriteRule ^safari-photo-au-nepal-spots-materiel-conseils/?$ https://junglenepal.com/blog/safari-photo-au-nepal-spots-materiel-conseils [R=301,L,NE]
+    RewriteRule ^safari-nepal-en-famille-guide-securite/?$ https://junglenepal.com/blog/safari-nepal-en-famille-guide-securite [R=301,L,NE]
+    RewriteRule ^safari-bardia-prix-forfaits-et-ce-que-ca-inclut/?$ https://junglenepal.com/blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut [R=301,L,NE]
+    RewriteRule ^camping-safari-a-bardia-nuits-en-jungle-au-nepal/?$ https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal [R=301,L,NE]
+    RewriteRule ^panthere-des-neiges-au-nepal/?$ https://junglenepal.com/blog/panthere-des-neiges-au-nepal [R=301,L,NE]
+    RewriteRule ^agence-safari-nepal-francophone/?$ https://junglenepal.com/blog/agence-safari-nepal-francophone [R=301,L,NE]
+    RewriteRule ^le-safari-ethique-au-nepal-privilegier-la-marche/?$ https://junglenepal.com/blog/le-safari-ethique-au-nepal-privilegier-la-marche [R=301,L,NE]
+    RewriteRule ^trek-jungle-nepal-safari-pied/?$ https://junglenepal.com/blog/trek-jungle-nepal-safari-pied [R=301,L,NE]
+    RewriteRule ^combiner-trek-et-safari-au-nepal-guide-complet/?$ https://junglenepal.com/blog/combiner-trek-et-safari-au-nepal-guide-complet [R=301,L,NE]
+    RewriteRule ^pister-le-tigre-du-bengale-a-bardia/?$ https://junglenepal.com/blog/pister-le-tigre-du-bengale-a-bardia [R=301,L,NE]
+    RewriteRule ^guide-complet-parc-national-de-suklaphanta/?$ https://junglenepal.com/blog/guide-complet-parc-national-de-suklaphanta [R=301,L,NE]
+    RewriteRule ^guide-parc-national-de-chitwan-nepal/?$ https://junglenepal.com/blog/guide-parc-national-de-chitwan-nepal [R=301,L,NE]
+    RewriteRule ^quand-partir-au-nepal-pour-un-safari-guide/?$ https://junglenepal.com/blog/quand-partir-au-nepal-pour-un-safari-guide [R=301,L,NE]
+    RewriteRule ^quels-animaux-voir-lors-dun-safari-au-nepal/?$ https://junglenepal.com/blog/quels-animaux-voir-lors-dun-safari-au-nepal [R=301,L,NE]
+    RewriteRule ^guide-complet-parc-national-de-bardia-nepal/?$ https://junglenepal.com/blog/guide-complet-parc-national-de-bardia-nepal [R=301,L,NE]
+    RewriteRule ^comment-organiser-un-safari-au-nepal/?$ https://junglenepal.com/blog/comment-organiser-un-safari-au-nepal [R=301,L,NE]
+    RewriteRule ^bardia-ou-chitwan-quel-parc-choisir/?$ https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir [R=301,L,NE]
+    RewriteRule ^sac-safari-nepal/?$ https://junglenepal.com/blog/sac-safari-nepal [R=301,L,NE]
+    RewriteRule ^prix-dun-safari-au-nepal/?$ https://junglenepal.com/blog/prix-dun-safari-au-nepal [R=301,L,NE]
+    RewriteRule ^combien-de-jours-pour-un-safari-au-nepal/?$ https://junglenepal.com/blog/combien-de-jours-pour-un-safari-au-nepal [R=301,L,NE]
+    RewriteRule ^voir-des-tigres-au-nepal/?$ https://junglenepal.com/blog/voir-des-tigres-au-nepal [R=301,L,NE]
+    RewriteRule ^comportement-du-tigre-du-bengale/?$ https://junglenepal.com/blog/comportement-du-tigre-du-bengale [R=301,L,NE]
+    RewriteRule ^comportement-du-rhinoceros-unicornis/?$ https://junglenepal.com/blog/comportement-du-rhinoceros-unicornis [R=301,L,NE]
+    RewriteRule ^safari-nepal-ou-afrique-que-choisir/?$ https://junglenepal.com/blog/safari-nepal-ou-afrique-que-choisir [R=301,L,NE]
     # Serve existing files and directories directly (prevents infinite redirect loops)
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
@@ -101,108 +184,4 @@ Options -Indexes -MultiViews
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>
-
-# 301 REDIRECTS FOR LEGACY OFFER PAGES (GOOGLE SITELINKS)
-Redirect 301 /nos-offres/ https://junglenepal.com/#prochains-departs
-Redirect 301 /nos-offres https://junglenepal.com/#prochains-departs
-Redirect 301 /offres/ https://junglenepal.com/#prochains-departs
-Redirect 301 /offres https://junglenepal.com/#prochains-departs
-
-# 301 REDIRECTS (Legacy WordPress Slugs Preservation)
-Redirect 301 /agence-de-safaris-au-nepal/ /a-propos
-Redirect 301 /agence-de-safaris-au-nepal /a-propos
-Redirect 301 /nos-aventures/ /#prochains-departs
-Redirect 301 /nos-aventures /#prochains-departs
-Redirect 301 /nos-destinations/ /destinations
-Redirect 301 /nos-destinations /destinations
-Redirect 301 /safaris/ /tours/jungle-extreme
-Redirect 301 /safaris /tours/jungle-extreme
-Redirect 301 /parc-national-de-bardia/ /destinations/bardia
-Redirect 301 /parc-national-de-bardia /destinations/bardia
-Redirect 301 /parc-national-de-chitwan/ /destinations/chitwan
-Redirect 301 /parc-national-de-chitwan /destinations/chitwan
-Redirect 301 /parc-national-de-suklaphanta/ /destinations/suklaphanta
-Redirect 301 /parc-national-de-suklaphanta /destinations/suklaphanta
-Redirect 301 /annapurnas-pokhara/ /destinations/annapurna
-Redirect 301 /annapurnas-pokhara /destinations/annapurna
-Redirect 301 /katmandou-vallee-des-rois/ /destinations/katmandou
-Redirect 301 /katmandou-vallee-des-rois /destinations/katmandou
-Redirect 301 /contact-us/ /contact
-Redirect 301 /contact-us /contact
-Redirect 301 /about-us/ /a-propos
-Redirect 301 /about-us /a-propos
-Redirect 301 /about/ /a-propos
-Redirect 301 /about /a-propos
-Redirect 301 /notre-histoire/ /a-propos
-Redirect 301 /notre-histoire /a-propos
-
-# 301 REDIRECTS - BLOG ARTICLES (Legacy & Direct Slugs Preservation)
-Redirect 301 /observer-les-oiseaux-au-nepal-guide-birdwatching/ /blog/observer-les-oiseaux-au-nepal-guide-birdwatching
-Redirect 301 /observer-les-oiseaux-au-nepal-guide-birdwatching /blog/observer-les-oiseaux-au-nepal-guide-birdwatching
-Redirect 301 /safari-a-pied-au-nepal-guide-complet/ /blog/safari-a-pied-au-nepal-guide-complet
-Redirect 301 /safari-a-pied-au-nepal-guide-complet /blog/safari-a-pied-au-nepal-guide-complet
-Redirect 301 /safari-photo-au-nepal-spots-materiel-conseils/ /blog/safari-photo-au-nepal-spots-materiel-conseils
-Redirect 301 /safari-photo-au-nepal-spots-materiel-conseils /blog/safari-photo-au-nepal-spots-materiel-conseils
-Redirect 301 /safari-nepal-en-famille-guide-securite/ /blog/safari-nepal-en-famille-guide-securite
-Redirect 301 /safari-nepal-en-famille-guide-securite /blog/safari-nepal-en-famille-guide-securite
-Redirect 301 /safari-bardia-prix-forfaits-et-ce-que-ca-inclut/ /blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut
-Redirect 301 /safari-bardia-prix-forfaits-et-ce-que-ca-inclut /blog/safari-bardia-prix-forfaits-et-ce-que-ca-inclut
-Redirect 301 /camping-safari-a-bardia-nuits-en-jungle-au-nepal/ /blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal
-Redirect 301 /camping-safari-a-bardia-nuits-en-jungle-au-nepal /blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal
-Redirect 301 /panthere-des-neiges-au-nepal/ /blog/panthere-des-neiges-au-nepal
-Redirect 301 /panthere-des-neiges-au-nepal /blog/panthere-des-neiges-au-nepal
-Redirect 301 /agence-safari-nepal-francophone/ /blog/agence-safari-nepal-francophone
-Redirect 301 /agence-safari-nepal-francophone /blog/agence-safari-nepal-francophone
-Redirect 301 /le-safari-ethique-au-nepal-privilegier-la-marche/ /blog/le-safari-ethique-au-nepal-privilegier-la-marche
-Redirect 301 /le-safari-ethique-au-nepal-privilegier-la-marche /blog/le-safari-ethique-au-nepal-privilegier-la-marche
-Redirect 301 /trek-jungle-nepal-safari-pied/ /blog/trek-jungle-nepal-safari-pied
-Redirect 301 /trek-jungle-nepal-safari-pied /blog/trek-jungle-nepal-safari-pied
-Redirect 301 /combiner-trek-et-safari-au-nepal-guide-complet/ /blog/combiner-trek-et-safari-au-nepal-guide-complet
-Redirect 301 /combiner-trek-et-safari-au-nepal-guide-complet /blog/combiner-trek-et-safari-au-nepal-guide-complet
-Redirect 301 /pister-le-tigre-du-bengale-a-bardia/ /blog/pister-le-tigre-du-bengale-a-bardia
-Redirect 301 /pister-le-tigre-du-bengale-a-bardia /blog/pister-le-tigre-du-bengale-a-bardia
-Redirect 301 /guide-complet-parc-national-de-suklaphanta/ /blog/guide-complet-parc-national-de-suklaphanta
-Redirect 301 /guide-complet-parc-national-de-suklaphanta /blog/guide-complet-parc-national-de-suklaphanta
-Redirect 301 /guide-parc-national-de-chitwan-nepal/ /blog/guide-parc-national-de-chitwan-nepal
-Redirect 301 /guide-parc-national-de-chitwan-nepal /blog/guide-parc-national-de-chitwan-nepal
-Redirect 301 /quand-partir-au-nepal-pour-un-safari-guide/ /blog/quand-partir-au-nepal-pour-un-safari-guide
-Redirect 301 /quand-partir-au-nepal-pour-un-safari-guide /blog/quand-partir-au-nepal-pour-un-safari-guide
-Redirect 301 /quels-animaux-voir-lors-dun-safari-au-nepal/ /blog/quels-animaux-voir-lors-dun-safari-au-nepal
-Redirect 301 /quels-animaux-voir-lors-dun-safari-au-nepal /blog/quels-animaux-voir-lors-dun-safari-au-nepal
-Redirect 301 /guide-complet-parc-national-de-bardia-nepal/ /blog/guide-complet-parc-national-de-bardia-nepal
-Redirect 301 /guide-complet-parc-national-de-bardia-nepal /blog/guide-complet-parc-national-de-bardia-nepal
-Redirect 301 /comment-organiser-un-safari-au-nepal/ /blog/comment-organiser-un-safari-au-nepal
-Redirect 301 /comment-organiser-un-safari-au-nepal /blog/comment-organiser-un-safari-au-nepal
-Redirect 301 /bardia-ou-chitwan-quel-parc-choisir/ /blog/bardia-ou-chitwan-quel-parc-choisir
-Redirect 301 /bardia-ou-chitwan-quel-parc-choisir /blog/bardia-ou-chitwan-quel-parc-choisir
-Redirect 301 /sac-safari-nepal/ /blog/sac-safari-nepal
-Redirect 301 /sac-safari-nepal /blog/sac-safari-nepal
-Redirect 301 /prix-dun-safari-au-nepal/ /blog/prix-dun-safari-au-nepal
-Redirect 301 /prix-dun-safari-au-nepal /blog/prix-dun-safari-au-nepal
-Redirect 301 /combien-de-jours-pour-un-safari-au-nepal/ /blog/combien-de-jours-pour-un-safari-au-nepal
-Redirect 301 /combien-de-jours-pour-un-safari-au-nepal /blog/combien-de-jours-pour-un-safari-au-nepal
-Redirect 301 /voir-des-tigres-au-nepal/ /blog/voir-des-tigres-au-nepal
-Redirect 301 /voir-des-tigres-au-nepal /blog/voir-des-tigres-au-nepal
-Redirect 301 /comportement-du-tigre-du-bengale/ /blog/comportement-du-tigre-du-bengale
-Redirect 301 /comportement-du-tigre-du-bengale /blog/comportement-du-tigre-du-bengale
-Redirect 301 /comportement-du-rhinoceros-unicornis/ /blog/comportement-du-rhinoceros-unicornis
-Redirect 301 /comportement-du-rhinoceros-unicornis /blog/comportement-du-rhinoceros-unicornis
-Redirect 301 /safari-nepal-ou-afrique-que-choisir/ /blog/safari-nepal-ou-afrique-que-choisir
-Redirect 301 /safari-nepal-ou-afrique-que-choisir /blog/safari-nepal-ou-afrique-que-choisir
-
-# 301 REDIRECTS - CIRCUITS SLUG ALIASES
-Redirect 301 /circuits/bardia-explorateur/ /tours/bardia-explorateur
-Redirect 301 /circuits/bardia-explorateur /tours/bardia-explorateur
-Redirect 301 /circuits/safari-bardia-5-jours/ /tours/bardia-explorateur
-Redirect 301 /circuits/safari-bardia-5-jours /tours/bardia-explorateur
-Redirect 301 /circuits/safari-bivouac-bardia/ /tours/bardia-nuit-sauvage
-Redirect 301 /circuits/safari-bivouac-bardia /tours/bardia-nuit-sauvage
-Redirect 301 /circuits/safari-faune-sauvage-15-jours/ /tours/jungle-extreme
-Redirect 301 /circuits/safari-faune-sauvage-15-jours /tours/jungle-extreme
-Redirect 301 /circuits/jungle-extreme/ /tours/jungle-extreme
-Redirect 301 /circuits/jungle-extreme /tours/jungle-extreme
-Redirect 301 /circuits/safari-pied-bardia/ /tours/safari-pied-bardia
-Redirect 301 /circuits/safari-pied-bardia /tours/safari-pied-bardia
-Redirect 301 /circuits/safari-jeep-bardia/ /tours/safari-jeep-bardia
-Redirect 301 /circuits/safari-jeep-bardia /tours/safari-jeep-bardia
 
