@@ -1,65 +1,81 @@
-# 🧭 État du Projet & Architecture Technique — Jungle Nepal Adventure
+# 🧭 Carnet de Bord & Architecture Technique — Jungle Nepal Adventure
 
-## 1. Vue d'ensemble & Stack Technique
-- **Framework** : [Astro 5.4+](https://astro.build/) (Static Site Generation ultra-rapide & performant)
-- **Styling** : Tailwind CSS 3.4+ (`@astrojs/tailwind`)
-- **Icônes** : Lucide Icons (`lucide`, Lucide CDN / SVG natifs)
-- **Typographie** : Plus Jakarta Sans (Google Fonts)
-- **Serveur & Routage** :
-  - Mode Build : `format: 'file'` (génère des URLs directes `.html` compatibles avec tous les hébergeurs statiques / Apache / Nginx / Hostinger)
-  - Serveur Dev recommandé : `npm run dev` (port 8088, supporte le Hot-Reload automatique)
+**Dernière mise à jour : 8 Octobre 2026**
 
 ---
 
-## 2. Structure des Dossiers
-
-```
-jungle-nepal/
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro         # Layout global (SEO, OpenGraph, Header, Footer, Modale, WhatsApp)
-│   ├── components/
-│   │   ├── Header.astro         # Barre de navigation principale & dropdown destinations
-│   │   ├── Footer.astro         # Pied de page unifié
-│   │   └── ...
-│   └── pages/
-│       ├── index.astro          # Page d'accueil complète (Hero, Séjours, Carte interactive, Pisteurs, Avis)
-│       ├── a-propos.astro       # Page À propos (Équipe, Pawan, Kiran, Robin, Charte éthique)
-│       ├── contact.astro        # Page Contact & Devis sur-mesure
-│       ├── destinations.astro   # Hub des destinations (Bardia, Chitwan, Annapurna, Suklaphanta, Katmandou)
-│       ├── destinations/        # Pages spécifiques par destination (.astro)
-│       └── tours/               # Les 14 pages détaillées des séjours (.astro)
-│
-├── public/                      # Assets statiques servis directement à la racine
-│   ├── assets/                  # Images, logos, photos WebP optimisées
-│   ├── nepal-map-illustrated.png
-│   └── favicon.png
-│
-├── dist/                        # Dossier de build statique de production
-└── scripts/
-    └── audit_site.py            # Script d'audit automatique des liens et images
-```
+## 1. Vue d'Ensemble & Stack Technique
+- **Framework** : [Astro 5.4+](https://astro.build/) (Static Site Generation ultra-performant)
+- **Styling** : Tailwind CSS 3.4+ (`@tailwindcss/typography`)
+- **Typographie** : Plus Jakarta Sans (Google Fonts & Webfonts locales)
+- **Hébergement & CDN** : Hostinger VPS / Cloudflare CDN
+- **Déploiement** : Script de synchronisation atomique multithread FTP (`tools/sync_tours_robust.py`)
+- **Internationalisation (i18n)** : Bilingue strict **Français (FR 🇫🇷)** et **Anglais (EN 🇬🇧)**
+  - Pas de traduction automatique tierce (Google Translate éliminé)
+  - Balises `hreflang` réciproques complètes (`fr`, `en`, `x-default`)
 
 ---
 
-## 3. Règles d'Or pour la Stabilité (Single Source of Truth)
+## 2. État du Référencement Naturel (Audit 100% Validé)
 
-1. **Source Unique dans `src/`** :
-   - Tout contenu (textes, images, composants, prix, liens) **doit être modifié dans `src/pages/*.astro` ou `src/components/*.astro`**.
-   - Ne jamais modifier directement les fichiers générés dans `dist/` ou d'anciens `.html` à la racine qui sont écrasés au build.
+### Scores de Santé Technique & Sémantique
+- **Score Technique Global** : 99 / 100
+- **Liens Internes Cassés (404)** : **0** (tous les liens reliquats WP corrigés)
+- **Balises Canoniques** : 183 / 183 pages de contenu couvertes (100%)
+- **Structure H1 Unique** : 183 / 183 pages (0 manquant, 0 multiple)
+- **Meta Descriptions & Titles** : 183 / 183 pages
+- **Données Structurées Schema.org JSON-LD** : 183 / 183 pages (`TravelAgency`, `TouristTrip`, `FAQPage`, `BlogPosting`, `BreadcrumbList`)
+- **Accessibilité des Médias** : 100% des images avec balise `alt` renseignée
+- **Sitemap XML (`sitemap.xml`)** : 178 URLs actives, **0 redirection 301**, syntaxe XML conforme
+- **Robots.txt** : Déclaration propre pointant sur `https://junglenepal.com/sitemap.xml`
 
-2. **Format des Liens Internes** :
-   - Toujours utiliser des liens absolus avec extension `.html` pour une compatibilité totale :
-     - Accueil : `/index.html` ou `/`
-     - Destinations : `/destinations.html`
-     - Séjour spécifique : `/tours/bardia-explorateur.html`
-     - Ancre : `/index.html#prochains-departs`
+---
 
-3. **Images et Médias** :
-   - Placer les images dans `public/assets/` ou `public/`.
-   - Utiliser des chemins absolus : `src="/assets/img_1.webp"` ou `src="/nepal-map-illustrated.png"`.
+## 3. Stratégie d'Offre & Monétisation SEO
 
-4. **Workflow de Vérification & Audit** :
-   - Pour lancer le site en développement : `npm run dev`
-   - Pour compiler le site : `npm run build`
-   - Pour vérifier qu'aucun lien mort ou image manquante n'existe : `python3 scripts/audit_site.py`
+### A. Les 10 Activités à la Journée (Ciblage « Day Tours » Haute Intention)
+Ces fiches captent les touristes déjà au Népal ou préparant leur voyage depuis l'étranger pour réserver immédiatement :
+1. **Safari à pied à Bardia (Walking Safari)** : 50 €
+   - FR : `/tours/safari-pied-bardia`
+   - EN : `/en/tours/bardia-walking-safari`
+2. **Safari en Jeep à Bardia** : 190 € (privatif)
+   - FR : `/tours/safari-jeep-bardia`
+   - EN : `/en/tours/bardia-jeep-safari`
+3. **Safari à pied à Chitwan (Traque des rhinocéros)** : 70 €
+   - FR : `/tours/safari-pied-chitwan`
+   - EN : `/en/tours/chitwan-walking-safari`
+4. **Safari en Jeep à Chitwan** : 190 €
+   - FR : `/tours/safari-jeep-chitwan`
+   - EN : `/en/tours/chitwan-jeep-safari`
+5. **Rafting & Safari sur la rivière Karnali** : 120 €
+   - FR : `/tours/rafting-safari-bardia`
+   - EN : `/en/tours/bardia-rafting-safari`
+
+### B. Circuits Majeurs & Séjours Longs
+- **Immersion Spirituelle en Himalaya** : Prix actualisé à **2 190 €**
+  - FR : `/tours/immersion-spirituelle`
+  - EN : `/en/tours/himalaya-spiritual-immersion-tour`
+- **Jungle Extrême (15 jours)** : 2 490 €
+- **Bardia Explorateur (5 jours)** : 690 €
+- **Expédition Panthère des Neiges** : 4 190 €
+
+---
+
+## 4. Maillage Interne & Siloing Blog ➔ Fiches Tours
+- **116 articles de blog (58 FR + 58 EN)** rédigés avec une forte expertise terrain (1 200 à 3 900 mots).
+- Chaque article contient désormais une carte d'appel à l'action contextuelle (`blog-cta-card`) connectée à la bonne activité :
+  - Thématique Tigre ➔ Safari à pied Bardia (50 €)
+  - Thématique Rhinocéros ➔ Safari à pied Chitwan (70 €)
+  - Thématique Rivières / Crocodiles ➔ Rafting Karnali (120 €)
+  - Thématique Éléphant / Éthique ➔ Walking Safari éco-responsable (50 €)
+
+---
+
+## 5. Procédure de Déploiement & Sécurité Cache
+À chaque exécution de `npm run build`, la chaîne automatique s'exécute :
+1. `generate_perfect_sitemap.py` : régénère `sitemap.xml` avec toutes les URLs actives et les alternates hreflang.
+2. `astro build` : compile le code statique dans `dist/`.
+3. `ensure_dual_routes.py` : garantit le double routage (support des URLs avec et sans slash).
+4. `sync_tours_robust.py` : déploie par FTP de façon atomique vers Hostinger.
+
+> **Règle d'or de cache** : En cas de modification CSS/JS, toujours s'assurer que les fichiers `dist/_astro/` sont bien téléversés et ajouter si nécessaire un query parameter de cache buster (`?v=...`) pour éviter que le CDN ne serve une version antérieure.

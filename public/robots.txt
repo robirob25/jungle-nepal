@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://junglenepal.com/sitemap.xml
-Sitemap: https://junglenepal.com/sitemap_index.xml
-
