@@ -455,12 +455,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       box.classList.toggle('pointer-events-none');
     }
   }
-  function changeLanguage(lang) {
-    const select = document.querySelector('.goog-te-combo');
-    if (select) {
-      select.value = lang;
-      select.dispatchEvent(new Event('change'));
-    }
+  
   }
   window.addEventListener('scroll', () => {
     const btn = document.getElementById('back-to-top');

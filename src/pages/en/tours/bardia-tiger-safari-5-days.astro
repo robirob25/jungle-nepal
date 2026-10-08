@@ -269,12 +269,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] space-y-0.5 text-xs font-bold text-white">
                 <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
                 <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-                <button onclick="changeLanguage('de')" data-lang-btn="de" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                  <span class="flex items-center gap-2"><span>🇩🇪</span><span>Deutsch</span></span>
-                </button>
-                <button onclick="changeLanguage('es')" data-lang-btn="es" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer">
-                  <span class="flex items-center gap-2"><span>🇪🇸</span><span>Español</span></span>
-                </button>
               </div>
             </div>
           </div>
@@ -403,15 +397,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <!-- Language Selector Buttons (4 Languages in 1 tap) -->
     <div class="pt-3 border-t border-white/10 space-y-2">
       <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Langue / Language</span>
-      <div class="grid grid-cols-4 gap-1.5">
+      <div class="grid grid-cols-2 gap-2">
         <a href={frTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇫🇷</span> <span>FR</span></a>
         <a href={enTargetUrl} class="py-2 px-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"><span>🇬🇧</span> <span>EN</span></a>
-        <button onclick="changeLanguage('de')" data-lang-btn="de" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer">
-          <span>🇩🇪</span> <span>DE</span>
-        </button>
-        <button onclick="changeLanguage('es')" data-lang-btn="es" class="py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1 bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer">
-          <span>🇪🇸</span> <span>ES</span>
-        </button>
       </div>
     </div>
 
