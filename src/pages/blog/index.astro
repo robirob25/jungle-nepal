@@ -6,9 +6,9 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import posts from '../../data/blog_posts.json';
 
-// Curated SEO priority order (Pillars & Highest intent queries first)
-const featuredPost = posts[0];
-const otherPosts = posts.slice(1);
+// Pinned flagship pillar guide as the permanent featured post ("Tigre au Népal : Où et comment voir le tigre du Bengale en safari")
+const featuredPost = posts.find(p => p.slug === 'voir-des-tigres-au-nepal') || posts[0];
+const otherPosts = posts.filter(p => p.slug !== featuredPost.slug);
 
 // Category counts for dynamic filter pills across all assigned categories
 const categoryCounts = posts.reduce((acc, p) => {
