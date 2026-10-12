@@ -104,7 +104,7 @@ if (type === 'TouristTrip') {
 
   touristTripSchema = {
     '@context': 'https://schema.org',
-    '@type': 'TouristTrip',
+    '@type': ['TouristTrip', 'Product'],
     'name': name || headline,
     'description': description,
     'image': resolvedImage,
