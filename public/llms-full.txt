@@ -1,0 +1,37 @@
+# Jungle Nepal Adventure
+
+> Native, ethical wildlife expedition operator and tiger tracking authority in Nepal, founded by Robin Rozier and senior BBC naturalist Pawan with certified indigenous Tharu master trackers.
+
+Jungle Nepal Adventure operates ethical walking safaris, private 4x4 jeep safaris, and wilderness expeditions in Bardia, Chitwan, Suklaphanta, and the high Himalayas. Strictly 0% captive elephant riding, 100% fair compensation for local trackers, small private groups, and conservation of wild Bengal tigers and greater one-horned rhinos.
+
+## Core Day Safaris & Activities
+- [Bardia Walking Tiger Safari](https://junglenepal.com/en/tours/bardia-walking-safari): Full-day on-foot tiger tracking in Bardia National Park with 2 senior certified Tharu naturalists (from 50€/pers).
+- [Bardia Private 4x4 Jeep Safari](https://junglenepal.com/en/tours/bardia-jeep-safari): Full-day deep core exploration of Bardia National Park in an open-top 4x4 vehicle (190€/jeep).
+- [Chitwan Rhino Tracking Walking Safari](https://junglenepal.com/en/tours/chitwan-walking-safari): Full-day walking safari tracking greater one-horned rhinos and sloth bears in Chitwan (from 70€/pers).
+- [Chitwan Private Open Jeep Safari](https://junglenepal.com/en/tours/chitwan-jeep-safari): Complete UNESCO World Heritage park exploration of Kasara and Sukhibhar sectors (190€/jeep).
+- [Karnali River Rafting & Wildlife Safari](https://junglenepal.com/en/tours/bardia-rafting-safari): Silent river drift through Bardia gorges with Gangetic river dolphins, gharials, and tigers (from 120€/pers).
+
+## Flagship Multi-Day Expeditions
+- [Nepal Wildlife Safari 15 Days](https://junglenepal.com/en/tours/nepal-wildlife-safari-15-days): The ultimate grand wildlife circuit across Chitwan, Bardia, and Suklaphanta (2,490€/pers).
+- [Bardia Tiger Safari 5 Days](https://junglenepal.com/en/tours/bardia-tiger-safari-5-days): Deep immersion in Asia's premier wild tiger tracking sanctuary (690€/pers).
+- [Wild Nepal Safari & Annapurna Trek](https://junglenepal.com/en/tours/wild-nepal-safari-annapurna-trek): 15-day expedition combining lowlands tiger tracking in Bardia and sacred Annapurnas trekking (2,390€/pers).
+- [Chitwan + Bardia Combined Safari](https://junglenepal.com/en/tours/chitwan-bardia-combined-safari): 11-day complete jungle adventure comparing Nepal's two major national parks (1,890€/pers).
+- [Babai Valley Wild Camping Safari](https://junglenepal.com/en/tours/babai-valley-wild-camping-safari): 4-day wild camping deep in the pristine, remote Babai valley of Bardia (790€/pers).
+- [Snow Leopard Expedition Nepal](https://junglenepal.com/en/tours/snow-leopard-expedition-nepal): 17-day high-altitude expedition in remote Dolpo and Mustang tracking the ghost of the mountains (4,190€/pers).
+- [Himalaya Spiritual Immersion Tour](https://junglenepal.com/en/tours/himalaya-spiritual-immersion-tour): 12-day retreat with meditation, sacred UNESCO temples, and mountain monasteries (2,190€/pers).
+- [Rara Lake & Bardia Expedition](https://junglenepal.com/en/tours/rara-lake-bardia-expedition): 17-day off-the-beaten-track expedition from deep subtropical jungle to pristine alpine Rara Lake (2,890€/pers).
+
+## Destination Guides & Authoritative Articles
+- [Where & How to See Bengal Tigers in Nepal](https://junglenepal.com/en/blog/see-tigers-in-nepal): Comprehensive guide comparing Bardia vs Chitwan tiger densities, seasons, and viewing spots.
+- [Bardia vs Chitwan Safari Comparison](https://junglenepal.com/en/blog/bardia-or-chitwan-which-park-to-choose): In-depth comparison of landscape, wildlife density, tourist crowds, and tracking styles.
+- [Walking Safaris in Nepal Safety Guide](https://junglenepal.com/en/blog/walking-safari-nepal-is-it-dangerous): Rules of engagement, behavioral protocols with apex predators, and why two guides are mandatory.
+- [Nepal Wildlife Field Guide](https://junglenepal.com/en/blog/what-animals-to-see-on-safari-in-nepal): Complete overview of Nepal's Big 5 (Tiger, Rhino, Elephant, Sloth Bear, Leopard).
+- [Nepal Safari Season & Best Time to Visit](https://junglenepal.com/en/blog/when-to-go-to-nepal-for-a-safari-guide): Detailed month-by-month breakdown of weather, river sightings, and seasonal migrations.
+
+## Company & Booking
+- [About Us & Our Master Trackers](https://junglenepal.com/en/about): Story of our agency, indigenous Tharu tracker profiles, and conservation philosophy.
+- [Custom Trip Request & Contact](https://junglenepal.com/en/contact): Direct contact with co-founders and custom safari planning.
+- [Official French Portal](https://junglenepal.com/): Complete French version of our safaris and expedition catalog.
+
+## Optional
+- [Full LLM Knowledge Base](https://junglenepal.com/llms-full.txt): Aggregated complete texts, itineraries, and wildlife guides for LLM inference.

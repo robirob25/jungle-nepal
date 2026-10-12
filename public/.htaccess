@@ -43,6 +43,10 @@ Options -Indexes -MultiViews
     RewriteCond %{HTTP_HOST} ^www\.junglenepal\.com [NC]
     RewriteRule ^(.*)$ https://junglenepal.com/$1 [L,R=301]
 
+    # Force fresh delivery of llms.txt and llms-full.txt
+    RewriteRule ^llms\.txt$ llms.txt [L]
+    RewriteRule ^llms-full\.txt$ llms-full.txt [L]
+
     # DirectoryIndex configuration for Astro SSG
     DirectoryIndex index.html
 
@@ -194,7 +198,7 @@ Options -Indexes -MultiViews
     Header always set CDN-Cache-Control "no-store" "expr=%{CONTENT_TYPE} =~ m#text/html#"
     Header always set Surrogate-Control "no-store" "expr=%{CONTENT_TYPE} =~ m#text/html#"
     
-    <FilesMatch "\.(html|htm|php)$">
+    <FilesMatch "\.(html|htm|php|txt|md)$">
         Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0"
         Header always set Pragma "no-cache"
         Header always set Expires "0"
