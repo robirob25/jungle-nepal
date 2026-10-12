@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://junglenepal.com',
+  build: {
+    inlineStylesheets: 'always'
+  },
   integrations: [
     tailwind(),
     sitemap({

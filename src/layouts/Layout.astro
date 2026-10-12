@@ -74,10 +74,11 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
   <link rel="canonical" href={canonicalUrl} />
 
-  <!-- Ultra-Fast Self-Hosted Local Fonts (Zero-Latency & Zero-Blocking) -->
+  <!-- Ultra-Fast Self-Hosted Local Fonts (Zero-Latency & Non-Blocking) -->
   <link rel="preload" href="/assets/fonts/plus_jakarta_sans_normal_400_11.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/plus_jakarta_sans_normal_700_23.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/assets/fonts/fonts.css"></noscript>
 
   <!-- Critical Rendering & Smooth Scroll GPU Acceleration -->
   <style is:inline>

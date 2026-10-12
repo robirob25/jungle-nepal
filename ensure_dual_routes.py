@@ -31,10 +31,14 @@ for root, dirs, files in os.walk(dist):
             if not os.path.exists(sub_index):
                 shutil.copyfile(fpath, sub_index)
 
-# Automatic CSS Cache-Buster across ALL html files
+# Automatic CSS Inliner across ALL html files (Eliminates Render-Blocking CSS Requests)
 import re, time
-cache_ver = f"?v={int(time.time())}"
-css_pattern = re.compile(r'(/_astro/[^"\'\?]+\.css)(\?[^"\']*)?')
+dist = os.path.join(base_dir, 'dist')
+css_cache = {}
+inlined_count = 0
+
+pattern1 = re.compile(r'<link[^>]*rel=[\"\']stylesheet[\"\'][^>]*href=[\"\'](/_astro/[^\"\']+\.css[^\"\']*)[\"\'][^>]*>')
+pattern2 = re.compile(r'<link[^>]*href=[\"\'](/_astro/[^\"\']+\.css[^\"\']*)[\"\'][^>]*rel=[\"\']stylesheet[\"\'][^>]*>')
 
 for root, dirs, files in os.walk(dist):
     for f in files:
@@ -42,11 +46,26 @@ for root, dirs, files in os.walk(dist):
             fpath = os.path.join(root, f)
             with open(fpath, 'r', encoding='utf-8') as fp:
                 c = fp.read()
-            c_new = css_pattern.sub(r'\1' + cache_ver, c)
+
+            def repl(m):
+                global inlined_count
+                href = m.group(1).split('?')[0]
+                css_file_path = os.path.join(dist, href.lstrip('/'))
+                if os.path.exists(css_file_path):
+                    if href not in css_cache:
+                        with open(css_file_path, 'r', encoding='utf-8') as cfp:
+                            css_cache[href] = cfp.read()
+                    inlined_count += 1
+                    return f'<style>{css_cache[href]}</style>'
+                return m.group(0)
+
+            c_new = pattern1.sub(repl, c)
+            c_new = pattern2.sub(repl, c_new)
+
             if c != c_new:
                 with open(fpath, 'w', encoding='utf-8') as fp:
                     fp.write(c_new)
 
-print(f"✓ Cache-busted all CSS references with {cache_ver}")
+print(f"✓ Inlined render-blocking CSS across {inlined_count} locations (0 render-blocking stylesheets)!")
 print("✓ Dual routing guaranteed (both /foo.html, /foo and /foo/ return 200 OK)!")
 

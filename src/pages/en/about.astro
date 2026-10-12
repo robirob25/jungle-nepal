@@ -249,6 +249,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
             <img loading="lazy" decoding="async" 
               src="/assets/drive_photos/julien_tigre_bengale2.webp" 
+              srcset="/assets/drive_photos/julien_tigre_bengale2_mobile.webp 800w, /assets/drive_photos/julien_tigre_bengale2.webp 1600w"
+              sizes="(max-width: 768px) 100vw, 600px"
+              width="800"
+              height="533"
               alt="Bardia Bengal Tiger" 
               class="w-full h-[460px] object-cover -scale-x-100 transform"
             />
