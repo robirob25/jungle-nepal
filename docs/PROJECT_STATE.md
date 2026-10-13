@@ -79,3 +79,15 @@ Ces fiches captent les touristes déjà au Népal ou préparant leur voyage depu
 4. `sync_tours_robust.py` : déploie par FTP de façon atomique vers Hostinger.
 
 > **Règle d'or de cache** : En cas de modification CSS/JS, toujours s'assurer que les fichiers `dist/_astro/` sont bien téléversés et ajouter si nécessaire un query parameter de cache buster (`?v=...`) pour éviter que le CDN ne serve une version antérieure.
+
+---
+
+## 6. Architecture Réseau, DNS & Optimisation Vitesse (Octobre 2026)
+- **Résolution DNS & TTFB (0,15s - 0,20s)** :
+  - Le domaine apex `junglenepal.com` et `admin` pointent directement en IPv4 (`A`) vers l'adresse réelle de l'origin Hostinger LiteSpeed (`213.130.145.177`) avec proxy Cloudflare actif.
+  - Les enregistrements AAAA obsolètes / hors-service et les relais tiers défaillants ont été éliminés pour supprimer tout timeout de 20s.
+  - Le CNAME `www` pointe proprement vers `junglenepal.com`.
+- **Core Web Vitals & Google PageSpeed** :
+  - Seule la slide visible (Slide 0) est chargée en priorité haute (`fetchpriority="high"`, `loading="eager"`). Les 9 slides suivantes sont différées en `loading="lazy"`, réduisant le poids initial de ~2 Mo.
+  - Bibliothèque d'icônes `Lucide` auto-hébergée localement dans `/assets/js/lucide.min.js` avec chargement `defer`, éliminant l'appel tiers à `unpkg.com`.
+  - Google Analytics 4 (`gtag.js`) différé au chargement de la page (`window.onload`) pour éliminer le blocage du thread principal et le reflow forcé.
