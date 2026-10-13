@@ -51,8 +51,10 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
     '/tours/nepal-immersion-totale': { fr: '/tours/nepal-immersion-totale', en: '/en/tours/nepal-wildlife-culture-immersion' },
     '/tours/carnet-de-voyage': { fr: '/tours/carnet-de-voyage', en: '/en/tours/nepal-sketching-travel-journal-tour' },
     '/tours/immersion-spirituelle': { fr: '/tours/immersion-spirituelle', en: '/en/tours/himalaya-spiritual-immersion-tour' },
-    '/tours/dashain-immersion-culturelle': { fr: '/tours/dashain-immersion-culturelle', en: '/en/tours/dashain-festival-tharu-cultural-tour' },
-    '/tours/tiji-mustang': { fr: '/tours/tiji-mustang', en: '/en/tours/tiji-festival-upper-mustang-trek' },
+    '/tours/safari-chitwan-3-jours': { fr: '/tours/safari-chitwan-3-jours', en: '/en/tours/chitwan-3-days-safari-post-trek' },
+    '/tours/pokhara-chitwan-safari-transfert-katmandou': { fr: '/tours/pokhara-chitwan-safari-transfert-katmandou', en: '/en/tours/pokhara-to-chitwan-safari-transfer-kathmandu' },
+    '/tours/chitwan-3-days-safari-post-trek': { fr: '/tours/safari-chitwan-3-jours', en: '/en/tours/chitwan-3-days-safari-post-trek' },
+    '/tours/pokhara-to-chitwan-safari-transfer-kathmandu': { fr: '/tours/pokhara-chitwan-safari-transfert-katmandou', en: '/en/tours/pokhara-to-chitwan-safari-transfer-kathmandu' },
 
     // EN reverse entries
     '/tours/bardia-walking-safari': { fr: '/tours/safari-pied-bardia', en: '/en/tours/bardia-walking-safari' },
