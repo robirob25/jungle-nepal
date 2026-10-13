@@ -61,13 +61,13 @@ Ces fiches captent les touristes déjà au Népal ou préparant leur voyage depu
 
 ---
 
-## 4. Maillage Interne & Siloing Blog ➔ Fiches Tours
-- **116 articles de blog (58 FR + 58 EN)** rédigés avec une forte expertise terrain (1 200 à 3 900 mots).
-- Chaque article contient désormais une carte d'appel à l'action contextuelle (`blog-cta-card`) connectée à la bonne activité :
-  - Thématique Tigre ➔ Safari à pied Bardia (50 €)
-  - Thématique Rhinocéros ➔ Safari à pied Chitwan (70 €)
-  - Thématique Rivières / Crocodiles ➔ Rafting Karnali (120 €)
-  - Thématique Éléphant / Éthique ➔ Walking Safari éco-responsable (50 €)
+## 4. Maillage Interne & Siloing Blog ➔ Fiches Tours & Activités
+- **120 articles de blog audités et 100% optimisés (60 FR + 60 EN)** :
+  - **Taux de couverture tours : 100%** (zéro article orphelin ou sans lien d'activité).
+  - Moyenne de **3,02 liens tours par article en FR** et **3,88 liens tours par article en EN**.
+  - Chaque article intègre désormais 2 à 4 ancres contextuelles et naturelles dans le corps du texte (reliées aux safaris à la journée à 50€/70€/120€/190€ et aux expéditions multi-jours 5j/11j/15j/17j).
+  - Remplacement de 75 liens génériques vagues (`/#prochains-departs`) par les URLs exactes des fiches d'activités.
+  - Cartes d'appel à l'action contextuelles en fin d'article adaptées à chaque thématique animale ou géographique.
 
 ---
 
