@@ -11,7 +11,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TouristTrip", "Product"],
+  "@type": [
+    "TouristTrip",
+    "Product"
+  ],
   "name": "Cultural Immersion and Adventure in Nepal: Dashain Festival Special",
   "description": "An exclusive 15-day journey into Nepalese traditions and wild nature, hosted by visual creators Adrien & Samantha. Authentic Dashain festival immersion in a Tharu village in Bardia, Annapurna balcony views, and Royal Bengal tiger tracking.",
   "image": "https://junglenepal.com/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp",
@@ -26,7 +29,44 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour"
+    "url": "https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NP"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NP",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnOnline",
+      "returnFees": "https://schema.org/FreeReturn",
+      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+    }
   },
   "provider": {
     "@type": "TravelAgency",
@@ -40,6 +80,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       "addressLocality": "Bardia & Katmandou",
       "addressCountry": "NP"
     }
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Jungle Nepal Adventure"
   }
 }
   </script>

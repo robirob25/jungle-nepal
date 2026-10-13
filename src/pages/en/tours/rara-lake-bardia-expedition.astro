@@ -12,7 +12,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TouristTrip", "Product"],
+  "@type": [
+    "TouristTrip",
+    "Product"
+  ],
   "name": "Rara Lake & Bardia Expedition – The Ultimate Off-the-Beaten-Path Adventure – 17 Days",
   "description": "Cross Nepal from east to west on an epic 17-day expedition off the beaten track. After visiting Kathmandu, Pokhara, and Lumbini, venture into the rugged tracks of remote western Nepal through Surkhet and Kalikot. Discover the turquoise alpine waters of Rara Lake, Nepal’s largest and most pristine mountain lake at 3,000 meters altitude, before descending into the dense subtropical jungles of Bardia to track wild Bengal tigers on foot.",
   "image": "https://junglenepal.com/assets/original_site/lac_rara_orig.webp",
@@ -27,7 +30,44 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/rara-lake-bardia-expedition-expedition-expedition"
+    "url": "https://junglenepal.com/en/tours/rara-lake-bardia-expedition-expedition-expedition",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NP"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NP",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnOnline",
+      "returnFees": "https://schema.org/FreeReturn",
+      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+    }
   },
   "provider": {
     "@type": "TravelAgency",
@@ -206,6 +246,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         }
       }
     ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Jungle Nepal Adventure"
   }
 }
   </script>

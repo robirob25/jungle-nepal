@@ -12,7 +12,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TouristTrip", "Product"],
+  "@type": [
+    "TouristTrip",
+    "Product"
+  ],
   "name": "Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée",
   "description": "Voici l’une des aventures les plus immersives et exclusives du Népal : 8 jours d’expédition sauvage dans la mythique vallée de Babai. Cette enclave protégée au cœur de Bardia est restée à l’état brut, loin de toute infrastructure humaine. Vous naviguerez au fil de l’eau, établirez vos camps de tentes sur les bancs de sable isolés et profiterez de veillées magiques autour du feu de camp. Encadré par des rangers chevronnés et des guides locaux natifs, vous suivrez les empreintes fraîches des prédateurs, explorerez des poches forestières inexplorées et vivrez le véritable frisson de la vie sauvage en autonomie.",
   "image": "https://junglenepal.com/assets/original_site/babai_walk.webp",
@@ -27,7 +30,44 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/tours/bardia-babai-camping"
+    "url": "https://junglenepal.com/tours/bardia-babai-camping",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NP"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NP",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnOnline",
+      "returnFees": "https://schema.org/FreeReturn",
+      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+    }
   },
   "provider": {
     "@type": "TravelAgency",
@@ -125,6 +165,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         }
       }
     ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Jungle Nepal Adventure"
   }
 }
   </script>

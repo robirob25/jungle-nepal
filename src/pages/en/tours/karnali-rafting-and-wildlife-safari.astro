@@ -12,7 +12,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TouristTrip", "Product"],
+  "@type": [
+    "TouristTrip",
+    "Product"
+  ],
   "name": "Wild Rivers & Hidden Heritage – Rafting & Safari Expedition – 18 Days",
   "description": "A grand 18-day expedition for lovers of untamed wilderness and active exploration. After discovering Kathmandu and Pokhara, journey into the remote Dhorpatan Hunting Reserve and traditional Magar mountain villages at Taksera. The centerpiece of your journey takes you down thrilling white-water rapids on a self-sustained multi-day river descent with pristine sandbank bivouacs, concluding with unforgettable wildlife safaris in Bardia National Park.",
   "image": "https://junglenepal.com/assets/drive_photos/adrien_bardia_river.webp",
@@ -27,7 +30,44 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/en/tours/karnali-rafting-and-wildlife-safari"
+    "url": "https://junglenepal.com/en/tours/karnali-rafting-and-wildlife-safari",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NP"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NP",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnOnline",
+      "returnFees": "https://schema.org/FreeReturn",
+      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+    }
   },
   "provider": {
     "@type": "TravelAgency",
@@ -215,6 +255,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         }
       }
     ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Jungle Nepal Adventure"
   }
 }
   </script>

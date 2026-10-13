@@ -12,7 +12,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TouristTrip", "Product"],
+  "@type": [
+    "TouristTrip",
+    "Product"
+  ],
   "name": "Népal – carnet de dessin et de voyage – 15 jours",
   "description": "Ce voyage exclusif de 15 jours a été entièrement pensé comme une expérience immersive de carnet de voyage et de création artistique. L’objectif n’est pas simplement de traverser le Népal, mais de prendre le temps de le contempler, de le dessiner et d’en capturer l’âme au jour le jour. Tout au long de l’expédition, vous serez accompagné par la dessinatrice professionnelle Sarah Plage, qui guidera chaque participant dans la pratique du croquis sur le vif et de l’aquarelle. Depuis les ruelles pavées et les toits sculptés de Bhaktapur et Bandipur jusqu’aux panoramas spectaculaires du village de Ghachok et aux safaris animaliers de Bardia, chaque journée ménage des pauses contemplatives pour poser vos couleurs et composer un carnet de route personnel et inoubliable.",
   "image": "https://junglenepal.com/assets/drive_photos/antoine_wild5.webp",
@@ -27,7 +30,44 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/tours/carnet-de-voyage"
+    "url": "https://junglenepal.com/tours/carnet-de-voyage",
+    "priceValidUntil": "2027-12-31",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NP"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NP",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnOnline",
+      "returnFees": "https://schema.org/FreeReturn",
+      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+    }
   },
   "provider": {
     "@type": "TravelAgency",
@@ -188,6 +228,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         }
       }
     ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Jungle Nepal Adventure"
   }
 }
   </script>

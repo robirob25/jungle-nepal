@@ -110,6 +110,10 @@ if (type === 'TouristTrip') {
     'image': resolvedImage,
     'touristType': touristType,
     'provider': providerOrganization,
+    'brand': {
+      '@type': 'Brand',
+      'name': 'Jungle Nepal Adventure'
+    },
     ...(cleanPrice ? {
       'offers': {
         '@type': 'Offer',
@@ -117,7 +121,44 @@ if (type === 'TouristTrip') {
         'priceCurrency': offers?.priceCurrency || 'EUR',
         'availability': offers?.availability || 'https://schema.org/InStock',
         'validFrom': offers?.validFrom || '2026-01-01',
-        'url': offers?.url || currentUrl
+        'priceValidUntil': '2027-12-31',
+        'url': offers?.url || currentUrl,
+        'shippingDetails': {
+          '@type': 'OfferShippingDetails',
+          'shippingRate': {
+            '@type': 'MonetaryAmount',
+            'value': '0',
+            'currency': offers?.priceCurrency || 'EUR'
+          },
+          'shippingDestination': {
+            '@type': 'DefinedRegion',
+            'addressCountry': 'NP'
+          },
+          'deliveryTime': {
+            '@type': 'ShippingDeliveryTime',
+            'handlingTime': {
+              '@type': 'QuantitativeValue',
+              'minValue': 0,
+              'maxValue': 0,
+              'unitCode': 'DAY'
+            },
+            'transitTime': {
+              '@type': 'QuantitativeValue',
+              'minValue': 0,
+              'maxValue': 0,
+              'unitCode': 'DAY'
+            }
+          }
+        },
+        'hasMerchantReturnPolicy': {
+          '@type': 'MerchantReturnPolicy',
+          'applicableCountry': 'NP',
+          'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          'merchantReturnDays': 30,
+          'returnMethod': 'https://schema.org/ReturnOnline',
+          'returnFees': 'https://schema.org/FreeReturn',
+          'merchantReturnLink': `${canonicalOrigin}/conditions-generales`
+        }
       }
     } : {}),
     ...(itinerary && itinerary.length > 0 ? {
