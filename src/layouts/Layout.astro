@@ -96,8 +96,14 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       flex-direction: column !important;
       opacity: 1 !important;
       visibility: visible !important;
-      transform: none !important;
       background-color: #ffffff !important;
+      contain: layout style;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+    .trip-card img {
+      content-visibility: auto;
+      transform: translateZ(0);
     }
     .trip-card.hidden, article.trip-card.hidden {
       display: none !important;
