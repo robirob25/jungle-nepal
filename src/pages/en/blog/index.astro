@@ -7,7 +7,7 @@ import Footer from '../../../components/Footer.astro';
 import posts from '../../../data/blog_posts.en.json';
 
 // Pinned flagship pillar guide as the permanent featured post ("Tigers in Nepal: Where and How to Spot Bengal Tigers on Safari")
-const featuredPost = posts.find(p => p.slug === 'voir-des-tigres-au-nepal') || posts[0];
+const featuredPost = posts.find(p => p.slug === 'bengal-tigers-in-nepal-wildlife-safari-guide') || posts[0];
 const otherPosts = posts.filter(p => p.slug !== featuredPost.slug);
 
 // Category counts for dynamic filter pills

@@ -14,6 +14,8 @@ with open(fr_posts_path, "r", encoding="utf-8") as f:
 with open(en_posts_path, "r", encoding="utf-8") as f:
     posts_en = json.load(f)
 
+from tools.fix_english_blog_slugs import SLUG_MAP
+
 en_slugs = {p["slug"] for p in posts_en}
 
 # Static and Core Routes
@@ -141,12 +143,13 @@ for fr_slug, en_slug in TOUR_MAPPING.items():
     <xhtml:link rel="alternate" hreflang="x-default" href="{fr_url}"/>
   </url>""")
 
-# 3. Blog Articles (All 58 FR and All 58 EN with bidirectional hreflang)
+# 3. Blog Articles (All 60 FR and All 60 EN with bidirectional hreflang)
 for p in posts_fr:
     slug = p["slug"]
+    en_slug = SLUG_MAP.get(slug, slug)
     date = p.get("date", today)
     fr_url = f"https://junglenepal.com/blog/{slug}/"
-    en_url = f"https://junglenepal.com/en/blog/{slug}/"
+    en_url = f"https://junglenepal.com/en/blog/{en_slug}/"
     
     xml_entries.append(f"""  <url>
     <loc>{fr_url}</loc>
