@@ -567,6 +567,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <a href="#apercu" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Aperçu</a>
           <a href="#pour-moi" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Profil</a>
           <a href="#programme" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Itinéraire</a>
+          <a href="#hebergement" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Hébergement</a>
           <a href="#inclusions" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Inclus</a>
           <a href="#avis-voyageurs" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">Avis</a>
           <a href="#faq" class="hover:text-[#0e8354] transition-colors pb-1 border-b-2 border-transparent hover:border-[#0e8354] whitespace-nowrap">FAQ</a>
@@ -730,6 +731,87 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </section>
 
+        <!-- SECTION HÉBERGEMENT : RHINO LAND JUNGLE LODGE -->
+        <section id="hebergement" class="pt-8 border-t border-slate-200">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-[#0e8354] border border-emerald-200/80 text-xs font-black uppercase tracking-wider mb-2">
+                <i data-lucide="hotel" class="w-3.5 h-3.5"></i>
+                <span>Votre hébergement inclus</span>
+              </div>
+              <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
+                Rhino Land Jungle Lodge
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1 font-medium">
+                Un havre de paix tropical avec piscine flambant neuve, au cœur de Sauraha.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 bg-amber-50 px-3.5 py-1.5 rounded-xl border border-amber-200 shrink-0">
+              <span class="text-amber-500 text-sm">★</span>
+              <span class="text-xs font-bold text-amber-950">Confort & Sérénité garantis</span>
+            </div>
+          </div>
+
+          <!-- Description text -->
+          <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal mb-6">
+            Durant votre séjour à Chitwan, vous logez au <strong>Rhino Land Jungle Lodge</strong>, notre établissement partenaire sélectionné pour son hospitalité et son confort irréprochable. Niché au calme dans un jardin verdoyant à quelques minutes de l'entrée du parc national, le lodge dispose d'une <strong>piscine extérieure toute récente</strong> avec transats — un véritable bonheur pour vous délasser et récupérer après les sentiers de l'Himalaya ou une longue journée de pistage en jungle.
+          </p>
+
+          <!-- BENTO GRID PHOTOS -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4 mb-6">
+            <!-- Card 1: Piscine (Large) -->
+            <div class="md:col-span-7 group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[220px] sm:min-h-[280px]">
+              <img loading="lazy" decoding="async" src="/assets/lodges/rhino_land_jungle_lodge_piscine.webp" alt="Piscine moderne du Rhino Land Jungle Lodge à Chitwan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3.5 left-3.5 right-3.5 flex items-end justify-between">
+                <div>
+                  <span class="inline-block bg-[#0e8354] text-white text-[11px] font-black px-2.5 py-0.5 rounded-lg mb-1 shadow">Piscine toute récente</span>
+                  <p class="text-white text-xs sm:text-sm font-bold drop-shadow">Espace détente & transats au bord de l'eau</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Col 2: Jardin & Façade (2 small cards) -->
+            <div class="md:col-span-5 grid grid-cols-2 md:grid-cols-1 gap-3 sm:gap-4">
+              <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[140px] sm:min-h-[135px]">
+                <img loading="lazy" decoding="async" src="/assets/lodges/rhino_land_jungle_lodge_jardin.webp" alt="Jardin tropical et allée fleurie du lodge" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2.5 left-2.5 right-2.5">
+                  <p class="text-white text-xs font-bold drop-shadow">Jardin tropical paisible & style Tharu</p>
+                </div>
+              </div>
+
+              <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[140px] sm:min-h-[135px]">
+                <img loading="lazy" decoding="async" src="/assets/lodges/rhino_land_jungle_lodge_facade.webp" alt="Chambres confortables et accueil au crépuscule" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2.5 left-2.5 right-2.5">
+                  <p class="text-white text-xs font-bold drop-shadow">Chambres privées grand confort & climatisées</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AMENITIES PILLS -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-xs font-bold text-slate-700">
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
+              <span class="text-base">🏊</span>
+              <span>Piscine extérieure</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
+              <span class="text-base">❄️</span>
+              <span>Climatisation & eau chaude</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
+              <span class="text-base">🌿</span>
+              <span>Jardin tropical clos</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
+              <span class="text-base">🍽️</span>
+              <span>Restaurant & bar sur place</span>
+            </div>
+          </div>
+        </section>
+
         <!-- SECTION 4: INCLUS & EXTRAS -->
         <section id="inclusions" class="pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 mb-6">
@@ -743,7 +825,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span>Inclus dans le tarif</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-emerald-950 font-medium">
-                <li class="flex items-start gap-2"><span>✓</span><span>Tous les hébergements (éco-lodges de charme et hôtels traditionnels sélectionnés)</span></li>
+                <li class="flex items-start gap-2"><span>✓</span><span>Tous les hébergements au Rhino Land Jungle Lodge (chambres climatisées, piscine extérieure, jardin clos)</span></li>
                 <li class="flex items-start gap-2"><span>✓</span><span>Pension complète en jungle (3 repas sains et locaux par jour)</span></li>
                 <li class="flex items-start gap-2"><span>✓</span><span>Vols intérieurs & transferts privés mentionnés au programme</span></li>
                 <li class="flex items-start gap-2"><span>✓</span><span>Permis officiels des Parcs Nationaux et taxes de conservation</span></li>
@@ -1225,14 +1307,17 @@ function toggleMobileMenu() {
     // Bulletproof Global Lightbox Controller
     window.galleryImages = [
       "/assets/original_site/chitwan_rhino.webp",
-      "/assets/drive_photos/adrien_tigre3.webp",
+      "/assets/tours_thumbs/safari_pirogue_traditionnelle_chitwan.webp",
+      "/assets/lodges/rhino_land_jungle_lodge_piscine.webp",
+      "/assets/lodges/rhino_land_jungle_lodge_jardin.webp",
+      "/assets/lodges/rhino_land_jungle_lodge_facade.webp",
       "/assets/drive_photos/julien_elephant_mere_petit.webp",
       "/assets/drive_photos/adrien_bhaktapur1.webp",
       "/assets/drive_photos/julien_croco_gharial.webp",
       "/assets/original_site/elephants_river.webp",
       "/assets/drive_photos/adrien_katmandou2.webp",
       "/assets/drive_photos/antoine_wild2.webp"
-];
+    ];
     window.currentImageIndex = 0;
 
     window.openLightbox = function(index) {
