@@ -1008,6 +1008,41 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </section>
 
+        <!-- Option Accompagnement Dessin avec Sarah Plage (+525€) -->
+        <div id="drawing-option-card" class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-slate-900 via-[#13221b] to-slate-950 text-white border-2 border-emerald-500/40 shadow-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 transition-all duration-300">
+          <div class="space-y-2 flex-1">
+            <div class="flex items-center gap-2.5">
+              <span id="drawing-badge-tag" class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[11px] font-black uppercase tracking-wider flex items-center gap-1.5">
+                <span>🎨</span>
+                <span>Artistic & Mentorship Option</span>
+              </span>
+              <span class="text-xs font-mono font-bold text-amber-300">
+                +525 € / person
+              </span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-white tracking-tight">
+              Drawing Mentorship & Masterclasses with Sarah Plage
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+              Enjoy daily plein-air sketching workshops, watercolor masterclasses, and one-on-one artistic guidance with professional artist Sarah Plage across all 15 days of the expedition.
+            </p>
+            <p class="text-[11px] text-slate-400 font-medium">
+              💡 The base expedition rate (2,100€) covers complete logistics, local native guides, boutique lodges, internal flights, and wildlife safaris. The artistic option (+525€) covers dedicated masterclasses and mentoring.
+            </p>
+          </div>
+          <div class="shrink-0 flex items-center gap-3 w-full sm:w-auto">
+            <button 
+              id="toggle-drawing-btn"
+              type="button"
+              onclick="toggleDrawingOption(525)" 
+              class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm text-center shadow-lg shadow-emerald-950/60 transition-all hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer flex items-center justify-center gap-2"
+            >
+              <span id="drawing-btn-icon">⊕</span>
+              <span id="drawing-btn-text">Add Option (+525 €)</span>
+            </button>
+          </div>
+        </div>
+
         <!-- SECTION 4: INCLUS & EXTRAS -->
         <section id="inclusions" class="pt-8 border-t border-slate-200">
           <h2 class="font-black text-2xl sm:text-3xl text-slate-950 mb-6">
@@ -1027,6 +1062,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <li class="flex items-start gap-2"><span>✓</span><span>Official National Park conservation permits & entry fees</span></li>
                 <li class="flex items-start gap-2"><span>✓</span><span>Mentoring by certified native master trackers (Pawan / Kiran)</span></li>
                 <li class="flex items-start gap-2"><span>✓</span><span>Dedicated 24/7 personalized assistance from Robin & local concierge</span></li>
+                <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">★</span><span class="text-emerald-900 font-bold">Available Option: Drawing Mentorship with Sarah Plage (+525€)</span></li>
               </ul>
             </div>
 
@@ -1036,6 +1072,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span>Not included</span>
               </h3>
               <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 font-medium">
+                <li class="flex items-start gap-2"><span>✕</span><span>Drawing Mentorship with Sarah Plage (+525€ per participant if selected)</span></li>
                 <li class="flex items-start gap-2"><span>✕</span><span>International flights (Home country – Kathmandu)</span></li>
                 <li class="flex items-start gap-2"><span>✕</span><span>Nepalese tourist visa fees (approx. $30 to $50 on arrival)</span></li>
                 <li class="flex items-start gap-2"><span>✕</span><span>Alcoholic beverages and personal expenses</span></li>
@@ -1203,14 +1240,30 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Starting from</p>
               <div class="flex items-baseline gap-2">
-                <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">2,100€</span>
-                <span class="text-xs text-slate-500 font-medium">/ personne</span>
+                <span id="tour-price-display" data-base-price="2100" class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">2,100€</span>
+                <span class="text-xs text-slate-500 font-medium">/ person</span>
               </div>
             </div>
           </div>
 
-          <!-- Departures Selector (Expéditions) -->
-          
+          <!-- Option Accompagnement Dessin Selector -->
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 space-y-2">
+            <label class="flex items-start gap-2.5 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="sidebar-drawing-checkbox" 
+                onchange="toggleDrawingOption(525)" 
+                class="mt-0.5 w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-300 cursor-pointer"
+              />
+              <div class="text-xs">
+                <span class="font-extrabold text-slate-900 block">Drawing Mentorship with Sarah Plage</span>
+                <span class="text-slate-500 font-medium">+525€ / pers. (Daily masterclasses & workshops)</span>
+              </div>
+            </label>
+            <div id="drawing-included-badge" class="hidden text-[10px] font-bold text-emerald-700 bg-emerald-100/70 px-2 py-0.5 rounded-md flex items-center gap-1">
+              <span>✓ Sarah Plage Option Included (2,625€ total)</span>
+            </div>
+          </div>
 
           <!-- Primary CTA Button -->
           <button type="button" onclick="openTourBookingModal()" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">Reserve your spot →</button>
@@ -1705,5 +1758,86 @@ function toggleMobileMenu() {
     const m = document.getElementById('legal-modal');
     if (m) m.classList.add('hidden');
   }
+
+  var baseTourPrice = 2100;
+  var isDrawingSelected = false;
+
+  window.toggleDrawingOption = function toggleDrawingOption(extraCost) {
+    extraCost = extraCost || 525;
+    isDrawingSelected = !isDrawingSelected;
+    window.isDrawingSelected = isDrawingSelected;
+    window.isCampingSelected = isDrawingSelected; // synchronize with universal modal
+    var total = isDrawingSelected ? (baseTourPrice + extraCost) : baseTourPrice;
+    var totalFormatted = total.toLocaleString('en-US') + '€';
+
+    // 1. Update Main Sidebar Price Display
+    var priceEl = document.getElementById('tour-price-display');
+    if (priceEl) {
+      priceEl.textContent = totalFormatted;
+    }
+
+    // 2. Update Mobile Bottom Price
+    var mobilePriceEl = document.getElementById('mobile-bottom-price');
+    if (mobilePriceEl) {
+      mobilePriceEl.textContent = totalFormatted;
+    }
+
+    // 3. Update Sticky Bar Price Display if present
+    var stickyEl = document.getElementById('sticky-price-display');
+    if (stickyEl) {
+      stickyEl.innerHTML = totalFormatted + ' <span class="text-slate-400 font-normal">/ pers.</span>';
+    }
+
+    // 4. Toggle Notification Badge under the Checkbox
+    var badgeEl = document.getElementById('drawing-included-badge');
+    if (badgeEl) {
+      if (isDrawingSelected) {
+        badgeEl.classList.remove('hidden');
+      } else {
+        badgeEl.classList.add('hidden');
+      }
+    }
+
+    // 5. Update Sidebar Checkbox
+    var sidebarCheckbox = document.getElementById('sidebar-drawing-checkbox');
+    if (sidebarCheckbox) {
+      sidebarCheckbox.checked = isDrawingSelected;
+    }
+
+    // 6. Update Button State and Card Styling
+    var btn = document.getElementById('toggle-drawing-btn');
+    var btnText = document.getElementById('drawing-btn-text');
+    var btnIcon = document.getElementById('drawing-btn-icon');
+    var card = document.getElementById('drawing-option-card');
+    var badgeTag = document.getElementById('drawing-badge-tag');
+
+    if (btn && btnText && btnIcon) {
+      if (isDrawingSelected) {
+        btn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500', 'text-white');
+        btn.classList.add('bg-amber-500', 'hover:bg-amber-400', 'text-slate-950');
+        btnIcon.textContent = '✓';
+        btnText.textContent = "Sarah Plage Option Included (Remove)";
+        if (card) card.classList.add('ring-2', 'ring-amber-400', 'border-amber-400');
+        if (badgeTag) {
+          badgeTag.innerHTML = '<span>✓</span><span>Option Activated (+525€)</span>';
+        }
+      } else {
+        btn.classList.remove('bg-amber-500', 'hover:bg-amber-400', 'text-slate-950');
+        btn.classList.add('bg-emerald-600', 'hover:bg-emerald-500', 'text-white');
+        btnIcon.textContent = '⊕';
+        btnText.textContent = "Add Option (+525 €)";
+        if (card) card.classList.remove('ring-2', 'ring-amber-400', 'border-amber-400');
+        if (badgeTag) {
+          badgeTag.innerHTML = '<span>🎨</span><span>Artistic & Mentorship Option</span>';
+        }
+      }
+    }
+
+    if (typeof window.updateBookingModalCalculations === 'function') {
+      var modalCb = document.getElementById('booking-modal-camping-checkbox');
+      if (modalCb) modalCb.checked = isDrawingSelected;
+      window.updateBookingModalCalculations();
+    }
+  };
   </script>
 </Layout>

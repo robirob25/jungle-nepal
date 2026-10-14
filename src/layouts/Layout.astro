@@ -871,6 +871,13 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         optionTitle = isEn ? "Option: Night at your guide's place" : "Option : Nuit chez votre guide";
         optionDesc = isEn ? "Air-conditioned room, traditional dinner & breakfast next morning included." : "Chambre climatisée, dîner traditionnel & petit-déjeuner le lendemain matin inclus.";
         optionRowLabel = isEn ? "Guide Accommodation (+12€):" : "Nuit chez le guide (+12€) :";
+      } else if (document.getElementById('drawing-option-card') || document.getElementById('toggle-drawing-btn') || document.getElementById('sidebar-drawing-checkbox')) {
+        hasCamping = true;
+        optionType = 'drawing';
+        campingPrice = 525;
+        optionTitle = isEn ? "Option: Drawing Mentorship with Sarah Plage (+525€)" : "Option : Accompagnement dessin avec Sarah Plage (+525€)";
+        optionDesc = isEn ? "Daily plein-air sketching & watercolor guidance throughout the 15-day journey with professional artist Sarah Plage." : "Ateliers quotidiens, croquis sur le vif & masterclass aquarelle avec l'artiste dessinatrice professionnelle Sarah Plage.";
+        optionRowLabel = isEn ? "Sarah Plage Mentorship (+525€):" : "Option Sarah Plage (+525€) :";
       } else if (document.getElementById('comfort-option-card') || document.getElementById('toggle-comfort-btn') || document.getElementById('sidebar-comfort-checkbox')) {
         hasCamping = true;
         optionType = 'comfort';
@@ -916,7 +923,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         if (hasCamping) {
           campingContainer.classList.remove('hidden');
           if (campingCheckbox) {
-            campingCheckbox.checked = !!(window.isCampingSelected || window.isComfortSelected);
+            campingCheckbox.checked = !!(window.isCampingSelected || window.isComfortSelected || window.isDrawingSelected);
           }
         } else {
           campingContainer.classList.add('hidden');
@@ -952,6 +959,15 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           }
         } else {
           window.isComfortSelected = isChecked;
+          window.isCampingSelected = isChecked;
+        }
+      } else if (window.currentBookingConfig && window.currentBookingConfig.optionType === 'drawing') {
+        if (typeof window.toggleDrawingOption === 'function') {
+          if (window.isDrawingSelected !== isChecked) {
+            window.toggleDrawingOption(525);
+          }
+        } else {
+          window.isDrawingSelected = isChecked;
           window.isCampingSelected = isChecked;
         }
       } else {
@@ -1043,8 +1059,12 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var totalVal = (document.getElementById('booking-modal-total-display') || {}).textContent || '';
       var depositVal = (document.getElementById('booking-modal-deposit-display') || {}).textContent || '';
 
-      var optionLabelKey = config.optionType === 'comfort' ? 'option_chambre_individuelle_single' : 'option_camping_sauvage';
-      var optionLabelVal = isCamping ? ("OUI (+" + (config.campingPrice || 350) + " €/pers.)") : "NON (Hébergement standard)";
+      var optionLabelKey = config.optionType === 'comfort' 
+        ? 'option_chambre_individuelle_single' 
+        : (config.optionType === 'drawing' ? 'option_accompagnement_dessin_sarah_plage' : 'option_camping_sauvage');
+      var optionLabelVal = isCamping 
+        ? ("OUI (+" + (config.campingPrice || 350) + " €/pers.)") 
+        : (config.optionType === 'drawing' ? "NON (Sans option dessin)" : "NON (Hébergement standard)");
 
       var payload = {
         _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
