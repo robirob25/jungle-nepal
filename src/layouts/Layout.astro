@@ -931,6 +931,18 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         }
       }
 
+      var dateInput = document.getElementById('booking-date-input');
+      if (dateInput) {
+        var prefillDate = (config && config.departureDate) || "";
+        if (!prefillDate) {
+          var dateEl = document.getElementById('tour-confirmed-dates');
+          if (dateEl) prefillDate = dateEl.getAttribute('data-date') || "";
+        }
+        if (prefillDate) {
+          dateInput.value = prefillDate;
+        }
+      }
+
       window.updateBookingModalCalculations();
 
       var m = document.getElementById('tour-booking-modal');

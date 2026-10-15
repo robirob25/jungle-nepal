@@ -292,7 +292,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
-        <span><strong class="text-amber-300">-100€</strong> on your Nov. 2027 trip <span class="hidden sm:inline">with code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+        <span>🎨 <strong>Confirmed Departure – Sketching & Art Tour</strong>: March 7 – March 21, 2027 (15 days) • <span class="text-amber-300 font-bold">Exclusive small group with Sarah Plage</span></span>
       </div>
       <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
     </div>
@@ -570,6 +570,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           Nepal Sketching & Travel Journaling Expedition – 15 Days
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+          <span class="inline-flex items-center gap-1.5 font-black text-emerald-950 bg-emerald-100/90 border border-emerald-300 px-3.5 py-1 rounded-full shadow-sm">
+            <span>📅</span>
+            <span>Confirmed departure: March 7 – 21, 2027</span>
+          </span>
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
             <svg class="w-4 h-4 text-amber-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
             <span>15 days</span>
@@ -579,7 +583,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <span>5.0 (16 verified reviews)</span>
           </div>
           <span class="text-xs font-bold bg-slate-900 text-amber-100 px-3 py-1 rounded-full border border-amber-300/30">
-            Himalaya, Mustang et spiritualité
+            Himalayas, Mustang & Spirituality
           </span>
         </div>
       </div>
@@ -648,8 +652,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div class="hidden sm:flex items-center gap-2.5 shrink-0 min-w-0">
           
           <div class="min-w-0">
-            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[180px] md:max-w-[240px] lg:max-w-[300px]">Nepal Sketching & Travel Journaling Expedition – 15 Days</p>
-            <p class="text-[11px] font-bold text-[#0e8354]">2,100€ <span class="text-slate-400 font-normal">/ person</span></p>
+            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[180px] md:max-w-[240px] lg:max-w-[320px]">Nepal – Sketching Tour (Mar 7–21, 2027)</p>
+            <p class="text-[11px] font-bold text-[#0e8354]">2,100€ <span class="text-slate-400 font-normal">/ pers. • 15 days</span></p>
           </div>
         </div>
 
@@ -737,10 +741,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="flex items-center justify-between mb-6">
             <div>
               <h2 class="font-black text-2xl sm:text-3xl text-slate-950">
-                Detailed Itinerary (15 days)
+                Detailed Itinerary (March 7 – March 21, 2027 – 15 Days)
               </h2>
               <p class="text-xs sm:text-sm text-slate-500 mt-1">
-                Day-by-day itinerary led by our native master trackers and certified expedition guides.
+                Day-by-day itinerary mentored by Sarah Plage and our native master trackers.
               </p>
             </div>
             <button onclick="toggleAllDays()" class="text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] transition-colors cursor-pointer">
@@ -1232,6 +1236,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               Nepal Sketching & Travel Journaling Expedition – 15 Days
             </h3>
             <p class="text-xs text-slate-500 font-semibold mt-1">15 days • Small Group (4 to 10 explorers)</p>
+          </div>
+
+          <!-- Date & Status Box -->
+          <div id="tour-confirmed-dates" data-date="March 7 – March 21, 2027" class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 space-y-1.5 text-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
+                <span>📅</span>
+                <span>Tour Dates:</span>
+              </span>
+              <span class="font-black text-slate-900">March 7 – 21, 2027</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
+                <span>👥</span>
+                <span>Group Size:</span>
+              </span>
+              <span class="font-black text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded text-[11px]">4 to 10 explorers max</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-emerald-200/60 text-[11px]">
+              <span class="text-slate-500">Departure Status:</span>
+              <span class="font-extrabold text-[#0e8354] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354] animate-pulse"></span>
+                Confirmed Departure • Open
+              </span>
+            </div>
           </div>
 
           <!-- Price Row -->

@@ -292,7 +292,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
       <div class="flex-1 flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
-        <span><strong class="text-amber-300">-100€</strong> sur votre séjour nov. 2027 <span class="hidden sm:inline">avec le code</span> <span class="bg-white/15 px-1.5 py-0.5 rounded text-amber-100 font-extrabold border border-amber-300/30 font-mono tracking-wider ml-1">JUNGLE100</span></span>
+        <span>🎨 <strong>Départ confirmé – Carnet de dessin & voyage</strong> : 7 au 21 mars 2027 (15 jours) • <span class="text-amber-300 font-bold">Micro-groupe exclusif avec Sarah Plage</span></span>
       </div>
       <button onclick="document.getElementById('top-bar').style.display='none'" class="text-white/70 hover:text-white text-xs px-1 cursor-pointer">✕</button>
     </div>
@@ -577,6 +577,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           Népal – carnet de dessin et de voyage – 15 jours
         </h1>
         <div class="mt-3 flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+          <span class="inline-flex items-center gap-1.5 font-black text-emerald-950 bg-emerald-100/90 border border-emerald-300 px-3.5 py-1 rounded-full shadow-sm">
+            <span>📅</span>
+            <span>Départ confirmé : 7 – 21 mars 2027</span>
+          </span>
           <span class="inline-flex items-center gap-1.5 font-bold text-slate-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
             <svg class="w-4 h-4 text-amber-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
             <span>15 Jours</span>
@@ -655,8 +659,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <div class="hidden sm:flex items-center gap-2.5 shrink-0 min-w-0">
           
           <div class="min-w-0">
-            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[180px] md:max-w-[240px] lg:max-w-[300px]">Népal</p>
-            <p class="text-[11px] font-bold text-[#0e8354]">2,100€ <span class="text-slate-400 font-normal">/ pers.</span></p>
+            <p class="font-extrabold text-xs text-slate-900 truncate max-w-[180px] md:max-w-[240px] lg:max-w-[320px]">Népal – Carnet de voyage (7–21 mars 2027)</p>
+            <p class="text-[11px] font-bold text-[#0e8354]">2,100€ <span class="text-slate-400 font-normal">/ pers. • 15 jours</span></p>
           </div>
         </div>
 
@@ -744,10 +748,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="flex items-center justify-between mb-6">
             <div>
               <h2 class="font-black text-2xl sm:text-3xl text-slate-950">
-                Itinéraire détaillé (15 jours)
+                Itinéraire détaillé (7 au 21 mars 2027 – 15 jours)
               </h2>
               <p class="text-xs sm:text-sm text-slate-500 mt-1">
-                Programme jour par jour encadré par nos pisteurs natifs de Bardia et guides d'expédition.
+                Programme jour par jour encadré par Sarah Plage et nos pisteurs natifs de Bardia.
               </p>
             </div>
             <button onclick="toggleAllDays()" class="text-xs font-bold text-[#0e8354] hover:text-[#0c6d46] transition-colors cursor-pointer">
@@ -1239,6 +1243,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               Népal – carnet de dessin et de voyage – 15 jours
             </h3>
             <p class="text-xs text-slate-500 font-semibold mt-1">15 jours • Micro-groupe (4 à 10 pers)</p>
+          </div>
+
+          <!-- Date & Status Box -->
+          <div id="tour-confirmed-dates" data-date="7 mars 2027 – 21 mars 2027" class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 space-y-1.5 text-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
+                <span>📅</span>
+                <span>Dates du séjour :</span>
+              </span>
+              <span class="font-black text-slate-900">7 – 21 mars 2027</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
+                <span>👥</span>
+                <span>Format :</span>
+              </span>
+              <span class="font-black text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded text-[11px]">Micro-groupe (4 à 10 pers)</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-emerald-200/60 text-[11px]">
+              <span class="text-slate-500">Statut départ :</span>
+              <span class="font-extrabold text-[#0e8354] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354] animate-pulse"></span>
+                Départ confirmé • Places ouvertes
+              </span>
+            </div>
           </div>
 
           <!-- Price Row -->
