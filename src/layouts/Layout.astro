@@ -621,7 +621,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         <h3 id="booking-modal-tour-title" class="text-xl sm:text-2xl font-black text-white tracking-tight leading-tight">
           {isEn ? "Book Your Expedition" : "Réserver votre expédition"}
         </h3>
-        <p class="text-xs sm:text-sm text-slate-300 mt-1 font-medium leading-relaxed">
+        <p id="booking-modal-tour-subtitle" class="text-xs sm:text-sm text-slate-300 mt-1 font-medium leading-relaxed">
           {isEn ? "Direct booking inquiry with Robin and the local team. Quick confirmation within 24h." : "Demande directe avec Robin et l'équipe locale. Confirmation rapide sous 24h."}
         </p>
       </div>
@@ -653,7 +653,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- Date de départ souhaitée -->
             <div>
-              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
+              <label id="booking-modal-date-label" class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
                 {isEn ? "Departure Date / Period" : "Date de départ souhaitée"} <span class="text-[#0e8354]">*</span>
               </label>
               <input 
@@ -667,7 +667,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
             <!-- Nombre de voyageurs -->
             <div>
-              <label class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
+              <label id="booking-modal-travelers-label" class="block font-bold text-xs uppercase tracking-wider text-slate-700 mb-1.5">
                 {isEn ? "Number of Travelers" : "Nombre d'inscrits"} <span class="text-[#0e8354]">*</span>
               </label>
               <div class="flex items-center gap-2">
@@ -717,7 +717,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           <!-- Dynamic Live Price Calculation Summary Card -->
           <div class="p-4 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white border border-white/10 shadow-lg">
             <div class="flex items-center justify-between text-xs text-slate-300 border-b border-white/10 pb-2">
-              <span>{isEn ? "Base Price per Person:" : "Prix de base par personne :"}</span>
+              <span id="booking-modal-base-label">{isEn ? "Base Price per Person:" : "Prix de base par personne :"}</span>
               <span id="booking-modal-base-display" class="font-bold text-white">1 990 €</span>
             </div>
             <div id="booking-modal-option-row" class="hidden flex items-center justify-between text-xs text-emerald-400 border-b border-white/10 py-1.5">
@@ -727,10 +727,10 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
             <div class="flex items-baseline justify-between pt-2.5">
               <div>
                 <p class="text-[10px] font-black uppercase tracking-wider text-slate-400">
-                  {isEn ? "Total Estimated (" : "Total estimé ("}<span id="booking-modal-count-display">2</span> {isEn ? "travelers)" : "voyageurs)"}
+                  <span id="booking-modal-total-label">{isEn ? "Total Estimated (" : "Total estimé ("}</span><span id="booking-modal-count-display">2</span> {isEn ? "travelers)" : "voyageurs)"}
                 </p>
-                <p class="text-[11px] text-emerald-400 font-semibold mt-0.5">
-                  {isEn ? "Deposit (30%): " : "Acompte inscription (30%) : "}<span id="booking-modal-deposit-display">1 194 €</span>
+                <p id="booking-modal-deposit-row" class="text-[11px] text-emerald-400 font-semibold mt-0.5">
+                  <span id="booking-modal-deposit-label">{isEn ? "Deposit (30%): " : "Acompte inscription (30%) : "}</span><span id="booking-modal-deposit-display">1 194 €</span>
                 </p>
               </div>
               <div class="text-right">
@@ -783,7 +783,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
             {isEn ? "Confirm & Send My Booking Inquiry →" : "Confirmer et envoyer ma demande de réservation →"}
           </button>
 
-          <p class="text-[11px] text-slate-500 text-center font-medium">
+          <p id="booking-modal-security-note" class="text-[11px] text-slate-500 text-center font-medium">
             🔒 {isEn ? "No immediate payment required. Confirmation and booking dossier handled directly with Robin." : "Aucun paiement immédiat requis. Validation des disponibilités et du devis en direct avec Robin."}
           </p>
         </form>
@@ -810,61 +810,195 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       }
     };
 
-    // Universal Specific Tour Booking Modal Controls
+    // Universal Day Activities & Multi-day Expeditions Configuration
+    var DAY_ACTIVITIES = {
+      'safari-pied-bardia': {
+        slug: 'safari-pied-bardia',
+        titleFr: 'Safari à Pied au Parc National de Bardia',
+        titleEn: 'Walking Safari in Bardia National Park',
+        type: 'per_person',
+        price: 50,
+        hasGuideRoom: true,
+        roomPrice: 12
+      },
+      'bardia-walking-safari': {
+        slug: 'bardia-walking-safari',
+        titleFr: 'Safari à Pied au Parc National de Bardia',
+        titleEn: 'Walking Safari in Bardia National Park',
+        type: 'per_person',
+        price: 50,
+        hasGuideRoom: true,
+        roomPrice: 12
+      },
+      'safari-jeep-bardia': {
+        slug: 'safari-jeep-bardia',
+        titleFr: 'Safari en Jeep au Parc National de Bardia',
+        titleEn: 'Private Jeep Safari in Bardia National Park',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: true,
+        roomPrice: 12
+      },
+      'bardia-jeep-safari': {
+        slug: 'bardia-jeep-safari',
+        titleFr: 'Safari en Jeep au Parc National de Bardia',
+        titleEn: 'Private Jeep Safari in Bardia National Park',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: true,
+        roomPrice: 12
+      },
+      'safari-pied-chitwan': {
+        slug: 'safari-pied-chitwan',
+        titleFr: 'Safari à Pied au Parc National de Chitwan',
+        titleEn: 'Walking Safari in Chitwan National Park',
+        type: 'per_person',
+        price: 70,
+        hasGuideRoom: false,
+        roomPrice: 0
+      },
+      'chitwan-walking-safari': {
+        slug: 'chitwan-walking-safari',
+        titleFr: 'Safari à Pied au Parc National de Chitwan',
+        titleEn: 'Walking Safari in Chitwan National Park',
+        type: 'per_person',
+        price: 70,
+        hasGuideRoom: false,
+        roomPrice: 0
+      },
+      'safari-jeep-chitwan': {
+        slug: 'safari-jeep-chitwan',
+        titleFr: 'Safari en Jeep au Parc National de Chitwan',
+        titleEn: 'Private Jeep Safari in Chitwan National Park',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: false,
+        roomPrice: 0
+      },
+      'chitwan-jeep-safari': {
+        slug: 'chitwan-jeep-safari',
+        titleFr: 'Safari en Jeep au Parc National de Chitwan',
+        titleEn: 'Private Jeep Safari in Chitwan National Park',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: false,
+        roomPrice: 0
+      },
+      'rafting-safari-bardia': {
+        slug: 'rafting-safari-bardia',
+        titleFr: 'Safari Rafting sur la Rivière Karnali (Bardia)',
+        titleEn: 'Wild Karnali River Rafting Safari (Bardia)',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: false,
+        roomPrice: 0
+      },
+      'bardia-rafting-safari': {
+        slug: 'bardia-rafting-safari',
+        titleFr: 'Safari Rafting sur la Rivière Karnali (Bardia)',
+        titleEn: 'Wild Karnali River Rafting Safari (Bardia)',
+        type: 'flat_group',
+        price: 190,
+        hasGuideRoom: false,
+        roomPrice: 0
+      }
+    };
+
     window.currentBookingConfig = {
       title: '',
       basePrice: 1990,
       hasCamping: false,
-      campingPrice: 350
+      campingPrice: 350,
+      isDayActivity: false
     };
 
-    window.openTourBookingModal = function(config) {
+    window.openTourBookingModal = function(config, priceArg) {
       var isEn = document.documentElement.lang === 'en';
-      
-      var title = (config && config.title) || "";
-      var basePrice = (config && config.basePrice) || 0;
-      var hasCamping = config && typeof config.hasCamping === 'boolean' ? config.hasCamping : false;
-      var campingPrice = (config && config.campingPrice) || 350;
 
-      if (!title) {
-        var bookingWidget = document.getElementById('booking-widget');
-        if (bookingWidget) {
-          var h3 = bookingWidget.querySelector('h3');
-          if (h3) title = h3.textContent.trim();
-        }
-        if (!title) {
-          var h1 = document.querySelector('h1');
-          if (h1) title = h1.textContent.trim();
-        }
+      // 1. Detect Day Activity via URL or explicit config
+      var cleanPath = window.location.pathname.replace(/\/$/, '');
+      var currentSlug = cleanPath.split('/').pop() || '';
+      var dayActivity = DAY_ACTIVITIES[currentSlug] || null;
+
+      if (!dayActivity && typeof config === 'object' && config && config.slug && DAY_ACTIVITIES[config.slug]) {
+        dayActivity = DAY_ACTIVITIES[config.slug];
       }
 
-      if (!basePrice) {
-        var priceDisplay = document.getElementById('tour-price-display');
-        if (priceDisplay) {
-          if (priceDisplay.getAttribute('data-base-price')) {
-            basePrice = parseInt(priceDisplay.getAttribute('data-base-price'), 10) || 1990;
-          } else {
-            var num = priceDisplay.textContent.replace(/[^0-9]/g, '');
-            if (num) basePrice = parseInt(num, 10);
-          }
-        } else {
+      var isDayActivity = !!dayActivity;
+
+      // 2. Parse Title & Base Price
+      var title = "";
+      var basePrice = 0;
+      var hasCamping = false;
+      var campingPrice = 350;
+
+      if (typeof config === 'string') {
+        title = config;
+        if (priceArg) {
+          var pNum = parseInt(String(priceArg).replace(/[^0-9]/g, ''), 10);
+          if (pNum) basePrice = pNum;
+        }
+      } else if (typeof config === 'object' && config) {
+        title = config.title || "";
+        basePrice = config.basePrice || 0;
+        hasCamping = typeof config.hasCamping === 'boolean' ? config.hasCamping : false;
+        campingPrice = config.campingPrice || 350;
+      }
+
+      if (isDayActivity) {
+        title = isEn ? dayActivity.titleEn : dayActivity.titleFr;
+        basePrice = dayActivity.price;
+        hasCamping = dayActivity.hasGuideRoom;
+        campingPrice = dayActivity.roomPrice;
+      } else {
+        if (!title) {
           var bookingWidget = document.getElementById('booking-widget');
           if (bookingWidget) {
-            var priceMatch = bookingWidget.textContent.match(/(?:À partir de|From)\s*([0-9\s,]+)\s*€/i);
-            if (priceMatch && priceMatch[1]) {
-              basePrice = parseInt(priceMatch[1].replace(/[^0-9]/g, ''), 10);
+            var h3 = bookingWidget.querySelector('h3');
+            if (h3) title = h3.textContent.trim();
+          }
+          if (!title) {
+            var h1 = document.querySelector('h1');
+            if (h1) title = h1.textContent.trim();
+          }
+        }
+
+        if (!basePrice) {
+          var priceDisplay = document.getElementById('tour-price-display');
+          if (priceDisplay) {
+            if (priceDisplay.getAttribute('data-base-price')) {
+              basePrice = parseInt(priceDisplay.getAttribute('data-base-price'), 10) || 1990;
+            } else {
+              var num = priceDisplay.textContent.replace(/[^0-9]/g, '');
+              if (num) basePrice = parseInt(num, 10);
+            }
+          } else {
+            var bw = document.getElementById('booking-widget');
+            if (bw) {
+              var priceMatch = bw.textContent.match(/(?:À partir de|From)\s*([0-9\s,]+)\s*€/i);
+              if (priceMatch && priceMatch[1]) {
+                basePrice = parseInt(priceMatch[1].replace(/[^0-9]/g, ''), 10);
+              }
             }
           }
         }
+        if (!basePrice) basePrice = 1990;
       }
-      if (!basePrice) basePrice = 1990;
 
+      // 3. Option definitions
       var optionType = 'camping';
       var optionTitle = isEn ? "Option: Wild Jungle Camping" : "Option : Camping sauvage en jungle";
       var optionDesc = isEn ? "Total immersion at Lalmati Bhale camp with our trackers, campfire & deep jungle night sounds." : "Immersion totale au camp de Lalmati Bhale avec nos pisteurs, feu de camp et écoute nocturne.";
       var optionRowLabel = isEn ? "Wild Camping Option:" : "Option Camping sauvage :";
 
-      if (document.getElementById('guide-room-option-card') || document.getElementById('toggle-guide-room-btn')) {
+      if (isDayActivity) {
+        if (dayActivity.hasGuideRoom) {
+          optionType = 'guide-room';
+          optionTitle = isEn ? "Option: Night at your guide's place" : "Option : Nuit chez votre guide";
+          optionDesc = isEn ? "Air-conditioned private room at Pawan's place, traditional dinner & breakfast included." : "Chambre climatisée privée chez Pawan, dîner traditionnel & petit-déjeuner inclus.";
+          optionRowLabel = isEn ? "Guide Accommodation (+12€/pers):" : "Nuit chez le guide (+12€/pers) :";
+        }
+      } else if (document.getElementById('guide-room-option-card') || document.getElementById('toggle-guide-room-btn')) {
         hasCamping = true;
         optionType = 'guide-room';
         campingPrice = 12;
@@ -901,12 +1035,51 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         optionType: optionType,
         optionTitle: optionTitle,
         optionDesc: optionDesc,
-        optionRowLabel: optionRowLabel
+        optionRowLabel: optionRowLabel,
+        isDayActivity: isDayActivity,
+        dayActivity: dayActivity,
+        dayActivityType: dayActivity ? dayActivity.type : null
       };
 
+      // 4. Update Modal Header & Input Labels
       var titleEl = document.getElementById('booking-modal-tour-title');
-      if (titleEl) titleEl.textContent = window.currentBookingConfig.title;
+      var subtitleEl = document.getElementById('booking-modal-tour-subtitle');
+      var dateLabelEl = document.getElementById('booking-modal-date-label');
+      var travelersLabelEl = document.getElementById('booking-modal-travelers-label');
+      var securityNoteEl = document.getElementById('booking-modal-security-note');
+      var dateInput = document.getElementById('booking-date-input');
 
+      if (isDayActivity) {
+        if (titleEl) titleEl.textContent = isEn ? "Book & Pay Online" : "Réserver & Payer en ligne";
+        if (subtitleEl) subtitleEl.textContent = isEn ? "Direct secure Card Payment (Payzen / My Way) • Instant safari booking confirmation" : "Paiement direct sécurisé par Carte Bancaire (Payzen / My Way) • Validation immédiate de votre safari";
+        if (dateLabelEl) dateLabelEl.innerHTML = (isEn ? "Activity Date" : "Date de l'activité souhaitée") + ' <span class="text-[#0e8354]">*</span>';
+        if (dateInput) dateInput.placeholder = isEn ? "e.g. November 15, 2026" : "Ex: 15 Novembre 2026";
+        if (travelersLabelEl) {
+          if (dayActivity.type === 'flat_group') {
+            travelersLabelEl.innerHTML = (isEn ? "Participants (1-6 pers package)" : "Participants (forfait 1 à 6 pers)") + ' <span class="text-[#0e8354]">*</span>';
+          } else {
+            travelersLabelEl.innerHTML = (isEn ? "Number of Participants" : "Nombre de participants") + ' <span class="text-[#0e8354]">*</span>';
+          }
+        }
+        if (securityNoteEl) {
+          securityNoteEl.textContent = isEn 
+            ? "🔒 100% Secure Payment via Payzen (Lyra Network / Visa, Mastercard, 3D Secure). Instant safari confirmation."
+            : "🔒 Paiement 100% sécurisé via Payzen (Lyra Network / CB, Visa, Mastercard, 3D Secure). Validation immédiate de votre safari.";
+        }
+      } else {
+        if (titleEl) titleEl.textContent = window.currentBookingConfig.title;
+        if (subtitleEl) subtitleEl.textContent = isEn ? "Direct booking inquiry with Robin and the local team. Quick confirmation within 24h." : "Demande directe avec Robin et l'équipe locale. Confirmation rapide sous 24h.";
+        if (dateLabelEl) dateLabelEl.innerHTML = (isEn ? "Departure Date / Period" : "Date de départ souhaitée") + ' <span class="text-[#0e8354]">*</span>';
+        if (dateInput) dateInput.placeholder = isEn ? "e.g. November 2026, April 2027, or flexible" : "Ex: Novembre 2026, Avril 2027, ou dates flexibles";
+        if (travelersLabelEl) travelersLabelEl.innerHTML = (isEn ? "Number of Travelers" : "Nombre d'inscrits") + ' <span class="text-[#0e8354]">*</span>';
+        if (securityNoteEl) {
+          securityNoteEl.textContent = isEn 
+            ? "🔒 No immediate payment required. Confirmation and booking dossier handled directly with Robin." 
+            : "🔒 Aucun paiement immédiat requis. Validation des disponibilités et du devis en direct avec Robin.";
+        }
+      }
+
+      // 5. Update Option display
       var optionTitleEl = document.getElementById('booking-modal-option-title');
       if (optionTitleEl) optionTitleEl.textContent = optionTitle;
       var optionDescEl = document.getElementById('booking-modal-option-desc');
@@ -923,7 +1096,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         if (hasCamping) {
           campingContainer.classList.remove('hidden');
           if (campingCheckbox) {
-            campingCheckbox.checked = !!(window.isCampingSelected || window.isComfortSelected || window.isDrawingSelected);
+            campingCheckbox.checked = !!(window.isCampingSelected || window.isComfortSelected || window.isDrawingSelected || window.hasGuideRoomOption || window.isGuideOptionSelected);
           }
         } else {
           campingContainer.classList.add('hidden');
@@ -931,7 +1104,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         }
       }
 
-      var dateInput = document.getElementById('booking-date-input');
+      // 6. Prefill Dates
       if (dateInput) {
         var prefillDate = (config && config.departureDate) || "";
         if (!prefillDate) {
@@ -964,7 +1137,10 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     };
 
     window.toggleBookingModalCamping = function(isChecked) {
-      if (window.currentBookingConfig && window.currentBookingConfig.optionType === 'comfort') {
+      if (window.currentBookingConfig && window.currentBookingConfig.isDayActivity) {
+        window.hasGuideRoomOption = isChecked;
+        window.isGuideOptionSelected = isChecked;
+      } else if (window.currentBookingConfig && window.currentBookingConfig.optionType === 'comfort') {
         if (typeof window.toggleComfortOption === 'function') {
           if (window.isComfortSelected !== isChecked) {
             window.toggleComfortOption(390);
@@ -1000,45 +1176,98 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
     window.updateBookingModalCalculations = function() {
       var isEn = document.documentElement.lang === 'en';
-      var config = window.currentBookingConfig || { basePrice: 1990, hasCamping: false, campingPrice: 350 };
+      var config = window.currentBookingConfig || { basePrice: 1990, hasCamping: false, campingPrice: 350, isDayActivity: false };
       var travelersSelect = document.getElementById('booking-travelers-select');
-      var travelers = travelersSelect ? parseInt(travelersSelect.value, 10) || 2 : 2;
+      var travelers = travelersSelect ? parseInt(travelersSelect.value, 10) || 1 : 1;
 
       var campingCheckbox = document.getElementById('booking-modal-camping-checkbox');
-      var isCamping = campingCheckbox && campingCheckbox.checked && config.hasCamping;
-
-      var basePrice = config.basePrice || 1990;
-      var extraPerPerson = isCamping ? (config.campingPrice || 350) : 0;
-      var pricePerPerson = basePrice + extraPerPerson;
-      var total = pricePerPerson * travelers;
-      var deposit = Math.round(total * 0.3);
+      var isOptionChecked = campingCheckbox && campingCheckbox.checked && config.hasCamping;
 
       function fmt(n) {
         return isEn ? n.toLocaleString('en-US') + ' €' : n.toLocaleString('fr-FR') + ' €';
       }
 
+      var baseLabel = document.getElementById('booking-modal-base-label');
       var baseDisplay = document.getElementById('booking-modal-base-display');
-      if (baseDisplay) baseDisplay.textContent = fmt(basePrice);
-
       var optionRow = document.getElementById('booking-modal-option-row');
+      var optionRowLabel = document.getElementById('booking-modal-option-row-label');
       var optionDisplay = document.getElementById('booking-modal-option-display');
-      if (optionRow && optionDisplay) {
-        if (isCamping) {
-          optionRow.classList.remove('hidden');
-          optionDisplay.textContent = '+' + fmt(config.campingPrice || 350) + ' / ' + (isEn ? 'person' : 'pers.');
-        } else {
-          optionRow.classList.add('hidden');
-        }
-      }
-
       var countDisplay = document.getElementById('booking-modal-count-display');
+      var totalLabel = document.getElementById('booking-modal-total-label');
+      var totalDisplay = document.getElementById('booking-modal-total-display');
+      var depositRow = document.getElementById('booking-modal-deposit-row');
+      var depositLabel = document.getElementById('booking-modal-deposit-label');
+      var depositDisplay = document.getElementById('booking-modal-deposit-display');
+      var submitBtn = document.getElementById('booking-submit-btn');
+
       if (countDisplay) countDisplay.textContent = travelers;
 
-      var depositDisplay = document.getElementById('booking-modal-deposit-display');
-      if (depositDisplay) depositDisplay.textContent = fmt(deposit);
+      if (config.isDayActivity) {
+        // DAY ACTIVITY CALCULATION (100% ONLINE PAYMENT)
+        var isFlat = config.dayActivityType === 'flat_group';
+        var basePrice = config.basePrice || (isFlat ? 190 : 50);
+        var extraTotal = isOptionChecked ? ((config.campingPrice || 12) * travelers) : 0;
+        var total = isFlat ? (basePrice + extraTotal) : (basePrice * travelers + extraTotal);
 
-      var totalDisplay = document.getElementById('booking-modal-total-display');
-      if (totalDisplay) totalDisplay.textContent = fmt(total);
+        config.calculatedTotal = total;
+
+        if (baseLabel) {
+          baseLabel.textContent = isFlat 
+            ? (isEn ? "Private Group Package (1-6 pers):" : "Forfait privatisé (1 à 6 pers.) :")
+            : (isEn ? "Price per Person:" : "Prix par personne :");
+        }
+        if (baseDisplay) baseDisplay.textContent = fmt(basePrice);
+
+        if (optionRow && optionDisplay) {
+          if (isOptionChecked) {
+            optionRow.classList.remove('hidden');
+            if (optionRowLabel) optionRowLabel.textContent = isEn ? "Guide Accommodation (+12€/pers):" : "Nuit chez le guide (+12€/pers) :";
+            optionDisplay.textContent = '+' + fmt(extraTotal);
+          } else {
+            optionRow.classList.add('hidden');
+          }
+        }
+
+        if (depositLabel) depositLabel.textContent = isEn ? "Payment: " : "Règlement : ";
+        if (depositDisplay) depositDisplay.textContent = isEn ? "100% Online (Payzen Card)" : "100% en ligne (Payzen CB)";
+        if (totalDisplay) totalDisplay.textContent = fmt(total);
+
+        if (submitBtn) {
+          submitBtn.innerHTML = isEn 
+            ? `💳 Pay with Credit Card (${fmt(total)}) →` 
+            : `💳 Payer par Carte Bancaire (${fmt(total)}) →`;
+        }
+      } else {
+        // MULTI-DAY EXPEDITION CALCULATION (30% DEPOSIT INQUIRY)
+        var basePrice = config.basePrice || 1990;
+        var extraPerPerson = isOptionChecked ? (config.campingPrice || 350) : 0;
+        var pricePerPerson = basePrice + extraPerPerson;
+        var total = pricePerPerson * travelers;
+        var deposit = Math.round(total * 0.3);
+
+        config.calculatedTotal = total;
+
+        if (baseLabel) baseLabel.textContent = isEn ? "Base Price per Person:" : "Prix de base par personne :";
+        if (baseDisplay) baseDisplay.textContent = fmt(basePrice);
+
+        if (optionRow && optionDisplay) {
+          if (isOptionChecked) {
+            optionRow.classList.remove('hidden');
+            if (optionRowLabel) optionRowLabel.textContent = config.optionRowLabel || (isEn ? "Option:" : "Option :");
+            optionDisplay.textContent = '+' + fmt(config.campingPrice || 350) + ' / ' + (isEn ? 'person' : 'pers.');
+          } else {
+            optionRow.classList.add('hidden');
+          }
+        }
+
+        if (depositLabel) depositLabel.textContent = isEn ? "Deposit (30%): " : "Acompte inscription (30%) : ";
+        if (depositDisplay) depositDisplay.textContent = fmt(deposit);
+        if (totalDisplay) totalDisplay.textContent = fmt(total);
+
+        if (submitBtn) {
+          submitBtn.innerHTML = isEn ? "Confirm & Send My Booking Inquiry →" : "Confirmer et envoyer ma demande de réservation →";
+        }
+      }
     };
 
     window.handleTourBookingSubmit = async function(e) {
@@ -1048,37 +1277,119 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var btn = document.getElementById('booking-submit-btn');
       var successBox = document.getElementById('booking-modal-success');
       var errorBox = document.getElementById('booking-modal-error');
+      var errorText = document.getElementById('booking-modal-error-text');
       var form = document.getElementById('tour-booking-form');
 
       if (successBox) successBox.classList.add('hidden');
       if (errorBox) errorBox.classList.add('hidden');
 
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = isEn ? 'Transmitting booking request...' : 'Transmission de votre réservation en cours...';
-      }
-
       var config = window.currentBookingConfig || {};
       var dateVal = (document.getElementById('booking-date-input') || {}).value || '';
-      var travelersVal = (document.getElementById('booking-travelers-select') || {}).value || '2';
-      var isCamping = (document.getElementById('booking-modal-camping-checkbox') || {}).checked;
+      var travelersVal = parseInt((document.getElementById('booking-travelers-select') || {}).value || '1', 10);
+      var isOptionChecked = (document.getElementById('booking-modal-camping-checkbox') || {}).checked;
       var firstname = (document.getElementById('booking-firstname') || {}).value || '';
       var lastname = (document.getElementById('booking-lastname') || {}).value || '';
       var email = (document.getElementById('booking-email') || {}).value || '';
       var phone = (document.getElementById('booking-phone') || {}).value || '';
       var notes = (document.getElementById('booking-notes') || {}).value || '';
-      
+
+      if (!dateVal.trim()) {
+        if (errorBox && errorText) {
+          errorText.textContent = isEn ? "Please enter your desired activity / departure date." : "Veuillez renseigner votre date d'activité ou de départ souhaitée.";
+          errorBox.classList.remove('hidden');
+        }
+        return false;
+      }
+
+      // ==========================================
+      // PATHWAY A: DAY ACTIVITY (DIRECT PAYZEN PAYMENT)
+      // ==========================================
+      if (config.isDayActivity && config.dayActivity) {
+        if (btn) {
+          btn.disabled = true;
+          btn.innerHTML = isEn 
+            ? '🔒 Generating secure payment link...' 
+            : '🔒 Génération de votre lien de paiement sécurisé...';
+        }
+
+        try {
+          var payload = {
+            activityTitle: isEn ? config.dayActivity.titleEn : config.dayActivity.titleFr,
+            activitySlug: config.dayActivity.slug,
+            travelers: travelersVal,
+            date: dateVal,
+            hasGuideRoom: isOptionChecked,
+            firstname: firstname,
+            lastname: lastname,
+            email: email,
+            phone: phone,
+            notes: notes,
+            amount: config.calculatedTotal || 50
+          };
+
+          var resp = await fetch('/api/create-payment-link.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+
+          var result = await resp.json();
+
+          if (resp.ok && result.success && result.paymentUrl) {
+            if (btn) {
+              btn.innerHTML = isEn 
+                ? '✓ Redirecting to secure checkout...' 
+                : '✓ Redirection vers le paiement sécurisé Payzen...';
+              btn.classList.add('bg-emerald-700');
+            }
+            // Seamless redirect to hosted Payzen 3D-Secure payment page
+            window.location.href = result.paymentUrl;
+            return false;
+          } else {
+            var errMsg = (result && result.error) ? result.error : (isEn ? "Error generating payment link. Please contact Robin on WhatsApp." : "Erreur lors de la génération du lien de paiement. Veuillez contacter Robin sur WhatsApp.");
+            if (errorBox && errorText) {
+              errorText.textContent = errMsg;
+              errorBox.classList.remove('hidden');
+            }
+            if (btn) {
+              btn.disabled = false;
+              btn.innerHTML = isEn ? '💳 Retry Payment →' : '💳 Réessayer le paiement →';
+            }
+            return false;
+          }
+        } catch (err) {
+          console.error("Payment API Error:", err);
+          if (errorBox && errorText) {
+            errorText.textContent = isEn ? "Network error. Please try again or contact Robin directly on WhatsApp." : "Erreur de connexion. Veuillez réessayer ou contacter Robin sur WhatsApp.";
+            errorBox.classList.remove('hidden');
+          }
+          if (btn) {
+            btn.disabled = false;
+            btn.innerHTML = isEn ? '💳 Retry Payment →' : '💳 Réessayer le paiement →';
+          }
+          return false;
+        }
+      }
+
+      // ==========================================
+      // PATHWAY B: MULTI-DAY EXPEDITIONS (INQUIRY / DEPOSIT)
+      // ==========================================
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = isEn ? 'Transmitting booking request...' : 'Transmission de votre réservation en cours...';
+      }
+
       var totalVal = (document.getElementById('booking-modal-total-display') || {}).textContent || '';
       var depositVal = (document.getElementById('booking-modal-deposit-display') || {}).textContent || '';
 
       var optionLabelKey = config.optionType === 'comfort' 
         ? 'option_chambre_individuelle_single' 
         : (config.optionType === 'drawing' ? 'option_accompagnement_dessin_sarah_plage' : 'option_camping_sauvage');
-      var optionLabelVal = isCamping 
+      var optionLabelVal = isOptionChecked 
         ? ("OUI (+" + (config.campingPrice || 350) + " €/pers.)") 
         : (config.optionType === 'drawing' ? "NON (Sans option dessin)" : "NON (Hébergement standard)");
 
-      var payload = {
+      var inquiryPayload = {
         _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
         _template: "table",
         _captcha: "false",
@@ -1103,7 +1414,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         var res = await fetch('https://formsubmit.co/ajax/junglenepaladventure@gmail.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(inquiryPayload)
         });
         if (res.ok) isSuccess = true;
       } catch (err) {
@@ -1115,7 +1426,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           var res2 = await fetch('https://formsubmit.co/junglenepaladventure@gmail.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(payload)
+            body: JSON.stringify(inquiryPayload)
           });
           if (res2.ok) isSuccess = true;
         } catch (err2) {}

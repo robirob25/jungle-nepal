@@ -1,0 +1,5 @@
+# Protect sensitive configuration from direct HTTP access
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
