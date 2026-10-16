@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // 1. API Configuration
 $API_KEY = getenv('MYWAY_API_KEY') ?: '';
 $API_URL = 'https://api.collectifmyway.com/v1/api/payments/links';
-$DEFAULT_PROJECT_REF = getenv('MYWAY_PROJECT_REF') ?: 'AYA191126RRR';
+$DEFAULT_PROJECT_REF = getenv('MYWAY_PROJECT_REF') ?: 'TMP161026RRR';
 
 // Load external config file if available
 $configFile = __DIR__ . '/config.php';
