@@ -6,4 +6,3 @@ build/
 .env
 .DS_Store
 .astro/
-public/api/config.php
