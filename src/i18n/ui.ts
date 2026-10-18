@@ -7,7 +7,7 @@ export const defaultLang = 'fr';
 
 export const ui = {
   fr: {
-    'nav.tours': 'Tous les 20 séjours',
+    'nav.tours': 'Tous les 18 circuits',
     'nav.activities': 'Activités',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Nos guides',
@@ -30,7 +30,7 @@ export const ui = {
     'hero.search_btn': 'Rechercher',
 
     'catalog.sub': 'Départs garantis • Petits groupes de 4 à 10 explorateurs',
-    'catalog.title_1': 'Les 20 séjours ',
+    'catalog.title_1': 'Les 18 circuits ',
     'catalog.title_2': 'immersifs',
     'catalog.title_3': ' au Népal',
     'catalog.desc': 'Sélectionnez votre aventure pour explorer le détail jour par jour, la fiche d\'inclusions et réserver votre place.',
@@ -58,7 +58,7 @@ export const ui = {
     'tour.contact_robin': 'Poser une question à Robin sur WhatsApp →',
   },
   en: {
-    'nav.tours': 'All 20 Expeditions',
+    'nav.tours': 'All 18 Expeditions',
     'nav.activities': 'Activities',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Our Guides',
@@ -81,7 +81,7 @@ export const ui = {
     'hero.search_btn': 'Search',
 
     'catalog.sub': 'Guaranteed Departures • Small Groups of 4 to 10 Explorers',
-    'catalog.title_1': '20 Immersive ',
+    'catalog.title_1': '18 Immersive ',
     'catalog.title_2': 'Expeditions',
     'catalog.title_3': ' in Nepal',
     'catalog.desc': 'Select your adventure to explore day-by-day itineraries, inclusions and reserve your spot.',
