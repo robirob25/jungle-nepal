@@ -1,4 +1,20 @@
 @font-face {
+  font-family: 'moret';
+  src: url('/assets/fonts/moret_variable.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300 900;
+}
+
+@font-face {
+  font-family: 'moret Fallback';
+  src: local('Times New Roman');
+  ascent-override: 100.74%;
+  descent-override: 26.89%;
+  line-gap-override: 0.0%;
+  size-adjust: 91.13%;
+}
+
+@font-face {
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 700;

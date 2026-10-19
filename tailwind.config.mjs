@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Newsreader"', 'Georgia', 'serif'],
+        serif: ['moret', '"moret Fallback"', '"Times New Roman"', 'serif'],
       },
       colors: {
         jungle: {

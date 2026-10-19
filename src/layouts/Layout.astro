@@ -84,6 +84,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="canonical" href={canonicalUrl} />
 
   <!-- Ultra-Fast Self-Hosted Local Fonts (Zero-Latency & Non-Blocking) -->
+  <link rel="preload" href="/assets/fonts/moret_variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/plus_jakarta_sans_normal_400_11.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/plus_jakarta_sans_normal_700_23.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css" media="print" onload="this.media='all'">
@@ -180,6 +181,22 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <script is:inline defer src="/assets/js/lucide.min.js"></script>
 
   <style is:global>
+    @font-face {
+      font-family: 'moret';
+      src: url('/assets/fonts/moret_variable.woff2') format('woff2');
+      font-display: swap;
+      font-weight: 300 900;
+    }
+
+    @font-face {
+      font-family: 'moret Fallback';
+      src: local('Times New Roman');
+      ascent-override: 100.74%;
+      descent-override: 26.89%;
+      line-gap-override: 0.0%;
+      size-adjust: 91.13%;
+    }
+
     html, body { 
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; 
       top: 0px !important; 
@@ -188,6 +205,20 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       width: 100%;
       -webkit-text-size-adjust: 100%;
       -webkit-tap-highlight-color: transparent;
+    }
+
+    h1, h2, h3, .prose h1, .prose h2, .prose h3 {
+      font-family: 'moret', 'moret Fallback', 'Times New Roman', serif !important;
+      font-weight: 600 !important;
+    }
+
+    h1 strong, h2 strong, h3 strong {
+      font-weight: inherit !important;
+    }
+
+    h1 .font-sans, h2 .font-sans, h3 .font-sans {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+      font-weight: 800 !important;
     }
     
     /* Touch optimization */
