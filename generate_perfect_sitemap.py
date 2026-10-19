@@ -18,43 +18,19 @@ from tools.fix_english_blog_slugs import SLUG_MAP
 
 en_slugs = {p["slug"] for p in posts_en}
 
-# Static and Core Routes
+# Static and Core Routes: (fr_route, en_route, priority, changefreq)
 STATIC_ROUTES = [
-    ("", "1.0", "daily"),
-    ("destinations", "0.9", "weekly"),
-    ("destinations/bardia", "0.9", "weekly"),
-    ("destinations/chitwan", "0.9", "weekly"),
-    ("destinations/suklaphanta", "0.9", "weekly"),
-    ("destinations/annapurna", "0.8", "weekly"),
-    ("destinations/katmandou", "0.8", "weekly"),
-    ("blog", "0.9", "daily"),
-    ("a-propos", "0.7", "monthly"),
-    ("contact", "0.8", "monthly"),
-]
-
-# Tours and Activities Routes
-TOURS = [
-    "bardia-explorateur",
-    "chitwan-culture",
-    "nepal-sauvage",
-    "babai-special",
-    "bardia-nuit-sauvage",
-    "bardia-babai-camping",
-    "chitwan-bardia-complete",
-    "rafting-safari",
-    "rafting-safari-bardia",
-    "rara-lake-bardia",
-    "safari-jeep-bardia",
-    "safari-jeep-chitwan",
-    "safari-pied-bardia",
-    "safari-pied-chitwan",
-    "jungle-extreme",
-    "tiji-mustang",
-    "panthere-des-neiges",
-    "dashain-immersion-culturelle",
-    "nepal-immersion-totale",
-    "carnet-de-voyage",
-    "immersion-spirituelle",
+    ("", "", "1.0", "daily"),
+    ("destinations", "destinations", "0.9", "weekly"),
+    ("destinations/bardia", "destinations/bardia", "0.9", "weekly"),
+    ("destinations/chitwan", "destinations/chitwan", "0.9", "weekly"),
+    ("destinations/suklaphanta", "destinations/suklaphanta", "0.9", "weekly"),
+    ("destinations/annapurna", "destinations/annapurna", "0.8", "weekly"),
+    ("destinations/katmandou", "destinations/katmandou", "0.8", "weekly"),
+    ("blog", "blog", "0.9", "daily"),
+    ("a-propos", "about", "0.7", "monthly"),
+    ("contact", "contact", "0.8", "monthly"),
+    ("mentions-legales", "legal-mentions", "0.4", "yearly"),
 ]
 
 today = datetime.now().strftime("%Y-%m-%d")
@@ -62,9 +38,9 @@ today = datetime.now().strftime("%Y-%m-%d")
 xml_entries = []
 
 # 1. Static Routes (FR & EN with exact hreflang alternates)
-for route, priority, changefreq in STATIC_ROUTES:
-    fr_path = f"/{route}/" if route else "/"
-    en_path = f"/en/{route}/" if route else "/en/"
+for fr_route, en_route, priority, changefreq in STATIC_ROUTES:
+    fr_path = f"/{fr_route}/" if fr_route else "/"
+    en_path = f"/en/{en_route}/" if en_route else "/en/"
     
     fr_url = f"https://junglenepal.com{fr_path}"
     en_url = f"https://junglenepal.com{en_path}"
@@ -97,6 +73,8 @@ TOUR_MAPPING = {
     "safari-pied-chitwan": "chitwan-walking-safari",
     "safari-jeep-chitwan": "chitwan-jeep-safari",
     "rafting-safari-bardia": "bardia-rafting-safari",
+    "safari-chitwan-3-jours": "chitwan-3-days-safari-post-trek",
+    "pokhara-chitwan-safari-transfert-katmandou": "pokhara-to-chitwan-safari-transfer-kathmandu",
     "bardia-explorateur": "bardia-tiger-safari-5-days",
     "jungle-extreme": "nepal-wildlife-safari-15-days",
     "bardia-nuit-sauvage": "bardia-bivouac-camping-safari",

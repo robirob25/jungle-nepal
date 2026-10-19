@@ -133,7 +133,8 @@
       "/assets/drive_photos/julien_photographes_jungle.webp",
       "/assets/drive_photos/julien_tigre_bengale3.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "nepal-wildlife-safari-15-days"
   },
   {
     "slug": "nepal-sauvage",
@@ -270,7 +271,8 @@
       "/assets/original_site/fishtail_sacred_himalaya.webp",
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "wild-nepal-safari-annapurna-trek"
   },
   {
     "slug": "chitwan-bardia-complete",
@@ -389,7 +391,8 @@
       "/assets/original_site/elephants_river.webp",
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "chitwan-bardia-combined-safari"
   },
   {
     "slug": "bardia-explorateur",
@@ -475,7 +478,8 @@
       "/assets/drive_photos/adrien_bardia_forest.webp",
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "bardia-tiger-safari-5-days"
   },
   {
     "slug": "chitwan-culture",
@@ -555,7 +559,8 @@
       "/assets/drive_photos/julien_elephant_mere_petit.webp",
       "/assets/drive_photos/adrien_bhaktapur1.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "chitwan-safari-cultural-tour"
   },
   {
     "slug": "rafting-safari",
@@ -708,7 +713,8 @@
       "/assets/original_site/rafting_wild.webp",
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "karnali-rafting-and-wildlife-safari"
   },
   {
     "slug": "bardia-nuit-sauvage",
@@ -784,7 +790,8 @@
       "/assets/original_site/camping_experience.webp",
       "/assets/drive_photos/adrien_bardia_camp.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "bardia-bivouac-camping-safari"
   },
   {
     "slug": "rara-lake-bardia",
@@ -931,7 +938,8 @@
       "/assets/drive_photos/fred_wild2.webp",
       "/assets/drive_photos/antoine_wild3.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "rara-lake-bardia-expedition"
   },
   {
     "slug": "bardia-babai-camping",
@@ -1032,7 +1040,8 @@
       "/assets/drive_photos/julien_elephant_mere_petit.webp",
       "/assets/original_site/camping_sauvage_bardia.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "babai-valley-wild-camping-safari"
   },
   {
     "slug": "nepal-immersion-totale",
@@ -1165,7 +1174,8 @@
       "/assets/original_site/chitwan_rhino.webp",
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "nepal-wildlife-culture-immersion"
   },
   {
     "slug": "babai-special",
@@ -1251,7 +1261,8 @@
       "/assets/drive_photos/julien_elephant_jungle.webp",
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
-    "departures_type": "flexible"
+    "departures_type": "flexible",
+    "enSlug": "babai-valley-tiger-tracking-5-days"
   },
   {
     "slug": "tiji-mustang",
@@ -1377,7 +1388,8 @@
       "/assets/original_site/mustang_village_orig.webp",
       "/assets/drive_photos/fred_wild5.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "tiji-festival-upper-mustang-trek"
   },
   {
     "slug": "carnet-de-voyage",
@@ -1514,7 +1526,8 @@
       "/assets/drive_photos/julien_rollier_oiseau.webp",
       "/assets/drive_photos/adrien_bhaktapur2.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "nepal-sketching-travel-journal-tour"
   },
   {
     "slug": "immersion-spirituelle",
@@ -1635,7 +1648,8 @@
       "/assets/drive_photos/adrien_katmandou1.webp",
       "/assets/original_site/nepal_landscape.webp"
     ],
-    "departures_type": "scheduled"
+    "departures_type": "scheduled",
+    "enSlug": "himalaya-spiritual-immersion-tour"
   },
   {
     "slug": "panthere-des-neiges",
@@ -1801,7 +1815,8 @@
         "title": "Day 17 – Airport Transfer & International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
       }
-    ]
+    ],
+    "enSlug": "snow-leopard-expedition-nepal"
   },
   {
     "slug": "dashain-immersion-culturelle",
@@ -1837,7 +1852,8 @@
       "/assets/tours/dashain/dashain_bamboo_swing_village.webp",
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
-    "days": []
+    "days": [],
+    "enSlug": "dashain-festival-tharu-cultural-tour"
   },
   {
     "slug": "safari-pied-bardia",
@@ -1879,7 +1895,8 @@
         "title": "Day 1 – Full Day Walking Safari in Bardia",
         "desc": "Departure at 6:30 AM for a full day of foot tracking and wildlife observation in Bardia jungle. Bush lunch included. Return around 6:00 PM."
       }
-    ]
+    ],
+    "enSlug": "bardia-walking-safari"
   },
   {
     "slug": "safari-pied-chitwan",
@@ -1921,7 +1938,8 @@
         "title": "Day 1 – Full Day Walking Safari in Chitwan",
         "desc": "Departure at 6:30 AM with dugout wooden canoe crossing of Rapti river. Tracking in forests and grasslands. Bush picnic lunch included. Return around 6:00 PM."
       }
-    ]
+    ],
+    "enSlug": "chitwan-walking-safari"
   },
   {
     "slug": "safari-jeep-bardia",
@@ -1966,7 +1984,8 @@
         "title": "Day 1 – Full-Day 4x4 Exploration of Deep Bardia Sectors",
         "desc": "Departure at 06:00 AM by private jeep. Morning track inspection in the Sal forest, elephant corridors, watchtower picnic lunch, and riverside hides along the Geruwa. Return around 06:00 PM."
       }
-    ]
+    ],
+    "enSlug": "bardia-jeep-safari"
   },
   {
     "slug": "safari-jeep-chitwan",
@@ -2009,6 +2028,94 @@
         "title": "Day 1 – Full-Day 4x4 Exploration of Chitwan Grasslands & Sal Forests",
         "desc": "Departure at 06:00 AM by private jeep from Sauraha. Rapti river crossing, tracking sandy trails through Sal forest, rhino wetlands, watchtower picnic lunch, and riverside hides. Return around 06:00 PM."
       }
-    ]
+    ],
+    "enSlug": "chitwan-jeep-safari"
+  },
+  {
+    "slug": "safari-chitwan-3-jours",
+    "enSlug": "chitwan-3-days-safari-post-trek",
+    "rawSlug": "chitwan-3-days-safari-post-trek",
+    "title": "Chitwan 3 Days / 2 Nights Safari – Post-Trek Wildlife Escape",
+    "duration": "3 days",
+    "daysCount": 3,
+    "price": "360€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Post-Trek Special • All-Inclusive",
+    "rating": 5.0,
+    "reviews": 19,
+    "difficulty": "Easy",
+    "style": "Ethical Safari & Comfort",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "The ideal 3-day / 2-night turnkey wildlife retreat in Chitwan after an Annapurna trek: 2 nights in a boutique hotel with pool, full board, dawn dugout canoe, walking safari, and 4x4 Jeep.",
+    "highlights": [],
+    "images": [
+      "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
+    ],
+    "days": []
+  },
+  {
+    "slug": "pokhara-chitwan-safari-transfert-katmandou",
+    "enSlug": "pokhara-to-chitwan-safari-transfer-kathmandu",
+    "rawSlug": "pokhara-to-chitwan-safari-transfer-kathmandu",
+    "title": "Pokhara to Kathmandu via Chitwan – 3-Day Safari & Transfers",
+    "duration": "3 days",
+    "daysCount": 3,
+    "price": "450€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Pokhara → Kathmandu Transfers Included",
+    "rating": 5.0,
+    "reviews": 16,
+    "difficulty": "Easy",
+    "style": " Overland Transfer & Safari Combo",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "Turn your return journey from Pokhara to Kathmandu into an unforgettable 3-day / 2-night Chitwan wildlife safari with overland transfers, pool hotel, full board, and 3 safaris included.",
+    "highlights": [],
+    "images": [
+      "/assets/snow-leopard/pokhara_lake.webp"
+    ],
+    "days": []
+  },
+  {
+    "slug": "rafting-safari-bardia",
+    "enSlug": "bardia-rafting-safari",
+    "rawSlug": "bardia-rafting-safari",
+    "title": "Karnali River Rafting & Wildlife Safari – Bardia National Park",
+    "duration": "1 day",
+    "daysCount": 1,
+    "price": "190€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Private Boat • Dolphins & Wildlife",
+    "rating": 5.0,
+    "reviews": 21,
+    "difficulty": "Easy",
+    "style": "Silent River Drift Safari",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "Full-day silent river drift by inflatable raft along the wild Karnali corridor in Bardia to spot Gangetic dolphins, gharials, elephants, and Bengal tigers.",
+    "highlights": [],
+    "images": [
+      "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
+    ],
+    "days": []
   }
 ]

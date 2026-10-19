@@ -3,13 +3,13 @@ import { getLocalizedPath } from '../../i18n/utils';
 
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
-import toursData from '../../data/tours.json';
+import toursData from '../../data/tours.en.json';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
-<Layout title="About Us | Jungle Nepal Adventure – Our Story & Trackers" lang="en">
+<Layout title="About Us | Jungle Nepal Adventure – Our Story & Trackers" lang="en" description="Meet the team behind Jungle Nepal Adventure: co-founded by Robin and indigenous Tharu master trackers in Bardia for authentic, ethical wildlife expeditions.">
 
   <!-- 1. TOP ANNOUNCEMENT BANNER -->
   <aside aria-label="Information banner" class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">

@@ -147,7 +147,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          View all 20 Expeditions →
+          View all 18 Tours & 5 Activities →
         </a>
       </div>
 
@@ -155,7 +155,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/en/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.enSlug || tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -211,7 +211,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/en/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.enSlug || tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →

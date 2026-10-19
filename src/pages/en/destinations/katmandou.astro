@@ -6,7 +6,7 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import toursData from '../../../data/tours.en.json';
 
-const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari"].includes(t.slug));
+const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari", "pokhara-chitwan-safari-transfert-katmandou", "dashain-immersion-culturelle"].includes(t.slug));
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -14,7 +14,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
 <Layout 
   title="Vallée de Kathmandu | Destinations Jungle Nepal Adventure"
-  description="Au premier abord, Kathmandu peut sembler déroutante et vibrante. Mais laissez-lui un peu de temps, et elle finit par vous happer totalement. Entre rue"
+  description="Explore the Kathmandu Valley beyond the crowds: UNESCO royal cities of Bhaktapur and Patan, sacred Buddhist stupas, and authentic Newar heritage."
   image="/assets/original_site/temple_sacred.webp"
   lang="en"
   isDarkHeader={true}
@@ -96,7 +96,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
         </div>
 
-        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée de Kathmandu" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+        <a href="https://wa.me/33695413227?text=Hello%20Robin%2C%20I%20would%20like%20information%20about%20Vall%C3%A9e%20de%20Kathmandu" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
           Ask a question about Kathmandu Valley →
         </a>
       </div>
@@ -148,7 +148,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
         <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          View all 20 Expeditions →
+          View all 18 Tours & 5 Activities →
         </a>
       </div>
 
@@ -156,7 +156,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         {matchingTours.map((tour) => (
           <div 
             class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group cursor-pointer"
-            onclick={`window.location.href='/en/tours/${tour.slug}'`}
+            onclick={`window.location.href='/en/tours/${tour.enSlug || tour.slug}'`}
           >
             <!-- Photo Hero -->
             <div class="relative h-60 overflow-hidden bg-slate-900">
@@ -212,7 +212,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 </div>
 
                 <a 
-                  href={`/en/tours/${tour.slug}`}
+                  href={`/en/tours/${tour.enSlug || tour.slug}`}
                   class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 group-hover:shadow-lg hover:scale-105 transition-all"
                 >
                   View Expedition →

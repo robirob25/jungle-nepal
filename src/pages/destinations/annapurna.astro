@@ -6,7 +6,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import toursData from '../../data/tours.json';
 
-const matchingTours = toursData.filter(t => ["rara-lake-bardia", "immersion-spirituelle", "carnet-de-voyage"].includes(t.slug));
+const matchingTours = toursData.filter(t => ["nepal-sauvage", "pokhara-chitwan-safari-transfert-katmandou", "rara-lake-bardia", "immersion-spirituelle", "carnet-de-voyage", "dashain-immersion-culturelle"].includes(t.slug));
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -14,7 +14,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
 <Layout 
   title="Les Annapurna & Pokhara | Destinations Jungle Nepal Adventure"
-  description="La région de l’Annapurna est l’une des zones de trekking les plus spectaculaires et variées de la planète. Située à courte distance de la charmante vi"
+  description="Randonnée et immersion dans les Annapurnas et à Pokhara : villages Gurung, panoramas himalayens à Poon Hill et combinés trek & safari dans la jungle."
   image="/assets/original_site/nepal_landscape.webp"
   lang="fr"
   isDarkHeader={true}
@@ -96,7 +96,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
         </div>
 
-        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Les Annapurna & Pokhara" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Les%20Annapurna%20&%20Pokhara" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
           Poser une question sur Les Annapurna & Pokhara →
         </a>
       </div>

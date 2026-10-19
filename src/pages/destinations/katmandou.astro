@@ -6,7 +6,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import toursData from '../../data/tours.json';
 
-const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari"].includes(t.slug));
+const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari", "pokhara-chitwan-safari-transfert-katmandou", "dashain-immersion-culturelle"].includes(t.slug));
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -14,7 +14,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
 <Layout 
   title="Vallée de Katmandou : patrimoine et culture népalaise | Jungle Nepal Adventure"
-  description="Au premier abord, Katmandou peut sembler déroutante et vibrante. Mais laissez-lui un peu de temps, et elle finit par vous happer totalement. Entre rue"
+  description="Visiter la vallée de Katmandou hors des sentiers battus : temples UNESCO de Bhaktapur, Patan, stûpas sacrés et immersion culturelle avant votre safari."
   image="/assets/original_site/temple_sacred.webp"
   lang="fr"
   isDarkHeader={true}
@@ -96,7 +96,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
         </div>
 
-        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée de Katmandou" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
+        <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée%20de%20Katmandou" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
           Poser une question sur Vallée de Katmandou →
         </a>
       </div>

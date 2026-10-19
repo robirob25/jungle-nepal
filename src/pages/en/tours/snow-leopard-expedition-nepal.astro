@@ -230,7 +230,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 }
   </script>
 
-<Layout title="Snow Leopard Expedition Nepal: 17 Days High Himalaya Quest" lang="en">
+<Layout title="Snow Leopard Expedition Nepal: 17 Days High Himalaya Quest" lang="en" description="17-day high-altitude Snow Leopard expedition in the Nepal Himalayas (4,300€). Track the ghost of the mountains with elite native wildlife spotters.">
 
 
     <!-- TOP BAR PROMO -->
@@ -994,7 +994,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Starting from</p>
               <div class="flex items-baseline gap-2">
-                <span class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">4 300 €</span>
+                <span id="tour-price-display" data-base-price="4300" class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">4 300 €</span>
                 <span class="text-xs text-slate-500 font-medium">/ personne</span>
               </div>
             </div>
@@ -1187,7 +1187,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <div class="relative">
             <a href="/en/tours/rara-lake-bardia-expedition" class="relative h-72 sm:h-80 overflow-hidden block">
               <img decoding="async" 
-                src="/assets/tours_thumbs/adrien_bardia_sunset.webp" 
+                src="/assets/original_site/lac_rara_orig.webp" 
                 alt="Rara Lake & Bardia Expedition" 
                 class="w-full h-full object-cover  transition-transform duration-500 ease-out"
                 loading="lazy"

@@ -2812,5 +2812,102 @@
         "desc": "Départ à 06h00 en jeep privatisée depuis Sauraha. Traversée de la Rapti, inspection des pistes sablonneuses de Sal, marécages aux rhinocéros, déjeuner pique-nique en mirador et affûts fluviaux. Retour vers 18h00."
       }
     ]
+  },
+  {
+    "slug": "safari-chitwan-3-jours",
+    "rawSlug": "safari-chitwan-3-jours",
+    "title": "Safari Chitwan 3 Jours / 2 Nuits – L'Escale Sauvage Post-Trek",
+    "duration": "3 jours",
+    "daysCount": 3,
+    "price": "360€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Spécial Fin de Trek • Tout Inclus",
+    "rating": 5.0,
+    "reviews": 19,
+    "difficulty": "Facile",
+    "style": "Safari Éthique & Confort",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "Le séjour clé en main de 3 jours / 2 nuits à Chitwan idéal après un trek : 2 nuits en hôtel avec piscine, pension complète, pirogue à l'aube, demi-journée de marche et Jeep 4x4.",
+    "highlights": [
+      "2 nuits en hôtel de charme avec jardin et piscine à Sauraha + pension complète.",
+      "Pirogue traditionnelle à l'aube sur la rivière Rapti (gavials, oiseaux d'eau).",
+      "Demi-journée de safari à pied éthique avec 2 guides naturalistes certifiés.",
+      "Demi-journée de safari en Jeep 4x4 au cœur du parc national."
+    ],
+    "images": [
+      "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
+    ],
+    "days": []
+  },
+  {
+    "slug": "pokhara-chitwan-safari-transfert-katmandou",
+    "rawSlug": "pokhara-chitwan-safari-transfert-katmandou",
+    "title": "De Pokhara à Katmandou via Chitwan – Safari 3 Jours & Transferts",
+    "duration": "3 jours",
+    "daysCount": 3,
+    "price": "450€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Liaison Pokhara → Katmandou Incluse",
+    "rating": 5.0,
+    "reviews": 16,
+    "difficulty": "Facile",
+    "style": "Combiné Liaison & Safari",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 3,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "Transformez votre trajet retour entre Pokhara et Katmandou en une aventure sauvage de 3 jours / 2 nuits à Chitwan avec tous les transferts routiers, hôtel piscine, repas et 3 safaris inclus.",
+    "highlights": [
+      "Transferts touristiques Pokhara → Chitwan (J1) et Chitwan → Katmandou (J3) inclus.",
+      "2 nuits en hôtel confort avec piscine et pension complète (6 repas).",
+      "Descente en pirogue à l'aube + safari à pied avec 2 pisteurs + safari Jeep 4x4."
+    ],
+    "images": [
+      "/assets/snow-leopard/pokhara_lake.webp"
+    ],
+    "days": []
+  },
+  {
+    "slug": "rafting-safari-bardia",
+    "rawSlug": "rafting-safari-bardia",
+    "title": "Rafting & Safari Fluvial sur la Karnali – Parc de Bardia",
+    "duration": "1 jour",
+    "daysCount": 1,
+    "price": "190€",
+    "originalPrice": null,
+    "category": "safari",
+    "badge": "Bateau privatisé • Dauphins & Faune",
+    "rating": 5.0,
+    "reviews": 21,
+    "difficulty": "Facile",
+    "style": "Approche Fluviale Silencieuse",
+    "radar": {
+      "wildlife": 5,
+      "nature": 5,
+      "culture": 2,
+      "relax": 4,
+      "nightlife": 0
+    },
+    "overview": "Journée complète de descente silencieuse en bateau pneumatique sur les bras sauvages de la rivière Karnali à Bardia pour observer dauphins du Gange, gavials, éléphants et tigres.",
+    "highlights": [
+      "Embarcation privatisée avec capitaine de rivière et pisteur naturaliste.",
+      "Observation silencieuse des dauphins du Gange, gavials et oiseaux pêcheurs.",
+      "Marches d'affût sur les bancs de sable et déjeuner pique-nique au bord de l'eau."
+    ],
+    "images": [
+      "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
+    ],
+    "days": []
   }
 ]

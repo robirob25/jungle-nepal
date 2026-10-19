@@ -1,4 +1,6 @@
 
+ErrorDocument 404 /404.html
+
 # 301 REDIRECT DOMAIN FUSION: safarinepal.com -> junglenepal.com
 RewriteCond %{HTTP_HOST} ^(?:www\.)?safarinepal\.com$ [NC]
 RewriteRule ^(.*)$ https://junglenepal.com/ [R=301,L]
@@ -190,7 +192,7 @@ Options -Indexes -MultiViews
     RewriteRule ^circuits/safari-pied-chitwan/?$ https://junglenepal.com/tours/safari-pied-chitwan [R=301,L,NE]
     RewriteRule ^circuits/safari-jeep-chitwan/?$ https://junglenepal.com/tours/safari-jeep-chitwan [R=301,L,NE]
     RewriteRule ^safaris/?$ https://junglenepal.com/tours/jungle-extreme [R=301,L,NE]
-    RewriteRule ^babai-valley-la-vallee-oubliee-du-nepal-sauvage/?$ https://junglenepal.com/blog/babai-valley-vallee-oubliee-safari-sauvage [R=301,L,NE]
+    RewriteRule ^babai-valley-la-vallee-oubliee-du-nepal-sauvage/?$ https://junglenepal.com/tours/babai-special [R=301,L,NE]
     RewriteRule ^bardia-ou-chitwan-safari-nepal/?$ https://junglenepal.com/blog/bardia-ou-chitwan-quel-parc-choisir [R=301,L,NE]
     RewriteRule ^camping-jungle-nepal/?$ https://junglenepal.com/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal [R=301,L,NE]
     RewriteRule ^culture-tharu-a-bardia-traditions-villages-et-vie-locale/?$ https://junglenepal.com/blog/culture-tharu-nepal-immersion-jungle [R=301,L,NE]

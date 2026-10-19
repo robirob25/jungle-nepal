@@ -9,16 +9,18 @@ interface Props {
   isDarkHeader?: boolean;
 }
 
+const currentLang = Astro.props.lang || getLangFromUrl(Astro.url);
+const isEn = currentLang === 'en';
+
 const { 
   title, 
-  description = "Découvrez le Népal sauvage en micro-groupes (4 à 10 pers). 18 circuits d'exception & 5 activités : safaris à pied à Bardia, tracking du tigre du Bengale, bivouacs en jungle et immersion himalayenne.",
-  image = "/assets/logo_dark.png",
-  lang,
+  description = isEn 
+    ? "Explore wild Nepal in small groups (4 to 10 travelers). 18 exceptional tours & 5 activities: walking safaris in Bardia, Bengal tiger tracking, jungle bivouacs and Himalayan immersion."
+    : "Découvrez le Népal sauvage en micro-groupes (4 à 10 pers). 18 circuits d'exception & 5 activités : safaris à pied à Bardia, tracking du tigre du Bengale, bivouacs en jungle et immersion himalayenne.",
+  image = "/assets/hero/hero_1_tiger_water.webp",
   isDarkHeader = false
 } = Astro.props;
 
-const currentLang = lang || getLangFromUrl(Astro.url);
-const isEn = currentLang === 'en';
 const pageTitle = (title.includes('Jungle Nepal') || title.length >= 45) ? title : `${title} | Jungle Nepal Adventure`;
 
 let rawPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '');
@@ -59,7 +61,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="preload" href="/assets/logo.webp" as="image" type="image/webp">
 
   <!-- Content Security Policy (Strict Security & XSS Mitigation) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://translate.google.com https://translate-pa.googleapis.com https://*.gstatic.com https://www.gstatic.com https://unpkg.com https://www.youtube.com https://s.ytimg.com https://www.googletagmanager.com https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://www.instagram.com https://*.instagram.com https://*.cdninstagram.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googleapis.com https://translate.googleapis.com https://translate-pa.googleapis.com https://formsubmit.co https://www.instagram.com https://*.instagram.com https://*.cdninstagram.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://translate.googleapis.com https://fonts.googleapis.com https://*.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com https://*.gstatic.com data:; img-src 'self' data: https: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.cdninstagram.com https://*.instagram.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com https://translate.google.com https://www.instagram.com https://*.instagram.com; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com https://www.gstatic.com https://unpkg.com https://www.youtube.com https://s.ytimg.com https://www.googletagmanager.com https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://www.instagram.com https://*.instagram.com https://*.cdninstagram.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googleapis.com https://formsubmit.co https://www.instagram.com https://*.instagram.com https://*.cdninstagram.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://fonts.googleapis.com https://*.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com https://*.gstatic.com data:; img-src 'self' data: https: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.cdninstagram.com https://*.instagram.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com https://www.instagram.com https://*.instagram.com; object-src 'none'; base-uri 'self';">
 
   <!-- Google tag (gtag.js) - Google Analytics 4 (Deferred for Core Web Vitals) -->
   <script is:inline>
@@ -154,7 +156,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       "addressLocality": "Bardia & Katmandou",
       "addressCountry": "NP"
     },
-    "priceRange": "490€ - 3890€",
+    "priceRange": "50€ - 4300€",
     "areaServed": ["France", "Switzerland", "Belgium", "Europe", "Worldwide"],
     "knowsAbout": [
       "Safari photo tigre",
@@ -196,15 +198,6 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     /* Scroll smoothing */
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    
-    /* Clean UI - Strip Google Translate Default Banners & Overlays */
-    .goog-te-banner-frame.skiptranslate, iframe.goog-te-banner-frame { display: none !important; }
-    .goog-tooltip, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
-    .goog-tooltip:hover { display: none !important; }
-    .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
-    .goog-te-gadget { display: none !important; }
-    body > .skiptranslate { display: none !important; }
-    .goog-te-spinner-pos { display: none !important; }
   
   /* High-End Motion & Interaction Primitives */
   @keyframes subtleRadarPulse {
@@ -292,63 +285,6 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           return true;
         }
       });
-      // Bulletproof Cross-Page & In-Page Smooth Scroll Navigation
-      document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('a[href*="#"]').forEach(function(anchor) {
-          anchor.addEventListener('click', function(e) {
-            var href = this.getAttribute('href');
-            if (!href) return;
-            var hashIndex = href.indexOf('#');
-            if (hashIndex === -1) return;
-
-            var targetId = href.substring(hashIndex);
-            if (targetId.length <= 1) return;
-
-            var linkPath = href.substring(0, hashIndex);
-            var currentPath = window.location.pathname;
-
-            var isSamePage = !linkPath || 
-                             linkPath === currentPath || 
-                             (linkPath === '/' && (currentPath === '/' || currentPath === '/index.html' || currentPath === '')) ||
-                             (linkPath.replace(/\.html$/, '') === currentPath.replace(/\.html$/, ''));
-
-            if (isSamePage) {
-              var targetElement = document.querySelector(targetId);
-              if (targetElement) {
-                e.preventDefault();
-                var headerHeight = 80;
-                var rect = targetElement.getBoundingClientRect();
-                var targetScrollTop = rect.top + window.pageYOffset - headerHeight;
-                window.scrollTo({
-                  top: Math.max(0, targetScrollTop),
-                  behavior: 'smooth'
-                });
-                // Keep URL pristine without adding # hash to address bar
-                if (history.replaceState) {
-                  history.replaceState(null, null, window.location.pathname + window.location.search);
-                }
-              }
-            }
-          });
-        });
-
-        // Handle URL hash on initial page load / after cross-page jump, then clean the address bar
-        if (window.location.hash && window.location.hash.length > 1) {
-          var initialHash = window.location.hash;
-          setTimeout(function() {
-            var targetEl = document.querySelector(initialHash);
-            if (targetEl) {
-              var headerHeight = 80;
-              var pos = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-              window.scrollTo({ top: Math.max(0, pos), behavior: 'smooth' });
-              // Clean URL bar silently
-              if (history.replaceState) {
-                history.replaceState(null, null, window.location.pathname + window.location.search);
-              }
-            }
-          }, 200);
-        }
-      });
     </script>
 
     <slot name="head" />
@@ -357,15 +293,10 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <slot />
 
   <script is:inline>
-    if (typeof lucide !== 'undefined') {
-    if (typeof lucide !== 'undefined' && lucide && lucide.createIcons) { lucide.createIcons(); }
+    if (typeof lucide !== 'undefined' && lucide && lucide.createIcons) {
+      lucide.createIcons();
     }
-  </script>
 
-  <!-- Hidden Container for Google Translate Core -->
-  
-
-  <script is:inline>
     // Universal Mobile Menu Toggle
     window.toggleMobileMenu = function() {
       var menu = document.getElementById('mobile-menu');
@@ -381,14 +312,6 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       }
     };
 
-        // Purge legacy googtrans cookies
-    try {
-      var h = window.location.hostname;
-      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=." + h + "; path=/;";
-      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=" + h + "; path=/;";
-    } catch(e) {}
-
     function toggleLangMenu(button) {
       const parent = button.closest('.group\\/lang') || button.parentElement;
       const menu = parent ? parent.querySelector('.lang-dropdown-box') : null;
@@ -399,38 +322,6 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         menu.classList.toggle('pointer-events-auto');
       }
     }
-
-    // Precision Smooth Anchor Scroller with Live Offset
-    document.querySelectorAll('a[href*="#"]').forEach(function(anchor) {
-      anchor.addEventListener('click', function(e) {
-        var href = this.getAttribute('href');
-        if (!href) return;
-        var hashIndex = href.indexOf('#');
-        if (hashIndex === -1) return;
-        var hash = href.substring(hashIndex);
-        var path = href.substring(0, hashIndex);
-        
-        if (path === '' || path === '/' || path === window.location.pathname) {
-          if (hash && hash !== '#' && hash !== '#!') {
-            var target = document.querySelector(hash);
-            if (target) {
-              e.preventDefault();
-              var stickyNav = document.getElementById('categories') || document.querySelector('header');
-              var headerOffset = stickyNav ? stickyNav.offsetHeight : 0;
-              var elementPosition = target.getBoundingClientRect().top;
-              var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-              window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-              });
-              if (history.pushState) {
-                history.pushState(null, null, hash);
-              }
-            }
-          }
-        }
-      });
-    });
   </script>
 
   <!-- MODAL VOYAGE SUR-MESURE (HAUT DE GAMME & RESPONSIVE) -->
@@ -591,6 +482,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
             <textarea id="custom-notes" rows="3" placeholder={isEn ? "Preferred dates (e.g. October 2026), accommodation preference, walking pace, special wildlife interests..." : "Période envisagée (ex: Octobre 2026), type d'hébergement souhaité, rythme de marche, centres d'intérêt particuliers..."} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
           </div>
 
+          <!-- Anti-Spam Honeypot -->
+          <input type="text" name="_honey" id="custom-honey" style="display:none" tabindex="-1" autocomplete="off" />
+
           <!-- Bouton Submit -->
           <div class="pt-2">
             <button type="submit" id="custom-tour-submit-btn" class="w-full py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-100 active:scale-95 transition-all text-center cursor-pointer">
@@ -649,6 +543,9 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
         <form id="tour-booking-form" onsubmit="handleTourBookingSubmit(event)" class="space-y-4 text-sm">
           
+          <!-- Anti-Spam Honeypot -->
+          <input type="text" name="_honey" id="booking-honey" style="display:none" tabindex="-1" autocomplete="off" />
+
           <!-- Configuration: Dates & Nombre de voyageurs -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- Date de départ souhaitée -->
@@ -1043,6 +940,8 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
     window.handleTourBookingSubmit = async function(e) {
       if (e && e.preventDefault) e.preventDefault();
+      var honey = document.getElementById('booking-honey');
+      if (honey && honey.value) return false;
 
       var isEn = document.documentElement.lang === 'en';
       var btn = document.getElementById('booking-submit-btn');
@@ -1082,6 +981,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         _subject: (isEn ? "New Booking Inquiry: " : "Nouvelle Réservation Circuit: ") + (config.title || "Séjour"),
         _template: "table",
         _captcha: "false",
+        _honey: "",
         _replyto: email,
         type_demande: "Réservation Expédition Circuit",
         circuit: config.title || "Circuit Jungle Nepal",
@@ -1167,7 +1067,10 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
     // Handle Custom Tour Submission to FormSubmit
     window.handleCustomTourSubmit = async function(e) {
       if (e && e.preventDefault) e.preventDefault();
+      var honey = document.getElementById('custom-honey');
+      if (honey && honey.value) return false;
 
+      var isEn = document.documentElement.lang === 'en';
       var btn = document.getElementById('custom-tour-submit-btn');
       var successBox = document.getElementById('custom-tour-success');
       var errorBox = document.getElementById('custom-tour-error');
@@ -1191,15 +1094,14 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
       if (!prenom || !nom || !email || !phone || !notes) {
         if (errorBox) {
-          var isEn = document.documentElement.lang === 'en';
-document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please fill in all required fields (*).' : 'Veuillez remplir tous les champs obligatoires (*).';
+          document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please fill in all required fields (*).' : 'Veuillez remplir tous les champs obligatoires (*).';
           errorBox.classList.remove('hidden');
         }
         return false;
       }
 
       if (btn) {
-        btn.innerHTML = '<span class="inline-flex items-center gap-2"><span>' + (document.documentElement.lang === 'en' ? 'Sending request...' : 'Transmission en cours...') + '</span> <svg class="animate-spin w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg></span>';
+        btn.innerHTML = '<span class="inline-flex items-center gap-2"><span>' + (isEn ? 'Sending request...' : 'Transmission en cours...') + '</span> <svg class="animate-spin w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg></span>';
         btn.disabled = true;
       }
 
@@ -1207,6 +1109,7 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
         _subject: '🌟 NOUVEAU PROJET SUR-MESURE : ' + prenom + ' ' + nom + ' (' + travelers + ' - ' + duration + ')',
         _template: 'table',
         _captcha: 'false',
+        _honey: '',
         _replyto: email,
         type_demande: 'Voyage Sur-Mesure & Privatisé',
         client_nom_complet: prenom + ' ' + nom,
@@ -1216,7 +1119,7 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
         duree_estimee: duration,
         priorites_choisies: priorities.join(', '),
         details_du_projet: notes,
-        date_envoi: new Date().toLocaleString('fr-FR')
+        date_envoi: new Date().toLocaleString(isEn ? 'en-US' : 'fr-FR')
       };
 
       var isSuccess = false;
@@ -1246,11 +1149,11 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
         if (form) form.reset();
         if (successBox) successBox.classList.remove('hidden');
         if (btn) {
-          btn.innerHTML = document.documentElement.lang === 'en' ? '✓ Expedition request sent successfully!' : '✓ Projet transmis avec succès !';
+          btn.innerHTML = isEn ? '✓ Expedition request sent successfully!' : '✓ Projet transmis avec succès !';
           btn.classList.add('bg-emerald-700');
           setTimeout(function() {
             closeCustomTourModal();
-            btn.innerHTML = '{isEn ? "Send My Custom Expedition Request →" : "Envoyer ma demande de voyage sur-mesure →"}';
+            btn.innerHTML = isEn ? 'Send My Custom Expedition Request →' : 'Envoyer ma demande de voyage sur-mesure →';
             btn.classList.remove('bg-emerald-700');
             btn.disabled = false;
           }, 3500);
@@ -1260,7 +1163,7 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
           errorBox.classList.remove('hidden');
         }
         if (btn) {
-          btn.innerHTML = 'Réessayer l\'envoi →';
+          btn.innerHTML = isEn ? 'Retry submission →' : 'Réessayer l\'envoi →';
           btn.disabled = false;
         }
       }
@@ -1373,17 +1276,19 @@ document.getElementById('custom-tour-error-text').textContent = isEn ? 'Please f
         });
       }
 
-      // Handle in-page clicks on anchor links (#... or /#...)
+      // Handle in-page clicks on anchor links (#..., /#..., or /en/#...)
       document.addEventListener('click', function(e) {
         var link = e.target.closest('a');
         if (!link) return;
         var href = link.getAttribute('href');
-        if (!href) return;
+        if (!href || href.indexOf('#') === -1) return;
 
-        var isCurrentHome = (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '');
-        var isAnchor = href.startsWith('#') || (href.startsWith('/#') && isCurrentHome);
-        if (isAnchor) {
-          var targetId = href.replace(/^\/?#/, '');
+        var hashIndex = href.indexOf('#');
+        var linkPath = href.substring(0, hashIndex).replace(/\/index\.html$/, '').replace(/\/$/, '');
+        var currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '');
+
+        if (!linkPath || linkPath === currentPath) {
+          var targetId = href.substring(hashIndex + 1);
           if (targetId) {
             var targetEl = document.getElementById(targetId);
             if (targetEl) {

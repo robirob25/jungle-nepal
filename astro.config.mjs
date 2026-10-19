@@ -102,7 +102,7 @@ export default defineConfig({
     '/safaris': { status: 301, destination: '/tours/jungle-extreme' },
 
     // 6. Anciens articles de blog WordPress
-    '/babai-valley-la-vallee-oubliee-du-nepal-sauvage': { status: 301, destination: '/blog/babai-valley-vallee-oubliee-safari-sauvage' },
+    '/babai-valley-la-vallee-oubliee-du-nepal-sauvage': { status: 301, destination: '/tours/babai-special' },
     '/bardia-ou-chitwan-safari-nepal': { status: 301, destination: '/blog/bardia-ou-chitwan-quel-parc-choisir' },
     '/camping-jungle-nepal': { status: 301, destination: '/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal' },
     '/culture-tharu-a-bardia-traditions-villages-et-vie-locale': { status: 301, destination: '/blog/culture-tharu-nepal-immersion-jungle' },
