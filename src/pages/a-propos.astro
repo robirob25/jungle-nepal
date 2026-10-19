@@ -448,10 +448,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         
         <!-- Kiran -->
-        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
               <img loading="lazy" decoding="async" src="/assets/kiran_guide_nepal_v2.webp" alt="Kiran Co-Fondateur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/bivouac_camp.webp'"/>
@@ -468,7 +468,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <!-- Pawan -->
-        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
               <img loading="lazy" decoding="async" src="/assets/pawan_guide_bardia_v2.webp" alt="Pawan Chef Pisteur" class="w-full h-full object-cover" onerror="this.src='/assets/original_site/safari_pied.webp'"/>
@@ -484,8 +484,25 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </div>
 
+        <!-- Harry -->
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center text-4xl">
+              <img loading="lazy" decoding="async" src="/assets/harry_guide_nepal.webp" alt="Harry Guide Culturel Francophone et Anglophone Katmandou" class="w-full h-full object-cover"/>
+            </div>
+            <div class="text-[11px] font-extrabold uppercase text-[#0e8354] tracking-wider mb-1">Guide Principal Culturel · FR & EN</div>
+            <h3 class="font-black text-2xl text-slate-950">Harry</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+              Notre guide principal francophone et anglophone pour la <a href="/destinations/katmandou" class="text-[#0e8354] hover:text-[#0c6d46] font-bold underline decoration-emerald-500/30 underline-offset-2 transition-colors">vallée de Katmandou</a> et toutes les visites culturelles. Passionné d'histoire, de spiritualité bouddhiste et hindouiste, Harry vous fait découvrir les cités royales de Bhaktapur, Patan et les sanctuaires sacrés loin des parcours classiques.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-500">
+            Vallée de Katmandou, Népal
+          </div>
+        </div>
+
         <!-- Robin -->
-        <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+        <div class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 border-2 border-emerald-600 shadow-lg bg-slate-100 flex items-center justify-center">
               <img loading="lazy" decoding="async" src="/assets/robin_coordinateur_expedition_jungle_nepal.webp" alt="Robin Conseiller Voyage" class="w-full h-full object-cover object-top"/>
