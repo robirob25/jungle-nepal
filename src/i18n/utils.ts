@@ -72,7 +72,8 @@ export const BLOG_SLUG_MAP_FR_TO_EN: Record<string, string> = {
   'singes-nepal-langurs-macaques-guide': 'monkeys-of-nepal-langurs-macaques-guide',
   'tigre-bardia-observation-chances-spots': 'tigers-in-bardia-sighting-chances-best-spots',
   'trek-jungle-nepal-safari-pied': 'jungle-trekking-nepal-walking-safari-guide',
-  'voir-des-tigres-au-nepal': 'bengal-tigers-in-nepal-wildlife-safari-guide'
+  'voir-des-tigres-au-nepal': 'bengal-tigers-in-nepal-wildlife-safari-guide',
+  'dauphin-du-gange-nepal-riviere-karnali-bardia': 'ganges-river-dolphin-nepal-karnali-bardia-guide'
 };
 
 export const BLOG_SLUG_MAP_EN_TO_FR: Record<string, string> = Object.entries(BLOG_SLUG_MAP_FR_TO_EN).reduce(
