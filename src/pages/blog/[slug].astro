@@ -489,16 +489,16 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
 
   /* Clean Minimalist CTA Block */
   .article-content-body .blog-cta-card {
-    background-color: #042014 !important;
-    border: 1px solid rgba(16, 185, 129, 0.25) !important;
-    border-radius: 1rem !important;
-    padding: 1.5rem 1.75rem !important;
+    background: linear-gradient(135deg, #042014 0%, #083824 100%) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    border-radius: 1.25rem !important;
+    padding: 1.75rem 2rem !important;
     margin: 2.5rem 0 !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 1.25rem !important;
     text-align: left !important;
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 10px 30px -5px rgba(4, 32, 20, 0.25) !important;
   }
 
   @media (min-width: 640px) {
@@ -509,9 +509,14 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     }
   }
 
-  .article-content-body .blog-cta-card h3 {
+  .article-content-body .blog-cta-card h2,
+  .article-content-body .blog-cta-card h3,
+  .article-content-body .blog-cta-card h4,
+  .article-content-body .blog-cta-card h2 strong,
+  .article-content-body .blog-cta-card h3 strong,
+  .article-content-body .blog-cta-card h4 strong {
     color: #ffffff !important;
-    font-size: 1.2rem !important;
+    font-size: 1.25rem !important;
     font-weight: 800 !important;
     margin: 0 !important;
     line-height: 1.35 !important;
@@ -519,22 +524,50 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     text-shadow: none !important;
   }
 
-  .article-content-body .blog-cta-card p {
-    color: #cbd5e1 !important;
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    margin: 0.35rem 0 0 0 !important;
-    max-width: 34rem !important;
+  .article-content-body .blog-cta-card span {
+    color: #6ee7b7 !important;
+    font-size: 0.7rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    display: inline-block !important;
+    margin-bottom: 0.25rem !important;
   }
 
-  .article-content-body .blog-cta-card a.cta-btn {
+  .article-content-body .blog-cta-card p,
+  .article-content-body .blog-cta-card li {
+    color: #e2e8f0 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+    margin: 0.35rem 0 0 0 !important;
+    max-width: 36rem !important;
+  }
+
+  .article-content-body .blog-cta-card strong,
+  .article-content-body .blog-cta-card b {
+    color: #ffffff !important;
+  }
+
+  .article-content-body .blog-cta-card a:not(.cta-btn):not(.cta-btn-alt) {
+    color: #fbbf24 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #fbbf24 !important;
+  }
+
+  .article-content-body a.cta-btn,
+  .article-content-body .blog-cta-card a.cta-btn,
+  .article-content-body a[style*="background:#134836"],
+  .article-content-body a[style*="background: #134836"],
+  .article-content-body a[style*="background-color: #134836"],
+  .article-content-body a[style*="background: #0f172a"],
+  .article-content-body a[style*="background: #10b981"] {
     background-color: #10b981 !important;
     background-image: none !important;
     color: #ffffff !important;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     font-size: 0.875rem !important;
     padding: 0.75rem 1.35rem !important;
-    border-radius: 0.625rem !important;
+    border-radius: 0.75rem !important;
     text-decoration: none !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -542,12 +575,45 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     white-space: nowrap !important;
     flex-shrink: 0 !important;
     transition: background-color 0.2s ease, transform 0.15s ease !important;
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
     border: none !important;
   }
 
-  .article-content-body .blog-cta-card a.cta-btn:hover {
+  .article-content-body a.cta-btn:hover,
+  .article-content-body .blog-cta-card a.cta-btn:hover,
+  .article-content-body a[style*="background:#134836"]:hover,
+  .article-content-body a[style*="background: #134836"]:hover,
+  .article-content-body a[style*="background-color: #134836"]:hover,
+  .article-content-body a[style*="background: #0f172a"]:hover,
+  .article-content-body a[style*="background: #10b981"]:hover {
     background-color: #059669 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    text-decoration: none !important;
+  }
+
+  .article-content-body a.cta-btn-alt,
+  .article-content-body .blog-cta-card a.cta-btn-alt {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 0.75rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    transition: background-color 0.2s ease, transform 0.15s ease !important;
+  }
+
+  .article-content-body a.cta-btn-alt:hover,
+  .article-content-body .blog-cta-card a.cta-btn-alt:hover {
+    background-color: rgba(255, 255, 255, 0.22) !important;
     color: #ffffff !important;
     transform: translateY(-1px) !important;
     text-decoration: none !important;
