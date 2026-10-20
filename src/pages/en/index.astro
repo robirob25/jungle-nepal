@@ -432,8 +432,19 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <p>The other side of Nepal, where roads end. From the tigers of Bardia and Chitwan to the trails of the Himalayas, explore untamed wilderness guided by our native local experts.</p>
       </div>
 
-      <!-- SEARCH CARD WEROAD LUXE (AVEC ICÔNES INLINE GARANTIES & BOUTON RECHERCHE) -->
-      <div class="w-full max-w-3xl mt-7 sm:mt-8 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] p-2 sm:p-2.5 border border-slate-100 text-left text-slate-900">
+      <!-- MOBILE ACTION CTA (< sm: 640px) : ULTRA-CLEAN & FULL VIDEO VISIBILITY -->
+      <div class="block sm:hidden mt-6 w-full max-w-xs mx-auto">
+        <a 
+          href="#categories" 
+          class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#0e5c3e]/90 hover:bg-[#09422b] backdrop-blur-md text-white font-black text-sm shadow-xl shadow-black/40 border border-emerald-400/40 active:scale-95 transition-all text-center w-full"
+        >
+          <span>Explore All 18 Expeditions</span>
+          <span class="text-amber-300 font-bold">↓</span>
+        </a>
+      </div>
+
+      <!-- SEARCH CARD WEROAD LUXE (DESKTOP & TABLET >= sm) -->
+      <div class="hidden sm:block w-full max-w-3xl mt-7 sm:mt-8 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] p-2 sm:p-2.5 border border-slate-100 text-left text-slate-900">
         <form onsubmit="handleSearch(event)" class="flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
           
           <!-- Column 1: Où ? -->
