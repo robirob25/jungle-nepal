@@ -484,17 +484,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <span class="sm:hidden">The other side of Nepal, where roads end. Explore untamed wilderness guided by our native local experts.</span>
           <span class="hidden sm:inline">The other side of Nepal, where roads end. From the tigers of Bardia and Chitwan to the trails of the Himalayas, explore untamed wilderness guided by our native local experts.</span>
         </p>
-
-        <!-- MOBILE ACTION LINK (< sm: 640px) : DISCREET & ELEGANT -->
-        <div class="block sm:hidden mt-3.5 mx-auto">
-          <a 
-            href="#categories" 
-            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md text-white/95 border border-white/20 text-xs font-medium tracking-wide transition-all active:scale-95 group shadow-sm"
-          >
-            <span>Explore all 18 expeditions</span>
-            <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
-          </a>
-        </div>
       </div>
 
       <!-- SEARCH CARD WEROAD LUXE (DESKTOP & TABLET >= sm) -->
@@ -556,6 +545,17 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </form>
       </div>
+    </div>
+
+    <!-- MOBILE BOTTOM ACTION LINK (< sm: 640px) : ANCRÉ ÉLÉGAMMENT EN BAS -->
+    <div class="block sm:hidden relative z-10 mt-auto pb-2">
+      <a 
+        href="#categories" 
+        class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-black/45 hover:bg-black/65 backdrop-blur-md text-white/95 border border-white/20 text-xs font-medium tracking-wide transition-all active:scale-95 group shadow-lg"
+      >
+        <span>Explore all 18 expeditions</span>
+        <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
+      </a>
     </div>
   </section>
 
