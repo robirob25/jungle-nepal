@@ -271,7 +271,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <!-- ========================================================================= -->
   <!-- 3. HERO SECTION (WeRoad Layout épuré avec la charte Verte & Or) -->
   <!-- ========================================================================= -->
-  <section class="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-start sm:justify-between items-center pt-24 sm:pt-40 lg:pt-44 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
+  <section class="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center pt-32 sm:pt-40 lg:pt-44 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
     
     <!-- MOBILE VIDEO HERO BACKGROUND (< md: 768px) -->
     <div class="block md:hidden absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -465,36 +465,43 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="absolute inset-0 z-10 bg-slate-950/30 pointer-events-none"></div>
     <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-transparent to-slate-950/70 pointer-events-none"></div>
 
-    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center w-full mt-2 mb-auto sm:my-auto">
+    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col justify-between sm:justify-center items-center w-full flex-1 sm:my-auto">
       
-      <!-- Main H1 (SEO-optimized & High-End Visual Hierarchy) -->
-      <h1 class="text-center max-w-4xl mx-auto">
-        <span class="block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] text-amber-300/90 mb-2 sm:mb-3 drop-shadow-md">
-          Jungle Nepal Adventure
-        </span>
-        <span class="block font-black text-3xl sm:text-5xl md:text-6xl text-white tracking-tight leading-[1.12] drop-shadow-2xl">
-          Safaris & Treks in Nepal <span class="whitespace-nowrap font-serif italic font-normal text-amber-100">in small groups</span>
-        </span>
-      </h1>
-
-      <!-- Subtitle -->
-      <div class="mt-3 sm:mt-5 text-sm sm:text-base md:text-lg text-white/90 max-w-2xl font-normal leading-relaxed drop-shadow-md mx-auto">
-        <p>The other side of Nepal, where roads end. From the tigers of Bardia and Chitwan to the trails of the Himalayas, explore untamed wilderness guided by our native local experts.</p>
+      <!-- TOP BLOCK (remonté un petit peu, garde une distance élégante sous le header) -->
+      <div class="w-full">
+        <h1 class="text-center max-w-4xl mx-auto">
+          <span class="block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] text-amber-300/90 mb-1.5 sm:mb-3 drop-shadow-md">
+            Jungle Nepal Adventure
+          </span>
+          <span class="block font-black text-2xl sm:text-5xl md:text-6xl text-white tracking-tight leading-[1.15] drop-shadow-2xl">
+            Safaris & Treks in Nepal <span class="whitespace-nowrap font-serif italic font-normal text-amber-100">in small groups</span>
+          </span>
+        </h1>
       </div>
 
-      <!-- MOBILE ACTION LINK (< sm: 640px) : DISCREET & ELEGANT -->
-      <div class="block sm:hidden mt-4 mx-auto">
-        <a 
-          href="#categories" 
-          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md text-white/90 hover:text-white border border-white/20 text-xs font-medium tracking-wide transition-all active:scale-95 group shadow-sm"
-        >
-          <span>Explore all 18 expeditions</span>
-          <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
-        </a>
-      </div>
+      <!-- ESPACE CENTRAL MOBILE DÉGAGÉ : pour que l'action au centre de la vidéo soit 100% visible -->
+      <div class="sm:hidden flex-1 min-h-[90px] max-h-[170px] pointer-events-none" aria-hidden="true"></div>
 
-      <!-- SEARCH CARD WEROAD LUXE (DESKTOP & TABLET >= sm) -->
-      <div class="hidden sm:block w-full max-w-3xl mt-7 sm:mt-8 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] p-2 sm:p-2.5 border border-slate-100 text-left text-slate-900">
+      <!-- BOTTOM BLOCK MOBILE (descendu vers le bas) & DESKTOP (centré) -->
+      <div class="w-full flex flex-col items-center sm:mt-5">
+        <!-- Subtitle -->
+        <div class="text-xs sm:text-base md:text-lg text-white/90 max-w-2xl font-normal leading-relaxed drop-shadow-md mx-auto px-2">
+          <p>The other side of Nepal, where roads end. From the tigers of Bardia and Chitwan to the trails of the Himalayas, explore untamed wilderness guided by our native local experts.</p>
+        </div>
+
+        <!-- MOBILE ACTION LINK (< sm: 640px) : DISCREET & ELEGANT -->
+        <div class="block sm:hidden mt-3 mx-auto">
+          <a 
+            href="#categories" 
+            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md text-white/95 border border-white/20 text-xs font-medium tracking-wide transition-all active:scale-95 group shadow-sm"
+          >
+            <span>Explore all 18 expeditions</span>
+            <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
+          </a>
+        </div>
+
+        <!-- SEARCH CARD WEROAD LUXE (DESKTOP & TABLET >= sm) -->
+        <div class="hidden sm:block w-full max-w-3xl mt-7 sm:mt-8 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] p-2 sm:p-2.5 border border-slate-100 text-left text-slate-900">
         <form onsubmit="handleSearch(event)" class="flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
           
           <!-- Column 1: Où ? -->
@@ -551,6 +558,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
 
         </form>
+      </div>
       </div>
     </div>
   </section>
