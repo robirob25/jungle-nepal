@@ -273,9 +273,24 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <!-- ========================================================================= -->
   <section class="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center pt-36 sm:pt-40 lg:pt-44 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
     
-        <!-- 10-PHOTO CINEMA HERO AUTO-SLIDER (ZERO BLACK/EMPTY SLIDES GUARANTEED) -->
-        <!-- 10-PHOTO CINEMA HERO AUTO-SLIDER (ZERO BLACK/EMPTY SLIDES GUARANTEED) -->
-    <div class="absolute inset-0 z-0 overflow-hidden" id="hero-slider-container">
+    <!-- MOBILE VIDEO HERO BACKGROUND (< md: 768px) -->
+    <div class="block md:hidden absolute inset-0 z-0 overflow-hidden">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="/assets/hero/hero_mobile_poster.webp"
+        class="w-full h-full object-cover object-center filter brightness-90 contrast-105"
+      >
+        <source src="/assets/hero/hero_mobile.webm" type="video/webm" />
+        <source src="/assets/hero/hero_mobile.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- DESKTOP 10-PHOTO CINEMA HERO AUTO-SLIDER (>= md: 768px) -->
+    <div class="hidden md:block absolute inset-0 z-0 overflow-hidden" id="hero-slider-container">
       
       <!-- Slide 0: Tigre royal au bord de l'eau (LCP Element - Priority High) -->
       <div class="hero-slide absolute inset-0 transition-opacity duration-400 ease-out opacity-100 scale-100" data-slide="0">
@@ -394,10 +409,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         />
       </div>
 
-      <!-- Balanced Cinematic Gradient & Tint for Clarity & Warmth -->
-      <div class="absolute inset-0 z-10 bg-slate-950/30 pointer-events-none"></div>
-      <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-transparent to-slate-950/70 pointer-events-none"></div>
     </div>
+
+    <!-- Balanced Cinematic Gradient & Tint for Clarity & Warmth (Applies to both Mobile Video & Desktop Slider) -->
+    <div class="absolute inset-0 z-10 bg-slate-950/30 pointer-events-none"></div>
+    <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-transparent to-slate-950/70 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center w-full my-auto">
       
@@ -428,14 +444,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
             <div class="relative mt-0.5">
                                                       <select id="search-dest" name="destination" aria-label="Choose a destination or expedition type" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">Tours & expeditions</option>
-            <option value="sejours-courts">Short Stays (9 tours)</option>
-            <option value="safari">Safaris & Big Cats (18 tours)</option>
+            <option value="all">All Expeditions (18)</option>
+            <option value="sejours-courts">Short Stays (6 tours)</option>
+            <option value="safari">Safaris & Big Cats (14 tours)</option>
             <option value="bivouac">Jungle Bivouacs & Wild Nights (5 tours)</option>
             <option value="chitwan">Rhinos & Chitwan National Park (5 tours)</option>
-            <option value="rafting">Rafting & River Expeditions (4 tours)</option>
+            <option value="rafting">Rafting & River Expeditions (3 tours)</option>
             <option value="mustang-himalaya">Himalayas, Mustang & Spirituality (7 tours)</option>
-            <option value="grand-tour">360° Total Immersion Tours (6 tours)</option>
+            <option value="grand-tour">360° Total Immersion Tours (7 tours)</option>
           </select>
               <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-slate-400">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -5360,6 +5376,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     };
 
     function startHeroSlider() {
+      if (typeof window !== 'undefined' && window.innerWidth < 768) return;
       if (heroInterval) clearInterval(heroInterval);
       heroInterval = setInterval(nextHeroSlide, 4500);
     }
