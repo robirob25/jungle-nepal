@@ -274,19 +274,69 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   <section class="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center pt-36 sm:pt-40 lg:pt-44 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950">
     
     <!-- MOBILE VIDEO HERO BACKGROUND (< md: 768px) -->
-    <div class="block md:hidden absolute inset-0 z-0 overflow-hidden">
+    <div class="block md:hidden absolute inset-0 z-0 overflow-hidden pointer-events-none">
       <video
+        id="hero-mobile-video-en"
         autoplay
         muted
         loop
         playsinline
-        preload="metadata"
+        webkit-playsinline
+        x5-playsinline
+        disablepictureinpicture
+        disableremoteplayback
+        preload="auto"
         poster="/assets/hero/hero_mobile_poster.webp"
-        class="w-full h-full object-cover object-center filter brightness-90 contrast-105"
+        class="w-full h-full object-cover object-center filter brightness-90 contrast-105 pointer-events-none"
       >
-        <source src="/assets/hero/hero_mobile.webm" type="video/webm" />
         <source src="/assets/hero/hero_mobile.mp4" type="video/mp4" />
+        <source src="/assets/hero/hero_mobile.webm" type="video/webm" />
       </video>
+      <script is:inline>
+        (function() {
+          var v = document.getElementById('hero-mobile-video-en');
+          if (!v) return;
+          v.muted = true;
+          v.defaultMuted = true;
+          
+          function playHeroVideo() {
+            if (!v.paused) return;
+            var p = v.play();
+            if (p && typeof p.catch === 'function') {
+              p.catch(function() {
+                var events = ['touchstart', 'touchend', 'click', 'scroll', 'pointerdown'];
+                var handler = function() {
+                  v.play();
+                  events.forEach(function(e) { window.removeEventListener(e, handler); });
+                };
+                events.forEach(function(e) { window.addEventListener(e, handler, { passive: true, once: true }); });
+              });
+            }
+          }
+
+          if (v.readyState >= 2) {
+            playHeroVideo();
+          } else {
+            v.addEventListener('loadeddata', playHeroVideo, { once: true });
+            v.addEventListener('canplay', playHeroVideo, { once: true });
+          }
+
+          document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) playHeroVideo();
+          });
+          window.addEventListener('pageshow', playHeroVideo);
+        })();
+      </script>
+      <style>
+        #hero-mobile-video-en::-webkit-media-controls,
+        #hero-mobile-video-en::-webkit-media-controls-start-playback-button,
+        #hero-mobile-video-en::-webkit-media-controls-play-button {
+          display: none !important;
+          -webkit-appearance: none !important;
+          opacity: 0 !important;
+          visibility: hidden !important;
+        }
+      </style>
     </div>
 
     <!-- DESKTOP 10-PHOTO CINEMA HERO AUTO-SLIDER (>= md: 768px) -->
