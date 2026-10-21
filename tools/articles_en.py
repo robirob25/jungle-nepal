@@ -413,7 +413,7 @@ ARTICLES_EN = [
         "category": "Safari Spirit",
         "readingTime": "11 min",
         "date": "2026-10-21T18:00:00.000Z",
-        "featuredImage": "/assets/drive_photos/2026-05-08_-_0000273913_-_Voyageurs_dans_la_jungle_de_Bardia.webp",
+        "featuredImage": "/assets/drive_wildlife/2026-05-08_-_0000273913_-_Voyageurs_dans_la_jungle_de_Bardia.webp",
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
@@ -433,7 +433,7 @@ ARTICLES_EN = [
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
-  <img src="/assets/drive_photos/2026-05-08_-_0000273913_-_Voyageurs_dans_la_jungle_de_Bardia.webp" alt="Micro-group of four travelers hiking single file through Bardia jungle in Nepal" class="w-full h-auto object-cover" loading="lazy" />
+  <img src="/assets/drive_wildlife/2026-05-08_-_0000273913_-_Voyageurs_dans_la_jungle_de_Bardia.webp" alt="Micro-group of four travelers hiking single file through Bardia jungle in Nepal" class="w-full h-auto object-cover" loading="lazy" />
   <figcaption class="text-xs text-slate-500 text-center py-2 bg-slate-50 border-t border-slate-100">
     The micro-group difference: hiking in a tight, silent single file led by indigenous wildlife trackers.
   </figcaption>
