@@ -103,7 +103,7 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
   // Exact route translation map between FR and EN
   const routeMap: Record<string, { fr: string; en: string }> = {
     '': { fr: '/', en: '/en/' },
-    '/index': { fr: '/', en: '/en/' },
+    '/safari-nepal': { fr: '/safari-nepal', en: '/en/safari-nepal' },
     '/a-propos': { fr: '/a-propos', en: '/en/about' },
     '/about': { fr: '/a-propos', en: '/en/about' },
     '/mentions-legales': { fr: '/mentions-legales', en: '/en/legal-mentions' },
