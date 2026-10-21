@@ -8,6 +8,7 @@ export const defaultLang = 'fr';
 export const ui = {
   fr: {
     'nav.tours': 'Tous les 18 circuits',
+    'nav.safari': 'Safari au Népal',
     'nav.activities': 'Activités',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Nos guides',
@@ -59,6 +60,7 @@ export const ui = {
   },
   en: {
     'nav.tours': 'All 18 Expeditions',
+    'nav.safari': 'Nepal Safari',
     'nav.activities': 'Activities',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Our Guides',
