@@ -63,6 +63,11 @@ Options -Indexes -MultiViews
     # ==========================================================================
     # SEO 301 PERMANENT REDIRECTS (ZERO REGRESSION & ZERO 404)
     # ==========================================================================
+    # Singular /tour/ to plural /tours/ 301 redirects
+    RewriteRule ^tour/(.*)$ https://junglenepal.com/tours/$1 [R=301,L,NE]
+    RewriteRule ^en/tour/(.*)$ https://junglenepal.com/en/tours/$1 [R=301,L,NE]
+    RewriteRule ^en/tours/?$ https://junglenepal.com/en/#prochains-departs [R=301,L,NE]
+    RewriteRule ^tours/?$ https://junglenepal.com/nos-offres [R=301,L,NE]
     RewriteRule ^nos-offres/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
     RewriteRule ^offres/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]
     RewriteRule ^nos-aventures/?$ https://junglenepal.com/#prochains-departs [R=301,L,NE]

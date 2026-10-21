@@ -9,13 +9,18 @@ import toursData from '../../data/tours.en.json';
 const safariTourSlugs = [
   "bardia-explorateur",
   "chitwan-bardia-complete",
+  "jungle-extreme",
   "babai-special",
-  "nepal-sauvage",
   "bardia-babai-camping",
+  "safari-chitwan-3-jours",
+  "nepal-sauvage",
+  "panthere-des-neiges",
   "safari-pied-bardia"
 ];
 
-const safariTours = toursData.filter(t => safariTourSlugs.includes(t.slug));
+const safariTours = safariTourSlugs
+  .map(slug => toursData.find(t => t.slug === slug))
+  .filter((t): t is typeof toursData[0] => Boolean(t));
 
 // FAQ Data for Schema.org & visible Accordion
 const faqs = [
@@ -255,8 +260,8 @@ const faqs = [
             Designed, guided, and managed directly by our local team with zero intermediaries. Guaranteed small groups (4–10 guests) or bespoke private departures.
           </p>
         </div>
-        <a href="/en/tours" class="text-xs font-bold text-[#0e8354] hover:underline flex items-center gap-1 shrink-0">
-          <span>View All 18 Tours</span>
+        <a href="/en/#prochains-departs" class="text-xs font-bold text-[#0e8354] hover:underline flex items-center gap-1 shrink-0">
+          <span>View All 18 Expeditions</span>
           <span>→</span>
         </a>
       </div>
@@ -309,7 +314,7 @@ const faqs = [
 
             <div class="p-6 pt-0">
               <a 
-                href={`/en/tour/${tour.slug}`} 
+                href={`/en/tours/${tour.enSlug || tour.slug}`} 
                 class="w-full py-3 px-4 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-bold text-xs uppercase tracking-wide flex items-center justify-center gap-2 transition-all shadow-sm"
               >
                 <span>View Full Itinerary</span>
@@ -342,7 +347,7 @@ const faqs = [
         <div class="relative rounded-3xl overflow-hidden shadow-lg border border-slate-200">
           <div class="relative overflow-hidden bg-[#f0ebd9]">
             <img
-              src="/nepal-map-illustrated.png"
+              src="/nepal-map-illustrated.webp"
               alt="Illustrated map of Nepal National Parks for wildlife safaris - Bardia, Chitwan, Suklaphanta"
               class="w-full h-auto object-contain"
               loading="lazy"
@@ -479,7 +484,7 @@ const faqs = [
         <div class="space-y-1.5">
           <p class="font-extrabold text-base text-slate-950">Robin's Field Tip: The Winning Combination</p>
           <p class="text-sm text-slate-700 leading-relaxed">
-            "If you have 10 to 14 days in Nepal, combine both parks. Start in Chitwan for effortless close encounters with armored rhinos and canoe drifts, then journey west to raw Bardia to focus entirely on walking tiger tracking. That is precisely what we designed in our <a href="/en/tour/chitwan-bardia-complete" class="text-[#0e8354] underline font-bold">Complete Chitwan + Bardia Jungle Safari</a>."
+            "If you have 10 to 14 days in Nepal, combine both parks. Start in Chitwan for effortless close encounters with armored rhinos and canoe drifts, then journey west to raw Bardia to focus entirely on walking tiger tracking. That is precisely what we designed in our <a href="/en/tours/chitwan-bardia-combined-safari" class="text-[#0e8354] underline font-bold">Complete Chitwan + Bardia Jungle Safari</a>."
           </p>
         </div>
       </div>

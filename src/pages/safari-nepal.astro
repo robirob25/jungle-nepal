@@ -9,13 +9,18 @@ import toursData from '../data/tours.json';
 const safariTourSlugs = [
   "bardia-explorateur",
   "chitwan-bardia-complete",
+  "jungle-extreme",
   "babai-special",
-  "nepal-sauvage",
   "bardia-babai-camping",
+  "safari-chitwan-3-jours",
+  "nepal-sauvage",
+  "panthere-des-neiges",
   "safari-pied-bardia"
 ];
 
-const safariTours = toursData.filter(t => safariTourSlugs.includes(t.slug));
+const safariTours = safariTourSlugs
+  .map(slug => toursData.find(t => t.slug === slug))
+  .filter((t): t is typeof toursData[0] => Boolean(t));
 
 // FAQ Data for Schema.org & visible Accordion
 const faqs = [
@@ -309,7 +314,7 @@ const faqs = [
 
             <div class="p-6 pt-0">
               <a 
-                href={`/tour/${tour.slug}`} 
+                href={`/tours/${tour.slug}`} 
                 class="w-full py-3 px-4 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-bold text-xs uppercase tracking-wide flex items-center justify-center gap-2 transition-all shadow-sm"
               >
                 <span>Voir le circuit détaillé</span>
@@ -342,7 +347,7 @@ const faqs = [
         <div class="relative rounded-3xl overflow-hidden shadow-lg border border-slate-200">
           <div class="relative overflow-hidden bg-[#f0ebd9]">
             <img
-              src="/nepal-map-illustrated.png"
+              src="/nepal-map-illustrated.webp"
               alt="Carte illustrée des parcs nationaux du Népal pour le safari - Bardia, Chitwan, Suklaphanta"
               class="w-full h-auto object-contain"
               loading="lazy"
@@ -479,7 +484,7 @@ const faqs = [
         <div class="space-y-1.5">
           <p class="font-extrabold text-base text-slate-950">Le conseil de Robin : la combinaison gagnante</p>
           <p class="text-sm text-slate-700 leading-relaxed">
-            « Si vous disposez de 10 à 14 jours au Népal, combinez les deux réserves. Commencez par Chitwan pour observer facilement les rhinocéros unicornes et descendre la rivière en pirogue, puis rejoignez l'ouest sauvage de Bardia pour vous consacrer entièrement au pistage du tigre à pied. C'est l'itinéraire de notre circuit <a href="/tour/chitwan-bardia-complete" class="text-[#0e8354] underline font-bold">Chitwan + Bardia l'aventure complète</a>. »
+            « Si vous disposez de 10 à 14 jours au Népal, combinez les deux réserves. Commencez par Chitwan pour observer facilement les rhinocéros unicornes et descendre la rivière en pirogue, puis rejoignez l'ouest sauvage de Bardia pour vous consacrer entièrement au pistage du tigre à pied. C'est l'itinéraire de notre circuit <a href="/tours/chitwan-bardia-complete" class="text-[#0e8354] underline font-bold">Chitwan + Bardia l'aventure complète</a>. »
           </p>
         </div>
       </div>

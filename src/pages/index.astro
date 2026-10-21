@@ -266,7 +266,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         x5-playsinline
         disablepictureinpicture
         disableremoteplayback
-        preload="auto"
+        preload="metadata"
         class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-10 opacity-0 transition-opacity duration-500"
       >
         <source src="/assets/hero/hero_mobile_v2.mp4" type="video/mp4" />
@@ -364,10 +364,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         loop
         playsinline
         webkit-playsinline
-        preload="auto"
+        preload="metadata"
         class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-10 transition-opacity duration-500 opacity-0"
       >
-        <source src="/assets/hero/hero_desktop_v2.mp4" type="video/mp4" />
+        <source src="/assets/hero/hero_desktop_v3.mp4" type="video/mp4" />
       </video>
 
       <script is:inline>
@@ -2029,7 +2029,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <!-- Map Container Direct -->
           <div class="relative overflow-hidden bg-[#f0ebd9]">
             <img
-              src="/nepal-map-illustrated.png"
+              src="/nepal-map-illustrated.webp"
               alt="Carte illustrée du Népal - Bardia, Chitwan, Annapurna, Katmandou"
               class="w-full h-auto object-contain"
               loading="lazy"
@@ -5257,15 +5257,22 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     (function() {
       const btn = document.getElementById('back-to-top');
       if (!btn) return;
+      let ticking = false;
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          btn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-          btn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
-        } else {
-          btn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-          btn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            if (window.scrollY > 300) {
+              btn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+              btn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            } else {
+              btn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+              btn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            }
+            ticking = false;
+          });
+          ticking = true;
         }
-      });
+      }, { passive: true });
     })();
   </script>
 
