@@ -363,12 +363,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- High-res desktop poster image -->
       <img
         id="hero-desktop-poster"
-        src="/assets/hero/hero_desktop_poster.webp"
+        src="/assets/hero/hero_desktop_v2_poster.webp"
         alt="Nepal jungle wildlife safari desktop"
         fetchpriority="high"
         loading="eager"
         decoding="async"
-        class="absolute inset-0 w-full h-full object-cover object-center filter brightness-90 contrast-105 pointer-events-none z-0 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0 transition-opacity duration-700"
       />
       <!-- Autoplay looping muted HTML5 video without play button overlay -->
       <video
@@ -379,10 +379,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         playsinline
         webkit-playsinline
         preload="auto"
-        class="absolute inset-0 w-full h-full object-cover object-center filter brightness-90 contrast-105 pointer-events-none z-10 transition-opacity duration-500 opacity-0"
+        class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-10 transition-opacity duration-500 opacity-0"
       >
-        <source src="/assets/hero/hero_desktop.mp4" type="video/mp4" />
-        <source src="/assets/hero/hero_desktop.webm" type="video/webm" />
+        <source src="/assets/hero/hero_desktop_v2.mp4" type="video/mp4" />
       </video>
 
       <script is:inline>
@@ -453,9 +452,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </style>
     </div>
 
-    <!-- Balanced Cinematic Gradient & Tint for Clarity & Warmth (Applies to both Mobile Video & Desktop Slider) -->
-    <div class="absolute inset-0 z-10 bg-slate-950/30 pointer-events-none"></div>
-    <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-transparent to-slate-950/70 pointer-events-none"></div>
+    <!-- Balanced Cinematic Gradient & Tint for Clarity & Warmth (Preserves natural brightness on desktop) -->
+    <div class="absolute inset-0 z-10 bg-slate-950/30 md:hidden pointer-events-none"></div>
+    <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-transparent to-slate-950/70 md:from-black/40 md:via-transparent md:to-black/30 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center w-full mt-4 sm:my-auto">
       
