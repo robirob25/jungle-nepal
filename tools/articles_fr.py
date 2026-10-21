@@ -12,7 +12,7 @@ ARTICLES_FR = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 En résumé : Peut-on vraiment profiter du Népal sans trekker ?</span>
+    <span>En résumé : Peut-on vraiment profiter du Népal sans trekker ?</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     <strong>Oui, absolument.</strong> Si les brochures touristiques réduisent souvent le Népal aux hauts sommets de l'Himalaya et aux treks engagés, le pays abrite une autre facette fascinante : les plaines subtropicales luxuriantes du Teraï, les cités royales médiévales de la vallée de Katmandou, et les sanctuaires de faune sauvage les plus préservés d'Asie (Bardia et Chitwan). Ce guide de terrain détaille un itinéraire complet de 10 à 15 jours sans aucune marche d'altitude, idéal pour les amoureux de faune, les couples et les familles.
@@ -137,7 +137,7 @@ ARTICLES_FR = [
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Les séjours Jungle Nepal Adventure adaptés sans trek :</span>
+    <span>Les séjours Jungle Nepal Adventure adaptés sans trek :</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Pour voyager sereinement au Népal à votre rythme, découvrez nos circuits sans marche d'altitude :
@@ -148,9 +148,9 @@ ARTICLES_FR = [
     <li><a href="/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorateur (5 jours)</a> : le concentré sauvage pour observer le tigre du Bengale avec nos pisteurs.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/tours/nepal-immersion-totale" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Voir le circuit 14 jours</span>
-      <span>→</span>
+    <a href="/tours/nepal-immersion-totale" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Voir le circuit 14 jours</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Échanger sur WhatsApp (+33 6 95 41 32 27)</span>
@@ -170,10 +170,10 @@ ARTICLES_FR = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 En résumé : Pourquoi passer par un réceptif local direct ?</span>
+    <span>En résumé : Pourquoi passer par un réceptif local direct ?</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
-    En réservant votre voyage au Népal auprès d'une agence basée à Paris ou en Europe, <strong>30 à 45 % du prix payé part en commissions marketing</strong>, intermédiaires et marges de revendeurs. En traitant directement avec **Jungle Nepal Adventure**, vous échangez en français avec les créateurs du séjour, bénéficiez de tarifs justes sans surcoût, et vos dépenses rémunèrent directement les maîtres pisteurs, cuisiniers et familles locales qui vous accompagnent sur le terrain.
+    En réservant votre voyage au Népal auprès d'une agence basée à Paris ou en Europe, <strong>30 à 45 % du prix payé part en commissions marketing</strong>, intermédiaires et marges de revendeurs. En traitant directement avec <strong>Jungle Nepal Adventure</strong>, vous échangez en français avec les créateurs du séjour, bénéficiez de tarifs justes sans surcoût, et vos dépenses rémunèrent directement les maîtres pisteurs, cuisiniers et familles locales qui vous accompagnent sur le terrain.
   </p>
 </div>
 
@@ -194,7 +194,7 @@ ARTICLES_FR = [
 
 <h2>1. Le pont francophone & l'expertise locale : la formule Robin, Pawan & Kiran</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  **Jungle Nepal Adventure** est née d'une association sincère entre la France et le Népal :
+  <strong>Jungle Nepal Adventure</strong> est née d'une association sincère entre la France et le Népal :
 </p>
 <ul class="space-y-4 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Robin (coordinateur français) :</strong> Votre interlocuteur direct dès votre premier message. Compréhension intime de vos attentes en matière de confort, de rythme, de sécurité sanitaire et de logistique. Conseils réactifs par email ou WhatsApp sans intermédiaire.</li>
@@ -254,7 +254,7 @@ ARTICLES_FR = [
   Beaucoup d'agences généralistes continuent d'inclure des promenades à dos d'éléphant ou des visites d'enclos captifs dans leurs forfaits au Népal. 
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Chez Jungle Nepal Adventure, notre engagement est ferme : **aucun animal n'est exploité, monté ou enfermé pour le divertissement**. Nos observations se font exclusivement dans le milieu sauvage naturel, en jeep ou à pied, à distance respectueuse, que ce soit lors d'une courte immersion comme notre <a href="/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Nuit Sauvage (2 jours)</a> ou dans notre grande traversée <a href="/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Népal Sauvage (15 jours)</a>.
+  Chez Jungle Nepal Adventure, notre engagement est ferme : <strong>aucun animal n'est exploité, monté ou enfermé pour le divertissement</strong>. Nos observations se font exclusivement dans le milieu sauvage naturel, en jeep ou à pied, à distance respectueuse, que ce soit lors d'une courte immersion comme notre <a href="/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Nuit Sauvage (2 jours)</a> ou dans notre grande traversée <a href="/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Népal Sauvage (15 jours)</a>.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -266,7 +266,7 @@ ARTICLES_FR = [
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Envie d'échanger en direct avec notre équipe locale ?</span>
+    <span>Envie d'échanger en direct avec notre équipe locale ?</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Que vous souhaitiez rejoindre un départ garanti en petit groupe ou créer un circuit privatif sur-mesure au Népal, Robin et nos pisteurs vous répondent sous 24 à 48 heures :
@@ -276,9 +276,9 @@ ARTICLES_FR = [
     <li>Découvrez notre histoire et notre équipe sur la page <a href="/a-propos" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">À Propos de Jungle Nepal Adventure</a>.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/tours" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Voir tous nos circuits</span>
-      <span>→</span>
+    <a href="/tours" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Voir tous nos circuits</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Échanger sur WhatsApp (+33 6 95 41 32 27)</span>
@@ -298,7 +298,7 @@ ARTICLES_FR = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 En résumé : L'équilibre parfait pour 2 semaines au Népal</span>
+    <span>En résumé : L'équilibre parfait pour 2 semaines au Népal</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     Un séjour de 15 jours (2 semaines de vacances) est la durée idéale pour combiner le meilleur du Népal sans passer son temps enfermé dans les transports. Cet itinéraire éprouvé sur le terrain réunit la richesse culturelle de la vallée de Katmandou, la sérénité des contreforts de Pokhara, et une immersion sauvage de 5 jours dans le sanctuaire préservé de Bardia à la recherche du tigre du Bengale.
@@ -383,12 +383,12 @@ ARTICLES_FR = [
 
 <h2>Combien coûte un circuit de 15 jours au Népal ?</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  En passant par notre agence locale en direct, un circuit complet de 15 jours tout compris (hébergements de charme, tous les repas en jungle, véhicules privés, vols intérieurs, permis de parcs nationaux et pisteurs exclusifs) se situe généralement entre **1 600 € et 2 300 € par personne** en micro-groupe, contre plus de 3 200 € à 4 000 € chez les revendeurs français classiques.
+  En passant par notre agence locale en direct, un circuit complet de 15 jours tout compris (hébergements de charme, tous les repas en jungle, véhicules privés, vols intérieurs, permis de parcs nationaux et pisteurs exclusifs) se situe généralement entre <strong>1 600 € et 2 300 € par personne</strong> en micro-groupe, contre plus de 3 200 € à 4 000 € chez les revendeurs français classiques.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Prêt à partir sur cet itinéraire de 15 jours ?</span>
+    <span>Prêt à partir sur cet itinéraire de 15 jours ?</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Découvrez nos deux grands circuits de 15 jours prêts à partir ou demandez un devis personnalisé pour vos dates :
@@ -398,9 +398,9 @@ ARTICLES_FR = [
     <li><a href="/tours/jungle-extreme" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Jungle Extrême – spécial faune sauvage (15 jours)</a> : 100 % immersion safaris félins et grands mammifères.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/tours/nepal-sauvage" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Voir la fiche du circuit 15 jours</span>
-      <span>→</span>
+    <a href="/tours/nepal-sauvage" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Voir la fiche du circuit 15 jours</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Échanger sur WhatsApp (+33 6 95 41 32 27)</span>
@@ -420,10 +420,10 @@ ARTICLES_FR = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 En résumé : La différence entre groupe standard et micro-groupe</span>
+    <span>En résumé : La différence entre groupe standard et micro-groupe</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
-    Dans l'industrie du voyage, un « petit groupe » compte souvent 16 à 22 personnes entassées dans un autocar. En milieu sauvage au Népal, c'est une aberration : le bruit fait fuir les félins à des kilomètres et l'expérience humaine devient impersonnelle. Chez **Jungle Nepal Adventure**, nous limitons strictement nos expéditions à **4 à 10 voyageurs maximum**, accompagnés en permanence par **2 maîtres pisteurs natifs**.
+    Dans l'industrie du voyage, un « petit groupe » compte souvent 16 à 22 personnes entassées dans un autocar. En milieu sauvage au Népal, c'est une aberration : le bruit fait fuir les félins à des kilomètres et l'expérience humaine devient impersonnelle. Chez <strong>Jungle Nepal Adventure</strong>, nous limitons strictement nos expéditions à <strong>4 à 10 voyageurs maximum</strong>, accompagnés en permanence par <strong>2 maîtres pisteurs natifs</strong>.
   </p>
 </div>
 
@@ -475,12 +475,12 @@ ARTICLES_FR = [
   Partir seul ou à deux en voyage 100 % privatisé peut représenter un budget conséquent (coût d'un véhicule 4x4 privatif, carburant, permis et salaires des pisteurs non partagés). 
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Le micro-groupe de 4 à 10 personnes permet de **mutualiser tous ces coûts logistiques fixes** pour obtenir un tarif ultra compétitif, tout en conservant 100 % des avantages d'un voyage exclusif et intimiste.
+  Le micro-groupe de 4 à 10 personnes permet de <strong>mutualiser tous ces coûts logistiques fixes</strong> pour obtenir un tarif ultra compétitif, tout en conservant 100 % des avantages d'un voyage exclusif et intimiste.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Nos séjours phares en micro-groupes (4 à 10 participants) :</span>
+    <span>Nos séjours phares en micro-groupes (4 à 10 participants) :</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Nos départs en petits groupes garantis sont programmés aux meilleures saisons pour maximiser les chances d'observation :
@@ -491,9 +491,9 @@ ARTICLES_FR = [
     <li><a href="/tours/babai-special" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Babai Spécial Experience (5 jours)</a> : immersion profonde dans la vallée interdite.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/tours/bardia-explorateur" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Voir l'expédition Bardia Explorateur</span>
-      <span>→</span>
+    <a href="/tours/bardia-explorateur" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Voir l'expédition Bardia Explorateur</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Échanger sur WhatsApp (+33 6 95 41 32 27)</span>
@@ -513,7 +513,7 @@ ARTICLES_FR = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 En résumé : L'autre Népal, préservé du tourisme de masse</span>
+    <span>En résumé : L'autre Népal, préservé du tourisme de masse</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     Plus de 85 % des touristes internationaux qui visitent le Népal se concentrent sur le même triangle restreint : Katmandou (Thamel), Pokhara et le circuit de l'Annapurna ou du camp de base de l'Everest. Pourtant, en poussant vers l'ouest du pays et dans les vallées reculées du Teraï, il existe un Népal intact, silencieux et spectaculairement sauvage. Voici les 5 régions confidentielles que nous explorons au quotidien.
@@ -588,12 +588,12 @@ ARTICLES_FR = [
   S'aventurer dans ces régions sauvages exige une logistique sans faille : permis spéciaux de parcs nationaux, autorisations militaires pour certaines zones frontalières, réservations de vols intérieurs fiables et accompagnement par des pisteurs locaux certifiés.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  C'est précisément le cœur de métier de **Jungle Nepal Adventure** : ouvrir les portes de ce Népal secret et sauvage, en toute sécurité et avec un respect absolu des populations et de la faune.
+  C'est précisément le cœur de métier de <strong>Jungle Nepal Adventure</strong> : ouvrir les portes de ce Népal secret et sauvage, en toute sécurité et avec un respect absolu des populations et de la faune.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Nos grandes expéditions hors des sentiers battus au Népal :</span>
+    <span>Nos grandes expéditions hors des sentiers battus au Népal :</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Prêt à vivre une aventure brute loin des foules touristiques ? Découvrez nos 3 itinéraires les plus exclusifs :
@@ -604,9 +604,9 @@ ARTICLES_FR = [
     <li><a href="/tours/tiji-mustang" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Tiji Festival – Upper Mustang (13 jours)</a> : canyons ocre et danses sacrées du royaume interdit.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/tours/bardia-babai-camping" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Voir l'expédition Babai Camping</span>
-      <span>→</span>
+    <a href="/tours/bardia-babai-camping" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Voir l'expédition Babai Camping</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Échanger sur WhatsApp (+33 6 95 41 32 27)</span>

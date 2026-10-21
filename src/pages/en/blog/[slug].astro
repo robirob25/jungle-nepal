@@ -310,8 +310,10 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     line-height: 1.85 !important;
   }
 
-  /* Links */
-  .article-content-body a {
+  /* Inline Links */
+  .article-content-body p a,
+  .article-content-body li a,
+  .article-content-body td a {
     color: #0e8354 !important;
     font-weight: 700 !important;
     text-decoration: underline !important;
@@ -320,9 +322,38 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     transition: color 0.15s ease, text-decoration-color 0.15s ease !important;
   }
 
-  .article-content-body a:hover {
+  .article-content-body p a:hover,
+  .article-content-body li a:hover,
+  .article-content-body td a:hover {
     color: #083c27 !important;
     text-decoration-color: #083c27 !important;
+  }
+
+  /* CTA Buttons & Action Cards (Do NOT override colors) */
+  .article-content-body a.cta-btn-primary,
+  .article-content-body a[class*="bg-[#0e8354]"],
+  .article-content-body a[class*="bg-emerald"],
+  .article-content-body a[class*="bg-[#0b5337]"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+  .article-content-body a.cta-btn-primary *,
+  .article-content-body a[class*="bg-[#0e8354]"] *,
+  .article-content-body a[class*="bg-emerald"] *,
+  .article-content-body a[class*="bg-[#0b5337]"] * {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  .article-content-body a.cta-btn-secondary,
+  .article-content-body a[class*="bg-white"] {
+    color: #1e293b !important;
+    text-decoration: none !important;
+  }
+  .article-content-body a.cta-btn-secondary *,
+  .article-content-body a[class*="bg-white"] * {
+    color: #1e293b !important;
+    text-decoration: none !important;
   }
 
   /* Strong */

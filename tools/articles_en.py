@@ -12,7 +12,7 @@ ARTICLES_EN = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 At a Glance: Can You Truly Experience Nepal Without Trekking?</span>
+    <span>At a Glance: Can You Truly Experience Nepal Without Trekking?</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     <strong>Yes, unequivocally.</strong> While mainstream guidebooks often reduce Nepal to strenuous high-altitude mountaineering and 8-hour daily hikes with heavy packs, the country harbors an extraordinary subtropical lowlands world: the Terai. Here, lush ancient Sal jungles shelter Asia's wildest tiger and rhino populations, medieval Newar brick towns preserve living spiritual traditions, and serene foothill viewpoints offer Himalayan panoramas in total comfort.
@@ -134,7 +134,7 @@ ARTICLES_EN = [
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Our Recommended Non-Trekking Nepal Expeditions:</span>
+    <span>Our Recommended Non-Trekking Nepal Expeditions:</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Looking to explore Nepal at an unhurried, comfortable pace? Discover our non-trekking safari and cultural itineraries:
@@ -145,9 +145,9 @@ ARTICLES_EN = [
     <li><a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a>: our focused wilderness safari tracking Royal Bengal Tigers on foot.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/en/tours/nepal-immersion-totale" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>View the 14-Day Tour</span>
-      <span>→</span>
+    <a href="/en/tours/nepal-immersion-totale" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">View the 14-Day Tour</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
@@ -167,10 +167,10 @@ ARTICLES_EN = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 At a Glance: Why Book Direct With an On-The-Ground Specialist?</span>
+    <span>At a Glance: Why Book Direct With an On-The-Ground Specialist?</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
-    When you purchase a Nepal tour through a European or American travel agency, <strong>30% to 45% of your money is absorbed by overseas commissions</strong>, marketing expenses, and reseller margins. By booking directly with **Jungle Nepal Adventure**, you bypass middleman markups, enjoy responsive WhatsApp support, and ensure 100% of your travel spend directly supports native Tharu trackers, local lodge hosts, and forest conservation.
+    When you purchase a Nepal tour through a European or American travel agency, <strong>30% to 45% of your money is absorbed by overseas commissions</strong>, marketing expenses, and reseller margins. By booking directly with <strong>Jungle Nepal Adventure</strong>, you bypass middleman markups, enjoy responsive WhatsApp support, and ensure 100% of your travel spend directly supports native Tharu trackers, local lodge hosts, and forest conservation.
   </p>
 </div>
 
@@ -191,7 +191,7 @@ ARTICLES_EN = [
 
 <h2>1. Western Coordination Meets Indigenous Mastery</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  **Jungle Nepal Adventure** bridges the gap between Western travel standards and unmatched local bushcraft:
+  <strong>Jungle Nepal Adventure</strong> bridges the gap between Western travel standards and unmatched local bushcraft:
 </p>
 <ul class="space-y-4 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Robin (Founder & Trip Coordinator):</strong> Your direct point of contact from day one. He understands international travelers' expectations regarding hygiene, seamless transfers, pacing, dietary preferences, and safety protocols. Fast communication on WhatsApp and email.</li>
@@ -251,7 +251,7 @@ ARTICLES_EN = [
   Many commercial travel agencies continue to feature elephant-back safaris or captive petting enclosures in their standard Chitwan itineraries.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  At Jungle Nepal Adventure, our policy is uncompromising: **zero captive elephant riding, zero forced animal interactions, and zero artificial baiting**. We observe wildlife exclusively in their natural habitats, keeping respectful safety buffers that preserve animal tranquility, whether on a quick 3-day getaway like <a href="/en/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Wild Night</a> or across our 2-week grand expedition <a href="/en/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Nepal: From Jungle to Sacred Peaks (15 Days)</a>.
+  At Jungle Nepal Adventure, our policy is uncompromising: <strong>zero captive elephant riding, zero forced animal interactions, and zero artificial baiting</strong>. We observe wildlife exclusively in their natural habitats, keeping respectful safety buffers that preserve animal tranquility, whether on a quick 3-day getaway like <a href="/en/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Wild Night</a> or across our 2-week grand expedition <a href="/en/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Nepal: From Jungle to Sacred Peaks (15 Days)</a>.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -263,7 +263,7 @@ ARTICLES_EN = [
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Connect Directly With Our Local Ground Team:</span>
+    <span>Connect Directly With Our Local Ground Team:</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Looking to join a guaranteed small-group departure or craft a private, custom itinerary in Nepal? Robin and our trackers reply within 24 to 48 hours:
@@ -273,9 +273,9 @@ ARTICLES_EN = [
     <li>Read about our mission and tracking team on the <a href="/en/about" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">About Jungle Nepal Adventure</a> page.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/en/tours" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>Explore All Tours</span>
-      <span>→</span>
+    <a href="/en/tours" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">Explore All Tours</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
@@ -295,7 +295,7 @@ ARTICLES_EN = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 At a Glance: The Perfect 2-Week Nepal Circuit</span>
+    <span>At a Glance: The Perfect 2-Week Nepal Circuit</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     A 15-day timeframe (standard two-week vacation) is the sweet spot to experience Nepal's extraordinary contrasts without getting bogged down by exhausting road journeys. This field-tested circuit combines the living spiritual heritage of Kathmandu Valley, the peaceful lakeside charm of Pokhara under Annapurna vistas, and an intensive 5-day immersion tracking wild Bengal tigers and rhinos in Bardia National Park.
@@ -380,12 +380,12 @@ ARTICLES_EN = [
 
 <h2>Estimated Budget for a 15-Day Nepal Tour</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  By booking direct with our on-the-ground team, an all-inclusive 15-day expedition (boutique lodges, all jungle meals, domestic flights, private ground vehicles, national park entry fees, and dedicated native trackers) averages between **€1,650 and €2,350 per person** in micro-groups, compared to €3,500+ charged by overseas agencies.
+  By booking direct with our on-the-ground team, an all-inclusive 15-day expedition (boutique lodges, all jungle meals, domestic flights, private ground vehicles, national park entry fees, and dedicated native trackers) averages between <strong>€1,650 and €2,350 per person</strong> in micro-groups, compared to €3,500+ charged by overseas agencies.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Ready to Embark on This 15-Day Nepal Journey?</span>
+    <span>Ready to Embark on This 15-Day Nepal Journey?</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Discover our ready-to-book 15-day itineraries or request custom dates for your family or small group:
@@ -395,9 +395,9 @@ ARTICLES_EN = [
     <li><a href="/en/tours/jungle-extreme" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Extreme Jungle – Big Cat Expedition (15 Days)</a>: 100% wilderness immersion tracking apex predators.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/en/tours/nepal-sauvage" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>View the 15-Day Expedition</span>
-      <span>→</span>
+    <a href="/en/tours/nepal-sauvage" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">View the 15-Day Expedition</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
@@ -417,10 +417,10 @@ ARTICLES_EN = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 At a Glance: Standard Tour Groups vs. Authentic Micro-Groups</span>
+    <span>At a Glance: Standard Tour Groups vs. Authentic Micro-Groups</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
-    In modern travel marketing, big tour operators label groups of 16 to 24 travelers as "small groups." In Nepal's wilderness, this approach is disastrous: large crowds generate noise, scatter apex predators, and dilute personal safety. At **Jungle Nepal Adventure**, our expeditions are strictly capped at **4 to 10 travelers**, guided by **2 dedicated native master trackers**.
+    In modern travel marketing, big tour operators label groups of 16 to 24 travelers as "small groups." In Nepal's wilderness, this approach is disastrous: large crowds generate noise, scatter apex predators, and dilute personal safety. At <strong>Jungle Nepal Adventure</strong>, our expeditions are strictly capped at <strong>4 to 10 travelers</strong>, guided by <strong>2 dedicated native master trackers</strong>.
   </p>
 </div>
 
@@ -472,12 +472,12 @@ ARTICLES_EN = [
   Embarking on a 100% private solo safari can be cost-prohibitive, as vehicle charters, park guide fees, and fuel costs fall entirely on one or two people.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Micro-groups of 4 to 10 travelers **pool these fixed logistical expenses**, delivering the competitive pricing of an organized tour alongside the intimacy, responsiveness, and privilege of a private safari.
+  Micro-groups of 4 to 10 travelers <strong>pool these fixed logistical expenses</strong>, delivering the competitive pricing of an organized tour alongside the intimacy, responsiveness, and privilege of a private safari.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Our Signature Small-Group Expeditions (4 to 10 Travelers):</span>
+    <span>Our Signature Small-Group Expeditions (4 to 10 Travelers):</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Experience wild Nepal in an intimate, safety-focused micro-group:
@@ -488,9 +488,9 @@ ARTICLES_EN = [
     <li><a href="/en/tours/babai-special" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Babai Special Experience (5 Days)</a>: deep tracking into the untouched river valley.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/en/tours/bardia-explorateur" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>View Bardia Explorer Tour</span>
-      <span>→</span>
+    <a href="/en/tours/bardia-explorateur" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">View Bardia Explorer Tour</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
@@ -510,7 +510,7 @@ ARTICLES_EN = [
         "content": """
 <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 mb-8 text-slate-800 shadow-sm">
   <h2 class="text-lg font-black text-emerald-950 mb-3 flex items-center gap-2">
-    <span>📌 At a Glance: The Untamed Nepal Few Ever Witness</span>
+    <span>At a Glance: The Untamed Nepal Few Ever Witness</span>
   </h2>
   <p class="text-sm sm:text-base leading-relaxed text-slate-700">
     More than 85% of overseas visitors to Nepal funnel through the same crowded corridor: Kathmandu's Thamel district, Pokhara's lakeside, and the well-trodden trails of the Annapurna Circuit or Everest Base Camp. Yet travel west into the remote valleys of the Terai, and you enter a secret Nepal: tranquil, untouched, and spectacularly wild. Here are the five pristine regions we explore daily.
@@ -585,12 +585,12 @@ ARTICLES_EN = [
   Venturing into remote Nepal requires meticulous planning: special national park conservation permits, domestic charter coordination, reliable 4x4 expedition vehicles, and certified indigenous guides who understand changing river currents and wildlife habits.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  This is the founding mission of **Jungle Nepal Adventure**: unlocking Nepal's most pristine frontiers safely, authentically, and with profound respect for the wild.
+  This is the founding mission of <strong>Jungle Nepal Adventure</strong>: unlocking Nepal's most pristine frontiers safely, authentically, and with profound respect for the wild.
 </p>
 
 <div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
   <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
-    <span>💡 Our Premier Off-the-Beaten-Track Expeditions:</span>
+    <span>Our Premier Off-the-Beaten-Track Expeditions:</span>
   </h3>
   <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
     Ready to venture far beyond crowded tourist corridors? Explore our most exclusive wilderness journeys:
@@ -601,9 +601,9 @@ ARTICLES_EN = [
     <li><a href="/en/tours/tiji-mustang" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Tiji Festival – Upper Mustang (13 Days)</a>: sacred mask dances in the ancient walled kingdom.</li>
   </ul>
   <div class="pt-3 flex flex-wrap gap-3">
-    <a href="/en/tours/bardia-babai-camping" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
-      <span>View Babai Camping Expedition</span>
-      <span>→</span>
+    <a href="/en/tours/bardia-babai-camping" class="cta-btn-primary !text-white no-underline inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span class="!text-white">View Babai Camping Expedition</span>
+      <span class="!text-white">→</span>
     </a>
     <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
