@@ -89,7 +89,7 @@ const prefix = isEn ? '/en' : '';
           {isEn ? "Destinations & Safaris" : "Destinations & Safaris"}
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href={`${prefix}/safari-nepal/`} class="text-amber-300 font-bold hover:text-amber-200 transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span><span>{isEn ? "🐾 Nepal Safari (Master Guide)" : "🐾 Safari au Népal (Grand Guide)"}</span></a></li>
+          <li><a href={`${prefix}/safari-nepal/`} class="hover:text-slate-200 transition-colors">{isEn ? "Safari in Nepal" : "Safari au Népal"}</a></li>
           <li><a href={`${prefix}/destinations/bardia`} class="hover:text-slate-200 transition-colors">{isEn ? "Bardia National Park" : "Parc national de Bardia"}</a></li>
           <li><a href={`${prefix}/destinations/chitwan`} class="hover:text-slate-200 transition-colors">{isEn ? "Chitwan National Park" : "Parc national de Chitwan"}</a></li>
           <li><a href={`${prefix}/destinations/suklaphanta`} class="hover:text-slate-200 transition-colors">{isEn ? "Suklaphanta National Park" : "Parc national de Suklaphanta"}</a></li>
@@ -105,7 +105,7 @@ const prefix = isEn ? '/en' : '';
           Navigation
         </h4>
         <ul class="space-y-2 text-slate-400">
-          <li><a href={`${prefix}/safari-nepal/`} class="text-emerald-400 font-bold hover:text-emerald-300 transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span><span>{isEn ? "Nepal Safari (Guide & Tours)" : "Safari au Népal (Guide & circuits)"}</span></a></li>
+          <li><a href={`${prefix}/safari-nepal/`} class="hover:text-slate-200 transition-colors">{isEn ? "Safari in Nepal" : "Safari au Népal"}</a></li>
           <li><a href={isEn ? "/en/#galerie-faune" : "/#galerie-faune"} class="hover:text-slate-200 transition-colors">{isEn ? "Wildlife Gallery" : "Galerie faune"}</a></li>
           <li><a href={isEn ? "/en/about" : "/a-propos"} class="hover:text-slate-200 transition-colors">{isEn ? "About Us" : "À propos"}</a></li>
           <li><a href={`${prefix}/blog`} class="hover:text-slate-200 transition-colors">Blog</a></li>
@@ -181,7 +181,7 @@ const prefix = isEn ? '/en' : '';
         </p>
       </div>
       <div class="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-xs shrink-0">
-        <a href={`${prefix}/safari-nepal/`} class="text-amber-300 hover:text-amber-200 font-bold transition-colors">{isEn ? "Nepal Safari" : "Safari Népal"}</a>
+        <a href={`${prefix}/safari-nepal/`} class="hover:text-white transition-colors">{isEn ? "Safari in Nepal" : "Safari au Népal"}</a>
         <span>•</span>
         <button onclick="openLegalModal()" class="text-slate-200 hover:text-white font-bold transition-colors cursor-pointer flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/60 px-3.5 py-1.5 rounded-xl border border-emerald-700/40">
           <span>{isEn ? "Official Licenses & Accreditations" : "Agréments & Licences officielles"}</span>

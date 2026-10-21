@@ -48,16 +48,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
       <!-- CENTER: NAVIGATION LINKS -->
       <nav class={`hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] xl:text-[14px] font-semibold ${isTransparent ? 'text-white/90' : 'text-slate-700'}`}>
-        <a href={safariUrl} class={isTransparent ? "text-amber-300 hover:text-amber-100 font-bold transition-colors whitespace-nowrap" : "text-[#0e8354] hover:text-[#0b6842] font-bold transition-colors whitespace-nowrap"}>
-          {t('nav.safari')}
-        </a>
-
         <a href={toursUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           {t('nav.tours')}
         </a>
 
         <a href={activitiesUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           {t('nav.activities')}
+        </a>
+
+        <a href={safariUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
+          {t('nav.safari')}
         </a>
 
         <!-- Destinations Dropdown -->
@@ -71,10 +71,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
             <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
-              <a href={safariUrl} class="flex items-center gap-3 p-2.5 rounded-xl bg-emerald-900/40 hover:bg-emerald-900/70 border border-emerald-500/30 transition-colors group/item">
+              <a href={safariUrl} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
-                  <p class="font-extrabold text-xs text-amber-300 group-hover/item:text-amber-200 transition-colors">{currentLang === 'en' ? "🐾 Safari in Nepal (Master Guide)" : "🐾 Safari au Népal (Grand Guide)"}</p>
-                  <p class="text-[10px] text-emerald-200/80">{currentLang === 'en' ? "Bardia, Chitwan, Tigers & Practical Info" : "Bardia, Chitwan, tigres & comparatifs"}</p>
+                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Safari in Nepal" : "Safari au Népal"}</p>
+                  <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Bardia, Chitwan & Wildlife Tours" : "Bardia, Chitwan & grands circuits"}</p>
                 </div>
               </a>
               <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
@@ -181,17 +181,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </div>
 
   <nav class="flex flex-col space-y-0.5 text-[15px] font-medium tracking-tight">
-    <a href={safariUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl bg-emerald-900/30 border border-emerald-500/30 text-emerald-300 hover:text-white hover:bg-emerald-800/40 font-bold transition-colors flex items-center justify-between">
-      <span>{currentLang === 'en' ? "🐾 Safari in Nepal (Master Guide)" : "🐾 Safari au Népal (Grand Guide)"}</span>
-      <span class="text-[10px] uppercase tracking-wider bg-emerald-700/60 text-emerald-100 px-2 py-0.5 rounded-full font-semibold">Top</span>
-    </a>
-
     <a href={toursUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
       <span>{t('nav.tours')}</span>
     </a>
 
     <a href={activitiesUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
       <span>{t('nav.activities')}</span>
+    </a>
+
+    <a href={safariUrl} onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
+      <span>{t('nav.safari')}</span>
     </a>
 
     <div class="rounded-xl overflow-hidden">
@@ -203,8 +202,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </button>
 
       <div id="mobile-dest-sub" class="hidden pl-4 pr-2 py-1 space-y-1 text-sm text-white/80">
-        <a href={safariUrl} onclick="toggleMobileMenu()" class="block py-1.5 text-amber-300 font-bold hover:text-amber-200 transition-colors">
-          {currentLang === 'en' ? "🐾 Master Guide: Nepal Safari" : "🐾 Guide Maître : Safari au Népal"}
+        <a href={safariUrl} onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
+          {currentLang === 'en' ? "Safari in Nepal" : "Safari au Népal"}
         </a>
         <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
           {currentLang === 'en' ? "Bardia National Park" : "Parc national de Bardia"}
