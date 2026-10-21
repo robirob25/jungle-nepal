@@ -13,6 +13,11 @@ export function useTranslations(lang: 'fr' | 'en') {
 }
 
 export const BLOG_SLUG_MAP_FR_TO_EN: Record<string, string> = {
+  'visiter-le-nepal-sans-faire-de-trek-guide-nature-et-culture': 'nepal-without-trekking-wildlife-culture-itinerary',
+  'agence-locale-voyage-nepal-receptif-francophone': 'local-tour-operator-nepal-dmc-safari-specialist',
+  'circuit-nepal-15-jours-itineraire-jungle-et-himalaya': '15-day-nepal-itinerary-ultimate-wildlife-and-himalayas',
+  'voyage-nepal-petit-groupe-micro-groupe-ethique': 'small-group-tours-nepal-micro-group-safari',
+  'voyage-nepal-hors-des-sentiers-battus-terai-sauvage': 'off-the-beaten-track-nepal-wild-secret-regions',
   'agence-safari-nepal-francophone': 'expert-local-safari-agency-nepal',
   'animaux-bardia-faune-parc-national': 'bardia-national-park-wildlife-animals-guide',
   'animaux-chitwan-faune-parc-national': 'chitwan-national-park-wildlife-animals-guide',
