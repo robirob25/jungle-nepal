@@ -24,7 +24,7 @@ ARTICLES_EN = [
   When people dream of Nepal, they picture Everest base camp, icy winds, rocky moraines, and the threat of acute mountain sickness (AMS). Yet below 200 meters above sea level, along the southern belt, lies a tropical sanctuary of winding rivers, floodplains, and dense evergreen forests.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Here, you walk on gentle, flat forest trails rather than steep scree slopes. The climate from October to April is warm and sunny (22°C to 28°C), evenings are comfortably cool, and instead of freezing high-altitude tea houses, you return each evening to charming eco-lodges with hot showers, fresh organic food, and garden bonfires.
+  Here, you walk on gentle, flat forest trails rather than steep scree slopes. The climate from October to April is warm and sunny (22°C to 28°C), evenings are comfortably cool, and instead of freezing high-altitude tea houses, you return each evening to charming eco-lodges with hot showers, fresh organic food, and garden bonfires. This relaxed, deep immersion is at the heart of our <a href="/en/tours/nepal-immersion-totale" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Nepal Total Immersion: Culture & Wildlife Tour (14 Days)</a>.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -36,13 +36,13 @@ ARTICLES_EN = [
 
 <h2>1. Wildlife Safaris: The Ultimate Non-Trekking Adventure</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  While Himalayan treks are visually stunning, high elevations are notoriously sparse in large observable mammals. In stark contrast, Nepal's lowland national parks boast one of the highest concentrations of endangered megafauna on earth:
+  While Himalayan treks are visually stunning, high elevations are notoriously sparse in large observable mammals. In stark contrast, Nepal's lowland national parks boast one of the highest concentrations of endangered megafauna on earth. You can choose a focused escape like our <a href="/en/tours/safari-chitwan-3-jours" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">3-Day Chitwan Safari Escape</a> or delve into deep wilderness on our flagship <a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a>:
 </p>
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Royal Bengal Tigers:</strong> <a href="/en/destinations/bardia" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia National Park</a> is internationally recognized as Asia's premier park for tracking wild tigers on foot and by open 4x4 safari jeeps.</li>
   <li><strong>Greater One-Horned Rhinos:</strong> Thriving in both <a href="/en/destinations/chitwan" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Chitwan</a> and Bardia, frequently spotted grazing in tall elephant grass or bathing peacefully along river shoals.</li>
   <li><strong>Wild Asian Elephants:</strong> Nomadic breeding herds that migrate freely along the Karnali and Babai river corridors.</li>
-  <li><strong>River Safaris & Birding:</strong> Drifting silently in traditional wooden canoes on morning waters to observe prehistoric fish-eating Gharials, Marsh Mugger crocodiles, and over 450 resident and migratory bird species.</li>
+  <li><strong>Effortless River Safaris:</strong> Gliding downriver in rafts or wooden canoes, such as during our <a href="/en/tours/rafting-safari-bardia" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Karnali River Rafting & Wildlife Safari</a>, lets you view Gharial crocodiles and river birds with zero physical strain.</li>
 </ul>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -59,7 +59,7 @@ ARTICLES_EN = [
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Bhaktapur:</strong> An impeccably preserved pedestrian medieval capital. Walk cobblestone squares, watch traditional potters shape clay under the sun, and admire five-tier pagodas without vehicle noise.</li>
   <li><strong>Patan (Lalitpur):</strong> The ancient epicenter of metal casting, lost-wax bronze sculptures, and secret Buddhist courtyards (bahals).</li>
-  <li><strong>Boudhanath & Pashupatinath:</strong> Join Tibetan pilgrims performing evening circumambulations (kora) around the giant white stupa, and witness ancient riverbank sacred rituals at sunset.</li>
+  <li><strong>Boudhanath & Pashupatinath:</strong> Join Tibetan pilgrims performing evening circumambulations (kora) around the giant white stupa, and witness ancient riverbank sacred rituals at sunset. If you enjoy sketching or slow art travel, our <a href="/en/tours/carnet-de-voyage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Nepal Sketching & Journaling Tour (15 Days)</a> explores these sacred alleys at an unhurried artistic pace.</li>
 </ul>
 
 <h2>3. Effortless Himalayan Views: Balcony of the Gods</h2>
@@ -67,7 +67,7 @@ ARTICLES_EN = [
   You do not need to climb 4,000 meters to witness the snowy grandeur of the Himalayas:
 </p>
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
-  <li><strong>Pokhara & Lake Phewa:</strong> Relax in lakeside cafes while the majestic pyramid of Machapuchare (Fishtail, 6,993m) and the Annapurna range reflect mirror-like on tranquil waters.</li>
+  <li><strong>Pokhara & Lake Phewa:</strong> Relax in lakeside cafes while the majestic pyramid of Machapuchare (Fishtail, 6,993m) reflects mirror-like on tranquil waters. Seamlessly connect Pokhara and safari wilderness via our <a href="/en/tours/pokhara-chitwan-safari-transfert-katmandou" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Pokhara to Kathmandu via Chitwan 3-Day Safari</a>.</li>
   <li><strong>The Hilltown of Bandipur:</strong> A restored 18th-century Newar trading settlement perched atop a high ridge between Kathmandu and Pokhara. Step onto your hotel terrace with a cup of tea to admire sweeping morning vistas of Manaslu and Ganesh Himal.</li>
   <li><strong>Sarangkot Sunrise:</strong> Easily accessible by road in the early morning to catch the golden alpenglow illuminating peaks above 8,000 meters.</li>
 </ul>
@@ -80,6 +80,9 @@ ARTICLES_EN = [
 </figure>
 
 <h2>Suggested 12-Day Itinerary: Nature, Wildlife & Heritage</h2>
+<p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
+  To experience this balanced blend of heritage, foothill vistas, and wildlife tracking, our <a href="/en/tours/chitwan-bardia-complete" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Chitwan + Bardia: The Complete Nepal Jungle Safari (11 Days)</a> offers the definitive non-trekking circuit:
+</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left border-collapse border border-slate-200 text-sm sm:text-base">
     <thead>
@@ -118,7 +121,7 @@ ARTICLES_EN = [
       <tr>
         <td class="p-3 font-semibold">Day 10</td>
         <td class="p-3">Tharu Cultural Immersion</td>
-        <td class="p-3">Clay-walled villages, traditional craft workshops, organic Tharu harvest dining.</td>
+        <td class="p-3">Clay-walled villages, traditional craft workshops, and organic harvest dining, featured in our <a href="/en/tours/chitwan-culture" class="text-[#0e8354] font-bold underline">Chitwan Culture & Wildlife Tour</a>.</td>
       </tr>
       <tr>
         <td class="p-3 font-semibold">Days 11 - 12</td>
@@ -129,25 +132,24 @@ ARTICLES_EN = [
   </table>
 </div>
 
-<h2>Practical Tips for Non-Trekkers in Nepal</h2>
-<ul class="space-y-4 mb-8 text-slate-700 text-base sm:text-lg">
-  <li><strong>Opt for Domestic Flights:</strong> Highway construction can cause long delays on overland mountain roads. Short 25-to-45-minute domestic flights between Kathmandu, Pokhara, and Nepalgunj save immense time and energy.</li>
-  <li><strong>Best Travel Windows:</strong> October through April brings crystal-clear skies, dry weather, and warm daytime jungle temperatures (around 24°C–28°C).</li>
-  <li><strong>Safari Wardrobe:</strong> Pack earthy, neutral colors (khaki, olive, brown) to avoid startling animals. Binoculars (8x42 or 10x42) and a light fleece for cool mornings are essential.</li>
-</ul>
-
-<div class="bg-gradient-to-br from-[#041d13] via-slate-900 to-[#0e8354] rounded-3xl p-8 sm:p-10 text-white shadow-xl my-10 space-y-4">
-  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Custom Nepal Expedition</span>
-  <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Looking to Experience Wild Nepal Without Trekking?</h3>
-  <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-    Our local team crafts comfortable, high-touch private expeditions and guaranteed micro-group tours combining premier wildlife tracking, authentic Tharu culture, and heritage exploration. Connect directly with Robin and our native trackers to plan your journey.
+<div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
+  <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
+    <span>💡 Our Recommended Non-Trekking Nepal Expeditions:</span>
+  </h3>
+  <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+    Looking to explore Nepal at an unhurried, comfortable pace? Discover our non-trekking safari and cultural itineraries:
   </p>
-  <div class="pt-2 flex flex-wrap gap-4">
-    <a href="/en/tours/nepal-wildlife-culture-immersion" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:scale-105">
-      <span>View Our 14-Day Wildlife & Culture Tour</span>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-slate-800 font-medium">
+    <li><a href="/en/tours/nepal-immersion-totale" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Nepal Total Immersion (14 Days)</a>: heritage in Kathmandu, lakeside Pokhara, and wild tiger safaris in Bardia.</li>
+    <li><a href="/en/tours/chitwan-bardia-complete" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Chitwan + Bardia Complete Jungle Safari (11 Days)</a>: 100% focused on tigers, rhinos, and river birds.</li>
+    <li><a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a>: our focused wilderness safari tracking Royal Bengal Tigers on foot.</li>
+  </ul>
+  <div class="pt-3 flex flex-wrap gap-3">
+    <a href="/en/tours/nepal-immersion-totale" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>View the 14-Day Tour</span>
       <span>→</span>
     </a>
-    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3.5 rounded-2xl font-bold text-sm transition-all">
+    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
       <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
     </a>
   </div>
@@ -192,8 +194,8 @@ ARTICLES_EN = [
   **Jungle Nepal Adventure** bridges the gap between Western travel standards and unmatched local bushcraft:
 </p>
 <ul class="space-y-4 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
-  <li><strong>Robin (Founder & Trip Coordinator):</strong> Your point of contact from day one. He understands international travelers' expectations regarding hygiene, seamless transfers, pacing, dietary preferences, and safety protocols. Fast communication on WhatsApp and email.</li>
-  <li><strong>Pawan & Kiran (Native Tharu Master Trackers):</strong> Born in villages bordering Bardia National Park, they have tracked apex predators since childhood. With over 20 years of professional guiding experience, they have led wildlife documentary camera crews for the BBC.</li>
+  <li><strong>Robin (Founder & Trip Coordinator):</strong> Your direct point of contact from day one. He understands international travelers' expectations regarding hygiene, seamless transfers, pacing, dietary preferences, and safety protocols. Fast communication on WhatsApp and email.</li>
+  <li><strong>Pawan & Kiran (Native Tharu Master Trackers):</strong> Born in villages bordering Bardia National Park, they have tracked apex predators since childhood. With over 20 years of professional guiding experience, they have led wildlife documentary camera crews for the BBC, featured in our flagship <a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a>.</li>
 </ul>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -221,7 +223,7 @@ ARTICLES_EN = [
       <span>Real-Time Field Flexibility</span>
     </h3>
     <p class="text-sm text-slate-600 leading-relaxed">
-      Wish to spend an extra morning stakeout by the tiger waterholes? Add an evening river drift or visit an authentic Tharu pottery maker? Because we operate the tour directly, changes are made seamlessly on the ground without bureaucratic delays.
+      Wish to camp under the stars? Discover our signature pioneer route <a href="/en/tours/bardia-babai-camping" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Babai Valley Wild Camping Safari (8 Days)</a> or adjust your daily game drives on the fly.
     </p>
   </div>
   <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
@@ -249,7 +251,7 @@ ARTICLES_EN = [
   Many commercial travel agencies continue to feature elephant-back safaris or captive petting enclosures in their standard Chitwan itineraries.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  At Jungle Nepal Adventure, our policy is uncompromising: **zero captive elephant riding, zero forced animal interactions, and zero artificial baiting**. We observe wildlife exclusively in their natural habitats, keeping respectful safety buffers that preserve animal tranquility.
+  At Jungle Nepal Adventure, our policy is uncompromising: **zero captive elephant riding, zero forced animal interactions, and zero artificial baiting**. We observe wildlife exclusively in their natural habitats, keeping respectful safety buffers that preserve animal tranquility, whether on a quick 3-day getaway like <a href="/en/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Wild Night</a> or across our 2-week grand expedition <a href="/en/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Nepal: From Jungle to Sacred Peaks (15 Days)</a>.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -259,19 +261,24 @@ ARTICLES_EN = [
   </figcaption>
 </figure>
 
-<div class="bg-slate-950 rounded-3xl p-8 sm:p-10 text-white shadow-xl my-10 space-y-4 border border-white/10">
-  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Direct Local Booking</span>
-  <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Plan Your Nepal Safari Directly With Our Local Team</h3>
-  <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-    Whether you seek a guaranteed departure in a 4-to-10 person micro-group or a customized private family expedition, we respond within 24 to 48 hours with transparent pricing and honest field advice.
+<div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
+  <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
+    <span>💡 Connect Directly With Our Local Ground Team:</span>
+  </h3>
+  <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+    Looking to join a guaranteed small-group departure or craft a private, custom itinerary in Nepal? Robin and our trackers reply within 24 to 48 hours:
   </p>
-  <div class="pt-2 flex flex-wrap gap-4">
-    <a href="/en/tours" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:scale-105">
-      <span>Explore All 14 Expeditions</span>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-slate-800 font-medium">
+    <li>Browse our full collection of <a href="/en/tours" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">14 Nepal wildlife & culture tours</a>.</li>
+    <li>Read about our mission and tracking team on the <a href="/en/about" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">About Jungle Nepal Adventure</a> page.</li>
+  </ul>
+  <div class="pt-3 flex flex-wrap gap-3">
+    <a href="/en/tours" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>Explore All Tours</span>
       <span>→</span>
     </a>
-    <a href="/en/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3.5 rounded-2xl font-bold text-sm transition-all">
-      <span>Get a Direct Quote</span>
+    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
     </a>
   </div>
 </div>
@@ -300,7 +307,7 @@ ARTICLES_EN = [
   The single biggest mistake travelers make in Nepal is attempting to cram too many distant regions into a 10-day trip. With mountain road speeds averaging 30 km/h due to terrain and ongoing highway expansion, rushing between five destinations leaves you exhausted inside vehicle cabins.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  By planning 15 days with smart 45-minute domestic flights connecting major hubs, every destination breathes. You have uninterrupted full days inside wildlife reserves, leisurely morning coffees overlooking Himalayan peaks, and genuine interactions with local Tharu hosts.
+  By planning 15 days with smart 45-minute domestic flights connecting major hubs, every destination breathes. This balanced rhythm is captured in our flagship 15-day circuits: <a href="/en/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Nepal: From Dense Jungle to Sacred Peaks (15 Days)</a> and our wildlife-focused <a href="/en/tours/jungle-extreme" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Extreme Jungle – Big Cat Expedition (15 Days)</a>.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -341,7 +348,7 @@ ARTICLES_EN = [
 
 <h3>Days 7, 8 & 9: Intensive Wildlife Exploration in Bardia</h3>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Three full days dedicated to tracking Asia's wildest predators:
+  Three full days dedicated to tracking Asia's wildest predators, mirroring the core activities of our popular <a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a>:
 </p>
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Day 7 (Walking Safari):</strong> Step out at dawn on foot with two certified native Tharu trackers. Move silently through Sal woodlands, read tiger pugmarks, and wait at peaceful riverbanks where predators come to drink.</li>
@@ -358,12 +365,12 @@ ARTICLES_EN = [
 
 <h3>Days 10 & 11: Secret Babai Valley & Tharu Heritage</h3>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Venture into the pristine Babai Valley, a secluded paradise framed by sandstone hills. Spend time with local Tharu villagers learning traditional organic agriculture, fish-trap weaving, and tasting homestyle culinary specialties (fresh river catch, roasted lentils, and steamed dumplings).
+  Venture into the pristine Babai Valley, a secluded paradise framed by sandstone hills, also featured in our deep bush tour <a href="/en/tours/babai-special" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Deep Into the Wild: Babai Special 5 Days</a>. Spend time with local Tharu villagers learning traditional organic agriculture, fish-trap weaving, and tasting homestyle culinary specialties.
 </p>
 
 <h3>Days 12 & 13: Chitwan Riverbanks or Suklaphanta Grasslands</h3>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Optional extension to Chitwan for silent dugout canoe drifts along the Rapti river, or continue west to Suklaphanta to witness thousands of swamp deer gather across endless golden savannahs.
+  Optional extension to Chitwan for silent dugout canoe drifts along the Rapti river, or continue west to Suklaphanta to witness thousands of swamp deer gather across endless golden savannahs, as featured in our <a href="/en/tours/chitwan-bardia-complete" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Chitwan + Bardia Complete Safari (11 Days)</a>.
 </p>
 
 <h3>Days 14 & 15: Return to Kathmandu & International Departure</h3>
@@ -376,19 +383,24 @@ ARTICLES_EN = [
   By booking direct with our on-the-ground team, an all-inclusive 15-day expedition (boutique lodges, all jungle meals, domestic flights, private ground vehicles, national park entry fees, and dedicated native trackers) averages between **€1,650 and €2,350 per person** in micro-groups, compared to €3,500+ charged by overseas agencies.
 </p>
 
-<div class="bg-gradient-to-br from-[#041d13] via-slate-900 to-[#0e8354] rounded-3xl p-8 sm:p-10 text-white shadow-xl my-10 space-y-4">
-  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Guaranteed Departures</span>
-  <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Experience This 15-Day Nepal Expedition?</h3>
-  <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-    Guaranteed small-group departures (4 to 10 travelers) and 100% bespoke private departures are available for the autumn and spring wildlife seasons. Contact Robin for full dossiers and date availability.
+<div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
+  <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
+    <span>💡 Ready to Embark on This 15-Day Nepal Journey?</span>
+  </h3>
+  <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+    Discover our ready-to-book 15-day itineraries or request custom dates for your family or small group:
   </p>
-  <div class="pt-2 flex flex-wrap gap-4">
-    <a href="/en/tours/nepal-wildlife-safari-15-days" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:scale-105">
-      <span>View Our 15-Day Wild Nepal Tour</span>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-slate-800 font-medium">
+    <li><a href="/en/tours/nepal-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Nepal: From Jungle to Sacred Peaks (15 Days)</a>: the definitive balanced circuit.</li>
+    <li><a href="/en/tours/jungle-extreme" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Extreme Jungle – Big Cat Expedition (15 Days)</a>: 100% wilderness immersion tracking apex predators.</li>
+  </ul>
+  <div class="pt-3 flex flex-wrap gap-3">
+    <a href="/en/tours/nepal-sauvage" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>View the 15-Day Expedition</span>
       <span>→</span>
     </a>
-    <a href="/en/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3.5 rounded-2xl font-bold text-sm transition-all">
-      <span>Check Available Dates</span>
+    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
     </a>
   </div>
 </div>
@@ -417,7 +429,7 @@ ARTICLES_EN = [
   Picture a conventional mass safari in Chitwan: three dozen tourists crammed into open buses or rumbling jeeps bumper-to-bumper. Slamming vehicle doors, loud chatter, and camera shutter bursts guarantee that tigers and elusive leopards stay deep in dense thickets.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Tracking an apex predator requires absolute stealth. You need to hear the subtle snap of a twig, the sharp distress call of a spotted deer signaling a stalking feline, or the deep rumble of an elephant herd approaching a riverbank. Silence is your greatest tool.
+  Tracking an apex predator requires absolute stealth. You need to hear the subtle snap of a twig, the sharp distress call of a spotted deer signaling a stalking feline, or the deep rumble of an elephant herd approaching a riverbank. Silence is your greatest tool, which is why all departures on tours like <a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer (5 Days)</a> are strictly capped at 10 participants.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -437,7 +449,7 @@ ARTICLES_EN = [
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li><strong>Lead Tracker:</strong> Scans fresh ground tracks, reads wind patterns to keep human scent downwind, and inspects blind corners.</li>
   <li><strong>Compact Marching Formation:</strong> All travelers remain within 10 meters of each other in a disciplined line.</li>
-  <li><strong>Tail Tracker:</strong> Guards the rear of the group, ensuring no one lags behind while watching flanks for wildlife movement.</li>
+  <li><strong>Tail Tracker:</strong> Guards the rear of the group, ensuring no one lags behind while watching flanks for wildlife movement, essential on immersive trips like <a href="/en/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Wild Night (3 Days)</a>.</li>
 </ul>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -452,7 +464,7 @@ ARTICLES_EN = [
   Micro-group travel fosters authentic bonds that mass tours can never replicate. You aren't merely passive sightseers; you become an expedition team.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Evenings at our lodge or riverside camp are spent around a rustic wooden table or an open bonfire. Travelers review the day's wildlife photos, share laughs, and listen to Pawan and Kiran narrate Tharu folklore and tales from 20 years of bushcraft, all over steaming cups of spiced masala chai or chilled local beer.
+  Evenings at our lodge or riverside camp (as experienced during <a href="/en/tours/babai-special" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Deep into the Wild: Babai Special 5 Days</a>) are spent around a rustic wooden table or an open bonfire. Travelers review the day's wildlife photos, share laughs, and listen to Pawan and Kiran narrate Tharu folklore and tales from 20 years of bushcraft. This shared spirit also shines in our rich cultural journeys, like the <a href="/en/tours/dashain-immersion-culturelle" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Sacred Dashain Festival Special</a>.
 </p>
 
 <h2>3. Optimal Value: Shared Costs Without Sacrificing Exclusivity</h2>
@@ -463,19 +475,25 @@ ARTICLES_EN = [
   Micro-groups of 4 to 10 travelers **pool these fixed logistical expenses**, delivering the competitive pricing of an organized tour alongside the intimacy, responsiveness, and privilege of a private safari.
 </p>
 
-<div class="bg-gradient-to-br from-[#041d13] via-slate-900 to-[#0e8354] rounded-3xl p-8 sm:p-10 text-white shadow-xl my-10 space-y-4">
-  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Join a Micro-Group</span>
-  <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Explore Upcoming Micro-Group Departures</h3>
-  <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-    Our guaranteed 4-to-10 person micro-group expeditions are timed during prime wildlife sighting months. Review our upcoming schedule or inquire about reserving dates for your own small group.
+<div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
+  <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
+    <span>💡 Our Signature Small-Group Expeditions (4 to 10 Travelers):</span>
+  </h3>
+  <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+    Experience wild Nepal in an intimate, safety-focused micro-group:
   </p>
-  <div class="pt-2 flex flex-wrap gap-4">
-    <a href="/en/tours/bardia-tiger-safari-5-days" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:scale-105">
-      <span>Explore the 5-Day Tiger Safari</span>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-slate-800 font-medium">
+    <li><a href="/en/tours/bardia-explorateur" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Explorer – 5 Days in the Wild Jungle</a>: our top-rated wildlife tracking expedition.</li>
+    <li><a href="/en/tours/bardia-nuit-sauvage" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Wild Night (3 Days)</a>: authentic tented bush camping at the forest edge.</li>
+    <li><a href="/en/tours/babai-special" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Babai Special Experience (5 Days)</a>: deep tracking into the untouched river valley.</li>
+  </ul>
+  <div class="pt-3 flex flex-wrap gap-3">
+    <a href="/en/tours/bardia-explorateur" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>View Bardia Explorer Tour</span>
       <span>→</span>
     </a>
-    <a href="/en/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3.5 rounded-2xl font-bold text-sm transition-all">
-      <span>Check Group Availability</span>
+    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
     </a>
   </div>
 </div>
@@ -504,7 +522,7 @@ ARTICLES_EN = [
   Tucked behind the rugged Siwalik hills in eastern Bardia lies the Babai River Valley. Previously a royal hunting reserve closed to general public access for decades, this valley remains a time capsule of raw Himalayan foothills ecology.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  There are no hotels, lodges, or tarmac roads. Expedition travel here is self-supported: sleeping in sturdy tents pitched upon clear river gravel bars, accompanied by cooks and native trackers. Fall asleep under star-studded skies to the distant calls of jungle owls and barking deer. The Babai corridor harbors some of Nepal's densest tiger and wild elephant populations.
+  There are no hotels, lodges, or tarmac roads. Expedition travel here is self-supported in our signature trip <a href="/en/tours/bardia-babai-camping" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Babai Valley Wild Camping Safari (8 Days)</a>: sleeping in sturdy tents pitched upon clear river gravel bars, accompanied by cooks and native trackers. Fall asleep under star-studded skies to the distant calls of jungle owls and barking deer. The Babai corridor harbors some of Nepal's densest tiger and wild elephant populations.
 </p>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -534,7 +552,7 @@ ARTICLES_EN = [
   Perched at 2,990 meters in the rugged Mugu district, Rara Lake is Nepal's largest and deepest alpine lake. Ringed by subalpine spruce, fir, and blue pine forests, its mirror-smooth waters shift color throughout the day from brilliant azure to deep emerald.
 </p>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  Combining a high-altitude expedition to Rara Lake with a descent into Bardia's tropical forests creates one of the most stunning eco-contrasts on the planet in under ten days.
+  In our epic itinerary <a href="/en/tours/rara-lake-bardia" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Rara Lake & Bardia Expedition (17 Days)</a>, we combine the pristine alpine waters of Mugu with an overland descent into the tropical jungles of Bardia, creating one of the world's most dramatic geographical transitions in under three weeks.
 </p>
 
 <h2>4. Traditional Tharu Mud-Walled Villages of Thakurdwara</h2>
@@ -544,7 +562,7 @@ ARTICLES_EN = [
 <ul class="space-y-3 mb-6 text-slate-700 text-base sm:text-lg list-disc pl-6">
   <li>Handcrafted clay and reed homes decorated with traditional animal relief carvings and geometric earth murals.</li>
   <li>Artisanal river fishing utilizing hand-woven conical traps and throw-nets.</li>
-  <li>Authentic community evenings celebrating the rhythmic Danda Nach (stick dance) and harvest ballads.</li>
+  <li>Authentic community evenings celebrating the rhythmic Danda Nach (stick dance) and harvest ballads, featured throughout our extended <a href="/en/tours/rafting-safari" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Wild Rivers & Hidden Heritage Expedition (18 Days)</a>.</li>
 </ul>
 
 <figure class="my-8 rounded-2xl overflow-hidden shadow-md">
@@ -554,9 +572,12 @@ ARTICLES_EN = [
   </figcaption>
 </figure>
 
-<h2>5. Upper Mustang & The Tiji Festival</h2>
+<h2>5. Upper Mustang & Tracking the Elusive Snow Leopard</h2>
 <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
-  For those drawn to high desert Tibetan spirituality, the ancient walled kingdom of Lo Manthang in Upper Mustang provides an otherworldly landscape of ochre canyons and cliffside cave dwellings. Protected by strict permit limits, witnessing the three-day Tiji mask festival remains one of the world's most evocative spiritual events.
+  For those drawn to high desert Tibetan spirituality, the ancient walled kingdom of Lo Manthang in Upper Mustang provides an otherworldly landscape of ochre canyons and cliffside cave dwellings. We organize exclusive small groups for the annual <a href="/en/tours/tiji-mustang" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Tiji Festival in Upper Mustang (13 Days)</a>.
+</p>
+<p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mb-6">
+  For high-altitude wildlife purists, our dedicated <a href="/en/tours/panthere-des-neiges" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Exclusive Snow Leopard Expedition (17 Days)</a> ventures into the remote mountain ridges of Manang to search for the ghost of the Himalayas with veteran snow leopard spotters.
 </p>
 
 <h2>How to Organize an Off-the-Beaten-Path Expedition</h2>
@@ -567,19 +588,25 @@ ARTICLES_EN = [
   This is the founding mission of **Jungle Nepal Adventure**: unlocking Nepal's most pristine frontiers safely, authentically, and with profound respect for the wild.
 </p>
 
-<div class="bg-gradient-to-br from-[#041d13] via-slate-900 to-[#0e8354] rounded-3xl p-8 sm:p-10 text-white shadow-xl my-10 space-y-4">
-  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Pristine Wild Frontiers</span>
-  <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Discover Secret Wild Nepal?</h3>
-  <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-    Our expeditions into Babai Valley, Bardia, and Rara Lake are tailor-made for travelers seeking raw authenticity far from the tourist crowds.
+<div class="my-10 p-6 sm:p-8 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl space-y-4">
+  <h3 class="text-xl font-black text-emerald-950 flex items-center gap-2">
+    <span>💡 Our Premier Off-the-Beaten-Track Expeditions:</span>
+  </h3>
+  <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+    Ready to venture far beyond crowded tourist corridors? Explore our most exclusive wilderness journeys:
   </p>
-  <div class="pt-2 flex flex-wrap gap-4">
-    <a href="/en/tours/babai-valley-wild-camping-safari" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:scale-105">
-      <span>Explore the Babai Wild Camping Safari</span>
+  <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-slate-800 font-medium">
+    <li><a href="/en/tours/bardia-babai-camping" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Bardia Babai Valley Wild Camping Safari (8 Days)</a>: full self-supported bivouac in tiger heartland.</li>
+    <li><a href="/en/tours/rara-lake-bardia" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Rara Lake & Bardia Expedition (17 Days)</a>: high alpine lake vistas down to dense subtropical jungle.</li>
+    <li><a href="/en/tours/tiji-mustang" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">Tiji Festival – Upper Mustang (13 Days)</a>: sacred mask dances in the ancient walled kingdom.</li>
+  </ul>
+  <div class="pt-3 flex flex-wrap gap-3">
+    <a href="/en/tours/bardia-babai-camping" class="inline-flex items-center gap-2 bg-[#0e8354] hover:bg-[#0c6d46] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>View Babai Camping Expedition</span>
       <span>→</span>
     </a>
-    <a href="/en/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3.5 rounded-2xl font-bold text-sm transition-all">
-      <span>Design a Custom Wilderness Route</span>
+    <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-3 rounded-xl font-bold text-sm shadow-sm transition-all">
+      <span>Chat on WhatsApp (+33 6 95 41 32 27)</span>
     </a>
   </div>
 </div>
