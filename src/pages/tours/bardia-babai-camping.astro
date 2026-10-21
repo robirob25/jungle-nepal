@@ -3,6 +3,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import TigerObservationStats from '../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -626,6 +627,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </h3>
             <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Expédition exclusive dans la secrète et inaccessible vallée de Babai, sanctuaire vierge de Bardia.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>4 jours de camping sauvage en bivouac le long des méandres sauvages de la rivière Babai.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Pistage à pied des tigres du Bengale, léopards, ours lippus et troupeaux d'éléphants sauvages.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Remontée des corridors fluviaux en bateau et observation privilégiée des crocodiles gavials.</span></li></ul>
           </div>
+
+          <TigerObservationStats lang="fr" />
         </section>
 
         <!-- SECTION 2: CE VOYAGE EST POUR MOI ? (WeRoad Radar) -->

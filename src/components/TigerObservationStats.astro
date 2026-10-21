@@ -1,0 +1,141 @@
+---
+interface Props {
+  lang?: 'fr' | 'en';
+}
+
+const { lang = 'fr' } = Astro.props;
+const isEn = lang === 'en';
+---
+
+<div class="bg-slate-50/80 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6 text-slate-800 font-sans my-8">
+  <div class="border-b border-slate-200 pb-5">
+    <p class="text-xs uppercase tracking-wider font-bold text-slate-500 mb-1">
+      {isEn ? "Field observations & seasonality" : "Données de terrain & saisonnalité"}
+    </p>
+    <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
+      {isEn 
+        ? "Bengal Tiger Sighting Probabilities in Bardia" 
+        : "Probabilités d'observation du tigre du Bengale à Bardia"}
+    </h3>
+    <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+      {isEn 
+        ? "Unlike wildlife parks where animals are radio-collared or located via vehicle convoys, Bardia remains completely wild. Here are the realistic figures documented by our native trackers over the past seasons."
+        : "Contrairement aux parcs touristiques où les animaux sont équipés de colliers émetteurs ou encerclés par des convois de jeeps, Bardia est un sanctuaire préservé. Voici les données réelles et transparentes constatées par nos pisteurs natifs."}
+    </p>
+  </div>
+
+  <!-- Sighting Rate by Season (Grid) -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- Period 1: March - May -->
+    <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-2">
+      <div class="flex items-baseline justify-between border-b border-slate-100 pb-2">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">
+          {isEn ? "Peak Season" : "Période optimale"}
+        </span>
+        <span class="text-base font-extrabold text-[#0e8354]">
+          75% – 85%
+        </span>
+      </div>
+      <h4 class="font-bold text-sm text-slate-900 pt-1">
+        {isEn ? "March to May" : "Mars à Mai"}
+      </h4>
+      <p class="text-xs text-slate-600 leading-relaxed">
+        {isEn 
+          ? "Pre-monsoon dry heat (35°C–40°C). Grasses are naturally low. Tigers regularly spend hours soaking in the river channels (Karnali, Geruwa, Babai) and waterholes to cool down."
+          : "Chaleur sèche pré-mousson (35°C–40°C) et herbes basses. Les tigres passent de longues heures dans les lits de rivières (Karnali, Geruwa, Babai) et les points d'eau pour réguler leur température."}
+      </p>
+    </div>
+
+    <!-- Period 2: October - February -->
+    <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-2">
+      <div class="flex items-baseline justify-between border-b border-slate-100 pb-2">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">
+          {isEn ? "Temperate Climate" : "Climat tempéré"}
+        </span>
+        <span class="text-base font-extrabold text-slate-900">
+          50% – 65%
+        </span>
+      </div>
+      <h4 class="font-bold text-sm text-slate-900 pt-1">
+        {isEn ? "October to February" : "Octobre à Février"}
+      </h4>
+      <p class="text-xs text-slate-600 leading-relaxed">
+        {isEn 
+          ? "Pleasant daytime temperatures (20°C–25°C), optimal for walking. Water is abundant throughout the forest, spreading wildlife movements. Excellent for rhinos, wild elephants, and birds."
+          : "Températures douces (20°C–25°C), idéales pour la marche. L'eau étant abondante dans toute la forêt, les félins sont plus dispersés. Idéal pour observer rhinocéros, éléphants et oiseaux migrateurs."}
+      </p>
+    </div>
+
+    <!-- Period 3: June - September -->
+    <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-2">
+      <div class="flex items-baseline justify-between border-b border-slate-100 pb-2">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">
+          {isEn ? "Monsoon" : "Mousson"}
+        </span>
+        <span class="text-base font-bold text-slate-400">
+          {isEn ? "Reduced" : "Réduit"}
+        </span>
+      </div>
+      <h4 class="font-bold text-sm text-slate-900 pt-1">
+        {isEn ? "June to September" : "Juin à Septembre"}
+      </h4>
+      <p class="text-xs text-slate-600 leading-relaxed">
+        {isEn 
+          ? "Heavy rainfalls, lush dense undergrowth, and swollen rivers. Tracking on foot is difficult and restricted to select buffer zones. Season not advised for tiger focus."
+          : "Pluies intenses, végétation dense et rivières gonflées. Les safaris à pied sont restreints. Période déconseillée pour un objectif ciblé sur le tigre."}
+      </p>
+    </div>
+  </div>
+
+  <!-- Why Walking Safari gives the highest odds -->
+  <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 space-y-4">
+    <h4 class="font-bold text-sm sm:text-base text-slate-950">
+      {isEn 
+        ? "Why walking safaris offer higher sighting odds than 4x4 vehicles" 
+        : "Pourquoi la traque à pied maximise vos chances face aux véhicules 4x4"}
+    </h4>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-700">
+      <div class="space-y-1.5 border-l-2 border-slate-300 pl-3">
+        <p class="font-bold text-slate-900">
+          {isEn ? "Total silence" : "Silence total"}
+        </p>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          {isEn 
+            ? "A combustion engine can be heard over a kilometer away, alerting cats early. Walking allows discreet positioning without disrupting natural behaviors."
+            : "Le grondement d'un moteur s'entend à plus d'un kilomètre et fait fuir les félins. La progression à pied permet d'arriver sans bruit aux points d'affût."}
+        </p>
+      </div>
+
+      <div class="space-y-1.5 border-l-2 border-slate-300 pl-3">
+        <p class="font-bold text-slate-900">
+          {isEn ? "Access to secluded riverbanks" : "Accès aux berges isolées"}
+        </p>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          {isEn 
+            ? "Jeeps are confined to marked dirt tracks. On foot, trackers can navigate deep river channels, gravel bars, and hidden watering spots where tigers rest."
+            : "Les 4x4 sont limités aux pistes carrossables. À pied, nos guides accèdent aux bancs de sable et bras morts de rivière où les tigres viennent se désaltérer."}
+        </p>
+      </div>
+
+      <div class="space-y-1.5 border-l-2 border-slate-300 pl-3">
+        <p class="font-bold text-slate-900">
+          {isEn ? "Pugmarks and alarm calls" : "Lecture des empreintes et cris d'alerte"}
+        </p>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          {isEn 
+            ? "Trackers read fresh night pugmarks in the sand and listen to langur monkeys and spotted deer alarm vocalizations, directly indicating the predator's heading."
+            : "Nos pisteurs décryptent les empreintes fraîches du matin et interceptent les cris d'alarme des cervidés et des singes, indiquant la direction exacte du félin."}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note on ethics and wild nature -->
+  <div class="text-xs text-slate-500 leading-relaxed border-t border-slate-200 pt-4">
+    <p>
+      {isEn 
+        ? "Note: Wild animals are unpredictable and never guaranteed. Multi-day immersions (4 to 5 days) combined with patience at natural hides provide the highest documented success rates."
+        : "Rappel d'éthique : La faune reste 100% sauvage et aucune observation ne peut être garantie à l'avance. C'est la régularité sur le terrain (4 à 5 jours) et la patience aux points d'affût naturels qui transforment la probabilité en rencontre réelle."}
+    </p>
+  </div>
+</div>

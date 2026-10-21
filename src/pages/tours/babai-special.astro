@@ -3,6 +3,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import TigerObservationStats from '../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -599,6 +600,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </h3>
             <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Immersion profonde dans la vallée isolée de Babai, loin des circuits touristiques classiques.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Safaris combinés : navigation silencieuse sur la rivière, marches en forêt et exploration en 4x4.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Affûts stratégiques sur les berges et points d'eau fréquentés par les grands félins.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Soirée de partage et découverte des traditions locales avec la communauté Tharu de Bardia.</span></li></ul>
           </div>
+
+          <TigerObservationStats lang="fr" />
         </section>
 
         <!-- SECTION 2: CE VOYAGE EST POUR MOI ? (WeRoad Radar) -->

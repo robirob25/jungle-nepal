@@ -3,6 +3,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
+import TigerObservationStats from '../../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -620,6 +621,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </h3>
             <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Exclusive expedition into the secluded, pristine Babai Valley in the depths of Bardia.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>4 days of wild bush camping along the untamed meandering channels of the Babai River.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Foot tracking Bengal tigers, leopards, sloth bears, and wild elephant herds.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>River navigation along wildlife corridors with exceptional sightings of rare Gharials.</span></li></ul>
           </div>
+
+          <TigerObservationStats lang="en" />
         </section>
 
         <!-- SECTION 2: CE VOYAGE EST POUR MOI ? (WeRoad Radar) -->

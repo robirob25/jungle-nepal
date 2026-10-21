@@ -2,6 +2,7 @@
 import { getLocalizedPath } from '../../../i18n/utils';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
+import TigerObservationStats from '../../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -430,16 +431,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </p>
           </div>
 
-          <!-- ETHICS & WILD NATURE COMMITMENT -->
-          <div class="p-5 sm:p-6 rounded-2xl bg-amber-50/80 border border-amber-200/90 text-amber-950 text-xs sm:text-sm space-y-2">
-            <div class="flex items-center gap-2 font-black text-amber-900 uppercase tracking-wider text-xs">
-              <span>⚠️</span>
-              <span>100% Wild Nature & Ethical Wildlife Commitment</span>
-            </div>
-            <p class="leading-relaxed">
-              Wildlife roams freely across a pristine ecosystem spanning nearly 1,000 km². Animal movements are entirely natural and unpredictable; no specific sightings can be guaranteed in advance. Our jeep moves at slow, respectful speeds, with engines shut off near observation blinds to protect animal peace and ensure authentic, undisturbed wildlife viewing.
-            </p>
-          </div>
+          <TigerObservationStats lang="en" />
 
           <!-- KEY FACTS CARDS -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">

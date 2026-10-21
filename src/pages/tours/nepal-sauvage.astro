@@ -3,6 +3,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import TigerObservationStats from '../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -689,6 +690,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </h3>
             <ul class="space-y-3 text-sm sm:text-base text-slate-700"><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>La grande traversée du Népal reliant les sommets sacrés de l'Himalaya aux jungles tropicales du Teraï.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>3 jours d'immersion totale et safaris à pied dans le parc national de Bardia avec nos pisteurs.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Séjour reposant et contemplatif dans le village traditionnel de Ghachok au pied des Annapurnas.</span></li><li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-[#0e8354] mt-2 shrink-0"></span><span>Découvertes culturelles et spirituelles majeures à Lumbini, Katmandou et Bhaktapur.</span></li></ul>
           </div>
+
+          <TigerObservationStats lang="fr" />
         </section>
 
         <!-- SECTION 2: CE VOYAGE EST POUR MOI ? (WeRoad Radar) -->

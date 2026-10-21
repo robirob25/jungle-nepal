@@ -2,6 +2,7 @@
 import { getLocalizedPath } from '../../i18n/utils';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import TigerObservationStats from '../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -430,16 +431,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </p>
           </div>
 
-          <!-- AVERTISSEMENT ETHIQUE & NATURE SAUVAGE -->
-          <div class="p-5 sm:p-6 rounded-2xl bg-amber-50/80 border border-amber-200/90 text-amber-950 text-xs sm:text-sm space-y-2">
-            <div class="flex items-center gap-2 font-black text-amber-900 uppercase tracking-wider text-xs">
-              <span>⚠️</span>
-              <span>Engagement d’éthique et nature 100 % sauvage</span>
-            </div>
-            <p class="leading-relaxed">
-              La faune évolue en liberté absolue dans un écosystème préservé de près de 1 000 km². Les déplacements des animaux demeurent imprévisibles et aucune rencontre particulière ne peut être garantie à l'avance. La jeep progresse à vitesse lente et respectueuse, moteur souvent coupé aux abords des affûts pour ne pas troubler la quiétude des animaux et privilégier une observation naturelle.
-            </p>
-          </div>
+          <TigerObservationStats lang="fr" />
 
           <!-- CARTE D'INFOS CLÉS -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">

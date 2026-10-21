@@ -2,6 +2,7 @@
 import { getLocalizedPath } from '../../i18n/utils';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import TigerObservationStats from '../../components/TigerObservationStats.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -514,16 +515,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </p>
           </div>
 
-          <!-- Avertissement Faune Sauvage -->
-          <div class="p-5 sm:p-6 rounded-3xl bg-amber-500/10 border border-amber-500/30 text-slate-900 space-y-2">
-            <div class="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
-              <span class="text-base">⚠️</span>
-              <span>Engagement d'éthique et nature 100% sauvage</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-              La faune évolue en totale liberté dans son habitat naturel. Les déplacements des animaux ne sont ni prévisibles ni contrôlés, et aucune observation particulière (notamment du tigre) ne peut être garantie à 100%. Chaque safari à pied est une aventure unique guidée par les indices du terrain, l'écoute des cris d'alerte et la patience.
-            </p>
-          </div>
+          <TigerObservationStats lang="fr" />
         </section>
 
         <!-- SECTION 2: OPTION NUIT CHEZ PAWAN (GUIDE SENIOR BBC) -->
