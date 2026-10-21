@@ -1853,7 +1853,8 @@
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
     "days": [],
-    "enSlug": "dashain-festival-tharu-cultural-tour"
+    "enSlug": "dashain-festival-tharu-cultural-tour",
+    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp"
   },
   {
     "slug": "safari-pied-bardia",
@@ -1896,7 +1897,8 @@
         "desc": "Departure at 6:30 AM for a full day of foot tracking and wildlife observation in Bardia jungle. Bush lunch included. Return around 6:00 PM."
       }
     ],
-    "enSlug": "bardia-walking-safari"
+    "enSlug": "bardia-walking-safari",
+    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp"
   },
   {
     "slug": "safari-pied-chitwan",
@@ -1939,7 +1941,8 @@
         "desc": "Departure at 6:30 AM with dugout wooden canoe crossing of Rapti river. Tracking in forests and grasslands. Bush picnic lunch included. Return around 6:00 PM."
       }
     ],
-    "enSlug": "chitwan-walking-safari"
+    "enSlug": "chitwan-walking-safari",
+    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp"
   },
   {
     "slug": "safari-jeep-bardia",
@@ -1985,7 +1988,8 @@
         "desc": "Departure at 06:00 AM by private jeep. Morning track inspection in the Sal forest, elephant corridors, watchtower picnic lunch, and riverside hides along the Geruwa. Return around 06:00 PM."
       }
     ],
-    "enSlug": "bardia-jeep-safari"
+    "enSlug": "bardia-jeep-safari",
+    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp"
   },
   {
     "slug": "safari-jeep-chitwan",
@@ -2029,7 +2033,8 @@
         "desc": "Departure at 06:00 AM by private jeep from Sauraha. Rapti river crossing, tracking sandy trails through Sal forest, rhino wetlands, watchtower picnic lunch, and riverside hides. Return around 06:00 PM."
       }
     ],
-    "enSlug": "chitwan-jeep-safari"
+    "enSlug": "chitwan-jeep-safari",
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
   },
   {
     "slug": "safari-chitwan-3-jours",
@@ -2058,7 +2063,8 @@
     "images": [
       "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/chitwan_rhino.webp"
   },
   {
     "slug": "pokhara-chitwan-safari-transfert-katmandou",
@@ -2087,7 +2093,8 @@
     "images": [
       "/assets/snow-leopard/pokhara_lake.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
   },
   {
     "slug": "rafting-safari-bardia",
@@ -2116,6 +2123,7 @@
     "images": [
       "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp"
   }
 ]

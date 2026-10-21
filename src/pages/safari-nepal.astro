@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
 import toursData from '../data/tours.json';
 
-// Filter core wildlife safari tours
+// Core safari tours with verified image fallbacks
 const safariTourSlugs = [
   "bardia-explorateur",
   "chitwan-bardia-complete",
@@ -47,18 +47,18 @@ const faqs = [
 ---
 
 <Layout 
-  title="Safari au Népal : circuits, parcs et observation du tigre"
+  title="Safari au Népal : agence locale spécialiste du tigre du Bengale"
   description="Agence locale spécialiste des safaris au Népal. Pistage du tigre du Bengale à pied à Bardia, rhinocéros à Chitwan, safaris en jeep et micro-groupes éthiques."
-  image="/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp"
+  image="/assets/drive_wildlife/hero_safari_nepal.webp"
   lang="fr"
   isDarkHeader={true}
 >
   <SchemaOrg
     slot="head"
     type="TouristDestination"
-    headline="Safari au Népal : parcs nationaux, circuits et observation du tigre du Bengale"
+    headline="Safari au Népal : circuits, parcs nationaux et observation du tigre du Bengale"
     description="Guide complet et expéditions de safari au Népal avec Jungle Nepal Adventure. Pistage à pied à Bardia, rhinocéros à Chitwan et écotourisme en micro-groupe."
-    image="/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp"
+    image="/assets/drive_wildlife/hero_safari_nepal.webp"
     url="https://junglenepal.com/safari-nepal"
     lang="fr"
     about={["Safari au Népal", "Tigre du Bengale", "Parc national de Bardia", "Parc national de Chitwan", "Agence locale Népal"]}
@@ -82,71 +82,50 @@ const faqs = [
   <!-- HEADER NAVIGATION -->
   <Header lang="fr" currentPath="/safari-nepal" />
 
-  <!-- 1. HERO SECTION -->
-  <section class="relative min-h-[75vh] lg:min-h-[82vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
-    <!-- Background Image with Ambient Overlay -->
+  <!-- 1. HERO SECTION AVEC LA VRAIE PHOTO DRIVE FOURNIE -->
+  <section class="relative min-h-[68vh] lg:min-h-[74vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
+    <!-- Hero Background Image (Photo Drive fournie) -->
     <div class="absolute inset-0 z-0">
       <img 
-        src="/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp" 
-        alt="Safari à pied sur les traces du tigre du Bengale dans la jungle de Bardia au Népal" 
-        class="w-full h-full object-cover opacity-45 scale-105 filter brightness-85 contrast-105"
+        src="/assets/drive_wildlife/hero_safari_nepal.webp" 
+        alt="Safari au Népal dans la jungle sauvage de Bardia avec Jungle Nepal Adventure" 
+        class="w-full h-full object-cover opacity-55 scale-105 filter brightness-90 contrast-105"
         fetchpriority="high"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-transparent to-slate-950/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/30"></div>
     </div>
 
-    <div class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
+    <div class="relative z-10 max-w-4xl mx-auto text-center space-y-5">
       
       <!-- Breadcrumb navigation -->
-      <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-semibold mb-2">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-medium">
         <a href="/" class="hover:text-white transition-colors">Accueil</a>
         <span>›</span>
-        <span class="text-emerald-400 font-bold">Safari au Népal</span>
+        <span class="text-amber-300 font-semibold">Safari au Népal</span>
       </nav>
 
-      <!-- Badge sur-titre -->
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+      <!-- Sur-titre épuré -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/70 border border-emerald-400/30 text-emerald-300 text-[11px] sm:text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
         <span>Agence réceptive locale spécialiste de la faune</span>
       </div>
 
-      <!-- H1 -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.15] max-w-4xl mx-auto">
-        Safari au Népal : parcs sauvages, circuits et pistage du tigre du Bengale
+      <!-- H1 optimisé requêtes exactes (Sentence case) -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.15] max-w-3xl mx-auto drop-shadow-lg">
+        Safari au Népal : observer le tigre du Bengale avec notre agence locale
       </h1>
 
-      <!-- Intro Subtitle -->
-      <p class="text-base sm:text-lg lg:text-xl text-slate-200 max-w-3xl mx-auto font-normal leading-relaxed drop-shadow">
-        Loin des sentiers de trek battus, découvrez les plaines tropicales du Teraï à pied, en pirogue et en jeep avec nos pisteurs natifs Tharu. Une immersion éthique en micro-groupe au plus près des grands fauves.
+      <!-- Intro Subtitle sobre et percutant -->
+      <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto font-normal leading-relaxed drop-shadow">
+        Pistage à pied dans le parc national de Bardia, rhinocéros à Chitwan et expéditions en micro-groupe guidées par nos pisteurs natifs Tharu. Une immersion 100 % éthique, sans intermédiaire.
       </p>
 
-      <!-- 4 Instant Trust Badges -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto pt-4 text-left">
-        <div class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4">
-          <p class="text-amber-300 font-black text-2xl lg:text-3xl">78 %</p>
-          <p class="text-xs text-slate-200 font-medium mt-1 leading-snug">Chances d'observer le tigre à Bardia (mars-mai)</p>
-        </div>
-        <div class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4">
-          <p class="text-emerald-400 font-black text-2xl lg:text-3xl">100 %</p>
-          <p class="text-xs text-slate-200 font-medium mt-1 leading-snug">À pied & jeep éthique (0 balade à dos d'éléphant)</p>
-        </div>
-        <div class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4">
-          <p class="text-white font-black text-2xl lg:text-3xl">Tharu</p>
-          <p class="text-xs text-slate-200 font-medium mt-1 leading-snug">Pisteurs natifs nés en lisière de réserve</p>
-        </div>
-        <div class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4">
-          <p class="text-amber-300 font-black text-2xl lg:text-3xl">4 à 10</p>
-          <p class="text-xs text-slate-200 font-medium mt-1 leading-snug">Voyageurs max par micro-groupe ou privatif</p>
-        </div>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="pt-4 flex flex-wrap items-center justify-center gap-3.5">
-        <a href="#circuits-safari" class="px-7 py-3.5 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs sm:text-sm shadow-xl shadow-emerald-950/50 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2">
+      <!-- Boutons d'action rapides -->
+      <div class="pt-3 flex flex-wrap items-center justify-center gap-3">
+        <a href="#circuits-safari" class="px-7 py-3.5 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-950/40 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2">
           <span>Découvrir nos séjours safari</span>
           <span>↓</span>
         </a>
-        <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="px-6 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm border border-white/20 backdrop-blur-md transition-all flex items-center gap-2">
+        <a href="https://wa.me/33695413227" target="_blank" rel="nofollow noopener noreferrer" class="px-6 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm border border-white/25 backdrop-blur-md transition-all flex items-center gap-2">
           <span>Échanger sur WhatsApp avec Robin</span>
         </a>
       </div>
@@ -154,113 +133,170 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 2. L'ESSENTIEL DU SAFARI AU NÉPAL : POURQUOI C'EST UNIQUE EN ASIE -->
-  <section class="py-16 sm:py-20 bg-slate-900 text-white border-b border-white/10">
+  <!-- 2. POURQUOI LE SAFARI AU NÉPAL N'A AUCUN ÉQUIVALENT AU MONDE (FOND BLANC, 3 BLOCS AVEC PHOTOS D'ANIMAUX) -->
+  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Immersion terrain</span>
-        <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-2 leading-tight">
-          Pourquoi le safari au Népal n'a aucun équivalent sur le continent
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Immersion terrain</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1.5 leading-tight">
+          Pourquoi le safari au Népal n'a aucun équivalent au monde
         </h2>
-        <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
-          Quand on imagine un voyage au Népal, l'esprit s'envole spontanément vers les crêtes enneigées de l'Everest ou le tour des Annapurnas. Pourtant, au sud du pays s'étend le Teraï : une plaine alluviale subtropicale bordée par les contreforts des Siwaliks, où subsiste l'une des biodiversités les plus denses d'Asie du Sud.
+        <p class="mt-3 text-slate-600 text-base sm:text-lg leading-relaxed">
+          Loin des jeeps bruyantes et des pistes balisées d'Afrique ou d'Inde, le sud du Népal propose une approche unique de la vie sauvage : ici, la jungle s'explore à pied dans un silence absolu, au rythme de la nature et des populations autochtones.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-slate-950/70 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-emerald-900/40 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-black text-xl">
-            01
+      <!-- 3 Blocs avec vraies photos d'animaux au sommet -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Bloc 1: Tigre à pied -->
+        <div class="bg-white border border-slate-200/90 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-56 overflow-hidden bg-slate-100 relative">
+              <img 
+                src="/assets/drive_wildlife/tigre1.webp" 
+                alt="Tigre du Bengale dans la végétation de Bardia au Népal" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 bg-[#0e5c3e] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+                Bardia National Park
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-lg font-bold text-slate-950 leading-snug">
+                Le seul pays au monde où l'on piste le tigre à pied
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Le Népal est le seul territoire de la planète où vous pouvez légalement traquer le tigre du Bengale à pied au cœur d'une réserve nationale. Encadré par deux pisteurs natifs Tharu armés de bâtons de bambou, vous avancez en silence en lisant les empreintes fraîches et en décodant les cris d'alarme des cervidés.
+              </p>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-white">Le seul pays autorisant le safari à pied</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Contrairement aux réserves d'Inde où vous restez prisonnier d'une jeep sur des sentiers surfréquentés, le Népal autorise la marche dans le sanctuaire de Bardia. Pas de bruit de moteur, pas d'échappement : vous écoutez les bruits de la jungle, suivez les empreintes fraîches dans le sable et vivez la faune à hauteur d'homme.
-          </p>
+          <div class="p-6 pt-0 text-xs font-bold text-[#0e8354]">
+            Taux d'observation : 75 à 85 % (mars à mai)
+          </div>
         </div>
 
-        <div class="bg-slate-950/70 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-amber-900/40 border border-amber-500/30 flex items-center justify-center text-amber-300 font-black text-xl">
-            02
+        <!-- Bloc 2: Rhinocéros unicorne -->
+        <div class="bg-white border border-slate-200/90 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-56 overflow-hidden bg-slate-100 relative">
+              <img 
+                src="/assets/tours_thumbs/chitwan_rhino.webp" 
+                alt="Rhinocéros unicorne d'Asie dans les herbes hautes à Chitwan" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 bg-[#0e5c3e] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+                Chitwan National Park
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-lg font-bold text-slate-950 leading-snug">
+                Le sanctuaire mondial du grand rhinocéros unicorne
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Le Népal abrite la deuxième plus grande population de rhinocéros unicornes d'Asie au monde. À Chitwan et à Bardia, ces mastodontes de deux tonnes vivent en totale liberté. Vous pouvez les observer à courte distance lors de marches guidées ou en glissant paisiblement en pirogue traditionnelle sur les rivières.
+              </p>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-white">La réussite historique de la conservation du tigre</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Le Népal est le premier pays au monde à avoir presque triplé sa population de tigres du Bengale depuis 2010. Le recensement national officiel dénombre plus de 355 tigres sauvages, dont 125 dans le seul parc national de Bardia. Cette concentration exceptionnelle en fait l'un des meilleurs spots de la planète pour apercevoir ce grand félin dans son biotope intact.
-          </p>
+          <div class="p-6 pt-0 text-xs font-bold text-[#0e8354]">
+            Observation garantie à 98 % à Chitwan
+          </div>
         </div>
 
-        <div class="bg-slate-950/70 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-cyan-900/40 border border-cyan-500/30 flex items-center justify-center text-cyan-300 font-black text-xl">
-            03
+        <!-- Bloc 3: Éléphants, ours et 450+ espèces -->
+        <div class="bg-white border border-slate-200/90 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-56 overflow-hidden bg-slate-100 relative">
+              <img 
+                src="/assets/curated_gallery/elephant_asie_male_jungle.webp" 
+                alt="Grand éléphant sauvage mâle dans la forêt tropicale de Bardia" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 bg-[#0e5c3e] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+                Teraï sauvage
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-lg font-bold text-slate-950 leading-snug">
+                Une biodiversité colossale et plus de 450 espèces
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Le Teraï concentre des trésors fauniques insoupçonnés : éléphants sauvages solitaires, ours lippus, hardes de cerfs des marais, léopards discrets, dauphins du Gange et gavials préhistoriques. Un paradis préservé à basse altitude (200 m), sans fatigue liée à l'altitude.
+              </p>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-white">Zéro mal d'altitude, accessible à tous</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Le Teraï s'étend entre 100 et 300 mètres au-dessus du niveau de la mer. Aucun dénivelé violent, aucun risque d'hypoxie ou de mal aigu des montagnes (MAM). Que vous soyez passionné de photographie naturaliste, voyageur en couple ou en famille, le safari jungle permet de vivre l'aventure népalaise dans un confort total.
-          </p>
+          <div class="p-6 pt-0 text-xs font-bold text-[#0e8354]">
+            Climat tropical doux, accessible à tous
+          </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- 3. NOS CIRCUITS SAFARI PHARES -->
-  <section id="circuits-safari" class="py-16 sm:py-24 bg-slate-950 text-white">
+  <!-- 3. NOS SÉJOURS SAFARI PHARES (FOND LÉGER SLATE-50) -->
+  <section id="circuits-safari" class="py-16 sm:py-24 bg-slate-50 text-slate-900 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Séjours de terrain</span>
-          <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-1">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Séjours de terrain</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
             Nos expéditions et circuits safari au Népal
           </h2>
-          <p class="text-sm sm:text-base text-slate-300 mt-2 max-w-2xl">
-            Programmes conçus et guidés par notre équipe locale sans aucun intermédiaire. Petits groupes de 4 à 10 personnes ou départs privatifs sur mesure.
+          <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-2xl">
+            Conçus et guidés en direct par notre équipe locale sans aucun intermédiaire. Départs garantis en micro-groupes de 4 à 10 personnes ou départs privatifs sur mesure.
           </p>
         </div>
-        <a href="/nos-offres" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 shrink-0">
+        <a href="/nos-offres" class="text-xs font-bold text-[#0e8354] hover:underline flex items-center gap-1 shrink-0">
           <span>Voir tous les 18 circuits</span>
           <span>→</span>
         </a>
       </div>
 
-      <!-- Tours Grid -->
+      <!-- Tours Grid avec cartes blanches épurées -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {safariTours.map((tour) => (
-          <article class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between group shadow-xl">
+          <article class="bg-white border border-slate-200 rounded-3xl overflow-hidden hover:border-[#0e8354] transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl">
             <div>
-              <div class="relative h-60 overflow-hidden bg-slate-950">
+              <div class="relative h-60 overflow-hidden bg-slate-100">
                 <img 
-                  src={tour.image} 
+                  src={tour.image || '/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp'} 
                   alt={tour.title} 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   loading="lazy"
                 />
                 <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0e5c3e] text-white shadow-md">
+                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0e5c3e] text-white shadow-sm">
                     {tour.duration}
                   </span>
-                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-slate-950/80 text-amber-300 border border-amber-400/30">
+                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/90 text-slate-800 border border-slate-200">
                     {tour.difficulty || "Tous niveaux"}
                   </span>
                 </div>
-                <div class="absolute bottom-3 right-3 bg-slate-950/90 text-white font-black text-sm px-3 py-1 rounded-xl border border-white/10">
+                <div class="absolute bottom-3 right-3 bg-slate-950/90 text-white font-extrabold text-xs px-3 py-1 rounded-xl shadow-sm">
                   Dès {tour.price} €
                 </div>
               </div>
 
               <div class="p-6 space-y-3">
-                <h3 class="font-extrabold text-lg text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
                   {tour.title}
                 </h3>
-                <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+                <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
                   {tour.description}
                 </p>
                 
                 {tour.highlights && (
-                  <ul class="text-[11px] text-slate-300 space-y-1 pt-2 border-t border-white/5">
+                  <ul class="text-[11px] text-slate-700 space-y-1 pt-2 border-t border-slate-100">
                     {tour.highlights.slice(0, 2).map((h: string) => (
                       <li class="flex items-center gap-2">
-                        <span class="text-emerald-400 font-bold">✓</span>
+                        <span class="text-[#0e8354] font-bold">✓</span>
                         <span class="truncate">{h}</span>
                       </li>
                     ))}
@@ -272,7 +308,7 @@ const faqs = [
             <div class="p-6 pt-0">
               <a 
                 href={`/tour/${tour.slug}`} 
-                class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wide flex items-center justify-center gap-2 transition-all shadow-md group-hover:shadow-emerald-900/30"
+                class="w-full py-3 px-4 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-bold text-xs uppercase tracking-wide flex items-center justify-center gap-2 transition-all shadow-sm"
               >
                 <span>Voir le circuit détaillé</span>
                 <span>→</span>
@@ -285,23 +321,23 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 4. CARTE INTERACTIVE DES SANCTUAIRES DU NÉPAL (Reprise fidèle) -->
-  <section id="carte-nepal" class="py-16 sm:py-20 bg-slate-950 text-white border-t border-white/10 relative overflow-hidden">
+  <!-- 4. CARTE INTERACTIVE DES SANCTUAIRES DU NÉPAL (REPRISE DE L'ACCUEIL SUR FOND CLAIR) -->
+  <section id="carte-nepal" class="py-16 sm:py-20 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Cartographie faune</span>
-        <h2 class="font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Cartographie faune</span>
+        <h2 class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight leading-tight mt-1">
           Les sanctuaires sauvages du Teraï népalais
         </h2>
-        <p class="mt-3 text-sm sm:text-base text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto">
+        <p class="mt-3 text-sm sm:text-base text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto">
           Du parc mythique de Bardia dans l'ouest aux rivières de Chitwan, explorez les territoires protégés où vivent les grands mammifères du Népal.
         </p>
       </div>
 
       <!-- Map Canvas -->
       <div class="max-w-4xl mx-auto">
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+        <div class="relative rounded-3xl overflow-hidden shadow-lg border border-slate-200">
           <div class="relative overflow-hidden bg-[#f0ebd9]">
             <img
               src="/nepal-map-illustrated.png"
@@ -335,9 +371,9 @@ const faqs = [
             <!-- Hotspot 3: Suklaphanta -->
             <a href="/destinations/suklaphanta" class="absolute top-[32%] left-[12%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer" aria-label="Parc national de Suklaphanta">
               <span class="relative flex h-5 w-5 sm:h-7 sm:w-7 items-center justify-center">
-                <span class="relative inline-flex rounded-full h-3 w-3 sm:h-4 sm:w-4 bg-cyan-500 text-white font-black text-[8px] items-center justify-center shadow border sm:border-2 border-white"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 sm:h-4 sm:w-4 bg-emerald-700 text-white font-black text-[8px] items-center justify-center shadow border sm:border-2 border-white"></span>
               </span>
-              <div class="hidden sm:block absolute -top-7 left-1/2 -translate-x-1/2 bg-slate-950/90 text-cyan-200 text-[9px] font-extrabold px-2 py-0.5 rounded-full whitespace-nowrap shadow border border-cyan-400/20">
+              <div class="hidden sm:block absolute -top-7 left-1/2 -translate-x-1/2 bg-slate-950/90 text-slate-200 text-[9px] font-extrabold px-2 py-0.5 rounded-full whitespace-nowrap shadow border border-white/20">
                 Suklaphanta
               </div>
             </a>
@@ -345,10 +381,10 @@ const faqs = [
             <!-- Hotspot 4: Kathmandu Valley -->
             <a href="/destinations/katmandou" class="absolute top-[58%] left-[62%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer" aria-label="Katmandou">
               <span class="relative flex h-5 w-5 sm:h-7 sm:w-7 items-center justify-center">
-                <span class="relative inline-flex rounded-full h-3 w-3 sm:h-4 sm:w-4 bg-orange-500 text-white font-black text-[8px] items-center justify-center shadow border sm:border-2 border-white"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 sm:h-4 sm:w-4 bg-amber-600 text-white font-black text-[8px] items-center justify-center shadow border sm:border-2 border-white"></span>
               </span>
-              <div class="hidden sm:block absolute -top-7 left-1/2 -translate-x-1/2 bg-slate-950/90 text-orange-200 text-[9px] font-extrabold px-2 py-0.5 rounded-full whitespace-nowrap shadow border border-orange-400/20">
-                Katmandou (Point de départ)
+              <div class="hidden sm:block absolute -top-7 left-1/2 -translate-x-1/2 bg-slate-950/90 text-amber-200 text-[9px] font-extrabold px-2 py-0.5 rounded-full whitespace-nowrap shadow border border-amber-400/20">
+                Katmandou (Départ)
               </div>
             </a>
           </div>
@@ -358,90 +394,90 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 5. QUEL PARC NATIONAL CHOISIR ? (TABLEAU COMPARATIF DÉTAILLÉ) -->
-  <section class="py-16 sm:py-20 bg-slate-900 text-white border-t border-white/10">
+  <!-- 5. QUEL PARC NATIONAL CHOISIR ? (TABLEAU BLANC SIMPLE ET LISIBLE SANS COULEURS SUPERFLUES) -->
+  <section class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       
       <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Comparatif objectif</span>
-        <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Comparatif objectif</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
           Quel parc national choisir pour votre safari au Népal ?
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-2">
-          Tous les parcs du Népal ne se ressemblent pas. Voici notre analyse terrain sans complaisance pour vous aider à arbitrer selon vos attentes.
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Tous les parcs du Népal ne se ressemblent pas. Voici notre comparatif direct et sans artifice pour choisir selon vos attentes faune.
         </p>
       </div>
 
-      <!-- Comparative Table Container -->
-      <div class="overflow-x-auto rounded-3xl border border-white/10 shadow-2xl bg-slate-950">
+      <!-- Tableau épuré haute lisibilité -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
         <table class="w-full text-left text-xs sm:text-sm">
-          <thead class="bg-slate-900 border-b border-white/10 text-white font-bold">
+          <thead class="bg-slate-100/80 border-b border-slate-200 text-slate-900 font-bold">
             <tr>
-              <th class="p-4 sm:p-5">Critère</th>
-              <th class="p-4 sm:p-5 text-amber-300">Bardia National Park</th>
-              <th class="p-4 sm:p-5 text-emerald-400">Chitwan National Park</th>
-              <th class="p-4 sm:p-5 text-cyan-300">Suklaphanta National Park</th>
+              <th class="p-4 sm:p-5 text-slate-800">Critère</th>
+              <th class="p-4 sm:p-5 text-[#0e8354] font-black">Bardia National Park</th>
+              <th class="p-4 sm:p-5 text-slate-900 font-black">Chitwan National Park</th>
+              <th class="p-4 sm:p-5 text-slate-700 font-bold">Suklaphanta National Park</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-white/5 text-slate-300">
+          <tbody class="divide-y divide-slate-100 text-slate-700">
             <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Animal emblématique</td>
-              <td class="p-4 sm:p-5 font-bold text-amber-200">Tigre du Bengale (125 individus)</td>
-              <td class="p-4 sm:p-5 font-bold text-emerald-200">Rhinocéros unicorne (694 individus)</td>
-              <td class="p-4 sm:p-5">Cerf des marais (2 000+ hardes)</td>
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Animal phare</td>
+              <td class="p-4 sm:p-5 font-bold text-[#0e8354]">Tigre du Bengale (125)</td>
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Rhinocéros unicorne (694)</td>
+              <td class="p-4 sm:p-5">Cerf des marais (2 000+)</td>
             </tr>
-            <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Chances de voir le tigre</td>
-              <td class="p-4 sm:p-5 text-amber-300 font-bold">Très élevées (75 - 85 % en mars-mai)</td>
-              <td class="p-4 sm:p-5">Moyennes (20 - 30 %)</td>
+            <tr class="bg-slate-50/50">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Chances d'observer le tigre</td>
+              <td class="p-4 sm:p-5 font-bold text-amber-700">Très élevées (75 - 85 % en mars-mai)</td>
+              <td class="p-4 sm:p-5">Modérées (20 - 30 %)</td>
               <td class="p-4 sm:p-5">Modérées (30 - 45 %)</td>
             </tr>
             <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Chances de voir le rhinocéros</td>
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Chances d'observer le rhinocéros</td>
               <td class="p-4 sm:p-5">Bonnes (60 - 70 %)</td>
-              <td class="p-4 sm:p-5 text-emerald-300 font-bold">Quasi certaines (95 - 98 %)</td>
-              <td class="p-4 sm:p-5">Faibles (population réintroduite)</td>
+              <td class="p-4 sm:p-5 font-bold text-[#0e8354]">Exceptionnelles (95 - 98 %)</td>
+              <td class="p-4 sm:p-5">Rares (population réintroduite)</td>
+            </tr>
+            <tr class="bg-slate-50/50">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Type de safari privilégié</td>
+              <td class="p-4 sm:p-5 font-medium">À pied (walking safari) & Jeep 4x4</td>
+              <td class="p-4 sm:p-5 font-medium">Jeep, Pirogue & Marche</td>
+              <td class="p-4 sm:p-5 font-medium">Jeep & Postes d'affût savane</td>
             </tr>
             <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Type de safari roi</td>
-              <td class="p-4 sm:p-5">Walking safari (à pied) & Jeep</td>
-              <td class="p-4 sm:p-5">Jeep, Pirogue & Marche</td>
-              <td class="p-4 sm:p-5">Jeep & Points d'affût savane</td>
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Fréquentation touristique</td>
+              <td class="p-4 sm:p-5 text-[#0e8354] font-bold">Très faible (sentiment d'isolement)</td>
+              <td class="p-4 sm:p-5 text-slate-600">Élevée (secteur Sauraha aménagé)</td>
+              <td class="p-4 sm:p-5 text-[#0e8354] font-bold">Quasi nulle (territoire secret)</td>
             </tr>
-            <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Fréquentation touristique</td>
-              <td class="p-4 sm:p-5 text-emerald-400 font-semibold">Très faible (sentiment d'isolement)</td>
-              <td class="p-4 sm:p-5 text-rose-300">Élevée (Sauraha très aménagé)</td>
-              <td class="p-4 sm:p-5 text-emerald-400 font-semibold">Quasi nulle (terres vierges)</td>
-            </tr>
-            <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Accès depuis Katmandou</td>
+            <tr class="bg-slate-50/50">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Accès depuis Katmandou</td>
               <td class="p-4 sm:p-5">Vol (50 min) + 2 h de route privée</td>
               <td class="p-4 sm:p-5">Vol (20 min) ou 5 h de route</td>
               <td class="p-4 sm:p-5">Vol (1 h 15) + 1 h 30 de route</td>
             </tr>
             <tr>
-              <td class="p-4 sm:p-5 font-bold text-white">Notre recommandation</td>
-              <td class="p-4 sm:p-5 font-bold text-white">Pour les passionnés de prédateurs et de silence</td>
-              <td class="p-4 sm:p-5 font-bold text-white">Pour un premier séjour facile et les familles</td>
-              <td class="p-4 sm:p-5 font-bold text-white">Pour les ornithologues et explorateurs solitaires</td>
+              <td class="p-4 sm:p-5 font-bold text-slate-900">Profil idéal</td>
+              <td class="p-4 sm:p-5 font-medium text-slate-900">Passionnés de félins, silence et traque à pied</td>
+              <td class="p-4 sm:p-5 font-medium text-slate-900">Familles et premiers voyages nature au Népal</td>
+              <td class="p-4 sm:p-5 font-medium text-slate-900">Ornithologues et aventuriers solitaires</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Expert Advice Callout -->
-      <div class="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start">
+      <!-- Conseil de Robin épuré -->
+      <div class="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start">
         <img 
           src="/assets/robin_coordinateur_expedition_jungle_nepal.webp" 
           alt="Robin Rozier – Fondateur et coordinateur Jungle Nepal Adventure" 
-          class="w-16 h-16 rounded-full border-2 border-emerald-400 object-cover shrink-0 shadow-md"
+          class="w-16 h-16 rounded-full border-2 border-[#0e8354] object-cover shrink-0 shadow-sm"
           loading="lazy"
         />
-        <div class="space-y-2">
-          <p class="font-extrabold text-base text-white">Le conseil de Robin : la combinaison gagnante</p>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            « Si vous disposez de 10 à 14 jours, ne choisissez pas : combinez les deux. Commencez par Chitwan pour observer facilement les rhinocéros unicornes et naviguer sur la rivière Rapti, puis prenez le cap vers l'ouest sauvage de Bardia pour vous consacrer entièrement au pistage du tigre à pied. C'est l'essence même de notre circuit <a href="/tour/chitwan-bardia-complete" class="text-emerald-400 underline font-bold">Chitwan + Bardia l'aventure complète</a>. »
+        <div class="space-y-1.5">
+          <p class="font-extrabold text-base text-slate-950">Le conseil de Robin : la combinaison gagnante</p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            « Si vous disposez de 10 à 14 jours au Népal, combinez les deux réserves. Commencez par Chitwan pour observer facilement les rhinocéros unicornes et descendre la rivière en pirogue, puis rejoignez l'ouest sauvage de Bardia pour vous consacrer entièrement au pistage du tigre à pied. C'est l'itinéraire de notre circuit <a href="/tour/chitwan-bardia-complete" class="text-[#0e8354] underline font-bold">Chitwan + Bardia l'aventure complète</a>. »
           </p>
         </div>
       </div>
@@ -449,28 +485,28 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 6. LES 5 GRANDS DU TERAÏ ET PROBABILITÉS D'OBSERVATION -->
-  <section class="py-16 sm:py-24 bg-slate-950 text-white">
+  <!-- 6. LES GRANDS MAMMIFÈRES DU TERAÏ (VRAIES PHOTOS ANIMALES HAUTE QUALITÉ) -->
+  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Faune sauvage du Teraï</span>
-        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mt-1">
-          Les cinq grands mammifères et chances réelles d'observation
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Faune du Teraï</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
+          Les grands mammifères du Népal et chances réelles d'observation
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-3">
-          Données basées sur les carnets de terrain 2024-2026 de nos maîtres pisteurs natifs Tharu.
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Statistiques établies d'après les carnets de terrain de nos guides locaux Tharu.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Big 1: Tigre du Bengale -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950">
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/drive_wildlife/2026-05-08_-_0000273923_-_Sur_les_traces_du_Tigre.webp" 
-              alt="Tigre du Bengale au parc national de Bardia" 
+              src="/assets/curated_gallery/tigre_bengale_traversee_riviere.webp" 
+              alt="Tigre du Bengale traversant une rivière à Bardia" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -478,26 +514,26 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Tigre du Bengale</h3>
-                <span class="text-xs font-black text-amber-300 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-400/30">78 % à Bardia</span>
+                <h3 class="font-bold text-lg text-slate-950">Tigre du Bengale</h3>
+                <span class="text-xs font-black text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">78 % à Bardia</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Panthera tigris tigris</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Le seigneur de Bardia. Solitaire et territorial, il s'observe lors des affûts discrets aux berges des rivières Karnali et Geruwa, ou dans les clairières de Baghaur Phanta.
+              <p class="text-xs text-slate-500 italic">Panthera tigris tigris</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Le grand prédateur emblématique de Bardia. Solitaire et territorial, il s'observe lors des affûts discrets aux berges des rivières Karnali et Geruwa.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Mars à mai (chaleur & soif).
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Mars à mai (chaleur & soif).
             </div>
           </div>
         </div>
 
         <!-- Big 2: Rhinocéros unicorne -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950">
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/drive_wildlife/2026-05-05_-_0000272847_-_Rhinoc_ros_indien_sur_la_piste.webp" 
-              alt="Rhinocéros indien unicorne sur la piste à Chitwan" 
+              src="/assets/curated_gallery/rhino_unicorne_brume.webp" 
+              alt="Rhinocéros unicorne dans la brume matinale à Chitwan" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -505,26 +541,26 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Rhinocéros unicorne</h3>
-                <span class="text-xs font-black text-emerald-300 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-400/30">98 % à Chitwan</span>
+                <h3 class="font-bold text-lg text-slate-950">Rhinocéros unicorne</h3>
+                <span class="text-xs font-black text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">98 % à Chitwan</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Rhinoceros unicornis</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Blindé comme un char préhistorique, ce colosse de 2 tonnes broute paisiblement les herbes hautes et adore se baigner dans les marécages et méandres de rivière.
+              <p class="text-xs text-slate-500 italic">Rhinoceros unicornis</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Blindé de plaques dermiques épaisses, ce colosse végétarien de 2 tonnes broute paisiblement en bord de marais et dans les clairières humides.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Octobre à avril (toute la saison sèche).
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Octobre à avril (saison sèche).
             </div>
           </div>
         </div>
 
         <!-- Big 3: Éléphant sauvage d'Asie -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950">
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/drive_wildlife/2026-05-09_-_0000274579_-_Elephant_on_the_road.webp" 
-              alt="Éléphant sauvage d'Asie sur la piste du parc de Bardia" 
+              src="/assets/curated_gallery/elephant_asie_male_jungle.webp" 
+              alt="Éléphant sauvage mâle tusker à Bardia" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -532,26 +568,26 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Éléphant sauvage d'Asie</h3>
-                <span class="text-xs font-black text-cyan-300 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-400/30">65 % à Bardia</span>
+                <h3 class="font-bold text-lg text-slate-950">Éléphant sauvage d'Asie</h3>
+                <span class="text-xs font-black text-slate-800 bg-slate-100 px-2.5 py-1 rounded-full border border-slate-200">65 % à Bardia</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Elephas maximus</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Les grands mâles tuskers de Bardia (dont les célèbres Bahadur et Ronaldo) migrent entre le Népal et l'Inde. Une rencontre à pied impose le respect absolu des distances de sécurité.
+              <p class="text-xs text-slate-500 italic">Elephas maximus</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Les grands mâles solitaires de Bardia traversent régulièrement le parc le long de corridors transfrontaliers avec l'Inde. Une observation impressionnante et respectueuse.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Novembre à mai.
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Novembre à mai.
             </div>
           </div>
         </div>
 
         <!-- Big 4: Ours lippu -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950 flex items-center justify-center text-slate-500 font-bold">
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/tours_thumbs/jungle_extreme_pisteurs_faune_sauvage.webp" 
-              alt="Ours lippu dans la jungle de Bardia" 
+              src="/assets/curated_gallery/ours_lippu_sentier_chitwan.webp" 
+              alt="Ours lippu sur un sentier forestier à Chitwan et Bardia" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -559,26 +595,26 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Ours lippu</h3>
-                <span class="text-xs font-black text-slate-200 bg-slate-800 px-2.5 py-1 rounded-full border border-white/10">50 % en forêt</span>
+                <h3 class="font-bold text-lg text-slate-950">Ours lippu</h3>
+                <span class="text-xs font-black text-slate-800 bg-slate-100 px-2.5 py-1 rounded-full border border-slate-200">50 % en forêt</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Melursus ursinus</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Reconnaissable à sa fourrure noire ébouriffée et son museau blanc. Il passe ses journées à éventrer les termitières de sal et grimper dans les figuiers sauvages.
+              <p class="text-xs text-slate-500 italic">Melursus ursinus</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Fourrure noire hirsute et museau allongé blanc. Il fouille les termitières dans les forêts de sals et grimpe aux arbres fruitiers sauvages.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Mars à mai (saison des fruits).
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Mars à mai (fructification).
             </div>
           </div>
         </div>
 
-        <!-- Big 5: Dauphin du Gange & Gavial -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950">
+        <!-- Big 5: Gavial du Gange -->
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/drive_wildlife/2026-05-06_-_0000273210_-_Safari_pirogue___Chitwan.webp" 
-              alt="Pirogue traditionnelle et observation des gavials sur la rivière" 
+              src="/assets/curated_gallery/gavial_gange_nage_riviere.webp" 
+              alt="Gavial du Gange nageant dans les eaux claires de la rivière" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -586,26 +622,26 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Gavial & Dauphin du Gange</h3>
-                <span class="text-xs font-black text-cyan-300 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-400/30">85 % sur l'eau</span>
+                <h3 class="font-bold text-lg text-slate-950">Gavial du Gange</h3>
+                <span class="text-xs font-black text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">85 % sur l'eau</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Gavialis gangeticus & Platanista</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Le gavial du Gange, crocodile mangeur de poisson au museau effilé inoffensif pour l'homme, partage les eaux de la Karnali avec le rare dauphin d'eau douce d'Asie.
+              <p class="text-xs text-slate-500 italic">Gavialis gangeticus</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Crocodile mangeur de poisson au museau extrêmement effilé, inoffensif pour l'homme. Il se prélasse sur les bancs de sable le long des rivières Karnali et Babai.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Octobre à avril (eaux calmes).
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Octobre à avril.
             </div>
           </div>
         </div>
 
-        <!-- Big 6: Léopard & Faune secondaire -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between">
-          <div class="h-48 overflow-hidden bg-slate-950">
+        <!-- Big 6: Léopard & faune du sous-bois -->
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="h-52 overflow-hidden bg-slate-100">
             <img 
-              src="/assets/drive_wildlife/2026-05-15_-_0000278069_-_Photographes_dans_la_jungle.webp" 
-              alt="Photographes en affût faune dans la jungle de Bardia" 
+              src="/assets/curated_gallery/leopard_indien_sentier_jungle.webp" 
+              alt="Léopard indien sur une piste forestière au Népal" 
               class="w-full h-full object-cover" 
               loading="lazy"
             />
@@ -613,16 +649,16 @@ const faqs = [
           <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between">
-                <h3 class="font-bold text-lg text-white">Léopard & Faune du sous-bois</h3>
-                <span class="text-xs font-black text-amber-300 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-400/30">450+ oiseaux</span>
+                <h3 class="font-bold text-lg text-slate-950">Léopard indien & oiseaux</h3>
+                <span class="text-xs font-black text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">450+ oiseaux</span>
               </div>
-              <p class="text-xs text-slate-400 italic">Panthera pardus fusca</p>
-              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                Le léopard indien rôde discrètement en lisière de parc. Le Teraï abrite aussi les cerfs axis, sambars, nilgauts, calaos bicornes et 450 espèces d'oiseaux tropicaux.
+              <p class="text-xs text-slate-500 italic">Panthera pardus fusca</p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                Le léopard rôde en lisière de forêt. La jungle abrite également cerfs axis, sambars, calaos bicornes majestueux et rolliers indiens aux reflets turquoise.
               </p>
             </div>
-            <div class="text-[11px] text-slate-400 border-t border-white/5 pt-2">
-              <span class="text-emerald-400 font-bold">Meilleure période :</span> Toute l'année hors mousson.
+            <div class="text-[11px] text-slate-500 border-t border-slate-100 pt-2 font-medium">
+              <span class="text-[#0e8354] font-bold">Pic d'observation :</span> Toute l'année hors mousson.
             </div>
           </div>
         </div>
@@ -632,63 +668,63 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 7. NOS 4 TECHNIQUES DE PISTAGE SUR LE TERRAIN -->
-  <section class="py-16 sm:py-20 bg-slate-900 text-white border-t border-white/10">
+  <!-- 7. NOS 4 TECHNIQUES DE PISTAGE SUR LE TERRAIN (FOND LÉGER SLATE-50) -->
+  <section class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Méthodes de pistage</span>
-        <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Savoir-faire local</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
           Nos quatre approches de safari pour une immersion complète
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-2">
-          Varier les modes de déplacement est la clé pour explorer les différents écosystèmes du parc sans saturer les animaux de notre présence.
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Varier les modes d'approche permet d'explorer les biotopes sans jamais stresser les animaux.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         
         <!-- Technique 1 -->
-        <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
           <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm">1</span>
-            <h3 class="text-lg font-bold text-white">Le safari à pied (Walking safari)</h3>
+            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">1</span>
+            <h3 class="text-lg font-bold text-slate-950">Le safari à pied (Walking safari)</h3>
           </div>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Encadré obligatoirement par deux guides certifiés. Nous marchons silencieusement le long des berges sablonneuses et des lits de rivières asséchés. Les pisteurs décodent les empreintes fraîches de la nuit et écoutent attentivement le cri d'alarme strident des cerfs axis et des singes entelles, qui signale la présence imminente d'un fauve en chasse.
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Encadré par deux guides natifs. Nous marchons en file indienne le long des lits asséchés de rivières. Les pisteurs lisent les empreintes fraîches de la nuit et guettent le cri d'alarme strident des cerfs axis signalant la présence d'un félin en mouvement.
           </p>
         </div>
 
         <!-- Technique 2 -->
-        <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
           <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm">2</span>
-            <h3 class="text-lg font-bold text-white">Le safari en jeep 4x4 privative</h3>
+            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">2</span>
+            <h3 class="text-lg font-bold text-slate-950">Le safari en jeep 4x4 privative</h3>
           </div>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Idéal pour couvrir de longues distances et rejoindre les secteurs reculés de la réserve (comme la forêt de sal profonde ou le secteur de Babai). Nos jeeps ouvertes disposent de places spacieuses garantissant un angle de vue parfait à 360° pour les photographes animaliers sans jamais se gêner.
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Idéal pour parcourir de longues distances et explorer les secteurs reculés de la réserve comme la vallée secrète de Babai. Nos jeeps ouvertes offrent un point de vue dégagé à 360° pour les photographes animaliers.
           </p>
         </div>
 
         <!-- Technique 3 -->
-        <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
           <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm">3</span>
-            <h3 class="text-lg font-bold text-white">Le rafting et pirogue d'observation</h3>
+            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">3</span>
+            <h3 class="text-lg font-bold text-slate-950">Le rafting et pirogue d'observation</h3>
           </div>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Une descente silencieuse portée par le courant de la rivière Karnali ou Rapti. Cette approche aquatique est la moins intrusive de toutes : elle permet de s'approcher à distance respectable des hardes de rhinocéros se baignant aux heures chaudes, des gavials prenant le soleil et des dauphins d'eau douce.
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Une descente silencieuse portée par le courant de la rivière Karnali ou Rapti. Cette approche aquatique est la moins intrusive de toutes : elle permet de s'approcher avec délicatesse des rhinocéros se baignant et des gavials au soleil.
           </p>
         </div>
 
         <!-- Technique 4 -->
-        <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
           <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm">4</span>
-            <h3 class="text-lg font-bold text-white">L'affût fixe aux points d'eau (Machans)</h3>
+            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">4</span>
+            <h3 class="text-lg font-bold text-slate-950">L'affût fixe aux points d'eau (Machans)</h3>
           </div>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            La patience est la vertu suprême du pisteur. Installés immobiles sur un promontoire naturel ou une plateforme surélevée en bois dissimulée dans les branchages, nous attendons les heures les plus chaudes de l'après-midi lorsque la soif contraint le tigre à quitter l'ombre dense pour venir boire.
+          <p class="text-sm text-slate-600 leading-relaxed">
+            La patience est la vertu suprême du pisteur. Installés immobiles sur un promontoire naturel ou une tour d'observation dissimulée, nous attendons les heures chaudes où la soif contraint le tigre à quitter l'ombre dense pour venir s'abreuver.
           </p>
         </div>
 
@@ -697,60 +733,60 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 8. QUAND PARTIR POUR UN SAFARI AU NÉPAL ? (CALENDRIER SAISONS) -->
-  <section class="py-16 sm:py-24 bg-slate-950 text-white">
+  <!-- 8. QUAND PARTIR POUR UN SAFARI AU NÉPAL ? (FOND BLANC) -->
+  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Météo et saisons</span>
-        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Saisons & météo</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
           Quand partir pour un safari au Népal ?
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-3">
-          Le climat tropical du Teraï est très différent de celui des hautes montagnes. Voici comment choisir votre mois de départ.
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Le climat tropical du Teraï suit un rythme bien différent de celui des hautes montagnes himalayennes.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Saison 1: Mars à Mai -->
-        <div class="bg-slate-900 border-2 border-amber-400/30 rounded-3xl p-6 sm:p-8 space-y-4 relative shadow-xl">
-          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-extrabold bg-amber-400/10 text-amber-300 border border-amber-400/30 uppercase tracking-wider">
+        <div class="bg-white border-2 border-amber-300 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-lg transition-all">
+          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 uppercase tracking-wider">
             Saison d'or du tigre
           </div>
-          <h3 class="text-xl font-black text-white">Mars à mai : le pic d'observation</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Les herbes à éléphants ont été coupées ou brûlées par la chaleur, dégageant une visibilité parfaite sur les sous-bois. Les températures grimpent (32 à 38 °C) et l'eau se fait rare. Les tigres passent de longues heures aux points d'eau permanents. C'est la période idéale pour les passionnés de grands prédateurs et de photographie.
+          <h3 class="text-xl font-bold text-slate-950">Mars à mai : pic d'observation</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Les herbes hautes ont été coupées, dégageant une visibilité parfaite sur les sous-bois. Les températures montent (32 à 38 °C) et l'eau se raréfie. Les tigres passent de longues heures aux points d'eau permanents. Idéal pour les photographes.
           </p>
-          <div class="pt-3 border-t border-white/10 text-xs text-amber-200 font-bold">
+          <div class="pt-3 border-t border-slate-100 text-xs text-amber-800 font-bold">
             Taux d'observation tigre : 75 à 85 %
           </div>
         </div>
 
         <!-- Saison 2: Octobre à Novembre -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl">
-          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-extrabold bg-emerald-400/10 text-emerald-300 border border-emerald-400/30 uppercase tracking-wider">
-            Climat idéal & jungle verte
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-lg transition-all">
+          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 uppercase tracking-wider">
+            Climat doux & jungle verte
           </div>
-          <h3 class="text-xl font-black text-white">Octobre à novembre : lumière pure</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            La mousson vient de s'achever : la jungle est luxuriante, les cours d'eau chantent et l'air est débarrassé de toute poussière. Températures très douces (24 à 28 °C). C'est la saison royale pour combiner un safari dans le Teraï avec quelques jours de randonnée sur les contreforts de Pokhara ou de Katmandou.
+          <h3 class="text-xl font-bold text-slate-950">Octobre à novembre : lumière pure</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            La mousson vient de s'achever : la jungle est d'un vert éclatant, l'atmosphère est limpide et les températures sont très agréables (24 à 28 °C). Idéal pour combiner un safari dans le Teraï avec un circuit culturel ou de la marche à Pokhara.
           </p>
-          <div class="pt-3 border-t border-white/10 text-xs text-emerald-300 font-bold">
+          <div class="pt-3 border-t border-slate-100 text-xs text-[#0e8354] font-bold">
             Taux d'observation tigre : 55 à 65 %
           </div>
         </div>
 
         <!-- Saison 3: Décembre à Février -->
-        <div class="bg-slate-900 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl">
-          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-extrabold bg-cyan-400/10 text-cyan-300 border border-cyan-400/30 uppercase tracking-wider">
-            Brumes & oiseaux d'hiver
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-lg transition-all">
+          <div class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 uppercase tracking-wider">
+            Brumes & oiseaux migrateurs
           </div>
-          <h3 class="text-xl font-black text-white">Décembre à février : l'hiver mystique</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Les matinées sont fraîches (10 à 15 °C) enveloppées d'une brume poétique au ras des marécages, avant que le soleil ne réchauffe l'après-midi. Les rhinocéros se prélassent de longues heures sur les bancs de sable au soleil. C'est également la saison reine pour observer les centaines d'espèces d'oiseaux migrateurs de Sibérie.
+          <h3 class="text-xl font-bold text-slate-950">Décembre à février : l'hiver mystique</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Matinées fraîches (10 à 15 °C) enveloppées d'une brume poétique au ras des marécages, puis après-midis ensoleillés. Les rhinocéros se prélassent au soleil sur les berges. Période de prédilection pour observer les oiseaux migrateurs de Sibérie.
           </p>
-          <div class="pt-3 border-t border-white/10 text-xs text-cyan-300 font-bold">
+          <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 font-bold">
             Taux d'observation tigre : 50 à 60 %
           </div>
         </div>
@@ -760,68 +796,66 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 9. POURQUOI JUNGLE NEPAL ADVENTURE ? (AGENCE LOCALE VS GROS OPÉRATEURS) -->
-  <section class="py-16 sm:py-20 bg-slate-900 text-white border-t border-white/10">
+  <!-- 9. POURQUOI CHOISIR NOTRE AGENCE LOCALE (FOND LÉGER SLATE-50) -->
+  <section class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Transparence totale</span>
-        <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Transparence</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
           Pourquoi réserver votre safari avec notre agence locale ?
         </h2>
-        <p class="text-sm sm:text-base text-slate-300 mt-2">
-          La différence entre un revendeur de voyage basé en Europe et un réceptif de terrain né dans la forêt de Bardia.
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          La différence entre un revendeur généraliste basé en Europe et une équipe de terrain née en lisière du parc de Bardia.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <div class="bg-slate-950 border border-rose-500/20 rounded-3xl p-6 sm:p-8 space-y-4">
-          <div class="text-rose-400 font-black text-base flex items-center gap-2">
-            <span>✕</span>
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
+          <div class="text-slate-900 font-black text-base flex items-center gap-2">
             <span>Les grands tour-opérateurs généralistes</span>
           </div>
-          <ul class="text-xs sm:text-sm text-slate-300 space-y-3">
+          <ul class="text-xs sm:text-sm text-slate-600 space-y-3">
             <li class="flex items-start gap-2">
-              <span class="text-rose-400 font-bold">✕</span>
-              <span><strong>Intermédiaires multiples :</strong> 30 à 45 % du prix de votre voyage finance des commissions de vente en France ou en Suisse.</span>
+              <span class="text-rose-500 font-bold">✕</span>
+              <span><strong>Commissions intermédiaires :</strong> 30 à 45 % du tarif de votre voyage rémunère des commerciaux en Europe.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose-400 font-bold">✕</span>
-              <span><strong>Groupes surchargés :</strong> 16 à 22 voyageurs entassés dans les mêmes jeeps, faisant fuir les prédateurs.</span>
+              <span class="text-rose-500 font-bold">✕</span>
+              <span><strong>Groupes trop nombreux :</strong> 16 à 22 voyageurs dans un même véhicule, ce qui fait fuir les animaux farouches.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose-400 font-bold">✕</span>
-              <span><strong>Itinéraires figés :</strong> Impossible de décaler un affût si les tigres ont été repérés 5 kilomètres plus loin le matin même.</span>
+              <span class="text-rose-500 font-bold">✕</span>
+              <span><strong>Itinéraires rigides :</strong> Aucune flexibilité pour déplacer un affût si les tigres ont été vus plus loin le matin même.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-rose-400 font-bold">✕</span>
-              <span><strong>Pisteurs sous-payés :</strong> Les guides locaux ne touchent qu'une fraction marginale des bénéfices du voyage.</span>
+              <span class="text-rose-500 font-bold">✕</span>
+              <span><strong>Retombées locales minimes :</strong> Les pisteurs de terrain ne perçoivent qu'une portion résiduelle du prix payé.</span>
             </li>
           </ul>
         </div>
 
-        <div class="bg-slate-950 border-2 border-emerald-500/40 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl shadow-emerald-950/20">
-          <div class="text-emerald-400 font-black text-base flex items-center gap-2">
-            <span>✓</span>
-            <span>Jungle Nepal Adventure (Agence locale directe)</span>
+        <div class="bg-white border-2 border-[#0e8354] rounded-3xl p-6 sm:p-8 space-y-4 shadow-md">
+          <div class="text-[#0e8354] font-black text-base flex items-center gap-2">
+            <span>Jungle Nepal Adventure (Direct local)</span>
           </div>
-          <ul class="text-xs sm:text-sm text-slate-300 space-y-3">
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-3">
             <li class="flex items-start gap-2">
-              <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>Zéro intermédiaire :</strong> Vous échangez directement avec Robin (coordinateur francophone) et l'équipe népalaise sur place.</span>
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span><strong>Zéro intermédiaire :</strong> Vous échangez directement avec Robin (coordinateur francophone) et l'équipe locale.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>Micro-groupes stricts :</strong> 4 à 10 personnes maximum garantissant le silence absolu et la proximité avec les guides.</span>
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span><strong>Micro-groupes stricts :</strong> 4 à 10 personnes maximum garantissant le silence indispensable et un suivi personnalisé.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>Flexibilité terrain totale :</strong> Nous adaptons nos zones de marche en temps réel selon les mouvements de la faune.</span>
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span><strong>Agilité terrain totale :</strong> Nous adaptons les zones de traque en temps réel selon les mouvements récents des félins.</span>
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>Économie locale solidaire :</strong> Salaires justes, respect des familles Tharu et soutien à la protection de la réserve.</span>
+              <span class="text-[#0e8354] font-bold">✓</span>
+              <span><strong>100 % éthique et solidaire :</strong> Rémunération équitable des pisteurs Tharu et respect strict de la faune sauvage.</span>
             </li>
           </ul>
         </div>
@@ -831,28 +865,28 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 10. FOIRE AUX QUESTIONS (FAQ COMPLÈTE OPTIMISÉE SEO) -->
-  <section class="py-16 sm:py-24 bg-slate-950 text-white border-t border-white/10">
+  <!-- 10. FOIRE AUX QUESTIONS (FAQ BLANCHE ÉPURÉE SCHEMA.ORG) -->
+  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       
       <div class="text-center space-y-2">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Questions fréquentes</span>
-        <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Conseils pratiques</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight">
           Tout savoir avant de partir en safari au Népal
         </h2>
-        <p class="text-sm text-slate-400">
-          Les réponses claires et concrètes de nos guides de terrain pour préparer votre séjour.
+        <p class="text-sm text-slate-600">
+          Les réponses claires et concrètes de nos guides de terrain pour bien préparer votre voyage.
         </p>
       </div>
 
       <div class="space-y-4">
-        {faqs.map((faq, idx) => (
-          <details class="group bg-slate-900 border border-white/10 rounded-2xl overflow-hidden transition-all duration-300">
-            <summary class="p-5 sm:p-6 text-sm sm:text-base font-bold text-white cursor-pointer flex items-center justify-between gap-4 select-none group-open:text-emerald-300">
+        {faqs.map((faq) => (
+          <details class="group bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300">
+            <summary class="p-5 sm:p-6 text-sm sm:text-base font-bold text-slate-900 cursor-pointer flex items-center justify-between gap-4 select-none group-open:text-[#0e8354]">
               <span>{faq.question}</span>
-              <span class="text-emerald-400 font-bold text-lg transition-transform duration-300 group-open:rotate-45 shrink-0">+</span>
+              <span class="text-[#0e8354] font-bold text-lg transition-transform duration-300 group-open:rotate-45 shrink-0">+</span>
             </summary>
-            <div class="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            <div class="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-4">
               {faq.answer}
             </div>
           </details>
@@ -862,20 +896,20 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 11. BLOC FINAL DE CONTACT & DEVIS DIRECT -->
-  <section class="py-16 sm:py-20 bg-gradient-to-b from-slate-950 to-[#041d13] text-white border-t border-white/10">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+  <!-- 11. BLOC DE CONTACT FINAL ÉPURÉ -->
+  <section class="py-16 sm:py-20 bg-slate-50 text-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest">
-        <span>Votre safari sur mesure</span>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-[#0e8354] text-xs font-bold uppercase tracking-widest">
+        <span>Votre voyage sur mesure</span>
       </div>
 
-      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
         Prêt à pister le tigre du Bengale dans la jungle sauvage du Népal ?
       </h2>
 
-      <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-        Que vous souhaitiez rejoindre un de nos départs en micro-groupe ou concevoir une expédition privée sur mesure, nous répondons à toutes vos questions en direct depuis le Népal.
+      <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Que vous souhaitiez rejoindre un de nos départs en micro-groupe ou construire une expédition photo privée sur mesure, nous répondons à vos questions en direct depuis le terrain.
       </p>
 
       <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
@@ -883,21 +917,21 @@ const faqs = [
           href="https://wa.me/33695413227" 
           target="_blank" 
           rel="nofollow noopener noreferrer" 
-          class="px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] active:scale-95 text-white font-extrabold text-sm sm:text-base shadow-xl flex items-center gap-2.5 transition-all"
+          class="px-8 py-4 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] active:scale-95 text-white font-extrabold text-sm sm:text-base shadow-lg flex items-center gap-2.5 transition-all"
         >
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Échanger directement sur WhatsApp</span>
         </a>
         <a 
           href="/contact" 
-          class="px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white font-extrabold text-sm sm:text-base border border-white/20 backdrop-blur-md transition-all flex items-center gap-2"
+          class="px-8 py-4 rounded-full bg-white hover:bg-slate-100 active:scale-95 text-slate-900 font-extrabold text-sm sm:text-base border border-slate-300 transition-all flex items-center gap-2 shadow-sm"
         >
           <span>Demander un devis détaillé</span>
           <span>→</span>
         </a>
       </div>
 
-      <p class="text-xs text-slate-400">
+      <p class="text-xs text-slate-500">
         Réponse rapide et personnalisée • Conseils directs de Robin et des pisteurs Tharu
       </p>
 

@@ -2639,7 +2639,8 @@
       "/assets/tours/dashain/dashain_bamboo_swing_village.webp",
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp"
   },
   {
     "slug": "safari-pied-bardia",
@@ -2681,7 +2682,8 @@
         "title": "Jour 1 – Safari à pied journée complète à Bardia",
         "desc": "Départ à 6h30 pour une journée complète d'observation et de traque à pied dans la jungle de Bardia. Déjeuner pique-nique inclus sous la canopée. Retour vers 18h00."
       }
-    ]
+    ],
+    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp"
   },
   {
     "slug": "safari-pied-chitwan",
@@ -2723,7 +2725,8 @@
         "title": "Jour 1 – Safari à pied journée complète à Chitwan",
         "desc": "Départ à 6h30 avec traversée en pirogue sur la Rapti. Traque à pied dans les forêts et hautes herbes. Déjeuner en pleine nature inclus. Retour vers 18h00."
       }
-    ]
+    ],
+    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp"
   },
   {
     "slug": "safari-jeep-bardia",
@@ -2768,7 +2771,8 @@
         "title": "Jour 1 – Exploration complète 4x4 des secteurs profonds de Bardia",
         "desc": "Départ à 06h00 en jeep privatisée. Traque matinale des empreintes en forêt de Sal, corridors d'éléphants, pique-nique en mirador et affûts le long de la Geruwa. Retour vers 18h00."
       }
-    ]
+    ],
+    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp"
   },
   {
     "slug": "safari-jeep-chitwan",
@@ -2811,7 +2815,8 @@
         "title": "Jour 1 – Exploration complète 4x4 des plaines et forêts de Sal de Chitwan",
         "desc": "Départ à 06h00 en jeep privatisée depuis Sauraha. Traversée de la Rapti, inspection des pistes sablonneuses de Sal, marécages aux rhinocéros, déjeuner pique-nique en mirador et affûts fluviaux. Retour vers 18h00."
       }
-    ]
+    ],
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
   },
   {
     "slug": "safari-chitwan-3-jours",
@@ -2844,7 +2849,8 @@
     "images": [
       "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/chitwan_rhino.webp"
   },
   {
     "slug": "pokhara-chitwan-safari-transfert-katmandou",
@@ -2876,7 +2882,8 @@
     "images": [
       "/assets/snow-leopard/pokhara_lake.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
   },
   {
     "slug": "rafting-safari-bardia",
@@ -2908,6 +2915,7 @@
     "images": [
       "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
     ],
-    "days": []
+    "days": [],
+    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp"
   }
 ]
