@@ -9,7 +9,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "🐅 Safari & Big Cats",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Intense",
     "style": "Immersion & Photography",
@@ -134,7 +134,13 @@
       "/assets/drive_photos/julien_tigre_bengale3.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "nepal-wildlife-safari-15-days"
+    "enSlug": "nepal-wildlife-safari-15-days",
+    "destinations": [
+      "bardia",
+      "chitwan",
+      "suklaphanta"
+    ],
+    "destination_badge": "Bardia & Suklaphanta • Grand Wildlife Safari"
   },
   {
     "slug": "nepal-sauvage",
@@ -272,7 +278,14 @@
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "wild-nepal-safari-annapurna-trek"
+    "enSlug": "wild-nepal-safari-annapurna-trek",
+    "destinations": [
+      "bardia",
+      "chitwan",
+      "annapurna",
+      "katmandou"
+    ],
+    "destination_badge": "Bardia, Chitwan & Annapurnas • Jungle & Mountains"
   },
   {
     "slug": "chitwan-bardia-complete",
@@ -392,7 +405,12 @@
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "chitwan-bardia-combined-safari"
+    "enSlug": "chitwan-bardia-combined-safari",
+    "destinations": [
+      "chitwan",
+      "bardia"
+    ],
+    "destination_badge": "Chitwan & Bardia • Complete Double Safari"
   },
   {
     "slug": "bardia-explorateur",
@@ -479,7 +497,11 @@
       "/assets/drive_photos/julien_cerf_axis.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "bardia-tiger-safari-5-days"
+    "enSlug": "bardia-tiger-safari-5-days",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Bardia National Park • Tiger Tracking"
   },
   {
     "slug": "chitwan-culture",
@@ -560,7 +582,11 @@
       "/assets/drive_photos/adrien_bhaktapur1.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "chitwan-safari-cultural-tour"
+    "enSlug": "chitwan-safari-cultural-tour",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Chitwan National Park • Rhinos & Tharu Culture"
   },
   {
     "slug": "rafting-safari",
@@ -572,7 +598,7 @@
     "originalPrice": null,
     "category": "bivouac",
     "badge": "🚣 Wild Rivers & Rafting",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 15,
     "difficulty": "Sportif",
     "style": "Expedition & Whitewater",
@@ -714,7 +740,11 @@
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "karnali-rafting-and-wildlife-safari"
+    "enSlug": "karnali-rafting-and-wildlife-safari",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Karnali River & Bardia • Whitewater Expedition"
   },
   {
     "slug": "bardia-nuit-sauvage",
@@ -791,7 +821,11 @@
       "/assets/drive_photos/adrien_bardia_camp.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "bardia-bivouac-camping-safari"
+    "enSlug": "bardia-bivouac-camping-safari",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Bardia National Park • Bivouac & Watchtower"
   },
   {
     "slug": "rara-lake-bardia",
@@ -803,7 +837,7 @@
     "originalPrice": null,
     "category": "aventure",
     "badge": "🏔️ Himalayas, Mustang & Spirituality",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 18,
     "difficulty": "Aventurier",
     "style": "High Trek & Safari",
@@ -939,7 +973,12 @@
       "/assets/drive_photos/antoine_wild3.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "rara-lake-bardia-expedition"
+    "enSlug": "rara-lake-bardia-expedition",
+    "destinations": [
+      "rara",
+      "bardia"
+    ],
+    "destination_badge": "Rara Lake & Bardia Park • Wild Far-West"
   },
   {
     "slug": "bardia-babai-camping",
@@ -1041,7 +1080,11 @@
       "/assets/original_site/camping_sauvage_bardia.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "babai-valley-wild-camping-safari"
+    "enSlug": "babai-valley-wild-camping-safari",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Babai Valley (Bardia) • Wild Camping Safari"
   },
   {
     "slug": "nepal-immersion-totale",
@@ -1175,7 +1218,14 @@
       "/assets/drive_photos/julien_safari_a_pied.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "nepal-wildlife-culture-immersion"
+    "enSlug": "nepal-wildlife-culture-immersion",
+    "destinations": [
+      "katmandou",
+      "annapurna",
+      "chitwan",
+      "bardia"
+    ],
+    "destination_badge": "Kathmandu, Pokhara, Chitwan & Bardia • 360° Immersion"
   },
   {
     "slug": "babai-special",
@@ -1187,7 +1237,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "⛺ Jungle Bivouacs & Wild Nights",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Aventurier",
     "style": "Deep Wilderness",
@@ -1262,7 +1312,11 @@
       "/assets/drive_photos/adrien_bardia_sunset.webp"
     ],
     "departures_type": "flexible",
-    "enSlug": "babai-valley-tiger-tracking-5-days"
+    "enSlug": "babai-valley-tiger-tracking-5-days",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Babai Valley (Bardia) • Intensive Tracking"
   },
   {
     "slug": "tiji-mustang",
@@ -1274,7 +1328,7 @@
     "originalPrice": null,
     "category": "culture",
     "badge": "🏔️ Himalayas, Mustang & Spirituality",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 12,
     "difficulty": "Modéré",
     "style": "Tibetan Culture Trek",
@@ -1389,7 +1443,13 @@
       "/assets/drive_photos/fred_wild5.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "tiji-festival-upper-mustang-trek"
+    "enSlug": "tiji-festival-upper-mustang-trek",
+    "destinations": [
+      "mustang",
+      "katmandou",
+      "annapurna"
+    ],
+    "destination_badge": "Upper Mustang (Lo Manthang) • Tibetan Kingdom & Tiji"
   },
   {
     "slug": "carnet-de-voyage",
@@ -1402,7 +1462,7 @@
     "originalPrice": null,
     "category": "culture",
     "badge": "🏔️ Himalayas, Mustang & Spirituality",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 16,
     "difficulty": "Accessible",
     "style": "Artistic & Discovery",
@@ -1527,7 +1587,13 @@
       "/assets/drive_photos/adrien_bhaktapur2.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "nepal-sketching-travel-journal-tour"
+    "enSlug": "nepal-sketching-travel-journal-tour",
+    "destinations": [
+      "katmandou",
+      "annapurna",
+      "bardia"
+    ],
+    "destination_badge": "Kathmandu, Pokhara & Bardia • Sketching Expedition"
   },
   {
     "slug": "immersion-spirituelle",
@@ -1649,7 +1715,12 @@
       "/assets/original_site/nepal_landscape.webp"
     ],
     "departures_type": "scheduled",
-    "enSlug": "himalaya-spiritual-immersion-tour"
+    "enSlug": "himalaya-spiritual-immersion-tour",
+    "destinations": [
+      "katmandou",
+      "annapurna"
+    ],
+    "destination_badge": "Kathmandu Valley & Himalayas • Sacred Monasteries"
   },
   {
     "slug": "panthere-des-neiges",
@@ -1818,7 +1889,12 @@
         "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
       }
     ],
-    "enSlug": "snow-leopard-expedition-nepal"
+    "enSlug": "snow-leopard-expedition-nepal",
+    "destinations": [
+      "annapurna",
+      "himalaya"
+    ],
+    "destination_badge": "Himalayas & High Lands • Ghost Cat Expedition"
   },
   {
     "slug": "dashain-immersion-culturelle",
@@ -1856,7 +1932,13 @@
     ],
     "days": [],
     "enSlug": "dashain-festival-tharu-cultural-tour",
-    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp"
+    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp",
+    "destinations": [
+      "katmandou",
+      "chitwan",
+      "annapurna"
+    ],
+    "destination_badge": "Kathmandu, Pokhara & Chitwan • Dashain Festival"
   },
   {
     "slug": "safari-pied-bardia",
@@ -1868,7 +1950,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "1 day immersion",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 24,
     "difficulty": "Moderate",
     "style": "Immersion & Foot Tracking",
@@ -1900,7 +1982,11 @@
       }
     ],
     "enSlug": "bardia-walking-safari",
-    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp"
+    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Bardia National Park • Walking Safari"
   },
   {
     "slug": "safari-pied-chitwan",
@@ -1912,7 +1998,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "1 day immersion",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Moderate",
     "style": "Immersion & Foot Tracking",
@@ -1944,7 +2030,11 @@
       }
     ],
     "enSlug": "chitwan-walking-safari",
-    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp"
+    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Chitwan National Park • Walking Safari"
   },
   {
     "slug": "safari-jeep-bardia",
@@ -1956,7 +2046,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Private 4x4 Jeep",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Easy",
     "style": "Private 4x4 & Deep Tracking",
@@ -1991,7 +2081,11 @@
       }
     ],
     "enSlug": "bardia-jeep-safari",
-    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Bardia National Park • Private 4x4 Safari"
   },
   {
     "slug": "safari-jeep-chitwan",
@@ -2003,7 +2097,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Private 4x4 Jeep",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 22,
     "difficulty": "Easy",
     "style": "Private 4x4 & Sal Forest",
@@ -2036,7 +2130,11 @@
       }
     ],
     "enSlug": "chitwan-jeep-safari",
-    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Chitwan National Park • Private 4x4 Safari"
   },
   {
     "slug": "safari-chitwan-3-jours",
@@ -2049,7 +2147,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Post-Trek Special • All-Inclusive",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Easy",
     "style": "Ethical Safari & Comfort",
@@ -2066,7 +2164,11 @@
       "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/chitwan_rhino.webp"
+    "image": "/assets/tours_thumbs/chitwan_rhino.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Chitwan National Park • Post-Trek Eco-Safari"
   },
   {
     "slug": "pokhara-chitwan-safari-transfert-katmandou",
@@ -2079,7 +2181,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Pokhara → Kathmandu Transfers Included",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 16,
     "difficulty": "Easy",
     "style": " Overland Transfer & Safari Combo",
@@ -2096,7 +2198,13 @@
       "/assets/snow-leopard/pokhara_lake.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+    "destinations": [
+      "chitwan",
+      "annapurna",
+      "katmandou"
+    ],
+    "destination_badge": "Pokhara, Chitwan & Kathmandu • Safari & Transfer"
   },
   {
     "slug": "rafting-safari-bardia",
@@ -2109,7 +2217,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Private Boat • Dolphins & Wildlife",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Easy",
     "style": "Silent River Drift Safari",
@@ -2126,6 +2234,10 @@
       "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp"
+    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Karnali River & Bardia • River Safari Rafting"
   }
 ]

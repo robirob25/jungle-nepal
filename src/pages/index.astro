@@ -488,7 +488,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <span>OÙ ?</span>
               </div>
               <div class="relative mt-0.5">
-                                                        <select id="search-dest" name="destination" aria-label="Choisir une destination au Népal" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
+                                                        <select id="search-dest" name="destination" onchange="filterTrips(this.value, true)" aria-label="Choisir une destination au Népal" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
                 <option value="all">Tous les lieux (Tout le Népal)</option>
                 <option value="bardia">Parc National de Bardia (Tigres & Karnali)</option>
                 <option value="chitwan">Parc National de Chitwan (Rhinocéros & Teraï)</option>
@@ -651,7 +651,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Bardia & Suklaphanta • Grand Safari Faune</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/jungle-extreme">Jungle extrême – spécial faune sauvage</a>
@@ -710,7 +710,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Bardia, Chitwan & Annapurnas • Jungle & Montagne</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/nepal-sauvage">Népal sauvage – de la jungle aux montagnes sacrées</a>
@@ -769,7 +769,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Parc National de Bardia • Pistage du Tigre</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/bardia-explorateur">Bardia explorateur – 5 jours dans la jungle</a>
@@ -828,7 +828,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Chitwan & Bardia • Double Safari Intégral</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/chitwan-bardia-complete">Chitwan + Bardia – l’aventure jungle complète</a>
@@ -887,7 +887,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Parc National de Chitwan • Rhinocéros & Tharu</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/chitwan-culture">Chitwan – culture et jungle sauvage</a>
@@ -942,7 +942,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Chitwan • Éco-Safari Tout Compris</span>
+                <span>Parc National de Chitwan • Éco-Safari Post-Trek</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/safari-chitwan-3-jours">Chitwan en 3 jours et 2 nuits : safari éthique post-trek</a>
@@ -997,7 +997,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Combiné Transit • Tout Compris</span>
+                <span>Pokhara, Chitwan & Katmandou • Safari & Transfert</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/pokhara-chitwan-safari-transfert-katmandou">De Pokhara à Chitwan : safari éthique et transfert vers Katmandou (3 jours)</a>
@@ -1056,7 +1056,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Rivière Karnali & Bardia • Expédition Eau Vive</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/rafting-safari">Rivières sauvages et patrimoines cachés – expédition et rafting</a>
@@ -1115,7 +1115,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Parc National de Bardia • Bivouac & Tour de Guet</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/bardia-nuit-sauvage">Bardia – aventure immersive en jungle et camping sauvage</a>
@@ -1169,7 +1169,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Immersion • Avec Adrien &amp; Samantha</span>
+                <span>Katmandou, Pokhara & Chitwan • Festival de Dashain</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/dashain-immersion-culturelle">Immersion culturelle et aventure : Spécial festival de Dashain</a>
@@ -1229,7 +1229,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Lac Rara & Parc de Bardia • Grand Ouest Sauvage</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/rara-lake-bardia">Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus</a>
@@ -1288,7 +1288,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Vallée de la Babai (Bardia) • Bivouac Sauvage</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/bardia-babai-camping">Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée</a>
@@ -1347,7 +1347,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Katmandou, Pokhara, Chitwan & Bardia • Immersion 360°</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/nepal-immersion-totale">Népal – immersion totale : culture, vie sauvage et aventure</a>
@@ -1406,7 +1406,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Vallée de la Babai (Bardia) • Pistage Intensif</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/babai-special">Deep into the wild : Babai spécial experience – 5 jours</a>
@@ -1465,7 +1465,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Haut-Mustang (Lo Manthang) • Cité Tibétaine & Tiji</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/tiji-mustang">Tiji Festival – Upper Mustang</a>
@@ -1526,7 +1526,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Katmandou, Pokhara & Bardia • Carnet In Situ</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/carnet-de-voyage">Népal – carnet de dessin et de voyage  – 15 jours</a>
@@ -1585,7 +1585,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Vallée de Katmandou & Himalaya • Monastères Sacrés</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/immersion-spirituelle">Immersion spirituelle en Himalaya</a>
@@ -1640,7 +1640,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Éco-Safari</span>
+                <span>Himalaya & Hautes Terres • Expédition Félin Fantôme</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/panthere-des-neiges">Expédition : panthère des neiges exclusive</a>
@@ -1727,7 +1727,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Séjour Court</span>
+                <span>Parc National de Bardia • Walking Safari à Pied</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/safari-pied-bardia">Safari à pied au parc national de Bardia</a>
@@ -1791,7 +1791,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • 4x4 Privatisé</span>
+                <span>Parc National de Bardia • Safari 4x4 Privé</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/safari-jeep-bardia">Safari en Jeep au parc national de Bardia</a>
@@ -1855,7 +1855,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • Séjour Court</span>
+                <span>Parc National de Chitwan • Walking Safari à Pied</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/safari-pied-chitwan">Safari à pied au parc national de Chitwan</a>
@@ -1919,7 +1919,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Népal Sauvage • 4x4 Privatisé</span>
+                <span>Parc National de Chitwan • Safari 4x4 Privé</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/safari-jeep-chitwan">Safari en Jeep au parc national de Chitwan</a>
@@ -1983,7 +1983,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div>
               <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] mb-1.5 flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
-                <span>Bardia Sauvage • Au fil de l'eau</span>
+                <span>Rivière Karnali & Bardia • Rafting Safari Fluvial</span>
               </div>
               <h3 class="font-black text-xl sm:text-[22px] text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug tracking-tight">
                 <a href="/tours/rafting-safari-bardia">Rafting safari au parc national de Bardia</a>

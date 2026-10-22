@@ -9,7 +9,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Passion faune pro",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Intense",
     "style": "Immersion & Photographie",
@@ -210,7 +210,13 @@
         "title": "Day 15 – International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your flight back home."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia",
+      "chitwan",
+      "suklaphanta"
+    ],
+    "destination_badge": "Bardia & Suklaphanta • Grand Safari Faune"
   },
   {
     "slug": "nepal-sauvage",
@@ -424,7 +430,14 @@
         "title": "Day 15 – Transfer to International Airport",
         "desc": "Private transfer to Tribhuvan International Airport for your flight home."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia",
+      "chitwan",
+      "annapurna",
+      "katmandou"
+    ],
+    "destination_badge": "Bardia, Chitwan & Annapurnas • Jungle & Montagne"
   },
   {
     "slug": "chitwan-bardia-complete",
@@ -600,7 +613,12 @@
         "title": "Day 11 – Domestic Flight to Kathmandu & Departure",
         "desc": "Transfer to Nepalgunj Airport and domestic flight to Kathmandu. Connect with your international flight home."
       }
-    ]
+    ],
+    "destinations": [
+      "chitwan",
+      "bardia"
+    ],
+    "destination_badge": "Chitwan & Bardia • Double Safari Intégral"
   },
   {
     "slug": "bardia-explorateur",
@@ -713,7 +731,11 @@
         "title": "Day 5 – Return to Nepalgunj & Flight to Kathmandu",
         "desc": "Enjoy a final peaceful breakfast listening to hornbills and birdsong. Private transfer to Nepalgunj Airport for your domestic flight to Kathmandu."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Parc National de Bardia • Pistage du Tigre"
   },
   {
     "slug": "chitwan-culture",
@@ -815,7 +837,11 @@
         "title": "Day 4 – Return to Kathmandu or Pokhara",
         "desc": "Enjoy a relaxed breakfast overlooking the river. Private transfer back to Kathmandu or onward to the tranquil lakes of Pokhara."
       }
-    ]
+    ],
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Parc National de Chitwan • Rhinocéros & Tharu"
   },
   {
     "slug": "rafting-safari",
@@ -827,7 +853,7 @@
     "originalPrice": null,
     "category": "bivouac",
     "badge": "Rafting & safari",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 15,
     "difficulty": "Sportif",
     "style": "Aventure & Eaux Vives",
@@ -1060,7 +1086,11 @@
         "title": "Day 18 – International Departure",
         "desc": "Private airport transfer for your departure flight with unforgettable Himalayan memories."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Rivière Karnali & Bardia • Expédition Eau Vive"
   },
   {
     "slug": "bardia-nuit-sauvage",
@@ -1153,7 +1183,11 @@
         "title": "Day 3 – Sunrise Tracking & Return to Village",
         "desc": "Early morning tracking on foot at first light when predators are most active. Return to camp for a warm breakfast, pack up, and track back through the forest to the lodge. Freshen up before private transfer to Nepalgunj Airport."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Parc National de Bardia • Bivouac & Tour de Guet"
   },
   {
     "slug": "rara-lake-bardia",
@@ -1165,7 +1199,7 @@
     "originalPrice": null,
     "category": "aventure",
     "badge": "Expédition 4x4 & lac sacré",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 18,
     "difficulty": "Aventurier",
     "style": "Grand Trek & 4x4",
@@ -1387,7 +1421,12 @@
         "title": "Day 17 – International Departure",
         "desc": "Private transfer to airport for your return flight home."
       }
-    ]
+    ],
+    "destinations": [
+      "rara",
+      "bardia"
+    ],
+    "destination_badge": "Lac Rara & Parc de Bardia • Grand Ouest Sauvage"
   },
   {
     "slug": "bardia-babai-camping",
@@ -1530,7 +1569,11 @@
         "title": "Day 8 – Return to Kathmandu",
         "desc": "Final breakfast in the peaceful jungle morning. Private transfer to Nepalgunj Airport and flight back to Kathmandu."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Vallée de la Babai (Bardia) • Bivouac Sauvage"
   },
   {
     "slug": "nepal-immersion-totale",
@@ -1735,7 +1778,14 @@
         "title": "Day 14 – International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your return flight."
       }
-    ]
+    ],
+    "destinations": [
+      "katmandou",
+      "annapurna",
+      "chitwan",
+      "bardia"
+    ],
+    "destination_badge": "Katmandou, Pokhara, Chitwan & Bardia • Immersion 360°"
   },
   {
     "slug": "babai-special",
@@ -1747,7 +1797,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Aventure",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Aventurier",
     "style": "Tracking Tigre & Bivouac",
@@ -1848,7 +1898,11 @@
         "title": "Day 5 – Farewell & Departure",
         "desc": "After breakfast, bid farewell to our local team and enjoy a private transfer to Nepalgunj Airport for your flight back to Kathmandu or on to your next adventure."
       }
-    ]
+    ],
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Vallée de la Babai (Bardia) • Pistage Intensif"
   },
   {
     "slug": "tiji-mustang",
@@ -1860,7 +1914,7 @@
     "originalPrice": null,
     "category": "culture",
     "badge": "🕉️ Spécial culture",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 12,
     "difficulty": "Modéré",
     "style": "Himalaya & Culture Sacrée",
@@ -2041,7 +2095,13 @@
         "title": "Day 13 – Farewell & International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your journey home."
       }
-    ]
+    ],
+    "destinations": [
+      "mustang",
+      "katmandou",
+      "annapurna"
+    ],
+    "destination_badge": "Haut-Mustang (Lo Manthang) • Cité Tibétaine & Tiji"
   },
   {
     "slug": "carnet-de-voyage",
@@ -2055,7 +2115,7 @@
     "originalPrice": null,
     "category": "culture",
     "badge": "🎨 Spécial dessin & carnet",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 16,
     "difficulty": "Accessible",
     "style": "Art, Nature & Croquis",
@@ -2256,7 +2316,13 @@
         "title": "Day 15 – International Departure",
         "desc": "Private airport transfer for your departure flight."
       }
-    ]
+    ],
+    "destinations": [
+      "katmandou",
+      "annapurna",
+      "bardia"
+    ],
+    "destination_badge": "Katmandou, Pokhara & Bardia • Carnet In Situ"
   },
   {
     "slug": "immersion-spirituelle",
@@ -2438,7 +2504,12 @@
         "title": "Day 12 – Farewell & International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your journey home."
       }
-    ]
+    ],
+    "destinations": [
+      "katmandou",
+      "annapurna"
+    ],
+    "destination_badge": "Vallée de Katmandou & Himalaya • Monastères Sacrés"
   },
   {
     "slug": "panthere-des-neiges",
@@ -2605,7 +2676,12 @@
         "title": "Day 17 – Airport Transfer & International Departure",
         "desc": "Private transfer to Tribhuvan International Airport for your return flight with unforgettable memories of the Ghost of the Mountains."
       }
-    ]
+    ],
+    "destinations": [
+      "annapurna",
+      "himalaya"
+    ],
+    "destination_badge": "Himalaya & Hautes Terres • Expédition Félin Fantôme"
   },
   {
     "slug": "dashain-immersion-culturelle",
@@ -2642,7 +2718,13 @@
       "/assets/tours/dashain/dashain_tharu_dances_bardia.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp"
+    "image": "/assets/tours_thumbs/culture_tharu_danse_bardia.webp",
+    "destinations": [
+      "katmandou",
+      "chitwan",
+      "annapurna"
+    ],
+    "destination_badge": "Katmandou, Pokhara & Chitwan • Festival de Dashain"
   },
   {
     "slug": "safari-pied-bardia",
@@ -2654,7 +2736,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "1 jour d'immersion",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 24,
     "difficulty": "Modéré",
     "style": "Immersion & Traque à pied",
@@ -2685,7 +2767,11 @@
         "desc": "Départ à 6h30 pour une journée complète d'observation et de traque à pied dans la jungle de Bardia. Déjeuner pique-nique inclus sous la canopée. Retour vers 18h00."
       }
     ],
-    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp"
+    "image": "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Parc National de Bardia • Walking Safari à Pied"
   },
   {
     "slug": "safari-pied-chitwan",
@@ -2697,7 +2783,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "1 jour d'immersion",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Modéré",
     "style": "Immersion & Traque à pied",
@@ -2728,7 +2814,11 @@
         "desc": "Départ à 6h30 avec traversée en pirogue sur la Rapti. Traque à pied dans les forêts et hautes herbes. Déjeuner en pleine nature inclus. Retour vers 18h00."
       }
     ],
-    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp"
+    "image": "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Parc National de Chitwan • Walking Safari à Pied"
   },
   {
     "slug": "safari-jeep-bardia",
@@ -2740,7 +2830,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Jeep 4x4 privatisée",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Facile",
     "style": "4x4 Privatisé & Traque profonde",
@@ -2774,7 +2864,11 @@
         "desc": "Départ à 06h00 en jeep privatisée. Traque matinale des empreintes en forêt de Sal, corridors d'éléphants, pique-nique en mirador et affûts le long de la Geruwa. Retour vers 18h00."
       }
     ],
-    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Parc National de Bardia • Safari 4x4 Privé"
   },
   {
     "slug": "safari-jeep-chitwan",
@@ -2786,7 +2880,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Jeep 4x4 privatisée",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 22,
     "difficulty": "Facile",
     "style": "4x4 Privatisé & Forêt de Sal",
@@ -2818,7 +2912,11 @@
         "desc": "Départ à 06h00 en jeep privatisée depuis Sauraha. Traversée de la Rapti, inspection des pistes sablonneuses de Sal, marécages aux rhinocéros, déjeuner pique-nique en mirador et affûts fluviaux. Retour vers 18h00."
       }
     ],
-    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Parc National de Chitwan • Safari 4x4 Privé"
   },
   {
     "slug": "safari-chitwan-3-jours",
@@ -2830,7 +2928,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Spécial Fin de Trek • Tout Inclus",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 19,
     "difficulty": "Facile",
     "style": "Safari Éthique & Confort",
@@ -2852,7 +2950,11 @@
       "/assets/tours_thumbs/safari_jeep_rhino_eau_chitwan.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/chitwan_rhino.webp"
+    "image": "/assets/tours_thumbs/chitwan_rhino.webp",
+    "destinations": [
+      "chitwan"
+    ],
+    "destination_badge": "Parc National de Chitwan • Éco-Safari Post-Trek"
   },
   {
     "slug": "pokhara-chitwan-safari-transfert-katmandou",
@@ -2864,7 +2966,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Liaison Pokhara → Katmandou Incluse",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 16,
     "difficulty": "Facile",
     "style": "Combiné Liaison & Safari",
@@ -2885,7 +2987,13 @@
       "/assets/snow-leopard/pokhara_lake.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp"
+    "image": "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+    "destinations": [
+      "chitwan",
+      "annapurna",
+      "katmandou"
+    ],
+    "destination_badge": "Pokhara, Chitwan & Katmandou • Safari & Transfert"
   },
   {
     "slug": "rafting-safari-bardia",
@@ -2897,7 +3005,7 @@
     "originalPrice": null,
     "category": "safari",
     "badge": "Bateau privatisé • Dauphins & Faune",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 21,
     "difficulty": "Facile",
     "style": "Approche Fluviale Silencieuse",
@@ -2918,6 +3026,10 @@
       "/assets/tours_thumbs/tigre_bengale_berge_riviere_karnali_bardia.webp"
     ],
     "days": [],
-    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp"
+    "image": "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp",
+    "destinations": [
+      "bardia"
+    ],
+    "destination_badge": "Rivière Karnali & Bardia • Rafting Safari Fluvial"
   }
 ]

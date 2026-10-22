@@ -6,7 +6,7 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import toursData from '../../../data/tours.en.json';
 
-const matchingTours = toursData.filter(t => ["tiji-mustang", "immersion-spirituelle", "carnet-de-voyage", "nepal-sauvage", "nepal-immersion-totale", "rafting-safari", "pokhara-chitwan-safari-transfert-katmandou", "dashain-immersion-culturelle"].includes(t.slug));
+const matchingTours = toursData.filter(t => ["nepal-sauvage","pokhara-chitwan-safari-transfert-katmandou","dashain-immersion-culturelle","nepal-immersion-totale","tiji-mustang","carnet-de-voyage","immersion-spirituelle"].includes(t.slug));
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
