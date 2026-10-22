@@ -15,12 +15,91 @@ const safariTourSlugs = [
   "safari-chitwan-3-jours",
   "nepal-sauvage",
   "panthere-des-neiges",
-  "safari-pied-bardia"
+  "rara-lake-bardia"
 ];
 
 const safariTours = safariTourSlugs
   .map(slug => toursData.find(t => t.slug === slug))
   .filter((t): t is typeof toursData[0] => Boolean(t));
+
+// 1-Day Safari Activities (Excursions courtes à la journée)
+const dayActivities = [
+  {
+    title: "Bardia National Park Walking Safari",
+    slug: "bardia-walking-safari",
+    url: "/en/tours/bardia-walking-safari",
+    image: "/assets/tours_thumbs/safari_pied_guide_jungle_bardia.webp",
+    alt: "Walking safari in Bardia National Park jungle",
+    tag: "Wild Bardia • On-foot Tracking",
+    badge: "From 1 person",
+    duration: "1 day",
+    price: "50€",
+    priceLabel: "Price per person",
+    extra: "Overnight option +12€",
+    rating: "5.0 (24)",
+    description: "A full day of deep immersion in Bardia's untamed jungle. Walk silently on foot with a senior naturalist guide and native tracker tracking Bengal tigers, rhinos, and wild elephants."
+  },
+  {
+    title: "Bardia National Park Private Jeep Safari",
+    slug: "bardia-jeep-safari",
+    url: "/en/tours/bardia-jeep-safari",
+    image: "/assets/tours_thumbs/safari_jeep_groupe_bardia.webp",
+    alt: "Private 4x4 jeep safari in Bardia National Park",
+    tag: "Wild Bardia • Private 4x4",
+    badge: "Private Jeep",
+    duration: "1 day",
+    price: "190€",
+    priceLabel: "All-inclusive price",
+    extra: "Overnight option +12€",
+    rating: "5.0 (19)",
+    description: "Explore the most remote corners of Bardia in a private 4x4 with driver, senior naturalist, and elite tracker. Cross river fords to maximize chances of spotting Bengal tigers."
+  },
+  {
+    title: "Chitwan National Park Walking Safari",
+    slug: "chitwan-walking-safari",
+    url: "/en/tours/chitwan-walking-safari",
+    image: "/assets/tours_thumbs/safari_pied_chitwan_guide_sourire.webp",
+    alt: "Walking safari in Chitwan National Park",
+    tag: "Wild Chitwan • On-foot Tracking",
+    badge: "From 1 person",
+    duration: "1 day",
+    price: "70€",
+    priceLabel: "Price per person",
+    extra: "Lunch included",
+    rating: "5.0 (21)",
+    description: "Experience Chitwan on foot away from crowded jeep trails. A full-day tracking expedition with a certified jungle guide and tracker seeking one-horned rhinos, tigers, and sloth bears."
+  },
+  {
+    title: "Chitwan National Park Private Jeep Safari",
+    slug: "chitwan-jeep-safari",
+    url: "/en/tours/chitwan-jeep-safari",
+    image: "/assets/tours_thumbs/safari_jeep_chauffeur_chitwan.webp",
+    alt: "Private jeep safari in Chitwan National Park",
+    tag: "Wild Chitwan • Private 4x4",
+    badge: "Private Jeep",
+    duration: "1 day",
+    price: "190€",
+    priceLabel: "All-inclusive price",
+    extra: "Lunch included",
+    rating: "5.0 (22)",
+    description: "Roam through Chitwan's open grasslands and sal forests in a dedicated private 4x4 with driver and senior naturalist guide for close encounters with rhinos, tigers, and spotted deer."
+  },
+  {
+    title: "Bardia National Park Rafting Safari",
+    slug: "bardia-rafting-safari",
+    url: "/en/tours/bardia-rafting-safari",
+    image: "/assets/tours_thumbs/rafting_karnali_descente_guide_voyageur.webp",
+    alt: "Drifting safari on the Karnali River in Bardia",
+    tag: "Wild Bardia • River Safari",
+    badge: "Private Raft",
+    duration: "1 day",
+    price: "190€",
+    priceLabel: "All-inclusive price",
+    extra: "Picnic included",
+    rating: "5.0 (18)",
+    description: "Drift silently down the wild Karnali River on a private raft with professional river crew, naturalist guide, and tracker to observe Gangetic river dolphins, marsh muggers, gharials, and big cats."
+  }
+];
 
 // FAQ Data for Schema.org & visible Accordion
 const faqs = [
@@ -320,8 +399,98 @@ const faqs = [
     </div>
   </section>
 
-  <!-- 4. INTERACTIVE MAP OF NEPAL WILDLIFE SANCTUARIES (WHITE BACKGROUND) -->
-  <section id="carte-nepal" class="py-16 sm:py-20 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
+  <!-- 4. 1-DAY SAFARI ACTIVITIES (SHORT EXCURSIONS) -->
+  <section id="activites-safari" class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Short Trips & Day Excursions</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1 leading-tight">
+            Our 1-Day Safari Activities
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-2xl leading-relaxed">
+            Already in Bardia, Chitwan, or traveling across Nepal? Experience a thrilling full day of authentic wildlife tracking guided by certified native trackers.
+          </p>
+        </div>
+        <div class="shrink-0 flex items-center gap-3">
+          <a href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20a%201-day%20safari%20activity%20in%20Nepal" target="_blank" rel="nofollow noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-emerald-900/10 hover:bg-emerald-900/20 text-[#0e8354] font-bold text-xs sm:text-sm border border-emerald-600/30 transition-all">
+            <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>Book via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid of 5 Activities -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {dayActivities.map((act) => (
+          <article class="group bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="relative h-64 overflow-hidden bg-slate-100">
+                <a href={act.url} class="block w-full h-full">
+                  <img 
+                    src={act.image} 
+                    alt={act.alt} 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0e5c3e] text-white shadow-sm">
+                    {act.duration}
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/95 text-slate-800 border border-slate-200 shadow-xs">
+                    {act.badge}
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-slate-950/90 text-amber-400 font-black text-xs px-2.5 py-1 rounded-xl shadow-sm flex items-center gap-1">
+                  <span>★</span>
+                  <span class="text-white font-bold">{act.rating}</span>
+                </div>
+              </div>
+
+              <div class="p-6 space-y-3">
+                <div class="text-[11px] font-extrabold uppercase tracking-widest text-[#0e8354] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354]"></span>
+                  <span>{act.tag}</span>
+                </div>
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-[#0e8354] transition-colors leading-snug">
+                  <a href={act.url}>{act.title}</a>
+                </h3>
+                <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed font-normal">
+                  {act.description}
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-slate-100 mt-2">
+              <div class="flex items-center justify-between gap-2 pt-3 pb-3">
+                <div>
+                  <p class="text-[10px] uppercase tracking-wider font-extrabold text-slate-400">{act.priceLabel}</p>
+                  <span class="font-black text-2xl text-slate-950 tracking-tight leading-none">{act.price}</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] font-bold text-[#0e8354] bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">{act.extra}</span>
+                </div>
+              </div>
+              <a 
+                href={act.url} 
+                class="w-full py-3 px-4 rounded-xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-bold text-xs uppercase tracking-wide flex items-center justify-center gap-2 transition-all shadow-sm"
+              >
+                <span>View Activity Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. INTERACTIVE MAP OF NEPAL WILDLIFE SANCTUARIES (WHITE BACKGROUND) -->
+  <section id="carte-nepal" class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
