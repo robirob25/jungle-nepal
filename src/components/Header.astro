@@ -71,12 +71,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
           <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
             <div style="background-color: #041d13 !important;" class="border border-white/10 rounded-2xl p-3 shadow-[0_25px_60px_rgba(0,0,0,0.8)] space-y-1 text-white">
-              <a href={safariUrl} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
-                <div class="flex-1">
-                  <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Safari in Nepal" : "Safari au Népal"}</p>
-                  <p class="text-[10px] text-slate-400">{currentLang === 'en' ? "Bardia, Chitwan & Wildlife Tours" : "Bardia, Chitwan & grands circuits"}</p>
-                </div>
-              </a>
               <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors group/item">
                 <div class="flex-1">
                   <p class="font-extrabold text-xs text-white group-hover/item:text-amber-100 transition-colors">{currentLang === 'en' ? "Bardia National Park" : "Parc national de Bardia"}</p>
@@ -202,9 +196,6 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </button>
 
       <div id="mobile-dest-sub" class="hidden pl-4 pr-2 py-1 space-y-1 text-sm text-white/80">
-        <a href={safariUrl} onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
-          {currentLang === 'en' ? "Safari in Nepal" : "Safari au Népal"}
-        </a>
         <a href={currentLang === 'en' ? "/en/destinations/bardia" : "/destinations/bardia"} onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
           {currentLang === 'en' ? "Bardia National Park" : "Parc national de Bardia"}
         </a>
