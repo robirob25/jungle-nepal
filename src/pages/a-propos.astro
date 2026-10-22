@@ -195,10 +195,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </div>
 
     <!-- 3. HERO IMMERSIF (PHOTO AUTHENTIQUE DRIVE : SAFARI À PIED EN JUNGLE) -->
-  <section class="relative min-h-[580px] sm:min-h-[640px] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
+  <section class="relative min-h-[68vh] lg:min-h-[74vh] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-36 pb-24 sm:pt-44 sm:pb-32">
     <!-- Image de fond authentique du Drive -->
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" 
+      <img fetchpriority="high" decoding="async" 
         src="/assets/drive_photos/julien_safari_a_pied.webp" 
         alt="Pistage à pied dans la jungle de Bardia Népal" 
         class="w-full h-full object-cover opacity-55 scale-105 transform filter brightness-80 contrast-105"
