@@ -488,16 +488,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <span>WHERE?</span>
             </div>
             <div class="relative mt-0.5">
-                                                      <select id="search-dest" name="destination" aria-label="Choose a destination or expedition type" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
-            <option value="all">All Expeditions (18)</option>
-            <option value="sejours-courts">Short Stays (6 tours)</option>
-            <option value="safari">Safaris & Big Cats (14 tours)</option>
-            <option value="bivouac">Jungle Bivouacs & Wild Nights (5 tours)</option>
-            <option value="chitwan">Rhinos & Chitwan National Park (5 tours)</option>
-            <option value="rafting">Rafting & River Expeditions (3 tours)</option>
-            <option value="mustang-himalaya">Himalayas, Mustang & Spirituality (7 tours)</option>
-            <option value="grand-tour">360° Total Immersion Tours (7 tours)</option>
-          </select>
+                                                      <select id="search-dest" name="destination" aria-label="Choose a destination in Nepal" class="w-full bg-transparent text-slate-900 font-extrabold text-sm sm:text-base focus:outline-none cursor-pointer appearance-none">
+                <option value="all">All Locations (Whole Nepal)</option>
+                <option value="bardia">Bardia National Park (Tigers & Karnali)</option>
+                <option value="chitwan">Chitwan National Park (Rhinos & Terai)</option>
+                <option value="annapurna">Himalayas & Annapurnas (Pokhara & Peaks)</option>
+                <option value="mustang">Upper Mustang (Lo Manthang & Tibetan Lands)</option>
+                <option value="rara">Rara Lake & Wild West</option>
+                <option value="katmandou">Kathmandu Valley (Heritage & Temples)</option>
+                <option value="suklaphanta">Suklaphanta National Park (Wild Far-West)</option>
+              </select>
               <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-slate-400">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
@@ -559,20 +559,20 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       
       <!-- Conteneur des Catégories Scrollable sur mobile, centré sur desktop -->
       <div id="categories-scroll-container" class="flex-1 flex items-center md:justify-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
-        <button type="button" onclick="filterTrips('all')" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
+        <button type="button" onclick="filterTrips('all', true)" class="category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 hover:scale-100 active:scale-95 transition-all duration-200 cursor-pointer shrink-0" data-filter="all">
           <span>All Tours</span>
           <span class="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-black">18</span>
         </button>
-        <button type="button" onclick="filterTrips('safari')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
+        <button type="button" onclick="filterTrips('safari', true)" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="safari">
           <span>Jungle Safari (9)</span>
         </button>
-        <button type="button" onclick="filterTrips('combine')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="combine">
+        <button type="button" onclick="filterTrips('combine', true)" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="combine">
           <span>Jungle & Mountains (5)</span>
         </button>
-        <button type="button" onclick="filterTrips('culture')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="culture">
+        <button type="button" onclick="filterTrips('culture', true)" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="culture">
           <span>Culture & Spirituality (4)</span>
         </button>
-        <button type="button" onclick="filterTrips('courts')" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="courts">
+        <button type="button" onclick="filterTrips('courts', true)" class="category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0" data-filter="courts">
           <span>Short Stays (6)</span>
         </button>
       </div>
@@ -618,7 +618,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <!-- 16 CARDS -->
       <div id="trips-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="extreme jungle – special wildlife & big cat expedition – 15 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="extreme jungle – special wildlife & big cat expedition – 15 days" data-location="bardia suklaphanta chitwan">
           
           <div class="relative">
             <a href="/en/tours/nepal-wildlife-safari-15-days" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -677,7 +677,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="wild nepal – from dense jungle to sacred annapurna peaks – 15 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="wild nepal – from dense jungle to sacred annapurna peaks – 15 days" data-location="bardia chitwan annapurna katmandou">
           
           <div class="relative">
             <a href="/en/tours/wild-nepal-safari-annapurna-trek" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -736,7 +736,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="bardia explorer – 5 days in the wild jungle">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="bardia explorer – 5 days in the wild jungle" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/bardia-tiger-safari-5-days" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -795,7 +795,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="chitwan + bardia – the complete nepal jungle safari – 11 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="chitwan + bardia – the complete nepal jungle safari – 11 days" data-location="chitwan bardia">
           
           <div class="relative">
             <a href="/en/tours/chitwan-bardia-combined-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -854,7 +854,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="chitwan – wildlife safari & indigenous culture – 4 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="chitwan – wildlife safari & indigenous culture – 4 days" data-location="chitwan">
           
           <div class="relative">
             <a href="/en/tours/chitwan-safari-cultural-tour" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -913,7 +913,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="chitwan 3 days / 2 nights – post-trek ethical safari escape">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="chitwan 3 days / 2 nights – post-trek ethical safari escape" data-location="chitwan">
           
           <div class="relative">
             <a href="/en/tours/chitwan-3-days-safari-post-trek" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -968,7 +968,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="from pokhara to chitwan safari with kathmandu drop-off – 3 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="from pokhara to chitwan safari with kathmandu drop-off – 3 days" data-location="chitwan annapurna katmandou">
           
           <div class="relative">
             <a href="/en/tours/pokhara-to-chitwan-safari-transfer-kathmandu" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1023,7 +1023,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="wild rivers & hidden heritage – rafting & safari expedition – 18 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="wild rivers & hidden heritage – rafting & safari expedition – 18 days" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/karnali-rafting-and-wildlife-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1082,7 +1082,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="bardia wild night – jungle immersion & bush camping – 3 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="bardia wild night – jungle immersion & bush camping – 3 days" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/bardia-bivouac-camping-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1141,7 +1141,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="cultural immersion & adventure in nepal: dashain festival special">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="cultural immersion & adventure in nepal: dashain festival special" data-location="katmandou chitwan annapurna">
           
           <div class="relative">
             <a href="/en/tours/dashain-festival-tharu-cultural-tour" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1196,7 +1196,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="rara lake & bardia expedition – the ultimate off-the-beaten-path adventure – 17 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="rara lake & bardia expedition – the ultimate off-the-beaten-path adventure – 17 days" data-location="rara bardia">
           
           <div class="relative">
             <a href="/en/tours/rara-lake-bardia-expedition" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1255,7 +1255,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="bardia babai valley – wild camping in untamed nature – 8 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari" data-title="bardia babai valley – wild camping in untamed nature – 8 days" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/babai-valley-wild-camping-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1314,7 +1314,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="nepal total immersion – culture, wildlife & adventure – 14 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="nepal total immersion – culture, wildlife & adventure – 14 days" data-location="katmandou annapurna chitwan bardia">
           
           <div class="relative">
             <a href="/en/tours/nepal-wildlife-culture-immersion" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1373,7 +1373,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="deep into the wild: babai special experience – 5 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari courts" data-title="deep into the wild: babai special experience – 5 days" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/babai-valley-tiger-tracking-5-days" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1432,7 +1432,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="tiji festival in upper mustang – forbidden kingdom – 13 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="tiji festival in upper mustang – forbidden kingdom – 13 days" data-location="mustang katmandou annapurna">
           
           <div class="relative">
             <a href="/en/tours/tiji-festival-upper-mustang-trek" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1491,7 +1491,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="nepal sketching & travel journaling expedition – 15 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="nepal sketching & travel journaling expedition – 15 days" data-location="katmandou annapurna bardia">
           
           <div class="relative">
             <a href="/en/tours/nepal-sketching-travel-journal-tour" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1552,7 +1552,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="spiritual immersion in the himalayas & sacred valleys – 12 days">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="culture" data-title="spiritual immersion in the himalayas & sacred valleys – 12 days" data-location="katmandou annapurna">
           
           <div class="relative">
             <a href="/en/tours/himalaya-spiritual-immersion-tour" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1611,7 +1611,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
         
-        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="exclusive snow leopard expedition (17 days)">
+        <article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="combine" data-title="exclusive snow leopard expedition (17 days)" data-location="annapurna himalaya">
           
           <div class="relative">
             <a href="/en/tours/snow-leopard-expedition-nepal" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1691,7 +1691,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
       <!-- Grid of 5 Activities (1-Day) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts" data-title="walking safari – bardia national park">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts" data-title="walking safari – bardia national park" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/bardia-walking-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1749,7 +1749,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts bardia" data-title="private jeep safari – bardia national park">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts bardia" data-title="private jeep safari – bardia national park" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/bardia-jeep-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1807,7 +1807,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="walking safari – chitwan national park">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="walking safari – chitwan national park" data-location="chitwan">
           
           <div class="relative">
             <a href="/en/tours/chitwan-walking-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1865,7 +1865,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="private jeep safari – chitwan national park">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts chitwan" data-title="private jeep safari – chitwan national park" data-location="chitwan">
           
           <div class="relative">
             <a href="/en/tours/chitwan-jeep-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -1923,7 +1923,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
         </article>
 
-<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts rafting bardia" data-title="rafting safari – bardia national park">
+<article class="trip-card group bg-white rounded-3xl overflow-hidden border-2 border-emerald-600/30 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(10,50,30,0.18)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" data-category="safari sejours-courts rafting bardia" data-title="rafting safari – bardia national park" data-location="bardia">
           
           <div class="relative">
             <a href="/en/tours/bardia-rafting-safari" class="relative h-72 sm:h-80 overflow-hidden block bg-slate-100">
@@ -4634,7 +4634,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <p class="text-xs sm:text-sm text-slate-300">Our master trackers <a href="/en/about" class="text-slate-200 hover:text-slate-200 font-semibold underline decoration-emerald-500/30 underline-offset-2 transition-colors">Pawan & Kiran</a> guide you in intimate groups of 4 to 10 explorers.</p>
         </div>
         <div class="flex items-center gap-3 shrink-0">
-          <a href="#prochains-departs" onclick="filterTrips('safari')" class="px-6 py-3 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-100 hover:scale-100 active:scale-95 transition-all shadow-lg cursor-pointer">
+          <a href="#prochains-departs" onclick="filterTrips('safari', true)" class="px-6 py-3 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-100 hover:scale-100 active:scale-95 transition-all shadow-lg cursor-pointer">
             Explore All 18 Wildlife Expeditions →
           </a>
         </div>
@@ -5139,28 +5139,29 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       }
     }
 
-        function filterTrips(category) {
+        function filterTrips(filterKey, shouldScroll) {
       const cards = document.querySelectorAll('#trips-grid .trip-card');
       const pills = document.querySelectorAll('.category-pill');
       let visibleCount = 0;
 
-      // Automatically smooth scroll back up to the top of the tours section when clicking a category filter
-      const toursSection = document.getElementById('prochains-departs');
-      if (toursSection) {
-        const headerHeight = 70;
-        const rect = toursSection.getBoundingClientRect();
-        const targetScrollTop = rect.top + window.pageYOffset - headerHeight;
-        window.scrollTo({
-          top: Math.max(0, targetScrollTop),
-          behavior: 'smooth'
-        });
+      if (shouldScroll) {
+        const toursSection = document.getElementById('prochains-departs');
+        if (toursSection) {
+          const headerHeight = 70;
+          const rect = toursSection.getBoundingClientRect();
+          const targetScrollTop = rect.top + window.pageYOffset - headerHeight;
+          window.scrollTo({
+            top: Math.max(0, targetScrollTop),
+            behavior: 'smooth'
+          });
+        }
       }
 
-      const catLower = (category || 'all').toLowerCase().trim();
+      const keyLower = (filterKey || 'all').toLowerCase().trim();
 
       pills.forEach(pill => {
         const filterVal = (pill.getAttribute('data-filter') || '').toLowerCase().trim();
-        if (filterVal === catLower) {
+        if (filterVal === keyLower) {
           pill.className = 'category-pill active flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-950 text-white font-extrabold text-xs sm:text-sm whitespace-nowrap shadow-md border border-slate-900 transition-all duration-200 cursor-pointer shrink-0';
         } else {
           pill.className = 'category-pill flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm whitespace-nowrap border border-slate-200/90 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0';
@@ -5170,20 +5171,24 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       cards.forEach(card => {
         const rawCats = card.getAttribute('data-category') || '';
         const cardCats = rawCats.toLowerCase().split(/\s+/);
+        const rawLocs = card.getAttribute('data-location') || '';
+        const cardLocs = rawLocs.toLowerCase().split(/\s+/);
         
         let match = false;
-        if (catLower === 'all') {
+        if (keyLower === 'all') {
           match = true;
-        } else if (catLower === 'safari') {
+        } else if (keyLower === 'safari') {
           match = cardCats.includes('safari');
-        } else if (catLower === 'combine' || catLower === 'grand-tour' || catLower === 'jungle-montagne') {
+        } else if (keyLower === 'combine' || keyLower === 'grand-tour' || keyLower === 'jungle-montagne') {
           match = cardCats.includes('combine') || cardCats.includes('grand-tour');
-        } else if (catLower === 'culture') {
+        } else if (keyLower === 'culture') {
           match = cardCats.includes('culture');
-        } else if (catLower === 'courts' || catLower === 'sejours-courts' || catLower === 'short-stays') {
+        } else if (keyLower === 'courts' || keyLower === 'sejours-courts' || keyLower === 'short-stays') {
           match = cardCats.includes('courts') || cardCats.includes('sejours-courts') || cardCats.includes('court');
+        } else if (cardLocs.includes(keyLower)) {
+          match = true;
         } else {
-          match = cardCats.includes(catLower);
+          match = cardCats.includes(keyLower);
         }
 
         if (match) {
@@ -5200,8 +5205,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     function handleSearch(e) {
       e.preventDefault();
       const dest = document.getElementById('search-dest').value;
-      filterTrips(dest);
-      document.getElementById('prochains-departs').scrollIntoView({ behavior: 'smooth' });
+      filterTrips(dest, true);
     }
 
     function openCustomTripModal() {
