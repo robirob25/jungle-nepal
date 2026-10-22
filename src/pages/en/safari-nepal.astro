@@ -173,10 +173,10 @@ const faqs = [
       <img 
         src="/assets/drive_wildlife/hero_safari_nepal.webp" 
         alt="Wildlife safari in Bardia National Park Nepal with Jungle Nepal Adventure" 
-        class="w-full h-full object-cover opacity-55 scale-105 filter brightness-90 contrast-105"
+        class="w-full h-full object-cover opacity-75 scale-105 filter brightness-95 contrast-105"
         fetchpriority="high"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/25"></div>
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-5">
@@ -354,11 +354,11 @@ const faqs = [
                     {tour.duration}
                   </span>
                   <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/90 text-slate-800 border border-slate-200">
-                    {tour.difficulty || "All Levels"}
+                    {tour.slug === 'panthere-des-neiges' ? 'Adventurer' : (tour.difficulty_en || tour.difficulty || "Adventure")}
                   </span>
                 </div>
                 <div class="absolute bottom-3 right-3 bg-slate-950/90 text-white font-extrabold text-xs px-3 py-1 rounded-xl shadow-sm">
-                  From {tour.price}
+                  From €{String(tour.price).replace(/€/g, '').trim()}
                 </div>
               </div>
 
