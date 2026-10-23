@@ -848,48 +848,84 @@ const faqs = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         
-        <!-- Technique 1 -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
-          <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">1</span>
-            <h3 class="text-lg font-bold text-slate-950">Le safari à pied (Walking safari)</h3>
+        <!-- Technique 1: Safari à pied -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/40 min-h-[320px] sm:min-h-[360px] flex flex-col justify-end p-6 sm:p-8 text-white">
+          <img 
+            src="/assets/drive_photos/julien_safari_a_pied.webp" 
+            alt="Guide et voyageur en safari à pied dans la jungle de Bardia" 
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20"></div>
+          <div class="relative z-10 space-y-2.5">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-xl bg-white/15 backdrop-blur-md text-emerald-300 font-black flex items-center justify-center text-sm border border-white/20 shadow-sm">1</span>
+              <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight drop-shadow-md">Le safari à pied (Walking safari)</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal drop-shadow">
+              Encadré par deux guides natifs. Nous marchons en file indienne le long des lits asséchés de rivières. Les pisteurs lisent les empreintes fraîches de la nuit et guettent le cri d'alarme strident des cerfs axis signalant la présence d'un félin en mouvement.
+            </p>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Encadré par deux guides natifs. Nous marchons en file indienne le long des lits asséchés de rivières. Les pisteurs lisent les empreintes fraîches de la nuit et guettent le cri d'alarme strident des cerfs axis signalant la présence d'un félin en mouvement.
-          </p>
         </div>
 
-        <!-- Technique 2 -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
-          <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">2</span>
-            <h3 class="text-lg font-bold text-slate-950">Le safari en jeep 4x4 privative</h3>
+        <!-- Technique 2: Safari en jeep -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/40 min-h-[320px] sm:min-h-[360px] flex flex-col justify-end p-6 sm:p-8 text-white">
+          <img 
+            src="/assets/tours_thumbs/safari_jeep_groupe_bardia.webp" 
+            alt="L'équipe et voyageurs en jeep 4x4 safari ouverte à Bardia" 
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20"></div>
+          <div class="relative z-10 space-y-2.5">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-xl bg-white/15 backdrop-blur-md text-emerald-300 font-black flex items-center justify-center text-sm border border-white/20 shadow-sm">2</span>
+              <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight drop-shadow-md">Le safari en jeep 4x4 privative</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal drop-shadow">
+              Idéal pour parcourir de longues distances et explorer les secteurs reculés de la réserve comme la vallée secrète de Babai. Nos jeeps ouvertes offrent un point de vue dégagé à 360° pour les photographes animaliers.
+            </p>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Idéal pour parcourir de longues distances et explorer les secteurs reculés de la réserve comme la vallée secrète de Babai. Nos jeeps ouvertes offrent un point de vue dégagé à 360° pour les photographes animaliers.
-          </p>
         </div>
 
-        <!-- Technique 3 -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
-          <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">3</span>
-            <h3 class="text-lg font-bold text-slate-950">Le rafting et pirogue d'observation</h3>
+        <!-- Technique 3: Rafting & Pirogue -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/40 min-h-[320px] sm:min-h-[360px] flex flex-col justify-end p-6 sm:p-8 text-white">
+          <img 
+            src="/assets/tours_thumbs/safari_pirogue_traditionnelle_chitwan.webp" 
+            alt="Safari silencieux en pirogue traditionnelle sur la rivière à Chitwan" 
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20"></div>
+          <div class="relative z-10 space-y-2.5">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-xl bg-white/15 backdrop-blur-md text-emerald-300 font-black flex items-center justify-center text-sm border border-white/20 shadow-sm">3</span>
+              <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight drop-shadow-md">Le rafting et pirogue d'observation</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal drop-shadow">
+              Une descente silencieuse portée par le courant de la rivière Karnali ou Rapti. Cette approche aquatique est la moins intrusive de toutes : elle permet de s'approcher avec délicatesse des rhinocéros se baignant et des gavials au soleil.
+            </p>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Une descente silencieuse portée par le courant de la rivière Karnali ou Rapti. Cette approche aquatique est la moins intrusive de toutes : elle permet de s'approcher avec délicatesse des rhinocéros se baignant et des gavials au soleil.
-          </p>
         </div>
 
-        <!-- Technique 4 -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-3 shadow-sm">
-          <div class="flex items-center gap-3">
-            <span class="w-10 h-10 rounded-xl bg-emerald-100 text-[#0e8354] font-extrabold flex items-center justify-center text-sm">4</span>
-            <h3 class="text-lg font-bold text-slate-950">L'affût fixe aux points d'eau (Machans)</h3>
+        <!-- Technique 4: Affût fixe aux points d'eau -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/40 min-h-[320px] sm:min-h-[360px] flex flex-col justify-end p-6 sm:p-8 text-white">
+          <img 
+            src="/assets/curated_gallery/tiger_water_pond.webp" 
+            alt="Tigre du Bengale s'abreuvant au point d'eau lors d'un affût à Bardia" 
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20"></div>
+          <div class="relative z-10 space-y-2.5">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-xl bg-white/15 backdrop-blur-md text-emerald-300 font-black flex items-center justify-center text-sm border border-white/20 shadow-sm">4</span>
+              <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight drop-shadow-md">L'affût fixe aux points d'eau (Machans)</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal drop-shadow">
+              La patience est la vertu suprême du pisteur. Installés immobiles sur un promontoire naturel ou une tour d'observation dissimulée, nous attendons les heures chaudes où la soif contraint le tigre à quitter l'ombre dense pour venir s'abreuver.
+            </p>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            La patience est la vertu suprême du pisteur. Installés immobiles sur un promontoire naturel ou une tour d'observation dissimulée, nous attendons les heures chaudes où la soif contraint le tigre à quitter l'ombre dense pour venir s'abreuver.
-          </p>
         </div>
 
       </div>
