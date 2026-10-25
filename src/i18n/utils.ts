@@ -67,7 +67,7 @@ export const BLOG_SLUG_MAP_FR_TO_EN: Record<string, string> = {
   'safari-combine-inde-nepal-corbett-dudhwa-suklaphanta-bardia': 'india-nepal-wildlife-safari-corbett-dudhwa-bardia',
   'safari-dos-elephant-nepal-pourquoi-refuser-cette-pratique': 'elephant-back-safari-nepal-ethical-reasons-to-avoid',
   'safari-nepal-en-famille-guide-securite': 'family-safari-in-nepal-safety-practical-guide',
-  'safari-nepal-en-famille-securite-lodges-enfants': 'nepal-family-safari-safety-lodges-children',
+  'safari-nepal-en-famille-securite-lodges-enfants': 'family-safari-in-nepal-safety-practical-guide',
   'safari-nepal-ou-afrique-que-choisir': 'nepal-vs-africa-safari-which-to-choose',
   'safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia': 'nepal-vs-india-safari-comparison-ranthambore-corbett-bardia',
   'safari-photo-au-nepal-spots-materiel-conseils': 'nepal-wildlife-photo-safari-gear-spots-tips',

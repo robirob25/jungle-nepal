@@ -111,7 +111,10 @@ export default defineConfig({
     '/safari-a-pied-au-nepal-est-ce-dangereux': { status: 301, destination: '/blog/safari-a-pied-nepal-danger-regles-securite-guide' },
     '/safari-au-nepal-vivre-la-jungle-autrement-loin-des-circuits-touristiques': { status: 301, destination: '/blog/comment-organiser-un-safari-au-nepal' },
     '/safari-dans-le-parc-national-de-bardia-au-nepal': { status: 301, destination: '/blog/guide-complet-parc-national-de-bardia-nepal' },
-    '/safari-tigre-nepal': { status: 301, destination: '/blog/voir-des-tigres-au-nepal' }
+    '/safari-tigre-nepal': { status: 301, destination: '/blog/voir-des-tigres-au-nepal' },
+    '/blog/safari-nepal-en-famille-securite-lodges-enfants': { status: 301, destination: '/blog/safari-nepal-en-famille-guide-securite' },
+    '/en/blog/nepal-family-safari-safety-lodges-children': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide' },
+    '/en/blog/family-safari-in-nepal-safety-lodges-kids': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide' }
   },
   i18n: {
     defaultLocale: 'fr',
