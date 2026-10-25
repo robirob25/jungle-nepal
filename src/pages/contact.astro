@@ -291,6 +291,25 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <textarea id="contact-message" rows="4" placeholder="Décrivez vos envies particulières, vos questions sur la faune, la logistique, vos disponibilités..." required class="w-full p-3.5 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium text-slate-900 focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
           </div>
 
+          <!-- Option Vols Internationaux (Collectif MyWay) -->
+          <div class="p-3.5 rounded-2xl border border-slate-200/90 bg-slate-50/70 hover:bg-emerald-50/30 transition-colors">
+            <label class="flex items-start gap-3 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="contact-flights" 
+                class="mt-0.5 w-4 h-4 rounded text-[#0e8354] focus:ring-[#0e8354] border-slate-300 cursor-pointer" 
+              />
+              <div class="flex-1 text-xs">
+                <span class="font-bold text-slate-900">
+                  Je souhaite une proposition incluant les vols internationaux
+                </span>
+                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
+                  Départs possibles de Paris, province, Bruxelles ou Genève. Émission des billets et garanties légales assurées via notre collectif partenaire (MyWay).
+                </p>
+              </div>
+            </label>
+          </div>
+
           <!-- Submit Button -->
           <div class="pt-2">
             <button type="submit" id="contact-submit-btn" class="w-full py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-base shadow-lg shadow-[#0e8354]/30 hover:shadow-xl hover:shadow-[#0e8354]/45 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 text-center cursor-pointer select-none">
@@ -367,6 +386,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       sujet: subject,
       nombre_voyageurs: travelers,
       periode_envisagee: period,
+      vols_internationaux: (document.getElementById('contact-flights') || {}).checked ? "OUI (Devis souhaité avec vols internationaux via MyWay)" : "NON (Vols gérés par le voyageur)",
       message_client: message,
       date_envoi: new Date().toLocaleString('fr-FR')
     };

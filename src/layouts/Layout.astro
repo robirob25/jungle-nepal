@@ -482,6 +482,28 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
             <textarea id="custom-notes" rows="3" placeholder={isEn ? "Preferred dates (e.g. October 2026), accommodation preference, walking pace, special wildlife interests..." : "Période envisagée (ex: Octobre 2026), type d'hébergement souhaité, rythme de marche, centres d'intérêt particuliers..."} required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all"></textarea>
           </div>
 
+          <!-- Option Vols Internationaux (Collectif MyWay) -->
+          <div class="p-3.5 rounded-2xl border border-slate-200/90 bg-slate-50/70 hover:bg-emerald-50/30 transition-colors">
+            <label class="flex items-start gap-3 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="custom-flights-checkbox" 
+                name="custom_flights_option"
+                class="mt-0.5 w-4 h-4 rounded text-[#0e8354] focus:ring-[#0e8354] border-slate-300 cursor-pointer" 
+              />
+              <div class="flex-1 text-xs">
+                <span class="font-bold text-slate-900">
+                  {isEn ? "Include international flights in my proposal" : "Inclure les vols internationaux dans mon devis sur-mesure"}
+                </span>
+                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
+                  {isEn 
+                    ? "Departures from Paris, Lyon, Brussels, Geneva, etc. Ticketing & travel guarantees provided via our partner collective (MyWay)." 
+                    : "Au départ de Paris, province, Bruxelles ou Genève. Émission et garanties légales assurées via notre collectif partenaire (MyWay)."}
+                </p>
+              </div>
+            </label>
+          </div>
+
           <!-- Anti-Spam Honeypot -->
           <input type="text" name="_honey" id="custom-honey" style="display:none" tabindex="-1" autocomplete="off" />
 
@@ -665,6 +687,27 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
               </label>
               <input type="tel" id="booking-phone" placeholder="+33 6 12 34 56 78" required class="w-full p-3 rounded-2xl border border-slate-200 bg-slate-50/50 font-medium focus:bg-white focus:ring-2 focus:ring-[#0e8354] focus:outline-none transition-all" />
             </div>
+          </div>
+
+          <!-- Option Vols Internationaux (Collectif MyWay) -->
+          <div class="p-3.5 rounded-2xl border border-slate-200/90 bg-slate-50/70 hover:bg-emerald-50/30 transition-colors">
+            <label class="flex items-start gap-3 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                id="booking-modal-flights-checkbox" 
+                class="mt-0.5 w-4 h-4 rounded text-[#0e8354] focus:ring-[#0e8354] border-slate-300 cursor-pointer" 
+              />
+              <div class="flex-1 text-xs">
+                <span class="font-bold text-slate-900">
+                  {isEn ? "Include international flights in my proposal" : "Inclure les vols internationaux dans ma proposition"}
+                </span>
+                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed font-normal">
+                  {isEn 
+                    ? "Departures from Paris, Lyon, Brussels, Geneva, etc. Ticketing & travel guarantees provided via our certified partner collective (MyWay)." 
+                    : "Au départ de Paris, province, Bruxelles ou Genève. Émission et garanties légales assurées via notre collectif partenaire (MyWay)."}
+                </p>
+              </div>
+            </label>
           </div>
 
           <!-- Message / Notes -->
@@ -961,6 +1004,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var dateVal = (document.getElementById('booking-date-input') || {}).value || '';
       var travelersVal = (document.getElementById('booking-travelers-select') || {}).value || '2';
       var isCamping = (document.getElementById('booking-modal-camping-checkbox') || {}).checked;
+      var isFlights = (document.getElementById('booking-modal-flights-checkbox') || {}).checked;
       var firstname = (document.getElementById('booking-firstname') || {}).value || '';
       var lastname = (document.getElementById('booking-lastname') || {}).value || '';
       var email = (document.getElementById('booking-email') || {}).value || '';
@@ -988,6 +1032,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         date_depart_souhaitee: dateVal,
         nombre_inscrits: travelersVal,
         [optionLabelKey]: optionLabelVal,
+        vols_internationaux: isFlights ? "OUI (Proposition avec vols souhaitée via MyWay)" : "NON (Vols gérés par le voyageur)",
         estimation_prix_total: totalVal,
         acompte_30_pourcent: depositVal,
         client_nom_complet: firstname + ' ' + lastname,
@@ -1086,6 +1131,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
       var travelers = (document.getElementById('custom-travelers')?.value || '').trim();
       var duration = (document.getElementById('custom-duration')?.value || '').trim();
       var notes = (document.getElementById('custom-notes')?.value || '').trim();
+      var isFlightsCustom = (document.getElementById('custom-flights-checkbox') || {}).checked;
 
       // Collect selected priorities checkboxes
       var priorities = [];
@@ -1118,6 +1164,7 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         nombre_voyageurs: travelers,
         duree_estimee: duration,
         priorites_choisies: priorities.join(', '),
+        vols_internationaux: isFlightsCustom ? "OUI (Proposition avec vols souhaitée via MyWay)" : "NON (Vols gérés par le voyageur)",
         details_du_projet: notes,
         date_envoi: new Date().toLocaleString(isEn ? 'en-US' : 'fr-FR')
       };
