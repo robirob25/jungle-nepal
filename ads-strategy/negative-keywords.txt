@@ -1,0 +1,218 @@
+# ==============================================================================
+# JUNGLE NEPAL ADVENTURE - LISTE NOIRE DE MOTS-CLÉS NÉGATIFS (NEGATIVE KEYWORDS)
+# Budget protégé : 200 € / mois (Sniper Strategy)
+# ==============================================================================
+# INSTRUCTIONS D'UTILISATION :
+# 1. Dans Google Ads, allez dans "Outils et paramètres" > "Bibliothèque partagée".
+# 2. Cliquez sur "Listes de mots clés à exclure".
+# 3. Créez une nouvelle liste nommée "Exclusions_Jungle_Nepal_Global", collez
+#    l'ensemble de ces termes et associez la liste à toutes vos campagnes.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. HAUTE MONTAGNE, TREKKING PUR & ALPINISME (FR + EN)
+# (Écarte les randonneurs de haute altitude qui ne recherchent pas la faune)
+# ------------------------------------------------------------------------------
+everest
+ebc
+"everest base camp"
+"camp de base everest"
+"camp de base"
+annapurna
+"annapurna circuit"
+"annapurnas"
+"tour des annapurnas"
+"trek annapurna"
+"poon hill"
+"poon hill seul"
+"mardi himal"
+manaslu
+langtang
+mustang
+"upper mustang"
+"haut mustang"
+alpinisme
+ascension
+sommet
+"sommet 8000"
+sherpa
+"porteur nepal"
+"guide trek seul"
+"trek sans guide"
+"trek solo"
+climbing
+mountaineering
+trekking solo
+himalaya trek solo
+
+# ------------------------------------------------------------------------------
+# 2. RECHERCHES LOW-COST, ROUTARDS & SQUAT (FR + EN)
+# (Protège les 6,50 €/j des clics de voyageurs à budget zéro)
+# ------------------------------------------------------------------------------
+"pas cher"
+"low cost"
+gratuit
+free
+routard
+"le routard"
+"guide du routard"
+"lonely planet"
+"sac a dos"
+"sac à dos"
+backpacker
+backpacking
+auberge
+"auberge de jeunesse"
+hostel
+guesthouse pas cher
+dortoir
+dorm
+couchsurfing
+bivouac sauvage seul
+"camping gratuit"
+promo
+reduction
+"code promo"
+rabais
+cheap
+budget nepal travel
+
+# ------------------------------------------------------------------------------
+# 3. TOURISME NON-ÉTHIQUE & ÉLÉPHANTS DOMESTIQUÉS (FR + EN)
+# (Écarte les touristes de masse cherchant à monter sur un éléphant)
+# ------------------------------------------------------------------------------
+"dos elephant"
+"dos d elephant"
+"dos d'éléphant"
+"balade elephant"
+"monter sur un elephant"
+"elephant ride"
+"elephant riding"
+"elephant safari"
+"elephant bathing"
+"safari dos elephant"
+"promenade elephant"
+
+# ------------------------------------------------------------------------------
+# 4. AUTRES DESTINATIONS SAFARI CONCURRENTES (FR + EN)
+# (Écarte ceux qui cherchent l'Inde, l'Afrique ou le Sri Lanka)
+# ------------------------------------------------------------------------------
+inde
+india
+ranthambore
+bandhavgarh
+kanha
+kaziranga
+corbett
+"jim corbett"
+tadjikistan
+afrique
+africa
+kenya
+tanzanie
+tanzania
+serengeti
+masai mara
+kruger
+namibie
+namibia
+botswana
+"sri lanka"
+yala
+
+# ------------------------------------------------------------------------------
+# 5. RECHERCHES INFORMATIONNELLES, CULTURELLES & MÉDIAS (FR + EN)
+# (Zéro intention d'achat de voyage)
+# ------------------------------------------------------------------------------
+wikipedia
+wikipédia
+youtube
+video
+vidéo
+documentaire
+film
+reportage
+"arte"
+"faut pas rever"
+"echappees belles"
+photo gratuite
+"wallpaper"
+"fond d écran"
+"fond d'écran"
+dessin
+coloriage
+concours photo
+exposition
+musée
+population
+superficie
+histoire
+drapeau
+monnaie
+roupie
+religion
+hindouisme
+bouddhisme
+
+# ------------------------------------------------------------------------------
+# 6. EMPLOI, STAGES, BÉNÉVOLAT & ÉTUDES (FR + EN)
+# ------------------------------------------------------------------------------
+emploi
+job
+recrutement
+stage
+internship
+benevole
+bénévole
+benevolat
+bénévolat
+volontariat
+volunteer
+volunteering
+ong
+mission humanitaire
+travailler au nepal
+travailler dans un safari
+
+# ------------------------------------------------------------------------------
+# 7. LOGISTIQUE PURE, VOLS SECS & FORMALITÉS (FR + EN)
+# (Les gens qui ont déjà leur voyage et cherchent des détails pratiques)
+# ------------------------------------------------------------------------------
+"billet avion"
+"vol pas cher"
+"vol sec"
+"flight only"
+"cheap flights"
+skyscanner
+kayak
+"air india"
+"qatar airways"
+"gulf air"
+visa
+"prix visa"
+"visa on arrival"
+"ambassade"
+"consulat"
+"passeport"
+"vaccin obligatoire"
+"paludisme traitement"
+"meteo"
+"météo"
+"climat"
+"quand partir"
+"heure katmandou"
+"decalage horaire"
+
+# ------------------------------------------------------------------------------
+# 8. HÔTELLERIE SÈCHE & PLATEFORMES TIERCES (FR + EN)
+# ------------------------------------------------------------------------------
+booking
+booking.com
+tripadvisor
+expedia
+agoda
+airbnb
+"hotel seul"
+"lodge seul"
+hotel katmandou
+hotel pokhara
