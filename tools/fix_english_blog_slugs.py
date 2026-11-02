@@ -71,7 +71,8 @@ SLUG_MAP = {
     'singes-nepal-langurs-macaques-guide': 'monkeys-of-nepal-langurs-macaques-guide',
     'tigre-bardia-observation-chances-spots': 'tigers-in-bardia-sighting-chances-best-spots',
     'trek-jungle-nepal-safari-pied': 'jungle-trekking-nepal-walking-safari-guide',
-    'voir-des-tigres-au-nepal': 'bengal-tigers-in-nepal-wildlife-safari-guide'
+    'voir-des-tigres-au-nepal': 'bengal-tigers-in-nepal-wildlife-safari-guide',
+    'dauphin-du-gange-nepal-riviere-karnali-bardia': 'ganges-river-dolphin-nepal-karnali-bardia-guide'
 }
 
 EN_TITLE_TRANSLATIONS = {
@@ -164,13 +165,43 @@ for post in posts_en:
             post['title'] = EN_TITLE_TRANSLATIONS[old_slug]['title']
             post['description'] = EN_TITLE_TRANSLATIONS[old_slug]['description']
 
+TOUR_MAPPING = {
+    'safari-pied-bardia': 'bardia-walking-safari',
+    'safari-jeep-bardia': 'bardia-jeep-safari',
+    'safari-pied-chitwan': 'chitwan-walking-safari',
+    'safari-jeep-chitwan': 'chitwan-jeep-safari',
+    'rafting-safari-bardia': 'bardia-rafting-safari',
+    'safari-chitwan-3-jours': 'chitwan-3-days-safari-post-trek',
+    'pokhara-chitwan-safari-transfert-katmandou': 'pokhara-to-chitwan-safari-transfer-kathmandu',
+    'bardia-explorateur': 'bardia-tiger-safari-5-days',
+    'jungle-extreme': 'nepal-wildlife-safari-15-days',
+    'bardia-nuit-sauvage': 'bardia-bivouac-camping-safari',
+    'chitwan-culture': 'chitwan-safari-cultural-tour',
+    'chitwan-bardia-complete': 'chitwan-bardia-combined-safari',
+    'nepal-sauvage': 'wild-nepal-safari-annapurna-trek',
+    'bardia-babai-camping': 'babai-valley-wild-camping-safari',
+    'babai-special': 'babai-valley-tiger-tracking-5-days',
+    'rafting-safari': 'karnali-rafting-and-wildlife-safari',
+    'panthere-des-neiges': 'snow-leopard-expedition-nepal',
+    'rara-lake-bardia': 'rara-lake-bardia-expedition',
+    'nepal-immersion-totale': 'nepal-wildlife-culture-immersion',
+    'carnet-de-voyage': 'nepal-sketching-travel-journal-tour',
+    'immersion-spirituelle': 'himalaya-spiritual-immersion-tour',
+    'dashain-immersion-culturelle': 'dashain-festival-tharu-cultural-tour',
+    'tiji-mustang': 'tiji-festival-upper-mustang-trek'
+}
+
 # Update internal links within all English posts' content
 for post in posts_en:
     content = post.get('content', '')
+    content = content.replace('rara-lake-bardia-expedition-expedition-expedition', 'rara-lake-bardia-expedition')
     for old_slug, new_slug in SLUG_MAP.items():
         # Replace /en/blog/old-slug and /blog/old-slug
         content = re.sub(rf'href=["\']/en/blog/{old_slug}(/|["\'])', rf'href="/en/blog/{new_slug}\1', content)
         content = re.sub(rf'href=["\']/blog/{old_slug}(/|["\'])', rf'href="/en/blog/{new_slug}\1', content)
+    for fr_slug, en_slug in TOUR_MAPPING.items():
+        content = re.sub(rf'href=[\"\'](?:/en)?/tours/{fr_slug}/?[\"\']', f'href=\"/en/tours/{en_slug}/\"', content)
+    content = re.sub(r'href=[\"\'](?:/en)?/tours/?[\"\']', 'href=\"/en/#prochains-departs\"', content)
     post['content'] = content
 
 with open(EN_POSTS_PATH, 'w', encoding='utf-8') as f:

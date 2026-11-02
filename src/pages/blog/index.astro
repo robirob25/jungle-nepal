@@ -456,8 +456,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           var topMatches = matched.slice(0, 5);
           
           suggestionsList.innerHTML = topMatches.map(function(m) {
-            return '<a href="/blog/' + m.slug + '.html" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white group/sugg">' +
-              '<img loading="lazy" decoding="async" src="' + m.img + '" alt="" class="w-12 h-12 rounded-lg object-cover bg-slate-900 shrink-0 border border-white/10" />' +
+            var safeTitle = (m.title || '').replace(/"/g, '&quot;');
+            return '<a href="/blog/' + m.slug + '/" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white group/sugg">' +
+              '<img loading="lazy" decoding="async" src="' + m.img + '" alt="' + safeTitle + '" class="w-12 h-12 rounded-lg object-cover bg-slate-900 shrink-0 border border-white/10" />' +
               '<div class="flex-1 min-w-0">' +
                 '<p class="text-xs sm:text-sm font-bold text-white group-hover/sugg:text-amber-200 truncate">' + m.title + '</p>' +
                 '<p class="text-[11px] text-slate-400">⏱ ' + m.reading + '</p>' +

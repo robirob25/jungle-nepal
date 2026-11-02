@@ -27,6 +27,7 @@ STATIC_ROUTES = [
     ("destinations/suklaphanta", "destinations/suklaphanta", "0.9", "weekly"),
     ("destinations/annapurna", "destinations/annapurna", "0.8", "weekly"),
     ("destinations/katmandou", "destinations/katmandou", "0.8", "weekly"),
+    ("safari-nepal", "safari-nepal", "0.95", "weekly"),
     ("blog", "blog", "0.9", "daily"),
     ("a-propos", "about", "0.7", "monthly"),
     ("contact", "contact", "0.8", "monthly"),

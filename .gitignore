@@ -6,3 +6,5 @@ build/
 .env
 .DS_Store
 .astro/
+__pycache__/
+*.pyc
