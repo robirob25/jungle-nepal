@@ -622,7 +622,7 @@ import Header from '../../components/Header.astro';
             tourTitle="Safari Jeep privée — Parc national de Chitwan"
             tourBadge="Séjour court • Journée 4x4 privatisée"
             duration="1 jour (06h00 – 18h00)"
-            pricingType="fixed_group"
+            pricingType="per_person"
             basePrice={190}
             allowsPawanRoom={false}
             maxTravelers={6}
@@ -885,6 +885,13 @@ import Header from '../../components/Header.astro';
     };
 
     window.openTourBookingModal = function() {
+      var card = document.getElementById('booking-card-container');
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        var dateInput = card.querySelector('.widget-date-input');
+        if (dateInput) dateInput.focus();
+        return;
+      }
       var finalPrice = 190;
       var tourTitle = "Safari en Jeep au Parc National de Chitwan";
       

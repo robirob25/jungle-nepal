@@ -671,7 +671,7 @@ import Header from '../../components/Header.astro';
             tourTitle="Rafting Safari — Parc national de Bardia"
             tourBadge="Séjour court • Journée rafting privatisée"
             duration="1 jour (07h00 – 17h30)"
-            pricingType="fixed_group"
+            pricingType="per_person"
             basePrice={190}
             allowsPawanRoom={true}
             maxTravelers={4}
@@ -1005,6 +1005,13 @@ import Header from '../../components/Header.astro';
     };
 
     window.openTourBookingModal = function() {
+      var card = document.getElementById('booking-card-container');
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        var dateInput = card.querySelector('.widget-date-input');
+        if (dateInput) dateInput.focus();
+        return;
+      }
       var finalPrice = window.hasGuideRoomOption ? 202 : 190;
       var tourTitle = "Rafting Safari au Parc National de Bardia" + (window.hasGuideRoomOption ? " + Nuit chez Pawan" : "");
       

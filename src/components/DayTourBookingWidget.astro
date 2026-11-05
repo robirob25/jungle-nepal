@@ -56,16 +56,14 @@ const isEn = lang === 'en';
   <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between">
     <div>
       <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">
-        {pricingType === 'per_person' ? (isEn ? "Price per traveler" : "Tarif par personne") : (isEn ? "Fixed group price" : "Tarif forfait privatisé")}
+        {isEn ? "Price per traveler" : "Tarif par personne"}
       </p>
       <div class="flex items-baseline gap-2">
         <span class="widget-base-price-display font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">
           {basePrice}€
         </span>
         <span class="text-xs text-slate-500 font-medium">
-          {pricingType === 'per_person' 
-            ? (isEn ? "/ person" : "/ personne") 
-            : (isEn ? "/ private group" : "/ véhicule ou raft privatisé")}
+          {isEn ? "/ person" : "/ personne"}
         </span>
       </div>
     </div>
@@ -336,29 +334,20 @@ const isEn = lang === 'en';
         var pawanPricePerPerson = 12;
         var hasPawan = pawanCheckbox ? pawanCheckbox.checked : false;
 
-        var total = 0;
+        // Multiply price by number of travelers
+        var tourSubtotal = basePrice * currentTravelers;
+        var pawanSubtotal = hasPawan ? (pawanPricePerPerson * currentTravelers) : 0;
+        var total = tourSubtotal + pawanSubtotal;
+        
+        var travelersLabel = isEn 
+          ? (currentTravelers > 1 ? "travelers" : "traveler")
+          : (currentTravelers > 1 ? "voyageurs" : "voyageur");
+
         var detailText = "";
-
-        if (pricingType === 'per_person') {
-          var tourSubtotal = basePrice * currentTravelers;
-          var pawanSubtotal = hasPawan ? (pawanPricePerPerson * currentTravelers) : 0;
-          total = tourSubtotal + pawanSubtotal;
-          
-          if (hasPawan) {
-            detailText = currentTravelers + " pers. (" + basePrice + "€) + Nuit chez Pawan (" + pawanSubtotal + "€)";
-          } else {
-            detailText = currentTravelers + " pers. × " + basePrice + "€";
-          }
+        if (hasPawan) {
+          detailText = currentTravelers + " " + travelersLabel + " (" + tourSubtotal + "€) + " + (isEn ? "Night at guide's" : "Nuit chez Pawan") + " (" + pawanSubtotal + "€)";
         } else {
-          // fixed_group
-          var pawanSubtotal = hasPawan ? (pawanPricePerPerson * currentTravelers) : 0;
-          total = basePrice + pawanSubtotal;
-
-          if (hasPawan) {
-            detailText = "Forfait privé (" + basePrice + "€) + Nuit Pawan (" + pawanSubtotal + "€)";
-          } else {
-            detailText = "Forfait privatisé (" + currentTravelers + " " + (isEn ? "travelers" : "voyageurs") + ")";
-          }
+          detailText = currentTravelers + " " + travelersLabel + " × " + basePrice + "€";
         }
 
         if (totalDisplay) totalDisplay.textContent = total + "€";

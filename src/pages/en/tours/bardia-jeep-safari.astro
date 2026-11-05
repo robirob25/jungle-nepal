@@ -661,7 +661,7 @@ import Header from '../../../components/Header.astro';
             tourTitle="Private Jeep Safari — Bardia National Park"
             tourBadge="Short Trip • Private 4x4 Day"
             duration="1 day (06:00 AM – 06:00 PM)"
-            pricingType="fixed_group"
+            pricingType="per_person"
             basePrice={190}
             allowsPawanRoom={true}
             maxTravelers={6}
@@ -995,6 +995,13 @@ import Header from '../../../components/Header.astro';
     };
 
     window.openTourBookingModal = function() {
+      var card = document.getElementById('booking-card-container');
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        var dateInput = card.querySelector('.widget-date-input');
+        if (dateInput) dateInput.focus();
+        return;
+      }
       var finalPrice = window.hasGuideRoomOption ? 202 : 190;
       var tourTitle = "Private Jeep Safari in Bardia National Park" + (window.hasGuideRoomOption ? " + Pawan Homestay" : "");
       

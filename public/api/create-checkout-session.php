@@ -51,9 +51,9 @@ $catalog = [
         'allows_pawan' => true,
     ],
     'safari-jeep-bardia' => [
-        'title_fr' => 'Safari Jeep privée — Parc national de Bardia (1 jour)',
-        'title_en' => 'Private Jeep Safari — Bardia National Park (1 day)',
-        'type' => 'fixed_group',
+        'title_fr' => 'Safari Jeep — Parc national de Bardia (1 jour)',
+        'title_en' => 'Jeep Safari — Bardia National Park (1 day)',
+        'type' => 'per_person',
         'unit_price' => 19000, // 190€
         'allows_pawan' => true,
     ],
@@ -65,16 +65,16 @@ $catalog = [
         'allows_pawan' => false,
     ],
     'safari-jeep-chitwan' => [
-        'title_fr' => 'Safari Jeep privée — Parc national de Chitwan (1 jour)',
-        'title_en' => 'Private Jeep Safari — Chitwan National Park (1 day)',
-        'type' => 'fixed_group',
+        'title_fr' => 'Safari Jeep — Parc national de Chitwan (1 jour)',
+        'title_en' => 'Jeep Safari — Chitwan National Park (1 day)',
+        'type' => 'per_person',
         'unit_price' => 19000, // 190€
         'allows_pawan' => false,
     ],
     'rafting-safari-bardia' => [
         'title_fr' => 'Rafting & Safari sauvage Bardia / Karnali (1 jour)',
         'title_en' => 'Karnali River Rafting & Wildlife Safari Bardia (1 day)',
-        'type' => 'fixed_group',
+        'type' => 'per_person',
         'unit_price' => 19000, // 190€
         'allows_pawan' => true,
     ],
