@@ -24,9 +24,6 @@ import Header from '../components/Header.astro';
     </div>
   </aside>
 
-  <!-- 2. NAVBAR TRANSPARENTE AVEC FOND SOMBRE -->
-  <Header lang="fr" isTransparent={true} currentPath={Astro.url.pathname} />
-
     <!-- 3. HERO IMMERSIF (PHOTO AUTHENTIQUE DRIVE : SAFARI À PIED EN JUNGLE) -->
   <section class="relative min-h-[68vh] lg:min-h-[74vh] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-36 pb-24 sm:pt-44 sm:pb-32">
     <!-- Image de fond authentique du Drive -->
@@ -36,8 +33,10 @@ import Header from '../components/Header.astro';
         alt="Pistage à pied dans la jungle de Bardia Népal" 
         class="w-full h-full object-cover opacity-55 scale-105 transform filter brightness-80 contrast-105"
       />
-      
     </div>
+
+    <!-- 2. NAVBAR TRANSPARENTE -->
+    <Header lang="fr" isTransparent={true} currentPath={Astro.url.pathname} />
 
     <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center px-4 sm:px-6">
 

@@ -5,9 +5,10 @@ interface Props {
   lang?: 'fr' | 'en';
   currentPath?: string;
   isTransparent?: boolean;
+  isSticky?: boolean;
 }
 
-const { lang, currentPath = '', isTransparent = false } = Astro.props;
+const { lang, currentPath = '', isTransparent = false, isSticky } = Astro.props;
 
 const currentLang = lang || getLangFromUrl(Astro.url);
 const t = useTranslations(currentLang);
@@ -26,9 +27,28 @@ const contactUrl = currentLang === 'en' ? '/en/contact/' : '/contact/';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
+const isTourPage = currentPath.includes('/tours/') || Astro.url.pathname.includes('/tours/') || currentPath.includes('/tour/') || Astro.url.pathname.includes('/tour/');
+
+// Determine sticky position:
+// - Tour & activity pages have their own sticky sub-navigation bar ("Aperçu", "Profil", "Itinéraire", etc.) and sticky booking card.
+//   Therefore, the main header MUST be relative (not sticky) on tour pages to prevent overlapping/colliding fixed headers!
+// - Transparent headers (e.g. hero pages like /a-propos) are absolute over the hero without solid background.
+// - Regular pages (blog, contact, destinations, legal) default to sticky.
+const shouldBeSticky = isSticky !== undefined 
+  ? isSticky 
+  : (!isTransparent && !isTourPage);
+
+let headerClass = '';
+if (isTransparent) {
+  headerClass = 'absolute top-0 left-0 right-0 z-40 bg-transparent text-white transition-all duration-300';
+} else if (shouldBeSticky) {
+  headerClass = 'sticky top-0 z-30 bg-white/95 backdrop-blur-md text-slate-900 border-b border-slate-200 shadow-sm transition-all duration-300';
+} else {
+  headerClass = 'relative z-30 bg-white text-slate-900 border-b border-slate-200 shadow-sm transition-all duration-300';
+}
 ---
 
-<header class={`sticky top-0 z-30 transition-all duration-300 ${isTransparent ? 'bg-slate-950/80 backdrop-blur-md text-white border-b border-white/10' : 'bg-white/95 backdrop-blur-md text-slate-900 border-b border-slate-200 shadow-sm'}`}>
+<header class={headerClass}>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 sm:h-20">
     
@@ -42,13 +62,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             height="48"
             loading="eager"
             decoding="sync"
-            class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform" 
+            class={`h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform ${isTransparent ? 'drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]' : ''}`} 
           />
         </a>
       </div>
 
       <!-- CENTER: NAVIGATION LINKS -->
-      <nav class={`hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] xl:text-[14px] font-semibold ${isTransparent ? 'text-white/90' : 'text-slate-700'}`}>
+      <nav class={`hidden lg:flex items-center gap-5 xl:gap-7 text-[13.5px] xl:text-[14px] font-semibold ${isTransparent ? 'text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]' : 'text-slate-700'}`}>
         <a href={toursUrl} class={isTransparent ? "hover:text-amber-100 transition-colors whitespace-nowrap" : "hover:text-[#0e8354] transition-colors whitespace-nowrap"}>
           {t('nav.tours')}
         </a>
