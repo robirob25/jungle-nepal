@@ -273,3 +273,18 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   </div>
 
 </div>
+
+<script is:inline>
+  window.toggleMobileMenu = function() {
+    var m = document.getElementById('mobile-menu');
+    if (m) m.classList.toggle('hidden');
+  };
+  window.toggleLangMenu = function(btn) {
+    var box = btn ? btn.closest('.group\\/lang')?.querySelector('.lang-dropdown-box') : null;
+    if (box) {
+      box.classList.toggle('opacity-0');
+      box.classList.toggle('translate-y-2');
+      box.classList.toggle('pointer-events-none');
+    }
+  };
+</script>

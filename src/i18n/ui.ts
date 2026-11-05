@@ -7,12 +7,12 @@ export const defaultLang = 'fr';
 
 export const ui = {
   fr: {
-    'nav.tours': 'Tous les 18 circuits',
+    'nav.tours': 'Circuits & voyages',
     'nav.safari': 'Safari au Népal',
     'nav.activities': 'Activités',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Nos guides',
-    'nav.gallery': 'Galerie',
+    'nav.gallery': 'Galerie faune',
     'nav.about': 'À propos',
     'nav.agency': "L'Agence",
     'nav.conservation': 'Conservation',
@@ -62,12 +62,12 @@ export const ui = {
     'tour.contact_robin': 'Poser une question à Robin sur WhatsApp →',
   },
   en: {
-    'nav.tours': 'All 18 Expeditions',
+    'nav.tours': 'Tours & Treks',
     'nav.safari': 'Nepal Safari',
     'nav.activities': 'Activities',
     'nav.destinations': 'Destinations',
     'nav.guides': 'Our Guides',
-    'nav.gallery': 'Gallery',
+    'nav.gallery': 'Wildlife Gallery',
     'nav.about': 'About Us',
     'nav.agency': 'The Agency',
     'nav.conservation': 'Conservation',
