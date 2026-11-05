@@ -2,6 +2,7 @@
 import { getLocalizedPath } from '../../i18n/utils';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import DayTourBookingWidget from '../../components/DayTourBookingWidget.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -32,42 +33,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "validFrom": "2026-08-01",
     "url": "https://junglenepal.com/tours/safari-jeep-chitwan",
     "priceValidUntil": "2027-12-31",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingRate": {
-        "@type": "MonetaryAmount",
-        "value": "0",
-        "currency": "EUR"
-      },
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "NP"
-      },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        }
-      }
-    },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
-      "applicableCountry": "NP",
-      "returnPolicyCountry": "NP",
+      "applicableCountry": "FR",
+      "returnPolicyCountry": "FR",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
       "merchantReturnDays": 30,
-      "returnMethod": "https://schema.org/ReturnByMail",
       "returnFees": "https://schema.org/FreeReturn",
-      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+      "merchantReturnLink": "https://junglenepal.com/mentions-legales/"
     }
   },
   "provider": {
@@ -683,7 +656,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <h2 class="font-black text-2xl text-slate-950 tracking-tight">
                 Avis des explorateurs
               </h2>
-              <p class="text-xs text-slate-500 font-semibold mt-1">Note moyenne : 5.0/5 basée sur 22 retours de safaris en Jeep à Chitwan</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1">Note moyenne : 5.0/5 basée sur 22 avis vérifiés sur Google</p>
             </div>
             <div class="text-right">
               <span class="text-2xl font-black text-[#0e8354]">5.0</span>
@@ -695,39 +668,39 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-sm text-slate-900">David & Sophie M.</h3>
-                  <p class="text-[11px] text-slate-400">Voyageurs • Safari Jeep journée complète à Chitwan</p>
+                  <h3 class="font-bold text-sm text-slate-900">Jean Tramoy</h3>
+                  <p class="text-[11px] text-slate-400">Voyageur vérifié • Avis Google</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                « Une journée extraordinaire ! Avoir notre propre jeep privatisée a tout changé : nous avons pu passer plus de 30 minutes à observer une mère rhinocéros et son petit dans un marécage isolé, sans aucun autre véhicule autour. Notre chauffeur conduisait avec une grande prudence et notre guide connaissait chaque cri d'oiseau. »
+                « Un voyage absolument inoubliable au Népal ! Bien plus qu’un simple séjour, c’est une véritable expérience humaine que j’ai vécue. Tout était parfaitement organisé du début à la fin, ce qui permet de profiter pleinement sans se soucier de quoi que ce soit. L’équipe est tout simplement exceptionnelle. Je recommande les yeux fermés ! 🙏 »
               </p>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-sm text-slate-900">Alexandre B.</h3>
-                  <p class="text-[11px] text-slate-400">Photographe animalier • Safari Jeep privatisé</p>
+                  <h3 class="font-bold text-sm text-slate-900">Justine Luçon</h3>
+                  <p class="text-[11px] text-slate-400">Voyageuse vérifiée • Avis Google</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                « En tant que photographe, la flexibilité d'une jeep privée est indispensable. Le guide et le pisteur ont tout fait pour nous positionner par rapport à la lumière. Nous avons photographié un ours lippu traversant la piste de Sal et deux gavials géants sur la Rapti. Les permis étaient réglés d'avance, zéro perte de temps. »
+                « Le Népal a été bien plus qu’un voyage. Une expérience humaine profonde, riche en émotions, en amour et en découvertes. Un immense merci à toute l’équipe qui a organisé ce séjour : sans eux, rien de tout cela n’aurait été possible. Cette expérience restera gravée en moi. »
               </p>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-sm text-slate-900">Marc & Nathalie L.</h3>
-                  <p class="text-[11px] text-slate-400">Voyage en couple • Journée d'exploration 4x4</p>
+                  <h3 class="font-bold text-sm text-slate-900">Alice Palasti</h3>
+                  <p class="text-[11px] text-slate-400">Voyageuse vérifiée • Avis Google</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                « Organisation irréprochable de Robin et son équipe locale. Prise en charge directement à notre hôtel à Sauraha à 6h pile. Le pique-nique en haut du mirador était copieux et authentique. Voir 4 rhinocéros dans la même journée était au-delà de nos espérances ! »
+                « Un voyage au Népal qui restera gravé à vie. Ce fut une expérience profondément humaine. Merci à toute l'équipe de nous avoir fait vivre ces moments de vie sublimes, qui aujourd'hui sont de très précieux souvenirs. Un immense merci aux organisateurs de ce voyage ! »
               </p>
             </div>
           </div>
@@ -785,85 +758,20 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
 
       <!-- RIGHT COLUMN: STICKY BOOKING CARD -->
-      <div class="lg:col-span-4">
-        <div id="booking-widget" class="sticky top-[76px] bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-xl space-y-4">
-          
-          <!-- Header: Badge & Title -->
-          <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Séjour court • Journée 4x4 privatisée</span>
-            <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
-              Safari en Jeep — Parc national de Chitwan
-            </h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">1 jour (06h00 – 18h00) • Dès 1 personne</p>
-          </div>
-
-          <!-- Price Row -->
-          <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between">
-            <div>
-              <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Tarif tout compris</p>
-              <div class="flex items-baseline gap-2">
-                <span id="tour-price-display" data-base-price="190" class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">190€</span>
-                <span class="text-xs text-slate-500 font-medium">/ personne</span>
-              </div>
-            </div>
-            <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-[11px] font-bold border border-emerald-200">
-              Déjeuner inclus
-            </span>
-          </div>
-
-          <!-- Inclusions rapides -->
-          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5 text-xs text-slate-700">
-            <p class="flex items-center gap-2 font-medium">
-              <span class="text-[#0e8354] font-bold">✓</span>
-              <span>4x4 privatisé + chauffeur + carburant</span>
-            </p>
-            <p class="flex items-center gap-2 font-medium">
-              <span class="text-[#0e8354] font-bold">✓</span>
-              <span>1 guide senior + 1 pisteur d'élite dédiés</span>
-            </p>
-            <p class="flex items-center gap-2 font-medium">
-              <span class="text-[#0e8354] font-bold">✓</span>
-              <span>Permis d'entrée voyageur & permis 4x4 inclus</span>
-            </p>
-            <p class="flex items-center gap-2 font-medium">
-              <span class="text-[#0e8354] font-bold">✓</span>
-              <span>Déjeuner pique-nique en mirador sauvage</span>
-            </p>
-            <p class="flex items-center gap-2 font-medium">
-              <span class="text-[#0e8354] font-bold">✓</span>
-              <span>Prise en charge & retour hôtel Sauraha</span>
-            </p>
-          </div>
-
-          <!-- Primary CTA Button -->
-          <button type="button" onclick="openTourBookingModal()" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">
-            <span id="cta-button-text">Réserver ce safari (190 €) →</span>
-          </button>
-
-          <!-- Secondary Action (WhatsApp) -->
-          <div class="pt-1">
-            <a id="sidebar-whatsapp-btn" href="https://wa.me/33695413227?text=Bonjour%20Robin,%20je%20souhaite%20r%C3%A9server%20le%20safari%20en%20jeep%20%C3%A0%20Chitwan%20(190%E2%82%AC)" target="_blank" rel="nofollow noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-emerald-50/90 hover:bg-emerald-100 text-[#0e8354] font-bold text-xs border border-emerald-200/80 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 cursor-pointer select-none">
-              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-              <span>Échanger avec Robin sur WhatsApp</span>
-            </a>
-          </div>
-
-          <!-- Reassurance List -->
-          <div class="space-y-1.5 text-xs text-slate-500 pt-3 border-t border-slate-100 font-medium">
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Jeep 4x4 privatisée (aucun groupe mélangé)</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Tous permis d'entrée & 4x4 inclus</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Trio chauffeur + guide senior + pisteur</span>
-            </div>
-          </div>
-
+      <div id="booking-card-container" class="lg:col-span-4 scroll-mt-24">
+        <div class="sticky top-[76px]">
+          <DayTourBookingWidget 
+            tourId="safari-jeep-chitwan"
+            tourTitle="Safari Jeep privée — Parc national de Chitwan"
+            tourBadge="Séjour court • Journée 4x4 privatisée"
+            duration="1 jour (06h00 – 18h00)"
+            pricingType="fixed_group"
+            basePrice={190}
+            allowsPawanRoom={false}
+            maxTravelers={6}
+            lang="fr"
+            locationName="Chitwan"
+          />
         </div>
       </div>
 
@@ -1009,10 +917,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         💬
       </a>
       <button 
-        onclick="openTourBookingModal()" 
-        class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5"
+        onclick="var el=document.getElementById('booking-card-container');if(el){el.scrollIntoView({behavior:'smooth'});var inp=el.querySelector('.widget-date-input');if(inp)inp.focus();}" 
+        class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
       >
-        <span>Réserver</span>
+        <span>Réserver (190€)</span>
         <span>→</span>
       </button>
     </div>

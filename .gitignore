@@ -8,3 +8,5 @@ build/
 .astro/
 __pycache__/
 *.pyc
+public/api/stripe-config.php
+dist/api/stripe-config.php

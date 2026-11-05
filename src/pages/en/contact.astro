@@ -461,8 +461,28 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       box.classList.toggle('pointer-events-none');
     }
   }
-  
-  }
+
+  // Pre-fill subject if passed in URL query (e.g. ?subject=Partnership...)
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const sub = params.get('subject');
+    if (sub) {
+      const select = document.getElementById('contact-subject');
+      const msg = document.getElementById('contact-message');
+      if (select) {
+        for (const opt of select.options) {
+          if (opt.value.toLowerCase().includes('partnership') || opt.value.toLowerCase().includes('other')) {
+            opt.selected = true;
+            break;
+          }
+        }
+      }
+      if (msg && !msg.value) {
+        msg.value = `Subject: ${sub}\n\nDear Robin and the Jungle Nepal Adventure team,\n\n`;
+      }
+    }
+  });
+
   window.addEventListener('scroll', () => {
     const btn = document.getElementById('back-to-top');
     if (btn) {

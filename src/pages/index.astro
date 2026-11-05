@@ -50,7 +50,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <a href="#activites" class="hover:text-amber-100 transition-colors">Activités</a>
       <a href="/safari-nepal/" class="hover:text-amber-100 transition-colors">Safari au Népal</a>
       <div class="relative group py-2">
-          <a href="/destinations/" class="hover:text-[#0e8354] transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
+          <a href="/destinations/" class="hover:text-amber-100 transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
             <span>Destinations</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -109,8 +109,29 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             </div>
           </div>
         </div>
-      <a href="#galerie-faune" class="hover:text-amber-100 transition-colors">Galerie</a>
-      <a href="/a-propos/" class="hover:text-amber-100 transition-colors font-extrabold">À propos</a>
+      <!-- Menu Déroulant L'Agence -->
+      <div class="relative group py-2">
+        <a href="/a-propos/" class="hover:text-amber-100 transition-colors flex items-center gap-1.5 cursor-pointer font-bold">
+          <span>L'Agence</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+
+        <div class="absolute top-full left-0 pt-2 w-60 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+          <div style="background-color: #041d13 !important; color: #ffffff !important;" class="rounded-2xl p-2 shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-white/10 space-y-0.5">
+            <a href="/a-propos/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/10 font-bold text-xs text-white hover:text-amber-100 transition-colors">
+              À propos
+            </a>
+            <a href="/conservation/" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/10 font-bold text-xs text-white hover:text-amber-100 transition-colors">
+              Projet Conservation NAGA
+            </a>
+            <a href="#galerie-faune" class="block px-3.5 py-2.5 rounded-xl hover:bg-white/10 font-bold text-xs text-white hover:text-amber-100 transition-colors">
+              Galerie faune
+            </a>
+          </div>
+        </div>
+      </div>
       <a href="/blog/" class="hover:text-amber-100 transition-colors">Blog</a>
       <a href="/contact/" class="hover:text-amber-100 transition-colors">Contact</a>
     </nav>
@@ -211,15 +232,27 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
       </div>
 
-      <!-- 4. Galerie -->
-      <a href="/#galerie-faune" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
-        Galerie
-      </a>
+      <!-- 4. L'Agence Mobile Accordion -->
+      <div class="rounded-xl overflow-hidden">
+        <button onclick="document.getElementById('mobile-agency-sub').classList.toggle('hidden'); document.getElementById('mobile-agency-arrow').classList.toggle('rotate-180');" class="w-full px-3.5 py-2.5 flex items-center justify-between text-white/90 hover:text-white hover:bg-white/10 transition-colors text-left cursor-pointer">
+          <span>L'Agence</span>
+          <svg id="mobile-agency-arrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/60 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
 
-      <!-- 5. À propos -->
-      <a href="/a-propos/" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
-        À propos
-      </a>
+        <div id="mobile-agency-sub" class="hidden pl-4 pr-2 py-1 space-y-1 text-sm text-white/80">
+          <a href="/a-propos/" onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
+            À propos
+          </a>
+          <a href="/conservation/" onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
+            Projet Conservation NAGA
+          </a>
+          <a href="/#galerie-faune" onclick="toggleMobileMenu()" class="block py-1.5 hover:text-white transition-colors">
+            Galerie faune
+          </a>
+        </div>
+      </div>
 
       <!-- Blog -->
       <a href="/blog/" onclick="toggleMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-white/10 text-white/90 hover:text-white transition-colors">
@@ -4855,7 +4888,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             Chef Pisteur & Expert Faune (BBC Wildlife)
           </span>
           <p class="mt-4 text-sm text-slate-600 leading-relaxed font-normal">
-            Natif de Bardia, ancien Président de l'Association des Guides. Il a guidé les équipes documentaires de la BBC et connaît chaque recoin du sanctuaire.
+            Natif de Bardia, Président de la Nature Guide Association (NAGA) et co-porteur de notre <a href="/conservation/" class="text-[#0e8354] font-bold underline hover:text-[#0c6d46]">projet de conservation</a>. Il a guidé les équipes de la BBC et connaît chaque recoin du sanctuaire.
           </p>
         </div>
 
@@ -4986,7 +5019,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </div>
         </article>
 
-        <!-- AVIS 3 : Antoine -->
+        <!-- AVIS 3 : Eric Martin -->
         <article class="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between">
@@ -4996,16 +5029,16 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               </span>
             </div>
             <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed font-normal italic">
-              « Une expérience et une aventure humaine tout simplement exceptionnelles. Voir les tigres et les rhinocéros en liberté avec des pisteurs aussi passionnés que Pawan et Robin est un privilège rare. L'organisation, les rencontres et le respect de la nature étaient parfaits du premier au dernier jour. Je recommande à 100% ! »
+              « Nous avons planifié notre safari avec Robin, notre interlocuteur français. Tout s'est déroulé parfaitement. Nous avons pu observer de nombreux animaux, dont, par chance, le fameux tigre du Bengale. Un grand merci à l'équipe locale, Pawan et Kiran, qui ont pris soin de nous et nous ont fait sentir comme des membres de leur famille. Je recommande vivement Jungle Nepal Adventure ! »
             </p>
           </div>
           <div class="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-[#0e5c3e] text-white font-black text-xs flex items-center justify-center shadow-sm">
-              AN
+              EM
             </div>
             <div>
-              <p class="font-extrabold text-sm text-slate-900 leading-none">Antoine</p>
-              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Expédition Népal</p>
+              <p class="font-extrabold text-sm text-slate-900 leading-none">Eric Martin</p>
+              <p class="text-[11px] text-slate-500 mt-1">Voyageur vérifié • Safari Bardia</p>
             </div>
           </div>
         </article>

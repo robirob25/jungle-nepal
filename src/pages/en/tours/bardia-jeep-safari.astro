@@ -3,6 +3,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Footer from '../../../components/Footer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import TigerObservationStats from '../../../components/TigerObservationStats.astro';
+import DayTourBookingWidget from '../../../components/DayTourBookingWidget.astro';
 
 const frTargetUrl = getLocalizedPath(Astro.url, 'fr');
 const enTargetUrl = getLocalizedPath(Astro.url, 'en');
@@ -33,42 +34,14 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "validFrom": "2026-08-01",
     "url": "https://junglenepal.com/en/tours/bardia-jeep-safari",
     "priceValidUntil": "2027-12-31",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingRate": {
-        "@type": "MonetaryAmount",
-        "value": "0",
-        "currency": "EUR"
-      },
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "NP"
-      },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        }
-      }
-    },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
-      "applicableCountry": "NP",
-      "returnPolicyCountry": "NP",
+      "applicableCountry": "FR",
+      "returnPolicyCountry": "FR",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
       "merchantReturnDays": 30,
-      "returnMethod": "https://schema.org/ReturnByMail",
       "returnFees": "https://schema.org/FreeReturn",
-      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+      "merchantReturnLink": "https://junglenepal.com/en/legal-mentions/"
     }
   },
   "provider": {
@@ -87,7 +60,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "19",
+    "reviewCount": "22",
     "bestRating": "5"
   },
   "itinerary": {
@@ -329,7 +302,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           </span>
           <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 font-bold px-3 py-1 rounded-full border border-emerald-200">
             <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            <span>5.0 (19 verified reviews)</span>
+            <span>5.0 (22 verified reviews)</span>
           </div>
           <span class="text-xs font-bold bg-slate-900 text-amber-100 px-3 py-1 rounded-full border border-amber-300/30">
             Private 4x4 Jeep + Driver
@@ -714,7 +687,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
               <h2 class="font-black text-2xl text-slate-950 tracking-tight">
                 Explorer Reviews
               </h2>
-              <p class="text-xs text-slate-500 font-semibold mt-1">Average rating: 5.0/5 based on 19 verified Bardia Jeep safari reviews</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1">Average rating: 5.0/5 based on 22 verified Google reviews</p>
             </div>
             <div class="text-right">
               <span class="text-2xl font-black text-[#0e8354]">5.0</span>
@@ -726,26 +699,26 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-sm text-slate-900">Julien & Claire</h3>
-                  <p class="text-[11px] text-slate-400">Verified Travelers • 1-Day Private Jeep Safari</p>
+                  <h3 class="font-bold text-sm text-slate-900">Alice Palasti</h3>
+                  <p class="text-[11px] text-slate-400">Verified Traveler • Google Review</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                "Having the jeep exclusively for ourselves with the driver and two native guides made all the difference. We reached the westernmost corners of Bardia and watched a tigress cross the sandy track less than 25 meters ahead. Truly unforgettable!"
+                “A journey to Nepal that will remain etched for life. It was a deeply human and loving experience. Staying with locals in the jungle of Bardia is a rare life experience, sincerely a must-do! Thank you to the whole team for making us experience these sublime moments.”
               </p>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3 class="font-bold text-sm text-slate-900">François D.</h3>
-                  <p class="text-[11px] text-slate-400">Family Explorer • Jeep Safari + Pawan Homestay</p>
+                  <h3 class="font-bold text-sm text-slate-900">Matthew John</h3>
+                  <p class="text-[11px] text-slate-400">Verified Traveler • Google Review</p>
                 </div>
                 <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-normal">
-                "Ideal formula with our kids: the security of the jeep combined with total open-air wilderness immersion. Staying at Pawan's home was a delightful cultural experience with delicious family food and captivating wildlife stories."
+                “Had such a great time! Pawan was such an amazing host and took really great care of us. We had so much fun on safari and felt so safe and looked after. The food was delicious and the facilities were amazing. Would love to come back. Thanks for having us!”
               </p>
             </div>
           </div>
@@ -803,79 +776,20 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       </div>
 
       <!-- RIGHT COLUMN: STICKY BOOKING CARD -->
-      <div class="lg:col-span-4">
-        <div id="booking-widget" class="sticky top-[76px] bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-xl space-y-4">
-          
-          <!-- Header: Badge & Title -->
-          <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0e8354]">Short Trip • Private 4x4 Day</span>
-            <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
-              Jeep Safari — Bardia National Park
-            </h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">1 Day (06:00 AM – 06:00 PM) • From 1 Person</p>
-          </div>
-
-          <!-- Price Row -->
-          <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between">
-            <div>
-              <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Price per person</p>
-              <div class="flex items-baseline gap-2">
-                <span id="tour-price-display" data-base-price="190" class="font-black text-3xl sm:text-4xl text-slate-950 tracking-tight">190€</span>
-                <span class="text-xs text-slate-500 font-medium">/ person</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sidebar Option Toggle Checkbox -->
-          <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 space-y-1.5">
-            <label class="flex items-start gap-2.5 cursor-pointer select-none">
-              <input 
-                type="checkbox" 
-                id="sidebar-guide-room-checkbox" 
-                onchange="toggleGuideOption(this.checked)"
-                class="mt-1 w-4 h-4 text-[#0e8354] rounded border-slate-300 focus:ring-[#0e8354] cursor-pointer"
-              />
-              <div class="flex-1">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-xs font-black text-slate-900">Pawan Homestay (+€12)</span>
-                  <span class="text-xs font-black text-[#0e8354]">+€12</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-snug mt-0.5">
-                  Private AC Room + Home Dinner + Breakfast
-                </p>
-              </div>
-            </label>
-          </div>
-
-          <!-- Primary CTA Button -->
-          <button type="button" onclick="openTourBookingModal()" class="w-full text-center py-4 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-sm shadow-xl shadow-[#0e8354]/30 hover:scale-105 active:scale-95 transition-all duration-300 block cursor-pointer">
-            <span id="cta-button-text">Book This Safari (€190) →</span>
-          </button>
-
-          <!-- Secondary Action (WhatsApp) -->
-          <div class="pt-1">
-            <a id="sidebar-whatsapp-btn" href="https://wa.me/33695413227?text=Hello%20Robin,%20I%20would%20like%20to%20book%20the%20jeep%20safari%20in%20Bardia%20(190%E2%82%AC)" target="_blank" rel="nofollow noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-emerald-50/90 hover:bg-emerald-100 text-[#0e8354] font-bold text-xs border border-emerald-200/80 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 cursor-pointer select-none">
-              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-              <span>Chat with Robin on WhatsApp</span>
-            </a>
-          </div>
-
-          <!-- Reassurance List -->
-          <div class="space-y-1.5 text-xs text-slate-500 pt-3 border-t border-slate-100 font-medium">
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Private 4x4 Jeep (no mixed strangers)</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>All park entrance & vehicle permits included</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Expert crew: Driver + Senior Guide + Tracker</span>
-            </div>
-          </div>
-
+      <div id="booking-card-container" class="lg:col-span-4 scroll-mt-24">
+        <div class="sticky top-[76px]">
+          <DayTourBookingWidget 
+            tourId="safari-jeep-bardia"
+            tourTitle="Private Jeep Safari — Bardia National Park"
+            tourBadge="Short Trip • Private 4x4 Day"
+            duration="1 day (06:00 AM – 06:00 PM)"
+            pricingType="fixed_group"
+            basePrice={190}
+            allowsPawanRoom={true}
+            maxTravelers={6}
+            lang="en"
+            locationName="Bardia"
+          />
         </div>
       </div>
 
@@ -1021,10 +935,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         💬
       </a>
       <button 
-        onclick="openTourBookingModal()" 
-        class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5"
+        onclick="var el=document.getElementById('booking-card-container');if(el){el.scrollIntoView({behavior:'smooth'});var inp=el.querySelector('.widget-date-input');if(inp)inp.focus();}" 
+        class="px-5 py-2.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-black text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
       >
-        <span>Book</span>
+        <span>Book (190€)</span>
         <span>→</span>
       </button>
     </div>

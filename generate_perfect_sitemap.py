@@ -30,6 +30,7 @@ STATIC_ROUTES = [
     ("safari-nepal", "safari-nepal", "0.95", "weekly"),
     ("blog", "blog", "0.9", "daily"),
     ("a-propos", "about", "0.7", "monthly"),
+    ("conservation", "conservation", "0.9", "monthly"),
     ("contact", "contact", "0.8", "monthly"),
     ("mentions-legales", "legal-mentions", "0.4", "yearly"),
 ]

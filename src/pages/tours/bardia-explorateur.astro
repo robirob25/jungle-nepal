@@ -31,49 +31,20 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-08-01",
-    "url": "https://junglenepal.com/tours/bardia-explorateur",
+    "url": "https://junglenepal.com/tours/bardia-explorateur/",
     "priceValidUntil": "2027-12-31",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingRate": {
-        "@type": "MonetaryAmount",
-        "value": "0",
-        "currency": "EUR"
-      },
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "NP"
-      },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 0,
-          "unitCode": "DAY"
-        }
-      }
-    },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
-      "applicableCountry": "NP",
-      "returnPolicyCountry": "NP",
+      "applicableCountry": "FR",
+      "returnPolicyCountry": "FR",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
       "merchantReturnDays": 30,
-      "returnMethod": "https://schema.org/ReturnByMail",
-      "returnFees": "https://schema.org/FreeReturn",
-      "merchantReturnLink": "https://junglenepal.com/conditions-generales"
+      "merchantReturnLink": "https://junglenepal.com/mentions-legales/"
     }
   },
   "provider": {
     "@type": "TravelAgency",
-    "name": "Jungle Nepal Adventure",
+    "name": "Jungle Nepal Adventure (MYWAY SAS - Atout France IM059190009)",
     "url": "https://junglenepal.com",
     "logo": "https://junglenepal.com/assets/logo_nav_white.png",
     "email": "contact@junglenepal.com",
@@ -86,8 +57,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "56",
+    "ratingValue": "5.0",
+    "reviewCount": "22",
     "bestRating": "5"
   },
   "itinerary": {
@@ -158,7 +129,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       "name": "Comment réserver un tour ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, vous devrez verser un acompte. Le solde restant sera dû le premier jour de votre voyage à Katmandou."
+        "text": "Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email. Pour confirmer votre réservation, un acompte de 30% est requis à l'inscription. Le solde de 70% est payable 30 jours avant le départ auprès de notre opérateur immatriculé MYWAY SAS (Atout France IM059190009)."
       }
     },
     {
@@ -502,8 +473,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <span class="text-slate-300">•</span>
           <span class="inline-flex items-center gap-1 text-slate-700">
             <svg class="w-3.5 h-3.5 text-amber-500 fill-amber-500 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            <span class="font-bold text-slate-900">4.8</span>
-            <span class="text-slate-500">(56 avis)</span>
+            <span class="font-bold text-slate-900">5.0</span>
+            <span class="text-slate-500">(22 avis vérifiés)</span>
           </span>
           <span class="text-slate-300">•</span>
           <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 font-semibold text-[11px] border border-slate-200/60">Safari & Pistage Tigre</span>
@@ -948,12 +919,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 Avis de voyageurs ayant vécu l'aventure
               </h2>
               <p class="text-xs sm:text-sm text-slate-500 mt-1 font-medium">
-                Retours d'expérience 100% authentiques vérifiés sur Google Reviews.
+                Retours d'expérience authentiques vérifiés de nos voyageurs.
               </p>
             </div>
             <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-2xl border border-emerald-200 self-start sm:self-auto">
               <span class="text-[#00b67a] font-black text-lg">★ 5.0</span>
-              <span class="text-xs font-bold text-slate-700">Google Reviews</span>
+              <span class="text-xs font-bold text-slate-700">Avis Voyageurs</span>
             </div>
           </div>
 
@@ -1010,9 +981,9 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
                 <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-open:rotate-180"></i>
               </summary>
               <div class="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-normal space-y-1.5">
-                <p>Une fois que vous avez choisi votre tour, nous vous enverrons un contrat par email.</p>
-                <p>Pour confirmer votre réservation, vous devrez verser un acompte.</p>
-                <p>Le solde restant sera dû le premier jour de votre voyage à Katmandou.</p>
+                <p>Une fois votre formule choisie, nous vous envoyons un devis et contrat de voyage officiel.</p>
+                <p>Pour confirmer votre réservation, un acompte de 30% est réglé à l'inscription.</p>
+                <p>Le solde de 70% est payable au plus tard 30 jours avant le départ auprès de notre opérateur agréé MYWAY SAS (Atout France IM059190009).</p>
               </div>
             </details>
 

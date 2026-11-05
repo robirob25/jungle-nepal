@@ -107,6 +107,7 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
     '/safari-nepal': { fr: '/safari-nepal/', en: '/en/safari-nepal/' },
     '/a-propos': { fr: '/a-propos/', en: '/en/about/' },
     '/about': { fr: '/a-propos/', en: '/en/about/' },
+    '/conservation': { fr: '/conservation/', en: '/en/conservation/' },
     '/mentions-legales': { fr: '/mentions-legales/', en: '/en/legal-mentions/' },
     '/legal-mentions': { fr: '/mentions-legales/', en: '/en/legal-mentions/' },
     // Tours & Expeditions Mapping FR <-> EN (Strict SEO Slugs)

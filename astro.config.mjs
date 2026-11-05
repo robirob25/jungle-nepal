@@ -33,7 +33,9 @@ export default defineConfig({
     '/nos-recommandations': { status: 301, destination: '/#prochains-departs' },
     '/voyage-nature-au-nepal-safari-et-aventures-hors-sentiers-battus': { status: 301, destination: '/#prochains-departs' },
 
-    // 2. Entreprise / Contact / À propos
+    // 2. Entreprise / Contact / À propos / Légal
+    '/conditions-generales': { status: 301, destination: '/mentions-legales' },
+    '/en/terms-and-conditions': { status: 301, destination: '/en/legal-mentions' },
     '/agence-de-safaris-au-nepal': { status: 301, destination: '/a-propos' },
     '/about-us': { status: 301, destination: '/a-propos' },
     '/about': { status: 301, destination: '/a-propos' },

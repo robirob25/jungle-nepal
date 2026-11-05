@@ -26,7 +26,7 @@ Options -Indexes -MultiViews
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=*, usb=()"
     Header unset X-Powered-By
     Header unset Server
 </IfModule>
@@ -39,6 +39,13 @@ Options -Indexes -MultiViews
     RewriteCond %{QUERY_STRING} (eval\(|union.*select|benchmark\(|document\.cookie|<script|<iframe) [NC,OR]
     RewriteCond %{QUERY_STRING} (base64_encode|globals|mosconfig|_request) [NC]
     RewriteRule .* - [F,L]
+
+    # Block access to legacy WordPress backup directories
+    RewriteRule ^(wp-admin_old_backup|wp-content_old_backup|wp-includes_old_backup)(/.*)?$ - [F,L]
+
+    # 301 Redirect for legal terms & return policy (resolves 404 on conditions-generales)
+    RewriteRule ^conditions-generales/?$ https://junglenepal.com/mentions-legales/ [R=301,L,NE]
+    RewriteRule ^en/terms-and-conditions/?$ https://junglenepal.com/en/legal-mentions/ [R=301,L,NE]
 
     # Force HTTPS & Strip WWW
     RewriteCond %{HTTPS} off [OR]

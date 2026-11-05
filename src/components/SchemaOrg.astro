@@ -123,42 +123,13 @@ if (type === 'TouristTrip') {
         'validFrom': offers?.validFrom || '2026-01-01',
         'priceValidUntil': '2027-12-31',
         'url': offers?.url || currentUrl,
-        'shippingDetails': {
-          '@type': 'OfferShippingDetails',
-          'shippingRate': {
-            '@type': 'MonetaryAmount',
-            'value': '0',
-            'currency': offers?.priceCurrency || 'EUR'
-          },
-          'shippingDestination': {
-            '@type': 'DefinedRegion',
-            'addressCountry': 'NP'
-          },
-          'deliveryTime': {
-            '@type': 'ShippingDeliveryTime',
-            'handlingTime': {
-              '@type': 'QuantitativeValue',
-              'minValue': 0,
-              'maxValue': 0,
-              'unitCode': 'DAY'
-            },
-            'transitTime': {
-              '@type': 'QuantitativeValue',
-              'minValue': 0,
-              'maxValue': 0,
-              'unitCode': 'DAY'
-            }
-          }
-        },
         'hasMerchantReturnPolicy': {
           '@type': 'MerchantReturnPolicy',
-          'applicableCountry': 'NP',
-          'returnPolicyCountry': 'NP',
+          'applicableCountry': 'FR',
+          'returnPolicyCountry': 'FR',
           'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnWindow',
           'merchantReturnDays': 30,
-          'returnMethod': 'https://schema.org/ReturnByMail',
-          'returnFees': 'https://schema.org/FreeReturn',
-          'merchantReturnLink': `${canonicalOrigin}/conditions-generales`
+          'merchantReturnLink': `${canonicalOrigin}/mentions-legales/`
         }
       }
     } : {}),

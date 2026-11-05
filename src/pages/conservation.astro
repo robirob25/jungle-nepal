@@ -1,0 +1,883 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Conservation & Communautés à Bardia : Projet NAGA & Jungle Nepal"
+  description="L'initiative de conservation communautaire à Bardia développée par Jungle Nepal Adventure et la Nature Guide Association (NAGA) : sécurité des pisteurs, transmission et coexistence faune-villages."
+  image="/assets/naga/naga_guides_tronc_riviere.webp"
+  lang="fr"
+>
+
+  <!-- 2. NAVBAR DU SITE (FOND CLAIR STANDARD) -->
+  <Header lang="fr" currentPath="/conservation" />
+
+  <!-- WRAPPER GLOBAL FOND CLAIR ORGANIQUE (STYLE DOSSIER INSTITUTIONNEL / REVUE EDITORIALE) -->
+  <div class="bg-[#faf8f5] text-slate-900 font-sans min-h-screen selection:bg-[#0e8354] selection:text-white">
+
+    <!-- 3. HERO INSTITUTIONNEL AVEC PHOTO DE FOND (SOLIDARITÉ EN JUNGLE) -->
+    <section class="relative py-12 sm:py-20 lg:py-24 border-b border-[#e7e2d8] overflow-hidden">
+      <!-- Image de fond authentique de solidarité des guides nettement visible -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/assets/naga/naga_solidarite_portage_tronc_riviere.webp" 
+          alt="Solidarité des guides de jungle à Bardia" 
+          class="w-full h-full object-cover object-center filter brightness-95 contrast-105"
+          fetchpriority="high"
+        />
+        <!-- Voile blanc équilibré : photo nettement visible tout en assurant une parfaite lisibilité du texte -->
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-[#faf8f5]"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
+        
+        <!-- BLOC OFFICIEL CO-BRANDING : JUNGLE NEPAL ADVENTURE × NAGA -->
+        <div class="inline-flex items-center justify-center gap-3.5 sm:gap-8 px-4 py-2.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-[#e4ded3] shadow-md">
+          <!-- Logo Jungle Nepal Adventure -->
+          <div class="flex items-center justify-center">
+            <img 
+              src="/assets/logo_header_dark.png" 
+              alt="Logo Jungle Nepal Adventure" 
+              class="h-9 sm:h-14 w-auto object-contain"
+              loading="eager"
+            />
+          </div>
+          
+          <!-- Symbole d'Alliance -->
+          <div class="flex flex-col items-center justify-center">
+            <span class="text-slate-400 font-light text-lg sm:text-2xl leading-none">×</span>
+            <span class="text-[8px] sm:text-[9px] font-black uppercase tracking-widest text-[#0e8354] mt-0.5">Alliance</span>
+          </div>
+
+          <!-- Logo NAGA Sceau Officiel -->
+          <div class="flex items-center justify-center">
+            <img 
+              src="/assets/naga/naga_logo_transparent.webp" 
+              alt="Sceau officiel Nature Guide Association Bardiya NAGA 2054" 
+              class="h-10 sm:h-16 w-auto object-contain"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+        <!-- Titrage Institutionnel -->
+        <div class="space-y-3 sm:space-y-4 max-w-4xl mx-auto">
+          <h1 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.18] sm:leading-[1.12]">
+            Protéger ceux qui protègent la nature.
+          </h1>
+
+          <p class="text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-[#0e8354]">
+            Protecting Guides • Empowering Communities • Conserving Wildlife
+          </p>
+
+          <p class="text-sm sm:text-lg lg:text-xl text-slate-800 max-w-3xl mx-auto font-medium leading-relaxed pt-1 sm:pt-2">
+            À Bardia, l'agence locale <strong>Jungle Nepal Adventure</strong> et la <strong>Nature Guide Association (NAGA)</strong> s'unissent sans intermédiaire pour sécuriser les guides de jungle, pérenniser les savoirs ancestraux du pistage et apaiser la coexistence entre prédateurs et villages riverains.
+          </p>
+
+          <!-- CTA Hero : Découvrir nos actions sur le terrain -->
+          <div class="pt-2 sm:pt-4 flex justify-center">
+            <a 
+              href="#missions" 
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-bold text-xs sm:text-sm shadow-sm hover:scale-105 active:scale-95 transition-all"
+            >
+              <span>Découvrir nos actions sur le terrain</span>
+              <span class="text-xs">↓</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SECTION 1 : PRÉSENTATION DE LA NATURE GUIDE ASSOCIATION (NAGA) -->
+    <section id="naga" class="py-12 sm:py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-[#e7e2d8]">
+      
+      <!-- Grille 2 Colonnes : Bloc Texte à Gauche & Photobloc Porte du Parc à Droite -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center mb-10 sm:mb-16">
+        
+        <!-- Bloc Texte à Gauche -->
+        <div class="lg:col-span-6 space-y-4 sm:space-y-5">
+          <span class="text-[10px] sm:text-xs font-black uppercase tracking-wider sm:tracking-widest text-[#0e8354]">
+            Association Historique • Fondée en 1998 (2054 BS) à Bardia
+          </span>
+          <h2 class="text-xl sm:text-3xl lg:text-4xl font-black text-slate-950 tracking-tight leading-tight">
+            La Nature Guide Association (NAGA) de Bardia
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Fondée en 1998 (2054 BS) à Thakurdwara, la <strong>Nature Guide Association (NAGA)</strong> regroupe et représente l'ensemble des guides naturalistes et pisteurs professionnels agréés par le Département des Parcs Nationaux à Bardia.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Présidée par <strong>Krisna Saha</strong>, elle structure la vie de la jungle, forme les jeunes recrues, encadre les règles de sécurité des voyageurs lors des safaris à pied et assure une passerelle permanente de médiation avec les villages riverains du parc.
+          </p>
+        </div>
+
+        <!-- Photobloc à Droite : Guides devant la porte du Parc National de Bardia -->
+        <div class="lg:col-span-6">
+          <div class="bg-white p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl border border-[#e5dfd3] shadow-sm">
+            <div class="relative rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] max-h-[320px] sm:max-h-[440px]">
+              <img 
+                src="/assets/naga/naga_porte_bardiya_national_park.webp" 
+                alt="Guides naturalistes NAGA devant la porte d'entrée officielle du Parc National de Bardia" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <p class="pt-2 sm:pt-3 px-1 sm:px-2 text-[11px] sm:text-xs text-slate-500 font-medium">
+              <strong class="text-slate-900">Porte officielle du Parc National de Bardia</strong> — Guides et pisteurs naturalistes certifiés NAGA rassemblés avant les départs de patrouille en jungle.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Le Fond de notre Collaboration : Jungle Nepal Adventure × NAGA -->
+      <div class="my-10 sm:my-16 p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl bg-white border border-[#e4ded3] shadow-2xs space-y-6 sm:space-y-10">
+        
+        <div class="max-w-3xl space-y-2 sm:space-y-3">
+          <span class="text-[10px] sm:text-xs font-mono uppercase tracking-wider sm:tracking-widest text-[#0e8354] font-semibold block">
+            Notre Alliance de Terrain • Objectif 2027
+          </span>
+          <h3 class="text-xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight leading-tight">
+            Le fond de notre collaboration : des drames réels à l'assurance de tous les guides
+          </h3>
+          <p class="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed">
+            Jungle Nepal Adventure n'est pas née dans un bureau d'agence lointain, mais dans la terre et l'intimité de la jungle de Bardia, aux côtés de Pawan Thapa, Krisna Saha et des pisteurs historiques de la région. Notre engagement est né d'épreuves bien réelles, vécues dans notre propre chair.
+          </p>
+        </div>
+
+        <!-- Le Storytelling des drames réels & la genèse de l'assurance -->
+        <div class="space-y-3 sm:space-y-4 text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed pt-2 border-t border-stone-200/70">
+          <p>
+            Dans la jungle de Bardia, le danger n'est pas une métaphore de brochure : <strong>Krisna Saha</strong>, l'actuel président de la NAGA, a lui-même survécu à une violente attaque de tigre du Bengale lors d'une patrouille en forêt. <strong>Pawan Thapa</strong>, co-fondateur de Jungle Nepal Adventure, a fait une chute grave depuis la cime d'un arbre lors d'un repérage en jungle. Plus douloureux encore, un de nos amis et guides proches a tragiquement perdu la vie, tué sous la charge brutale d'un rhinocéros unicorne.
+          </p>
+          <p>
+            Ces drames successifs ont été un électrochoc. Face aux charges d'animaux sauvages et aux accidents en pleine nature, les guides de Bardia ne disposaient historiquement d'aucun filet de sécurité ni de prise en charge médicale, laissant les familles seules face aux dettes d'hospitalisation. C'est avec ces expériences douloureuses que nous avons compris qu'un système d'assurance était vital : <strong>notre première étape prioritaire est d'offrir une véritable assurance privée à tous les guides de l'association</strong>.
+          </p>
+        </div>
+
+        <!-- Les 3 Piliers Concrets de notre engagement -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-8 pt-4 sm:pt-6 border-t border-stone-200/70 text-xs text-slate-600">
+          <div class="p-3.5 sm:p-0 rounded-xl bg-stone-50/70 sm:bg-transparent border border-stone-200/60 sm:border-0 space-y-1 sm:space-y-2">
+            <span class="text-slate-900 font-bold text-xs sm:text-sm block">1. Don fixe par voyageur</span>
+            <p class="leading-relaxed">
+              Jungle Nepal Adventure s'est engagée à reverser un <strong>montant fixe sous forme de don pour chaque participant</strong> à nos circuits. Chaque voyageur contribue directement, sans surcoût, au fonds de protection des guides.
+            </p>
+          </div>
+          <div class="p-3.5 sm:p-0 rounded-xl bg-stone-50/70 sm:bg-transparent border border-stone-200/60 sm:border-0 space-y-1 sm:space-y-2">
+            <span class="text-slate-900 font-bold text-xs sm:text-sm block">2. Assurance privée totale d'ici 2027</span>
+            <p class="leading-relaxed">
+              L'objectif central de ce fonds est de <strong>fournir une couverture d'assurance privée intégrale à l'ensemble des guides de l'association NAGA</strong>. Nous devrions atteindre cet objectif d'ici 2027.
+            </p>
+          </div>
+          <div class="p-3.5 sm:p-0 rounded-xl bg-stone-50/70 sm:bg-transparent border border-stone-200/60 sm:border-0 space-y-1 sm:space-y-2">
+            <span class="text-slate-900 font-bold text-xs sm:text-sm block">3. Soutien de terrain immédiat</span>
+            <p class="leading-relaxed">
+              En parallèle, nous finançons l'achat de trousses médicales traumatologiques (garrots, pansements hémostatiques) et épaulons les familles des pisteurs lors des périodes d'inactivité ou d'urgence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Passerelle Voyage & Impact Direct (Point 2) -->
+        <div class="p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-stone-200/80 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 sm:gap-6">
+          <div class="space-y-1 sm:space-y-1.5 max-w-2xl">
+            <span class="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-[#0e8354] font-semibold block">Participer en voyageant • Horizon 2027</span>
+            <h4 class="font-bold text-slate-950 text-sm sm:text-base lg:text-lg leading-snug">
+              Chaque voyageur finance l'assurance privée des guides de jungle
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              En partant en safari à pied avec Jungle Nepal Adventure, une part fixe de votre séjour est directement allouée à la souscription d'une assurance privée pour chaque guide membre de la NAGA. Notre but commun : 100% des guides couverts dès 2027.
+            </p>
+          </div>
+          <div class="shrink-0 pt-1 md:pt-0">
+            <a 
+              href="/destinations/bardia/" 
+              class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm transition-colors shadow-2xs whitespace-nowrap"
+            >
+              <span>Découvrir nos safaris à Bardia</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- La Réalité du Terrain : Conflit Hommes-Faune & Rôle Clé des Guides (2 Blocs Côte à Côte avec Photo de Tigre) -->
+      <div class="my-10 sm:my-16 p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl bg-white border border-[#e4ded3] shadow-2xs">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-14 items-center">
+          
+          <!-- Bloc 1 : Texte Pur Épuré sans bulles ni points (lg:col-span-7) -->
+          <div class="lg:col-span-7 space-y-3 sm:space-y-4">
+            <span class="text-[10px] sm:text-xs font-mono uppercase tracking-wider sm:tracking-widest text-[#0e8354] font-semibold block">
+              Cohabitation & Terrain • Conflit Hommes-Faune
+            </span>
+            <h3 class="text-xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight leading-tight">
+              Vivre aux portes des prédateurs : la réalité crue des conflits
+            </h3>
+            
+            <div class="space-y-3 sm:space-y-4 text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed pt-1 sm:pt-2">
+              <p>
+                À Bardia, la conservation ne se résume pas à des statistiques réjouissantes : avec plus de 125 tigres du Bengale et d'importantes populations de rhinocéros unicornes et d'éléphants sauvages, la cohabitation quotidienne avec les villages riverains de la zone tampon est sous haute tension.
+              </p>
+              <p>
+                La nuit, des hardes d'éléphants traversent les rivières pour piller les récoltes de riz et démolir les maisons en terre afin d'atteindre les réserves de grain. En lisière de forêt, les incursions de tigres et de léopards provoquent des attaques tragiques sur les villageois qui ramassent du bois de chauffe ou gardent le bétail. Récemment encore, une charge mortelle de rhinocéros a coûté la vie à un guide professionnel en pleine jungle : le danger est une réalité de chaque instant.
+              </p>
+              <p>
+                Face à cette urgence, les discours politiques lointains ou les passages éclairs d'ONG ne peuvent suffire. Nous avons l'intime conviction que <strong>les guides de jungle sont les acteurs numéro 1 et les mieux placés</strong> pour trouver des solutions viables : issus de ces mêmes communautés, ils partagent les épreuves des familles et possèdent la maîtrise intime des comportements animaux pour intervenir sans panique.
+              </p>
+              <p>
+                Leur travail repose avant tout sur <strong>la communication et la sensibilisation permanente auprès des habitants</strong> : désamorcer la colère après des ravages pour empêcher les empoisonnements de représailles, transmettre les bons réflexes d'évitement et éduquer les enfants dans les écoles pour bâtir une coexistence apaisée et durable.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bloc 2 : Photobloc Tigre du Bengale (lg:col-span-5) -->
+          <div class="lg:col-span-5">
+            <div class="bg-white p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl border border-[#e5dfd3] shadow-sm">
+              <div class="relative rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] max-h-[300px] sm:max-h-[460px]">
+                <img 
+                  src="/assets/curated_gallery/tigre_bengale_penombre_sal.webp" 
+                  alt="Tigre du Bengale dans la forêt de Sal au Parc National de Bardia" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <p class="pt-2 sm:pt-3 px-1 sm:px-2 text-[11px] sm:text-xs text-slate-500 font-medium">
+                <strong class="text-slate-900">Tigre du Bengale dans la forêt de Sal</strong> — À Bardia, les guides de jungle sont en première ligne pour protéger les prédateurs tout en sécurisant les villages riverains.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Ce que fait la NAGA au quotidien : Les 6 Missions Statutaires -->
+      <div id="missions" class="space-y-6 pt-6 sm:pt-8 border-t border-[#e7e2d8]">
+        <div class="max-w-2xl space-y-2">
+          <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Missions de Terrain</span>
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-950">
+            Ce que fait la NAGA au quotidien : 6 missions d'action
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            Les six champs d'action statutaires conduits par l'association au service du parc national et des communautés riveraines :
+          </p>
+        </div>
+
+        <!-- Les 6 Cartes Missions Aérées en 2 Colonnes avec Photos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+          
+          <!-- MISSION 01 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 01</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Communauté
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_sensibilisation_ecole_journee_tigre.webp" 
+                  alt="Sensibilisation communautaire à Bardia" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Sensibilisation communautaire
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Organisation de programmes d'information réguliers dans les villages riverains sur la conservation de la faune, la biodiversité et l'importance cruciale de préserver le parc national.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Ateliers réguliers de sensibilisation dans les écoles et villages riverains.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Sensibilisation aux consignes de sécurité face aux prédateurs et éléphants.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MISSION 02 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 02</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Salubrité
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_herbes_hautes_savane.webp" 
+                  alt="Propreté et assainissement à Bardia" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Propreté et assainissement
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Organisation de campagnes régulières de nettoyage et de ramassage des déchets autour du parc national, le long des sentiers pédestres, sur les berges des rivières et dans les villages voisins.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Ramassage systématique des plastiques le long des cours d'eau et pistes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Préservation active des berges de la Karnali et des corridors écologiques.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MISSION 03 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 03</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Formation
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_traversee_gue_riviere.webp" 
+                  alt="Formation initiale des guides naturalistes" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Formation initiale des guides
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Formation de base dispensée aux jeunes locaux souhaitant devenir guides naturalistes : identification des espèces, comportement animal, ornithologie, sécurité en jungle et gestion des visiteurs.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Transmission du pistage traditionnel et lecture d'empreintes par les aînés.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Protocoles stricts de sécurité, gestion des charges et gestes de premiers secours.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MISSION 04 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 04</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Sentiers
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_solidarite_portage_tronc_riviere.webp" 
+                  alt="Aménagement des sentiers pédestres en forêt" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Aménagement des sentiers
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Concertation étroite avec le parc national pour identifier, tracer et sécuriser les sentiers pédestres au cœur de la forêt pour les amoureux de la nature et les voyageurs.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Balisage discret et sécurisation des couloirs de progression pédestre.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Dégagement régulier des troncs tombés et maintien des gués de franchissement.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MISSION 05 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 05</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Médiation
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_statue_tigre_communaute.webp" 
+                  alt="Passerelle communauté et parc national" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Passerelle communauté & parc
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Rôle de médiateur permanent entre les communautés locales et la direction du parc national, facilitant le dialogue, la coopération mutuelle et l'apaisement des litiges faune-humains.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Interface quotidienne de dialogue entre habitants de la zone tampon et rangers.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Médiation rapide en cas d'incursion de prédateurs ou dégâts aux récoltes.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MISSION 06 -->
+          <div class="p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e4ded3] flex flex-col justify-between space-y-4 sm:space-y-6 shadow-2xs hover:shadow-md transition-shadow">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between border-b border-stone-200/60 pb-2">
+                <span class="text-xs font-mono text-stone-400">MISSION 06</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-600 font-medium">
+                  Écotourisme
+                </span>
+              </div>
+
+              <div class="rounded-xl sm:rounded-2xl overflow-hidden aspect-[16/10] border border-slate-200">
+                <img 
+                  src="/assets/naga/naga_guides_tronc_riviere.webp" 
+                  alt="Écotourisme et conservation participative" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h4 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                Écotourisme & conservation
+              </h4>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                Organisation d'ateliers de conservation, de marches naturalistes guidées et de programmes favorisant un tourisme responsable qui génère des retombées directes pour les familles de Bardia.
+              </p>
+
+              <ul class="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-200/60">
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Safaris à pied éthiques et immersifs dans le respect absolu de la faune.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-stone-400 font-semibold select-none">—</span>
+                  <span>Revenus directs générés localement au profit des familles riveraines.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CITATION OFFICIELLE DE LA NAGA -->
+        <div class="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-[#e4ded3] shadow-sm space-y-3">
+          <span class="text-xs font-black uppercase tracking-widest text-[#0e8354] block">
+            La Vision Officielle de la Nature Guide Association :
+          </span>
+          <blockquote class="text-sm sm:text-base lg:text-lg text-slate-800 leading-relaxed font-medium italic">
+            « Ce sont là quelques-unes des actions que la NAGA mène au quotidien. Mais les perspectives sont immenses. Si l'association dispose d'un budget adapté et d'un soutien financier solide, elle pourra déployer des programmes d'envergure, ouvrir de véritables opportunités pour les habitants locaux, soutenir la préservation de la biodiversité et générer un impact positif et durable dans toutes les communautés qui entourent le Parc National de Bardia. »
+          </blockquote>
+          <p class="text-xs text-slate-500 font-semibold pt-1">
+            — Direction de la Nature Guide Association (NAGA) • Thakurdwara, Bardia
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- 8. ACTE 4 : LA FEUILLE DE ROUTE EN 4 ÉTAPES (ÉPURÉE, ÉDITORIALE, SANS PASTILLES NI COULEURS IA) -->
+    <section id="paliers" class="py-10 sm:py-16 lg:py-24 bg-white border-y border-[#e7e2d8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mb-8 sm:mb-12 lg:mb-16 space-y-2.5 sm:space-y-3">
+          <span class="text-xs font-semibold uppercase tracking-widest text-stone-500">Plan d'action 2027 — 2030</span>
+          <h2 class="text-xl sm:text-3xl lg:text-4xl font-black text-slate-950 tracking-tight leading-tight">
+            Quatre étapes pour bâtir un modèle durable
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
+            Une trajectoire progressive, sobre et mesurable pour sécuriser les pisteurs de terrain et structurer l'action communautaire à long terme :
+          </p>
+        </div>
+
+        <!-- Conteneur Architectural Continu (4 Colonnes Épurées) -->
+        <div class="bg-white border border-[#e4ded3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-stone-200">
+          
+          <!-- ÉTAPE 01 -->
+          <div class="p-5 sm:p-6 lg:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-baseline justify-between border-b border-stone-100 pb-3">
+                <span class="text-2xl font-light text-stone-900 font-mono">01</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-500">2027 • Priorité 1</span>
+              </div>
+
+              <div class="space-y-1.5">
+                <span class="text-[11px] font-mono uppercase tracking-widest text-[#0e8354] font-semibold block">Phase 1 : Assurance Privée</span>
+                <h3 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                  Assurance privée pour tous les guides
+                </h3>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Première étape essentielle et prioritaire : souscription d'une assurance privée hospitalisation et accident pour l'ensemble des guides de l'association.
+              </p>
+
+              <div class="space-y-3 pt-3 border-t border-stone-100 text-xs">
+                <div>
+                  <span class="font-semibold text-slate-900 block">Dons fixes par voyageur</span>
+                  <span class="text-slate-600 leading-relaxed">Prélèvement fixe sur chaque participant Jungle Nepal Adventure finançant la prime d'assurance.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Prise en charge intégrale</span>
+                  <span class="text-slate-600 leading-relaxed">Couverture chirurgie, hospitalisation et soins en cas de charge animale ou accident en jungle.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Objectif 2027</span>
+                  <span class="text-slate-600 leading-relaxed">100% des guides membres de la NAGA de Bardia protégés sans exception.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-100">
+              <span class="text-[10px] uppercase tracking-wider text-stone-400 font-mono block">Indicateur cible</span>
+              <p class="text-xs font-semibold text-slate-800 mt-1">100% des guides NAGA sous assurance privée en 2027</p>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 02 -->
+          <div class="p-5 sm:p-6 lg:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-baseline justify-between border-b border-stone-100 pb-3">
+                <span class="text-2xl font-light text-stone-400 font-mono">02</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-500">2027 — 2028</span>
+              </div>
+
+              <div class="space-y-1.5">
+                <span class="text-[11px] font-mono uppercase tracking-widest text-stone-500 font-semibold block">Phase 2 : Savoirs</span>
+                <h3 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                  Transmission des savoirs & sentiers
+                </h3>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Pérennisation des compétences traditionnelles du pistage et sécurisation des couloirs de marche.
+              </p>
+
+              <div class="space-y-3 pt-3 border-t border-stone-100 text-xs">
+                <div>
+                  <span class="font-semibold text-slate-900 block">Mentorat Tharu</span>
+                  <span class="text-slate-600 leading-relaxed">Formation pratique de 15 jeunes recrues par les anciens guides.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Sentiers en jungle</span>
+                  <span class="text-slate-600 leading-relaxed">Balisage et consolidation de 3 sentiers pédestres majeurs.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Nettoyages réguliers</span>
+                  <span class="text-slate-600 leading-relaxed">Opérations collectives de dépollution des rivières Karnali et Geruwa.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-100">
+              <span class="text-[10px] uppercase tracking-wider text-stone-400 font-mono block">Indicateur cible</span>
+              <p class="text-xs font-semibold text-slate-800 mt-1">15 jeunes pisteurs formés & 3 sentiers balisés</p>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 03 -->
+          <div class="p-5 sm:p-6 lg:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-baseline justify-between border-b border-stone-100 pb-3">
+                <span class="text-2xl font-light text-stone-400 font-mono">03</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-500">2028 — 2029</span>
+              </div>
+
+              <div class="space-y-1.5">
+                <span class="text-[11px] font-mono uppercase tracking-widest text-stone-500 font-semibold block">Phase 3 : Coexistence</span>
+                <h3 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                  Médiation & coexistence durable
+                </h3>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Création d'un pont actif entre les villages riverains sous pression et les autorités de conservation.
+              </p>
+
+              <div class="space-y-3 pt-3 border-t border-stone-100 text-xs">
+                <div>
+                  <span class="font-semibold text-slate-900 block">Cellule de médiation</span>
+                  <span class="text-slate-600 leading-relaxed">Désamorçage des conflits immédiats lors des incursions de faune.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Éducation zone tampon</span>
+                  <span class="text-slate-600 leading-relaxed">Ateliers de prévention dans 12 écoles de la zone périphérique.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Retombées directes</span>
+                  <span class="text-slate-600 leading-relaxed">Redistribution financière équitable des circuits aux familles locales.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-100">
+              <span class="text-[10px] uppercase tracking-wider text-stone-400 font-mono block">Indicateur cible</span>
+              <p class="text-xs font-semibold text-slate-800 mt-1">12 villages riverains accompagnés & apaisés</p>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 04 -->
+          <div class="p-5 sm:p-6 lg:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-baseline justify-between border-b border-stone-100 pb-3">
+                <span class="text-2xl font-light text-stone-400 font-mono">04</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-stone-500">Horizon 2030</span>
+              </div>
+
+              <div class="space-y-1.5">
+                <span class="text-[11px] font-mono uppercase tracking-widest text-stone-500 font-semibold block">Phase 4 : Autonomie</span>
+                <h3 class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                  Autonomie & essaimage national
+                </h3>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Pérennité financière indépendante et extension de la méthode aux autres parcs nationaux du Népal.
+              </p>
+
+              <div class="space-y-3 pt-3 border-t border-stone-100 text-xs">
+                <div>
+                  <span class="font-semibold text-slate-900 block">Autonomie financière</span>
+                  <span class="text-slate-600 leading-relaxed">Fonds de secours pérennisé sans dépendance exclusive aux subventions.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Bilans d'impact</span>
+                  <span class="text-slate-600 leading-relaxed">Publication ouverte des résultats auprès des institutions et partenaires.</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-slate-900 block">Essaimage</span>
+                  <span class="text-slate-600 leading-relaxed">Duplication du modèle associatif NAGA à Chitwan et Suklaphanta.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-100">
+              <span class="text-[10px] uppercase tracking-wider text-stone-400 font-mono block">Indicateur cible</span>
+              <p class="text-xs font-semibold text-slate-800 mt-1">Modèle autosuffisant & répliqué au Teraï</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. SOUTENIR L'ASSOCIATION : FAIRE UN DON DIRECT (ÉPURÉ, SOBRE, TRANSPARENT, SANS FIORITURES IA) -->
+    <section id="don" class="py-10 sm:py-16 lg:py-24 bg-[#faf8f5] border-t border-[#e7e2d8]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-white p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl border border-[#e4ded3] shadow-2xs space-y-6 sm:space-y-10">
+          
+          <div class="max-w-2xl space-y-2.5 sm:space-y-3">
+            <span class="text-xs font-mono uppercase tracking-widest text-[#0e8354] font-semibold block">
+              Soutien Direct • Bardia, Népal
+            </span>
+            <h2 class="text-xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight leading-tight">
+              Faire un don pour soutenir les guides de jungle et la NAGA
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
+              Votre don va directement à l'association des guides naturalistes de Bardia (NAGA). Chaque euro collecté est tracé et affecté en priorité aux besoins vitaux des hommes de terrain et aux actions de médiation dans les villages.
+            </p>
+          </div>
+
+          <!-- Ce que finance concrètement un don (Grille 3 colonnes sobre) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-6 pt-5 sm:pt-6 border-t border-stone-200/70">
+            
+            <div class="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-stone-200/70 space-y-2">
+              <span class="text-xs font-mono text-stone-400 block">AFFECTATION 01</span>
+              <h3 class="text-sm sm:text-base font-bold text-slate-950">Trousses médicales de jungle</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Achat de garrots tactiques, pansements compressifs hémostatiques et matériel de premiers soins pour équiper les guides de jungle en patrouille.
+              </p>
+            </div>
+
+            <div class="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-stone-200/70 space-y-2">
+              <span class="text-xs font-mono text-stone-400 block">AFFECTATION 02</span>
+              <h3 class="text-sm sm:text-base font-bold text-slate-950">Fonds d'urgence hospitalisation</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Alimentation d'une réserve financière dédiée à la prise en charge immédiate des soins et de l'évacuation en cas d'accident ou de charge d'animal.
+              </p>
+            </div>
+
+            <div class="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-stone-200/70 space-y-2">
+              <span class="text-xs font-mono text-stone-400 block">AFFECTATION 03</span>
+              <h3 class="text-sm sm:text-base font-bold text-slate-950">Écoles & zones tampons</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Financement de matériel pédagogique pour les ateliers de sensibilisation dans les écoles locales et opérations citoyennes de nettoyage.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Modalités simples et transparentes -->
+          <div class="p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl border border-stone-200/80 bg-stone-50/50 space-y-4 sm:space-y-6">
+            <div class="space-y-2">
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base">
+                Comment procéder pour faire un don ?
+              </h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Pour garantir une traçabilité totale et éviter les frais d'intermédiaires, les dons se font directement sur le compte bancaire officiel de l'association au Népal, ou en mains propres lors de votre venue à Bardia. Contactez-nous pour recevoir les coordonnées bancaires officielles et le reçu associatif.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+              <a 
+                href="/contact/?subject=Don%20%E2%80%94%20Soutien%20NAGA%20Bardia" 
+                class="w-full sm:w-auto text-center px-6 py-3 rounded-xl bg-[#0e8354] hover:bg-[#0c6d46] text-white font-bold text-xs sm:text-sm transition-colors shadow-2xs"
+              >
+                Demander les coordonnées pour un don →
+              </a>
+              <a 
+                href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20faire%20un%20don%20pour%20soutenir%20la%20NAGA%20%C3%A0%20Bardia" 
+                target="_blank" 
+                rel="nofollow noopener noreferrer"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white text-slate-900 border border-stone-300 font-bold text-xs sm:text-sm hover:bg-stone-50 transition-colors shadow-2xs"
+              >
+                <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>Échanger sur WhatsApp</span>
+              </a>
+            </div>
+
+            <p class="text-[11px] text-stone-500 font-normal border-t border-stone-200/60 pt-3 sm:pt-4">
+              Transparence totale : un bilan d'affectation des fonds avec photos du matériel remis est transmis annuellement à chaque contributeur.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. ACTE 6 : DIALOGUE INSTITUTIONNEL & ENGAGEMENT (FOND CLAIR CHALEUREUX) -->
+    <section id="contact" class="py-10 sm:py-16 lg:py-20 bg-white border-t border-[#e7e2d8]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl bg-[#faf8f5] border border-[#e2ddd3] shadow-sm text-center space-y-5 sm:space-y-6">
+          <div class="max-w-2xl mx-auto space-y-2.5 sm:space-y-3">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Échanger & Participer</span>
+            <h2 class="text-xl sm:text-3xl lg:text-4xl font-black text-slate-950 tracking-tight leading-tight">
+              Bâtissons ensemble une conservation qui protège aussi les communautés.
+            </h2>
+            <p class="text-xs sm:text-base text-slate-600 leading-relaxed font-normal">
+              Que vous représentiez une fondation environnementale, une ONG de recherche, un organisme institutionnel ou que vous soyez un voyageur passionné souhaitant soutenir notre action sur le terrain, nous échangeons en toute transparence.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-2">
+            <a 
+              href="/contact/?subject=Partenariat%20%E2%80%94%20NAGA%20Conservation%20Project" 
+              class="w-full sm:w-auto text-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl sm:rounded-full bg-[#0e8354] hover:bg-[#0c6d46] text-white font-black text-xs sm:text-sm shadow-sm hover:scale-105 active:scale-95 transition-all"
+            >
+              Échanger sur un partenariat →
+            </a>
+            <a 
+              href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20informations%20sur%20le%20projet%20NAGA%20Conservation" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl sm:rounded-full bg-white text-slate-900 border border-slate-300 font-black text-xs sm:text-sm shadow-2xs hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all"
+            >
+              <svg class="w-4 h-4 text-[#0e8354] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>Échanger sur WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="pt-5 sm:pt-6 border-t border-[#e5dfd3] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 font-medium max-w-2xl mx-auto text-center sm:text-left">
+            <span>Contact direct : <a href="mailto:contact@junglenepal.com" class="text-slate-900 font-bold underline hover:text-[#0e8354]">contact@junglenepal.com</a></span>
+            <span>Robin Rozier • Krisna Saha • Pawan Thapa</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. ORGANISMES OFFICIELS DU NÉPAL & DOCUMENTATION -->
+    <section class="py-8 sm:py-10 bg-white border-t border-[#e7e2d8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3 sm:space-y-4">
+        <p class="text-xs font-black uppercase tracking-wider text-slate-400">
+          Organismes de référence & documentation au Népal :
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5 sm:gap-3 text-xs">
+          <a href="https://dnpwc.gov.np/" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-[#e4ded3] hover:border-emerald-600 transition-colors text-slate-800 shadow-2xs">
+            <strong class="block text-slate-950 font-bold">DNPWC</strong>
+            <span class="text-slate-500 text-[11px]">Parcs du Népal</span>
+          </a>
+          <a href="https://ntnc.org.np/" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-[#e4ded3] hover:border-emerald-600 transition-colors text-slate-800 shadow-2xs">
+            <strong class="block text-slate-950 font-bold">NTNC</strong>
+            <span class="text-slate-500 text-[11px]">Conservation</span>
+          </a>
+          <a href="https://iucn.org/" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-[#e4ded3] hover:border-emerald-600 transition-colors text-slate-800 shadow-2xs">
+            <strong class="block text-slate-950 font-bold">IUCN</strong>
+            <span class="text-slate-500 text-[11px]">Liste Rouge</span>
+          </a>
+          <a href="https://www.wwfnepal.org/" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-[#e4ded3] hover:border-emerald-600 transition-colors text-slate-800 shadow-2xs">
+            <strong class="block text-slate-950 font-bold">WWF Nepal</strong>
+            <span class="text-slate-500 text-[11px]">Habitat & Faune</span>
+          </a>
+          <a href="https://globaltigerforum.org/" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#faf8f5] border border-[#e4ded3] hover:border-emerald-600 transition-colors text-slate-800 shadow-2xs">
+            <strong class="block text-slate-950 font-bold">GTF</strong>
+            <span class="text-slate-500 text-[11px]">Tigre Mondial</span>
+          </a>
+          <a href="/safari-nepal/" class="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 hover:bg-emerald-100 transition-colors font-bold shadow-2xs flex flex-col justify-center">
+            <span>Safari Népal →</span>
+            <span class="text-[11px] font-normal text-emerald-800">Guide pratique</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 12. FOOTER DU SITE -->
+  <Footer lang="fr" />
+
+</Layout>
