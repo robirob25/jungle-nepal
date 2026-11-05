@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
 import toursData from '../../data/tours.json';
 
 const matchingTours = toursData.filter(t => ["safari-jeep-bardia","safari-pied-bardia","rafting-safari-bardia","bardia-explorateur","babai-special","bardia-babai-camping","bardia-nuit-sauvage","jungle-extreme","nepal-sauvage","chitwan-bardia-complete","rara-lake-bardia","rafting-safari","nepal-immersion-totale","carnet-de-voyage"].includes(t.slug));
@@ -19,12 +20,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="fr"
   isDarkHeader={true}
 >
+  <SchemaOrg
+    slot="head"
+    type="TouristDestination"
+    name="Safari Bardia Népal : tigres du Bengale & guide pratique"
+    headline="Safari Bardia Népal : tigres du Bengale & guide pratique"
+    description="Guide complet du parc national de Bardia au Népal : pistage du tigre du Bengale à pied, éléphants sauvages, vallée de Babai et bivouacs avec pisteurs Tharu."
+    image="/assets/original_site/safari_pied.webp"
+    url="https://junglenepal.com/destinations/bardia/"
+    lang="fr"
+    latitude={28.4394}
+    longitude={81.3347}
+    ratingValue="5.0"
+    reviewCount="25"
+    breadcrumbs={[
+      { name: "Accueil", url: "/" },
+      { name: "Safari au Népal", url: "/safari-nepal/" },
+      { name: "Parc national de Bardia", url: "https://junglenepal.com/destinations/bardia/" }
+    ]}
+  />
   <Header lang="fr" currentPath="/destinations/bardia.html" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Safari au Parc National de Bardia" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img fetchpriority="high" decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Safari au Parc National de Bardia" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -57,7 +77,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-7 space-y-6">
         <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-          Explorer Parc national de Bardia
+          Explorer le parc national de Bardia
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
           <p>Avant sa création officielle en 1988, le parc national de Bardia était une réserve de chasse royale dédiée à la monarchie népalaise. Sa transformation en parc national a marqué une étape clé dans la protection de la biodiversité du Teraï occidental. Aujourd'hui, Bardia est le sanctuaire le plus vaste et le plus intact du Népal, offrant une nature brute et préservée, loin du tourisme de masse.</p>
@@ -105,7 +125,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Parc%20national%20de%20Bardia" target="_blank" rel="nofollow noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Parc national de Bardia →
+          Poser une question sur le parc de Bardia →
         </a>
       </div>
 
@@ -117,9 +137,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
           Gardiens de la forêt
         </span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-          La communauté Tharu & l'harmonie ancestrale avec la jungle
-        </h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">La communauté Tharu & l'harmonie ancestrale avec la jungle
+        </h2>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
           Les Tharus sont les gardiens indigènes de Bardia. Vivant en lisière du sanctuaire depuis des siècles, ils possèdent une connaissance intime des plantes médicinales, des pistes animales et des équilibres sacrés de la forêt. Leurs maisons traditionnelles, bâties en terre, paille et bambou, s'intègrent parfaitement dans les paysages. Nos séjours soutiennent directement ces villages locaux.
         </p>
@@ -130,7 +149,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-6">
       <div>
         <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Parc national de Bardia</h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel du parc national de Bardia</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -153,11 +172,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les séjours immersifs à Parc national de Bardia</h3>
+          <h2 class="font-black text-2xl sm:text-4xl text-slate-950">Les séjours et safaris immersifs au parc national de Bardia</h2>
           <p class="text-slate-600 text-sm mt-1">Départs garantis en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
         </div>
-        <a href="/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Découvrir nos 18 circuits →
+        <a href="/safari-nepal/" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+          Voir tous nos safaris au Népal →
         </a>
       </div>
 

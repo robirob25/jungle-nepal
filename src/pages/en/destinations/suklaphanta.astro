@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
+import SchemaOrg from '../../../components/SchemaOrg.astro';
 import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["jungle-extreme"].includes(t.slug));
@@ -19,12 +20,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="en"
   isDarkHeader={true}
 >
+  <SchemaOrg
+    slot="head"
+    type="TouristDestination"
+    name="Suklaphanta Safari Nepal: Swamp Deer & Untamed Wilds"
+    headline="Suklaphanta Safari Nepal: Swamp Deer & Untamed Wilds"
+    description="Explore Suklaphanta National Park in Nepal. Home to the world's largest herds of swamp deer, Bengal tigers, and pristine grasslands in the wild west."
+    image="/assets/original_site/suklaphanta.webp"
+    url="https://junglenepal.com/en/destinations/suklaphanta/"
+    lang="en"
+    latitude={28.8372}
+    longitude={80.2289}
+    ratingValue="5.0"
+    reviewCount="25"
+    breadcrumbs={[
+      { name: "Home", url: "/en/" },
+      { name: "Nepal Safari", url: "/en/safari-nepal/" },
+      { name: "Suklaphanta National Park", url: "https://junglenepal.com/en/destinations/suklaphanta/" }
+    ]}
+  />
   <Header lang="en" currentPath="/en/destinations/suklaphanta" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta Safari Nepal" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img fetchpriority="high" decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Suklaphanta Safari Nepal" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
@@ -120,7 +140,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-6">
       <div>
         <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Field Photography</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Visual Overview of Suklaphanta National Park</h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950">Visual Overview of Suklaphanta National Park</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -143,10 +163,10 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">2026/2027 Season</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Immersive Expeditions in Suklaphanta National Park</h3>
+          <h2 class="font-black text-2xl sm:text-4xl text-slate-950">Immersive Expeditions in Suklaphanta National Park</h2>
           <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
-        <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+        <a href="/en/safari-nepal/" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
           View all 18 Tours & 5 Activities →
         </a>
       </div>

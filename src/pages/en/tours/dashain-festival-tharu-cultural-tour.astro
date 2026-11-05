@@ -8,6 +8,13 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 import Header from '../../../components/Header.astro';
 ---
 
+<Layout 
+  title="Nepal Immersion Journey & Safari: Dashain Festival 2027" 
+  description="Exclusive 15-day journey in Nepal for Dashain Festival guided by Adrien & Samantha. Kathmandu, Annapurna balconies, Gurung heritage and Bardia tiger safaris."
+  image="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp"
+  lang="en"
+>
+  <Fragment slot="head">
   <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
 {
@@ -62,7 +69,7 @@ import Header from '../../../components/Header.astro';
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "22",
+    "reviewCount": "25",
     "bestRating": "5",
     "worstRating": "1"
   }
@@ -93,13 +100,34 @@ import Header from '../../../components/Header.astro';
   ]
 }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://junglenepal.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Nepal Safari",
+      "item": "https://junglenepal.com/en/safari-nepal/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tharu Cultural Immersion & Bardia Safaris: Dashain Festival Special 2027",
+      "item": "https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour/"
+    }
+  ]
+}
+  </script>
+  </Fragment>
 
-<Layout 
-  title="Nepal Immersion Journey & Safari: Dashain Festival 2027" 
-  description="Exclusive 15-day journey in Nepal for Dashain Festival guided by Adrien & Samantha. Kathmandu, Annapurna balconies, Gurung heritage and Bardia tiger safaris."
-  image="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp"
-  lang="en"
->
 
   <!-- TOP BAR PROMO -->
   <aside class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 relative z-50 text-center border-b border-emerald-800/20" id="top-bar">
@@ -124,7 +152,7 @@ import Header from '../../../components/Header.astro';
         <span>Home</span>
       </a>
       <span>›</span>
-      <a href="/en/#prochains-departs" class="hover:text-slate-900">Our 18 expeditions</a>
+      <a href="/en/safari-nepal/" class="hover:text-slate-900">Nepal Safari</a>
       <span>›</span>
       <span class="text-slate-900 font-bold truncate">Cultural Immersion & Adventure: Dashain Festival Special</span>
     </nav>
@@ -176,7 +204,7 @@ import Header from '../../../components/Header.astro';
     <!-- PHOTO MOSAIC GALLERY -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden relative group">
-        <img loading="lazy" decoding="async" src="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp" alt="Cultural immersion in Nepal with Samantha, Adrien and Sonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(0)"/>
+        <img fetchpriority=\"high\" decoding=\"async\" src="/assets/tours/dashain/dashain_trio_swing_sonu_adrien_samantha.webp" alt="Cultural immersion in Nepal with Samantha, Adrien and Sonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(0)"/>
         <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-xl text-[11px] font-bold text-white">
           Samantha, Adrien & Sonu (Nepal)
         </div>

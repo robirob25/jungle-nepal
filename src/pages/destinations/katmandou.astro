@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
 import toursData from '../../data/tours.json';
 
 const matchingTours = toursData.filter(t => ["nepal-sauvage","pokhara-chitwan-safari-transfert-katmandou","dashain-immersion-culturelle","nepal-immersion-totale","tiji-mustang","carnet-de-voyage","immersion-spirituelle"].includes(t.slug));
@@ -13,18 +14,37 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
 <Layout 
-  title="Vallée de Katmandou : patrimoine et culture népalaise | Jungle Nepal Adventure"
+  title="Vallée de Katmandou : Temples UNESCO, Culture & Safaris"
   description="Visiter la vallée de Katmandou hors des sentiers battus : temples UNESCO de Bhaktapur, Patan, stûpas sacrés et immersion culturelle avant votre safari."
   image="/assets/original_site/temple_sacred.webp"
   lang="fr"
   isDarkHeader={true}
 >
+  <SchemaOrg
+    slot="head"
+    type="TouristDestination"
+    name="Vallée de Katmandou : Temples UNESCO, Culture & Safaris"
+    headline="Vallée de Katmandou : Temples UNESCO, Culture & Safaris"
+    description="Visiter la vallée de Katmandou hors des sentiers battus : temples UNESCO de Bhaktapur, Patan, stûpas sacrés et immersion culturelle avant votre safari."
+    image="/assets/original_site/temple_sacred.webp"
+    url="https://junglenepal.com/destinations/katmandou/"
+    lang="fr"
+    latitude={27.7172}
+    longitude={85.324}
+    ratingValue="5.0"
+    reviewCount="25"
+    breadcrumbs={[
+      { name: "Accueil", url: "/" },
+      { name: "Safari au Népal", url: "/safari-nepal/" },
+      { name: "Vallée de Katmandou", url: "https://junglenepal.com/destinations/katmandou/" }
+    ]}
+  />
   <Header lang="fr" currentPath="/destinations/katmandou.html" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" src="/assets/original_site/temple_sacred.webp" alt="Vallée de Katmandou" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img fetchpriority="high" decoding="async" src="/assets/original_site/temple_sacred.webp" alt="Vallée de Katmandou" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -97,7 +117,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Vallée%20de%20Katmandou" target="_blank" rel="nofollow noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Vallée de Katmandou →
+          Poser une question sur la vallée de Katmandou →
         </a>
       </div>
 
@@ -109,9 +129,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
           Cœur Spirituel
         </span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-          L'artisanat Newar & les cités royales médiévales
-        </h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">L'artisanat Newar & les cités royales médiévales
+        </h2>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
           La vallée de Katmandou est le berceau du peuple Newar, maîtres sculpteurs sur bois, fondeurs de bronze et bâtisseurs de pagodes. Flâner dans les cours intérieures de Patan et Bhaktapur est un véritable voyage dans le temps.
         </p>
@@ -122,7 +141,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-6">
       <div>
         <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Vallée de Katmandou</h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de la vallée de Katmandou</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -145,11 +164,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les séjours immersifs à Vallée de Katmandou</h3>
+          <h2 class="font-black text-2xl sm:text-4xl text-slate-950">Nos circuits culturels et safaris au départ de Katmandou</h2>
           <p class="text-slate-600 text-sm mt-1">Départs garantis en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
         </div>
-        <a href="/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Découvrir nos 18 circuits →
+        <a href="/safari-nepal/" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+          Voir tous nos safaris au Népal →
         </a>
       </div>
 

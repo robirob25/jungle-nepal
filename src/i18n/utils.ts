@@ -110,6 +110,8 @@ export function getLocalizedPath(url: URL, targetLang: 'fr' | 'en'): string {
     '/conservation': { fr: '/conservation/', en: '/en/conservation/' },
     '/mentions-legales': { fr: '/mentions-legales/', en: '/en/legal-mentions/' },
     '/legal-mentions': { fr: '/mentions-legales/', en: '/en/legal-mentions/' },
+    '/merci-reservation': { fr: '/merci-reservation/', en: '/en/booking-success/' },
+    '/booking-success': { fr: '/merci-reservation/', en: '/en/booking-success/' },
     // Tours & Expeditions Mapping FR <-> EN (Strict SEO Slugs)
     '/tours/safari-pied-bardia': { fr: '/tours/safari-pied-bardia/', en: '/en/tours/bardia-walking-safari/' },
     '/tours/safari-jeep-bardia': { fr: '/tours/safari-jeep-bardia/', en: '/en/tours/bardia-jeep-safari/' },

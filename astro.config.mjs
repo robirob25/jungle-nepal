@@ -4,9 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://junglenepal.com',
-  build: {
-    inlineStylesheets: 'always'
-  },
   integrations: [
     tailwind(),
     sitemap({
@@ -19,7 +16,7 @@ export default defineConfig({
       },
       filter: (page) => {
         // Exclude thank-you / confirmation / private pages
-        const excluded = ['/merci', '/confirmation', '/thank-you', '/404'];
+        const excluded = ['/merci', '/booking-success', '/confirmation', '/thank-you', '/404'];
         return !excluded.some((p) => page.includes(p));
       }
     })
@@ -31,12 +28,12 @@ export default defineConfig({
     '/nos-aventures': { status: 301, destination: '/#prochains-departs' },
     '/nos-tours-a-venir': { status: 301, destination: '/#prochains-departs' },
     '/nos-recommandations': { status: 301, destination: '/#prochains-departs' },
-    '/voyage-nature-au-nepal-safari-et-aventures-hors-sentiers-battus': { status: 301, destination: '/#prochains-departs' },
+    '/voyage-nature-au-nepal-safari-et-aventures-hors-sentiers-battus': { status: 301, destination: '/safari-nepal/' },
 
     // 2. Entreprise / Contact / À propos / Légal
-    '/conditions-generales': { status: 301, destination: '/mentions-legales' },
-    '/en/terms-and-conditions': { status: 301, destination: '/en/legal-mentions' },
-    '/agence-de-safaris-au-nepal': { status: 301, destination: '/a-propos' },
+    '/conditions-generales': { status: 301, destination: '/mentions-legales/' },
+    '/en/terms-and-conditions': { status: 301, destination: '/en/legal-mentions/' },
+    '/agence-de-safaris-au-nepal': { status: 301, destination: '/safari-nepal/' },
     '/about-us': { status: 301, destination: '/a-propos' },
     '/about': { status: 301, destination: '/a-propos' },
     '/notre-histoire': { status: 301, destination: '/a-propos' },
@@ -100,23 +97,23 @@ export default defineConfig({
     '/circuits/safari-pied-bardia': { status: 301, destination: '/tours/safari-pied-bardia' },
     '/circuits/safari-jeep-bardia': { status: 301, destination: '/tours/safari-jeep-bardia' },
     '/circuits/safari-pied-chitwan': { status: 301, destination: '/tours/safari-pied-chitwan' },
-    '/circuits/safari-jeep-chitwan': { status: 301, destination: '/tours/safari-jeep-chitwan' },
-    '/safaris': { status: 301, destination: '/tours/jungle-extreme' },
+    '/circuits/safari-jeep-chitwan': { status: 301, destination: '/tours/safari-jeep-chitwan/' },
+    '/safaris': { status: 301, destination: '/safari-nepal/' },
 
     // 6. Anciens articles de blog WordPress
-    '/babai-valley-la-vallee-oubliee-du-nepal-sauvage': { status: 301, destination: '/tours/babai-special' },
-    '/bardia-ou-chitwan-safari-nepal': { status: 301, destination: '/blog/bardia-ou-chitwan-quel-parc-choisir' },
-    '/camping-jungle-nepal': { status: 301, destination: '/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal' },
-    '/culture-tharu-a-bardia-traditions-villages-et-vie-locale': { status: 301, destination: '/blog/culture-tharu-nepal-immersion-jungle' },
-    '/la-faune-du-nepal-a-la-rencontre-du-big-5-de-bardia': { status: 301, destination: '/blog/animaux-bardia-faune-parc-national' },
-    '/quand-partir-au-nepal': { status: 301, destination: '/blog/quand-partir-au-nepal-pour-un-safari-guide' },
-    '/safari-a-pied-au-nepal-est-ce-dangereux': { status: 301, destination: '/blog/safari-a-pied-nepal-danger-regles-securite-guide' },
-    '/safari-au-nepal-vivre-la-jungle-autrement-loin-des-circuits-touristiques': { status: 301, destination: '/blog/comment-organiser-un-safari-au-nepal' },
-    '/safari-dans-le-parc-national-de-bardia-au-nepal': { status: 301, destination: '/blog/guide-complet-parc-national-de-bardia-nepal' },
-    '/safari-tigre-nepal': { status: 301, destination: '/blog/voir-des-tigres-au-nepal' },
-    '/blog/safari-nepal-en-famille-securite-lodges-enfants': { status: 301, destination: '/blog/safari-nepal-en-famille-guide-securite' },
-    '/en/blog/nepal-family-safari-safety-lodges-children': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide' },
-    '/en/blog/family-safari-in-nepal-safety-lodges-kids': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide' }
+    '/babai-valley-la-vallee-oubliee-du-nepal-sauvage': { status: 301, destination: '/tours/babai-special/' },
+    '/bardia-ou-chitwan-safari-nepal': { status: 301, destination: '/blog/bardia-ou-chitwan-quel-parc-choisir/' },
+    '/camping-jungle-nepal': { status: 301, destination: '/blog/camping-safari-a-bardia-nuits-en-jungle-au-nepal/' },
+    '/culture-tharu-a-bardia-traditions-villages-et-vie-locale': { status: 301, destination: '/blog/culture-tharu-nepal-immersion-jungle/' },
+    '/la-faune-du-nepal-a-la-rencontre-du-big-5-de-bardia': { status: 301, destination: '/blog/animaux-bardia-faune-parc-national/' },
+    '/quand-partir-au-nepal': { status: 301, destination: '/blog/quand-partir-au-nepal-pour-un-safari-guide/' },
+    '/safari-a-pied-au-nepal-est-ce-dangereux': { status: 301, destination: '/blog/safari-a-pied-nepal-danger-regles-securite-guide/' },
+    '/safari-au-nepal-vivre-la-jungle-autrement-loin-des-circuits-touristiques': { status: 301, destination: '/safari-nepal/' },
+    '/safari-dans-le-parc-national-de-bardia-au-nepal': { status: 301, destination: '/blog/guide-complet-parc-national-de-bardia-nepal/' },
+    '/safari-tigre-nepal': { status: 301, destination: '/safari-nepal/' },
+    '/blog/safari-nepal-en-famille-securite-lodges-enfants': { status: 301, destination: '/blog/safari-nepal-en-famille-guide-securite/' },
+    '/en/blog/nepal-family-safari-safety-lodges-children': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide/' },
+    '/en/blog/family-safari-in-nepal-safety-lodges-kids': { status: 301, destination: '/en/blog/family-safari-in-nepal-safety-practical-guide/' }
   },
   i18n: {
     defaultLocale: 'fr',
@@ -126,7 +123,8 @@ export default defineConfig({
     }
   },
   build: {
-    format: 'directory'
+    format: 'directory',
+    inlineStylesheets: 'never'
   },
   server: {
     port: 8088,

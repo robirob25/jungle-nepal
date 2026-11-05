@@ -10,6 +10,12 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 import Header from '../../../components/Header.astro';
 ---
 
+<Layout 
+  title="Private Bardia Jeep Safari (190€) : Full Day Tiger Quest"
+  description="Full-day private 4x4 Jeep safari in Bardia National Park (190€ / person). Track wild Royal Bengal tigers, rhinos, and elephants deep inside the jungle with a native spotter."
+  lang="en"
+>
+  <Fragment slot="head">
   <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
 {
@@ -61,7 +67,7 @@ import Header from '../../../components/Header.astro';
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "22",
+    "reviewCount": "25",
     "bestRating": "5"
   },
   "itinerary": {
@@ -129,12 +135,34 @@ import Header from '../../../components/Header.astro';
   </script>
 
   <!-- SCHEMA.ORG FAQPAGE (RICH SNIPPETS GOOGLE) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://junglenepal.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Nepal Safari",
+      "item": "https://junglenepal.com/en/safari-nepal/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Private Jeep Safari in Bardia National Park",
+      "item": "https://junglenepal.com/en/tours/bardia-jeep-safari/"
+    }
+  ]
+}
+  </script>
+  </Fragment>
 
-<Layout 
-  title="Private Bardia Jeep Safari (190€) : Full Day Tiger Quest"
-  description="Private full-day 4x4 Jeep safari in Bardia National Park (190€ for 1 to 6 guests). Explore deep jungle tracks, waterholes, and tiger territory."
-  lang="en"
->
 
   <!-- TOP BAR PROMO -->
   <aside class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 relative z-50 text-center border-b border-emerald-800/20" id="top-bar">
@@ -159,7 +187,7 @@ import Header from '../../../components/Header.astro';
         <span>Home</span>
       </a>
       <span>›</span>
-      <a href="/en/#prochains-departs" class="hover:text-slate-900">Expeditions</a>
+      <a href="/en/safari-nepal/" class="hover:text-slate-900">Nepal Safari</a>
       <span>›</span>
       <span class="text-slate-900 font-bold truncate">Private Jeep Safari in Bardia National Park</span>
     </nav>
@@ -180,7 +208,7 @@ import Header from '../../../components/Header.astro';
           </span>
           <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 font-bold px-3 py-1 rounded-full border border-emerald-200">
             <svg class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            <span>5.0 (22 verified reviews)</span>
+            <span>5.0 (25 verified reviews)</span>
           </div>
           <span class="text-xs font-bold bg-slate-900 text-amber-100 px-3 py-1 rounded-full border border-amber-300/30">
             Private 4x4 Jeep + Driver

@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
+import SchemaOrg from '../../../components/SchemaOrg.astro';
 import toursData from '../../../data/tours.en.json';
 
 const matchingTours = toursData.filter(t => ["nepal-sauvage","pokhara-chitwan-safari-transfert-katmandou","dashain-immersion-culturelle","nepal-immersion-totale","tiji-mustang","carnet-de-voyage","immersion-spirituelle"].includes(t.slug));
@@ -19,12 +20,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="en"
   isDarkHeader={true}
 >
+  <SchemaOrg
+    slot="head"
+    type="TouristDestination"
+    name="Vallée de Kathmandu | Destinations Jungle Nepal Adventure"
+    headline="Vallée de Kathmandu | Destinations Jungle Nepal Adventure"
+    description="Explore the Kathmandu Valley beyond the crowds: UNESCO royal cities of Bhaktapur and Patan, sacred Buddhist stupas, and authentic Newar heritage."
+    image="/assets/original_site/temple_sacred.webp"
+    url="https://junglenepal.com/en/destinations/katmandou/"
+    lang="en"
+    latitude={27.7172}
+    longitude={85.324}
+    ratingValue="5.0"
+    reviewCount="25"
+    breadcrumbs={[
+      { name: "Home", url: "/en/" },
+      { name: "Nepal Safari", url: "/en/safari-nepal/" },
+      { name: "Kathmandu Valley", url: "https://junglenepal.com/en/destinations/katmandou/" }
+    ]}
+  />
   <Header lang="en" currentPath="/en/destinations/katmandou" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" src="/assets/original_site/temple_sacred.webp" alt="Vallée de Kathmandu" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img fetchpriority="high" decoding="async" src="/assets/original_site/temple_sacred.webp" alt="Vallée de Kathmandu" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -147,7 +167,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
           <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les Expeditions Immersive à Vallée de Kathmandu</h3>
           <p class="text-slate-600 text-sm mt-1">Guaranteed small group departures. Click on any itinerary to view the day-by-day program.</p>
         </div>
-        <a href="/en/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+        <a href="/en/safari-nepal/" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
           View all 18 Tours & 5 Activities →
         </a>
       </div>

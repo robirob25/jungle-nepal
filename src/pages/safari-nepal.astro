@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
+import TigerObservationStats from '../components/TigerObservationStats.astro';
 import toursData from '../data/tours.json';
 
 // Core safari tours with verified image fallbacks
@@ -49,7 +50,7 @@ const dayActivities = [
     badge: "Jeep privatisée",
     duration: "1 jour",
     price: "190€",
-    priceLabel: "Tarif tout compris",
+    priceLabel: "Tarif par personne",
     extra: "Option Nuit +12€",
     rating: "5.0 (19)",
     description: "Explorez les secteurs les plus reculés de Bardia en 4x4 privatisé avec chauffeur, guide senior et pisteur d’élite. Franchissez les gués pour maximiser l'observation des tigres du Bengale."
@@ -79,7 +80,7 @@ const dayActivities = [
     badge: "Jeep privatisée",
     duration: "1 jour",
     price: "190€",
-    priceLabel: "Tarif tout compris",
+    priceLabel: "Tarif par personne",
     extra: "Déjeuner inclus",
     rating: "5.0 (22)",
     description: "Parcourez les plaines alluviales et les forêts de sals de Chitwan en 4x4 privatisé avec chauffeur, guide naturaliste senior et pisteur pour approcher les rhinocéros unicornes et les hardes d'herbivores."
@@ -94,7 +95,7 @@ const dayActivities = [
     badge: "Rafting privatisé",
     duration: "1 jour",
     price: "190€",
-    priceLabel: "Tarif tout compris",
+    priceLabel: "Tarif par personne",
     extra: "Pique-nique inclus",
     rating: "5.0 (18)",
     description: "Descendez les eaux calmes de la rivière Karnali en raft privatisé avec barreur professionnel, guide naturaliste et pisteur pour observer dauphins du Gange, gavials et prédateurs aux berges."
@@ -131,8 +132,8 @@ const faqs = [
 ---
 
 <Layout 
-  title="Safari au Népal : Observer le Tigre du Bengale | Bardia & Chitwan"
-  description="Organisez votre safari au Népal : walking safaris à pied à Bardia pour pister le tigre du Bengale, rhinocéros à Chitwan, jeep et séjours sauvages avec nos guides locaux."
+  title="Safari au Népal : Circuits, Parcs (Bardia, Chitwan) & Tigre"
+  description="Organisez votre safari au Népal avec notre agence locale : pistage du tigre du Bengale à pied à Bardia, rhinocéros à Chitwan et circuits en micro-groupe."
   image="/assets/drive_wildlife/hero_safari_nepal.webp"
   lang="fr"
   isDarkHeader={true}
@@ -140,16 +141,19 @@ const faqs = [
   <SchemaOrg
     slot="head"
     type="TouristDestination"
+    name="Safari au Népal : circuits, parcs nationaux et observation du tigre du Bengale"
     headline="Safari au Népal : circuits, parcs nationaux et observation du tigre du Bengale"
     description="Guide complet et expéditions de safari au Népal avec Jungle Nepal Adventure. Walking safari à pied à Bardia, rhinocéros à Chitwan et observation de la faune en petit groupe."
     image="/assets/drive_wildlife/hero_safari_nepal.webp"
-    url="https://junglenepal.com/safari-nepal"
+    url="https://junglenepal.com/safari-nepal/"
     lang="fr"
-    about={["Safari au Népal", "Tigre du Bengale", "Parc national de Bardia", "Parc national de Chitwan", "Agence locale Népal"]}
+    ratingValue="5.0"
+    reviewCount="25"
+    about={["Safari au Népal", "Tigre du Bengale", "Parc national de Bardia", "Parc national de Chitwan", "Parc national de Suklaphanta", "Agence locale Népal"]}
     faqs={faqs}
     breadcrumbs={[
       { name: "Accueil", url: "/" },
-      { name: "Safari au Népal", url: "/safari-nepal" }
+      { name: "Safari au Népal", url: "/safari-nepal/" }
     ]}
   />
 
@@ -164,10 +168,10 @@ const faqs = [
   </aside>
 
   <!-- HEADER NAVIGATION -->
-  <Header lang="fr" currentPath="/safari-nepal" />
+  <Header lang="fr" currentPath="/safari-nepal/" />
 
   <!-- 1. HERO SECTION AVEC LA VRAIE PHOTO DRIVE FOURNIE -->
-  <section class="relative min-h-[68vh] lg:min-h-[74vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
+  <section class="relative min-h-[64vh] lg:min-h-[70vh] flex items-center justify-center py-20 px-4 bg-slate-950 text-white overflow-hidden">
     <!-- Hero Background Image (Photo Drive fournie) -->
     <div class="absolute inset-0 z-0">
       <img 
@@ -182,7 +186,7 @@ const faqs = [
     <div class="relative z-10 max-w-4xl mx-auto text-center space-y-5">
       
       <!-- Breadcrumb navigation -->
-      <nav class="flex items-center justify-center gap-2 text-xs text-slate-300 font-medium">
+      <nav aria-label="Fil d'Ariane" class="flex items-center justify-center gap-2 text-xs text-slate-300 font-medium">
         <a href="/" class="hover:text-white transition-colors">Accueil</a>
         <span>›</span>
         <span class="text-amber-300 font-semibold">Safari au Népal</span>
@@ -195,19 +199,38 @@ const faqs = [
 
       <!-- Intro Subtitle optimisé SEO & longue traîne client -->
       <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto font-normal leading-relaxed drop-shadow">
-        Walking safari dans le parc national de Bardia pour observer le tigre du Bengale, safari jeep et pirogue à Chitwan pour approcher le rhinocéros unicorne, et circuits faune sauvage en petit groupe encadrés par nos guides naturalistes locaux Tharu.
+        Safaris à pied (<em>walking safaris</em>) dans le parc national de Bardia pour pister le tigre du Bengale, observation du grand rhinocéros unicorne à Chitwan, savanes de Suklaphanta et expéditions en micro-groupe de 4 à 10 personnes avec nos maîtres pisteurs Tharu.
       </p>
 
       <!-- Bouton d'action rapide -->
-      <div class="pt-3 flex items-center justify-center">
+      <div class="pt-3 flex flex-wrap items-center justify-center gap-3">
         <a href="#circuits-safari" class="px-8 py-3.5 rounded-full bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-950/40 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2">
-          <span>Découvrir nos séjours safari</span>
+          <span>Découvrir nos 18 séjours safari</span>
           <span>↓</span>
+        </a>
+        <a href="#budget-prix-safari" class="px-6 py-3.5 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/25 text-white font-bold text-xs sm:text-sm transition-all duration-300">
+          <span>Tarifs, parcs & guide 2026/2027</span>
         </a>
       </div>
 
     </div>
   </section>
+
+  <!-- SOMMAIRE RAPIDE (SERP JUMP LINKS & UX NAVIGATION) -->
+  <nav aria-label="Sommaire du guide safari au Népal" class="bg-slate-900 text-white border-b border-slate-800 py-3 px-4 sticky top-[64px] z-30 shadow-md overflow-x-auto">
+    <div class="max-w-7xl mx-auto flex items-center justify-start lg:justify-center gap-2 sm:gap-3 text-xs font-bold whitespace-nowrap">
+      <span class="text-amber-300 uppercase tracking-wider text-[11px] hidden sm:inline">Accès direct :</span>
+      <a href="#circuits-safari" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Circuits multi-jours</a>
+      <a href="#activites-safari" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Safaris 1 jour (dès 50€)</a>
+      <a href="#comparatif-parcs" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Bardia vs Chitwan vs Suklaphanta</a>
+      <a href="#faune-chances-tigre" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Faune & Stats Tigre</a>
+      <a href="#budget-prix-safari" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Prix & Budget</a>
+      <a href="#acces-logistique" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Accès & Transports</a>
+      <a href="#quand-partir" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Quand partir ?</a>
+      <a href="#guides-articles" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">Dossiers & Conseils</a>
+      <a href="#faq-safari-nepal" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-[#0e8354] transition-colors">FAQ</a>
+    </div>
+  </nav>
 
   <!-- 2. POURQUOI LE SAFARI AU NÉPAL N'A AUCUN ÉQUIVALENT AU MONDE (FOND BLANC, 3 BLOCS AVEC PHOTOS D'ANIMAUX) -->
   <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
@@ -557,7 +580,7 @@ const faqs = [
   </section>
 
   <!-- 5. QUEL PARC NATIONAL CHOISIR ? (TABLEAU BLANC SIMPLE ET LISIBLE SANS COULEURS SUPERFLUES) -->
-  <section class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
+  <section id="comparatif-parcs" class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       
       <div class="max-w-3xl">
@@ -648,7 +671,7 @@ const faqs = [
   </section>
 
   <!-- 6. LA FAUNE ÉMBLÉMATIQUE DU TERAÏ (VRAIES PHOTOS ANIMALES HAUTE QUALITÉ) -->
-  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
+  <section id="faune-chances-tigre" class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto">
@@ -830,6 +853,11 @@ const faqs = [
     </div>
   </section>
 
+  <!-- STATISTIQUES INTERACTIVES D OBSERVATION DU TIGRE -->
+  <div class="bg-white border-b border-slate-200 pb-12">
+    <TigerObservationStats lang="fr" />
+  </div>
+
   <!-- 7. NOS 4 TECHNIQUES DE PISTAGE SUR LE TERRAIN (FOND LÉGER SLATE-50) -->
   <section class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200 relative overflow-hidden">
     <!-- Subtle Sketch Pattern Background Overlay -->
@@ -934,7 +962,7 @@ const faqs = [
   </section>
 
   <!-- 8. QUAND PARTIR POUR UN SAFARI AU NÉPAL ? (FOND BLANC) -->
-  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
+  <section id="quand-partir" class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto">
@@ -1065,8 +1093,175 @@ const faqs = [
     </div>
   </section>
 
+  <!-- 9B. PRIX & BUDGET D UN SAFARI AU NÉPAL (2026-2027) -->
+  <section id="budget-prix-safari" class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Tarifs transparents en direct</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
+          Quel prix et quel budget prévoir pour un safari au Népal ?
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+          En réservant directement auprès de notre agence locale basée à Bardia et Katmandou, votre budget finance intégralement les permis nationaux (DNPWC), l’accompagnement par deux pisteurs certifiés (un maître-guide et un assistant pisteur), les éco-lodges de charme et notre programme communautaire <a href="/conservation/" class="text-[#0e8354] underline font-bold">NAGA Conservation</a>.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-slate-100/80 border-b border-slate-200 text-slate-900 font-bold">
+            <tr>
+              <th class="p-4 sm:p-5">Formule de safari au Népal</th>
+              <th class="p-4 sm:p-5">Durée</th>
+              <th class="p-4 sm:p-5 text-[#0e8354] font-black">Prix par personne</th>
+              <th class="p-4 sm:p-5">Ce qui est inclus</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr>
+              <td class="p-4 sm:p-5 font-bold text-slate-900"><a href="/tours/safari-pied-bardia/" class="hover:text-[#0e8354] underline">Safari à pied journée à Bardia</a> / <a href="/tours/safari-pied-chitwan/" class="hover:text-[#0e8354] underline">Chitwan</a></td>
+              <td class="p-4 sm:p-5">1 journée (6h30–18h)</td>
+              <td class="p-4 sm:p-5 font-black text-[#0e8354]">50 € à 70 €</td>
+              <td class="p-4 sm:p-5">Permis parc national, 2 guides pisteurs certifiés, déjeuner pique-nique en jungle, eau</td>
+            </tr>
+            <tr class="bg-slate-50/50">
+              <td class="p-4 sm:p-5 font-bold text-slate-900"><a href="/tours/safari-jeep-bardia/" class="hover:text-[#0e8354] underline">Safari Jeep 4x4</a> ou <a href="/tours/rafting-safari-bardia/" class="hover:text-[#0e8354] underline">Rafting Karnali</a></td>
+              <td class="p-4 sm:p-5">1 journée complète</td>
+              <td class="p-4 sm:p-5 font-black text-[#0e8354]">190 €</td>
+              <td class="p-4 sm:p-5">Jeep 4x4 ou raft privatisé, chauffeur/barreur, guide naturaliste senior, permis & repas</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold text-slate-900"><a href="/tours/bardia-nuit-sauvage/" class="hover:text-[#0e8354] underline">Bivouac sauvage</a> & <a href="/tours/safari-chitwan-3-jours/" class="hover:text-[#0e8354] underline">Extension post-trek</a></td>
+              <td class="p-4 sm:p-5">2 à 3 jours</td>
+              <td class="p-4 sm:p-5 font-black text-[#0e8354]">350 € à 450 €</td>
+              <td class="p-4 sm:p-5">Pension complète, campement ou éco-lodge, safaris à pied/jeep/pirogue, transferts locaux</td>
+            </tr>
+            <tr class="bg-slate-50/50">
+              <td class="p-4 sm:p-5 font-bold text-slate-900"><a href="/tours/bardia-explorateur/" class="hover:text-[#0e8354] underline">Bardia Explorateur</a> & <a href="/tours/babai-special/" class="hover:text-[#0e8354] underline">Vallée de Babai</a></td>
+              <td class="p-4 sm:p-5">5 à 8 jours</td>
+              <td class="p-4 sm:p-5 font-black text-[#0e8354]">490 € à 1 200 €</td>
+              <td class="p-4 sm:p-5">Immersion complète pistage tigre, jeep, rafting Karnali, village Tharu, pension complète</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold text-slate-900"><a href="/tours/chitwan-bardia-complete/" class="hover:text-[#0e8354] underline">Grands combinés Chitwan + Bardia</a> & <a href="/tours/jungle-extreme/" class="hover:text-[#0e8354] underline">Jungle Extrême</a></td>
+              <td class="p-4 sm:p-5">11 à 15 jours</td>
+              <td class="p-4 sm:p-5 font-black text-[#0e8354]">1 990 € à 2 490 €</td>
+              <td class="p-4 sm:p-5">Circuit tout inclus de Katmandou à Katmandou, vols internes, véhicules privés, lodges & safaris</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs sm:text-sm text-slate-600">
+        Pour une analyse détaillée de chaque poste de dépense (vols internationaux, visa népalais, pourboires et saisons), consultez notre dossier dédié : <a href="/blog/prix-dun-safari-au-nepal/" class="text-[#0e8354] font-bold underline">Combien coûte un safari au Népal : prix, budget et conseils</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 9C. COMMENT ACCÉDER AUX PARCS DE BARDIA ET CHITWAN (TRANSPORTS & VOLS) -->
+  <section id="acces-logistique" class="py-16 sm:py-20 bg-slate-50 text-slate-900 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Accès & itinéraires</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
+          Comment rejoindre Bardia, Chitwan et Suklaphanta depuis Katmandou ou Pokhara ?
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+          Nous organisons l’intégralité de vos transferts terrestres et aériens. Voici les options concrètes pour relier la capitale ou votre fin de trek dans les Annapurnas aux sanctuaires sauvages du Teraï.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 space-y-3 shadow-sm">
+          <div class="text-xs font-extrabold uppercase tracking-wider text-[#0e8354]">1. Rejoindre le parc de Bardia</div>
+          <h3 class="text-lg font-black text-slate-950">Katmandou → Nepalgunj → Bardia</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            L’option la plus rapide et confortable consiste à prendre un <strong>vol intérieur de 50 minutes</strong> entre Katmandou (ou Pokhara) et l’aéroport de <strong>Nepalgunj</strong>, suivi de <strong>1 h 45 à 2 h de route privée</strong> jusqu’à Thakurdwara, l’entrée du <a href="/destinations/bardia/" class="text-[#0e8354] underline font-semibold">parc national de Bardia</a>. Lire notre guide complet : <a href="/blog/comment-aller-a-bardia-transport-avion-bus-guide/" class="text-[#0e8354] underline font-semibold">Comment aller à Bardia (avion, bus, 4x4)</a>.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 space-y-3 shadow-sm">
+          <div class="text-xs font-extrabold uppercase tracking-wider text-[#0e8354]">2. Rejoindre le parc de Chitwan</div>
+          <h3 class="text-lg font-black text-slate-950">Depuis Katmandou ou Pokhara</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Situé au centre-sud du Népal, le <a href="/destinations/chitwan/" class="text-[#0e8354] underline font-semibold">parc national de Chitwan</a> se rejoint en <strong>20 minutes de vol</strong> vers Bharatpur ou en <strong>4 h 30 à 5 h de route panoramique</strong> depuis Katmandou ou Pokhara. C’est l’étape idéale après un trek grâce à notre formule <a href="/tours/pokhara-chitwan-safari-transfert-katmandou/" class="text-[#0e8354] underline font-semibold">De Pokhara à Chitwan avec transfert Katmandou</a>.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 space-y-3 shadow-sm">
+          <div class="text-xs font-extrabold uppercase tracking-wider text-[#0e8354]">3. Rejoindre Suklaphanta</div>
+          <h3 class="text-lg font-black text-slate-950">Katmandou → Dhangadhi → Mahendranagar</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Pour explorer les savanes secrètes du <a href="/destinations/suklaphanta/" class="text-[#0e8354] underline font-semibold">parc national de Suklaphanta</a> à l’extrême-ouest, un vol intérieur de <strong>1 h 15 vers Dhangadhi</strong> suivi de 1 h 30 de route permet d’accéder aux plus grandes hardes de cerfs des marais d’Asie, ou de combiner Bardia et Suklaphanta par la route (3 h 30).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9D. ENCYCLOPÉDIE & GUIDES PRATIQUES DU SAFARI AU NÉPAL (MAILLAGE SÉMANTIQUE) -->
+  <section id="guides-articles" class="py-16 sm:py-20 bg-white text-slate-900 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0e8354]">Dossiers d'experts & conseils de terrain</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight mt-1">
+          Guides indispensables pour approfondir votre safari au Népal
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Rédigés par Robin et nos guides naturalistes Tharu, ces dossiers répondent à toutes vos questions techniques sur la faune, la sécurité et l’organisation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <a href="/blog/voir-des-tigres-au-nepal/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Félins & Pistage</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Où et comment voir des tigres du Bengale au Népal ?</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Statistiques par parc, meilleurs secteurs (Karnali, Babai) et techniques d’affût.</p>
+        </a>
+        <a href="/blog/safari-a-pied-au-nepal-guide-complet/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Walking Safari</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Le guide complet du safari à pied au Népal</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Déroulement d’une journée de traque à pied, équipement et rôle des deux pisteurs.</p>
+        </a>
+        <a href="/blog/safari-a-pied-nepal-danger-regles-securite-guide/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Sécurité en jungle</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Le safari à pied au Népal est-il dangereux ?</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Protocoles de sécurité, lecture du vent, bâton de bambou et comportement face à la faune.</p>
+        </a>
+        <a href="/blog/bardia-ou-chitwan-quel-parc-choisir/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Comparatif</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Bardia ou Chitwan : quel parc choisir pour un safari ?</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Différences de biotopes, de fréquentation, d’accès et d’espèces animales.</p>
+        </a>
+        <a href="/blog/quand-partir-au-nepal-pour-un-safari-guide/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Climat & Saisons</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Quand partir au Népal pour un safari ? Mois par mois</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Températures dans le Teraï, coupe des herbes hautes et calendrier ornithologique.</p>
+        </a>
+        <a href="/blog/combiner-trek-et-safari-au-nepal-guide-complet/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Himalaya & Jungle</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Combiner trek dans les Annapurnas et safari au Népal</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Comment construire un itinéraire équilibré entre haute montagne et plaines sauvages.</p>
+        </a>
+        <a href="/blog/safari-nepal-ou-inde-comparatif-ranthambore-corbett-bardia/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Népal vs Inde</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Safari tigre au Népal ou en Inde (Ranthambore, Corbett) ?</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Pourquoi la liberté du pistage à pied à Bardia surpasse les safaris motorisés indiens.</p>
+        </a>
+        <a href="/blog/safari-photo-tigre-nepal-bardia-guide-affut/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Photographie animalière</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Safari photo au Népal : focales, affûts et lumière</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Préparer son boîtier et ses téléobjectifs pour photographier le tigre à hauteur d’yeux.</p>
+        </a>
+        <a href="/blog/safari-nepal-en-famille-guide-securite/" class="group p-5 rounded-2xl border border-slate-200 hover:border-[#0e8354] bg-slate-50/60 hover:bg-white transition-all shadow-xs">
+          <div class="text-[11px] font-bold text-[#0e8354] uppercase tracking-wider">Voyage en famille</div>
+          <h3 class="font-bold text-slate-950 group-hover:text-[#0e8354] mt-1 text-sm sm:text-base">Partir en safari au Népal en famille avec des enfants</h3>
+          <p class="text-xs text-slate-600 mt-1.5">Âge recommandé, rythme des journées, sécurité, santé et activités ludiques.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- 10. FOIRE AUX QUESTIONS (FAQ BLANCHE ÉPURÉE SCHEMA.ORG) -->
-  <section class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
+  <section id="faq-safari-nepal" class="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       
       <div class="text-center space-y-2">

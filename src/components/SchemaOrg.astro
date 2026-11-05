@@ -26,19 +26,21 @@ interface AuthorProps {
 }
 
 interface Props {
-  type?: 'TouristTrip' | 'BlogPosting' | 'FAQPage' | 'Organization' | 'BreadcrumbList';
+  type?: 'TouristTrip' | 'TouristDestination' | 'BlogPosting' | 'FAQPage' | 'Organization' | 'BreadcrumbList';
   // Common / WebPage
   name?: string;
   description?: string;
   url?: string;
   image?: string | string[];
   lang?: 'fr' | 'en';
-  // TouristTrip Props
+  // TouristTrip & Destination Props
   touristType?: string[];
   offers?: TourOffer;
   itinerary?: ItineraryDay[];
   ratingValue?: string | number;
   reviewCount?: string | number;
+  latitude?: number;
+  longitude?: number;
   // BlogPosting Props
   headline?: string;
   datePublished?: string;
@@ -58,26 +60,39 @@ const {
   url,
   image = 'https://junglenepal.com/assets/original_site/tigre_bardia.webp',
   lang = 'fr',
-  touristType = ['Amoureux de nature', 'Photographes animaliers', 'Aventuriers'],
+  touristType = lang === 'en'
+    ? ['Wildlife Enthusiasts', 'Nature Photographers', 'Ethical Travelers', 'Small Group Adventurers']
+    : ['Amoureux de nature', 'Photographes animaliers', 'Voyageurs éthiques', 'Aventuriers en micro-groupe'],
   offers,
   itinerary = [],
   ratingValue,
   reviewCount,
+  latitude,
+  longitude,
   headline,
   datePublished,
   dateModified,
   author = {
     name: 'Robin Rozier',
-    jobTitle: 'Guide & Coordinateur Jungle Nepal Adventure',
-    url: 'https://junglenepal.com/a-propos'
+    jobTitle: lang === 'en'
+      ? 'Co-founder & Expedition Coordinator at Jungle Nepal Adventure'
+      : 'Co-fondateur & Coordinateur des expéditions Jungle Nepal Adventure',
+    url: lang === 'en' ? 'https://junglenepal.com/en/about/' : 'https://junglenepal.com/a-propos/'
   },
-  about = ['Parc national de Bardia', 'Tigre du Bengale', 'Faune sauvage du Népal', 'Safari éthique'],
+  about = ['Safari au Népal', 'Parc national de Bardia', 'Tigre du Bengale', 'Parc national de Chitwan', 'Safari éthique à pied'],
   faqs = [],
   breadcrumbs = []
 } = Astro.props;
 
-const currentUrl = url || Astro.url.href;
 const canonicalOrigin = 'https://junglenepal.com';
+const ensureTrailingSlash = (u: string) => {
+  if (!u) return `${canonicalOrigin}/`;
+  const full = u.startsWith('http') ? u : `${canonicalOrigin}${u.startsWith('/') ? '' : '/'}${u}`;
+  if (full.includes('#') || full.includes('?') || /\.[a-z0-9]{2,5}$/i.test(full)) return full;
+  return full.endsWith('/') ? full : `${full}/`;
+};
+
+const currentUrl = ensureTrailingSlash(url || Astro.url.pathname);
 const resolvedImage = Array.isArray(image)
   ? image.map(img => img.startsWith('http') ? img : `${canonicalOrigin}${img.startsWith('/') ? '' : '/'}${img}`)
   : (image.startsWith('http') ? image : `${canonicalOrigin}${image.startsWith('/') ? '' : '/'}${image}`);
@@ -85,14 +100,15 @@ const resolvedImage = Array.isArray(image)
 // Provider Organization block
 const providerOrganization = {
   '@type': 'TravelAgency',
+  '@id': `${canonicalOrigin}/#organization`,
   'name': 'Jungle Nepal Adventure',
-  'url': canonicalOrigin,
+  'url': `${canonicalOrigin}/`,
   'logo': `${canonicalOrigin}/assets/logo_nav_white.png`,
   'email': 'contact@junglenepal.com',
   'telephone': '+33695413227',
   'address': {
     '@type': 'PostalAddress',
-    'addressLocality': 'Bardia & Katmandou',
+    'addressLocality': 'Thakurdwara (Bardia) & Katmandou',
     'addressCountry': 'NP'
   }
 };
@@ -122,7 +138,7 @@ if (type === 'TouristTrip') {
         'availability': offers?.availability || 'https://schema.org/InStock',
         'validFrom': offers?.validFrom || '2026-01-01',
         'priceValidUntil': '2027-12-31',
-        'url': offers?.url || currentUrl,
+        'url': ensureTrailingSlash(offers?.url || currentUrl),
         'hasMerchantReturnPolicy': {
           '@type': 'MerchantReturnPolicy',
           'applicableCountry': 'FR',
@@ -159,6 +175,50 @@ if (type === 'TouristTrip') {
   };
 }
 
+// 1B. TOURIST DESTINATION & PILLAR WEBPAGE SCHEMA
+let touristDestinationSchema = null;
+if (type === 'TouristDestination') {
+  touristDestinationSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['TouristDestination', 'Product'],
+    'name': name || headline,
+    'description': description,
+    'url': currentUrl,
+    'image': resolvedImage,
+    'touristType': touristType,
+    'brand': {
+      '@type': 'Brand',
+      'name': 'Jungle Nepal Adventure'
+    },
+    ...(latitude && longitude ? {
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': latitude,
+        'longitude': longitude
+      }
+    } : {}),
+    'offers': {
+      '@type': 'AggregateOffer',
+      'lowPrice': '50',
+      'highPrice': '2490',
+      'priceCurrency': 'EUR',
+      'offerCount': '18',
+      'availability': 'https://schema.org/InStock',
+      'url': currentUrl
+    },
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': String(ratingValue || '5.0'),
+      'reviewCount': String(reviewCount || '25'),
+      'bestRating': '5'
+    },
+    'about': about.map(term => ({
+      '@type': 'Thing',
+      'name': term
+    }))
+  };
+}
+
 // 2. BLOG POSTING SCHEMA
 let blogPostingSchema = null;
 if (type === 'BlogPosting') {
@@ -174,12 +234,21 @@ if (type === 'BlogPosting') {
     'author': {
       '@type': 'Person',
       'name': author.name || 'Robin Rozier',
-      'jobTitle': author.jobTitle || 'Guide & Coordinateur Jungle Nepal Adventure',
-      'url': author.url ? (author.url.startsWith('http') ? author.url : `${canonicalOrigin}${author.url}`) : `${canonicalOrigin}/a-propos`
+      'jobTitle': author.jobTitle || (lang === 'en' ? 'Co-founder & Expedition Coordinator at Jungle Nepal Adventure' : 'Co-fondateur & Coordinateur des expéditions Jungle Nepal Adventure'),
+      'url': ensureTrailingSlash(author.url || (lang === 'en' ? '/en/about/' : '/a-propos/'))
+    },
+    'reviewedBy': {
+      '@type': 'Person',
+      'name': 'Pawan',
+      'jobTitle': lang === 'en'
+        ? 'Senior Naturalist & Founder of Bardia Nature Guide Association (NAGA), BBC Collaborator'
+        : 'Maître pisteur naturaliste senior à Bardia, fondateur de la NAGA & collaborateur BBC',
+      'url': ensureTrailingSlash(lang === 'en' ? '/en/conservation/' : '/conservation/')
     },
     'publisher': {
       '@type': 'Organization',
       'name': 'Jungle Nepal Adventure',
+      'url': `${canonicalOrigin}/`,
       'logo': {
         '@type': 'ImageObject',
         'url': `${canonicalOrigin}/assets/logo_nav_white.png`
@@ -223,7 +292,7 @@ if (breadcrumbs && breadcrumbs.length > 0) {
       '@type': 'ListItem',
       'position': idx + 1,
       'name': crumb.name,
-      'item': crumb.url.startsWith('http') ? crumb.url : `${canonicalOrigin}${crumb.url}`
+      'item': ensureTrailingSlash(crumb.url)
     }))
   };
 }
@@ -231,6 +300,10 @@ if (breadcrumbs && breadcrumbs.length > 0) {
 
 {touristTripSchema && (
   <script type="application/ld+json" set:html={JSON.stringify(touristTripSchema)} />
+)}
+
+{touristDestinationSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(touristDestinationSchema)} />
 )}
 
 {blogPostingSchema && (

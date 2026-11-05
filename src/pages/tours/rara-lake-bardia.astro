@@ -9,6 +9,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 import Header from '../../components/Header.astro';
 ---
 
+<Layout title="Expédition lac Rara & Bardia : 17 jours aventure au Népal" lang="fr" description="Expédition hors sentiers battus de 17 jours (2 550€) : du lac alpin sacré de Rara dans l'ouest sauvage jusqu'aux terres du tigre du Bengale à Bardia.">
+  <Fragment slot="head">
   <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
 {
@@ -59,7 +61,7 @@ import Header from '../../components/Header.astro';
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "22",
+    "reviewCount": "25",
     "bestRating": "5"
   },
   "itinerary": {
@@ -276,8 +278,34 @@ import Header from '../../components/Header.astro';
   ]
 }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://junglenepal.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Safari au Népal",
+      "item": "https://junglenepal.com/safari-nepal/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus",
+      "item": "https://junglenepal.com/tours/rara-lake-bardia/"
+    }
+  ]
+}
+  </script>
+  </Fragment>
 
-<Layout title="Expédition lac Rara & Bardia : 17 jours aventure au Népal" lang="fr" description="Expédition hors sentiers battus de 17 jours (2 550€) : du lac alpin sacré de Rara dans l'ouest sauvage jusqu'aux terres du tigre du Bengale à Bardia.">
 
 
     <!-- TOP BAR PROMO -->
@@ -306,7 +334,7 @@ import Header from '../../components/Header.astro';
         <span>Accueil</span>
       </a>
       <span>›</span>
-      <a href="/#prochains-departs" class="hover:text-slate-900">Nos circuits</a>
+      <a href="/safari-nepal/" class="hover:text-slate-900">Safari au Népal</a>
       <span>›</span>
       <span class="text-slate-900 font-bold truncate">Rara Lake & Bardia expedition – l’ultime aventure hors sentiers battus</span>
     </nav>
@@ -326,7 +354,7 @@ import Header from '../../components/Header.astro';
           <span class="inline-flex items-center gap-1 text-slate-700">
             <svg class="w-3.5 h-3.5 text-amber-500 fill-amber-500 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             <span class="font-bold text-slate-900">5.0</span>
-            <span class="text-slate-500">(22 avis vérifiés)</span>
+            <span class="text-slate-500">(25 avis vérifiés)</span>
           </span>
           <span class="text-slate-300">•</span>
           <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 font-semibold text-[11px] border border-slate-200/60">Himalaya, Mustang et spiritualité</span>
@@ -369,7 +397,7 @@ import Header from '../../components/Header.astro';
                             <!-- PHOTO MOSAIC GALLERY WEROAD (CURATED WITH TIGERS IN JUNGLE) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
-        <img loading="lazy" decoding="async" src="/assets/original_site/lac_rara_orig.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
+        <img fetchpriority=\"high\" decoding=\"async\" src="/assets/original_site/lac_rara_orig.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
       </div>
       <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
         <img loading="lazy" decoding="async" src="/assets/original_site/tigre_bardia.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(1)"/>
@@ -1111,7 +1139,7 @@ import Header from '../../components/Header.astro';
               <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white z-10 text-xs font-bold">
                 <div class="flex items-center gap-1.5 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                   <svg class="w-3.5 h-3.5 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>5.0 (22 avis vérifiés)</span>
+                  <span>5.0 (25 avis vérifiés)</span>
                 </div>
                 <div class="flex items-center gap-1.5 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                   <svg class="w-3.5 h-3.5 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>

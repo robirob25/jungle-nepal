@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../../i18n/utils';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
 import toursData from '../../data/tours.json';
 
 const matchingTours = toursData.filter(t => ["jungle-extreme"].includes(t.slug));
@@ -19,12 +20,31 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
   lang="fr"
   isDarkHeader={true}
 >
+  <SchemaOrg
+    slot="head"
+    type="TouristDestination"
+    name="Safari Suklaphanta Népal : cerfs des marais & terres sauvages"
+    headline="Safari Suklaphanta Népal : cerfs des marais & terres sauvages"
+    description="Parc national de Suklaphanta dans l'extrême-ouest du Népal : savanes sauvages, plus grandes hardes de cerfs des marais d'Asie et tigres du Bengale."
+    image="/assets/original_site/suklaphanta.webp"
+    url="https://junglenepal.com/destinations/suklaphanta/"
+    lang="fr"
+    latitude={28.8372}
+    longitude={80.2289}
+    ratingValue="5.0"
+    reviewCount="25"
+    breadcrumbs={[
+      { name: "Accueil", url: "/" },
+      { name: "Safari au Népal", url: "/safari-nepal/" },
+      { name: "Parc national de Suklaphanta", url: "https://junglenepal.com/destinations/suklaphanta/" }
+    ]}
+  />
   <Header lang="fr" currentPath="/destinations/suklaphanta.html" />
 
   <!-- HERO BANNER DESTINATION -->
   <div class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 px-4 bg-slate-950 text-white overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img loading="lazy" decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Parc National de Suklaphanta" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
+      <img fetchpriority="high" decoding="async" src="/assets/original_site/suklaphanta.webp" alt="Parc National de Suklaphanta" class="w-full h-full object-cover opacity-50 scale-105 filter brightness-80 contrast-105" />
       
     </div>
 
@@ -57,7 +77,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="lg:col-span-7 space-y-6">
         <span class="text-xs font-black uppercase tracking-widest text-[#0e8354]">Immersion Sauvage</span>
         <h2 class="text-2xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-          Explorer Parc national de Suklaphanta
+          Explorer le parc national de Suklaphanta
         </h2>
         <div class="text-slate-700 text-base leading-relaxed space-y-4 font-normal">
           <p>Situé dans l’extrême ouest du Népal, à la frontière de l’Inde, le parc national de Suklaphanta est l’un des joyaux les plus sauvages et les moins fréquentés du pays. Encore totalement préservé des circuits touristiques classiques, Suklaphanta offre une expérience de safari pur, paisible et authentique.</p>
@@ -97,7 +117,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         </div>
 
         <a href="https://wa.me/33695413227?text=Bonjour%20Robin%2C%20je%20souhaite%20des%20renseignements%20sur%20Parc%20national%20de%20Suklaphanta" target="_blank" rel="nofollow noopener noreferrer" class="block w-full text-center py-3.5 rounded-2xl bg-[#0e5c3e] hover:bg-[#09422b] text-white font-extrabold text-xs shadow-md shadow-[#0e8354]/30 hover:scale-[1.02] active:scale-95 transition-all">
-          Poser une question sur Parc national de Suklaphanta →
+          Poser une question sur le parc de Suklaphanta →
         </a>
       </div>
 
@@ -109,9 +129,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         <span class="inline-block text-xs font-black uppercase tracking-widest text-[#0e8354] bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">
           Ouest Sauvage
         </span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">
-          Villages ruraux du Teraï Occidental
-        </h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950 tracking-tight">Villages ruraux du Teraï Occidental
+        </h2>
         <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
           L'extrême ouest népalais est resté fidèle aux rythmes agricoles traditionnels. Les communautés locales perpétuent un mode de vie respectueux des cycles de la nature et vous accueillent avec une bienveillance sincère et chaleureuse.
         </p>
@@ -122,7 +141,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
     <div class="space-y-6">
       <div>
         <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Photographies du terrain</span>
-        <h3 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel de Parc national de Suklaphanta</h3>
+        <h2 class="font-black text-2xl sm:text-3xl text-slate-950">Aperçu visuel du parc national de Suklaphanta</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div onclick="openLightbox(0)" class="rounded-2xl overflow-hidden shadow-md h-60 group cursor-pointer relative">
@@ -145,11 +164,11 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span class="text-xs font-black uppercase tracking-wider text-[#0e8354]">Saison 2026/2027</span>
-          <h3 class="font-black text-2xl sm:text-4xl text-slate-950">Les séjours immersifs à Parc national de Suklaphanta</h3>
+          <h2 class="font-black text-2xl sm:text-4xl text-slate-950">Les expéditions incluant le parc national de Suklaphanta</h2>
           <p class="text-slate-600 text-sm mt-1">Départs garantis en micro-groupes. Cliquez sur un circuit pour consulter le programme jour par jour.</p>
         </div>
-        <a href="/#prochains-departs" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
-          Découvrir nos 18 circuits →
+        <a href="/safari-nepal/" class="text-xs font-black text-[#0e8354] hover:underline shrink-0">
+          Voir tous nos safaris au Népal →
         </a>
       </div>
 

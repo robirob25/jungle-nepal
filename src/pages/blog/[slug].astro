@@ -54,21 +54,22 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
     headline={post.title}
     description={post.description}
     image={post.featuredImage}
-    url={`https://junglenepal.com/blog/${post.slug}`}
+    url={`https://junglenepal.com/blog/${post.slug}/`}
     datePublished={post.date}
     dateModified={post.date}
     lang="fr"
     author={{
       name: "Robin Rozier",
       jobTitle: "Guide & Coordinateur Jungle Nepal Adventure",
-      url: "/a-propos"
+      url: "/a-propos/"
     }}
-    about={["Parc national de Bardia", "Safari au Népal", "Tigre du Bengale", "Faune sauvage du Népal"]}
+    about={["Safari au Népal", "Parc national de Bardia", "Tigre du Bengale", "Faune sauvage du Népal"]}
     faqs={faqs}
     breadcrumbs={[
       { name: "Accueil", url: "/" },
-      { name: "Blog", url: "/blog" },
-      { name: post.title, url: `/blog/${post.slug}` }
+      { name: "Safari au Népal", url: "/safari-nepal/" },
+      { name: "Blog", url: "/blog/" },
+      { name: post.title, url: `/blog/${post.slug}/` }
     ]}
   />
 
@@ -94,6 +95,8 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
       <!-- Breadcrumbs -->
       <nav class="flex items-center gap-2 text-xs text-slate-400 font-semibold flex-wrap">
         <a href="/" class="hover:text-white transition-colors">Accueil</a>
+        <span>›</span>
+        <a href="/safari-nepal/" class="hover:text-white transition-colors">Safari au Népal</a>
         <span>›</span>
         <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
         <span>›</span>
@@ -124,10 +127,13 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
       )}
 
       <!-- Author snippet -->
-      <div class="pt-2 flex items-center gap-3">
-        <img loading="lazy" decoding="async" alt="Robin Rozier – Fondateur et coordinateur Jungle Nepal Adventure" src="/assets/robin_coordinateur_expedition_jungle_nepal.webp" class="w-10 h-10 rounded-full border-2 border-emerald-500/50 object-cover shadow-md" />
-        <div>
-          <p class="text-xs sm:text-sm font-bold text-white">Écrit par Robin</p>
+      <div class="pt-2 flex flex-wrap items-center gap-4">
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" alt="Robin Rozier – Fondateur et coordinateur Jungle Nepal Adventure" src="/assets/robin_coordinateur_expedition_jungle_nepal.webp" class="w-10 h-10 rounded-full border-2 border-emerald-500/50 object-cover shadow-md" />
+          <div>
+            <p class="text-xs sm:text-sm font-bold text-white">Écrit par Robin Rozier</p>
+            <p class="text-[11px] text-emerald-300 font-medium">Relecture terrain : Pawan (Guide naturaliste sénior à Bardia & président NAGA)</p>
+          </div>
         </div>
       </div>
     </div>
@@ -141,7 +147,7 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
           src={post.featuredImage} 
           alt={post.title} 
           class="w-full h-full object-cover"
-          loading="eager"
+          fetchpriority="high"
         />
       </div>
     </div>
@@ -163,10 +169,13 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="space-y-1.5 text-center sm:text-left">
-        <p class=\"font-black text-slate-950 text-base sm:text-lg\">Écrit par Robin</p>
+      <div class="space-y-2 text-center sm:text-left">
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+          <p class="font-black text-slate-950 text-base sm:text-lg">Écrit par <a href="/a-propos/" class="hover:text-[#0e8354] underline decoration-emerald-500/40">Robin Rozier</a></p>
+          <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Vérifié sur le terrain par Pawan (NAGA Bardia)</span>
+        </div>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-          Passionné de faune sauvage et amoureux des forêts du Népal, Robin partage ses conseils et retours d'expérience du terrain pour vous aider à préparer votre safari au Népal.
+          Passionné de faune sauvage et co-fondateur de Jungle Nepal Adventure aux côtés de Pawan (maître pisteur à Bardia ayant collaboré avec la BBC et président de l'association <a href="/conservation/" class="text-[#0e8354] font-bold underline">NAGA pour la conservation</a>), Robin partage ses conseils et retours d'expérience du terrain pour vous aider à préparer votre <a href="/safari-nepal/" class="text-[#0e8354] font-bold underline">safari au Népal</a> en petit groupe éthique.
         </p>
       </div>
     </div>
@@ -185,7 +194,7 @@ while ((match = h3Regex.exec(contentToSearch)) !== null) {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {relatedPosts.map((rel) => (
           <a 
-            href={`/blog/${rel.slug}`} 
+            href={`/blog/${rel.slug}/`} 
             class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
           >
             <div class="h-40 overflow-hidden bg-slate-900 shrink-0">

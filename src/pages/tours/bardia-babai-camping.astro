@@ -10,6 +10,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 import Header from '../../components/Header.astro';
 ---
 
+<Layout title="Safari bivouac Babai 8 jours : camping sauvage à Bardia" lang="fr" description="Safari bivouac de 8 jours à Bardia et dans la vallée de Babai (1 200€). Nuits sous tente au bord de la rivière, pistage du tigre à pied et faune vierge.">
+  <Fragment slot="head">
   <!-- SCHEMA.ORG TOURIST TRIP & FAQ JSON-LD (RICH SNIPPETS GOOGLE) -->
   <script type="application/ld+json">
 {
@@ -60,7 +62,7 @@ import Header from '../../components/Header.astro';
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "22",
+    "reviewCount": "25",
     "bestRating": "5"
   },
   "itinerary": {
@@ -196,8 +198,34 @@ import Header from '../../components/Header.astro';
   ]
 }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://junglenepal.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Safari au Népal",
+      "item": "https://junglenepal.com/safari-nepal/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée",
+      "item": "https://junglenepal.com/tours/bardia-babai-camping/"
+    }
+  ]
+}
+  </script>
+  </Fragment>
 
-<Layout title="Safari bivouac Babai 8 jours : camping sauvage à Bardia" lang="fr" description="Safari bivouac de 8 jours à Bardia et dans la vallée de Babai (1 200€). Nuits sous tente au bord de la rivière, pistage du tigre à pied et faune vierge.">
 
 
     <!-- TOP BAR PROMO -->
@@ -226,7 +254,7 @@ import Header from '../../components/Header.astro';
         <span>Accueil</span>
       </a>
       <span>›</span>
-      <a href="/#prochains-departs" class="hover:text-slate-900">Nos circuits</a>
+      <a href="/safari-nepal/" class="hover:text-slate-900">Safari au Népal</a>
       <span>›</span>
       <span class="text-slate-900 font-bold truncate">Bardia Babai vallée – camping sauvage au cœur d’une nature vierge et isolée</span>
     </nav>
@@ -246,7 +274,7 @@ import Header from '../../components/Header.astro';
           <span class="inline-flex items-center gap-1 text-slate-700">
             <svg class="w-3.5 h-3.5 text-amber-500 fill-amber-500 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             <span class="font-bold text-slate-900">4.9</span>
-            <span class="text-slate-500">(22 avis vérifiés)</span>
+            <span class="text-slate-500">(25 avis vérifiés)</span>
           </span>
           <span class="text-slate-300">•</span>
           <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 font-semibold text-[11px] border border-slate-200/60">Bivouac & Nuit Sauvage</span>
@@ -289,7 +317,7 @@ import Header from '../../components/Header.astro';
                         <!-- PHOTO MOSAIC GALLERY WEROAD (CURATED WITH TIGERS IN JUNGLE) -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 sm:gap-3 rounded-2xl sm:rounded-3xl overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] mb-8 relative shadow-lg">
       <div class="md:col-span-2 h-full overflow-hidden">
-        <img loading="lazy" decoding="async" src="/assets/original_site/babai_walk.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
+        <img fetchpriority=\"high\" decoding=\"async\" src="/assets/original_site/babai_walk.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(0)"/>
       </div>
       <div class="hidden md:block md:col-span-1 h-full overflow-hidden">
         <img loading="lazy" decoding="async" src="/assets/drive_photos/adrien_tigre4.webp" alt="Expédition Népal Sauvage" class="w-full h-full object-cover transition-opacity duration-300 cursor-pointer" onclick="openLightbox(1)"/>
