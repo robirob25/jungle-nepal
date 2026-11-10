@@ -1,11 +1,8 @@
 
 ErrorDocument 404 /404.html
 
-# 301 REDIRECT DOMAIN FUSION: safarinepal.com -> junglenepal.com
-RewriteCond %{HTTP_HOST} ^(?:www\.)?safarinepal\.com$ [NC]
-RewriteRule ^(.*)$ https://junglenepal.com/safari-nepal/ [R=301,L]
 # =========================================================================
-# JUNGLE NEPAL ADVENTURE - MILITARY-GRADE CYBERSECURITY & CLEAN URLS
+# JUNGLE NEPAL ADVENTURE - CLEAN URLS & SECURITY HEADERS
 # =========================================================================
 
 Options -Indexes -MultiViews
@@ -23,10 +20,8 @@ Options -Indexes -MultiViews
 <IfModule mod_headers.c>
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set X-Content-Type-Options "nosniff"
-    Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=*, usb=()"
     Header unset X-Powered-By
     Header unset Server
 </IfModule>
@@ -35,13 +30,9 @@ Options -Indexes -MultiViews
     RewriteEngine On
     RewriteBase /
 
-    # Block common SQL Injection & XSS attack vectors in Query Strings
-    RewriteCond %{QUERY_STRING} (eval\(|union.*select|benchmark\(|document\.cookie|<script|<iframe) [NC,OR]
-    RewriteCond %{QUERY_STRING} (base64_encode|globals|mosconfig|_request) [NC]
-    RewriteRule .* - [F,L]
-
-    # Block access to legacy WordPress backup directories
-    RewriteRule ^(wp-admin_old_backup|wp-content_old_backup|wp-includes_old_backup)(/.*)?$ - [F,L]
+    # 301 REDIRECT DOMAIN FUSION: safarinepal.com -> junglenepal.com
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?safarinepal\.com$ [NC]
+    RewriteRule ^(.*)$ https://junglenepal.com/safari-nepal/ [R=301,L]
 
     # 301 Redirect for legal terms & return policy (resolves 404 on conditions-generales)
     RewriteRule ^conditions-generales/?$ https://junglenepal.com/mentions-legales/ [R=301,L,NE]

@@ -374,9 +374,8 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 
     let sent = false;
 
-    // 1. Try AJAX to FormSubmit
     try {
-      const res = await fetch('https://formsubmit.co/ajax/junglenepaladventure@gmail.com', {
+      const res = await fetch('/api/send-inquiry.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -389,26 +388,7 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
         sent = true;
       }
     } catch (err) {
-      console.warn('FormSubmit AJAX attempt error:', err);
-    }
-
-    // 2. Fallback using FormSubmit standard post or mailto/webhook if needed
-    if (!sent) {
-      try {
-        const res2 = await fetch('https://formsubmit.co/junglenepaladventure@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-        if (res2.ok) {
-          sent = true;
-        }
-      } catch (err2) {
-        console.warn('Fallback error:', err2);
-      }
+      console.warn('Contact submit error:', err);
     }
 
     // Always notify the user clearly
