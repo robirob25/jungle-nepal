@@ -50,9 +50,9 @@ Options -Indexes -MultiViews
     # DirectoryIndex configuration for Astro SSG
     DirectoryIndex index.html
 
-    # Redirect external requests ending in .html to clean URLs (e.g. /blog.html -> /blog)
+    # Redirect external requests ending in .html to clean URLs (e.g. /blog.html -> /blog/)
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)\.html\ HTTP/ [NC]
-    RewriteRule ^(.*)\.html$ https://junglenepal.com/$1 [R=301,L]
+    RewriteRule ^(.*)\.html$ https://junglenepal.com/$1/ [R=301,L]
 
     # Redirect root /index.html to /
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
