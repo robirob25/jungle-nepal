@@ -292,21 +292,6 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
 
 </style>
 
-    <!-- Global Stability & Error Shield -->
-    <script is:inline>
-      window.addEventListener('error', function(e) {
-        if (e.message && (
-          e.message.includes('ResizeObserver') ||
-          e.message.includes('Script error') ||
-          e.message.includes('safari-extension') ||
-          e.message.includes('chrome-extension')
-        )) {
-          e.stopImmediatePropagation();
-          return true;
-        }
-      });
-    </script>
-
     <slot name="head" />
   </head>
 <body class="bg-[#faf8f5] text-slate-800 font-sans antialiased selection:bg-[#0e8354] selection:text-white">
