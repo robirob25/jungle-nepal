@@ -30,7 +30,7 @@ export default defineConfig({
   },
   build: {
     format: 'directory',
-    inlineStylesheets: 'never'
+    inlineStylesheets: 'always'
   },
   server: {
     port: 8088,
