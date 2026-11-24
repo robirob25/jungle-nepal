@@ -307,10 +307,6 @@ import Header from '../../../components/Header.astro';
             <span>12 days</span>
           </span>
           <span class="text-slate-300">•</span>
-          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-50 text-[#0e8354] font-bold text-[11px] border border-emerald-200">
-            <span>📅 Nov 7 – 18, 2027</span>
-          </span>
-          <span class="text-slate-300">•</span>
           <span class="inline-flex items-center gap-1 text-slate-700">
             <svg class="w-3.5 h-3.5 text-amber-500 fill-amber-500 shrink-0" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             <span class="font-bold text-slate-900">4.9</span>
@@ -741,78 +737,49 @@ import Header from '../../../components/Header.astro';
             </details>
 
             <!-- Day 11 -->
-            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition-all">
-              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50/80 transition-colors">
-                <div class="flex items-center gap-3.5 sm:gap-4">
-                  <span class="w-9 h-9 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border border-emerald-200/80 shadow-xs">
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-3.5">
+                  <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     D11
                   </span>
                   <div>
-                    <h3 class="font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                    <h3 class="font-bold text-sm sm:text-base text-slate-900">
                       D11 • Sunrise Facing Machhapuchhare & Return to Kathmandu
                     </h3>
-                    <span class="text-[11px] font-medium text-emerald-700">Sunrise meditation, Jeep from Koleli & Flight to Kathmandu</span>
+                    <p class="text-[11px] text-slate-400 font-medium">Sunrise meditation, Jeep from Koleli & flight to Kathmandu</p>
                   </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
-              <div class="p-5 sm:p-6 pt-0 border-t border-slate-100">
-                <div class="pt-4 space-y-4">
-                  <div class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal space-y-2">
-                    <p><strong>Morning :</strong> Sunrise meditation and stories about the sacred <strong>Machhapuchhare</strong> (Fishtail) mountain. Breakfast at the lodge.</p>
-                    <p><strong>Transfer & Flight :</strong> <strong>Jeep transfer from Koleli to Pokhara Airport</strong>, followed by a domestic flight back to Kathmandu.</p>
-                    <p><strong>Afternoon & Evening :</strong> Free time for souvenir shopping (artisan thangkas, incense, Himalayan teas) and final evening in Nepal.</p>
-                  </div>
-
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
-                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50/80 border border-slate-200/60">
-                      <span class="px-2 py-0.5 rounded-md bg-emerald-100/70 text-[#0e8354] font-bold text-[11px] shrink-0">Jeep & Flight</span>
-                      <span class="text-xs text-slate-700 leading-tight">Jeep Koleli – Pokhara Airport & flight to Kathmandu</span>
-                    </div>
-                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50/80 border border-slate-200/60">
-                      <span class="px-2 py-0.5 rounded-md bg-amber-100/70 text-amber-800 font-bold text-[11px] shrink-0">Evening</span>
-                      <span class="text-xs text-slate-700 leading-tight">Farewell dinner & local craft exploration</span>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-[#0e8354] font-semibold text-[11px] border border-emerald-100">
-                      <span>✈️</span> Jeep + Domestic Flight Included
-                    </span>
-                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 font-medium text-[11px]">
-                      <span>🛍️</span> Craft & Heritage
-                    </span>
-                  </div>
+              <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed space-y-2">
+                  <p><strong>Morning :</strong> Sunrise meditation and stories about the sacred <strong>Machhapuchhare</strong> mountain. Breakfast at the lodge.</p>
+                  <p><strong>Transfer & Flight :</strong> <strong>Jeep transfer from Koleli to Pokhara Airport</strong>, followed by a domestic flight back to Kathmandu.</p>
+                  <p><strong>Afternoon & Evening :</strong> Free time for shopping and final evening in Nepal.</p>
                 </div>
               </div>
             </details>
 
             <!-- Day 12 -->
-            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition-all">
-              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50/80 transition-colors">
-                <div class="flex items-center gap-3.5 sm:gap-4">
-                  <span class="w-9 h-9 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border border-emerald-200/80 shadow-xs">
+            <details class="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm transition-all">
+              <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer select-none hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-3.5">
+                  <span class="w-8 h-8 rounded-xl bg-emerald-50 text-[#0e8354] font-black text-xs flex items-center justify-center shrink-0 border border-emerald-200">
                     D12
                   </span>
                   <div>
-                    <h3 class="font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                    <h3 class="font-bold text-sm sm:text-base text-slate-900">
                       D12 • International Departure
                     </h3>
-                    <span class="text-[11px] font-medium text-emerald-700">Private airport transfer & Journey home</span>
+                    <p class="text-[11px] text-slate-400 font-medium">Airport transfer & flight home</p>
                   </div>
                 </div>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 shrink-0"></i>
+                <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </summary>
-              <div class="p-5 sm:p-6 pt-0 border-t border-slate-100">
-                <div class="pt-4 space-y-4">
-                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    In coordination with your flight schedule, private transfer to Tribhuvan International Airport. Depart filled with renewed energy and profound peace.
-                  </p>
-
-                  <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/60 flex items-center gap-2.5">
-                    <span class="px-2 py-0.5 rounded-md bg-emerald-100/70 text-[#0e8354] font-bold text-[11px]">Private transfer</span>
-                    <span class="text-xs text-slate-700">Direct VIP drop-off at international departures terminal</span>
-                  </div>
+              <div class="p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 font-normal">
+                <div class="pt-4 pb-2 text-slate-700 text-xs sm:text-sm font-normal leading-relaxed">
+                  In coordination with your flight schedule, private transfer to Tribhuvan International Airport for your return flight.
                 </div>
               </div>
             </details>
@@ -1017,32 +984,8 @@ import Header from '../../../components/Header.astro';
             <h3 class="font-black text-lg sm:text-xl text-slate-950 leading-snug mt-1 tracking-tight">
               Spiritual Immersion in the Himalayas & Sacred Valleys – 12 Days
             </h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">12 days • Small Group (4 to 10 explorers)</p>
-          </div>
-
-          <!-- Date & Status Box -->
-          <div id="tour-confirmed-dates" data-date="November 7 – November 18, 2027" class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 space-y-1.5 text-xs">
-            <div class="flex items-center justify-between">
-              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
-                <span>📅</span>
-                <span>Trip Dates:</span>
-              </span>
-              <span class="font-black text-slate-900">Nov 7 – 18, 2027</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-slate-600 font-semibold flex items-center gap-1.5">
-                <span>👥</span>
-                <span>Format:</span>
-              </span>
-              <span class="font-black text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded text-[11px]">Small Group (4 to 10 pers)</span>
-            </div>
-            <div class="flex items-center justify-between pt-1 border-t border-emerald-200/60 text-[11px]">
-              <span class="text-slate-500">Status:</span>
-              <span class="font-extrabold text-[#0e8354] flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#0e8354] animate-pulse"></span>
-                Confirmed Departure • Spots Open
-              </span>
-            </div>
+            <p class="text-xs text-slate-500 font-semibold mt-1">12 days ( 07 - 18 nov 2027 ) • Small Group (4 to 10 explorers)</p>
+            <span id="tour-confirmed-dates" data-date="07 - 18 nov 2027" class="hidden"></span>
           </div>
 
           <!-- Price Row -->
