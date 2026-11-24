@@ -2330,6 +2330,8 @@
     "title": "Immersion spirituelle en Himalaya",
     "duration": "12 jours",
     "daysCount": 12,
+    "departure_dates": "7 novembre 2027 – 18 novembre 2027",
+    "departure_dates_en": "November 7 – November 18, 2027",
     "price": "2,190€",
     "originalPrice": null,
     "category": "culture",
@@ -2366,8 +2368,8 @@
       },
       {
         "day": 2,
-        "title": "Jour 2 • Découverte de Katmandou & installation à l’ashram",
-        "desc": "09h00 – Visite de Swayambhunath (Temple des Singes) et du Boudhanath Stupa , deux des principaux sites spirituels du Népal. 14h00 – Arrivée et installation dans l’ashram. Après-midi – Marche méditative en montagne et découverte des environs de l’ashram. 18h45 – Méditation du soir. 20h00 – Dîner de bienvenue."
+        "title": "Jour 2 • Lever de soleil à Swayambhunath & installation à l’ashram",
+        "desc": "06h30 – Lever de soleil au temple de Swayambhunath (Temple des Singes), suivi de la visite du Boudhanath Stupa. 14h00 – Arrivée et installation dans l’ashram. Après-midi – Marche méditative en montagne et découverte des environs de l’ashram. 18h45 – Méditation du soir. 20h00 – Dîner de bienvenue."
       },
       {
         "day": 3,
@@ -2397,22 +2399,22 @@
       {
         "day": 8,
         "title": "Jour 8 • Bien-être & intégration",
-        "desc": "7h30 – Pranayama – Yin Yoga Petit-déjeuner Matin – Massage intuitif/Reiki Déjeuner. Après-midi – Atelier tantra blanc Temps libre. Diner. Avant le coucher – Yoga Nidra"
+        "desc": "7h30 – Pranayama – Yin Yoga. Petit-déjeuner. Matin – Massage intuitif / Reiki. Déjeuner. Après-midi – Séance de Pilates et temps libre. Dîner. Avant le coucher – Yoga Nidra."
       },
       {
         "day": 9,
         "title": "Jour 9 • Bien-être & découverte",
-        "desc": "7h30 – Pranayama – Réveil musculaire Petit-déjeuner. Journée – Immersion dans la vie locale Retour en fin d’après-midi. 18h – Bain de vibration aux bols chantants pour la pleine lune du castor en Gémeaux Dîner."
+        "desc": "7h30 – Réveil doux avec stretching. Petit-déjeuner. Journée – Immersion dans la vie locale. Retour en fin d’après-midi. 18h – Bain de vibration aux bols chantants. Dîner."
       },
       {
         "day": 10,
-        "title": "Jour 10 • Randonnée en Himalaya",
-        "desc": "7h00 – Pranayama et Yoga Petit-Déjeuner. Matin : Randonnée accessible jusqu’à un point de vue sur les Annapurnas, avec plusieurs pauses de contemplation. Pique-nique ou déjeuner. Après-midi – Retour tranquillement au village. 17h – Cercle de clôture, dernière pratique aux bols chantants et/ou danse serpentine et rituel de fin de séjour. Dernier diner à Gachok."
+        "title": "Jour 10 • Randonnée jusqu’à Koleli & méditation d’intégration",
+        "desc": "7h00 – Pranayama et Yoga. Petit-déjeuner. Randonnée jusqu’à Koleli face aux Annapurnas avec pauses de contemplation. Installation dans le lodge de Koleli. 17h – Cercle de clôture, séance de méditation d’intégration et rituel de fin de séjour. Dîner et nuit au lodge de Koleli."
       },
       {
         "day": 11,
-        "title": "Jour 11 • Retour à Katmandou",
-        "desc": "Retour vers Katmandou en vol interne. Temps libre pour vos achats. Dernière soirée au Népal."
+        "title": "Jour 11 • Lever de soleil face au Machhapuchhare & retour à Katmandou",
+        "desc": "Matin – Méditation avec le lever de soleil et histoires sur le Machhapuchhare. Transfert en jeep de Koleli jusqu’à l’aéroport de Pokhara, puis vol intérieur vers Katmandou. Temps libre pour vos achats et dernière soirée au Népal."
       },
       {
         "day": 12,
