@@ -12,6 +12,19 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title="À propos de Jungle Nepal : Notre histoire & pisteurs Tharu" lang="fr" description="Découvrez l'histoire de Jungle Nepal Adventure : l'alliance de Robin et des maîtres pisteurs Tharu de Bardia pour des safaris éthiques en micro-groupes.">
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "À propos de Jungle Nepal Adventure : Équipe Franco-Népalaise & Maîtres Pisteurs Tharu",
+      "url": "https://junglenepal.com/a-propos/",
+      "mainEntity": {
+        "@id": "https://junglenepal.com/#organization"
+      }
+    }
+    </script>
+  </Fragment>
 
   <!-- 1. TOP ANNOUNCEMENT BANNER -->
   <aside aria-label="Bannière d'information" class="bg-[#05281a] text-white text-[11px] sm:text-xs py-1.5 px-4 font-bold relative z-50 text-center border-b border-emerald-800/20 shadow-sm" id="top-bar">

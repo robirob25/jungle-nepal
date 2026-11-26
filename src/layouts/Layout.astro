@@ -54,6 +54,8 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
   <link rel="alternate" hreflang="fr" href={frUrl} />
   <link rel="alternate" hreflang="en" href={enUrl} />
   <link rel="alternate" hreflang="x-default" href={frUrl} />
+  <link rel="alternate" type="text/plain" href="https://junglenepal.com/llms.txt" title="LLM Structured Context" />
+  <link rel="alternate" type="text/plain" href="https://junglenepal.com/llms-full.txt" title="LLM Full Catalog Context" />
 
   <!-- HIGH-PERFORMANCE PRELOADS (Only on Homepage to protect internal page bandwidth & scroll) -->
   {(!rawPath || rawPath === '/' || rawPath === '/en' || rawPath === '/en/') && (
@@ -169,15 +171,68 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
         "@type": "TravelAgency",
         "@id": "https://junglenepal.com/#organization",
         "name": "Jungle Nepal Adventure",
+        "legalName": "Jungle Nepal Adventure Pvt. Ltd.",
         "url": "https://junglenepal.com/",
         "logo": "https://junglenepal.com/assets/logo_nav_white.png",
         "image": "https://junglenepal.com/assets/original_site/tigre_bardia.webp",
-        "description": "Agence locale d'écotourisme d'exception et de safaris immersifs au Népal. Spécialiste n°1 du safari au Népal, du pistage à pied du tigre du Bengale à Bardia et de l'observation des rhinocéros à Chitwan avec maîtres pisteurs Tharu.",
+        "description": "Agence locale franco-népalaise d'écotourisme et de safaris immersifs au Népal. Spécialiste n°1 du safari au Népal, du pistage à pied du tigre du Bengale à Bardia et de l'observation des rhinocéros unicornes à Chitwan avec maîtres pisteurs Tharu certifiés. Membre du Collectif MyWay (immatriculation Atout France IM059190009).",
+        "slogan": "Safaris éthiques en jungle et treks hors des sentiers battus au Népal en micro-groupe (4 à 10 pers.)",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Thakurdwara, Parc national de Bardia, Népal"
+        },
         "telephone": "+33695413227",
         "email": "contact@junglenepal.com",
+        "taxID": "623537310",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "name": "Immatriculation Atout France (MYWAY SAS)",
+            "value": "IM059190009"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Nepal Company Registrar",
+            "value": "384414/82/83"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "SIRET France",
+            "value": "91025797100010"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/jungle.nepal.adventure/",
+          "https://www.facebook.com/profile.php?id=61584840598638",
+          "https://www.youtube.com/watch?v=nApJul2Wgxo",
+          "https://fr.pinterest.com/junglenepaladventure/",
+          "https://v2.welcome.collectifmyway.com/verification/jungle-nepal-adventure"
+        ],
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Pawan Kumar Thapa",
+            "jobTitle": "Chef Pisteur natif de Bardia, Président de la Nature Guide Association (NAGA) & Guide BBC Wildlife",
+            "url": "https://junglenepal.com/a-propos/"
+          },
+          {
+            "@type": "Person",
+            "name": "Kiran Pokhrel",
+            "jobTitle": "Co-Fondateur & Pionnier de l'écotourisme au Népal (20 ans d'expérience)",
+            "url": "https://junglenepal.com/a-propos/"
+          },
+          {
+            "@type": "Person",
+            "name": "Robin Rozier",
+            "jobTitle": "Co-Fondateur & Coordinateur Voyageurs Francophones",
+            "url": "https://junglenepal.com/a-propos/"
+          }
+        ],
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Thakurdwara (Bardia) & Katmandou",
+          "streetAddress": "Thakurdwara-09",
+          "addressLocality": "Bardia",
+          "addressRegion": "Lumbini",
           "addressCountry": "NP"
         },
         "priceRange": "50€ - 4300€",
@@ -187,12 +242,13 @@ const enUrl = `https://junglenepal.com${enPath.endsWith('/') || enPath.endsWith(
           "Safari Bardia Népal",
           "Safari Chitwan Népal",
           "Pistage tigre du Bengale à pied",
+          "Observation rhinocéros unicorne",
           "Safari photo tigre",
           "Parc national de Bardia",
           "Parc national de Chitwan",
           "Parc national de Suklaphanta",
           "Expédition panthère des neiges",
-          "Écotourisme éthique au Népal"
+          "Écotourisme éthique au Népal sans éléphant captif"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",

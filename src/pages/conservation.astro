@@ -10,6 +10,32 @@ import Footer from '../components/Footer.astro';
   image="/assets/naga/naga_guides_tronc_riviere.webp"
   lang="fr"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que l'association NAGA au parc national de Bardia ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Nature Guide Association (NAGA) de Bardia, présidée par Pawan Kumar Thapa (co-fondateur de Jungle Nepal Adventure), est l'organisation officielle qui regroupe, forme et protège les guides naturalistes et pisteurs natifs du parc national de Bardia au Népal, tout en menant des actions de lutte anti-braconnage et de prévention des conflits homme-faune dans la zone tampon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment Jungle Nepal Adventure soutient-elle la protection du tigre du Bengale ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chaque séjour réservé avec Jungle Nepal Adventure finance directement la juste rémunération des pisteurs natifs Tharu, l'équipement de sécurité de terrain en partenariat avec l'association NAGA, les permis officiels de conservation du DNPWC, et applique une charte stricte à 0 % d'éléphants captifs."
+          }
+        }
+      ]
+    }
+    </script>
+  </Fragment>
 
   <!-- 2. NAVBAR DU SITE (FOND CLAIR STANDARD) -->
   <Header lang="fr" currentPath="/conservation" />

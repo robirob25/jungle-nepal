@@ -9,6 +9,56 @@ const enTargetUrl = getLocalizedPath(Astro.url, 'en');
 ---
 
 <Layout title="Jungle Nepal Adventure | Agence locale au Népal : Safaris & Treks" lang="fr" description="Agence locale francophone au Népal. Safaris éthiques en jungle (Bardia, Chitwan), treks hors des sentiers battus et immersions en micro-groupe de 4 à 10 pers.">
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Où faire le meilleur safari au Népal pour voir le tigre du Bengale : Bardia ou Chitwan ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le parc national de Bardia (968 km², dans l'ouest du Népal) est le sanctuaire n°1 pour observer le tigre du Bengale à l'état sauvage (~125 tigres adultes, taux d'observation de 70 % à 85 % sur 4 à 5 jours en saison sèche de février à mai) et pratiquer le safari à pied loin du tourisme de masse. Le parc national de Chitwan (952 km², classé UNESCO) est idéal pour observer à coup sûr le grand rhinocéros unicorne (694 individus) lors d'une étape de 3 à 4 jours entre Katmandou et Pokhara."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte un safari au Népal avec Jungle Nepal Adventure ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les safaris à la journée débutent à 50 € par personne pour un safari à pied à Bardia (avec 2 guides naturalistes certifiés et permis inclus), 70 € à Chitwan, et 190 € pour un safari en Jeep 4x4 privatisée ou un rafting safari sur la rivière Karnali. Les séjours tout compris en éco-lodge débutent à 350 € (Bivouac 2 jours à Bardia) et 490 € (Bardia Explorateur 5 jours ou Chitwan 3 jours), jusqu'à 2 290 € pour le Grand Tour Népal Sauvage 15 jours (Jungle & Annapurnas)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la meilleure période pour partir en safari et trek au Népal ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La saison sèche d'octobre à mai est idéale. D'octobre à janvier, le climat est doux avec une visibilité cristalline sur l'Himalaya et une faune très active. De février à mai (pré-mousson chaude), les points d'eau s'assèchent en jungle et les tigres du Bengale viennent quotidiennement se rafraîchir dans les rivières Karnali et Babai à Bardia, offrant le taux d'observation le plus élevé de l'année."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se déroule un safari à pied au Népal et est-ce sécurisé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chaque safari à pied avec Jungle Nepal Adventure est limité à un micro-groupe de 4 voyageurs maximum encadré par 2 maîtres pisteurs Tharu certifiés par l'État népalais (dont Pawan Kumar Thapa, président de la Nature Guide Association de Bardia et guide pour la BBC). Les guides lisent les empreintes fraîches, le sens du vent et les cris d'alarme des cerfs axis et des langurs, tout en utilisant les tours de guet naturelles pour observer les grands fauves à distance sécurisée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles sont les garanties légales et l'éthique de Jungle Nepal Adventure ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jungle Nepal Adventure applique une charte éthique stricte : 0 % éléphant captif (aucune balade à dos d'éléphant), 0 % appâtage et micro-groupes de 4 à 10 voyageurs. L'agence locale Jungle Nepal Adventure Pvt. Ltd. est officiellement immatriculée au Népal (N° 384414/82/83) et les séjours sont commercialisés avec garanties financières françaises via MYWAY SAS (immatriculation Atout France IM059190009, garantie Groupama et RCP Generali)."
+          }
+        }
+      ]
+    }
+    </script>
+  </Fragment>
 
 
   <!-- ========================================================================= -->

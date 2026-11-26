@@ -266,12 +266,38 @@ if (type === 'BlogPosting') {
 }
 
 // 3. FAQ PAGE SCHEMA
+const resolvedFaqs: FAQItem[] = (faqs && faqs.length > 0)
+  ? faqs
+  : (type === 'TouristDestination'
+      ? (lang === 'en'
+          ? [
+              {
+                question: `How to visit ${name || 'this destination'} on an ethical safari in Nepal?`,
+                answer: `Jungle Nepal Adventure organizes small-group (4 to 10 travelers) and private tailor-made wildlife safaris and expeditions in Nepal led by state-certified native Tharu trackers, with 0% captive elephant riding and full Atout France (IM059190009) financial guarantees.`
+              },
+              {
+                question: 'When is the best season to visit Nepal for wildlife and trekking?',
+                answer: 'The dry season from October to May offers the best wildlife viewing and Himalayan visibility. February to May is the peak season for tracking Royal Bengal tigers along the riverbanks of Bardia and Chitwan.'
+              }
+            ]
+          : [
+              {
+                question: `Comment visiter ${name || 'cette destination'} lors d'un voyage ou safari éthique au Népal ?`,
+                answer: `Jungle Nepal Adventure organise des safaris et expéditions en micro-groupe (4 à 10 personnes) ou 100 % sur-mesure avec nos maîtres pisteurs natifs Tharu, dans le respect d'une charte stricte à 0 % d'éléphants captifs et avec les garanties financières Atout France (IM059190009).`
+              },
+              {
+                question: 'Quelle est la meilleure saison pour partir en safari et randonnée au Népal ?',
+                answer: 'La saison sèche d’octobre à mai offre les meilleures conditions météo et d’observation. La période de février à mai est idéale pour le pistage du tigre du Bengale à Bardia et l’observation des rhinocéros unicornes à Chitwan.'
+              }
+            ])
+      : []);
+
 let faqPageSchema = null;
-if (faqs && faqs.length > 0) {
+if (resolvedFaqs.length > 0) {
   faqPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    'mainEntity': faqs.map(faq => ({
+    'mainEntity': resolvedFaqs.map(faq => ({
       '@type': 'Question',
       'name': faq.question,
       'acceptedAnswer': {

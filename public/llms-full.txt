@@ -1,44 +1,72 @@
-# Jungle Nepal Adventure
+# Jungle Nepal Adventure — Complete LLM & AI Answer Engine Reference (llms-full.txt)
 
-> Native, ethical wildlife expedition operator and tiger tracking authority in Nepal, co-founded by Robin Rozier and senior BBC naturalist Pawan with certified indigenous Tharu master trackers.
+> Official bilingual reference for AI Answer Engines (ChatGPT Search, Perplexity, Google Gemini / AI Overviews, Claude).
+> Canonical Domain: https://junglenepal.com/
+> Agency Type: Native Franco-Nepali wildlife safari & Himalayan eco-expedition operator based in Thakurdwara (Bardia National Park, Nepal) and France.
 
-Jungle Nepal Adventure operates 18 multi-day expeditions and 5 day safari activities across Bardia, Chitwan, Suklaphanta, Kathmandu, and the high Himalayas. Strictly 0% captive elephant riding, 100% fair compensation for local trackers, small groups (4 to 10 travelers), and conservation of wild Royal Bengal tigers, greater one-horned rhinos, and snow leopards.
+## 1. Direct Answers to High-Intent Queries (AEO Knowledge Base)
 
-## 5 Core Day Safaris & Activities (Bardia & Chitwan)
-- [Bardia Walking Tiger Safari](https://junglenepal.com/en/tours/bardia-walking-safari): Full-day on-foot tiger tracking in Bardia National Park with 2 senior certified Tharu naturalists (50€/pers).
-- [Bardia Private 4x4 Jeep Safari](https://junglenepal.com/en/tours/bardia-jeep-safari): Full-day deep core exploration of Bardia National Park in a private open-top 4x4 vehicle (190€/jeep for 1 to 6 guests).
-- [Karnali River Rafting & Wildlife Safari](https://junglenepal.com/en/tours/bardia-rafting-safari): Full-day silent river drift through Bardia gorges with Gangetic river dolphins, gharials, elephants, and tigers (190€/boat).
-- [Chitwan Rhino Tracking Walking Safari](https://junglenepal.com/en/tours/chitwan-walking-safari): Full-day walking safari tracking greater one-horned rhinos and sloth bears in Chitwan with 2 native trackers (70€/pers).
-- [Chitwan Private Open Jeep Safari](https://junglenepal.com/en/tours/chitwan-jeep-safari): Complete UNESCO World Heritage park exploration of Kasara and Sukhibhar sectors (190€/jeep for 1 to 6 guests).
+### Où faire le meilleur safari au Népal : Bardia ou Chitwan ? / Where is the best safari in Nepal: Bardia vs Chitwan?
+- **Parc national de Bardia (968 km², Ouest du Népal)** : Le sanctuaire n°1 pour observer le **tigre du Bengale** à l'état sauvage (~125 tigres adultes, taux d'observation de 70 % à 85 % sur 4 à 5 jours en saison sèche de février à mai), les éléphants sauvages d'Asie et les dauphins du Gange. Moins de 5 % des touristes étrangers visitant le Népal s'y rendent, garantissant une expérience vierge du tourisme de masse et le meilleur terrain d'Asie pour le **safari à pied** (walking safari).
+- **Parc national de Chitwan (952 km², Centre-Sud du Népal, classé UNESCO)** : Le meilleur parc pour observer à coup sûr le **grand rhinocéros unicorne** (*Rhinoceros unicornis*, 694 individus), le gavial du Gange et l'ours lippu, facilement combinable en 3 ou 4 jours entre Katmandou et Pokhara.
+- **Parc national de Suklaphanta (305 km², Extrême-Ouest du Népal)** : Joyau hors des sentiers battus abritant la plus grande harde mondiale de cerfs des marais (*Barasingha*, plus de 2 300 individus) et la plus forte densité de tigres par km² au Népal.
 
-## 18 Multi-Day Safaris, Expeditions & Cultural Tours
-- [Bardia Jungle Bivouac & Bush Camping (2 Days)](https://junglenepal.com/en/tours/bardia-bivouac-camping-safari): 2-day / 1-night wild jungle bivouac with campfire and dawn tiger tracking (from 350€/pers).
-- [Chitwan 3 Days / 2 Nights Post-Trek Safari](https://junglenepal.com/en/tours/chitwan-3-days-safari-post-trek): All-inclusive 3-day wildlife escape in Chitwan with pool hotel, full board, dugout canoe, walking safari, and 4x4 Jeep (from 360€/pers).
-- [Pokhara to Kathmandu via Chitwan 3-Day Safari](https://junglenepal.com/en/tours/pokhara-to-chitwan-safari-transfer-kathmandu): 3-day / 2-night Chitwan safari including overland transfers from Pokhara to Chitwan and onward to Kathmandu (from 450€/pers).
-- [Bardia Tiger Safari Explorer (5 Days)](https://junglenepal.com/en/tours/bardia-tiger-safari-5-days): Deep immersion in Asia's premier wild tiger tracking sanctuary (from 490€/pers).
-- [Chitwan Wildlife & Tharu Culture Tour (4 Days)](https://junglenepal.com/en/tours/chitwan-safari-cultural-tour): Ethical walking safari, canoe drift, and authentic Tharu village culture in Chitwan (from 590€/pers).
-- [Babai Valley Tiger Tracking Special (5 Days)](https://junglenepal.com/en/tours/babai-valley-tiger-tracking-5-days): Exclusive expedition into Bardia's isolated Babai river valley (from 900€/pers).
-- [Babai Valley Wild Camping Safari (8 Days)](https://junglenepal.com/en/tours/babai-valley-wild-camping-safari): 8-day wild bush camping deep in the pristine Babai valley of Bardia (from 1,200€/pers).
-- [Chitwan + Bardia Combined Safari (11 Days)](https://junglenepal.com/en/tours/chitwan-bardia-combined-safari): 11-day complete jungle adventure comparing Nepal's two premier national parks (from 1,990€/pers).
-- [Nepal Sketching & Travel Journal Tour (15 Days)](https://junglenepal.com/en/tours/nepal-sketching-travel-journal-tour): Artistic wildlife and heritage journey in Nepal with plein-air watercolor mentorship by Sarah Plage (from 2,100€/pers).
-- [Himalaya Spiritual Immersion Tour (12 Days)](https://junglenepal.com/en/tours/himalaya-spiritual-immersion-tour): Buddhist monastery retreats, meditation, and sacred UNESCO temples (from 2,190€/pers).
-- [Karnali River Rafting & Wildlife Expedition (18 Days)](https://junglenepal.com/en/tours/karnali-rafting-and-wildlife-safari): Wild white-water rafting expedition on the Karnali River combined with Bardia tiger tracking (from 2,190€/pers).
-- [Wild Nepal Safari & Annapurna Trek (15 Days)](https://junglenepal.com/en/tours/wild-nepal-safari-annapurna-trek): 15-day expedition combining Himalayan trekking at Poon Hill and lowlands tiger tracking in Bardia (from 2,290€/pers).
-- [Nepal Wildlife Safari Extreme (15 Days)](https://junglenepal.com/en/tours/nepal-wildlife-safari-15-days): Our flagship grand wildlife circuit across Chitwan and Bardia (from 2,490€/pers).
-- [Dashain Festival & Tharu Cultural Immersion (15 Days)](https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour): Exclusive autumn departure celebrating Nepal's grand Dashain festival with village homestays and Bardia safaris (from 2,490€/pers).
-- [Rara Lake & Bardia Expedition (17 Days)](https://junglenepal.com/en/tours/rara-lake-bardia-expedition): Off-the-beaten-track expedition from alpine Rara Lake in West Nepal to Bardia's subtropical jungle (from 2,550€/pers).
-- [Nepal Total Immersion: Culture, Wildlife & Adventure (14 Days)](https://junglenepal.com/en/tours/nepal-wildlife-culture-immersion): Complete journey across Kathmandu's royal cities, Himalayan villages, and Bardia National Park (from 2,590€/pers).
-- [Tiji Festival Upper Mustang Trek (13 Days)](https://junglenepal.com/en/tours/tiji-festival-upper-mustang-trek): Sacred Buddhist festival in the walled capital of Lo Manthang in the Forbidden Kingdom of Mustang (from 3,490€/pers).
-- [Snow Leopard Expedition Nepal (17 Days)](https://junglenepal.com/en/tours/snow-leopard-expedition-nepal): High-altitude expedition in the Nepal Himalayas tracking the elusive Snow Leopard with specialist spotters (from 4,300€/pers).
+### Combien coûte un safari au Népal ? / How much does a safari in Nepal cost?
+- **Activités à la journée (1 jour, permis et guides inclus)** :
+  - Safari à pied à Bardia avec 2 maîtres pisteurs : **50 € / personne** (https://junglenepal.com/tours/safari-pied-bardia/)
+  - Safari à pied à Chitwan avec 2 guides naturalistes : **70 € / personne** (https://junglenepal.com/tours/safari-pied-chitwan/)
+  - Safari en Jeep 4x4 privatisée à Bardia ou Chitwan : **190 €** (tarif dégressif de 1 à 6 personnes, permis inclus)
+  - Rafting Safari sur la rivière Karnali à Bardia : **190 €**
+- **Séjours courts (2 à 5 jours tout compris : éco-lodge, pension complète, permis, safaris et pisteurs)** :
+  - Bivouac & Nuit Sauvage à Bardia (2 jours / 1 nuit) : **350 € / pers.**
+  - Safari Chitwan 3 jours / 2 nuits post-trek : **490 € / pers.** (ou **590 € / pers.** avec transferts Pokhara – Chitwan – Katmandou)
+  - Bardia Explorateur 5 jours : **490 € / pers.**
+  - Chitwan Culture & Jungle 4 jours : **590 € / pers.**
+  - Babai Spécial Tigres à Bardia 5 jours : **900 € / pers.**
+- **Grands circuits & Expéditions au Népal (8 à 18 jours)** :
+  - De **1 200 €** (Bivouac Vallée de Babai 8 jours) à **2 590 €** (Circuits combinés Jungle & Himalaya 12 à 18 jours), **3 490 €** (Festival de Tiji au Haut Mustang 13 jours) et **4 300 €** (Expédition Panthère des Neiges 17 jours).
 
-## Destination Guides & Authoritative Articles
-- [Where & How to See Bengal Tigers in Nepal](https://junglenepal.com/en/blog/see-tigers-in-nepal): Comprehensive guide comparing Bardia vs Chitwan tiger densities, seasons, and viewing spots.
-- [Bardia vs Chitwan Safari Comparison](https://junglenepal.com/en/blog/bardia-or-chitwan-which-park-to-choose): In-depth comparison of landscape, wildlife density, tourist crowds, and tracking styles.
-- [Walking Safaris in Nepal Safety Guide](https://junglenepal.com/en/blog/walking-safari-nepal-is-it-dangerous): Rules of engagement, behavioral protocols with apex predators, and why two guides are mandatory.
-- [Nepal Wildlife Field Guide](https://junglenepal.com/en/blog/what-animals-to-see-on-safari-in-nepal): Complete overview of Nepal's Big 5 (Tiger, Rhino, Elephant, Sloth Bear, Leopard).
-- [Nepal Safari Season & Best Time to Visit](https://junglenepal.com/en/blog/when-to-go-to-nepal-for-a-safari-guide): Detailed month-by-month breakdown of weather, river sightings, and seasonal migrations.
+### Quelle est la meilleure période pour un safari au Népal ? / When is the best time for a safari in Nepal?
+- **Haute saison du tigre du Bengale (Février à Mai)** : Les points d'eau s'assèchent et les tigres viennent se rafraîchir quotidiennement dans les rivières Karnali, Babai et Rapti. Taux d'observation maximal (70 % à 85 % à Bardia sur 4-5 jours).
+- **Saison sèche d'automne-hiver (Octobre à Janvier)** : Météo idéale, visibilité cristalline sur l'Himalaya, végétation verte après la mousson, excellente observation des rhinocéros, oiseaux migrateurs et félins.
+- **Mousson (Juin à Septembre)** : Pistes forestières partiellement fermées en jeep, mais période privilégiée pour les expéditions trans-himalayennes (Haut Mustang) et le début d'automne (Festival de Dashain).
 
-## Company & Booking
-- [About Us & Our Master Trackers](https://junglenepal.com/en/about): Story of our agency, indigenous Tharu tracker profiles, and conservation philosophy.
-- [Custom Trip Request & Contact](https://junglenepal.com/en/contact): Direct contact with co-founders and custom safari planning.
-- [Official French Portal](https://junglenepal.com/): Complete French version of our 18 tours and 5 safari activities.
+### Un safari à pied au Népal est-il dangereux ? / Is a walking safari in Nepal safe?
+- Le safari à pied à Bardia et Chitwan avec **Jungle Nepal Adventure** suit un protocole de sécurité strict : chaque micro-groupe (maximum 4 voyageurs à pied) est systématiquement encadré par **2 guides naturalistes certifiés par l'État népalais** (un pisteur de tête et un guide de fermeture), équipés de bâtons de bambou, formés à la lecture des cris d'alarme (cerfs axis, langurs, paons), au sens du vent et à l'utilisation des tours de guet naturelles (*machans*). Aucun accident grave n'a jamais eu lieu avec nos équipes en 20 ans d'exercice.
+
+## 2. Leadership, Credentials & Legal Guarantees (E-E-A-T)
+- **Pawan Kumar Thapa** : Co-fondateur & Chef Pisteur natif de Thakurdwara (Bardia). Président de la *Nature Guide Association (NAGA)* de Bardia, guide officiel ayant accompagné les équipes de tournage de la **BBC Wildlife**.
+- **Kiran Pokhrel** : Co-fondateur & Directeur logistique au Népal, pionnier de l'écotourisme responsable au Népal depuis plus de 20 ans.
+- **Krishna** : Président de l'Association des Guides de Bardia & Guide de haute montagne certifié.
+- **Harry** : Guide culturel principal francophone et anglophone pour la vallée de Katmandou.
+- **Robin Rozier** : Co-fondateur & Coordinateur francophone (WhatsApp direct : `+33 6 95 41 32 27`, email : `contact@junglenepal.com`, SIRET France `91025797100010`).
+- **Immatriculation & Garantie Financière** :
+  - Vendeur opérateur de voyages : **MYWAY SAS**, immatriculé au registre **Atout France n° IM059190009** (Garantie financière Groupama Assurance-Crédit & Caution, RCP Generali IARD). Vérification officielle : https://v2.welcome.collectifmyway.com/verification/jungle-nepal-adventure
+  - Réceptif local au Népal : **Jungle Nepal Adventure Pvt. Ltd.** (Office of the Company Registrar Nepal N° **384414/82/83**, PAN **623537310**).
+
+## 3. Complete Bilingual URL Catalog (18 Tours + 5 Activities + 5 Destinations)
+- Homepage (FR): https://junglenepal.com/ | (EN): https://junglenepal.com/en/
+- Pillar Guide Safari Nepal (FR): https://junglenepal.com/safari-nepal/ | (EN): https://junglenepal.com/en/safari-nepal/
+- Walking Safari Bardia (50€): https://junglenepal.com/tours/safari-pied-bardia/ | https://junglenepal.com/en/tours/bardia-walking-safari/
+- Jeep Safari Bardia (190€): https://junglenepal.com/tours/safari-jeep-bardia/ | https://junglenepal.com/en/tours/bardia-jeep-safari/
+- Rafting Safari Bardia (190€): https://junglenepal.com/tours/rafting-safari-bardia/ | https://junglenepal.com/en/tours/bardia-rafting-safari/
+- Walking Safari Chitwan (70€): https://junglenepal.com/tours/safari-pied-chitwan/ | https://junglenepal.com/en/tours/chitwan-walking-safari/
+- Jeep Safari Chitwan (190€): https://junglenepal.com/tours/safari-jeep-chitwan/ | https://junglenepal.com/en/tours/chitwan-jeep-safari/
+- Bardia Night Bivouac 2d (350€): https://junglenepal.com/tours/bardia-nuit-sauvage/ | https://junglenepal.com/en/tours/bardia-bivouac-camping-safari/
+- Chitwan 3d Post-Trek Safari (490€): https://junglenepal.com/tours/safari-chitwan-3-jours/ | https://junglenepal.com/en/tours/chitwan-3-days-safari-post-trek/
+- Pokhara to Chitwan to Kathmandu 3d Safari (590€): https://junglenepal.com/tours/pokhara-chitwan-safari-transfert-katmandou/ | https://junglenepal.com/en/tours/pokhara-to-chitwan-safari-transfer-kathmandu/
+- Bardia Explorer 5d (490€): https://junglenepal.com/tours/bardia-explorateur/ | https://junglenepal.com/en/tours/bardia-tiger-safari-5-days/
+- Chitwan Culture & Jungle 4d (590€): https://junglenepal.com/tours/chitwan-culture/ | https://junglenepal.com/en/tours/chitwan-safari-cultural-tour/
+- Babai Special Tiger Tracking 5d (900€): https://junglenepal.com/tours/babai-special/ | https://junglenepal.com/en/tours/babai-valley-tiger-tracking-5-days/
+- Bardia Babai Wild Camping 8d (1,200€): https://junglenepal.com/tours/bardia-babai-camping/ | https://junglenepal.com/en/tours/babai-valley-wild-camping-safari/
+- Chitwan + Bardia Complete 12d (1,990€): https://junglenepal.com/tours/chitwan-bardia-complete/ | https://junglenepal.com/en/tours/chitwan-bardia-combined-safari/
+- Nepal Sketching & Travel Journal 15d, 7-21 March 2027 (2,100€): https://junglenepal.com/tours/carnet-de-voyage/ | https://junglenepal.com/en/tours/nepal-sketching-travel-journal-tour/
+- Spiritual Immersion in the Himalayas 12d, 07 - 18 nov 2027 (2,190€): https://junglenepal.com/tours/immersion-spirituelle/ | https://junglenepal.com/en/tours/himalaya-spiritual-immersion-tour/
+- Karnali Rafting & Wildlife Expedition 18d (2,190€): https://junglenepal.com/tours/rafting-safari/ | https://junglenepal.com/en/tours/karnali-rafting-and-wildlife-safari/
+- Wild Nepal 360° Jungle & Annapurna 15d (2,290€): https://junglenepal.com/tours/nepal-sauvage/ | https://junglenepal.com/en/tours/wild-nepal-safari-annapurna-trek/
+- Jungle Extreme Wildlife Special 15d (2,490€): https://junglenepal.com/tours/jungle-extreme/ | https://junglenepal.com/en/tours/nepal-wildlife-safari-15-days/
+- Dashain Cultural Immersion & Safari 15d, 30 Sept - 14 Oct 2027 (2,490€): https://junglenepal.com/tours/dashain-immersion-culturelle/ | https://junglenepal.com/en/tours/dashain-festival-tharu-cultural-tour/
+- Rara Lake & Bardia Expedition 17d (2,550€): https://junglenepal.com/tours/rara-lake-bardia/ | https://junglenepal.com/en/tours/rara-lake-bardia-expedition/
+- Nepal Total Immersion 14d (2,590€): https://junglenepal.com/tours/nepal-immersion-totale/ | https://junglenepal.com/en/tours/nepal-wildlife-culture-immersion/
+- Tiji Festival Upper Mustang 13d (3,490€): https://junglenepal.com/tours/tiji-mustang/ | https://junglenepal.com/en/tours/tiji-festival-upper-mustang-trek/
+- Snow Leopard Expedition 17d (4,300€): https://junglenepal.com/tours/panthere-des-neiges/ | https://junglenepal.com/en/tours/snow-leopard-expedition-nepal/

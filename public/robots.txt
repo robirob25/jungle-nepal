@@ -2,4 +2,38 @@ User-agent: *
 Disallow: /cdn-cgi/
 Allow: /
 
+# AI Answer Engines & LLM Crawlers (Explicitly Allowed for AEO Citation)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://junglenepal.com/sitemap-index.xml
 Sitemap: https://junglenepal.com/sitemap.xml
+# LLM Structured Context: https://junglenepal.com/llms.txt
+# LLM Full Catalog Context: https://junglenepal.com/llms-full.txt
